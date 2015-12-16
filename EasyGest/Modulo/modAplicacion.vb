@@ -318,7 +318,7 @@ Namespace Modulo
                     'comando.BorderColor = Color.FromArgb(100, 150, 30)
                     comando.Shape = New Telerik.WinControls.RoundRectShape(5)
                     comando.Font = gDefaultFont
-
+                    comando.ForeColor = Color.Coral
                     If TypeOf comando Is CommandBarDropDownList Then
                         Dim ddl As CommandBarDropDownList = DirectCast(comando, CommandBarDropDownList)
                         ddl.DropDownListElement.Shape = New Telerik.WinControls.RoundRectShape(5)
