@@ -1,0 +1,1143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D8B3845B-695D-4247-8176-4B84068E579D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>EasyGest.My.MyApplication</StartupObject>
+    <RootNamespace>EasyGest</RootNamespace>
+    <AssemblyName>EasyGest</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>D:\BINS\Easygest\Easygest\x86\Debug\</OutputPath>
+    <DocumentationFile>EasyGest.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>GlobalizationRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>D:\BINS\Easygest\Easygest\x86\Release\</OutputPath>
+    <DocumentationFile>EasyGest.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Globe.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>D:\BINS\Easygest\Easygest\x64\Debug\</OutputPath>
+    <DocumentationFile>EasyGest.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\EasyGest.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>D:\BINS\Easygest\Easygest\x64\Release\</OutputPath>
+    <DocumentationFile>EasyGest.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\EasyGest.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Telerik.Reporting, Version=9.0.15.225, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <Private>True</Private>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=9.0.15.225, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <Private>True</Private>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.WinControls, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.ChartView, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.ChartView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.GridView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.PdfViewer, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.PdfViewer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.PivotGrid, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.PivotGrid.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadChart, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.RadChart.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.RadDock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.RadMarkupEditor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RichTextBox, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.RichTextBox.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Scheduler, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.Scheduler.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.Themes.Aqua.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.Themes.Breeze.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.Themes.Desert.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.HighContrastBlack, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.Themes.HighContrastBlack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.Themes.Office2010Black.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.Themes.Office2010Blue.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.Themes.Office2010Silver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2013Dark, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.Themes.Office2013Dark.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2013Light, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.Themes.Office2013Light.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.Themes.TelerikMetro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.Themes.TelerikMetroBlue.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.Themes.VisualStudio2012Dark.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.Themes.VisualStudio2012Light.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows7, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.Themes.Windows7.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows8, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.Themes.Windows8.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.Windows.Documents.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Fixed, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.Windows.Documents.Fixed.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.Windows.Documents.Flow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow.FormatProviders.Pdf, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Maths, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.Windows.Maths.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\Telerik.Windows.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikData, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\TelerikData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikExport, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2015.3.930.40\TelerikExport.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="EasyGest.Modulo" />
+    <Import Include="EasyGestControllers" />
+    <Import Include="EasyGestControllers.Controller" />
+    <Import Include="EasyGestControllers.Data" />
+    <Import Include="EasyGestControllers.Data.Entity" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Telerik.WinControls" />
+    <Import Include="Telerik.WinControls.UI" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Application.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Application.zh.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Application.zh.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Presentacion\Componente\CommandBarFilterItem.vb" />
+    <Compile Include="Presentacion\Componente\CommandBarSortItem.vb" />
+    <Compile Include="Presentacion\Formulario\frmInformes.Designer.vb">
+      <DependentUpon>frmInformes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\frmInformes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Informe\rptListasCompra.Designer.vb">
+      <DependentUpon>rptListasCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Informe\rptListasCompra.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Presentacion\LocalizationProvider\CalendarLocalizationProvider.vb" />
+    <Compile Include="Presentacion\LocalizationProvider\ColorDialogLocalizationProvider.vb" />
+    <Compile Include="Presentacion\LocalizationProvider\CommandBarLocalizationProvider.vb" />
+    <Compile Include="Presentacion\Formulario\Cliente\frmClienteTarjetaEmision.Designer.vb">
+      <DependentUpon>frmClienteTarjetaEmision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Cliente\frmClienteTarjetaEmision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Cliente\frmClienteTarjeta.Designer.vb">
+      <DependentUpon>frmClienteTarjeta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Cliente\frmClienteTarjeta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Cliente\frmClienteTarjetaEdicion.Designer.vb">
+      <DependentUpon>frmClienteTarjetaEdicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Cliente\frmClienteTarjetaEdicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\CompraVenta\frmVentaCobro.Designer.vb">
+      <DependentUpon>frmVentaCobro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\CompraVenta\frmVentaCobro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Dialogo\frmCierre.Designer.vb">
+      <DependentUpon>frmCierre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Dialogo\frmCierre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Dialogo\frmApertura.Designer.vb">
+      <DependentUpon>frmApertura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Dialogo\frmApertura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\frmInicio.Designer.vb">
+      <DependentUpon>frmInicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\frmInicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Producto\frmEtiquetarProducto.Designer.vb">
+      <DependentUpon>frmEtiquetarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Producto\frmEtiquetarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Impresion\Impresion.vb" />
+    <Compile Include="Presentacion\Impresion\RawPrinterHelper.vb" />
+    <Compile Include="Presentacion\LocalizationProvider\PrintDialogLocalizationProvider.vb" />
+    <Compile Include="Presentacion\LocalizationProvider\PropertyGridLocalizationProvider.vb" />
+    <Compile Include="Presentacion\LocalizationProvider\RadDockLocalizationProvider.vb" />
+    <Compile Include="Presentacion\Formulario\Configuracion\frmOferta.Designer.vb">
+      <DependentUpon>frmOferta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Configuracion\frmOferta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Configuracion\frmEtiqueta.Designer.vb">
+      <DependentUpon>frmEtiqueta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Configuracion\frmEtiqueta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Configuracion\frmImpuesto.Designer.vb">
+      <DependentUpon>frmImpuesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Configuracion\frmImpuesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Configuracion\frmPuesto.Designer.vb">
+      <DependentUpon>frmPuesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Configuracion\frmPuesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Configuracion\frmAuxiliarProducto.Designer.vb">
+      <DependentUpon>frmAuxiliarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Configuracion\frmAuxiliarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Configuracion\frmParametroApp.Designer.vb">
+      <DependentUpon>frmParametroApp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Configuracion\frmParametroApp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Configuracion\frmEmpresa.Designer.vb">
+      <DependentUpon>frmEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Configuracion\frmEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Configuracion\frmConfiguracion.Designer.vb">
+      <DependentUpon>frmConfiguracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Configuracion\frmConfiguracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Configuracion\frmUsuario.Designer.vb">
+      <DependentUpon>frmUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Configuracion\frmUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Dialogo\frmAutentificacion.Designer.vb">
+      <DependentUpon>frmAutentificacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Dialogo\frmAutentificacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Producto\frmCaracteristicaProducto.Designer.vb">
+      <DependentUpon>frmCaracteristicaProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Producto\frmCaracteristicaProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Producto\frmProducto.Designer.vb">
+      <DependentUpon>frmProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Producto\frmProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Producto\frmProductoEdicion.Designer.vb">
+      <DependentUpon>frmProductoEdicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Producto\frmProductoEdicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Proveedor\frmProveedorEdicion.Designer.vb">
+      <DependentUpon>frmProveedorEdicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Proveedor\frmProveedorEdicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Proveedor\frmProveedor.Designer.vb">
+      <DependentUpon>frmProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Proveedor\frmProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Cuenta\frmCuentaEdicion.Designer.vb">
+      <DependentUpon>frmCuentaEdicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Cuenta\frmCuentaEdicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Cuenta\frmCuenta.Designer.vb">
+      <DependentUpon>frmCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Cuenta\frmCuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Contacto\frmContacto.Designer.vb">
+      <DependentUpon>frmContacto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Contacto\frmContacto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Contacto\frmContactoEdicion.Designer.vb">
+      <DependentUpon>frmContactoEdicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Contacto\frmContactoEdicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\LocalizationProvider\RadMessageLocalizationProvider.vb" />
+    <Compile Include="Presentacion\LocalizationProvider\RadGridLocalizationProvider.vb" />
+    <Compile Include="General\Logs.vb" />
+    <Compile Include="Modulo\modAplicacion.vb" />
+    <Compile Include="Presentacion\Componente\WaitingPanel.designer.vb">
+      <DependentUpon>WaitingPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Componente\WaitingPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Dialogo\frmBDConexion.Designer.vb">
+      <DependentUpon>frmBDConexion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Dialogo\frmBDConexion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\frmBienvenida.Designer.vb">
+      <DependentUpon>frmBienvenida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\frmBienvenida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Cliente\frmCliente.Designer.vb">
+      <DependentUpon>frmCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Cliente\frmCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Cliente\frmClienteEdicion.Designer.vb">
+      <DependentUpon>frmClienteEdicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\Cliente\frmClienteEdicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\frmPrincipal.Designer.vb">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formulario\frmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulo\modVarios.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Presentacion\LocalizationProvider\RadTreeViewLocalizationProvider.vb" />
+    <Compile Include="Presentacion\LocalizationProvider\RadTimePickerLocalizationProvider.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Application.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application.zh.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Application.zh.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>8435277825001</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="Presentacion\Componente\WaitingPanel.es.resx">
+      <DependentUpon>WaitingPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Componente\WaitingPanel.resx">
+      <DependentUpon>WaitingPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Componente\WaitingPanel.zh.resx">
+      <DependentUpon>WaitingPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Cliente\frmClienteTarjetaEmision.resx">
+      <DependentUpon>frmClienteTarjetaEmision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Cliente\frmClienteTarjetaEmision.zh.resx">
+      <DependentUpon>frmClienteTarjetaEmision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Cliente\frmClienteTarjeta.resx">
+      <DependentUpon>frmClienteTarjeta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Cliente\frmClienteTarjeta.zh.resx">
+      <DependentUpon>frmClienteTarjeta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Cliente\frmClienteTarjetaEdicion.resx">
+      <DependentUpon>frmClienteTarjetaEdicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Cliente\frmClienteTarjetaEdicion.zh.resx">
+      <DependentUpon>frmClienteTarjetaEdicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\CompraVenta\frmVentaCobro.resx">
+      <DependentUpon>frmVentaCobro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\CompraVenta\frmVentaCobro.zh.resx">
+      <DependentUpon>frmVentaCobro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Configuracion\frmOferta.resx">
+      <DependentUpon>frmOferta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Configuracion\frmOferta.zh.resx">
+      <DependentUpon>frmOferta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Configuracion\frmEtiqueta.resx">
+      <DependentUpon>frmEtiqueta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Configuracion\frmEtiqueta.zh.resx">
+      <DependentUpon>frmEtiqueta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Configuracion\frmImpuesto.resx">
+      <DependentUpon>frmImpuesto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Configuracion\frmImpuesto.zh.resx">
+      <DependentUpon>frmImpuesto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Configuracion\frmPuesto.resx">
+      <DependentUpon>frmPuesto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Configuracion\frmPuesto.zh.resx">
+      <DependentUpon>frmPuesto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Configuracion\frmAuxiliarProducto.resx">
+      <DependentUpon>frmAuxiliarProducto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Configuracion\frmAuxiliarProducto.zh.resx">
+      <DependentUpon>frmAuxiliarProducto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Configuracion\frmParametroApp.resx">
+      <DependentUpon>frmParametroApp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Configuracion\frmParametroApp.zh.resx">
+      <DependentUpon>frmParametroApp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Configuracion\frmEmpresa.resx">
+      <DependentUpon>frmEmpresa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Configuracion\frmEmpresa.zh.resx">
+      <DependentUpon>frmEmpresa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Configuracion\frmConfiguracion.resx">
+      <DependentUpon>frmConfiguracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Configuracion\frmConfiguracion.zh.resx">
+      <DependentUpon>frmConfiguracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Configuracion\frmUsuario.resx">
+      <DependentUpon>frmUsuario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Configuracion\frmUsuario.zh.resx">
+      <DependentUpon>frmUsuario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Dialogo\frmCierre.resx">
+      <DependentUpon>frmCierre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Dialogo\frmCierre.zh.resx">
+      <DependentUpon>frmCierre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Dialogo\frmApertura.resx">
+      <DependentUpon>frmApertura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Dialogo\frmApertura.zh.resx">
+      <DependentUpon>frmApertura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Dialogo\frmAutentificacion.resx">
+      <DependentUpon>frmAutentificacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Dialogo\frmAutentificacion.zh.resx">
+      <DependentUpon>frmAutentificacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\frmInformes.resx">
+      <DependentUpon>frmInformes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\frmInicio.resx">
+      <DependentUpon>frmInicio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\frmInicio.zh.resx">
+      <DependentUpon>frmInicio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Producto\frmCaracteristicaProducto.resx">
+      <DependentUpon>frmCaracteristicaProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Producto\frmCaracteristicaProducto.zh.resx">
+      <DependentUpon>frmCaracteristicaProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Producto\frmEtiquetarProducto.resx">
+      <DependentUpon>frmEtiquetarProducto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Producto\frmEtiquetarProducto.zh.resx">
+      <DependentUpon>frmEtiquetarProducto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Producto\frmProducto.resx">
+      <DependentUpon>frmProducto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Producto\frmProducto.zh.resx">
+      <DependentUpon>frmProducto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Producto\frmProductoEdicion.resx">
+      <DependentUpon>frmProductoEdicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Producto\frmProductoEdicion.zh.resx">
+      <DependentUpon>frmProductoEdicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Proveedor\frmProveedorEdicion.resx">
+      <DependentUpon>frmProveedorEdicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Proveedor\frmProveedorEdicion.zh.resx">
+      <DependentUpon>frmProveedorEdicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Proveedor\frmProveedor.resx">
+      <DependentUpon>frmProveedor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Proveedor\frmProveedor.zh.resx">
+      <DependentUpon>frmProveedor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Cuenta\frmCuentaEdicion.resx">
+      <DependentUpon>frmCuentaEdicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Cuenta\frmCuentaEdicion.zh.resx">
+      <DependentUpon>frmCuentaEdicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Cuenta\frmCuenta.resx">
+      <DependentUpon>frmCuenta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Cuenta\frmCuenta.zh.resx">
+      <DependentUpon>frmCuenta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Contacto\frmContacto.resx">
+      <DependentUpon>frmContacto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Contacto\frmContacto.zh.resx">
+      <DependentUpon>frmContacto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Contacto\frmContactoEdicion.resx">
+      <DependentUpon>frmContactoEdicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Contacto\frmContactoEdicion.zh.resx">
+      <DependentUpon>frmContactoEdicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Dialogo\frmBDConexion.resx">
+      <DependentUpon>frmBDConexion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Dialogo\frmBDConexion.zh.resx">
+      <DependentUpon>frmBDConexion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\frmBienvenida.resx">
+      <DependentUpon>frmBienvenida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\frmBienvenida.zh.resx">
+      <DependentUpon>frmBienvenida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Cliente\frmCliente.resx">
+      <DependentUpon>frmCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Cliente\frmCliente.zh.resx">
+      <DependentUpon>frmCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Cliente\frmClienteEdicion.resx">
+      <DependentUpon>frmClienteEdicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\Cliente\frmClienteEdicion.zh.resx">
+      <DependentUpon>frmClienteEdicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formulario\frmPrincipal.zh.resx">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Informe\rptListasCompra.resx">
+      <DependentUpon>rptListasCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Informe\rptListasCompra.zh.resx">
+      <DependentUpon>rptListasCompra.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Configuracion.ConfiguracionGlobal.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Configuracion.ConfiguracionLocal.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Albaranes.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.ApuntesDiario.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.CaracteristicasProducto.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Clientes.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.CodigosBarra.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Configuraciones.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Contactos.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.DatosBancario.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Diarios.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.DiseñosEtiqueta.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Empresas.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Encargos.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Etiquetas.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Facturas.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Familias.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.FormasContacto.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Galerias.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Impuestos.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.LineasAlbaran.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.LineasFactura.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.LineasPedido.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.ListasCompra.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Marcas.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.ModosPago.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Morosidades.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.MovimientosMorosidad.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.MovimientosTarjeta.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.MunicipiosEspañolas.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Ofertas.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Pedidos.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.PrioridadesTarea.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Productos.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Proveedores.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.ProvinciasEspañolas.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Puestos.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Tareas.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.TarjetasFidelizacion.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.TiposDatoCaractProducto.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.TiposIdentificacion.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Ubicaciones.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.UnidadesMedida.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Usuarios.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Vales.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWAlbaranes.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWApuntesDiario.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWClientes.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWCobros.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWContactos.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWCreditosCliente.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWDatosBancario.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWDeberesProveedor.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWDiarios.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWFacturas.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWLineasAlbaran.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWLineasFactura.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWLineasPedido.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWPagos.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWPedidos.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWProductos.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWProveedores.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWTareas.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWTarjetasFidelizacion.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.VWVales.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Globe.ico" />
+    <Content Include="Resources\VisualStudio2012Dark.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\VisualStudio2012Light.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Windows7.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Windows8.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\last.gif" />
+    <None Include="Resources\left.gif" />
+    <None Include="Resources\previous.gif" />
+    <None Include="Resources\right.gif" />
+    <None Include="Resources\10.png" />
+    <None Include="Resources\left_clicked.gif" />
+    <None Include="Resources\left_disable.gif" />
+    <None Include="Resources\left_hovered.gif" />
+    <None Include="Resources\right_clicked.gif" />
+    <None Include="Resources\right_disable.gif" />
+    <None Include="Resources\right_hovered.gif" />
+    <None Include="Resources\categories.gif" />
+    <None Include="Resources\112.png" />
+    <None Include="Resources\down.gif" />
+    <None Include="Resources\up.gif" />
+    <None Include="Resources\arrow_refresh.png" />
+    <None Include="Resources\docs9.png" />
+    <None Include="Resources\HEIN%27S DOCK 1.0 CLASSIC APPLICATIONS.png" />
+    <None Include="Resources\kenolaba.png" />
+    <None Include="Resources\kfm_home.png" />
+    <None Include="Resources\kllckety.png" />
+    <None Include="Resources\MAKE-UP.png" />
+    <None Include="Resources\SORCEROR.png" />
+    <None Include="Resources\player_end.png" />
+    <None Include="Resources\player_start.png" />
+    <None Include="Resources\ksirtet.png" />
+    <None Include="Resources\fondo.jpg" />
+    <None Include="Resources\Clipper System_1 Computer.png" />
+    <None Include="Resources\HEIN%27S DOCK 1.0 _.png" />
+    <None Include="Resources\33.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\image_delete.png" />
+    <None Include="Resources\package.png" />
+    <None Include="Resources\ruby.png" />
+    <None Include="Resources\folder_brick.png" />
+    <None Include="Resources\sitemap.png" />
+    <None Include="Resources\anchor.png" />
+    <None Include="Resources\box.png" />
+    <None Include="Resources\63.png" />
+    <None Include="Resources\43.png" />
+    <None Include="Resources\21.png" />
+    <None Include="Resources\cog.png" />
+    <None Include="Resources\cross_disabled.png" />
+    <None Include="Resources\application_go.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\Telerik_2.ico" />
+    <None Include="Resources\Telerik_16.png" />
+    <None Include="Resources\tag_blue.png" />
+    <None Include="Resources\folder_explore.png" />
+    <None Include="Resources\85.png" />
+    <None Include="Resources\35.png" />
+    <None Include="Resources\45.png" />
+    <None Include="Resources\cn.png" />
+    <None Include="Resources\europeanunion.png" />
+    <None Include="Resources\book_next.png" />
+    <None Include="Resources\calculator.png" />
+    <None Include="Resources\date.png" />
+    <None Include="Resources\cart_put.png" />
+    <Content Include="Resources\Aqua.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Breeze.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ControlDefault.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Desert.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\DivisaWeb_es.htm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\DivisaWeb_ch.htm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\find.png" />
+    <Content Include="Resources\HighContrastBlack.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MeteoWeb.htm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\us.png" />
+    <None Include="Resources\money_euro.png" />
+    <Content Include="Resources\Office2010Black.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Office2010Blue.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Office2010Silver.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Office2013Dark.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Office2013Light.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\TelerikMetro.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\TelerikMetroBlue.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\user_green.png" />
+    <None Include="Resources\user_group.png" />
+    <Content Include="Resources\user_red.png" />
+    <None Include="Resources\DatabaseAdd32.png" />
+    <None Include="Resources\50.png" />
+    <Content Include="Resources\fcliente.png" />
+    <Content Include="Resources\fconfiguracion.png" />
+    <Content Include="Resources\finforme.png" />
+    <Content Include="Resources\fpedido.png" />
+    <Content Include="Resources\fproducto.png" />
+    <Content Include="Resources\fproveedor.png" />
+    <Content Include="Resources\fventa.png" />
+    <Content Include="Resources\loading1.gif" />
+    <None Include="Resources\fsalir.png" />
+    <None Include="Resources\48.png" />
+    <None Include="Resources\51.png" />
+    <None Include="Resources\60.png" />
+    <None Include="Resources\88.png" />
+    <None Include="Resources\80.png" />
+    <None Include="Resources\75.png" />
+    <None Include="Resources\130.png" />
+    <None Include="Resources\128.png" />
+    <None Include="Resources\127.png" />
+    <None Include="Resources\finiciar.png" />
+    <None Include="Resources\fcerrar.png" />
+    <None Include="Resources\shield_go.png" />
+    <None Include="Resources\shield_delete.png" />
+    <None Include="Resources\shield_add.png" />
+    <None Include="Resources\door_out.png" />
+    <None Include="Resources\question.wav" />
+    <None Include="Resources\errores.wav" />
+    <None Include="Resources\aviso.wav" />
+    <None Include="Resources\connect.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EasyGestControllers\EasyGestControllers.vbproj">
+      <Project>{B98C069A-F339-4CE4-9268-D7F896D1BEA5}</Project>
+      <Name>EasyGestControllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyGestControllers\EasyGestControllers.vbproj">
+      <Name>EasyGestControllers</Name>
+      <Project>{B98C069A-F339-4CE4-9268-D7F896D1BEA5}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

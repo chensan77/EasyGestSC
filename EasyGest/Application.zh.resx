@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AvisoCargandoDatos" xml:space="preserve">
+    <value>数据加载中, 请稍等.</value>
+  </data>
+  <data name="AvisoClaveIncorrecta" xml:space="preserve">
+    <value>您输入的口令无效.</value>
+  </data>
+  <data name="AvisoIntroducirCodigoBarra" xml:space="preserve">
+    <value>请输入一个新的条形码.</value>
+  </data>
+  <data name="AvisoProbarConexionExitosa" xml:space="preserve">
+    <value>数据连接测试正确。</value>
+  </data>
+  <data name="AvisoProbarConexionFallida" xml:space="preserve">
+    <value>数据连接测试失败。</value>
+  </data>
+  <data name="AvisoProcesoCancelado" xml:space="preserve">
+    <value>进程已经被取消.</value>
+  </data>
+  <data name="AvisoSeleccionarCliente" xml:space="preserve">
+    <value>此票据尚不属于任何客户, 如果想要开发票的话, 请选取一个客户.</value>
+  </data>
+  <data name="AvisoSeleccionFila" xml:space="preserve">
+    <value>请选取表格中的数据.</value>
+  </data>
+  <data name="AvisoSeleccionObligatoriaCliente" xml:space="preserve">
+    <value>在赊账与或开发票的情况下请键入已有客户或者新建一个.</value>
+  </data>
+  <data name="AvisoSeleccionObligatoriaProveedor" xml:space="preserve">
+    <value>请键入已有货商或者新建一个.</value>
+  </data>
+  <data name="AvisoSolicitarDescuento" xml:space="preserve">
+    <value>请输入折扣.</value>
+  </data>
+  <data name="AvisoValeNoValido" xml:space="preserve">
+    <value>输入的代价卷无效.</value>
+  </data>
+  <data name="ConfirmacionAceptarValeCaducado" xml:space="preserve">
+    <value>代价卷已过期， 尽管如此，确定要接受它吗?</value>
+  </data>
+  <data name="ConfirmacionBorrarDato" xml:space="preserve">
+    <value>您确认要将选中的数据删除吗?</value>
+  </data>
+  <data name="ConfirmacionCerrarCaja" xml:space="preserve">
+    <value>在退出程序前, 您想结算当天的柜台进程吗?</value>
+  </data>
+  <data name="ConfirmacionCerrarCajaAnterior" xml:space="preserve">
+    <value>{0}的柜台进程还未结算, 您是否需要对它结算? 如果您选择否的话. 那么以前的柜台操作将会在下次结算的时候一并计算.</value>
+  </data>
+  <data name="ConfirmacionCrearProducto" xml:space="preserve">
+    <value>尚无任何货品的标签码于您输入的匹配, 您想建立新的货品吗?</value>
+  </data>
+  <data name="ConfirmacionDevolucionMetalica" xml:space="preserve">
+    <value>您想现金退款给客户吗?</value>
+  </data>
+  <data name="ConfirmacionEmitirVale" xml:space="preserve">
+    <value>在本次购物中客户使用了代价券作为付款方式, 但仍有余额, 需要就余额重新打印一张代价卷吗?</value>
+  </data>
+  <data name="ConfirmacionGuardarAlbaran" xml:space="preserve">
+    <value>您需要保存现在的售货单吗?</value>
+  </data>
+  <data name="ConfirmacionGuardarPedido" xml:space="preserve">
+    <value>您需要保存现在的进货单吗?</value>
+  </data>
+  <data name="ConfirmacionImprimirAlbaran" xml:space="preserve">
+    <value>您需要打印票据吗?</value>
+  </data>
+  <data name="ConfirmacionReferenciaDuplicada" xml:space="preserve">
+    <value>您输入标签码已经存在, 是否继续操作?</value>
+  </data>
+  <data name="ConfirmacionSalir" xml:space="preserve">
+    <value>您确认要退出程序吗?</value>
+  </data>
+  <data name="DescripcionConceptoCobroAlbaran" xml:space="preserve">
+    <value>柜台收入, 〔{0}〕</value>
+  </data>
+  <data name="DescripcionConceptoCobroCredito" xml:space="preserve">
+    <value>收付客户拖欠, 〔{0} ： {1}〕</value>
+  </data>
+  <data name="DescripcionConceptoCobroPedidoDev" xml:space="preserve">
+    <value>货商退款, 〔{0}〕</value>
+  </data>
+  <data name="DescripcionConceptoPagoAlbaranDev" xml:space="preserve">
+    <value>客户退款, 〔{0}〕</value>
+  </data>
+  <data name="DescripcionConceptoPagoDebito" xml:space="preserve">
+    <value>支付货商赊账,〔{0} ： {1}〕</value>
+  </data>
+  <data name="DescripcionConceptoPagoPedido" xml:space="preserve">
+    <value>柜台支出, 〔{0}〕</value>
+  </data>
+  <data name="ErrorActualizarDatos" xml:space="preserve">
+    <value>数据更新错误.</value>
+  </data>
+  <data name="ErrorAjusteAlbaran" xml:space="preserve">
+    <value>调整票据数据出错.</value>
+  </data>
+  <data name="ErrorAplicacion" xml:space="preserve">
+    <value>程序运行时出错, 请参考log文件.</value>
+  </data>
+  <data name="TituloErrorAplicativo" xml:space="preserve">
+    <value>程序错误</value>
+  </data>
+  <data name="ErrorCalcularRecaudacion" xml:space="preserve">
+    <value>在计算应收金额的时候出错.</value>
+  </data>
+  <data name="ErrorCargarDatos" xml:space="preserve">
+    <value>数据加载错误.</value>
+  </data>
+  <data name="ErrorCargarInforme" xml:space="preserve">
+    <value>加载报表出错.</value>
+  </data>
+  <data name="ErrorFacturarAlbaran" xml:space="preserve">
+    <value>开据发票时出错.</value>
+  </data>
+  <data name="ErrorNoImprimir" xml:space="preserve">
+    <value>无法打印.</value>
+  </data>
+  <data name="ErrorProcesoImpExp" xml:space="preserve">
+    <value>数据导入导出时出错.</value>
+  </data>
+  <data name="Meses" xml:space="preserve">
+    <value>一月;二月;三月;四月;五月;六月;七月;八月;九月;十月;十一月;十二月</value>
+  </data>
+  <data name="Periodos" xml:space="preserve">
+    <value>单天;第一周(1-7);第二周(8-14);第三周(15-21);第四周(22-?);月度;两月;季度;半年;年度</value>
+  </data>
+  <data name="TituloGraficoCompraMensual" xml:space="preserve">
+    <value>月购物</value>
+  </data>
+  <data name="TituloGraficoCompraVenta" xml:space="preserve">
+    <value>卖出 - 买入差额</value>
+  </data>
+  <data name="TituloGraficoVentaMensual" xml:space="preserve">
+    <value>月销售</value>
+  </data>
+  <data name="InfoAccionProbarConexion" xml:space="preserve">
+    <value>测试连接。</value>
+  </data>
+  <data name="InfoAccionPrepararPrincipal" xml:space="preserve">
+    <value>准备主窗口。</value>
+  </data>
+  <data name="TextoActivo" xml:space="preserve">
+    <value>活跃</value>
+  </data>
+  <data name="TextoNoActivo" xml:space="preserve">
+    <value>冻结</value>
+  </data>
+  <data name="TextoHoraInicio" xml:space="preserve">
+    <value>程序起始时间</value>
+  </data>
+  <data name="TextoPuesto" xml:space="preserve">
+    <value>柜台</value>
+  </data>
+  <data name="TextoUsuario" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="TextoVersion" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="TextoBuscar" xml:space="preserve">
+    <value>查找</value>
+  </data>
+  <data name="TextoCampos" xml:space="preserve">
+    <value>量</value>
+  </data>
+  <data name="TextoContiene" xml:space="preserve">
+    <value>包含</value>
+  </data>
+  <data name="TextoDistinto" xml:space="preserve">
+    <value>不等</value>
+  </data>
+  <data name="TextoEmpiezaPor" xml:space="preserve">
+    <value>起始于</value>
+  </data>
+  <data name="TextoEsNulo" xml:space="preserve">
+    <value>无值</value>
+  </data>
+  <data name="TextoIgual" xml:space="preserve">
+    <value>相等</value>
+  </data>
+  <data name="TextoMayor" xml:space="preserve">
+    <value>大于</value>
+  </data>
+  <data name="TextoMayorIgual" xml:space="preserve">
+    <value>大或等于</value>
+  </data>
+  <data name="TextoMenor" xml:space="preserve">
+    <value>小于</value>
+  </data>
+  <data name="TextoMenorIgual" xml:space="preserve">
+    <value>小或等于</value>
+  </data>
+  <data name="TextoNoContiene" xml:space="preserve">
+    <value>不包含</value>
+  </data>
+  <data name="TextoNoNulo" xml:space="preserve">
+    <value>非无值</value>
+  </data>
+  <data name="TextoOperadores" xml:space="preserve">
+    <value>符</value>
+  </data>
+  <data name="TextoTerminaEn" xml:space="preserve">
+    <value>结束于</value>
+  </data>
+  <data name="TextoValor" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="TextoCodigo" xml:space="preserve">
+    <value>编号</value>
+  </data>
+  <data name="TextoDiagnosticoConsulta" xml:space="preserve">
+    <value>在 {1} ms 里处理了 {0} 行数据。</value>
+  </data>
+  <data name="TextoFechaCreacion" xml:space="preserve">
+    <value>创建日期</value>
+  </data>
+  <data name="TextoIdentificacion" xml:space="preserve">
+    <value>证件号</value>
+  </data>
+  <data name="TextoNombre" xml:space="preserve">
+    <value>名字</value>
+  </data>
+  <data name="TextoCliente" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="TextoProveedor" xml:space="preserve">
+    <value>货商</value>
+  </data>
+  <data name="TextoOrden" xml:space="preserve">
+    <value>排序</value>
+  </data>
+  <data name="TextoRecargar" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="TextoOrdenAsc" xml:space="preserve">
+    <value>升序</value>
+  </data>
+  <data name="TextoOrdenDesc" xml:space="preserve">
+    <value>降序</value>
+  </data>
+  <data name="TextoValorRequerido" xml:space="preserve">
+    <value>值必须填写</value>
+  </data>
+  <data name="AvisoNoAutentificado" xml:space="preserve">
+    <value>用户未通过验证，请再试。</value>
+  </data>
+  <data name="TextoEmpresa" xml:space="preserve">
+    <value>企业</value>
+  </data>
+  <data name="InfoAccionEsperarAutentificacion" xml:space="preserve">
+    <value>等待用户验证。</value>
+  </data>
+  <data name="TextoFechaModificacion" xml:space="preserve">
+    <value>更改日期</value>
+  </data>
+  <data name="TextoProductoNoCategorizado" xml:space="preserve">
+    <value>未分类的商品</value>
+  </data>
+  <data name="TextoNumeroOferta" xml:space="preserve">
+    <value>促销号</value>
+  </data>
+  <data name="TextoPlan" xml:space="preserve">
+    <value>计划</value>
+  </data>
+  <data name="TextoDescCategorizarProducto" xml:space="preserve">
+    <value>把 {0} 分类到 {1} 品种。</value>
+  </data>
+  <data name="TextoDescEstablecerOfertaProducto" xml:space="preserve">
+    <value>把 {0} 添加到 {1} 号促销计划。</value>
+  </data>
+  <data name="TextoProductoNoOfertado" xml:space="preserve">
+    <value>未在促销的商品</value>
+  </data>
+  <data name="TextoValorDuplicado" xml:space="preserve">
+    <value>值重复</value>
+  </data>
+  <data name="ConfirmacionActualizarCondicionTarjeta" xml:space="preserve">
+    <value>客户卡的优惠条件已经被更改了， 您想如何处理此次更改？ 
+是，更改所有的客户卡。
+否，仅更改那些没有特殊条件的客户卡。
+取消，复原客户卡的更改。</value>
+  </data>
+  <data name="TextoActivar" xml:space="preserve">
+    <value>激活</value>
+  </data>
+  <data name="TextoDesactivar" xml:space="preserve">
+    <value>冻结</value>
+  </data>
+  <data name="AvisoNumTarjetaDuplicado" xml:space="preserve">
+    <value>卡号已经存在，重新输入一个。</value>
+  </data>
+  <data name="TextoGrupoTarjetaFidelidelizacion" xml:space="preserve">
+    <value>客户 {0} 拥有 {1} 张有效的客户卡，其有效金额是 {2}。</value>
+  </data>
+  <data name="DescripcionMovTarjEmisionManual" xml:space="preserve">
+    <value>由 {0} 手工发放。</value>
+  </data>
+  <data name="TextoHoraApertura" xml:space="preserve">
+    <value>柜台开启时间</value>
+  </data>
+  <data name="ConfirmacionErrorNoControlado" xml:space="preserve">
+    <value>程序运行时发生无法掌控的错误, 请参考log文件. 需要继续运行程序吗?</value>
+  </data>
+</root>

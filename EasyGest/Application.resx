@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AvisoCargandoDatos" xml:space="preserve">
+    <value>Cargando datos, por favor espere.</value>
+  </data>
+  <data name="AvisoClaveIncorrecta" xml:space="preserve">
+    <value>La clave introducida no es válido.</value>
+  </data>
+  <data name="AvisoIntroducirCodigoBarra" xml:space="preserve">
+    <value>Por favor introduce nuevo código de barra.</value>
+  </data>
+  <data name="AvisoProbarConexionExitosa" xml:space="preserve">
+    <value>El test de la conexión de dato ha sido exitosa.  </value>
+  </data>
+  <data name="AvisoProbarConexionFallida" xml:space="preserve">
+    <value>El test de la conexión de dato ha sido fallida.</value>
+  </data>
+  <data name="AvisoProcesoCancelado" xml:space="preserve">
+    <value>El proceso se ha cancelado.</value>
+  </data>
+  <data name="AvisoSeleccionarCliente" xml:space="preserve">
+    <value>El albaran aún no tiene un cliente asociado, para facturarlo debe seleccionar un cliente.</value>
+  </data>
+  <data name="AvisoSeleccionFila" xml:space="preserve">
+    <value>Por favor seleccione un registro.</value>
+  </data>
+  <data name="AvisoSeleccionObligatoriaCliente" xml:space="preserve">
+    <value>En caso de factura o importe debido debe seleccionar un cliente o crearlo de nuevo.</value>
+  </data>
+  <data name="AvisoSeleccionObligatoriaProveedor" xml:space="preserve">
+    <value>Debe seleccionar un proveedor.</value>
+  </data>
+  <data name="AvisoSolicitarDescuento" xml:space="preserve">
+    <value>Por favor introduce el descuento.</value>
+  </data>
+  <data name="AvisoValeNoValido" xml:space="preserve">
+    <value>El vale de compra no es válido.</value>
+  </data>
+  <data name="ConfirmacionAceptarValeCaducado" xml:space="preserve">
+    <value>El vale de compra está caducado, pero de toda la manera desea acptarlo?</value>
+  </data>
+  <data name="ConfirmacionBorrarDato" xml:space="preserve">
+    <value>Confirma la eliminación del registro?</value>
+  </data>
+  <data name="ConfirmacionCerrarCaja" xml:space="preserve">
+    <value>Ante de abandonar la aplicación desea cerrar curso actual de la caja?</value>
+  </data>
+  <data name="ConfirmacionCerrarCajaAnterior" xml:space="preserve">
+    <value>El curso de la caja en el {0} aún no se ha cerrado, desea mantenerlo? Si confirma, entonces se calculará conjuntamente en el proximo cierre.</value>
+  </data>
+  <data name="ConfirmacionCrearProducto" xml:space="preserve">
+    <value>Aún no existe un producto con la referencia coincidente a la de introducida, desea crear uno nuevo?</value>
+  </data>
+  <data name="ConfirmacionDevolucionMetalica" xml:space="preserve">
+    <value>Desea devolver importe en metalico?</value>
+  </data>
+  <data name="ConfirmacionEmitirVale" xml:space="preserve">
+    <value>En esta compra el cliente utilizó un vale como medio de pago, pero queda cambio para cliente, desea emitir un nuevo vale con el importe de cambio?</value>
+  </data>
+  <data name="ConfirmacionGuardarAlbaran" xml:space="preserve">
+    <value>Necesita guardar albarán actual?</value>
+  </data>
+  <data name="ConfirmacionGuardarPedido" xml:space="preserve">
+    <value>Necesita guardar pedido actual?</value>
+  </data>
+  <data name="ConfirmacionImprimirAlbaran" xml:space="preserve">
+    <value>Desea imprimir el albarán?</value>
+  </data>
+  <data name="ConfirmacionReferenciaDuplicada" xml:space="preserve">
+    <value>La referencia ya existe en la base de dato, desea continuar y crear un producto nuevo con esta referencia?</value>
+  </data>
+  <data name="ConfirmacionSalir" xml:space="preserve">
+    <value>Desea abandonar la aplicación?</value>
+  </data>
+  <data name="DescripcionConceptoCobroAlbaran" xml:space="preserve">
+    <value>Ingreso a caja, 〔{0}〕</value>
+  </data>
+  <data name="DescripcionConceptoCobroCredito" xml:space="preserve">
+    <value>Cobro del credito de cliente, 〔{0} ： {1}〕</value>
+  </data>
+  <data name="DescripcionConceptoCobroPedidoDev" xml:space="preserve">
+    <value>Devolución metalico de proveedor, 〔{0}〕</value>
+  </data>
+  <data name="DescripcionConceptoPagoAlbaranDev" xml:space="preserve">
+    <value>Devolución metalico a cliente, 〔{0}〕</value>
+  </data>
+  <data name="DescripcionConceptoPagoDebito" xml:space="preserve">
+    <value>Pago del debito a proveedor,〔{0} ： {1}〕</value>
+  </data>
+  <data name="DescripcionConceptoPagoPedido" xml:space="preserve">
+    <value>Salida de caja, 〔{0}〕</value>
+  </data>
+  <data name="ErrorActualizarDatos" xml:space="preserve">
+    <value>Error en la actualización de los datos.</value>
+  </data>
+  <data name="ErrorAjusteAlbaran" xml:space="preserve">
+    <value>Error en el ajuste de los albaranes.</value>
+  </data>
+  <data name="ErrorAplicacion" xml:space="preserve">
+    <value>Error en la ejecución, por favor consulte los archivos de log.</value>
+  </data>
+  <data name="TituloErrorAplicativo" xml:space="preserve">
+    <value>Error Aplicación</value>
+  </data>
+  <data name="ErrorCalcularRecaudacion" xml:space="preserve">
+    <value>Error en el calculo de la recaudación.</value>
+  </data>
+  <data name="ErrorCargarDatos" xml:space="preserve">
+    <value>Error en la carga de los datos.</value>
+  </data>
+  <data name="ErrorCargarInforme" xml:space="preserve">
+    <value>Error en la carga de los informes.</value>
+  </data>
+  <data name="ErrorFacturarAlbaran" xml:space="preserve">
+    <value>Error en la facturación de los albaranes.</value>
+  </data>
+  <data name="ErrorNoImprimir" xml:space="preserve">
+    <value>No es posible imprimir.</value>
+  </data>
+  <data name="ErrorProcesoImpExp" xml:space="preserve">
+    <value>Error en el proceso de importación/exportación.</value>
+  </data>
+  <data name="Meses" xml:space="preserve">
+    <value>Enero;Febrero;Marzo;Abril;Mayo;Junio;Julio;Agosto;Septiembre;Octubre;Noviembre;Diciembre</value>
+  </data>
+  <data name="Periodos" xml:space="preserve">
+    <value>Diario;1ª Semana(1-7);2ª Semana(8-14);3ª Semana(15-21);4ª Semana(22-?);Mensual;Bimestral;Trimestral;Semestral;Anual</value>
+  </data>
+  <data name="Tarifas" xml:space="preserve">
+    <value>Normal;Reducido;Superreducido</value>
+  </data>
+  <data name="TituloGraficoCompraMensual" xml:space="preserve">
+    <value>Compra mensual</value>
+  </data>
+  <data name="TituloGraficoCompraVenta" xml:space="preserve">
+    <value>Diferencia Venta - Compra</value>
+  </data>
+  <data name="TituloGraficoVentaMensual" xml:space="preserve">
+    <value>Venta mensual</value>
+  </data>
+  <data name="InfoAccionProbarConexion" xml:space="preserve">
+    <value>Comprobar la conexión.</value>
+  </data>
+  <data name="InfoAccionPrepararPrincipal" xml:space="preserve">
+    <value>Preparando formulario principal.</value>
+  </data>
+  <data name="TextoActivo" xml:space="preserve">
+    <value>Activos</value>
+  </data>
+  <data name="TextoNoActivo" xml:space="preserve">
+    <value>Inactivos</value>
+  </data>
+  <data name="TextoHoraInicio" xml:space="preserve">
+    <value>Hora Inicio Aplicación</value>
+  </data>
+  <data name="TextoPuesto" xml:space="preserve">
+    <value>Puesto</value>
+  </data>
+  <data name="TextoUsuario" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="TextoVersion" xml:space="preserve">
+    <value>Versión</value>
+  </data>
+  <data name="TextoBuscar" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="TextoCampos" xml:space="preserve">
+    <value>Campos</value>
+  </data>
+  <data name="TextoContiene" xml:space="preserve">
+    <value>Contiene</value>
+  </data>
+  <data name="TextoDistinto" xml:space="preserve">
+    <value>Distinto</value>
+  </data>
+  <data name="TextoEmpiezaPor" xml:space="preserve">
+    <value>Empieza Por</value>
+  </data>
+  <data name="TextoEsNulo" xml:space="preserve">
+    <value>Es Nulo</value>
+  </data>
+  <data name="TextoIgual" xml:space="preserve">
+    <value>Igual</value>
+  </data>
+  <data name="TextoMayor" xml:space="preserve">
+    <value>Mayor</value>
+  </data>
+  <data name="TextoMayorIgual" xml:space="preserve">
+    <value>Mayor o Igual</value>
+  </data>
+  <data name="TextoMenor" xml:space="preserve">
+    <value>Menor</value>
+  </data>
+  <data name="TextoMenorIgual" xml:space="preserve">
+    <value>Menor o Igual</value>
+  </data>
+  <data name="TextoNoContiene" xml:space="preserve">
+    <value>No Contiene</value>
+  </data>
+  <data name="TextoNoNulo" xml:space="preserve">
+    <value>No Nulo</value>
+  </data>
+  <data name="TextoOperadores" xml:space="preserve">
+    <value>Operadores</value>
+  </data>
+  <data name="TextoTerminaEn" xml:space="preserve">
+    <value>Termina En</value>
+  </data>
+  <data name="TextoValor" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="TextoCodigo" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="TextoDiagnosticoConsulta" xml:space="preserve">
+    <value>Procesado {0} registro/s en {1} ms.</value>
+  </data>
+  <data name="TextoFechaCreacion" xml:space="preserve">
+    <value>Fecha creación</value>
+  </data>
+  <data name="TextoIdentificacion" xml:space="preserve">
+    <value>Identificación</value>
+  </data>
+  <data name="TextoNombre" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="TextoCliente" xml:space="preserve">
+    <value>Cliente</value>
+  </data>
+  <data name="TextoProveedor" xml:space="preserve">
+    <value>Proveedor</value>
+  </data>
+  <data name="TextoOrden" xml:space="preserve">
+    <value>Orden</value>
+  </data>
+  <data name="TextoRecargar" xml:space="preserve">
+    <value>Recargar</value>
+  </data>
+  <data name="TextoOrdenAsc" xml:space="preserve">
+    <value>Ascendente</value>
+  </data>
+  <data name="TextoOrdenDesc" xml:space="preserve">
+    <value>Descendente</value>
+  </data>
+  <data name="TextoValorRequerido" xml:space="preserve">
+    <value>Valor requerido</value>
+  </data>
+  <data name="AvisoNoAutentificado" xml:space="preserve">
+    <value>Usuario no ha sido autentificado, intenta de nuevo.</value>
+  </data>
+  <data name="TextoEmpresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="InfoAccionEsperarAutentificacion" xml:space="preserve">
+    <value>Esperando la autentificación de usuario.</value>
+  </data>
+  <data name="TextoFechaModificacion" xml:space="preserve">
+    <value>Fecha modificación</value>
+  </data>
+  <data name="TextoProductoNoCategorizado" xml:space="preserve">
+    <value>Productos no categorizados</value>
+  </data>
+  <data name="TextoNumeroOferta" xml:space="preserve">
+    <value>Nº Oferta</value>
+  </data>
+  <data name="TextoPlan" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="TextoDescCategorizarProducto" xml:space="preserve">
+    <value>Categorizar {0} en familia {1}.</value>
+  </data>
+  <data name="TextoDescEstablecerOfertaProducto" xml:space="preserve">
+    <value>Establecer {0} en oferta nº {1}.</value>
+  </data>
+  <data name="TextoProductoNoOfertado" xml:space="preserve">
+    <value>Productos no ofertados</value>
+  </data>
+  <data name="TextoValorDuplicado" xml:space="preserve">
+    <value>Valor duplicado</value>
+  </data>
+  <data name="ConfirmacionActualizarCondicionTarjeta" xml:space="preserve">
+    <value>Se ha modificado la condición de la tarjeta de fidelización, qué desea hacer con esta modificación? 
+Sí, modificar todas las tarjetas.
+No, modificar solamente aquellas tarjetas que no poseen una condión particular.
+Cancelar, deshacer los cambios en condiciones de la tarjeta de fidelización.</value>
+  </data>
+  <data name="TextoActivar" xml:space="preserve">
+    <value>Activar</value>
+  </data>
+  <data name="TextoDesactivar" xml:space="preserve">
+    <value>Desactivar</value>
+  </data>
+  <data name="AvisoNumTarjetaDuplicado" xml:space="preserve">
+    <value>Ya existe el número de tarjeta, volver a introducir uno.</value>
+  </data>
+  <data name="TextoGrupoTarjetaFidelidelizacion" xml:space="preserve">
+    <value>Cliente {0} posee {1} tarjeta/s activo/s con el saldo actual de {2}.</value>
+  </data>
+  <data name="DescripcionMovTarjEmisionManual" xml:space="preserve">
+    <value>Emitido manualmente por {0}. </value>
+  </data>
+  <data name="TextoHoraApertura" xml:space="preserve">
+    <value>Hora Apertura Caja</value>
+  </data>
+  <data name="ConfirmacionErrorNoControlado" xml:space="preserve">
+    <value>Error no controlado en la ejecución, por favor consulte los archivos de log. ¿Deseas continuar la ejecución?</value>
+  </data>
+</root>
