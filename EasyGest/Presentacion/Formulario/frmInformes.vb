@@ -7,8 +7,5 @@ Namespace Presentacion.Formulario
 
         End Sub
 
-        Private Sub ReportViewer1_Print(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles ReportViewer1.Print
-            'ReportViewer1.ParametersAreaVisible
-        End Sub
     End Class
 End Namespace

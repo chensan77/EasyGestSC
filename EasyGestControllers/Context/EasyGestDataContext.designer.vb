@@ -23,7 +23,7 @@ Imports System.Reflection
 
 Namespace Data.Context
 	
-	<Global.System.Data.Linq.Mapping.DatabaseAttribute(Name:="DataSource")>  _
+	<Global.System.Data.Linq.Mapping.DatabaseAttribute(Name:="EasyGest")>  _
 	Partial Public Class EasyGestDataContext
 		Inherits BaseDataContext
 		
@@ -152,12 +152,6 @@ Namespace Data.Context
     End Sub
     Partial Private Sub DeleteVWContactos(instance As Data.Entity.VWContactos)
     End Sub
-    Partial Private Sub InsertLineasPedido(instance As Data.Entity.LineasPedido)
-    End Sub
-    Partial Private Sub UpdateLineasPedido(instance As Data.Entity.LineasPedido)
-    End Sub
-    Partial Private Sub DeleteLineasPedido(instance As Data.Entity.LineasPedido)
-    End Sub
     Partial Private Sub InsertVWProveedores(instance As Data.Entity.VWProveedores)
     End Sub
     Partial Private Sub UpdateVWProveedores(instance As Data.Entity.VWProveedores)
@@ -218,12 +212,6 @@ Namespace Data.Context
     End Sub
     Partial Private Sub DeleteAlbaranes(instance As Data.Entity.Albaranes)
     End Sub
-    Partial Private Sub InsertPedidos(instance As Data.Entity.Pedidos)
-    End Sub
-    Partial Private Sub UpdatePedidos(instance As Data.Entity.Pedidos)
-    End Sub
-    Partial Private Sub DeletePedidos(instance As Data.Entity.Pedidos)
-    End Sub
     Partial Private Sub InsertCaracteristicasProducto(instance As Data.Entity.CaracteristicasProducto)
     End Sub
     Partial Private Sub UpdateCaracteristicasProducto(instance As Data.Entity.CaracteristicasProducto)
@@ -235,12 +223,6 @@ Namespace Data.Context
     Partial Private Sub UpdateDiseñosEtiqueta(instance As Data.Entity.DiseñosEtiqueta)
     End Sub
     Partial Private Sub DeleteDiseñosEtiqueta(instance As Data.Entity.DiseñosEtiqueta)
-    End Sub
-    Partial Private Sub InsertProductos(instance As Data.Entity.Productos)
-    End Sub
-    Partial Private Sub UpdateProductos(instance As Data.Entity.Productos)
-    End Sub
-    Partial Private Sub DeleteProductos(instance As Data.Entity.Productos)
     End Sub
     Partial Private Sub InsertMovimientosTarjeta(instance As Data.Entity.MovimientosTarjeta)
     End Sub
@@ -428,10 +410,28 @@ Namespace Data.Context
     End Sub
     Partial Private Sub DeleteLineasAlbaran(instance As Data.Entity.LineasAlbaran)
     End Sub
+    Partial Private Sub InsertLineasPedido(instance As Data.Entity.LineasPedido)
+    End Sub
+    Partial Private Sub UpdateLineasPedido(instance As Data.Entity.LineasPedido)
+    End Sub
+    Partial Private Sub DeleteLineasPedido(instance As Data.Entity.LineasPedido)
+    End Sub
+    Partial Private Sub InsertProductos(instance As Data.Entity.Productos)
+    End Sub
+    Partial Private Sub UpdateProductos(instance As Data.Entity.Productos)
+    End Sub
+    Partial Private Sub DeleteProductos(instance As Data.Entity.Productos)
+    End Sub
+    Partial Private Sub InsertPedidos(instance As Data.Entity.Pedidos)
+    End Sub
+    Partial Private Sub UpdatePedidos(instance As Data.Entity.Pedidos)
+    End Sub
+    Partial Private Sub DeletePedidos(instance As Data.Entity.Pedidos)
+    End Sub
     #End Region
 		
 		Public Sub New()
-			MyBase.New(Global.EasyGestControllers.My.MySettings.Default.DataSourceConnectionString1, mappingSource)
+			MyBase.New(Global.EasyGestControllers.My.MySettings.Default.EasyGestConnectionString4, mappingSource)
 			OnCreated
 		End Sub
 		
@@ -575,12 +575,6 @@ Namespace Data.Context
 			End Get
 		End Property
 		
-		Public ReadOnly Property LineasPedido() As System.Data.Linq.Table(Of Data.Entity.LineasPedido)
-			Get
-				Return Me.GetTable(Of Data.Entity.LineasPedido)
-			End Get
-		End Property
-		
 		Public ReadOnly Property VWProveedores() As System.Data.Linq.Table(Of Data.Entity.VWProveedores)
 			Get
 				Return Me.GetTable(Of Data.Entity.VWProveedores)
@@ -641,12 +635,6 @@ Namespace Data.Context
 			End Get
 		End Property
 		
-		Public ReadOnly Property Pedidos() As System.Data.Linq.Table(Of Data.Entity.Pedidos)
-			Get
-				Return Me.GetTable(Of Data.Entity.Pedidos)
-			End Get
-		End Property
-		
 		Public ReadOnly Property CaracteristicasProducto() As System.Data.Linq.Table(Of Data.Entity.CaracteristicasProducto)
 			Get
 				Return Me.GetTable(Of Data.Entity.CaracteristicasProducto)
@@ -656,12 +644,6 @@ Namespace Data.Context
 		Public ReadOnly Property DiseñosEtiqueta() As System.Data.Linq.Table(Of Data.Entity.DiseñosEtiqueta)
 			Get
 				Return Me.GetTable(Of Data.Entity.DiseñosEtiqueta)
-			End Get
-		End Property
-		
-		Public ReadOnly Property Productos() As System.Data.Linq.Table(Of Data.Entity.Productos)
-			Get
-				Return Me.GetTable(Of Data.Entity.Productos)
 			End Get
 		End Property
 		
@@ -848,6 +830,24 @@ Namespace Data.Context
 		Public ReadOnly Property LineasAlbaran() As System.Data.Linq.Table(Of Data.Entity.LineasAlbaran)
 			Get
 				Return Me.GetTable(Of Data.Entity.LineasAlbaran)
+			End Get
+		End Property
+		
+		Public ReadOnly Property LineasPedido() As System.Data.Linq.Table(Of Data.Entity.LineasPedido)
+			Get
+				Return Me.GetTable(Of Data.Entity.LineasPedido)
+			End Get
+		End Property
+		
+		Public ReadOnly Property Productos() As System.Data.Linq.Table(Of Data.Entity.Productos)
+			Get
+				Return Me.GetTable(Of Data.Entity.Productos)
+			End Get
+		End Property
+		
+		Public ReadOnly Property Pedidos() As System.Data.Linq.Table(Of Data.Entity.Pedidos)
+			Get
+				Return Me.GetTable(Of Data.Entity.Pedidos)
 			End Get
 		End Property
 		
@@ -4183,226 +4183,6 @@ Namespace Data.Entity
 					Me._FormaContactoEsp = value
 					Me.SendPropertyChanged("FormaContactoEsp")
 					Me.OnFormaContactoEspChanged
-				End If
-			End Set
-		End Property
-		
-		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-		
-		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-		
-		Protected Overridable Sub SendPropertyChanging()
-			If ((Me.PropertyChangingEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-			End If
-		End Sub
-		
-		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-			If ((Me.PropertyChangedEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-			End If
-		End Sub
-	End Class
-	
-	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.LineasPedido")>  _
-	Partial Public Class LineasPedido
-		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-		
-		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-		
-		Private _idLinea As Long
-		
-		Private _idPedido As Long
-		
-		Private _idProducto As System.Nullable(Of Long)
-		
-		Private _DescripcionProducto As String
-		
-		Private _Precio As Single
-		
-		Private _Cantidad As Single
-		
-		Private _Impuesto As System.Nullable(Of Short)
-		
-		Private _Importe As Single
-		
-    #Region "Definiciones de métodos de extensibilidad"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidLineaChanging(value As Long)
-    End Sub
-    Partial Private Sub OnidLineaChanged()
-    End Sub
-    Partial Private Sub OnidPedidoChanging(value As Long)
-    End Sub
-    Partial Private Sub OnidPedidoChanged()
-    End Sub
-    Partial Private Sub OnidProductoChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidProductoChanged()
-    End Sub
-    Partial Private Sub OnDescripcionProductoChanging(value As String)
-    End Sub
-    Partial Private Sub OnDescripcionProductoChanged()
-    End Sub
-    Partial Private Sub OnPrecioChanging(value As Single)
-    End Sub
-    Partial Private Sub OnPrecioChanged()
-    End Sub
-    Partial Private Sub OnCantidadChanging(value As Single)
-    End Sub
-    Partial Private Sub OnCantidadChanged()
-    End Sub
-    Partial Private Sub OnImpuestoChanging(value As System.Nullable(Of Short))
-    End Sub
-    Partial Private Sub OnImpuestoChanged()
-    End Sub
-    Partial Private Sub OnImporteChanging(value As Single)
-    End Sub
-    Partial Private Sub OnImporteChanged()
-    End Sub
-    #End Region
-		
-		Public Sub New()
-			MyBase.New
-			OnCreated
-		End Sub
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLinea", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-		Public Property idLinea() As Long
-			Get
-				Return Me._idLinea
-			End Get
-			Set
-				If ((Me._idLinea = value)  _
-							= false) Then
-					Me.OnidLineaChanging(value)
-					Me.SendPropertyChanging
-					Me._idLinea = value
-					Me.SendPropertyChanged("idLinea")
-					Me.OnidLineaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPedido", DbType:="BigInt NOT NULL")>  _
-		Public Property idPedido() As Long
-			Get
-				Return Me._idPedido
-			End Get
-			Set
-				If ((Me._idPedido = value)  _
-							= false) Then
-					Me.OnidPedidoChanging(value)
-					Me.SendPropertyChanging
-					Me._idPedido = value
-					Me.SendPropertyChanged("idPedido")
-					Me.OnidPedidoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idProducto", DbType:="BigInt")>  _
-		Public Property idProducto() As System.Nullable(Of Long)
-			Get
-				Return Me._idProducto
-			End Get
-			Set
-				If (Me._idProducto.Equals(value) = false) Then
-					Me.OnidProductoChanging(value)
-					Me.SendPropertyChanging
-					Me._idProducto = value
-					Me.SendPropertyChanged("idProducto")
-					Me.OnidProductoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DescripcionProducto", DbType:="NVarChar(200) NOT NULL", CanBeNull:=false)>  _
-		Public Property DescripcionProducto() As String
-			Get
-				Return Me._DescripcionProducto
-			End Get
-			Set
-				If (String.Equals(Me._DescripcionProducto, value) = false) Then
-					Me.OnDescripcionProductoChanging(value)
-					Me.SendPropertyChanging
-					Me._DescripcionProducto = value
-					Me.SendPropertyChanged("DescripcionProducto")
-					Me.OnDescripcionProductoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Precio", DbType:="Real NOT NULL")>  _
-		Public Property Precio() As Single
-			Get
-				Return Me._Precio
-			End Get
-			Set
-				If ((Me._Precio = value)  _
-							= false) Then
-					Me.OnPrecioChanging(value)
-					Me.SendPropertyChanging
-					Me._Precio = value
-					Me.SendPropertyChanged("Precio")
-					Me.OnPrecioChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Cantidad", DbType:="Real NOT NULL")>  _
-		Public Property Cantidad() As Single
-			Get
-				Return Me._Cantidad
-			End Get
-			Set
-				If ((Me._Cantidad = value)  _
-							= false) Then
-					Me.OnCantidadChanging(value)
-					Me.SendPropertyChanging
-					Me._Cantidad = value
-					Me.SendPropertyChanged("Cantidad")
-					Me.OnCantidadChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Impuesto", DbType:="SmallInt")>  _
-		Public Property Impuesto() As System.Nullable(Of Short)
-			Get
-				Return Me._Impuesto
-			End Get
-			Set
-				If (Me._Impuesto.Equals(value) = false) Then
-					Me.OnImpuestoChanging(value)
-					Me.SendPropertyChanging
-					Me._Impuesto = value
-					Me.SendPropertyChanged("Impuesto")
-					Me.OnImpuestoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Importe", AutoSync:=AutoSync.Always, DbType:="Real NOT NULL", IsDbGenerated:=true, UpdateCheck:=UpdateCheck.Never)>  _
-		Public Property Importe() As Single
-			Get
-				Return Me._Importe
-			End Get
-			Set
-				If ((Me._Importe = value)  _
-							= false) Then
-					Me.OnImporteChanging(value)
-					Me.SendPropertyChanging
-					Me._Importe = value
-					Me.SendPropertyChanged("Importe")
-					Me.OnImporteChanged
 				End If
 			End Set
 		End Property
@@ -8197,249 +7977,6 @@ Namespace Data.Entity
 		End Sub
 	End Class
 	
-	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Pedidos")>  _
-	Partial Public Class Pedidos
-		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-		
-		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-		
-		Private _idPedido As Long
-		
-		Private _idProveedor As System.Nullable(Of Long)
-		
-		Private _idUsuarioEmitido As System.Nullable(Of Long)
-		
-		Private _NumPedido As String
-		
-		Private _FPedido As Date
-		
-		Private _FCreacion As Date
-		
-		Private _Pago As Single
-		
-		Private _Pagado As Boolean
-		
-		Private _NumeracionPedido As Long
-		
-    #Region "Definiciones de métodos de extensibilidad"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidPedidoChanging(value As Long)
-    End Sub
-    Partial Private Sub OnidPedidoChanged()
-    End Sub
-    Partial Private Sub OnidProveedorChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidProveedorChanged()
-    End Sub
-    Partial Private Sub OnidUsuarioEmitidoChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidUsuarioEmitidoChanged()
-    End Sub
-    Partial Private Sub OnNumPedidoChanging(value As String)
-    End Sub
-    Partial Private Sub OnNumPedidoChanged()
-    End Sub
-    Partial Private Sub OnFPedidoChanging(value As Date)
-    End Sub
-    Partial Private Sub OnFPedidoChanged()
-    End Sub
-    Partial Private Sub OnFCreacionChanging(value As Date)
-    End Sub
-    Partial Private Sub OnFCreacionChanged()
-    End Sub
-    Partial Private Sub OnPagoChanging(value As Single)
-    End Sub
-    Partial Private Sub OnPagoChanged()
-    End Sub
-    Partial Private Sub OnPagadoChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnPagadoChanged()
-    End Sub
-    Partial Private Sub OnNumeracionPedidoChanging(value As Long)
-    End Sub
-    Partial Private Sub OnNumeracionPedidoChanged()
-    End Sub
-    #End Region
-		
-		Public Sub New()
-			MyBase.New
-			OnCreated
-		End Sub
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPedido", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-		Public Property idPedido() As Long
-			Get
-				Return Me._idPedido
-			End Get
-			Set
-				If ((Me._idPedido = value)  _
-							= false) Then
-					Me.OnidPedidoChanging(value)
-					Me.SendPropertyChanging
-					Me._idPedido = value
-					Me.SendPropertyChanged("idPedido")
-					Me.OnidPedidoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idProveedor", DbType:="BigInt")>  _
-		Public Property idProveedor() As System.Nullable(Of Long)
-			Get
-				Return Me._idProveedor
-			End Get
-			Set
-				If (Me._idProveedor.Equals(value) = false) Then
-					Me.OnidProveedorChanging(value)
-					Me.SendPropertyChanging
-					Me._idProveedor = value
-					Me.SendPropertyChanged("idProveedor")
-					Me.OnidProveedorChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUsuarioEmitido", DbType:="BigInt")>  _
-		Public Property idUsuarioEmitido() As System.Nullable(Of Long)
-			Get
-				Return Me._idUsuarioEmitido
-			End Get
-			Set
-				If (Me._idUsuarioEmitido.Equals(value) = false) Then
-					Me.OnidUsuarioEmitidoChanging(value)
-					Me.SendPropertyChanging
-					Me._idUsuarioEmitido = value
-					Me.SendPropertyChanged("idUsuarioEmitido")
-					Me.OnidUsuarioEmitidoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NumPedido", AutoSync:=AutoSync.OnInsert, DbType:="VarChar(50) NOT NULL", CanBeNull:=false)>  _
-		Public Property NumPedido() As String
-			Get
-				Return Me._NumPedido
-			End Get
-			Set
-				If (String.Equals(Me._NumPedido, value) = false) Then
-					Me.OnNumPedidoChanging(value)
-					Me.SendPropertyChanging
-					Me._NumPedido = value
-					Me.SendPropertyChanged("NumPedido")
-					Me.OnNumPedidoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FPedido", DbType:="DateTime NOT NULL")>  _
-		Public Property FPedido() As Date
-			Get
-				Return Me._FPedido
-			End Get
-			Set
-				If ((Me._FPedido = value)  _
-							= false) Then
-					Me.OnFPedidoChanging(value)
-					Me.SendPropertyChanging
-					Me._FPedido = value
-					Me.SendPropertyChanged("FPedido")
-					Me.OnFPedidoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FCreacion", AutoSync:=AutoSync.OnInsert, DbType:="SmallDateTime NOT NULL")>  _
-		Public Property FCreacion() As Date
-			Get
-				Return Me._FCreacion
-			End Get
-			Set
-				If ((Me._FCreacion = value)  _
-							= false) Then
-					Me.OnFCreacionChanging(value)
-					Me.SendPropertyChanging
-					Me._FCreacion = value
-					Me.SendPropertyChanged("FCreacion")
-					Me.OnFCreacionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Pago", DbType:="Real NOT NULL")>  _
-		Public Property Pago() As Single
-			Get
-				Return Me._Pago
-			End Get
-			Set
-				If ((Me._Pago = value)  _
-							= false) Then
-					Me.OnPagoChanging(value)
-					Me.SendPropertyChanging
-					Me._Pago = value
-					Me.SendPropertyChanged("Pago")
-					Me.OnPagoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Pagado", DbType:="Bit NOT NULL")>  _
-		Public Property Pagado() As Boolean
-			Get
-				Return Me._Pagado
-			End Get
-			Set
-				If ((Me._Pagado = value)  _
-							= false) Then
-					Me.OnPagadoChanging(value)
-					Me.SendPropertyChanging
-					Me._Pagado = value
-					Me.SendPropertyChanged("Pagado")
-					Me.OnPagadoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NumeracionPedido", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL")>  _
-		Protected Friend Property NumeracionPedido() As Long
-			Get
-				Return Me._NumeracionPedido
-			End Get
-			Set
-				If ((Me._NumeracionPedido = value)  _
-							= false) Then
-					Me.OnNumeracionPedidoChanging(value)
-					Me.SendPropertyChanging
-					Me._NumeracionPedido = value
-					Me.SendPropertyChanged("NumeracionPedido")
-					Me.OnNumeracionPedidoChanged
-				End If
-			End Set
-		End Property
-		
-		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-		
-		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-		
-		Protected Overridable Sub SendPropertyChanging()
-			If ((Me.PropertyChangingEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-			End If
-		End Sub
-		
-		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-			If ((Me.PropertyChangedEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-			End If
-		End Sub
-	End Class
-	
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.CaracteristicasProducto")>  _
 	Partial Public Class CaracteristicasProducto
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
@@ -8720,605 +8257,6 @@ Namespace Data.Entity
 					Me._XMLDiseño = value
 					Me.SendPropertyChanged("XMLDiseño")
 					Me.OnXMLDiseñoChanged
-				End If
-			End Set
-		End Property
-		
-		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-		
-		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-		
-		Protected Overridable Sub SendPropertyChanging()
-			If ((Me.PropertyChangingEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-			End If
-		End Sub
-		
-		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-			If ((Me.PropertyChangedEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-			End If
-		End Sub
-	End Class
-	
-	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Productos")>  _
-	Partial Public Class Productos
-		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-		
-		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-		
-		Private _idProducto As Long
-		
-		Private _idUnidadMedida As System.Nullable(Of Long)
-		
-		Private _idFamilia As System.Nullable(Of Long)
-		
-		Private _idMarca As System.Nullable(Of Long)
-		
-		Private _idUbicacion As System.Nullable(Of Long)
-		
-		Private _idOferta As System.Nullable(Of Long)
-		
-		Private _idImpuesto As System.Nullable(Of Short)
-		
-		Private _Referencia As String
-		
-		Private _Descripcion As String
-		
-		Private _DescripcionLarga As String
-		
-		Private _Coste As Single
-		
-		Private _PrecioVenta As Single
-		
-		Private _Descuento As System.Nullable(Of Single)
-		
-		Private _UnidadXCaja As System.Nullable(Of Single)
-		
-		Private _StockSuelto As System.Nullable(Of Single)
-		
-		Private _StockCaja As System.Nullable(Of Single)
-		
-		Private _UnidadVenta As Single
-		
-		Private _ControlStock As Boolean
-		
-		Private _PrecioVariable As Boolean
-		
-		Private _Observacion As String
-		
-		Private _FCreacion As Date
-		
-		Private _FModificacion As System.Nullable(Of Date)
-		
-		Private _Activo As Boolean
-		
-		Private _PrecioImpInc As Boolean
-		
-		Private _Fidelizable As Boolean
-		
-    #Region "Definiciones de métodos de extensibilidad"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidProductoChanging(value As Long)
-    End Sub
-    Partial Private Sub OnidProductoChanged()
-    End Sub
-    Partial Private Sub OnidUnidadMedidaChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidUnidadMedidaChanged()
-    End Sub
-    Partial Private Sub OnidFamiliaChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidFamiliaChanged()
-    End Sub
-    Partial Private Sub OnidMarcaChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidMarcaChanged()
-    End Sub
-    Partial Private Sub OnidUbicacionChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidUbicacionChanged()
-    End Sub
-    Partial Private Sub OnidOfertaChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidOfertaChanged()
-    End Sub
-    Partial Private Sub OnidImpuestoChanging(value As System.Nullable(Of Short))
-    End Sub
-    Partial Private Sub OnidImpuestoChanged()
-    End Sub
-    Partial Private Sub OnReferenciaChanging(value As String)
-    End Sub
-    Partial Private Sub OnReferenciaChanged()
-    End Sub
-    Partial Private Sub OnDescripcionChanging(value As String)
-    End Sub
-    Partial Private Sub OnDescripcionChanged()
-    End Sub
-    Partial Private Sub OnDescripcionLargaChanging(value As String)
-    End Sub
-    Partial Private Sub OnDescripcionLargaChanged()
-    End Sub
-    Partial Private Sub OnCosteChanging(value As Single)
-    End Sub
-    Partial Private Sub OnCosteChanged()
-    End Sub
-    Partial Private Sub OnPrecioVentaChanging(value As Single)
-    End Sub
-    Partial Private Sub OnPrecioVentaChanged()
-    End Sub
-    Partial Private Sub OnDescuentoChanging(value As System.Nullable(Of Single))
-    End Sub
-    Partial Private Sub OnDescuentoChanged()
-    End Sub
-    Partial Private Sub OnUnidadXCajaChanging(value As System.Nullable(Of Single))
-    End Sub
-    Partial Private Sub OnUnidadXCajaChanged()
-    End Sub
-    Partial Private Sub OnStockSueltoChanging(value As System.Nullable(Of Single))
-    End Sub
-    Partial Private Sub OnStockSueltoChanged()
-    End Sub
-    Partial Private Sub OnStockCajaChanging(value As System.Nullable(Of Single))
-    End Sub
-    Partial Private Sub OnStockCajaChanged()
-    End Sub
-    Partial Private Sub OnUnidadVentaChanging(value As Single)
-    End Sub
-    Partial Private Sub OnUnidadVentaChanged()
-    End Sub
-    Partial Private Sub OnControlStockChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnControlStockChanged()
-    End Sub
-    Partial Private Sub OnPrecioVariableChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnPrecioVariableChanged()
-    End Sub
-    Partial Private Sub OnObservacionChanging(value As String)
-    End Sub
-    Partial Private Sub OnObservacionChanged()
-    End Sub
-    Partial Private Sub OnFCreacionChanging(value As Date)
-    End Sub
-    Partial Private Sub OnFCreacionChanged()
-    End Sub
-    Partial Private Sub OnFModificacionChanging(value As System.Nullable(Of Date))
-    End Sub
-    Partial Private Sub OnFModificacionChanged()
-    End Sub
-    Partial Private Sub OnActivoChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnActivoChanged()
-    End Sub
-    Partial Private Sub OnPrecioImpIncChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnPrecioImpIncChanged()
-    End Sub
-    Partial Private Sub OnFidelizableChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnFidelizableChanged()
-    End Sub
-    #End Region
-		
-		Public Sub New()
-			MyBase.New
-			OnCreated
-		End Sub
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idProducto", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-		Public Property idProducto() As Long
-			Get
-				Return Me._idProducto
-			End Get
-			Set
-				If ((Me._idProducto = value)  _
-							= false) Then
-					Me.OnidProductoChanging(value)
-					Me.SendPropertyChanging
-					Me._idProducto = value
-					Me.SendPropertyChanged("idProducto")
-					Me.OnidProductoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUnidadMedida", DbType:="BigInt")>  _
-		Public Property idUnidadMedida() As System.Nullable(Of Long)
-			Get
-				Return Me._idUnidadMedida
-			End Get
-			Set
-				If (Me._idUnidadMedida.Equals(value) = false) Then
-					Me.OnidUnidadMedidaChanging(value)
-					Me.SendPropertyChanging
-					Me._idUnidadMedida = value
-					Me.SendPropertyChanged("idUnidadMedida")
-					Me.OnidUnidadMedidaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idFamilia", DbType:="BigInt")>  _
-		Public Property idFamilia() As System.Nullable(Of Long)
-			Get
-				Return Me._idFamilia
-			End Get
-			Set
-				If (Me._idFamilia.Equals(value) = false) Then
-					Me.OnidFamiliaChanging(value)
-					Me.SendPropertyChanging
-					Me._idFamilia = value
-					Me.SendPropertyChanged("idFamilia")
-					Me.OnidFamiliaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idMarca", DbType:="BigInt")>  _
-		Public Property idMarca() As System.Nullable(Of Long)
-			Get
-				Return Me._idMarca
-			End Get
-			Set
-				If (Me._idMarca.Equals(value) = false) Then
-					Me.OnidMarcaChanging(value)
-					Me.SendPropertyChanging
-					Me._idMarca = value
-					Me.SendPropertyChanged("idMarca")
-					Me.OnidMarcaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUbicacion", DbType:="BigInt")>  _
-		Public Property idUbicacion() As System.Nullable(Of Long)
-			Get
-				Return Me._idUbicacion
-			End Get
-			Set
-				If (Me._idUbicacion.Equals(value) = false) Then
-					Me.OnidUbicacionChanging(value)
-					Me.SendPropertyChanging
-					Me._idUbicacion = value
-					Me.SendPropertyChanged("idUbicacion")
-					Me.OnidUbicacionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idOferta", DbType:="BigInt")>  _
-		Public Property idOferta() As System.Nullable(Of Long)
-			Get
-				Return Me._idOferta
-			End Get
-			Set
-				If (Me._idOferta.Equals(value) = false) Then
-					Me.OnidOfertaChanging(value)
-					Me.SendPropertyChanging
-					Me._idOferta = value
-					Me.SendPropertyChanged("idOferta")
-					Me.OnidOfertaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idImpuesto", DbType:="SmallInt")>  _
-		Public Property idImpuesto() As System.Nullable(Of Short)
-			Get
-				Return Me._idImpuesto
-			End Get
-			Set
-				If (Me._idImpuesto.Equals(value) = false) Then
-					Me.OnidImpuestoChanging(value)
-					Me.SendPropertyChanging
-					Me._idImpuesto = value
-					Me.SendPropertyChanged("idImpuesto")
-					Me.OnidImpuestoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Referencia", DbType:="VarChar(50) NOT NULL", CanBeNull:=false)>  _
-		Public Property Referencia() As String
-			Get
-				Return Me._Referencia
-			End Get
-			Set
-				If (String.Equals(Me._Referencia, value) = false) Then
-					Me.OnReferenciaChanging(value)
-					Me.SendPropertyChanging
-					Me._Referencia = value
-					Me.SendPropertyChanged("Referencia")
-					Me.OnReferenciaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Descripcion", DbType:="NVarChar(200) NOT NULL", CanBeNull:=false)>  _
-		Public Property Descripcion() As String
-			Get
-				Return Me._Descripcion
-			End Get
-			Set
-				If (String.Equals(Me._Descripcion, value) = false) Then
-					Me.OnDescripcionChanging(value)
-					Me.SendPropertyChanging
-					Me._Descripcion = value
-					Me.SendPropertyChanged("Descripcion")
-					Me.OnDescripcionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DescripcionLarga", DbType:="NVarChar(1000)")>  _
-		Public Property DescripcionLarga() As String
-			Get
-				Return Me._DescripcionLarga
-			End Get
-			Set
-				If (String.Equals(Me._DescripcionLarga, value) = false) Then
-					Me.OnDescripcionLargaChanging(value)
-					Me.SendPropertyChanging
-					Me._DescripcionLarga = value
-					Me.SendPropertyChanged("DescripcionLarga")
-					Me.OnDescripcionLargaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Coste", DbType:="Real NOT NULL")>  _
-		Public Property Coste() As Single
-			Get
-				Return Me._Coste
-			End Get
-			Set
-				If ((Me._Coste = value)  _
-							= false) Then
-					Me.OnCosteChanging(value)
-					Me.SendPropertyChanging
-					Me._Coste = value
-					Me.SendPropertyChanged("Coste")
-					Me.OnCosteChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioVenta", DbType:="Real NOT NULL")>  _
-		Public Property PrecioVenta() As Single
-			Get
-				Return Me._PrecioVenta
-			End Get
-			Set
-				If ((Me._PrecioVenta = value)  _
-							= false) Then
-					Me.OnPrecioVentaChanging(value)
-					Me.SendPropertyChanging
-					Me._PrecioVenta = value
-					Me.SendPropertyChanged("PrecioVenta")
-					Me.OnPrecioVentaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Descuento", DbType:="Real")>  _
-		Public Property Descuento() As System.Nullable(Of Single)
-			Get
-				Return Me._Descuento
-			End Get
-			Set
-				If (Me._Descuento.Equals(value) = false) Then
-					Me.OnDescuentoChanging(value)
-					Me.SendPropertyChanging
-					Me._Descuento = value
-					Me.SendPropertyChanged("Descuento")
-					Me.OnDescuentoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UnidadXCaja", DbType:="Real")>  _
-		Public Property UnidadXCaja() As System.Nullable(Of Single)
-			Get
-				Return Me._UnidadXCaja
-			End Get
-			Set
-				If (Me._UnidadXCaja.Equals(value) = false) Then
-					Me.OnUnidadXCajaChanging(value)
-					Me.SendPropertyChanging
-					Me._UnidadXCaja = value
-					Me.SendPropertyChanged("UnidadXCaja")
-					Me.OnUnidadXCajaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_StockSuelto", DbType:="Real")>  _
-		Public Property StockSuelto() As System.Nullable(Of Single)
-			Get
-				Return Me._StockSuelto
-			End Get
-			Set
-				If (Me._StockSuelto.Equals(value) = false) Then
-					Me.OnStockSueltoChanging(value)
-					Me.SendPropertyChanging
-					Me._StockSuelto = value
-					Me.SendPropertyChanged("StockSuelto")
-					Me.OnStockSueltoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_StockCaja", DbType:="Real")>  _
-		Public Property StockCaja() As System.Nullable(Of Single)
-			Get
-				Return Me._StockCaja
-			End Get
-			Set
-				If (Me._StockCaja.Equals(value) = false) Then
-					Me.OnStockCajaChanging(value)
-					Me.SendPropertyChanging
-					Me._StockCaja = value
-					Me.SendPropertyChanged("StockCaja")
-					Me.OnStockCajaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UnidadVenta", DbType:="Real NOT NULL")>  _
-		Public Property UnidadVenta() As Single
-			Get
-				Return Me._UnidadVenta
-			End Get
-			Set
-				If ((Me._UnidadVenta = value)  _
-							= false) Then
-					Me.OnUnidadVentaChanging(value)
-					Me.SendPropertyChanging
-					Me._UnidadVenta = value
-					Me.SendPropertyChanged("UnidadVenta")
-					Me.OnUnidadVentaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ControlStock", DbType:="Bit NOT NULL")>  _
-		Public Property ControlStock() As Boolean
-			Get
-				Return Me._ControlStock
-			End Get
-			Set
-				If ((Me._ControlStock = value)  _
-							= false) Then
-					Me.OnControlStockChanging(value)
-					Me.SendPropertyChanging
-					Me._ControlStock = value
-					Me.SendPropertyChanged("ControlStock")
-					Me.OnControlStockChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioVariable", DbType:="Bit NOT NULL")>  _
-		Public Property PrecioVariable() As Boolean
-			Get
-				Return Me._PrecioVariable
-			End Get
-			Set
-				If ((Me._PrecioVariable = value)  _
-							= false) Then
-					Me.OnPrecioVariableChanging(value)
-					Me.SendPropertyChanging
-					Me._PrecioVariable = value
-					Me.SendPropertyChanged("PrecioVariable")
-					Me.OnPrecioVariableChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Observacion", DbType:="NVarChar(1000)")>  _
-		Public Property Observacion() As String
-			Get
-				Return Me._Observacion
-			End Get
-			Set
-				If (String.Equals(Me._Observacion, value) = false) Then
-					Me.OnObservacionChanging(value)
-					Me.SendPropertyChanging
-					Me._Observacion = value
-					Me.SendPropertyChanged("Observacion")
-					Me.OnObservacionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FCreacion", AutoSync:=AutoSync.OnInsert, DbType:="SmallDateTime NOT NULL")>  _
-		Public Property FCreacion() As Date
-			Get
-				Return Me._FCreacion
-			End Get
-			Set
-				If ((Me._FCreacion = value)  _
-							= false) Then
-					Me.OnFCreacionChanging(value)
-					Me.SendPropertyChanging
-					Me._FCreacion = value
-					Me.SendPropertyChanged("FCreacion")
-					Me.OnFCreacionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FModificacion", AutoSync:=AutoSync.Always, DbType:="SmallDateTime")>  _
-		Public Property FModificacion() As System.Nullable(Of Date)
-			Get
-				Return Me._FModificacion
-			End Get
-			Set
-				If (Me._FModificacion.Equals(value) = false) Then
-					Me.OnFModificacionChanging(value)
-					Me.SendPropertyChanging
-					Me._FModificacion = value
-					Me.SendPropertyChanged("FModificacion")
-					Me.OnFModificacionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Activo", DbType:="Bit NOT NULL")>  _
-		Public Property Activo() As Boolean
-			Get
-				Return Me._Activo
-			End Get
-			Set
-				If ((Me._Activo = value)  _
-							= false) Then
-					Me.OnActivoChanging(value)
-					Me.SendPropertyChanging
-					Me._Activo = value
-					Me.SendPropertyChanged("Activo")
-					Me.OnActivoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioImpInc", DbType:="Bit NOT NULL")>  _
-		Public Property PrecioImpInc() As Boolean
-			Get
-				Return Me._PrecioImpInc
-			End Get
-			Set
-				If ((Me._PrecioImpInc = value)  _
-							= false) Then
-					Me.OnPrecioImpIncChanging(value)
-					Me.SendPropertyChanging
-					Me._PrecioImpInc = value
-					Me.SendPropertyChanged("PrecioImpInc")
-					Me.OnPrecioImpIncChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Fidelizable", DbType:="Bit NOT NULL")>  _
-		Public Property Fidelizable() As Boolean
-			Get
-				Return Me._Fidelizable
-			End Get
-			Set
-				If ((Me._Fidelizable = value)  _
-							= false) Then
-					Me.OnFidelizableChanging(value)
-					Me.SendPropertyChanging
-					Me._Fidelizable = value
-					Me.SendPropertyChanged("Fidelizable")
-					Me.OnFidelizableChanged
 				End If
 			End Set
 		End Property
@@ -19441,6 +18379,1182 @@ Namespace Data.Entity
 					Me._Importe = value
 					Me.SendPropertyChanged("Importe")
 					Me.OnImporteChanged
+				End If
+			End Set
+		End Property
+		
+		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+		
+		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+		
+		Protected Overridable Sub SendPropertyChanging()
+			If ((Me.PropertyChangingEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+			End If
+		End Sub
+		
+		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+			If ((Me.PropertyChangedEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+			End If
+		End Sub
+	End Class
+	
+	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.LineasPedido")>  _
+	Partial Public Class LineasPedido
+		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+		
+		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+		
+		Private _idLinea As Long
+		
+		Private _idPedido As Long
+		
+		Private _idProducto As System.Nullable(Of Long)
+		
+		Private _DescripcionProducto As String
+		
+		Private _Precio As Single
+		
+		Private _Cantidad As Single
+		
+		Private _Impuesto As System.Nullable(Of Single)
+		
+		Private _Recargo As System.Nullable(Of Single)
+		
+		Private _Descuento As Single
+		
+		Private _PrecioFinal As Single
+		
+		Private _Importe As Single
+		
+    #Region "Definiciones de métodos de extensibilidad"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidLineaChanging(value As Long)
+    End Sub
+    Partial Private Sub OnidLineaChanged()
+    End Sub
+    Partial Private Sub OnidPedidoChanging(value As Long)
+    End Sub
+    Partial Private Sub OnidPedidoChanged()
+    End Sub
+    Partial Private Sub OnidProductoChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidProductoChanged()
+    End Sub
+    Partial Private Sub OnDescripcionProductoChanging(value As String)
+    End Sub
+    Partial Private Sub OnDescripcionProductoChanged()
+    End Sub
+    Partial Private Sub OnPrecioChanging(value As Single)
+    End Sub
+    Partial Private Sub OnPrecioChanged()
+    End Sub
+    Partial Private Sub OnCantidadChanging(value As Single)
+    End Sub
+    Partial Private Sub OnCantidadChanged()
+    End Sub
+    Partial Private Sub OnImpuestoChanging(value As System.Nullable(Of Single))
+    End Sub
+    Partial Private Sub OnImpuestoChanged()
+    End Sub
+    Partial Private Sub OnRecargoChanging(value As System.Nullable(Of Single))
+    End Sub
+    Partial Private Sub OnRecargoChanged()
+    End Sub
+    Partial Private Sub OnDescuentoChanging(value As Single)
+    End Sub
+    Partial Private Sub OnDescuentoChanged()
+    End Sub
+    Partial Private Sub OnPrecioFinalChanging(value As Single)
+    End Sub
+    Partial Private Sub OnPrecioFinalChanged()
+    End Sub
+    Partial Private Sub OnImporteChanging(value As Single)
+    End Sub
+    Partial Private Sub OnImporteChanged()
+    End Sub
+    #End Region
+		
+		Public Sub New()
+			MyBase.New
+			OnCreated
+		End Sub
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idLinea", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+		Public Property idLinea() As Long
+			Get
+				Return Me._idLinea
+			End Get
+			Set
+				If ((Me._idLinea = value)  _
+							= false) Then
+					Me.OnidLineaChanging(value)
+					Me.SendPropertyChanging
+					Me._idLinea = value
+					Me.SendPropertyChanged("idLinea")
+					Me.OnidLineaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPedido", DbType:="BigInt NOT NULL")>  _
+		Public Property idPedido() As Long
+			Get
+				Return Me._idPedido
+			End Get
+			Set
+				If ((Me._idPedido = value)  _
+							= false) Then
+					Me.OnidPedidoChanging(value)
+					Me.SendPropertyChanging
+					Me._idPedido = value
+					Me.SendPropertyChanged("idPedido")
+					Me.OnidPedidoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idProducto", DbType:="BigInt")>  _
+		Public Property idProducto() As System.Nullable(Of Long)
+			Get
+				Return Me._idProducto
+			End Get
+			Set
+				If (Me._idProducto.Equals(value) = false) Then
+					Me.OnidProductoChanging(value)
+					Me.SendPropertyChanging
+					Me._idProducto = value
+					Me.SendPropertyChanged("idProducto")
+					Me.OnidProductoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DescripcionProducto", DbType:="NVarChar(200) NOT NULL", CanBeNull:=false)>  _
+		Public Property DescripcionProducto() As String
+			Get
+				Return Me._DescripcionProducto
+			End Get
+			Set
+				If (String.Equals(Me._DescripcionProducto, value) = false) Then
+					Me.OnDescripcionProductoChanging(value)
+					Me.SendPropertyChanging
+					Me._DescripcionProducto = value
+					Me.SendPropertyChanged("DescripcionProducto")
+					Me.OnDescripcionProductoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Precio", DbType:="Real NOT NULL")>  _
+		Public Property Precio() As Single
+			Get
+				Return Me._Precio
+			End Get
+			Set
+				If ((Me._Precio = value)  _
+							= false) Then
+					Me.OnPrecioChanging(value)
+					Me.SendPropertyChanging
+					Me._Precio = value
+					Me.SendPropertyChanged("Precio")
+					Me.OnPrecioChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Cantidad", DbType:="Real NOT NULL")>  _
+		Public Property Cantidad() As Single
+			Get
+				Return Me._Cantidad
+			End Get
+			Set
+				If ((Me._Cantidad = value)  _
+							= false) Then
+					Me.OnCantidadChanging(value)
+					Me.SendPropertyChanging
+					Me._Cantidad = value
+					Me.SendPropertyChanged("Cantidad")
+					Me.OnCantidadChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Impuesto", DbType:="Real")>  _
+		Public Property Impuesto() As System.Nullable(Of Single)
+			Get
+				Return Me._Impuesto
+			End Get
+			Set
+				If (Me._Impuesto.Equals(value) = false) Then
+					Me.OnImpuestoChanging(value)
+					Me.SendPropertyChanging
+					Me._Impuesto = value
+					Me.SendPropertyChanged("Impuesto")
+					Me.OnImpuestoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Recargo", DbType:="Real")>  _
+		Public Property Recargo() As System.Nullable(Of Single)
+			Get
+				Return Me._Recargo
+			End Get
+			Set
+				If (Me._Recargo.Equals(value) = false) Then
+					Me.OnRecargoChanging(value)
+					Me.SendPropertyChanging
+					Me._Recargo = value
+					Me.SendPropertyChanged("Recargo")
+					Me.OnRecargoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Descuento", DbType:="Real NOT NULL")>  _
+		Public Property Descuento() As Single
+			Get
+				Return Me._Descuento
+			End Get
+			Set
+				If ((Me._Descuento = value)  _
+							= false) Then
+					Me.OnDescuentoChanging(value)
+					Me.SendPropertyChanging
+					Me._Descuento = value
+					Me.SendPropertyChanged("Descuento")
+					Me.OnDescuentoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioFinal", DbType:="Real NOT NULL")>  _
+		Public Property PrecioFinal() As Single
+			Get
+				Return Me._PrecioFinal
+			End Get
+			Set
+				If ((Me._PrecioFinal = value)  _
+							= false) Then
+					Me.OnPrecioFinalChanging(value)
+					Me.SendPropertyChanging
+					Me._PrecioFinal = value
+					Me.SendPropertyChanged("PrecioFinal")
+					Me.OnPrecioFinalChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Importe", AutoSync:=AutoSync.Always, DbType:="Real NOT NULL", IsDbGenerated:=true, UpdateCheck:=UpdateCheck.Never)>  _
+		Public Property Importe() As Single
+			Get
+				Return Me._Importe
+			End Get
+			Set
+				If ((Me._Importe = value)  _
+							= false) Then
+					Me.OnImporteChanging(value)
+					Me.SendPropertyChanging
+					Me._Importe = value
+					Me.SendPropertyChanged("Importe")
+					Me.OnImporteChanged
+				End If
+			End Set
+		End Property
+		
+		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+		
+		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+		
+		Protected Overridable Sub SendPropertyChanging()
+			If ((Me.PropertyChangingEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+			End If
+		End Sub
+		
+		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+			If ((Me.PropertyChangedEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+			End If
+		End Sub
+	End Class
+	
+	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Productos")>  _
+	Partial Public Class Productos
+		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+		
+		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+		
+		Private _idProducto As Long
+		
+		Private _idUnidadMedida As System.Nullable(Of Long)
+		
+		Private _idFamilia As System.Nullable(Of Long)
+		
+		Private _idMarca As System.Nullable(Of Long)
+		
+		Private _idUbicacion As System.Nullable(Of Long)
+		
+		Private _idOferta As System.Nullable(Of Long)
+		
+		Private _idImpuesto As System.Nullable(Of Short)
+		
+		Private _Referencia As String
+		
+		Private _Descripcion As String
+		
+		Private _DescripcionLarga As String
+		
+		Private _Coste As Single
+		
+		Private _PrecioVenta As Single
+		
+		Private _Descuento As System.Nullable(Of Single)
+		
+		Private _UnidadXCaja As System.Nullable(Of Single)
+		
+		Private _StockSuelto As System.Nullable(Of Single)
+		
+		Private _StockCaja As System.Nullable(Of Single)
+		
+		Private _UnidadVenta As Single
+		
+		Private _ControlStock As Boolean
+		
+		Private _PrecioVariable As Boolean
+		
+		Private _Observacion As String
+		
+		Private _FCreacion As Date
+		
+		Private _FModificacion As System.Nullable(Of Date)
+		
+		Private _Activo As Boolean
+		
+		Private _PrecioImpInc As Boolean
+		
+		Private _Fidelizable As Boolean
+		
+		Private _PorcentajeFacturacion As Double
+		
+    #Region "Definiciones de métodos de extensibilidad"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidProductoChanging(value As Long)
+    End Sub
+    Partial Private Sub OnidProductoChanged()
+    End Sub
+    Partial Private Sub OnidUnidadMedidaChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidUnidadMedidaChanged()
+    End Sub
+    Partial Private Sub OnidFamiliaChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidFamiliaChanged()
+    End Sub
+    Partial Private Sub OnidMarcaChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidMarcaChanged()
+    End Sub
+    Partial Private Sub OnidUbicacionChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidUbicacionChanged()
+    End Sub
+    Partial Private Sub OnidOfertaChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidOfertaChanged()
+    End Sub
+    Partial Private Sub OnidImpuestoChanging(value As System.Nullable(Of Short))
+    End Sub
+    Partial Private Sub OnidImpuestoChanged()
+    End Sub
+    Partial Private Sub OnReferenciaChanging(value As String)
+    End Sub
+    Partial Private Sub OnReferenciaChanged()
+    End Sub
+    Partial Private Sub OnDescripcionChanging(value As String)
+    End Sub
+    Partial Private Sub OnDescripcionChanged()
+    End Sub
+    Partial Private Sub OnDescripcionLargaChanging(value As String)
+    End Sub
+    Partial Private Sub OnDescripcionLargaChanged()
+    End Sub
+    Partial Private Sub OnCosteChanging(value As Single)
+    End Sub
+    Partial Private Sub OnCosteChanged()
+    End Sub
+    Partial Private Sub OnPrecioVentaChanging(value As Single)
+    End Sub
+    Partial Private Sub OnPrecioVentaChanged()
+    End Sub
+    Partial Private Sub OnDescuentoChanging(value As System.Nullable(Of Single))
+    End Sub
+    Partial Private Sub OnDescuentoChanged()
+    End Sub
+    Partial Private Sub OnUnidadXCajaChanging(value As System.Nullable(Of Single))
+    End Sub
+    Partial Private Sub OnUnidadXCajaChanged()
+    End Sub
+    Partial Private Sub OnStockSueltoChanging(value As System.Nullable(Of Single))
+    End Sub
+    Partial Private Sub OnStockSueltoChanged()
+    End Sub
+    Partial Private Sub OnStockCajaChanging(value As System.Nullable(Of Single))
+    End Sub
+    Partial Private Sub OnStockCajaChanged()
+    End Sub
+    Partial Private Sub OnUnidadVentaChanging(value As Single)
+    End Sub
+    Partial Private Sub OnUnidadVentaChanged()
+    End Sub
+    Partial Private Sub OnControlStockChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnControlStockChanged()
+    End Sub
+    Partial Private Sub OnPrecioVariableChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnPrecioVariableChanged()
+    End Sub
+    Partial Private Sub OnObservacionChanging(value As String)
+    End Sub
+    Partial Private Sub OnObservacionChanged()
+    End Sub
+    Partial Private Sub OnFCreacionChanging(value As Date)
+    End Sub
+    Partial Private Sub OnFCreacionChanged()
+    End Sub
+    Partial Private Sub OnFModificacionChanging(value As System.Nullable(Of Date))
+    End Sub
+    Partial Private Sub OnFModificacionChanged()
+    End Sub
+    Partial Private Sub OnActivoChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnActivoChanged()
+    End Sub
+    Partial Private Sub OnPrecioImpIncChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnPrecioImpIncChanged()
+    End Sub
+    Partial Private Sub OnFidelizableChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnFidelizableChanged()
+    End Sub
+    Partial Private Sub OnPorcentajeFacturacionChanging(value As Double)
+    End Sub
+    Partial Private Sub OnPorcentajeFacturacionChanged()
+    End Sub
+    #End Region
+		
+		Public Sub New()
+			MyBase.New
+			OnCreated
+		End Sub
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idProducto", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+		Public Property idProducto() As Long
+			Get
+				Return Me._idProducto
+			End Get
+			Set
+				If ((Me._idProducto = value)  _
+							= false) Then
+					Me.OnidProductoChanging(value)
+					Me.SendPropertyChanging
+					Me._idProducto = value
+					Me.SendPropertyChanged("idProducto")
+					Me.OnidProductoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUnidadMedida", DbType:="BigInt")>  _
+		Public Property idUnidadMedida() As System.Nullable(Of Long)
+			Get
+				Return Me._idUnidadMedida
+			End Get
+			Set
+				If (Me._idUnidadMedida.Equals(value) = false) Then
+					Me.OnidUnidadMedidaChanging(value)
+					Me.SendPropertyChanging
+					Me._idUnidadMedida = value
+					Me.SendPropertyChanged("idUnidadMedida")
+					Me.OnidUnidadMedidaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idFamilia", DbType:="BigInt")>  _
+		Public Property idFamilia() As System.Nullable(Of Long)
+			Get
+				Return Me._idFamilia
+			End Get
+			Set
+				If (Me._idFamilia.Equals(value) = false) Then
+					Me.OnidFamiliaChanging(value)
+					Me.SendPropertyChanging
+					Me._idFamilia = value
+					Me.SendPropertyChanged("idFamilia")
+					Me.OnidFamiliaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idMarca", DbType:="BigInt")>  _
+		Public Property idMarca() As System.Nullable(Of Long)
+			Get
+				Return Me._idMarca
+			End Get
+			Set
+				If (Me._idMarca.Equals(value) = false) Then
+					Me.OnidMarcaChanging(value)
+					Me.SendPropertyChanging
+					Me._idMarca = value
+					Me.SendPropertyChanged("idMarca")
+					Me.OnidMarcaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUbicacion", DbType:="BigInt")>  _
+		Public Property idUbicacion() As System.Nullable(Of Long)
+			Get
+				Return Me._idUbicacion
+			End Get
+			Set
+				If (Me._idUbicacion.Equals(value) = false) Then
+					Me.OnidUbicacionChanging(value)
+					Me.SendPropertyChanging
+					Me._idUbicacion = value
+					Me.SendPropertyChanged("idUbicacion")
+					Me.OnidUbicacionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idOferta", DbType:="BigInt")>  _
+		Public Property idOferta() As System.Nullable(Of Long)
+			Get
+				Return Me._idOferta
+			End Get
+			Set
+				If (Me._idOferta.Equals(value) = false) Then
+					Me.OnidOfertaChanging(value)
+					Me.SendPropertyChanging
+					Me._idOferta = value
+					Me.SendPropertyChanged("idOferta")
+					Me.OnidOfertaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idImpuesto", DbType:="SmallInt")>  _
+		Public Property idImpuesto() As System.Nullable(Of Short)
+			Get
+				Return Me._idImpuesto
+			End Get
+			Set
+				If (Me._idImpuesto.Equals(value) = false) Then
+					Me.OnidImpuestoChanging(value)
+					Me.SendPropertyChanging
+					Me._idImpuesto = value
+					Me.SendPropertyChanged("idImpuesto")
+					Me.OnidImpuestoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Referencia", DbType:="VarChar(50) NOT NULL", CanBeNull:=false)>  _
+		Public Property Referencia() As String
+			Get
+				Return Me._Referencia
+			End Get
+			Set
+				If (String.Equals(Me._Referencia, value) = false) Then
+					Me.OnReferenciaChanging(value)
+					Me.SendPropertyChanging
+					Me._Referencia = value
+					Me.SendPropertyChanged("Referencia")
+					Me.OnReferenciaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Descripcion", DbType:="NVarChar(200) NOT NULL", CanBeNull:=false)>  _
+		Public Property Descripcion() As String
+			Get
+				Return Me._Descripcion
+			End Get
+			Set
+				If (String.Equals(Me._Descripcion, value) = false) Then
+					Me.OnDescripcionChanging(value)
+					Me.SendPropertyChanging
+					Me._Descripcion = value
+					Me.SendPropertyChanged("Descripcion")
+					Me.OnDescripcionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DescripcionLarga", DbType:="NVarChar(1000)")>  _
+		Public Property DescripcionLarga() As String
+			Get
+				Return Me._DescripcionLarga
+			End Get
+			Set
+				If (String.Equals(Me._DescripcionLarga, value) = false) Then
+					Me.OnDescripcionLargaChanging(value)
+					Me.SendPropertyChanging
+					Me._DescripcionLarga = value
+					Me.SendPropertyChanged("DescripcionLarga")
+					Me.OnDescripcionLargaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Coste", DbType:="Real NOT NULL")>  _
+		Public Property Coste() As Single
+			Get
+				Return Me._Coste
+			End Get
+			Set
+				If ((Me._Coste = value)  _
+							= false) Then
+					Me.OnCosteChanging(value)
+					Me.SendPropertyChanging
+					Me._Coste = value
+					Me.SendPropertyChanged("Coste")
+					Me.OnCosteChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioVenta", DbType:="Real NOT NULL")>  _
+		Public Property PrecioVenta() As Single
+			Get
+				Return Me._PrecioVenta
+			End Get
+			Set
+				If ((Me._PrecioVenta = value)  _
+							= false) Then
+					Me.OnPrecioVentaChanging(value)
+					Me.SendPropertyChanging
+					Me._PrecioVenta = value
+					Me.SendPropertyChanged("PrecioVenta")
+					Me.OnPrecioVentaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Descuento", DbType:="Real")>  _
+		Public Property Descuento() As System.Nullable(Of Single)
+			Get
+				Return Me._Descuento
+			End Get
+			Set
+				If (Me._Descuento.Equals(value) = false) Then
+					Me.OnDescuentoChanging(value)
+					Me.SendPropertyChanging
+					Me._Descuento = value
+					Me.SendPropertyChanged("Descuento")
+					Me.OnDescuentoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UnidadXCaja", DbType:="Real")>  _
+		Public Property UnidadXCaja() As System.Nullable(Of Single)
+			Get
+				Return Me._UnidadXCaja
+			End Get
+			Set
+				If (Me._UnidadXCaja.Equals(value) = false) Then
+					Me.OnUnidadXCajaChanging(value)
+					Me.SendPropertyChanging
+					Me._UnidadXCaja = value
+					Me.SendPropertyChanged("UnidadXCaja")
+					Me.OnUnidadXCajaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_StockSuelto", DbType:="Real")>  _
+		Public Property StockSuelto() As System.Nullable(Of Single)
+			Get
+				Return Me._StockSuelto
+			End Get
+			Set
+				If (Me._StockSuelto.Equals(value) = false) Then
+					Me.OnStockSueltoChanging(value)
+					Me.SendPropertyChanging
+					Me._StockSuelto = value
+					Me.SendPropertyChanged("StockSuelto")
+					Me.OnStockSueltoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_StockCaja", DbType:="Real")>  _
+		Public Property StockCaja() As System.Nullable(Of Single)
+			Get
+				Return Me._StockCaja
+			End Get
+			Set
+				If (Me._StockCaja.Equals(value) = false) Then
+					Me.OnStockCajaChanging(value)
+					Me.SendPropertyChanging
+					Me._StockCaja = value
+					Me.SendPropertyChanged("StockCaja")
+					Me.OnStockCajaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UnidadVenta", DbType:="Real NOT NULL")>  _
+		Public Property UnidadVenta() As Single
+			Get
+				Return Me._UnidadVenta
+			End Get
+			Set
+				If ((Me._UnidadVenta = value)  _
+							= false) Then
+					Me.OnUnidadVentaChanging(value)
+					Me.SendPropertyChanging
+					Me._UnidadVenta = value
+					Me.SendPropertyChanged("UnidadVenta")
+					Me.OnUnidadVentaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ControlStock", DbType:="Bit NOT NULL")>  _
+		Public Property ControlStock() As Boolean
+			Get
+				Return Me._ControlStock
+			End Get
+			Set
+				If ((Me._ControlStock = value)  _
+							= false) Then
+					Me.OnControlStockChanging(value)
+					Me.SendPropertyChanging
+					Me._ControlStock = value
+					Me.SendPropertyChanged("ControlStock")
+					Me.OnControlStockChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioVariable", DbType:="Bit NOT NULL")>  _
+		Public Property PrecioVariable() As Boolean
+			Get
+				Return Me._PrecioVariable
+			End Get
+			Set
+				If ((Me._PrecioVariable = value)  _
+							= false) Then
+					Me.OnPrecioVariableChanging(value)
+					Me.SendPropertyChanging
+					Me._PrecioVariable = value
+					Me.SendPropertyChanged("PrecioVariable")
+					Me.OnPrecioVariableChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Observacion", DbType:="NVarChar(1000)")>  _
+		Public Property Observacion() As String
+			Get
+				Return Me._Observacion
+			End Get
+			Set
+				If (String.Equals(Me._Observacion, value) = false) Then
+					Me.OnObservacionChanging(value)
+					Me.SendPropertyChanging
+					Me._Observacion = value
+					Me.SendPropertyChanged("Observacion")
+					Me.OnObservacionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FCreacion", DbType:="SmallDateTime NOT NULL")>  _
+		Public Property FCreacion() As Date
+			Get
+				Return Me._FCreacion
+			End Get
+			Set
+				If ((Me._FCreacion = value)  _
+							= false) Then
+					Me.OnFCreacionChanging(value)
+					Me.SendPropertyChanging
+					Me._FCreacion = value
+					Me.SendPropertyChanged("FCreacion")
+					Me.OnFCreacionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FModificacion", DbType:="SmallDateTime")>  _
+		Public Property FModificacion() As System.Nullable(Of Date)
+			Get
+				Return Me._FModificacion
+			End Get
+			Set
+				If (Me._FModificacion.Equals(value) = false) Then
+					Me.OnFModificacionChanging(value)
+					Me.SendPropertyChanging
+					Me._FModificacion = value
+					Me.SendPropertyChanged("FModificacion")
+					Me.OnFModificacionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Activo", DbType:="Bit NOT NULL")>  _
+		Public Property Activo() As Boolean
+			Get
+				Return Me._Activo
+			End Get
+			Set
+				If ((Me._Activo = value)  _
+							= false) Then
+					Me.OnActivoChanging(value)
+					Me.SendPropertyChanging
+					Me._Activo = value
+					Me.SendPropertyChanged("Activo")
+					Me.OnActivoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioImpInc", DbType:="Bit NOT NULL")>  _
+		Public Property PrecioImpInc() As Boolean
+			Get
+				Return Me._PrecioImpInc
+			End Get
+			Set
+				If ((Me._PrecioImpInc = value)  _
+							= false) Then
+					Me.OnPrecioImpIncChanging(value)
+					Me.SendPropertyChanging
+					Me._PrecioImpInc = value
+					Me.SendPropertyChanged("PrecioImpInc")
+					Me.OnPrecioImpIncChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Fidelizable", DbType:="Bit NOT NULL")>  _
+		Public Property Fidelizable() As Boolean
+			Get
+				Return Me._Fidelizable
+			End Get
+			Set
+				If ((Me._Fidelizable = value)  _
+							= false) Then
+					Me.OnFidelizableChanging(value)
+					Me.SendPropertyChanging
+					Me._Fidelizable = value
+					Me.SendPropertyChanged("Fidelizable")
+					Me.OnFidelizableChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PorcentajeFacturacion", DbType:="Float NOT NULL")>  _
+		Public Property PorcentajeFacturacion() As Double
+			Get
+				Return Me._PorcentajeFacturacion
+			End Get
+			Set
+				If ((Me._PorcentajeFacturacion = value)  _
+							= false) Then
+					Me.OnPorcentajeFacturacionChanging(value)
+					Me.SendPropertyChanging
+					Me._PorcentajeFacturacion = value
+					Me.SendPropertyChanged("PorcentajeFacturacion")
+					Me.OnPorcentajeFacturacionChanged
+				End If
+			End Set
+		End Property
+		
+		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+		
+		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+		
+		Protected Overridable Sub SendPropertyChanging()
+			If ((Me.PropertyChangingEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+			End If
+		End Sub
+		
+		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+			If ((Me.PropertyChangedEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+			End If
+		End Sub
+	End Class
+	
+	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Pedidos")>  _
+	Partial Public Class Pedidos
+		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+		
+		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+		
+		Private _idPedido As Long
+		
+		Private _idProveedor As System.Nullable(Of Long)
+		
+		Private _idUsuarioEmitido As System.Nullable(Of Long)
+		
+		Private _NumPedido As String
+		
+		Private _FPedido As Date
+		
+		Private _FCreacion As Date
+		
+		Private _Pago As Single
+		
+		Private _Pagado As Boolean
+		
+		Private _NumeracionPedido As Long
+		
+		Private _ImpIndIncluido As Boolean
+		
+    #Region "Definiciones de métodos de extensibilidad"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidPedidoChanging(value As Long)
+    End Sub
+    Partial Private Sub OnidPedidoChanged()
+    End Sub
+    Partial Private Sub OnidProveedorChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidProveedorChanged()
+    End Sub
+    Partial Private Sub OnidUsuarioEmitidoChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidUsuarioEmitidoChanged()
+    End Sub
+    Partial Private Sub OnNumPedidoChanging(value As String)
+    End Sub
+    Partial Private Sub OnNumPedidoChanged()
+    End Sub
+    Partial Private Sub OnFPedidoChanging(value As Date)
+    End Sub
+    Partial Private Sub OnFPedidoChanged()
+    End Sub
+    Partial Private Sub OnFCreacionChanging(value As Date)
+    End Sub
+    Partial Private Sub OnFCreacionChanged()
+    End Sub
+    Partial Private Sub OnPagoChanging(value As Single)
+    End Sub
+    Partial Private Sub OnPagoChanged()
+    End Sub
+    Partial Private Sub OnPagadoChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnPagadoChanged()
+    End Sub
+    Partial Private Sub OnNumeracionPedidoChanging(value As Long)
+    End Sub
+    Partial Private Sub OnNumeracionPedidoChanged()
+    End Sub
+    Partial Private Sub OnImpIndIncluidoChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnImpIndIncluidoChanged()
+    End Sub
+    #End Region
+		
+		Public Sub New()
+			MyBase.New
+			OnCreated
+		End Sub
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPedido", DbType:="BigInt NOT NULL", IsPrimaryKey:=true)>  _
+		Public Property idPedido() As Long
+			Get
+				Return Me._idPedido
+			End Get
+			Set
+				If ((Me._idPedido = value)  _
+							= false) Then
+					Me.OnidPedidoChanging(value)
+					Me.SendPropertyChanging
+					Me._idPedido = value
+					Me.SendPropertyChanged("idPedido")
+					Me.OnidPedidoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idProveedor", DbType:="BigInt")>  _
+		Public Property idProveedor() As System.Nullable(Of Long)
+			Get
+				Return Me._idProveedor
+			End Get
+			Set
+				If (Me._idProveedor.Equals(value) = false) Then
+					Me.OnidProveedorChanging(value)
+					Me.SendPropertyChanging
+					Me._idProveedor = value
+					Me.SendPropertyChanged("idProveedor")
+					Me.OnidProveedorChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUsuarioEmitido", DbType:="BigInt")>  _
+		Public Property idUsuarioEmitido() As System.Nullable(Of Long)
+			Get
+				Return Me._idUsuarioEmitido
+			End Get
+			Set
+				If (Me._idUsuarioEmitido.Equals(value) = false) Then
+					Me.OnidUsuarioEmitidoChanging(value)
+					Me.SendPropertyChanging
+					Me._idUsuarioEmitido = value
+					Me.SendPropertyChanged("idUsuarioEmitido")
+					Me.OnidUsuarioEmitidoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NumPedido", DbType:="VarChar(50) NOT NULL", CanBeNull:=false)>  _
+		Public Property NumPedido() As String
+			Get
+				Return Me._NumPedido
+			End Get
+			Set
+				If (String.Equals(Me._NumPedido, value) = false) Then
+					Me.OnNumPedidoChanging(value)
+					Me.SendPropertyChanging
+					Me._NumPedido = value
+					Me.SendPropertyChanged("NumPedido")
+					Me.OnNumPedidoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FPedido", DbType:="DateTime NOT NULL")>  _
+		Public Property FPedido() As Date
+			Get
+				Return Me._FPedido
+			End Get
+			Set
+				If ((Me._FPedido = value)  _
+							= false) Then
+					Me.OnFPedidoChanging(value)
+					Me.SendPropertyChanging
+					Me._FPedido = value
+					Me.SendPropertyChanged("FPedido")
+					Me.OnFPedidoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FCreacion", DbType:="SmallDateTime NOT NULL")>  _
+		Public Property FCreacion() As Date
+			Get
+				Return Me._FCreacion
+			End Get
+			Set
+				If ((Me._FCreacion = value)  _
+							= false) Then
+					Me.OnFCreacionChanging(value)
+					Me.SendPropertyChanging
+					Me._FCreacion = value
+					Me.SendPropertyChanged("FCreacion")
+					Me.OnFCreacionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Pago", DbType:="Real NOT NULL")>  _
+		Public Property Pago() As Single
+			Get
+				Return Me._Pago
+			End Get
+			Set
+				If ((Me._Pago = value)  _
+							= false) Then
+					Me.OnPagoChanging(value)
+					Me.SendPropertyChanging
+					Me._Pago = value
+					Me.SendPropertyChanged("Pago")
+					Me.OnPagoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Pagado", DbType:="Bit NOT NULL")>  _
+		Public Property Pagado() As Boolean
+			Get
+				Return Me._Pagado
+			End Get
+			Set
+				If ((Me._Pagado = value)  _
+							= false) Then
+					Me.OnPagadoChanging(value)
+					Me.SendPropertyChanging
+					Me._Pagado = value
+					Me.SendPropertyChanged("Pagado")
+					Me.OnPagadoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NumeracionPedido", DbType:="BigInt NOT NULL")>  _
+		Public Property NumeracionPedido() As Long
+			Get
+				Return Me._NumeracionPedido
+			End Get
+			Set
+				If ((Me._NumeracionPedido = value)  _
+							= false) Then
+					Me.OnNumeracionPedidoChanging(value)
+					Me.SendPropertyChanging
+					Me._NumeracionPedido = value
+					Me.SendPropertyChanged("NumeracionPedido")
+					Me.OnNumeracionPedidoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ImpIndIncluido", DbType:="Bit NOT NULL")>  _
+		Public Property ImpIndIncluido() As Boolean
+			Get
+				Return Me._ImpIndIncluido
+			End Get
+			Set
+				If ((Me._ImpIndIncluido = value)  _
+							= false) Then
+					Me.OnImpIndIncluidoChanging(value)
+					Me.SendPropertyChanging
+					Me._ImpIndIncluido = value
+					Me.SendPropertyChanged("ImpIndIncluido")
+					Me.OnImpIndIncluidoChanged
 				End If
 			End Set
 		End Property
