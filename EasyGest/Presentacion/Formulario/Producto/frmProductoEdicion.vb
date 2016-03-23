@@ -58,7 +58,7 @@ Namespace Presentacion.Formulario.Producto
             ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
             If idProducto = -1 Then
                 _producto = ProductosController.NewItem()
-                _producto.PrecioImpInc = gConfGlobal.ImpuestoIncluidoPrecio
+                _producto.PrecioImpInc = gConfGlobal.ImpuestoIncluidoPrecioVenta
                 _producto.idImpuesto = gImpuestoPorDefecto.idImpuesto
                 _producto.ControlStock = gConfGlobal.ControlStock
                 _action = System.Data.Linq.ChangeAction.Insert

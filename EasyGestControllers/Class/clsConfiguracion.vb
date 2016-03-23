@@ -99,7 +99,7 @@ Namespace Data.Configuracion
 
     Public Class ConfiguracionGlobal
 
-        Public Property ImpuestoIncluidoPrecio As Boolean = False
+        Public Property ImpuestoIncluidoPrecioVenta As Boolean = False
         Public Property ImprimirSiempreVenta As Boolean = False
         Public Property ImprimirSiemprePedido As Boolean = False
         Public Property PorcentajeGanancia As Single = 0.0
@@ -124,7 +124,7 @@ Namespace Data.Configuracion
         Public Property CuantiaMinimoEmisionValeFidelizacion As Single = 0.0
         Public Property UsarImpuestoCompra As Boolean = True
         Public Property ControlCaja As Boolean = True
-        'Public Property RecargoIncluidoPrecio As Boolean = False
+        Public Property RecargoIncluidoPrecioVenta As Boolean = False
         Public Property ControlStock As Boolean = True
         Public Property PeriodoObtencionTarea As Integer = 7
         Public Property NumCopiaImpresaAlbaran As Integer = 1

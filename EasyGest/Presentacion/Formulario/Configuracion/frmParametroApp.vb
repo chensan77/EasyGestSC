@@ -49,8 +49,8 @@ Namespace Presentacion.Formulario.Configuracion
                         .UsarDecimalCantidad = chkDecimalEnCantidad.Checked
                         .FidelizacionModoGlobal = chkFormulaComun.Checked
                         .UsarImpuestoCompra = chkIgualarImpuesto.Checked
-                        .ImpuestoIncluidoPrecio = chkImpuestoIncluido.Checked
-                        .RecargoIncluidoPrecio = chkRecargoIncluido.Checked
+                        .ImpuestoIncluidoPrecioVenta = chkImpuestoIncluido.Checked
+                        .RecargoIncluidoPrecioVenta = chkRecargoIncluido.Checked
                         .Autentificar = chkIniciarAutentificando.Checked
                         .PermitirCrearProducto = chkPermitirCrearProducto.Checked
                         .FacturarSiempreVenta = chkSiempreFacturar.Checked
@@ -66,7 +66,7 @@ Namespace Presentacion.Formulario.Configuracion
                         .ValidezBeneficioFidelizacion = CInt(spinValidezBeneficio.Value)
                         .IndiceCorrectorVenta = spinPorcVenta.Value
                         .ValidezAlbaran = CShort(spinValidezAlbaran.Value)
-                        .ValidezVale = CShort(spinValidezVales.Value)                        
+                        .ValidezVale = CShort(spinValidezVales.Value)
                     End With
 
                     Dim listaparam As List(Of Configuraciones) = EasyGestControllers.Data.Configuracion.ConfiguracionGlobal.DescargarConfiguracion(gConfGlobal)
@@ -77,7 +77,7 @@ Namespace Presentacion.Formulario.Configuracion
                     End Using
                     If dialogresult = Windows.Forms.DialogResult.Yes Or dialogresult = Windows.Forms.DialogResult.No Then
                         Using c As New TarjetasFidelizacionController
-                            c.ActualizarCondicionTarjeta(CSng(txtBaseEuro.Value), CSng(txtEquivalenteEuroBeneficio.Value), _
+                            c.ActualizarCondicionTarjeta(CSng(txtBaseEuro.Value), CSng(txtEquivalenteEuroBeneficio.Value),
                                                          CSng(txtBasePunto.Value), CSng(txtEquivalenciaPuntoEuro.Value), dialogresult = Windows.Forms.DialogResult.Yes)
                         End Using
                     End If
@@ -94,7 +94,7 @@ Namespace Presentacion.Formulario.Configuracion
         End Sub
 
         Private Sub frmParametroApp_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-            pvParametro.SelectedPage = pvpParametroLocal            
+            pvParametro.SelectedPage = pvpParametroLocal
             pvParametro.Pages.Remove(pvpParametroFidelizacion)
             For Each printer As String In System.Drawing.Printing.PrinterSettings.InstalledPrinters
                 ddlImpresoraTicket.Items.Add(printer)
@@ -117,8 +117,8 @@ Namespace Presentacion.Formulario.Configuracion
                 chkDecimalEnCantidad.Checked = .UsarDecimalCantidad
                 chkFormulaComun.Checked = .FidelizacionModoGlobal
                 chkIgualarImpuesto.Checked = .UsarImpuestoCompra
-                chkImpuestoIncluido.Checked = .ImpuestoIncluidoPrecio
-                chkRecargoIncluido.Checked = .RecargoIncluidoPrecio
+                chkImpuestoIncluido.Checked = .ImpuestoIncluidoPrecioVenta
+                chkRecargoIncluido.Checked = .RecargoIncluidoPrecioVenta
                 chkIniciarAutentificando.Checked = .Autentificar
                 chkPermitirCrearProducto.Checked = .PermitirCrearProducto
                 chkSiempreFacturar.Checked = .FacturarSiempreVenta
