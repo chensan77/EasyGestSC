@@ -116,12 +116,6 @@ Namespace Data.Context
     End Sub
     Partial Private Sub DeleteMarcas(instance As Data.Entity.Marcas)
     End Sub
-    Partial Private Sub InsertConfiguraciones(instance As Data.Entity.Configuraciones)
-    End Sub
-    Partial Private Sub UpdateConfiguraciones(instance As Data.Entity.Configuraciones)
-    End Sub
-    Partial Private Sub DeleteConfiguraciones(instance As Data.Entity.Configuraciones)
-    End Sub
     Partial Private Sub InsertVWDatosBancario(instance As Data.Entity.VWDatosBancario)
     End Sub
     Partial Private Sub UpdateVWDatosBancario(instance As Data.Entity.VWDatosBancario)
@@ -428,10 +422,16 @@ Namespace Data.Context
     End Sub
     Partial Private Sub DeletePedidos(instance As Data.Entity.Pedidos)
     End Sub
+    Partial Private Sub InsertConfiguraciones(instance As Data.Entity.Configuraciones)
+    End Sub
+    Partial Private Sub UpdateConfiguraciones(instance As Data.Entity.Configuraciones)
+    End Sub
+    Partial Private Sub DeleteConfiguraciones(instance As Data.Entity.Configuraciones)
+    End Sub
     #End Region
 		
 		Public Sub New()
-			MyBase.New(Global.EasyGestControllers.My.MySettings.Default.EasyGestConnectionString4, mappingSource)
+			MyBase.New(Global.EasyGestControllers.My.MySettings.Default.EasyGestConnectionString5, mappingSource)
 			OnCreated
 		End Sub
 		
@@ -536,12 +536,6 @@ Namespace Data.Context
 		Friend ReadOnly Property Marcas() As System.Data.Linq.Table(Of Data.Entity.Marcas)
 			Get
 				Return Me.GetTable(Of Data.Entity.Marcas)
-			End Get
-		End Property
-		
-		Friend ReadOnly Property Configuraciones() As System.Data.Linq.Table(Of Data.Entity.Configuraciones)
-			Get
-				Return Me.GetTable(Of Data.Entity.Configuraciones)
 			End Get
 		End Property
 		
@@ -848,6 +842,12 @@ Namespace Data.Context
 		Public ReadOnly Property Pedidos() As System.Data.Linq.Table(Of Data.Entity.Pedidos)
 			Get
 				Return Me.GetTable(Of Data.Entity.Pedidos)
+			End Get
+		End Property
+		
+		Public ReadOnly Property Configuraciones() As System.Data.Linq.Table(Of Data.Entity.Configuraciones)
+			Get
+				Return Me.GetTable(Of Data.Entity.Configuraciones)
 			End Get
 		End Property
 		
@@ -2599,111 +2599,6 @@ Namespace Data.Entity
 					Me._CodigoEAN = value
 					Me.SendPropertyChanged("CodigoEAN")
 					Me.OnCodigoEANChanged
-				End If
-			End Set
-		End Property
-		
-		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-		
-		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-		
-		Protected Overridable Sub SendPropertyChanging()
-			If ((Me.PropertyChangingEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-			End If
-		End Sub
-		
-		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-			If ((Me.PropertyChangedEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-			End If
-		End Sub
-	End Class
-	
-	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Configuraciones")>  _
-	Partial Public Class Configuraciones
-		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-		
-		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-		
-		Private _Parametro As String
-		
-		Private _Valor As String
-		
-		Private _idPuesto As System.Nullable(Of Long)
-		
-    #Region "Definiciones de métodos de extensibilidad"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnParametroChanging(value As String)
-    End Sub
-    Partial Private Sub OnParametroChanged()
-    End Sub
-    Partial Private Sub OnValorChanging(value As String)
-    End Sub
-    Partial Private Sub OnValorChanged()
-    End Sub
-    Partial Private Sub OnidPuestoChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidPuestoChanged()
-    End Sub
-    #End Region
-		
-		Public Sub New()
-			MyBase.New
-			OnCreated
-		End Sub
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Parametro", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false, IsPrimaryKey:=true)>  _
-		Public Property Parametro() As String
-			Get
-				Return Me._Parametro
-			End Get
-			Set
-				If (String.Equals(Me._Parametro, value) = false) Then
-					Me.OnParametroChanging(value)
-					Me.SendPropertyChanging
-					Me._Parametro = value
-					Me.SendPropertyChanged("Parametro")
-					Me.OnParametroChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Valor", DbType:="NVarChar(100) NOT NULL", CanBeNull:=false)>  _
-		Public Property Valor() As String
-			Get
-				Return Me._Valor
-			End Get
-			Set
-				If (String.Equals(Me._Valor, value) = false) Then
-					Me.OnValorChanging(value)
-					Me.SendPropertyChanging
-					Me._Valor = value
-					Me.SendPropertyChanged("Valor")
-					Me.OnValorChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPuesto", DbType:="BigInt")>  _
-		Public Property idPuesto() As System.Nullable(Of Long)
-			Get
-				Return Me._idPuesto
-			End Get
-			Set
-				If (Me._idPuesto.Equals(value) = false) Then
-					Me.OnidPuestoChanging(value)
-					Me.SendPropertyChanging
-					Me._idPuesto = value
-					Me.SendPropertyChanged("idPuesto")
-					Me.OnidPuestoChanged
 				End If
 			End Set
 		End Property
@@ -5053,7 +4948,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Logo", DbType:="Image", UpdateCheck:=UpdateCheck.Never)>  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Logo", DbType:="Image", CanBeNull:=true, UpdateCheck:=UpdateCheck.Never)>  _
 		Public Property Logo() As System.Data.Linq.Binary
 			Get
 				Return Me._Logo
@@ -10264,7 +10159,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Imagen", DbType:="Image", UpdateCheck:=UpdateCheck.Never)>  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Imagen", DbType:="Image", CanBeNull:=true, UpdateCheck:=UpdateCheck.Never)>  _
 		Public Property Imagen() As System.Data.Linq.Binary
 			Get
 				Return Me._Imagen
@@ -10459,7 +10354,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Imagen", DbType:="Image", UpdateCheck:=UpdateCheck.Never)>  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Imagen", DbType:="Image", CanBeNull:=true, UpdateCheck:=UpdateCheck.Never)>  _
 		Public Property Imagen() As System.Data.Linq.Binary
 			Get
 				Return Me._Imagen
@@ -17403,9 +17298,9 @@ Namespace Data.Entity
     End Sub
     Partial Private Sub OnDescuentoHabitualChanged()
     End Sub
-    Partial Private Sub OnPrecioImpIndIncluidoChanging(value As Boolean)
+    Partial Private Sub OnPrecioImpIncChanging(value As Boolean)
     End Sub
-    Partial Private Sub OnPrecioImpIndIncluidoChanged()
+    Partial Private Sub OnPrecioImpIncChanged()
     End Sub
     Partial Private Sub OnFCreacionChanging(value As Date)
     End Sub
@@ -17714,18 +17609,18 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioImpIndIncluido", DbType:="Bit NOT NULL")>  _
-		Public Property PrecioImpIndIncluido() As Boolean
+		Public Property PrecioImpInc() As Boolean
 			Get
 				Return Me._PrecioImpIndIncluido
 			End Get
 			Set
 				If ((Me._PrecioImpIndIncluido = value)  _
 							= false) Then
-					Me.OnPrecioImpIndIncluidoChanging(value)
+					Me.OnPrecioImpIncChanging(value)
 					Me.SendPropertyChanging
 					Me._PrecioImpIndIncluido = value
-					Me.SendPropertyChanged("PrecioImpIndIncluido")
-					Me.OnPrecioImpIndIncluidoChanged
+					Me.SendPropertyChanged("PrecioImpInc")
+					Me.OnPrecioImpIncChanged
 				End If
 			End Set
 		End Property
@@ -19555,6 +19450,112 @@ Namespace Data.Entity
 					Me._ImpIndIncluido = value
 					Me.SendPropertyChanged("ImpIndIncluido")
 					Me.OnImpIndIncluidoChanged
+				End If
+			End Set
+		End Property
+		
+		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+		
+		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+		
+		Protected Overridable Sub SendPropertyChanging()
+			If ((Me.PropertyChangingEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+			End If
+		End Sub
+		
+		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+			If ((Me.PropertyChangedEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+			End If
+		End Sub
+	End Class
+	
+	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Configuraciones")>  _
+	Partial Public Class Configuraciones
+		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+		
+		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+		
+		Private _Parametro As String
+		
+		Private _Valor As String
+		
+		Private _idEmpresa As Long
+		
+    #Region "Definiciones de métodos de extensibilidad"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnParametroChanging(value As String)
+    End Sub
+    Partial Private Sub OnParametroChanged()
+    End Sub
+    Partial Private Sub OnValorChanging(value As String)
+    End Sub
+    Partial Private Sub OnValorChanged()
+    End Sub
+    Partial Private Sub OnidEmpresaChanging(value As Long)
+    End Sub
+    Partial Private Sub OnidEmpresaChanged()
+    End Sub
+    #End Region
+		
+		Public Sub New()
+			MyBase.New
+			OnCreated
+		End Sub
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Parametro", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false, IsPrimaryKey:=true)>  _
+		Public Property Parametro() As String
+			Get
+				Return Me._Parametro
+			End Get
+			Set
+				If (String.Equals(Me._Parametro, value) = false) Then
+					Me.OnParametroChanging(value)
+					Me.SendPropertyChanging
+					Me._Parametro = value
+					Me.SendPropertyChanged("Parametro")
+					Me.OnParametroChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Valor", DbType:="NVarChar(100) NOT NULL", CanBeNull:=false)>  _
+		Public Property Valor() As String
+			Get
+				Return Me._Valor
+			End Get
+			Set
+				If (String.Equals(Me._Valor, value) = false) Then
+					Me.OnValorChanging(value)
+					Me.SendPropertyChanging
+					Me._Valor = value
+					Me.SendPropertyChanged("Valor")
+					Me.OnValorChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idEmpresa", DbType:="BigInt NOT NULL")>  _
+		Public Property idEmpresa() As Long
+			Get
+				Return Me._idEmpresa
+			End Get
+			Set
+				If ((Me._idEmpresa = value)  _
+							= false) Then
+					Me.OnidEmpresaChanging(value)
+					Me.SendPropertyChanging
+					Me._idEmpresa = value
+					Me.SendPropertyChanged("idEmpresa")
+					Me.OnidEmpresaChanged
 				End If
 			End Set
 		End Property

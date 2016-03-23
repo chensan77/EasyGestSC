@@ -128,6 +128,17 @@ Namespace My
                 Return CType(Me("EasyGestConnectionString4"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=CHENZHANG-PC;Initial Catalog=EasyGest;Persist Security Info=True;User"& _ 
+            " ID=easygest;Password=eg2016")>  _
+        Public ReadOnly Property EasyGestConnectionString5() As String
+            Get
+                Return CType(Me("EasyGestConnectionString5"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 
