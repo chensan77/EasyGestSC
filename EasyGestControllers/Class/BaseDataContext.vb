@@ -12,7 +12,7 @@ Namespace Data
         End Sub
 
         Public Sub New(ByVal connectionstring As String, ByVal mapping As System.Data.Linq.Mapping.MappingSource)
-            MyBase.New(Util.Comunes.CadenaConexion, mapping)
+            MyBase.New(connectionstring, mapping)
         End Sub
 
         Public Sub New(ByVal connection As System.Data.IDbConnection, ByVal mapping As System.Data.Linq.Mapping.MappingSource)

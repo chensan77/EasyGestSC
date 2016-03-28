@@ -34,10 +34,12 @@ Namespace Presentacion.Formulario
                 e.Result = 1
                 Exit Sub
             Else
-                EasyGestControllers.Util.Comunes.CadenaConexion = GenerarCadenaConexion(gConfLocal.DbServidor, gConfLocal.DbCatalogo, gConfLocal.DbUsuario, gConfLocal.DbContrasña, gConfLocal.DbAuxiliar)
-                If Not EasyGestController.DataAccesible() Then
+                Dim cs As String = GenerarCadenaConexion(gConfLocal.DbServidor, gConfLocal.DbCatalogo, gConfLocal.DbUsuario, gConfLocal.DbContrasña, gConfLocal.DbAuxiliar)
+                If Not EasyGestController.DataAccesible(cs) Then
                     e.Result = 1
                     Exit Sub
+                Else
+                    EasyGestController.ResetConnectionString(cs)
                 End If
             End If
 
@@ -102,6 +104,7 @@ Namespace Presentacion.Formulario
                     frm.Usuario = gConfLocal.DbUsuario
                     frm.Contraseña = gConfLocal.DbContrasña
                     If frm.ShowDialog() = Windows.Forms.DialogResult.OK Then
+                        If gMostrarConfiguracionConexion Then gMostrarConfiguracionConexion = False
                         gConfLocal.DbServidor = frm.Servidor
                         gConfLocal.DbCatalogo = frm.Catalogo
                         gConfLocal.DbUsuario = frm.Usuario
@@ -112,7 +115,10 @@ Namespace Presentacion.Formulario
                         Me.Close()
                     End If
                 ElseIf CInt(e.Result) = 2 Then
-                    Dim frm As New Configuracion.frmEmpresa(False)
+                    Dim frm As New Configuracion.frmEmpresa(True)
+                    frm.ShowDialog()
+                    If gMostrarSelectorEmpresas Then gMostrarSelectorEmpresas = False
+                    bgwInicio.RunWorkerAsync()
 
                 Else
                     If gConfGlobal.Autentificar Then

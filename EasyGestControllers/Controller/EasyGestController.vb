@@ -9,10 +9,13 @@ Namespace Controller
 
     Public Class EasyGestController
 
-        Private Shared _tablesPrimaryKeys As Dictionary(Of String, List(Of String)) = EasyGestDataContext.GetTablesPrimaryKeys()
+        Private Shared _tablesPrimaryKeys As Dictionary(Of String, List(Of String)) = Nothing
 
         Public Shared Function GetPrimaryKeys(entityType As Type) As List(Of String)
             Dim keys As List(Of String) = New List(Of String)()
+            If IsNothing(_tablesPrimaryKeys) Then
+                _tablesPrimaryKeys = EasyGestDataContext.GetTablesPrimaryKeys()
+            End If
             If _tablesPrimaryKeys.TryGetValue(entityType.Name, keys) Then
                 Return keys
             Else
@@ -20,16 +23,31 @@ Namespace Controller
             End If
         End Function
 
-        Public Shared Function DataAccesible() As Boolean
+        'Public Shared Function DataAccesible() As Boolean
+        '    Dim result As Boolean
+        '    Try
+        '        result = EasyGestDataContext.DataBaseAccesible()
+        '    Catch ex As Exception
+        '        result = False
+        '    End Try
+        '    Return result
+        'End Function
+
+        Public Shared Function DataAccesible(cs As String) As Boolean
             Dim result As Boolean
             Try
-                result = EasyGestDataContext.DataBaseAccesible()
+                result = EasyGestDataContext.DataBaseAccesible(cs)
             Catch ex As Exception
                 result = False
             End Try
             Return result
         End Function
 
+        Public Shared Sub ResetConnectionString(cs As String)
+            If String.IsNullOrWhiteSpace(cs) Then Throw New ArgumentNullException()
+            Util.Comunes.CadenaConexion = cs
+            _tablesPrimaryKeys = EasyGestDataContext.GetTablesPrimaryKeys()
+        End Sub
     End Class
 
     Public Class AlbaranesController

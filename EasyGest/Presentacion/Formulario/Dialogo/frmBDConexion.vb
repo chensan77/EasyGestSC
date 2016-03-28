@@ -38,8 +38,7 @@
         End Sub
 
         Private Sub bgwProbar_DoWork(ByVal sender As Object, ByVal e As System.ComponentModel.DoWorkEventArgs) Handles bgwProbar.DoWork
-            EasyGestControllers.Util.Comunes.CadenaConexion = e.Argument.ToString()
-            _resulatdo = EasyGestController.DataAccesible()
+            _resulatdo = EasyGestController.DataAccesible(e.Argument.ToString())
         End Sub
 
         Private Sub bgwProbar_RunWorkerCompleted(ByVal sender As Object, ByVal e As System.ComponentModel.RunWorkerCompletedEventArgs) Handles bgwProbar.RunWorkerCompleted

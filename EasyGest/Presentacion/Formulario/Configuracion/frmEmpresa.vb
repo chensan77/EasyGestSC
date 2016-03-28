@@ -25,6 +25,7 @@ Namespace Presentacion.Formulario.Configuracion
             ConfigurarCommandBar(Me.cbstripeOrden)
             SplitPanel2.Collapsed = True
             btnAceptar.ButtonElement.Shortcuts.Add(New Telerik.WinControls.RadShortcut(Keys.Control, Keys.Enter))
+
             Try
                 ' cargar los comboboxs
                 Using control As New Controller.ProvinciasEspañolasController

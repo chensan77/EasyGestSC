@@ -1701,12 +1701,13 @@ Namespace Data.Context
 
     Partial Class EasyGestDataContext
 
-        Private Shared _context As EasyGestDataContext = New EasyGestDataContext()
+        'Private Shared _context As EasyGestDataContext
 
         Friend Const IDUSUARIOSUPER As Long = 0L
 
         Protected Friend Shared Function GetTablesPrimaryKeys() As Dictionary(Of String, List(Of String))
             Dim tablesPrimaryKeys As New Dictionary(Of String, List(Of String))()
+            Dim _context As EasyGestDataContext = New EasyGestDataContext()
             For Each model As System.Data.Linq.Mapping.MetaTable In _context.Mapping.GetTables()
                 Dim members As Collections.ObjectModel.ReadOnlyCollection(Of System.Data.Linq.Mapping.MetaDataMember) = model.RowType.IdentityMembers
                 Dim primaryKeys As New List(Of String)
@@ -1715,11 +1716,14 @@ Namespace Data.Context
                 Next
                 tablesPrimaryKeys.Add(model.RowType.Name, primaryKeys)
             Next
+            _context.Dispose()
             Return tablesPrimaryKeys
         End Function
 
-        Protected Friend Shared Function DataBaseAccesible() As Boolean
-            Return _context.DatabaseExists()
+        Protected Friend Shared Function DataBaseAccesible(cs As String) As Boolean
+            If String.IsNullOrWhiteSpace(cs) Then Throw New ArgumentNullException()
+            Dim ctx As New EasyGestDataContext(cs)
+            Return ctx.DatabaseExists()
         End Function
 
 

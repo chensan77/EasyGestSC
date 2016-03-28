@@ -409,10 +409,14 @@ Namespace Modulo
         Private Sub PrepararGridview(grid As RadGridView)
             'grid.AllowShowFocusCues = True
             'grid.ForeColor = gEditControlForecolor
+            Dim tamañoFuente As Single = 0.0
             grid.TableElement.RowSpacing = 2
             grid.EnableAlternatingRowColor = True
+            If Not IsNothing(gUsuario) Then
+                tamañoFuente = gUsuario.TamañoGrid
+            End If
             Dim fuente As Font = grid.TableElement.Font
-            grid.TableElement.Font = New Font(fuente.FontFamily, fuente.SizeInPoints + gUsuario.TamañoGrid, fuente.Style)
+            grid.TableElement.Font = New Font(fuente.FontFamily, fuente.SizeInPoints + tamañoFuente, fuente.Style)
             AddHandler grid.ViewCellFormatting, AddressOf grid_ViewCellFormatting
         End Sub
 

@@ -9,7 +9,7 @@ Namespace Util
         Public Const TIPO_PROPIETARIO_PROVEEDOR As Char = "P"c
         Public Const FECHA_REFERENCIA As Date = #1/1/2014#
 
-        Private Shared _Conexion As String
+        Private Shared _Conexion As String = String.Empty
 
         Public Shared Function Nothing2EmptyText(ByVal obj As Object) As Object
             If obj Is Nothing Then
@@ -40,7 +40,7 @@ Namespace Util
         End Sub
 
 
-        Public Shared Property CadenaConexion As String
+        Protected Friend Shared Property CadenaConexion As String
             Get
                 Return _Conexion
             End Get
