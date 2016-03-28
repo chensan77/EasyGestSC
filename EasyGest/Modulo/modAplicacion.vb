@@ -13,6 +13,7 @@ Namespace Modulo
 
         Public gCadenaConexion As String = ""
         Public gMostrarConfiguracionConexion As Boolean = False
+        Public gMostrarSelectorEmpresas As Boolean = False
         Public gConfLocal As New EasyGestControllers.Data.Configuracion.ConfiguracionLocal()
         Public gConfGlobal As New EasyGestControllers.Data.Configuracion.ConfiguracionGlobal()
         Public gPuesto As EasyGestControllers.Data.Entity.Puestos = Nothing

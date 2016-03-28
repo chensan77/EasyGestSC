@@ -41,10 +41,27 @@ Namespace Presentacion.Formulario
                 End If
             End If
 
+            'Cargar Empresa activo, En caso de no disponer ninguna se mostrará formulario para crear
+            If gMostrarSelectorEmpresas Then
+                e.Result = 2
+                Exit Sub
+            Else
+                Using control As New EmpresasController
+                    Dim empresas As IEnumerable(Of Entity.Empresas) = control.GetItems("Activo = True")
+                    If empresas.Count > 0 Then
+                        gEmpresa = empresas.First()
+                    Else
+                        e.Result = 2
+                        Exit Sub
+                    End If
+                End Using
+            End If
             'Cargar Configuracion y prepara para lanzar formulario principal
             SetTextoEstado(My.Resources.Application.InfoAccionPrepararPrincipal)
             Using c As New ConfiguracionesController()
-                gConfGlobal = EasyGestControllers.Data.Configuracion.ConfiguracionGlobal.CargarConfiguracion(c.GetItems().ToList())
+                Dim listaConf As List(Of Configuraciones)
+                listaConf = c.GetItems("idEmpresa = " & gEmpresa.idEmpresa).ToList()
+                gConfGlobal = EasyGestControllers.Data.Configuracion.ConfiguracionGlobal.CargarConfiguracion(listaConf)
             End Using
 
             Dim mac As String = Nothing, ip As String = Nothing
@@ -67,13 +84,6 @@ Namespace Presentacion.Formulario
             End If
             gConfLocal.PuestoID = gPuesto.idPuesto
             Impresion.TareaImpresion.EstablecerImpresora(gConfLocal.ImpresoraTicket)
-
-            Using control As New EmpresasController
-                Dim empresas As IEnumerable(Of Entity.Empresas) = control.GetItems("Activo = True")
-                If empresas.Count > 0 Then
-                    gEmpresa = empresas.First()
-                End If
-            End Using
 
             Using control As New ImpuestosController()
                 gImpuestoPorDefecto = control.GetImpuestoPorDefecto()
@@ -101,6 +111,9 @@ Namespace Presentacion.Formulario
                     Else
                         Me.Close()
                     End If
+                ElseIf CInt(e.Result) = 2 Then
+                    Dim frm As New Configuracion.frmEmpresa(False)
+
                 Else
                     If gConfGlobal.Autentificar Then
                         SetTextoEstado(My.Resources.Application.InfoAccionEsperarAutentificacion)

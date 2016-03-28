@@ -69,7 +69,7 @@ Namespace Presentacion.Formulario.Configuracion
                         .ValidezVale = CShort(spinValidezVales.Value)
                     End With
 
-                    Dim listaparam As List(Of Configuraciones) = EasyGestControllers.Data.Configuracion.ConfiguracionGlobal.DescargarConfiguracion(gConfGlobal)
+                    Dim listaparam As List(Of Configuraciones) = EasyGestControllers.Data.Configuracion.ConfiguracionGlobal.DescargarConfiguracion(gConfGlobal, gEmpresa.idEmpresa)
                     Using c As New ConfiguracionesController()
                         For Each param As Configuraciones In listaparam
                             c.UpdateItem(param)

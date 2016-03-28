@@ -41,6 +41,7 @@
                 End If
                 If e.CommandLine.Count > 0 Then
                     gMostrarConfiguracionConexion = e.CommandLine.Item(0).Equals("cc")
+                    gMostrarSelectorEmpresas = e.CommandLine.Item(0).Equals("se")
                 End If
                 For Each il As InputLanguage In InputLanguage.InstalledInputLanguages
                     If il.Culture.Name.Contains("zh") Then _

@@ -182,12 +182,12 @@ Namespace Controller
     Public Class ConfiguracionesController
         Inherits BaseController(Of Configuraciones, EasyGestDataContext)
 
-        Public Overloads Function UpdateItem(ByVal parametro As String, ByVal valor As String, ByVal idPuesto As Nullable(Of Long)) As Data.Entity.Configuraciones
+        Public Overloads Function UpdateItem(ByVal parametro As String, ByVal valor As String, ByVal idEmpresa As Long) As Data.Entity.Configuraciones
             Dim param As New Configuraciones()
             Dim params As IEnumerable(Of Configuraciones)
             param.Parametro = parametro
             param.Valor = valor
-            param.idPuesto = idPuesto
+            param.idEmpresa = idEmpresa
             params = From p In Contexto.Configuraciones Where p.Parametro.Equals(parametro) Select p
             If params.Count = 0 Then
                 Contexto.Configuraciones.InsertOnSubmit(param)
@@ -219,7 +219,7 @@ Namespace Controller
         End Sub
 
         Public Overrides Function UpdateItem(item As Data.Entity.Configuraciones) As Data.Entity.Configuraciones
-            Return UpdateItem(item.Parametro, item.Valor, item.idPuesto)
+            Return UpdateItem(item.Parametro, item.Valor, item.idEmpresa)
         End Function
 
     End Class

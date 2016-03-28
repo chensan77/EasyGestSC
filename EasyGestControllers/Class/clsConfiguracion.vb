@@ -192,7 +192,7 @@ Namespace Data.Configuracion
             Return conf
         End Function
 
-        Public Shared Function DescargarConfiguracion(ByVal conf As ConfiguracionGlobal) As List(Of Data.Entity.Configuraciones)
+        Public Shared Function DescargarConfiguracion(ByVal conf As ConfiguracionGlobal, ByVal idEmpresa As Long) As List(Of Data.Entity.Configuraciones)
             Dim infoConf As New List(Of Data.Entity.Configuraciones)
             Dim tipoConf As Type = GetType(ConfiguracionGlobal)
             Dim propiedades As PropertyInfo() = tipoConf.GetProperties(BindingFlags.Public Or BindingFlags.Instance)
@@ -209,7 +209,7 @@ Namespace Data.Configuracion
                         valor = CStr(propiedad.GetValue(conf, Nothing))
                     End If
                     If IsNothing(valor) Then valor = ""
-                    confTemp.idPuesto = Nothing
+                    confTemp.idEmpresa = idEmpresa
                     confTemp.Parametro = propiedad.Name
                     confTemp.Valor = valor
                     infoConf.Add(confTemp)
