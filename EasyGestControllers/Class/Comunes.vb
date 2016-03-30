@@ -198,8 +198,8 @@ Namespace Util
             Dim propiedades As IPInterfaceProperties
             Dim bytes As Byte()
 
-            mac = ""
-            ip = ""
+            mac = "00:00:00:00:00:00"
+            ip = "0.0.0.0"
             Try
                 nic = GetNicValido()
                 If nic IsNot Nothing Then

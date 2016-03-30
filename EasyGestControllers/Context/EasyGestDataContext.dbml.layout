@@ -376,16 +376,16 @@
         <elementListCompartment Id="bdd2dabf-05e3-4768-b4ef-102153bf2c0f" absoluteBounds="5.265, 0.96, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="6d49ea7d-e5cc-43ac-a08b-83cb61b3cbcc" isExpanded="false" absoluteBounds="5.375, 6.75, 2, 0.45">
+    <classShape Id="6d49ea7d-e5cc-43ac-a08b-83cb61b3cbcc" isExpanded="false" absoluteBounds="3.125, 9.25, 2, 0.45">
       <DataClassMoniker Name="/EasyGestDataContext/LineasFactura" />
       <nestedChildShapes>
-        <elementListCompartment Id="695040df-4096-44d9-b45d-95f0b897636a" absoluteBounds="5.39, 7.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="695040df-4096-44d9-b45d-95f0b897636a" absoluteBounds="3.1399999999999997, 9.71, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="c936f753-cc48-422e-8796-6f0727b6ce5f" isExpanded="false" absoluteBounds="5.25, 4.125, 2, 0.45">
+    <classShape Id="c936f753-cc48-422e-8796-6f0727b6ce5f" isExpanded="false" absoluteBounds="3, 2.375, 2, 0.45">
       <DataClassMoniker Name="/EasyGestDataContext/LineasAlbaran" />
       <nestedChildShapes>
-        <elementListCompartment Id="484fdd11-6593-4459-b524-231d9e26f1ee" absoluteBounds="5.265, 4.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="484fdd11-6593-4459-b524-231d9e26f1ee" absoluteBounds="3.0149999999999997, 2.835, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <classShape Id="aa457c55-9fa0-4743-827b-5c56114dc216" isExpanded="false" absoluteBounds="5.25, 1.125, 2, 0.45">
@@ -406,11 +406,18 @@
         <elementListCompartment Id="030f4ad5-bbd3-4983-820a-92e1bddfe252" absoluteBounds="3.015, 0.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="d77c5537-fda5-41e3-b07b-2bfbbc39818c" isExpanded="false" absoluteBounds="3, 5.125, 2, 0.45">
+    <classShape Id="9769866f-4f66-45b9-ba74-9c8fec79a4ab" isExpanded="false" absoluteBounds="3, 5.25, 2, 0.45">
       <DataClassMoniker Name="/EasyGestDataContext/Configuraciones" />
       <nestedChildShapes>
-        <elementListCompartment Id="f92a03b8-3fe9-44a8-ab84-e9165d1b111c" absoluteBounds="3.015, 5.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="42bdb04d-1eed-4259-8682-ed45497c0b67" absoluteBounds="3.015, 5.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <associationConnector edgePoints="[(5.25 : 6); (5 : 5.7)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EasyGestDataContext/Empresas/Empresas_Configuraciones" />
+      <nodes>
+        <classShapeMoniker Id="d3e7b0ff-68ee-49df-86b0-14c485309b3f" />
+        <classShapeMoniker Id="9769866f-4f66-45b9-ba74-9c8fec79a4ab" />
+      </nodes>
+    </associationConnector>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

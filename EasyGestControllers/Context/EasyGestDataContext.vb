@@ -1722,8 +1722,11 @@ Namespace Data.Context
 
         Protected Friend Shared Function DataBaseAccesible(cs As String) As Boolean
             If String.IsNullOrWhiteSpace(cs) Then Throw New ArgumentNullException()
+            Dim dbExiste As Boolean
             Dim ctx As New EasyGestDataContext(cs)
-            Return ctx.DatabaseExists()
+            dbExiste = ctx.DatabaseExists()
+            ctx.Dispose()
+            Return dbExiste
         End Function
 
 

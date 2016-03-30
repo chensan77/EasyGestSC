@@ -4669,6 +4669,8 @@ Namespace Data.Entity
 		
 		Private _FormatoNumeracion As String
 		
+		Private _Configuraciones As EntitySet(Of Configuraciones)
+		
     #Region "Definiciones de métodos de extensibilidad"
     Partial Private Sub OnLoaded()
     End Sub
@@ -4752,6 +4754,7 @@ Namespace Data.Entity
 		
 		Public Sub New()
 			MyBase.New
+			Me._Configuraciones = New EntitySet(Of Configuraciones)(AddressOf Me.attach_Configuraciones, AddressOf Me.detach_Configuraciones)
 			OnCreated
 		End Sub
 		
@@ -4948,7 +4951,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Logo", DbType:="Image", CanBeNull:=true, UpdateCheck:=UpdateCheck.Never)>  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Logo", DbType:="Image", UpdateCheck:=UpdateCheck.Never)>  _
 		Public Property Logo() As System.Data.Linq.Binary
 			Get
 				Return Me._Logo
@@ -5045,6 +5048,16 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Empresas_Configuraciones", Storage:="_Configuraciones", ThisKey:="idEmpresa", OtherKey:="idEmpresa")>  _
+		Public Property Configuraciones() As EntitySet(Of Configuraciones)
+			Get
+				Return Me._Configuraciones
+			End Get
+			Set
+				Me._Configuraciones.Assign(value)
+			End Set
+		End Property
+		
 		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
 		
 		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
@@ -5061,6 +5074,16 @@ Namespace Data.Entity
 						= false) Then
 				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 			End If
+		End Sub
+		
+		Private Sub attach_Configuraciones(ByVal entity As Configuraciones)
+			Me.SendPropertyChanging
+			entity.Empresas = Me
+		End Sub
+		
+		Private Sub detach_Configuraciones(ByVal entity As Configuraciones)
+			Me.SendPropertyChanging
+			entity.Empresas = Nothing
 		End Sub
 	End Class
 	
@@ -10159,7 +10182,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Imagen", DbType:="Image", CanBeNull:=true, UpdateCheck:=UpdateCheck.Never)>  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Imagen", DbType:="Image", UpdateCheck:=UpdateCheck.Never)>  _
 		Public Property Imagen() As System.Data.Linq.Binary
 			Get
 				Return Me._Imagen
@@ -10354,7 +10377,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Imagen", DbType:="Image", CanBeNull:=true, UpdateCheck:=UpdateCheck.Never)>  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Imagen", DbType:="Image", UpdateCheck:=UpdateCheck.Never)>  _
 		Public Property Imagen() As System.Data.Linq.Binary
 			Get
 				Return Me._Imagen
@@ -19479,11 +19502,15 @@ Namespace Data.Entity
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
 		
+		Private _idConfiguracion As Long
+		
 		Private _Parametro As String
 		
 		Private _Valor As String
 		
 		Private _idEmpresa As Long
+		
+		Private _Empresas As EntityRef(Of Empresas)
 		
     #Region "Definiciones de métodos de extensibilidad"
     Partial Private Sub OnLoaded()
@@ -19491,6 +19518,10 @@ Namespace Data.Entity
     Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
     End Sub
     Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidConfiguracionChanging(value As Long)
+    End Sub
+    Partial Private Sub OnidConfiguracionChanged()
     End Sub
     Partial Private Sub OnParametroChanging(value As String)
     End Sub
@@ -19508,10 +19539,28 @@ Namespace Data.Entity
 		
 		Public Sub New()
 			MyBase.New
+			Me._Empresas = CType(Nothing, EntityRef(Of Empresas))
 			OnCreated
 		End Sub
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Parametro", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false, IsPrimaryKey:=true)>  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idConfiguracion", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+		Public Property idConfiguracion() As Long
+			Get
+				Return Me._idConfiguracion
+			End Get
+			Set
+				If ((Me._idConfiguracion = value)  _
+							= false) Then
+					Me.OnidConfiguracionChanging(value)
+					Me.SendPropertyChanging
+					Me._idConfiguracion = value
+					Me.SendPropertyChanged("idConfiguracion")
+					Me.OnidConfiguracionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Parametro", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
 		Public Property Parametro() As String
 			Get
 				Return Me._Parametro
@@ -19551,11 +19600,42 @@ Namespace Data.Entity
 			Set
 				If ((Me._idEmpresa = value)  _
 							= false) Then
+					If Me._Empresas.HasLoadedOrAssignedValue Then
+						Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+					End If
 					Me.OnidEmpresaChanging(value)
 					Me.SendPropertyChanging
 					Me._idEmpresa = value
 					Me.SendPropertyChanged("idEmpresa")
 					Me.OnidEmpresaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Empresas_Configuraciones", Storage:="_Empresas", ThisKey:="idEmpresa", OtherKey:="idEmpresa", IsForeignKey:=true)>  _
+		Public Property Empresas() As Empresas
+			Get
+				Return Me._Empresas.Entity
+			End Get
+			Set
+				Dim previousValue As Empresas = Me._Empresas.Entity
+				If ((Object.Equals(previousValue, value) = false)  _
+							OrElse (Me._Empresas.HasLoadedOrAssignedValue = false)) Then
+					Me.SendPropertyChanging
+					If ((previousValue Is Nothing)  _
+								= false) Then
+						Me._Empresas.Entity = Nothing
+						previousValue.Configuraciones.Remove(Me)
+					End If
+					Me._Empresas.Entity = value
+					If ((value Is Nothing)  _
+								= false) Then
+						value.Configuraciones.Add(Me)
+						Me._idEmpresa = value.idEmpresa
+					Else
+						Me._idEmpresa = CType(Nothing, Long)
+					End If
+					Me.SendPropertyChanged("Empresas")
 				End If
 			End Set
 		End Property

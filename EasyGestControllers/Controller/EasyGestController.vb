@@ -206,7 +206,7 @@ Namespace Controller
             param.Parametro = parametro
             param.Valor = valor
             param.idEmpresa = idEmpresa
-            params = From p In Contexto.Configuraciones Where p.Parametro.Equals(parametro) Select p
+            params = From p In Contexto.Configuraciones Where p.Parametro.Equals(parametro) And p.idEmpresa = idEmpresa Select p
             If params.Count = 0 Then
                 Contexto.Configuraciones.InsertOnSubmit(param)
             Else

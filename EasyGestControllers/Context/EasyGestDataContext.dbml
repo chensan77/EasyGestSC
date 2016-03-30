@@ -232,6 +232,7 @@
       <Column Name="Series" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="Activo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="FormatoNumeracion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Empresas_Configuraciones" Member="Configuraciones" ThisKey="idEmpresa" OtherKey="idEmpresa" Type="Configuraciones" />
     </Type>
   </Table>
   <Table Name="dbo.UnidadesMedida" Member="UnidadesMedida">
@@ -976,9 +977,11 @@
   </Table>
   <Table Name="dbo.Configuraciones" Member="Configuraciones">
     <Type Name="Configuraciones">
-      <Column Name="Parametro" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idConfiguracion" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Parametro" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Valor" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="idEmpresa" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Association Name="Empresas_Configuraciones" Member="Empresas" ThisKey="idEmpresa" OtherKey="idEmpresa" Type="Empresas" IsForeignKey="true" />
     </Type>
   </Table>
   <Function Name="dbo.SPInformeCompra" Method="SPInformeCompra" AccessModifier="Internal">
