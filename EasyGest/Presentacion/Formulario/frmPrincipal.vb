@@ -195,10 +195,10 @@ Namespace Presentacion.Formulario
 
         Private Sub frmPrincipal_Shown(sender As Object, e As System.EventArgs) Handles Me.Shown
             ToolWindow1.AutoHide()
-            If gEmpresa Is Nothing Then
-                Dim frm As New frmEmpresa(False)
-                frm.ShowDialog()
-            End If
+            'If gEmpresa Is Nothing Then
+            '    Dim frm As New frmEmpresa(False)
+            '    frm.ShowDialog()
+            'End If
             If gConfLocal.MostrarInicioArranque Then AddForm(New frmInicio(), True)
             If Not CajaCerrado Then
                 If gDiario.Apertura.DayOfYear < Today.DayOfYear Then

@@ -16,7 +16,7 @@
         End Sub
 
         Private Sub timValidezFormulario_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles timValidezFormulario.Tick
-            ActivarDesactivarControles(Not (String.IsNullOrEmpty(txtNombre.Text) Or String.IsNullOrEmpty(txtContraseña.Text)), btnAceptar)
+            ActivarDesactivarControles((chkComoSuper.Checked And Not String.IsNullOrWhiteSpace(txtContraseña.Text)) Or (Not chkComoSuper.Checked And (Not (String.IsNullOrEmpty(txtNombre.Text) Or String.IsNullOrEmpty(txtContraseña.Text)))), btnAceptar)
         End Sub
 
         Private Sub frmAutentificacion_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown

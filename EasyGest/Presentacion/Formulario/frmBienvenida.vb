@@ -53,19 +53,15 @@ Namespace Presentacion.Formulario
                     Dim empresas As IEnumerable(Of Entity.Empresas) = control.GetItems("Activo = True")
                     If empresas.Count > 0 Then
                         gEmpresa = empresas.First()
+                        'Cargar Configuracion y prepara para lanzar formulario principal
+                        gEmpresa.Configuraciones.Load()
+                        gConfGlobal = EasyGestControllers.Data.Configuracion.ConfiguracionGlobal.CargarConfiguracion(gEmpresa.Configuraciones.ToList())
                     Else
                         e.Result = 2
                         Exit Sub
                     End If
                 End Using
             End If
-            'Cargar Configuracion y prepara para lanzar formulario principal
-            Dim listaConf As List(Of Configuraciones)
-            gEmpresa.Configuraciones.Load()
-            listaConf = gEmpresa.Configuraciones.AsQueryable().ToList()
-            gConfGlobal = EasyGestControllers.Data.Configuracion.ConfiguracionGlobal.CargarConfiguracion(listaConf)
-            'Using c As New ConfiguracionesController()
-            'End Using
 
             Dim mac As String = Nothing, ip As String = Nothing
             EasyGestControllers.Util.Comunes.GetInformacionRed(mac, ip)
