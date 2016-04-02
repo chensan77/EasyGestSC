@@ -415,15 +415,18 @@ FROM            Productos</CommandText>
             <Style />
           </Tablix>
         </ReportItems>
-        <Height>0.74in</Height>
+        <Height>1.8796cm</Height>
         <Style />
       </Body>
-      <Width>6.125in</Width>
+      <Width>15.5575cm</Width>
       <Page>
-        <LeftMargin>1in</LeftMargin>
-        <RightMargin>1in</RightMargin>
-        <TopMargin>1in</TopMargin>
-        <BottomMargin>1in</BottomMargin>
+        <PageHeight>27.94cm</PageHeight>
+        <PageWidth>21.59cm</PageWidth>
+        <LeftMargin>2.54cm</LeftMargin>
+        <RightMargin>2.54cm</RightMargin>
+        <TopMargin>2.54cm</TopMargin>
+        <BottomMargin>2.54cm</BottomMargin>
+        <ColumnSpacing>1.27cm</ColumnSpacing>
         <Style />
       </Page>
     </ReportSection>
@@ -436,6 +439,6 @@ FROM            Productos</CommandText>
   </ReportParametersLayout>
   <Language>es-ES</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
-  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>6428634e-d24c-49aa-9787-9b5ea9e58774</rd:ReportID>
 </Report>
