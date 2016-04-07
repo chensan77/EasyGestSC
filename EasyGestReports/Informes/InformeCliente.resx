@@ -117,27 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="TextBox1.Value" xml:space="preserve">
-    <value>Numero</value>
-  </data>
-  <data name="TextBox2.Value" xml:space="preserve">
-    <value>Nombre YNombre CN</value>
-  </data>
-  <data name="TextBox3.Value" xml:space="preserve">
-    <value>Identificacion</value>
-  </data>
-  <data name="TextBox4.Value" xml:space="preserve">
-    <value>Tipo Identificacion</value>
-  </data>
-  <data name="TextBox5.Value" xml:space="preserve">
-    <value>Tarjetas Poseidas</value>
-  </data>
-  <data name="TextBox6.Value" xml:space="preserve">
-    <value>Tarjetas Saldos</value>
-  </data>
-  <data name="TextBox7.Value" xml:space="preserve">
-    <value>Activo</value>
-  </data>
   <data name="TextBox15.Value" xml:space="preserve">
     <value>TextBox15</value>
   </data>
@@ -161,6 +140,27 @@
   </data>
   <data name="TextBox14.Value" xml:space="preserve">
     <value>= Fields.Activo</value>
+  </data>
+  <data name="TextBox1.Value" xml:space="preserve">
+    <value>Numero</value>
+  </data>
+  <data name="TextBox2.Value" xml:space="preserve">
+    <value>Nombre YNombre CN</value>
+  </data>
+  <data name="TextBox3.Value" xml:space="preserve">
+    <value>Identificacion</value>
+  </data>
+  <data name="TextBox4.Value" xml:space="preserve">
+    <value>Tipo Identificacion</value>
+  </data>
+  <data name="TextBox5.Value" xml:space="preserve">
+    <value>Tarjetas Poseidas</value>
+  </data>
+  <data name="TextBox6.Value" xml:space="preserve">
+    <value>Tarjetas Saldos</value>
+  </data>
+  <data name="TextBox7.Value" xml:space="preserve">
+    <value>Activo</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
