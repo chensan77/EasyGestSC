@@ -1,7 +1,8 @@
 Namespace EasyGestReports.Informes
     Partial Public Class InformeCliente
-
         Inherits Telerik.Reporting.Report
+        Implements IEasyGestReport
+
         Public Sub New()
             InitializeComponent()
             EasyGestControllers.Controller.EasyGestController.ResetConnectionString(My.MySettings.Default.EasyGest)
@@ -12,5 +13,11 @@ Namespace EasyGestReports.Informes
 
         Private Sub InformeCliente_NeedDataSource(sender As Object, e As EventArgs) Handles Me.NeedDataSource
         End Sub
+
+        Public Sub Configurar() Implements IEasyGestReport.Configurar
+            Throw New NotImplementedException()
+        End Sub
+
+
     End Class
 End Namespace

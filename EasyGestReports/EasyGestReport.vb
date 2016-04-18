@@ -1,4 +1,4 @@
-﻿Public Class EasyGestReport
+﻿Public Class EasyGestReportInfo
 
     Public ReadOnly Property ReportName As String
     Public ReadOnly Property ReportDescription As String
@@ -14,6 +14,11 @@
         Me.Report = report
     End Sub
 
+    Public Function GetReportParameter(nombre As String) As Telerik.Reporting.ReportParameter
+
+        Return Report.ReportParameters.Item(nombre)
+
+    End Function
     'Public Property ReportName1 As String
     '    Get
 
@@ -24,3 +29,9 @@
     'End Property
 
 End Class
+
+Public Interface IEasyGestReport
+
+    Sub Configurar()
+
+End Interface
