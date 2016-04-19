@@ -2,7 +2,7 @@
 
     Private Shared reports() As EasyGestReportInfo = New EasyGestReportInfo() _
         {
-        New EasyGestReportInfo("InformeCliente", "Informe de los clientes", New EasyGestReports.Informes.InformeCliente())
+        New EasyGestReportInfo("Cliente", "InformeCliente", "Informe de los clientes", GetType(EasyGestReports.Informes.InformeCliente))
         }
 
     Public Shared Function GetReports() As List(Of EasyGestReportInfo)

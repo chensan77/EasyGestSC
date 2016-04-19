@@ -1,22 +1,28 @@
 ﻿Public Class EasyGestReportInfo
 
+    Public ReadOnly Property ReportCategory As String
     Public ReadOnly Property ReportName As String
     Public ReadOnly Property ReportDescription As String
-    Public ReadOnly Property Report As Telerik.Reporting.Report
+    Public ReadOnly Property ReportType As Type
 
     Private Sub New()
 
     End Sub
 
-    Public Sub New(name As String, descrip As String, report As Telerik.Reporting.Report)
+    Public Sub New(category As String, name As String, descrip As String, type As Type)
+        ReportCategory = category
         ReportName = name
         ReportDescription = descrip
-        Me.Report = report
+        ReportType = type
     End Sub
 
-    Public Function GetReportParameter(nombre As String) As Telerik.Reporting.ReportParameter
+    Public Function GetReport() As Telerik.Reporting.Report
 
-        Return Report.ReportParameters.Item(nombre)
+        If ReportType.BaseType.FullName.Equals("Telerik.Reporting.Report") Then
+            Return ReportType.GetConstructor(Type.EmptyTypes).Invoke(New Object() {})
+        Else
+            Return Nothing
+        End If
 
     End Function
     'Public Property ReportName1 As String
