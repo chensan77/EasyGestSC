@@ -18,12 +18,15 @@
     Public Shared Function GetReport(nombre As String) As Telerik.Reporting.Report
         Dim iter As IEnumerator = reports.GetEnumerator
         Dim report As Telerik.Reporting.Report = Nothing
-        Dim reportInfo As EasyGestReportInfo
-        reportInfo = (From r As EasyGestReportInfo In reports Where r.ReportName.Equals(nombre, StringComparison.OrdinalIgnoreCase)).FirstOrDefault
-        If Not IsNothing(reportInfo) Then
-            report = reportInfo.GetReport
-        End If
+        While iter.MoveNext
+            Dim info As EasyGestReportInfo
+            If DirectCast(iter.Current, EasyGestReportInfo).ReportName.Equals(nombre, StringComparison.OrdinalIgnoreCase) Then
+                info = DirectCast(iter.Current, EasyGestReportInfo)
+                report = info.GetReport()
+                Exit While
 
+            End If
+        End While
         Return report
     End Function
 
