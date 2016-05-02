@@ -32,18 +32,19 @@ Namespace Presentacion.Formulario
             'ReportViewer1
             '
             Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.ReportViewer1.DocumentMapVisible = False
             Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
             Me.ReportViewer1.Name = "ReportViewer1"
             InstanceReportSource1.ReportDocument = Nothing
             Me.ReportViewer1.ReportSource = InstanceReportSource1
-            Me.ReportViewer1.Size = New System.Drawing.Size(750, 554)
+            Me.ReportViewer1.Size = New System.Drawing.Size(750, 611)
             Me.ReportViewer1.TabIndex = 0
             '
             'frmInformes
             '
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(750, 554)
+            Me.ClientSize = New System.Drawing.Size(750, 611)
             Me.Controls.Add(Me.ReportViewer1)
             Me.Name = "frmInformes"
             '
@@ -55,8 +56,8 @@ Namespace Presentacion.Formulario
             Me.ResumeLayout(False)
 
         End Sub
-        Friend WithEvents ReportViewer1 As Telerik.ReportViewer.WinForms.ReportViewer
         Friend WithEvents RptListasCompra1 As EasyGest.rptListasCompra
+        Private WithEvents ReportViewer1 As Telerik.ReportViewer.WinForms.ReportViewer
     End Class
 
 End Namespace

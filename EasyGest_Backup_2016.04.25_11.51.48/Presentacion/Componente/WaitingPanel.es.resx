@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,27 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="TextBox1.Value" xml:space="preserve">
-    <value>= Fields.Descripcion</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="TextBox8.Value" xml:space="preserve">
-    <value>=Now().ToString("dd/MM/yyyy")</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 74</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="TextBox8.GenerateMember" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="TextBox7.GenerateMember" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <assembly alias="Telerik.Reporting" name="Telerik.Reporting, Version=9.0.15.225, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
-  <data name="$this.SnapGridSize" type="Telerik.Reporting.Drawing.Unit, Telerik.Reporting">
-    <value>0.1cm</value>
-  </data>
-  <data name="TextBox7.Value" xml:space="preserve">
-    <value>Lista de Compra </value>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 74</value>
   </data>
 </root>
