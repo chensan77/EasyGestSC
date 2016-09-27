@@ -122,13 +122,7 @@
     <value>楷体, 9pt</value>
   </data>
   <data name="RadLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 234</value>
-  </data>
-  <data name="RadLabel1.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel1.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>3, 254</value>
   </data>
   <data name="RadLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 17</value>
@@ -136,41 +130,8 @@
   <data name="RadLabel1.Text" xml:space="preserve">
     <value>单位以厘米显示（cm）</value>
   </data>
-  <data name="RadLabel4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 220</value>
-  </data>
-  <data name="RadLabel4.RootElement.KeyTip" xml:space="preserve">
+  <data name="gridDatos.MasterTemplate.Caption" xml:space="preserve">
     <value />
-  </data>
-  <data name="RadLabel4.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 18</value>
-  </data>
-  <data name="RadLabel4.Text" xml:space="preserve">
-    <value>标签</value>
-  </data>
-  <data name="RadLabel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 246</value>
-  </data>
-  <data name="RadLabel2.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel2.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 18</value>
-  </data>
-  <data name="RadLabel2.Text" xml:space="preserve">
-    <value>设计文件</value>
   </data>
   <data name="GridViewDecimalColumn1.HeaderText" xml:space="preserve">
     <value>idEtiqueta</value>
@@ -208,209 +169,53 @@
   <data name="GridViewDecimalColumn11.HeaderText" xml:space="preserve">
     <value>下边缘</value>
   </data>
-  <data name="gridDatos.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="gridDatos.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
   <data name="gridDatos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>685, 228</value>
+    <value>676, 247</value>
   </data>
-  <data name="pvpEtiquetas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 38</value>
-  </data>
-  <data name="pvpEtiquetas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>685, 262</value>
-  </data>
-  <data name="btnExaminar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>296, 244</value>
-  </data>
-  <data name="btnExaminar.RootElement.KeyTip" xml:space="preserve">
+  <data name="gridDiseños.MasterTemplate.Caption" xml:space="preserve">
     <value />
-  </data>
-  <data name="btnExaminar.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnExaminar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 20</value>
-  </data>
-  <data name="txtArchivo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 244</value>
-  </data>
-  <data name="txtArchivo.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtArchivo.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ddlEtiquetas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 218</value>
-  </data>
-  <data name="ddlEtiquetas.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ddlEtiquetas.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="rptvPrevisualizacion.Resources.AllFiles" xml:space="preserve">
-    <value>All Files</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.BackToolTip" xml:space="preserve">
-    <value>Navigate back in history</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.CurrentPageToolTip" xml:space="preserve">
-    <value>Current page</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.DocumentMapToolTip" xml:space="preserve">
-    <value>Click to close document map|Click to open document map</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ExportError" xml:space="preserve">
-    <value>Export Error</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ExportToolTip" xml:space="preserve">
-    <value>Export</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.FirstPageToolTip" xml:space="preserve">
-    <value>First page</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ForwardToolTip" xml:space="preserve">
-    <value>Navigate forward in history</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.GenericMessageBoxCaption" xml:space="preserve">
-    <value>Report Viewer</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.LabelOf" xml:space="preserve">
-    <value> of </value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.LastPageToolTip" xml:space="preserve">
-    <value>Last page</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.MissingReportSource" xml:space="preserve">
-    <value>The source of the report definition has not been specified.</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.NextPageToolTip" xml:space="preserve">
-    <value>Next page</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.NoPageToDisplay" xml:space="preserve">
-    <value>No page to display.</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.PageSetupToolTip" xml:space="preserve">
-    <value>Page setup...</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ParametersToolTip" xml:space="preserve">
-    <value>Click to close parameters area|Click to open parameters area</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.PreviousPageToolTip" xml:space="preserve">
-    <value>Previous page</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.PrintPreviewToolTip" xml:space="preserve">
-    <value>Switch to interactive layout|Switch to print preview</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.PrintToolTip" xml:space="preserve">
-    <value>Print report</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ProcessingReportMessage" xml:space="preserve">
-    <value>Generating report...</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.RefreshToolTip" xml:space="preserve">
-    <value>Refresh</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersEmptyStringError" xml:space="preserve">
-    <value>Empty string value not allowed.</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersFalseValueLabel" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersInputDataError" xml:space="preserve">
-    <value>Missing or invalid parameter value. Please input valid data for all parameters.</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersInvalidValueText" xml:space="preserve">
-    <value>Invalid value.</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersNoValueText" xml:space="preserve">
-    <value>Value required.</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersNullText" xml:space="preserve">
-    <value>NULL</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersPreviewButtonText" xml:space="preserve">
-    <value>Preview</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersSelectAllText" xml:space="preserve">
-    <value>&lt;select all&gt;</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersSelectAValueText" xml:space="preserve">
-    <value>&lt;select a value&gt;</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersTrueValueLabel" xml:space="preserve">
-    <value>True</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.StopProcessing" xml:space="preserve">
-    <value>Report processing was cancelled.</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.StopToolTip" xml:space="preserve">
-    <value>Stop</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.TotalPagesToolTip" xml:space="preserve">
-    <value>Total pages</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ZoomPercentFormat" xml:space="preserve">
-    <value>{0}%</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ZoomToolTip" xml:space="preserve">
-    <value>Zoom</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ZoomToPageWidth" xml:space="preserve">
-    <value>Page width</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ZoomToWholePage" xml:space="preserve">
-    <value>Whole page</value>
-  </data>
-  <data name="rptvPrevisualizacion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 266</value>
   </data>
   <data name="GridViewTextBoxColumn3.HeaderText" xml:space="preserve">
     <value>名称</value>
   </data>
-  <data name="gridDiseños.RootElement.KeyTip" xml:space="preserve">
-    <value />
+  <data name="RadLabel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
   </data>
-  <data name="gridDiseños.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+  <data name="RadLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 18</value>
   </data>
-  <data name="gridDiseños.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 216</value>
+  <data name="RadLabel4.Text" xml:space="preserve">
+    <value>标签</value>
+  </data>
+  <data name="RadLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 267</value>
+  </data>
+  <data name="RadLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 18</value>
+  </data>
+  <data name="RadLabel2.Text" xml:space="preserve">
+    <value>设计文件</value>
+  </data>
+  <data name="pvpEtiquetas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>676, 300</value>
   </data>
   <data name="pvpDiseños.Size" type="System.Drawing.Size, System.Drawing">
-    <value>676, 273</value>
-  </data>
-  <data name="pvEtiqueta.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pvEtiqueta.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>676, 300</value>
   </data>
   <data name="pvEtiqueta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>697, 325</value>
+    <value>697, 352</value>
   </data>
   <data name="resource.Text1" xml:space="preserve">
-    <value>标签设计</value>
+    <value>Etiquetas adhesivas</value>
   </data>
   <data name="btnCancelar.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
   </data>
   <data name="btnCancelar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>611, 330</value>
-  </data>
-  <data name="btnCancelar.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnCancelar.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnCancelar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 39</value>
+    <value>611, 358</value>
   </data>
   <data name="btnCancelar.Text" xml:space="preserve">
     <value>取消</value>
@@ -422,16 +227,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="btnAceptar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>527, 330</value>
-  </data>
-  <data name="btnAceptar.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnAceptar.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnAceptar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 39</value>
+    <value>527, 358</value>
   </data>
   <data name="btnAceptar.Text" xml:space="preserve">
     <value>确定</value>
@@ -439,8 +235,11 @@
   <data name="resource.Text3" xml:space="preserve">
     <value>确定</value>
   </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>697, 394</value>
+    <value>697, 437</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
@@ -2885,16 +2684,6 @@
         /////////n//////////////////////////////////////////////////////////////////////
         /////////w==
 </value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="frmEtiqueta.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="frmEtiqueta.RootElement.ToolTipText" xml:space="preserve">
-    <value />
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>标签设置</value>
