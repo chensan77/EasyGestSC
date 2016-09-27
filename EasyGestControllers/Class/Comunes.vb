@@ -191,6 +191,62 @@ Namespace Util
             Return registro
         End Function
 
+
+        Public Shared Function GetDCEAN13(ByRef numero As String) As Integer
+            ' Si el número no cumple con el formato EAN13, la función
+            ' devolverá una excepción de argumentos no válidos. 
+            ' Para ello, la cadena deberá tener 12 caracteres de
+            ' longitud, y contener sólo números.
+            '
+            If IsEAN13(numero) Then
+                Throw New System.ArgumentException
+            End If
+
+            Dim x, digito, sumaCod As Integer
+            ' Extraigo el valor del dígito, y voy
+            ' sumando los valores resultantes.
+            For x = 11 To 0 Step -1
+                digito = CInt(numero.Substring(x, 1))
+                Select Case x
+                    Case 1, 3, 5, 7, 9, 11
+                        ' Las posiciones impares se multiplican por 3
+                        sumaCod += (digito * 3)
+                    Case Else
+                        ' Las posiciones pares se multiplican por 1
+                        sumaCod += (digito * 1)
+                End Select
+            Next
+            ' Calculo la decena superior
+            digito = (sumaCod Mod 10)
+            ' Calculo el dígito de control
+            digito = 10 - digito
+            ' Código de barras completo
+            numero &= CStr(digito)
+            Return digito
+        End Function
+
+        Public Shared Function ValidateDCEAN13(numero As String) As Boolean
+            If IsEAN13(numero) Then
+                Throw New System.ArgumentException
+            End If
+
+            Dim digito, lastDigit As Integer
+            ' Último dígito del número.
+            lastDigit = CInt(numero.Substring(numero.Length - 1, 1))
+            ' Calculo el dígito de control del número pasado
+            digito = GetDCEAN13(numero.Substring(0, 12))
+            ' Compruebo si los dos dígitos son iguales
+            Return (digito = lastDigit)
+
+        End Function
+        Public Shared Function IsEAN13(ByVal numero As String) As Boolean
+            If IsNothing(numero) Then Throw New ArgumentNullException()
+            If IsNumeric(numero) Then
+                Return numero.Length = 13
+            Else
+                Return False
+            End If
+        End Function
         Public Shared Sub GetInformacionRed(ByRef mac As String, ByRef ip As String)
 
             Dim nic As NetworkInterface
@@ -263,6 +319,7 @@ Namespace Util
                 Return Nothing
             End Try
         End Function
+
     End Class
 
 
