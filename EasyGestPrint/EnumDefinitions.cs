@@ -42,13 +42,13 @@ namespace EasyGest.Print
     public class FontCharset
     {
         public static string[] CharList = {"0123456789.- ",
-            " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~",
-            "abcdefghijklmnopqrstuvwxyz ",
-            "ABCDEFGHIJKLMNOPQRSTUVWXYZ ",
-            "abcdefghijklmnopqrstuvwxyz 0123456789.-",
-            "ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789.-",
-            " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~" + 
-            "ÇüéâäàåçêëèïîìÄÅÉæÆôöòûùÿÖÜ¢£¥₧ƒáíóúñÑªº¿⌐¬½¼¡«»αßΓπΣσµτΦΘΩδ∞φε∩≡±≥≤⌠⌡÷≈°∙·√ⁿ² ",
+            " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNÑOPQRSTUVWXYZ[\\]^_`abcdefghijklmnñopqrstuvwxyz{|}~",
+            "abcdefghijklmnñopqrstuvwxyz ",
+            "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ ",
+            "abcdefghijklmnñopqrstuvwxyz 0123456789.-",
+            "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ 0123456789.-",
+            " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNÑOPQRSTUVWXYZ[\\]^_`abcdefghijklmnñopqrstuvwxyz{|}~" + 
+            "ÇüéâäàåçêëèïîìÄÅÉæÆôöòûùÿÖÜ¢£€¥₧ƒáíóúñÑªº¿⌐¬½¼¡«»αßΓπΣσµτΦΘΩδ∞φε∩≡±≥≤⌠⌡÷≈°∙·√ⁿ² ",
             "M"};
     }
 

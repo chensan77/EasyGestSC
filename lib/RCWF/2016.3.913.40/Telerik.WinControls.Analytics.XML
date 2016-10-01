@@ -24,6 +24,11 @@
             <param name="settings">The settings to use for constructing the instance.</param>
             <returns>An instance of the <see cref="T:EQATEC.Analytics.Monitor.IAnalyticsMonitor"/> interface.</returns>
         </member>
+        <member name="M:Telerik.WinControls.Analytics.TraceMonitor.ShutDown">
+            <summary>
+            Shut Down the monitor
+            </summary>
+        </member>
         <member name="T:Telerik.WinControls.Analytics.TraceMonitorSettings">
             <summary>
             Class containing the settings used for constructing <see cref="T:Telerik.WinControls.Analytics.TraceMonitor"/> instance.

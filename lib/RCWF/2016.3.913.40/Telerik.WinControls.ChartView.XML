@@ -1356,7 +1356,7 @@
         </member>
         <member name="P:Telerik.Charting.DateTimeContinuousAxisModel.MaximumTicksFlag">
             <summary>
-            This property is used to avoid the out-of-the-box detection of whole monts/years in the UpdateUnits method.
+            This property is used to avoid the out-of-the-box detection of whole months/years in the UpdateUnits method.
             </summary>
         </member>
         <member name="P:Telerik.Charting.DateTimeContinuousAxisModel.MonthStep">
@@ -3576,7 +3576,7 @@
             <summary>
             Creates lists of datapoints grouped by the angle between the point and the Polar axis.
             </summary>
-            <returns>The grouped collection of data ponts.</returns>
+            <returns>The grouped collection of data points.</returns>
         </member>
         <member name="M:Telerik.WinControls.UI.ChartTrackballController.GetClosestPolarPoints(System.Drawing.PointF)">
             <summary>
@@ -3596,7 +3596,7 @@
             <summary>
             Creates lists of datapoints grouped by their X, Y or angle coordinate depending on the type of the chart.
             </summary>
-            <returns>The grouped collection of data ponts.</returns>
+            <returns>The grouped collection of data points.</returns>
         </member>
         <member name="M:Telerik.WinControls.UI.ChartTrackballController.GetClosestPoints(System.Drawing.PointF)">
             <summary>
@@ -3703,12 +3703,12 @@
         <member name="P:Telerik.WinControls.UI.ChartTrackballController.PointFormatString">
             <summary>
             Gets or sets a format string which will be used to format the text for each data point in the info element.
-            The defaul value is "{0}:{1}".
+            The default value is "{0}:{1}".
             </summary>
         </member>
         <member name="P:Telerik.WinControls.UI.ChartTrackballController.DrawPoints">
             <summary>
-            Gets or sets a value indicating whether points shoudl be drawn on the trackball line.
+            Gets or sets a value indicating whether points should be drawn on the trackball line.
             </summary>
         </member>
         <member name="E:Telerik.WinControls.UI.ChartTrackballController.TextNeeded">
@@ -5218,7 +5218,7 @@
             Gets the location in pixels for the given value along the axis. The method takes into account whether the axis is vertical or horizontal.
             </summary>
             <param name="value">A DateTime value from the axis values range.</param>
-            <returns>The location in pixesls.</returns>
+            <returns>The location in pixels.</returns>
         </member>
         <member name="P:Telerik.WinControls.UI.DateTimeContinuousAxis.MaximumTicks">
             <summary>
