@@ -84,6 +84,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Barcodes.cs" />
     <Compile Include="Commands\CustomFontEPLCommand.cs" />
     <Compile Include="Commands\GraphicTSCPLCommand.cs" />
     <Compile Include="Commands\GraphicZPLCommand.cs" />

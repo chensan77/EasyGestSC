@@ -125,40 +125,6 @@ namespace EasyGest.Print
         CUSTOM_ALL = 42
 
     }
-    public enum BarcodeType
-    {
-        CODE39_STD_EXT = 0,
-        CODE39_CHECK,
-        CODE93,
-        CODE128_UCC,
-        CODE128_AUTO,
-        CODE128_A,
-        CODE128_B,
-        CODE128_C,
-        CODABAR,
-        EAN8,
-        EAN8_2DIGIT_ADDON,
-        EAN8_5DIGIT_ADDON,
-        EAN13,
-        EAN13_2DIGIT_ADDON,
-        EAN13_5DIGIT_ADDON,
-        GERMAN_POST_CODE,
-        INTERLEAVED_2OF5,
-        INTERLEAVED_2OF5_CHECK_MOD10,
-        INTERLEAVED_2OF5_CHECK_READABLE,
-        POSTNET,
-        POSTNET_JAPANESE,
-        UCC_EAN128,
-        UPC_A,
-        UPC_A_2DIGIT_ADDON,
-        UPC_A_5DIGIT_ADDON,
-        UPC_E,
-        UPC_E_2DIGIT_ADDON,
-        UPC_E_5DIGIT_ADDON,
-        UPC_INTERLEAVED_2OF5,
-        PLESSEY_CHECK,
-        MSI_3_CHECK
-    }
 
     public enum Codepage8
     {
@@ -218,71 +184,5 @@ namespace EasyGest.Print
         UK = 44
     }
 
-    public class Barcode
-    {
-        private BarcodeType type;
-        public BarcodeType Type 
-        {
-            get {return type;}
-            set
-            {
-                type = value; 
-                P4Value = P4ValueList[(int)type];
-                BarWidthNarrowMin = P5MinList[(int)type];
-                BarWidthNarrowMax = P5MaxList[(int)type];
-                if (!P5MinList[(int)type].Equals(null))
-                {
-                    barWidthNarrow = P5MinList[(int)type] == 1 ? 2 : P5MinList[(int)type];
-                    barWidthWide = 4;
-                }
-                else
-                {
-                    barWidthNarrow = null;
-                    barWidthWide = 4;
-                }
-            }
-        }
-        public string P4Value { get; private set; }
-        public int? BarWidthNarrowMin { get; private set; }
-        public int? BarWidthNarrowMax { get; private set; }
-        private int? barWidthNarrow;
-        public int? BarWidthNarrow
-        {
-            get { return barWidthNarrow; }
-            set
-            {
-                if (P5MinList[(int)type].Equals(null))
-                    barWidthNarrow = null;
-                else
-                {
-                    //if (value < P5MinList[(int)type] || value > P5MaxList[(int)type])
-                    //    throw new ApplicationException("Invalid barcode narrow bar width setting");
-                    //else
-                        barWidthNarrow = value;
-                }
-            }
-        }
-        private int barWidthWide;
-        public int BarWidthWide
-        {
-            get { return barWidthWide; }
-            set
-            {
-                //if (value < 2 || value > 30)
-                //    throw new ApplicationException("Invalid barcode wide bar width setting");
-                //else
-                    barWidthWide = value;
-            }
-        }
 
-        private readonly string[] P4ValueList = {"3", "3C", "9", "0", "1", "1A", "1B", "1C", "K", "E80", "E82",
-                                           "E85", "E30", "E32", "E35", "2G", "2", "2C", "2D", "P", "J",
-                                           "1E", "UA0", "UA2", "UA5", "UE0", "UE2", "UE5", "2U", "L",
-                                           "M"};
-        private readonly int?[] P5MinList = {1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 1, 1, 1, null, null,
-                                                1, 2, 2, 2, 2, 2, 2, 1, null, null};
-        private readonly int?[] P5MaxList = {10, 10, 10, 10, 10, 10, 10, 10, 10, 4, 4, 4, 4, 4, 4, 4, 10, 10, 10,
-                                                null, null, 10, 4, 4, 4, 4, 4, 4, 10, null, null};
-
-    }
 }

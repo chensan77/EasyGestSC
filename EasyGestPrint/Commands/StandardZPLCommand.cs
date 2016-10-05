@@ -61,7 +61,7 @@ namespace EasyGest.Print.Commands
             command.InsertRange(0, Encoding.GetEncoding(850).GetBytes("^XA"));
         }
 
-        public static byte[] BarCodeWrite(int left, int top, int height, ElementDrawRotation rotation, Barcode barcode, bool readable, string barcodeData)
+        public static byte[] BarCodeWrite(int left, int top, int height, ElementDrawRotation rotation, Barcodes barcode, bool readable, string barcodeData)
         {
             string encodedReadable = readable ? "Y" : "N";
             char encodedRotation = Rotation.ZPLRotationMap[(int)rotation];

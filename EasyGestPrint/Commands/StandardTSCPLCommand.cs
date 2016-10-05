@@ -76,7 +76,7 @@ namespace EasyGest.Print.Commands
             return Encoding.GetEncoding(850).GetBytes(string.Format("PRINT {0}, 1\n", copies));
         }
 
-        public static byte[] BarCodeWrite(int left, int top, int height, ElementDrawRotation rotation, Barcode barcode, bool readable, 
+        public static byte[] BarCodeWrite(int left, int top, int height, ElementDrawRotation rotation, Barcodes barcode, bool readable, 
             string barcodeData)
         {
             string encodedReadable = readable ? "1" : "0";
