@@ -117,57 +117,49 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="TextBox3.Value" xml:space="preserve">
-    <value>Identificacion</value>
+  <data name="TextBox1.Value" xml:space="preserve">
+    <value>Numero</value>
   </data>
   <data name="TextBox2.Value" xml:space="preserve">
-    <value>Nombre YNombre CN</value>
+    <value>Nombre</value>
   </data>
-  <data name="TextBox14.Value" xml:space="preserve">
-    <value>= Fields.Activo</value>
-  </data>
-  <data name="TextBox15.Value" xml:space="preserve">
-    <value>TextBox15</value>
+  <data name="TextBox3.Value" xml:space="preserve">
+    <value>Identificacion</value>
   </data>
   <data name="TextBox4.Value" xml:space="preserve">
     <value>Tipo Identificacion</value>
   </data>
-  <data name="TextBox13.Value" xml:space="preserve">
-    <value>= Fields.TarjetasSaldos</value>
-  </data>
-  <data name="TextBox10.Value" xml:space="preserve">
-    <value>= Fields.Identificacion</value>
-  </data>
-  <data name="TextBox12.Value" xml:space="preserve">
-    <value>= Fields.TarjetasPoseidas</value>
-  </data>
-  <data name="TextBox11.Value" xml:space="preserve">
-    <value>= Fields.TipoIdentificacion</value>
-  </data>
-  <data name="TextBox6.Value" xml:space="preserve">
-    <value>Tarjetas Saldos</value>
+  <data name="TextBox5.Value" xml:space="preserve">
+    <value>Tarjetas Poseidas</value>
   </data>
   <data name="TextBox7.Value" xml:space="preserve">
     <value>Activo</value>
   </data>
-  <data name="TextBox1.Value" xml:space="preserve">
-    <value>Numero</value>
-  </data>
-  <data name="TextBox9.Value" xml:space="preserve">
-    <value>= Fields.NombreYNombreCN</value>
+  <data name="TextBox15.Value" xml:space="preserve">
+    <value>TextBox15</value>
   </data>
   <data name="TextBox8.Value" xml:space="preserve">
     <value>= Fields.Numero</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+  <data name="TextBox9.Value" xml:space="preserve">
+    <value>= Fields.NombreYNombreCN</value>
+  </data>
+  <data name="TextBox10.Value" xml:space="preserve">
+    <value>= Fields.Identificacion</value>
+  </data>
+  <data name="TextBox11.Value" xml:space="preserve">
+    <value>= Fields.TipoIdentificacion</value>
+  </data>
+  <data name="TextBox12.Value" xml:space="preserve">
+    <value>= Fields.TarjetasPoseidas</value>
+  </data>
+  <data name="TextBox14.Value" xml:space="preserve">
+    <value>= Fields.Activo</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
-  <data name="TextBox5.Value" xml:space="preserve">
-    <value>Tarjetas Poseidas</value>
-  </data>
-  <assembly alias="Telerik.Reporting" name="Telerik.Reporting, Version=10.2.16.914, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
-  <data name="$this.SnapGridSize" type="Telerik.Reporting.Drawing.Unit, Telerik.Reporting">
+  </metadata>
+  <metadata name="$this.SnapGridSize" type="Telerik.Reporting.Drawing.Unit, Telerik.Reporting, Version=10.2.16.914, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
     <value>0.1cm</value>
-  </data>
+  </metadata>
 </root>

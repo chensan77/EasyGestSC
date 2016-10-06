@@ -30,7 +30,7 @@ Namespace Presentacion.Formulario.Configuracion
                     End With
 
                     EasyGestControllers.Data.Configuracion.ConfiguracionLocal.EscribirConfiguracion(gConfLocal)
-                    Impresion.TareaImpresion.EstablecerImpresora(gConfLocal.ImpresoraTicket)
+                    'Impresion.TareaImpresion.EstablecerImpresora(gConfLocal.ImpresoraTicket)
 
                     Dim dialogresult As DialogResult = Windows.Forms.DialogResult.None
                     With gConfGlobal

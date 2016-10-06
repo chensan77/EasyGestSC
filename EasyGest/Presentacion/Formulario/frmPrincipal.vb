@@ -51,7 +51,7 @@ Namespace Presentacion.Formulario
                     useShift = controlKey.Contains("SHIFT")
                     If e.Shift = useShift And e.Control = useCtrl And e.Alt = useAlt And e.KeyCode.Equals([Enum].Parse(GetType(Keys), key, True)) Then
                         e.SuppressKeyPress = False
-                        Impresion.TareaImpresion.AbrirCajon()
+                        'Impresion.TareaImpresion.AbrirCajon()
                     End If
                 Catch ex As Exception
 
