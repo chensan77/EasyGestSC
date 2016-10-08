@@ -95,6 +95,7 @@
     <Compile Include="Commands\GraphicEPLCommand.cs" />
     <Compile Include="Printing\IPrinter.cs" />
     <Compile Include="Printing\NetworkPrinter.cs" />
+    <Compile Include="Printing\PrintJobs.cs" />
     <Compile Include="Printing\SpoolPrinter.cs" />
     <Compile Include="Printing\USBPrinter.cs" />
     <Compile Include="Commands\StandardEPLCommand.cs" />
