@@ -56,7 +56,6 @@ Namespace Presentacion.Formulario
             Me.ResumeLayout(False)
 
         End Sub
-        Friend WithEvents RptListasCompra1 As EasyGest.rptListasCompra
         Private WithEvents ReportViewer1 As Telerik.ReportViewer.WinForms.ReportViewer
     End Class
 

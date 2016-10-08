@@ -19,7 +19,7 @@
     Public Function GetReport() As Telerik.Reporting.Report
 
         If ReportType.BaseType.FullName.Equals("Telerik.Reporting.Report") Then
-            Return ReportType.GetConstructor(Type.EmptyTypes).Invoke(New Object() {})
+            Return DirectCast(ReportType.GetConstructor(Type.EmptyTypes).Invoke(New Object() {}), Telerik.Reporting.Report)
         Else
             Return Nothing
         End If

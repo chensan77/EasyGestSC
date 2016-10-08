@@ -4951,7 +4951,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Logo", DbType:="Image", UpdateCheck:=UpdateCheck.Never)>  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Logo", DbType:="Image", CanBeNull:=true, UpdateCheck:=UpdateCheck.Never)>  _
 		Public Property Logo() As System.Data.Linq.Binary
 			Get
 				Return Me._Logo
@@ -10182,7 +10182,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Imagen", DbType:="Image", UpdateCheck:=UpdateCheck.Never)>  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Imagen", DbType:="Image", CanBeNull:=true, UpdateCheck:=UpdateCheck.Never)>  _
 		Public Property Imagen() As System.Data.Linq.Binary
 			Get
 				Return Me._Imagen
@@ -10377,7 +10377,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Imagen", DbType:="Image", UpdateCheck:=UpdateCheck.Never)>  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Imagen", DbType:="Image", CanBeNull:=true, UpdateCheck:=UpdateCheck.Never)>  _
 		Public Property Imagen() As System.Data.Linq.Binary
 			Get
 				Return Me._Imagen

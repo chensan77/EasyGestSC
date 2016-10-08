@@ -29,7 +29,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <AutorunEnabled>true</AutorunEnabled>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -1121,6 +1121,14 @@
     <ProjectReference Include="..\EasyGestControllers\EasyGestControllers.vbproj">
       <Name>EasyGestControllers</Name>
       <Project>{B98C069A-F339-4CE4-9268-D7F896D1BEA5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyGestPrint\EasyGestPrint.csproj">
+      <Project>{31d7d48d-d093-4b68-b540-0cd4f2220c30}</Project>
+      <Name>EasyGestPrint</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyGestReports\EasyGestReports.vbproj">
+      <Project>{20689c2e-44d1-497e-8ff3-cfd67f892381}</Project>
+      <Name>EasyGestReports</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

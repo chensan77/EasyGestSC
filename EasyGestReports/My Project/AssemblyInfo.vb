@@ -8,10 +8,10 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("EasyGestReports")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("registeredorganization")> 
-<Assembly: AssemblyProduct("projectname")> 
+<Assembly: AssemblyTitle("EasyGestReports")>
+<Assembly: AssemblyDescription("Reports para aplicaación EasyGest")>
+<Assembly: AssemblyCompany("Chen Soft")>
+<Assembly: AssemblyProduct("EasyGestReports")>
 <Assembly: AssemblyCopyright("Copyright ©  2016")> 
 <Assembly: AssemblyTrademark("")> 
 

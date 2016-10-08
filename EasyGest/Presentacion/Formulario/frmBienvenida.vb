@@ -82,7 +82,7 @@ Namespace Presentacion.Formulario
                 gPuesto = puestos.First()
             End If
             gConfLocal.PuestoID = gPuesto.idPuesto
-            Impresion.TareaImpresion.EstablecerImpresora(gConfLocal.ImpresoraTicket)
+            'Impresion.TareaImpresion.EstablecerImpresora(gConfLocal.ImpresoraTicket)
 
             Using control As New ImpuestosController()
                 gImpuestoPorDefecto = control.GetImpuestoPorDefecto()

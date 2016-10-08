@@ -8,9 +8,9 @@ Imports System.Runtime.InteropServices
 
 ' Revisar los valores de los atributos del ensamblado
 
-<Assembly: AssemblyTitle("EasyGestControllers")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
+<Assembly: AssemblyTitle("EasyGestControllers")>
+<Assembly: AssemblyDescription("Librereria control de la aplicación Easygest")>
+<Assembly: AssemblyCompany("Chen Soft")>
 <Assembly: AssemblyProduct("EasyGestControllers")> 
 <Assembly: AssemblyCopyright("Copyright ©  2011")> 
 <Assembly: AssemblyTrademark("")> 
