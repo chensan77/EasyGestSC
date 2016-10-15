@@ -1,6 +1,8 @@
 ﻿Imports System.Data.Linq
 
 Namespace Data.Entity
+    Partial Public Class EtiquetasEnRollo
+    End Class
 
 #Region "Enums"
 

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EasyGest" EntityNamespace="Data.Entity" ContextNamespace="Data.Context" Class="EasyGestDataContext" BaseType="BaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=CHENZHANG-PC;Initial Catalog=EasyGest;Persist Security Info=True;User ID=easygest" SettingsObjectName="EasyGestControllers.My.MySettings" SettingsPropertyName="EasyGestConnectionString5" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=CHENZHANG-PC;Initial Catalog=EasyGest;Integrated Security=True;Encrypt=False;TrustServerCertificate=True" SettingsObjectName="EasyGestControllers.My.MySettings" SettingsPropertyName="EasyGestConnectionString6" Provider="System.Data.SqlClient" />
   <Table Name="dbo.CodigosBarra" Member="CodigosBarra" AccessModifier="Internal">
     <Type Name="CodigosBarra">
       <Column Name="idCodigo" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -153,23 +153,6 @@
       <Column Name="FCreacion" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" UpdateCheck="Never" />
       <Column Name="Usuario" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="idUsuarioEmitido" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Etiquetas" Member="Etiquetas" AccessModifier="Internal">
-    <Type Name="Etiquetas">
-      <Column Name="idEtiqueta" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Referencia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Ancho" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Column Name="Alto" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Column Name="Filas" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
-      <Column Name="Columnas" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
-      <Column Name="EspacioH" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Column Name="EspacioV" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Column Name="MargenIzq" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Column Name="MargenDer" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Column Name="MargenSup" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Column Name="MargenInf" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Column Name="Usos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.VWContactos" Member="VWContactos">
@@ -385,15 +368,6 @@
       <Column Name="Caracteristica" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="Valor" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
       <Column Name="Tipo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-  <Table Name="dbo.DiseñosEtiqueta" Member="DiseñosEtiqueta">
-    <Type Name="DiseñosEtiqueta">
-      <Column Name="idDiseño" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="idEtiqueta" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
-      <Column Name="Nombre" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Descripcion" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
-      <Column Name="XMLDiseño" Type="System.Xml.Linq.XElement" DbType="Xml NOT NULL" CanBeNull="false" UpdateCheck="Never" />
     </Type>
   </Table>
   <Table Name="dbo.MovimientosTarjeta" Member="MovimientosTarjeta">
@@ -982,6 +956,45 @@
       <Column Name="Valor" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="idEmpresa" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
       <Association Name="Empresas_Configuraciones" Member="Empresas" ThisKey="idEmpresa" OtherKey="idEmpresa" Type="Empresas" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DiseñosEtiqueta" Member="DiseñosEtiqueta">
+    <Type Name="DiseñosEtiqueta">
+      <Column Name="idDiseño" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idEtiqueta" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="TipoEtiqueta" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="XMLDiseño" Type="System.Xml.Linq.XElement" DbType="Xml NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="" Member="Etiquetas">
+    <Type Name="Etiquetas">
+      <Column Member="Descripcion" Type="System.String" CanBeNull="false" IsDiscriminator="true" />
+      <Type Name="EtiquetasEnHoja">
+        <Column Name="idEtiqueta" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+        <Column Name="Referencia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+        <Column Name="Ancho" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+        <Column Name="Alto" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+        <Column Name="Filas" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+        <Column Name="Columnas" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+        <Column Name="EspacioH" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+        <Column Name="EspacioV" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+        <Column Name="MargenIzq" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+        <Column Name="MargenDer" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+        <Column Name="MargenSup" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+        <Column Name="MargenInf" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+        <Column Name="Usos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      </Type>
+      <Type Name="EtiquetasEnRollo">
+        <Column Name="idEtiqueta" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+        <Column Name="Referencia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+        <Column Name="Ancho" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+        <Column Name="Alto" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+        <Column Name="GAP" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+        <Column Name="UnidadMedida" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+        <Column Name="Usos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      </Type>
     </Type>
   </Table>
   <Function Name="dbo.SPInformeCompra" Method="SPInformeCompra" AccessModifier="Internal">
