@@ -16,7 +16,7 @@ Namespace Presentacion.Formulario.Configuracion
                     Using control As New EtiquetasController
                         Dim nuevos As New List(Of Etiquetas)()
                         control.DeleteItems(_etiquetasdeleted)
-                        For Each Etiqueta As Etiquetas In EtiquetasBindingSource.List
+                        For Each Etiqueta As Etiquetas In EtiquetasHBindingSource.List
                             If Etiqueta.idEtiqueta = 0 Then
                                 nuevos.Add(Etiqueta)
                             Else
@@ -46,8 +46,8 @@ Namespace Presentacion.Formulario.Configuracion
         End Sub
 
         Private Sub frmEtiqueta_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-            pvEtiqueta.SelectedPage = pvpEtiquetas
-            PrepararControles(pvpEtiquetas.Controls)
+            pvEtiqueta.SelectedPage = pvpEtiquetasEnHoja
+            PrepararControles(pvpEtiquetasEnHoja.Controls)
             PrepararControles(pvpDiseños.Controls)
             btnAceptar.ButtonElement.Shortcuts.Add(New Telerik.WinControls.RadShortcut(Keys.Control, Keys.Enter))
         End Sub
@@ -68,7 +68,7 @@ Namespace Presentacion.Formulario.Configuracion
 
 #Region "Evento Grid"
 
-        Private Sub gridDatos_RowsChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles gridDatos.RowsChanging, gridDiseños.RowsChanging
+        Private Sub gridDatos_RowsChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles gridEtiquetasH.RowsChanging, gridDiseños.RowsChanging
             If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Remove Then                
                 e.Cancel = Not MostrarMensaje(My.Resources.Application.ConfirmacionBorrarDato, Me.Text, Telerik.WinControls.RadMessageIcon.Question, MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes
             End If
@@ -86,7 +86,7 @@ Namespace Presentacion.Formulario.Configuracion
             End If
         End Sub
 
-        Private Sub gridDatos_RowsChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles gridDatos.RowsChanged
+        Private Sub gridDatos_RowsChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles gridEtiquetasH.RowsChanged
             If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Remove Then
                 Dim diseños As IList(Of DiseñosEtiqueta) = DirectCast(DiseñosEtiquetaBindingSource.DataSource, List(Of DiseñosEtiqueta))
                 For Each row As GridViewRowInfo In e.OldItems
@@ -156,7 +156,7 @@ Namespace Presentacion.Formulario.Configuracion
 
         Private Sub CargarDatos()
             Using c As New Controller.EtiquetasController()
-                EtiquetasBindingSource.DataSource = c.GetItems("", "Usos DESC, Referencia")
+                EtiquetasHBindingSource.DataSource = c.GetItems("", "Usos DESC, Referencia")
                 EtiquetasDiseñoBindingSource.DataSource = c.GetItems("", "Referencia")
             End Using
 

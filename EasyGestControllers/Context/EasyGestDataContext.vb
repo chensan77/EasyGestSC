@@ -1,8 +1,6 @@
 ﻿Imports System.Data.Linq
 
 Namespace Data.Entity
-    Partial Public Class EtiquetasEnRollo
-    End Class
 
 #Region "Enums"
 
@@ -501,7 +499,7 @@ Namespace Data.Entity
 
     End Class
 
-    Partial Class Etiquetas
+    Partial Class EtiquetasEnHoja
 
         Private Sub OnCreated()
             _idEtiqueta = Now().Ticks - Util.Comunes.FECHA_REFERENCIA.Ticks
@@ -519,9 +517,43 @@ Namespace Data.Entity
             End If
         End Function
 
+        Public Property UnidadMediad As String
+            Get
+                Return "CM"
+            End Get
+            Private Set(value As String)
+
+            End Set
+        End Property
+
         Public ReadOnly Property NombreEtiqueta() As String
             Get
-                Return "Ref:" & _Referencia & " " & _Filas & "X" & _Columnas & " An:" & _Ancho & "cm" & " Al:" & _Alto & "cm"
+                Return "Ref:" & _Referencia & " " & _Filas & "X" & _Columnas & " An:" & _Ancho & UnidadMediad & " Al:" & _Alto & UnidadMediad
+            End Get
+        End Property
+
+    End Class
+
+    Partial Class EtiquetasEnRollo
+
+        Private Sub OnCreated()
+            _idEtiqueta = Now().Ticks - Util.Comunes.FECHA_REFERENCIA.Ticks
+        End Sub
+
+        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
+            Dim unidades As String() = New String() {"CM", "INCH", "POINT"}
+            If action = ChangeAction.Update Or action = ChangeAction.Insert Then
+                Return _Alto > 0.0 And _Ancho > 0.0 And Not String.IsNullOrWhiteSpace(_Referencia) And unidades.Contains(_UnidadMedida)
+            ElseIf action = ChangeAction.Delete Then
+                Return True
+            Else
+                Return True
+            End If
+        End Function
+
+        Public ReadOnly Property NombreEtiqueta() As String
+            Get
+                Return "Ref:" & _Referencia & " An:" & _Ancho & _UnidadMedida & " Al:" & _Alto & _UnidadMedida
             End Get
         End Property
     End Class
@@ -826,7 +858,7 @@ Namespace Data.Entity
 
     End Class
 
-    
+
 
     Partial Class Ofertas
 
@@ -959,7 +991,7 @@ Namespace Data.Entity
             _FCreacion = Now()
             _Activo = True
             _UnidadVenta = 1.0F
-            _UnidadXCaja = 1.0F            
+            _UnidadXCaja = 1.0F
         End Sub
 
         Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
@@ -1164,11 +1196,11 @@ Namespace Data.Entity
 
         Public WriteOnly Property FormulaSaldo As String
             Set(value As String)
-                _formulaSaldo = value
+                _FormulaSaldo = value
                 Dim _b1, _b2, _b3, _b4 As Single
 
                 Try
-                    Util.Comunes.InterpretarFormulaFidelizacion(_formulaSaldo, _b1, _b2, _b3, _b4)
+                    Util.Comunes.InterpretarFormulaFidelizacion(_FormulaSaldo, _b1, _b2, _b3, _b4)
                     _Base = _b1
                     _Beneficio = _b2
                     _BasePunto = _b3

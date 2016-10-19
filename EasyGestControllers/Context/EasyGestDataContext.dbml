@@ -968,33 +968,32 @@
       <Column Name="XMLDiseño" Type="System.Xml.Linq.XElement" DbType="Xml NOT NULL" CanBeNull="false" UpdateCheck="Never" />
     </Type>
   </Table>
-  <Table Name="" Member="Etiquetas">
-    <Type Name="Etiquetas">
-      <Column Member="Descripcion" Type="System.String" CanBeNull="false" IsDiscriminator="true" />
-      <Type Name="EtiquetasEnHoja">
-        <Column Name="idEtiqueta" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-        <Column Name="Referencia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-        <Column Name="Ancho" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-        <Column Name="Alto" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-        <Column Name="Filas" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
-        <Column Name="Columnas" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
-        <Column Name="EspacioH" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-        <Column Name="EspacioV" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-        <Column Name="MargenIzq" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-        <Column Name="MargenDer" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-        <Column Name="MargenSup" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-        <Column Name="MargenInf" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-        <Column Name="Usos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      </Type>
-      <Type Name="EtiquetasEnRollo">
-        <Column Name="idEtiqueta" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-        <Column Name="Referencia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-        <Column Name="Ancho" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-        <Column Name="Alto" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-        <Column Name="GAP" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-        <Column Name="UnidadMedida" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-        <Column Name="Usos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      </Type>
+  <Table Name="" Member="EtiquetasEnHoja">
+    <Type Name="EtiquetasEnHoja">
+      <Column Name="idEtiqueta" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Referencia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Ancho" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Alto" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Filas" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Columnas" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="EspacioH" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="EspacioV" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="MargenIzq" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="MargenDer" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="MargenSup" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="MargenInf" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Usos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="" Member="EtiquetasEnRollo">
+    <Type Name="EtiquetasEnRollo">
+      <Column Name="idEtiqueta" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Referencia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Ancho" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Alto" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="GAP" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="UnidadMedida" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Usos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Function Name="dbo.SPInformeCompra" Method="SPInformeCompra" AccessModifier="Internal">

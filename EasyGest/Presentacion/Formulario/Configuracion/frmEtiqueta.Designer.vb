@@ -27,6 +27,8 @@
             Me.components = New System.ComponentModel.Container()
             Dim RadLabel1 As Telerik.WinControls.UI.RadLabel
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmEtiqueta))
+            Dim RadLabel4 As Telerik.WinControls.UI.RadLabel
+            Dim RadLabel2 As Telerik.WinControls.UI.RadLabel
             Dim GridViewDecimalColumn1 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
             Dim GridViewTextBoxColumn1 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
             Dim GridViewDecimalColumn2 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
@@ -47,17 +49,25 @@
             Dim GridViewTextBoxColumn2 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
             Dim GridViewTextBoxColumn3 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
             Dim TableViewDefinition2 As Telerik.WinControls.UI.TableViewDefinition = New Telerik.WinControls.UI.TableViewDefinition()
-            Dim RadLabel4 As Telerik.WinControls.UI.RadLabel
-            Dim RadLabel2 As Telerik.WinControls.UI.RadLabel
+            Dim GridViewDecimalColumn15 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
+            Dim GridViewTextBoxColumn4 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
+            Dim GridViewDecimalColumn16 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
+            Dim GridViewDecimalColumn17 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
+            Dim GridViewDecimalColumn18 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
+            Dim GridViewDecimalColumn19 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
+            Dim GridViewTextBoxColumn5 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
+            Dim GridViewTextBoxColumn6 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
+            Dim SortDescriptor2 As Telerik.WinControls.Data.SortDescriptor = New Telerik.WinControls.Data.SortDescriptor()
+            Dim TableViewDefinition3 As Telerik.WinControls.UI.TableViewDefinition = New Telerik.WinControls.UI.TableViewDefinition()
             Dim InputBinding1 As Telerik.WinControls.Keyboard.InputBinding = New Telerik.WinControls.Keyboard.InputBinding()
             Dim Chord1 As Telerik.WinControls.Keyboard.Chord = New Telerik.WinControls.Keyboard.Chord()
             Dim ChordModifier1 As Telerik.WinControls.Keyboard.ChordModifier = New Telerik.WinControls.Keyboard.ChordModifier()
-            Me.gridDatos = New Telerik.WinControls.UI.RadGridView()
-            Me.EtiquetasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+            Me.gridEtiquetasH = New Telerik.WinControls.UI.RadGridView()
+            Me.EtiquetasHBindingSource = New System.Windows.Forms.BindingSource(Me.components)
             Me.gridDiseños = New Telerik.WinControls.UI.RadGridView()
             Me.DiseñosEtiquetaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
             Me.pvEtiqueta = New Telerik.WinControls.UI.RadPageView()
-            Me.pvpEtiquetas = New Telerik.WinControls.UI.RadPageViewPage()
+            Me.pvpEtiquetasEnHoja = New Telerik.WinControls.UI.RadPageViewPage()
             Me.pvpDiseños = New Telerik.WinControls.UI.RadPageViewPage()
             Me.btnExaminar = New Telerik.WinControls.UI.RadButton()
             Me.txtArchivo = New Telerik.WinControls.UI.RadTextBox()
@@ -66,21 +76,24 @@
             Me.rptvPrevisualizacion = New Telerik.ReportViewer.WinForms.ReportViewer()
             Me.btnCancelar = New Telerik.WinControls.UI.RadButton()
             Me.btnAceptar = New Telerik.WinControls.UI.RadButton()
+            Me.pvpEtiquetasEnRollo = New Telerik.WinControls.UI.RadPageViewPage()
+            Me.gridEtiqutasR = New Telerik.WinControls.UI.RadGridView()
+            Me.EtiquetasRBindingSource = New System.Windows.Forms.BindingSource(Me.components)
             RadLabel1 = New Telerik.WinControls.UI.RadLabel()
             RadLabel4 = New Telerik.WinControls.UI.RadLabel()
             RadLabel2 = New Telerik.WinControls.UI.RadLabel()
             CType(RadLabel1, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.gridDatos, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.gridDatos.MasterTemplate, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.EtiquetasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(RadLabel4, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(RadLabel2, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.gridEtiquetasH, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.gridEtiquetasH.MasterTemplate, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.EtiquetasHBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.gridDiseños, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.gridDiseños.MasterTemplate, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.DiseñosEtiquetaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(RadLabel4, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(RadLabel2, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.pvEtiqueta, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.pvEtiqueta.SuspendLayout()
-            Me.pvpEtiquetas.SuspendLayout()
+            Me.pvpEtiquetasEnHoja.SuspendLayout()
             Me.pvpDiseños.SuspendLayout()
             CType(Me.btnExaminar, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.txtArchivo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -88,6 +101,10 @@
             CType(Me.EtiquetasDiseñoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.btnCancelar, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.btnAceptar, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.pvpEtiquetasEnRollo.SuspendLayout()
+            CType(Me.gridEtiqutasR, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.gridEtiqutasR.MasterTemplate, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.EtiquetasRBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
@@ -97,22 +114,29 @@
             RadLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel1.Name = "RadLabel1"
             '
+            'RadLabel4
+            '
+            resources.ApplyResources(RadLabel4, "RadLabel4")
+            RadLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
+            RadLabel4.Name = "RadLabel4"
+            '
+            'RadLabel2
+            '
+            resources.ApplyResources(RadLabel2, "RadLabel2")
+            RadLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
+            RadLabel2.Name = "RadLabel2"
+            '
+            'gridEtiquetasH
+            '
+            resources.ApplyResources(Me.gridEtiquetasH, "gridEtiquetasH")
+            Me.gridEtiquetasH.BackColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(255, Byte), Integer))
+            Me.gridEtiquetasH.Cursor = System.Windows.Forms.Cursors.Default
+            Me.gridEtiquetasH.ForeColor = System.Drawing.Color.Black
             '
             '
-            RadLabel1.RootElement.AccessibleDescription = Nothing
-            RadLabel1.RootElement.AccessibleName = Nothing
             '
-            'gridDatos
-            '
-            resources.ApplyResources(Me.gridDatos, "gridDatos")
-            Me.gridDatos.BackColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(255, Byte), Integer))
-            Me.gridDatos.Cursor = System.Windows.Forms.Cursors.Default
-            Me.gridDatos.ForeColor = System.Drawing.Color.Black
-            '
-            '
-            '
-            Me.gridDatos.MasterTemplate.AllowRowResize = False
-            Me.gridDatos.MasterTemplate.Caption = resources.GetString("gridDatos.MasterTemplate.Caption")
+            Me.gridEtiquetasH.MasterTemplate.AllowRowResize = False
+            Me.gridEtiquetasH.MasterTemplate.Caption = resources.GetString("gridDatos.MasterTemplate.Caption")
             GridViewDecimalColumn1.DataType = GetType(Long)
             GridViewDecimalColumn1.EnableExpressionEditor = False
             resources.ApplyResources(GridViewDecimalColumn1, "GridViewDecimalColumn1")
@@ -234,25 +258,20 @@
             GridViewDecimalColumn12.IsVisible = False
             GridViewDecimalColumn12.Name = "Usos"
             GridViewDecimalColumn12.SortOrder = Telerik.WinControls.UI.RadSortOrder.Ascending
-            Me.gridDatos.MasterTemplate.Columns.AddRange(New Telerik.WinControls.UI.GridViewDataColumn() {GridViewDecimalColumn1, GridViewTextBoxColumn1, GridViewDecimalColumn2, GridViewDecimalColumn3, GridViewDecimalColumn4, GridViewDecimalColumn5, GridViewDecimalColumn6, GridViewDecimalColumn7, GridViewDecimalColumn8, GridViewDecimalColumn9, GridViewDecimalColumn10, GridViewDecimalColumn11, GridViewDecimalColumn12})
-            Me.gridDatos.MasterTemplate.DataSource = Me.EtiquetasBindingSource
-            Me.gridDatos.MasterTemplate.EnableAlternatingRowColor = True
-            Me.gridDatos.MasterTemplate.EnableGrouping = False
+            Me.gridEtiquetasH.MasterTemplate.Columns.AddRange(New Telerik.WinControls.UI.GridViewDataColumn() {GridViewDecimalColumn1, GridViewTextBoxColumn1, GridViewDecimalColumn2, GridViewDecimalColumn3, GridViewDecimalColumn4, GridViewDecimalColumn5, GridViewDecimalColumn6, GridViewDecimalColumn7, GridViewDecimalColumn8, GridViewDecimalColumn9, GridViewDecimalColumn10, GridViewDecimalColumn11, GridViewDecimalColumn12})
+            Me.gridEtiquetasH.MasterTemplate.DataSource = Me.EtiquetasHBindingSource
+            Me.gridEtiquetasH.MasterTemplate.EnableAlternatingRowColor = True
+            Me.gridEtiquetasH.MasterTemplate.EnableGrouping = False
             SortDescriptor1.PropertyName = "Usos"
-            Me.gridDatos.MasterTemplate.SortDescriptors.AddRange(New Telerik.WinControls.Data.SortDescriptor() {SortDescriptor1})
-            Me.gridDatos.MasterTemplate.ViewDefinition = TableViewDefinition1
-            Me.gridDatos.Name = "gridDatos"
+            Me.gridEtiquetasH.MasterTemplate.SortDescriptors.AddRange(New Telerik.WinControls.Data.SortDescriptor() {SortDescriptor1})
+            Me.gridEtiquetasH.MasterTemplate.ViewDefinition = TableViewDefinition1
+            Me.gridEtiquetasH.Name = "gridEtiquetasH"
+            Me.gridEtiquetasH.ShowGroupPanel = False
+            Me.gridEtiquetasH.TabStop = False
             '
+            'EtiquetasHBindingSource
             '
-            '
-            Me.gridDatos.RootElement.AccessibleDescription = Nothing
-            Me.gridDatos.RootElement.AccessibleName = Nothing
-            Me.gridDatos.ShowGroupPanel = False
-            Me.gridDatos.TabStop = False
-            '
-            'EtiquetasBindingSource
-            '
-            Me.EtiquetasBindingSource.DataSource = GetType(EasyGestControllers.Data.Entity.Etiquetas)
+            Me.EtiquetasHBindingSource.DataSource = GetType(EasyGestControllers.Data.Entity.EtiquetasEnHoja)
             '
             'gridDiseños
             '
@@ -298,11 +317,6 @@
             Me.gridDiseños.MasterTemplate.EnableGrouping = False
             Me.gridDiseños.MasterTemplate.ViewDefinition = TableViewDefinition2
             Me.gridDiseños.Name = "gridDiseños"
-            '
-            '
-            '
-            Me.gridDiseños.RootElement.AccessibleDescription = Nothing
-            Me.gridDiseños.RootElement.AccessibleName = Nothing
             Me.gridDiseños.ShowGroupPanel = False
             Me.gridDiseños.TabStop = False
             '
@@ -310,55 +324,29 @@
             '
             Me.DiseñosEtiquetaBindingSource.DataSource = GetType(EasyGestControllers.Data.Entity.DiseñosEtiqueta)
             '
-            'RadLabel4
-            '
-            resources.ApplyResources(RadLabel4, "RadLabel4")
-            RadLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
-            RadLabel4.Name = "RadLabel4"
-            '
-            '
-            '
-            RadLabel4.RootElement.AccessibleDescription = Nothing
-            RadLabel4.RootElement.AccessibleName = Nothing
-            '
-            'RadLabel2
-            '
-            resources.ApplyResources(RadLabel2, "RadLabel2")
-            RadLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
-            RadLabel2.Name = "RadLabel2"
-            '
-            '
-            '
-            RadLabel2.RootElement.AccessibleDescription = Nothing
-            RadLabel2.RootElement.AccessibleName = Nothing
-            '
             'pvEtiqueta
             '
             resources.ApplyResources(Me.pvEtiqueta, "pvEtiqueta")
-            Me.pvEtiqueta.Controls.Add(Me.pvpEtiquetas)
+            Me.pvEtiqueta.Controls.Add(Me.pvpEtiquetasEnHoja)
+            Me.pvEtiqueta.Controls.Add(Me.pvpEtiquetasEnRollo)
             Me.pvEtiqueta.Controls.Add(Me.pvpDiseños)
             Me.pvEtiqueta.Name = "pvEtiqueta"
-            '
-            '
-            '
-            Me.pvEtiqueta.RootElement.AccessibleDescription = Nothing
-            Me.pvEtiqueta.RootElement.AccessibleName = Nothing
-            Me.pvEtiqueta.SelectedPage = Me.pvpEtiquetas
+            Me.pvEtiqueta.SelectedPage = Me.pvpEtiquetasEnHoja
             CType(Me.pvEtiqueta.GetChildAt(0), Telerik.WinControls.UI.RadPageViewStripElement).ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             CType(Me.pvEtiqueta.GetChildAt(0), Telerik.WinControls.UI.RadPageViewStripElement).Font = New System.Drawing.Font("Lucida Sans Unicode", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             CType(Me.pvEtiqueta.GetChildAt(0).GetChildAt(0).GetChildAt(0), Telerik.WinControls.UI.StripViewItemLayout).Font = New System.Drawing.Font("Lucida Sans Unicode", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             CType(Me.pvEtiqueta.GetChildAt(0).GetChildAt(2), Telerik.WinControls.UI.RadPageViewLabelElement).Text = resources.GetString("resource.Text1")
             CType(Me.pvEtiqueta.GetChildAt(0).GetChildAt(2), Telerik.WinControls.UI.RadPageViewLabelElement).Font = New System.Drawing.Font("楷体", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             '
-            'pvpEtiquetas
+            'pvpEtiquetasEnHoja
             '
-            resources.ApplyResources(Me.pvpEtiquetas, "pvpEtiquetas")
-            Me.pvpEtiquetas.Controls.Add(RadLabel1)
-            Me.pvpEtiquetas.Controls.Add(Me.gridDatos)
-            Me.pvpEtiquetas.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
-            Me.pvpEtiquetas.Image = Global.EasyGest.My.Resources.Resources.tag_blue
-            Me.pvpEtiquetas.ItemSize = New System.Drawing.SizeF(150.0!, 32.0!)
-            Me.pvpEtiquetas.Name = "pvpEtiquetas"
+            resources.ApplyResources(Me.pvpEtiquetasEnHoja, "pvpEtiquetasEnHoja")
+            Me.pvpEtiquetasEnHoja.Controls.Add(RadLabel1)
+            Me.pvpEtiquetasEnHoja.Controls.Add(Me.gridEtiquetasH)
+            Me.pvpEtiquetasEnHoja.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
+            Me.pvpEtiquetasEnHoja.Image = Global.EasyGest.My.Resources.Resources.tag_blue
+            Me.pvpEtiquetasEnHoja.ItemSize = New System.Drawing.SizeF(166.0!, 32.0!)
+            Me.pvpEtiquetasEnHoja.Name = "pvpEtiquetasEnHoja"
             '
             'pvpDiseños
             '
@@ -380,11 +368,6 @@
             resources.ApplyResources(Me.btnExaminar, "btnExaminar")
             Me.btnExaminar.Image = Global.EasyGest.My.Resources.Resources.folder_explore
             Me.btnExaminar.Name = "btnExaminar"
-            '
-            '
-            '
-            Me.btnExaminar.RootElement.AccessibleDescription = Nothing
-            Me.btnExaminar.RootElement.AccessibleName = Nothing
             Me.btnExaminar.TextWrap = True
             '
             'txtArchivo
@@ -397,8 +380,6 @@
             '
             '
             '
-            Me.txtArchivo.RootElement.AccessibleDescription = Nothing
-            Me.txtArchivo.RootElement.AccessibleName = Nothing
             Me.txtArchivo.RootElement.ApplyShapeToControl = False
             Me.txtArchivo.TabStop = False
             Me.txtArchivo.Tag = ""
@@ -423,18 +404,13 @@
             Me.ddlEtiquetas.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
             Me.ddlEtiquetas.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.ddlEtiquetas.Name = "ddlEtiquetas"
-            '
-            '
-            '
-            Me.ddlEtiquetas.RootElement.AccessibleDescription = Nothing
-            Me.ddlEtiquetas.RootElement.AccessibleName = Nothing
             Me.ddlEtiquetas.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending
             Me.ddlEtiquetas.ValueMember = "idEtiqueta"
             CType(Me.ddlEtiquetas.GetChildAt(0), Telerik.WinControls.UI.RadDropDownListElement).DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
             '
             'EtiquetasDiseñoBindingSource
             '
-            Me.EtiquetasDiseñoBindingSource.DataSource = GetType(EasyGestControllers.Data.Entity.Etiquetas)
+            Me.EtiquetasDiseñoBindingSource.DataSource = GetType(EasyGestControllers.Data.Entity.EtiquetasEnHoja)
             '
             'rptvPrevisualizacion
             '
@@ -474,6 +450,7 @@
             Me.rptvPrevisualizacion.Resources.ReportParametersSelectAllText = resources.GetString("rptvPrevisualizacion.Resources.ReportParametersSelectAllText")
             Me.rptvPrevisualizacion.Resources.ReportParametersSelectAValueText = resources.GetString("rptvPrevisualizacion.Resources.ReportParametersSelectAValueText")
             Me.rptvPrevisualizacion.Resources.ReportParametersTrueValueLabel = resources.GetString("rptvPrevisualizacion.Resources.ReportParametersTrueValueLabel")
+            Me.rptvPrevisualizacion.Resources.SessionExpired = resources.GetString("rptvPrevisualizacion.Resources.SessionExpired")
             Me.rptvPrevisualizacion.Resources.StopProcessing = resources.GetString("rptvPrevisualizacion.Resources.StopProcessing")
             Me.rptvPrevisualizacion.Resources.StopToolTip = resources.GetString("rptvPrevisualizacion.Resources.StopToolTip")
             Me.rptvPrevisualizacion.Resources.TotalPagesToolTip = resources.GetString("rptvPrevisualizacion.Resources.TotalPagesToolTip")
@@ -496,11 +473,6 @@
             resources.ApplyResources(Me.btnCancelar, "btnCancelar")
             Me.btnCancelar.Image = Global.EasyGest.My.Resources.Resources.cancel
             Me.btnCancelar.Name = "btnCancelar"
-            '
-            '
-            '
-            Me.btnCancelar.RootElement.AccessibleDescription = Nothing
-            Me.btnCancelar.RootElement.AccessibleName = Nothing
             CType(Me.btnCancelar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).Image = Global.EasyGest.My.Resources.Resources.cancel
             CType(Me.btnCancelar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
             CType(Me.btnCancelar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
@@ -512,16 +484,99 @@
             resources.ApplyResources(Me.btnAceptar, "btnAceptar")
             Me.btnAceptar.Image = Global.EasyGest.My.Resources.Resources.accept
             Me.btnAceptar.Name = "btnAceptar"
-            '
-            '
-            '
-            Me.btnAceptar.RootElement.AccessibleDescription = Nothing
-            Me.btnAceptar.RootElement.AccessibleName = Nothing
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).Image = Global.EasyGest.My.Resources.Resources.accept
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).Text = resources.GetString("resource.Text3")
             CType(Me.btnAceptar.GetChildAt(0).GetChildAt(2), Telerik.WinControls.Primitives.BorderPrimitive).ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(66, Byte), Integer))
+            '
+            'pvpEtiquetasEnRollo
+            '
+            resources.ApplyResources(Me.pvpEtiquetasEnRollo, "pvpEtiquetasEnRollo")
+            Me.pvpEtiquetasEnRollo.Controls.Add(Me.gridEtiqutasR)
+            Me.pvpEtiquetasEnRollo.ItemSize = New System.Drawing.SizeF(151.0!, 32.0!)
+            Me.pvpEtiquetasEnRollo.Name = "pvpEtiquetasEnRollo"
+            '
+            'gridEtiqutasR
+            '
+            resources.ApplyResources(Me.gridEtiqutasR, "gridEtiqutasR")
+            Me.gridEtiqutasR.BackColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(255, Byte), Integer))
+            Me.gridEtiqutasR.Cursor = System.Windows.Forms.Cursors.Default
+            Me.gridEtiqutasR.ForeColor = System.Drawing.Color.Black
+            '
+            '
+            '
+            Me.gridEtiqutasR.MasterTemplate.AllowRowResize = False
+            Me.gridEtiqutasR.MasterTemplate.Caption = resources.GetString("RadGridView1.MasterTemplate.Caption")
+            GridViewDecimalColumn15.DataType = GetType(Long)
+            GridViewDecimalColumn15.EnableExpressionEditor = False
+            resources.ApplyResources(GridViewDecimalColumn15, "GridViewDecimalColumn15")
+            GridViewDecimalColumn15.FieldName = "idEtiqueta"
+            GridViewDecimalColumn15.IsAutoGenerated = True
+            GridViewDecimalColumn15.IsVisible = False
+            GridViewDecimalColumn15.Name = "idEtiqueta"
+            GridViewTextBoxColumn4.EnableExpressionEditor = False
+            resources.ApplyResources(GridViewTextBoxColumn4, "GridViewTextBoxColumn4")
+            GridViewTextBoxColumn4.FieldName = "Referencia"
+            GridViewTextBoxColumn4.IsAutoGenerated = True
+            GridViewTextBoxColumn4.Name = "Referencia"
+            GridViewTextBoxColumn4.Width = 91
+            GridViewDecimalColumn16.DataType = GetType(Double)
+            GridViewDecimalColumn16.EnableExpressionEditor = False
+            resources.ApplyResources(GridViewDecimalColumn16, "GridViewDecimalColumn16")
+            GridViewDecimalColumn16.FieldName = "Ancho"
+            GridViewDecimalColumn16.IsAutoGenerated = True
+            GridViewDecimalColumn16.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
+            GridViewDecimalColumn16.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
+            GridViewDecimalColumn16.Name = "Ancho"
+            GridViewDecimalColumn16.ShowUpDownButtons = False
+            GridViewDecimalColumn16.Width = 54
+            GridViewDecimalColumn17.DataType = GetType(Double)
+            GridViewDecimalColumn17.EnableExpressionEditor = False
+            resources.ApplyResources(GridViewDecimalColumn17, "GridViewDecimalColumn17")
+            GridViewDecimalColumn17.FieldName = "Alto"
+            GridViewDecimalColumn17.IsAutoGenerated = True
+            GridViewDecimalColumn17.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
+            GridViewDecimalColumn17.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
+            GridViewDecimalColumn17.Name = "Alto"
+            GridViewDecimalColumn17.ShowUpDownButtons = False
+            GridViewDecimalColumn17.Width = 60
+            GridViewDecimalColumn18.DataType = GetType(Integer)
+            GridViewDecimalColumn18.EnableExpressionEditor = False
+            resources.ApplyResources(GridViewDecimalColumn18, "GridViewDecimalColumn18")
+            GridViewDecimalColumn18.FieldName = "Usos"
+            GridViewDecimalColumn18.IsAutoGenerated = True
+            GridViewDecimalColumn18.IsVisible = False
+            GridViewDecimalColumn18.Name = "Usos"
+            GridViewDecimalColumn18.SortOrder = Telerik.WinControls.UI.RadSortOrder.Ascending
+            GridViewDecimalColumn19.DataType = GetType(Double)
+            resources.ApplyResources(GridViewDecimalColumn19, "GridViewDecimalColumn19")
+            GridViewDecimalColumn19.FieldName = "GAP"
+            GridViewDecimalColumn19.IsAutoGenerated = True
+            GridViewDecimalColumn19.Name = "GAP"
+            resources.ApplyResources(GridViewTextBoxColumn5, "GridViewTextBoxColumn5")
+            GridViewTextBoxColumn5.FieldName = "UnidadMedida"
+            GridViewTextBoxColumn5.IsAutoGenerated = True
+            GridViewTextBoxColumn5.Name = "UnidadMedida"
+            resources.ApplyResources(GridViewTextBoxColumn6, "GridViewTextBoxColumn6")
+            GridViewTextBoxColumn6.FieldName = "NombreEtiqueta"
+            GridViewTextBoxColumn6.IsAutoGenerated = True
+            GridViewTextBoxColumn6.Name = "NombreEtiqueta"
+            GridViewTextBoxColumn6.ReadOnly = True
+            Me.gridEtiqutasR.MasterTemplate.Columns.AddRange(New Telerik.WinControls.UI.GridViewDataColumn() {GridViewDecimalColumn15, GridViewTextBoxColumn4, GridViewDecimalColumn16, GridViewDecimalColumn17, GridViewDecimalColumn18, GridViewDecimalColumn19, GridViewTextBoxColumn5, GridViewTextBoxColumn6})
+            Me.gridEtiqutasR.MasterTemplate.DataSource = Me.EtiquetasRBindingSource
+            Me.gridEtiqutasR.MasterTemplate.EnableAlternatingRowColor = True
+            Me.gridEtiqutasR.MasterTemplate.EnableGrouping = False
+            SortDescriptor2.PropertyName = "Usos"
+            Me.gridEtiqutasR.MasterTemplate.SortDescriptors.AddRange(New Telerik.WinControls.Data.SortDescriptor() {SortDescriptor2})
+            Me.gridEtiqutasR.MasterTemplate.ViewDefinition = TableViewDefinition3
+            Me.gridEtiqutasR.Name = "gridEtiqutasR"
+            Me.gridEtiqutasR.ShowGroupPanel = False
+            Me.gridEtiqutasR.TabStop = False
+            '
+            'EtiquetasRBindingSource
+            '
+            Me.EtiquetasRBindingSource.DataSource = GetType(EasyGestControllers.Data.Entity.EtiquetasEnRollo)
             '
             'frmEtiqueta
             '
@@ -546,22 +601,20 @@
             '
             '
             '
-            Me.RootElement.AccessibleDescription = Nothing
-            Me.RootElement.AccessibleName = Nothing
             Me.RootElement.ApplyShapeToControl = True
             CType(RadLabel1, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.gridDatos.MasterTemplate, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.gridDatos, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.EtiquetasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(RadLabel4, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(RadLabel2, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.gridEtiquetasH.MasterTemplate, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.gridEtiquetasH, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.EtiquetasHBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.gridDiseños.MasterTemplate, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.gridDiseños, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.DiseñosEtiquetaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(RadLabel4, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(RadLabel2, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.pvEtiqueta, System.ComponentModel.ISupportInitialize).EndInit()
             Me.pvEtiqueta.ResumeLayout(False)
-            Me.pvpEtiquetas.ResumeLayout(False)
-            Me.pvpEtiquetas.PerformLayout()
+            Me.pvpEtiquetasEnHoja.ResumeLayout(False)
+            Me.pvpEtiquetasEnHoja.PerformLayout()
             Me.pvpDiseños.ResumeLayout(False)
             Me.pvpDiseños.PerformLayout()
             CType(Me.btnExaminar, System.ComponentModel.ISupportInitialize).EndInit()
@@ -570,17 +623,21 @@
             CType(Me.EtiquetasDiseñoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.btnCancelar, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.btnAceptar, System.ComponentModel.ISupportInitialize).EndInit()
+            Me.pvpEtiquetasEnRollo.ResumeLayout(False)
+            CType(Me.gridEtiqutasR.MasterTemplate, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.gridEtiqutasR, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.EtiquetasRBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
 
         End Sub
-        Dim WithEvents gridDatos As Telerik.WinControls.UI.RadGridView
+        Dim WithEvents gridEtiquetasH As Telerik.WinControls.UI.RadGridView
         Private WithEvents MasterTemplate As Telerik.WinControls.UI.RadGridView
         Friend WithEvents btnCancelar As Telerik.WinControls.UI.RadButton
         Friend WithEvents btnAceptar As Telerik.WinControls.UI.RadButton
-        Friend WithEvents EtiquetasBindingSource As System.Windows.Forms.BindingSource
+        Friend WithEvents EtiquetasHBindingSource As System.Windows.Forms.BindingSource
         Friend WithEvents pvEtiqueta As Telerik.WinControls.UI.RadPageView
-        Friend WithEvents pvpEtiquetas As Telerik.WinControls.UI.RadPageViewPage
+        Friend WithEvents pvpEtiquetasEnHoja As Telerik.WinControls.UI.RadPageViewPage
         Friend WithEvents pvpDiseños As Telerik.WinControls.UI.RadPageViewPage
         Private WithEvents gridDiseños As Telerik.WinControls.UI.RadGridView
         Friend WithEvents DiseñosEtiquetaBindingSource As System.Windows.Forms.BindingSource
@@ -589,6 +646,9 @@
         Friend WithEvents btnExaminar As Telerik.WinControls.UI.RadButton
         Friend WithEvents EtiquetasDiseñoBindingSource As System.Windows.Forms.BindingSource
         Private WithEvents rptvPrevisualizacion As Telerik.ReportViewer.WinForms.ReportViewer
+        Friend WithEvents pvpEtiquetasEnRollo As RadPageViewPage
+        Private WithEvents gridEtiqutasR As RadGridView
+        Friend WithEvents EtiquetasRBindingSource As BindingSource
     End Class
 
 End Namespace

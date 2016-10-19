@@ -141,6 +141,7 @@
     <Compile Include="Context\EasyGestDataContext.vb">
       <DependentUpon>EasyGestDataContext.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Context\EntidadesAuxiliares.vb" />
     <Compile Include="Controller\EasyGestController.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

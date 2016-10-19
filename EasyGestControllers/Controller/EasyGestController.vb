@@ -349,8 +349,14 @@ Namespace Controller
     End Class
 
 
-    Public Class EtiquetasController
-        Inherits BaseController(Of Etiquetas, EasyGestDataContext)
+    Public Class EtiquetasEnRolloController
+        Inherits BaseController(Of EtiquetasEnRollo, EasyGestDataContext)
+
+
+    End Class
+
+    Public Class EtiquetasEnHojaController
+        Inherits BaseController(Of EtiquetasEnHoja, EasyGestDataContext)
 
 
     End Class

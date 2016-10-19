@@ -848,6 +848,8 @@
     <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Empresas.datasource" />
     <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Encargos.datasource" />
     <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Etiquetas.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.EtiquetasEnHoja.datasource" />
+    <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.EtiquetasEnRollo.datasource" />
     <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Facturas.datasource" />
     <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.Familias.datasource" />
     <None Include="My Project\DataSources\EasyGestControllers.Data.Entity.FormasContacto.datasource" />

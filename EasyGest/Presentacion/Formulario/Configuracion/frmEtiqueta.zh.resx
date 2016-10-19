@@ -130,8 +130,36 @@
   <data name="RadLabel1.Text" xml:space="preserve">
     <value>单位以厘米显示（cm）</value>
   </data>
-  <data name="gridDatos.MasterTemplate.Caption" xml:space="preserve">
-    <value />
+  <data name="RadLabel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 18</value>
+  </data>
+  <data name="RadLabel4.Text" xml:space="preserve">
+    <value>标签</value>
+  </data>
+  <data name="RadLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 267</value>
+  </data>
+  <data name="RadLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 18</value>
+  </data>
+  <data name="RadLabel2.Text" xml:space="preserve">
+    <value>设计文件</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gridEtiquetasH.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="gridEtiquetasH.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="gridEtiquetasH.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="GridViewDecimalColumn1.HeaderText" xml:space="preserve">
     <value>idEtiqueta</value>
@@ -169,38 +197,69 @@
   <data name="GridViewDecimalColumn11.HeaderText" xml:space="preserve">
     <value>下边缘</value>
   </data>
-  <data name="gridDatos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>676, 247</value>
+  <data name="gridEtiquetasH.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
   </data>
-  <data name="gridDiseños.MasterTemplate.Caption" xml:space="preserve">
-    <value />
+  <data name="gridEtiquetasH.Size" type="System.Drawing.Size, System.Drawing">
+    <value>676, 247</value>
   </data>
   <data name="GridViewTextBoxColumn3.HeaderText" xml:space="preserve">
     <value>名称</value>
   </data>
-  <data name="RadLabel4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
+  <data name="pvpEtiquetasEnHoja.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
   </data>
-  <data name="RadLabel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 18</value>
-  </data>
-  <data name="RadLabel4.Text" xml:space="preserve">
-    <value>标签</value>
-  </data>
-  <data name="RadLabel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 267</value>
-  </data>
-  <data name="RadLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 18</value>
-  </data>
-  <data name="RadLabel2.Text" xml:space="preserve">
-    <value>设计文件</value>
-  </data>
-  <data name="pvpEtiquetas.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pvpEtiquetasEnHoja.Size" type="System.Drawing.Size, System.Drawing">
     <value>676, 300</value>
+  </data>
+  <data name="pvpEtiquetasEnHoja.Text" xml:space="preserve">
+    <value>Etiquetas adh. en hoja</value>
+  </data>
+  <data name="gridEtiqutasR.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="gridEtiqutasR.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="gridEtiqutasR.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="GridViewDecimalColumn15.HeaderText" xml:space="preserve">
+    <value>idEtiqueta</value>
+  </data>
+  <data name="GridViewTextBoxColumn4.HeaderText" xml:space="preserve">
+    <value>标码</value>
+  </data>
+  <data name="GridViewDecimalColumn16.HeaderText" xml:space="preserve">
+    <value>宽</value>
+  </data>
+  <data name="GridViewDecimalColumn17.HeaderText" xml:space="preserve">
+    <value>高</value>
+  </data>
+  <data name="GridViewDecimalColumn19.HeaderText" xml:space="preserve">
+    <value>GAP</value>
+  </data>
+  <data name="GridViewTextBoxColumn5.HeaderText" xml:space="preserve">
+    <value>UnidadMedida</value>
+  </data>
+  <data name="GridViewTextBoxColumn6.HeaderText" xml:space="preserve">
+    <value>NombreEtiqueta</value>
+  </data>
+  <data name="gridEtiqutasR.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="gridEtiqutasR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>676, 247</value>
+  </data>
+  <data name="pvpEtiquetasEnRollo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>676, 300</value>
+  </data>
+  <data name="pvpEtiquetasEnRollo.Text" xml:space="preserve">
+    <value>Etiquetas adh. en rollo</value>
+  </data>
+  <assembly alias="Telerik.WinControls" name="Telerik.WinControls, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  <data name="btnExaminar.DisplayStyle" type="Telerik.WinControls.DisplayStyle, Telerik.WinControls">
+    <value>ImageAndText</value>
   </data>
   <data name="pvpDiseños.Size" type="System.Drawing.Size, System.Drawing">
     <value>676, 300</value>
@@ -209,7 +268,7 @@
     <value>697, 352</value>
   </data>
   <data name="resource.Text1" xml:space="preserve">
-    <value>Etiquetas adhesivas</value>
+    <value>Etiquetas adh. en hoja</value>
   </data>
   <data name="btnCancelar.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
