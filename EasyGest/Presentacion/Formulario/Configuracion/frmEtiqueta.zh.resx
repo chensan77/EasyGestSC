@@ -161,6 +161,9 @@
   <data name="gridEtiquetasH.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="gridEtiquetasH.MasterTemplate.Caption" xml:space="preserve">
+    <value />
+  </data>
   <data name="GridViewDecimalColumn1.HeaderText" xml:space="preserve">
     <value>idEtiqueta</value>
   </data>
@@ -203,6 +206,12 @@
   <data name="gridEtiquetasH.Size" type="System.Drawing.Size, System.Drawing">
     <value>676, 247</value>
   </data>
+  <data name="MasterTemplate.MasterTemplate.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>名称</value>
+  </data>
   <data name="GridViewTextBoxColumn3.HeaderText" xml:space="preserve">
     <value>名称</value>
   </data>
@@ -223,6 +232,9 @@
   </data>
   <data name="gridEtiqutasR.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="gridEtiqutasR.MasterTemplate.Caption" xml:space="preserve">
+    <value />
   </data>
   <data name="GridViewDecimalColumn15.HeaderText" xml:space="preserve">
     <value>idEtiqueta</value>

@@ -117,200 +117,179 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="RadLabel2.RootElement.FlipText" type="System.Boolean, mscorlib">
+  <metadata name="RadLabel1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterParent</value>
-  </data>
-  <data name="&gt;&gt;RadLabel2.Parent" xml:space="preserve">
-    <value>pvpDiseños</value>
-  </data>
-  <data name="&gt;&gt;gridEtiqutasR.Name" xml:space="preserve">
-    <value>gridEtiqutasR</value>
-  </data>
-  <data name="&gt;&gt;pvpEtiquetas.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2016.1.112.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="gridDatos.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
+  <data name="RadLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 308</value>
   </data>
-  <data name="frmEtiqueta.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="RadLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 18</value>
   </data>
-  <data name="pvEtiqueta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>706, 352</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="RadLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="gridDatos.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
+  <data name="RadLabel1.Text" xml:space="preserve">
+    <value>Las medidas en centimetros(cm)</value>
   </data>
-  <data name="&gt;&gt;pvEtiqueta.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadPageView, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="&gt;&gt;RadLabel1.Name" xml:space="preserve">
+    <value>RadLabel1</value>
+  </data>
+  <data name="&gt;&gt;RadLabel1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel1.Parent" xml:space="preserve">
+    <value>pvpEtiquetasEnHoja</value>
+  </data>
+  <data name="&gt;&gt;RadLabel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="RadLabel4.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="RadLabel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
   </data>
   <data name="RadLabel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 238</value>
+    <value>2, 258</value>
   </data>
-  <data name="btnAceptar.RootElement.KeyTip" xml:space="preserve">
-    <value />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="RadLabel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
-  <data name="RadLabel2.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="RadLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 22</value>
   </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersInputDataError" xml:space="preserve">
-    <value>Missing or invalid parameter value. Please input valid data for all parameters.</value>
+  <data name="RadLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
-  <data name="RadLabel2.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+  <data name="RadLabel4.Text" xml:space="preserve">
+    <value>Etiqueta</value>
   </data>
-  <data name="btnCancelar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>619, 357</value>
+  <data name="RadLabel4.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;RadLabel4.Name" xml:space="preserve">
+    <value>RadLabel4</value>
+  </data>
+  <data name="&gt;&gt;RadLabel4.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel4.Parent" xml:space="preserve">
+    <value>pvpDiseños</value>
+  </data>
+  <data name="&gt;&gt;RadLabel4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="RadLabel2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="RadLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="RadLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 288</value>
   </data>
   <data name="RadLabel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="rptvPrevisualizacion.Resources.ZoomToWholePage" xml:space="preserve">
-    <value>Whole page</value>
-  </data>
-  <data name="gridDatos.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="btnCancelar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="frmEtiqueta.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;pvEtiqueta.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="RadLabel1.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="rptvPrevisualizacion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>346, 0</value>
-  </data>
-  <data name="btnAceptar.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;ddlEtiquetas.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ZoomToolTip" xml:space="preserve">
-    <value>Zoom</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.NoPageToDisplay" xml:space="preserve">
-    <value>No page to display.</value>
-  </data>
-  <data name="GridViewDecimalColumn7.HeaderText" xml:space="preserve">
-    <value>Esp. V</value>
-  </data>
-  <data name="gridDatos.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;RadLabel4.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btnExaminar.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;btnExaminar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="RadLabel2.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;pvpEtiquetasEnRollo.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="rptvPrevisualizacion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 288</value>
-  </data>
-  <data name="pvpDiseños.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="btnAceptar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="ddlEtiquetas.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="RadLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 22</value>
   </data>
   <data name="RadLabel2.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="RadLabel1.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="RadLabel2.Text" xml:space="preserve">
+    <value>Arch. Diseño</value>
   </data>
-  <data name="RadLabel1.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="frmEtiqueta.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;pvpEtiquetas.Name" xml:space="preserve">
-    <value>pvpEtiquetas</value>
-  </data>
-  <data name="&gt;&gt;gridDiseños.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="RadLabel4.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="btnAceptar.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="txtArchivo.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pvEtiqueta.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Config. Etiqueta</value>
-  </data>
-  <data name="btnCancelar.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="RadLabel2.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;RadLabel2.Name" xml:space="preserve">
     <value>RadLabel2</value>
   </data>
-  <data name="&gt;&gt;btnCancelar.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;RadLabel2.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="ddlEtiquetas.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;RadLabel2.Parent" xml:space="preserve">
+    <value>pvpDiseños</value>
   </data>
-  <data name="resource.Text2" xml:space="preserve">
-    <value>Cancelar</value>
+  <data name="&gt;&gt;RadLabel2.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="btnExaminar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 22</value>
+  <data name="gridEtiquetasH.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="btnCancelar.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="gridEtiquetasH.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="gridDiseños.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 234</value>
+  <data name="GridViewDecimalColumn1.HeaderText" xml:space="preserve">
+    <value>idImpuesto</value>
+  </data>
+  <data name="GridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Referencia</value>
+  </data>
+  <data name="GridViewDecimalColumn2.HeaderText" xml:space="preserve">
+    <value>Ancho</value>
   </data>
   <data name="GridViewDecimalColumn3.HeaderText" xml:space="preserve">
     <value>Alto</value>
   </data>
-  <data name="rptvPrevisualizacion.Resources.NextPageToolTip" xml:space="preserve">
-    <value>Next page</value>
+  <data name="GridViewDecimalColumn4.HeaderText" xml:space="preserve">
+    <value>Fil.</value>
   </data>
-  <data name="pvpDiseños.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 41</value>
+  <data name="GridViewDecimalColumn5.HeaderText" xml:space="preserve">
+    <value>Col.</value>
   </data>
-  <data name="&gt;&gt;pvpEtiquetas.ZOrder" xml:space="preserve">
+  <data name="GridViewDecimalColumn6.HeaderText" xml:space="preserve">
+    <value>Esp. H.</value>
+  </data>
+  <data name="GridViewDecimalColumn7.HeaderText" xml:space="preserve">
+    <value>Esp. V</value>
+  </data>
+  <data name="GridViewDecimalColumn8.HeaderText" xml:space="preserve">
+    <value>M. Izq</value>
+  </data>
+  <data name="GridViewDecimalColumn9.HeaderText" xml:space="preserve">
+    <value>M. Der</value>
+  </data>
+  <data name="GridViewDecimalColumn10.HeaderText" xml:space="preserve">
+    <value>M. Sup</value>
+  </data>
+  <data name="GridViewDecimalColumn11.HeaderText" xml:space="preserve">
+    <value>M. Inf</value>
+  </data>
+  <metadata name="EtiquetasHBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>394, 17</value>
+  </metadata>
+  <data name="gridEtiquetasH.Size" type="System.Drawing.Size, System.Drawing">
+    <value>685, 302</value>
+  </data>
+  <data name="gridEtiquetasH.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="RadLabel4.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;gridEtiquetasH.Name" xml:space="preserve">
+    <value>gridEtiquetasH</value>
   </data>
-  <data name="btnCancelar.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;gridEtiquetasH.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;gridEtiquetasH.Parent" xml:space="preserve">
+    <value>pvpEtiquetasEnHoja</value>
+  </data>
+  <data name="&gt;&gt;gridEtiquetasH.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gridDiseños.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="gridDiseños.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="gridDiseños.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="GridViewDecimalColumn13.HeaderText" xml:space="preserve">
     <value>idImpuesto</value>
@@ -318,375 +297,431 @@
   <data name="GridViewDecimalColumn14.HeaderText" xml:space="preserve">
     <value>idDiseño</value>
   </data>
-  <data name="&gt;&gt;rptvPrevisualizacion.Type" xml:space="preserve">
-    <value>Telerik.ReportViewer.WinForms.ReportViewer, Telerik.ReportViewer.WinForms, Version=10.2.16.914, Culture=neutral, PublicKeyToken=a9d7983dfcc261be</value>
-  </data>
-  <data name="gridDatos.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadLabel4.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel1.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 266</value>
-  </data>
-  <data name="btnExaminar.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="txtArchivo.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="btnAceptar.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="&gt;&gt;RadLabel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="gridDatos.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="gridDiseños.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="RadLabel4.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadLabel1.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="gridEtiqutasR.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
-  </data>
-  <data name="gridDatos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="pvpEtiquetas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 41</value>
-  </data>
-  <data name="RadLabel1.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="&gt;&gt;pvpDiseños.Name" xml:space="preserve">
-    <value>pvpDiseños</value>
-  </data>
-  <data name="btnExaminar.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="&gt;&gt;pvEtiqueta.Name" xml:space="preserve">
-    <value>pvEtiqueta</value>
-  </data>
-  <data name="btnAceptar.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="frmEtiqueta.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="RadLabel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="pvEtiqueta.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="gridDiseños.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="gridDatos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>685, 263</value>
-  </data>
-  <data name="pvEtiqueta.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btnExaminar.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ddlEtiquetas.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="txtArchivo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="txtArchivo.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;pvEtiqueta.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnAceptar.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ExportError" xml:space="preserve">
-    <value>Export Error</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="txtArchivo.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btnAceptar.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="rptvPrevisualizacion.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="RadLabel4.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RadLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 22</value>
-  </data>
-  <data name="pvpEtiquetasEnHoja.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 41</value>
-  </data>
-  <data name="gridEtiquetasH.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="RadLabel2.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadLabel1.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="btnCancelar.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtArchivo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>201, 24</value>
-  </data>
-  <data name="gridDiseños.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;txtArchivo.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnAceptar.Name" xml:space="preserve">
-    <value>btnAceptar</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersPreviewButtonText" xml:space="preserve">
-    <value>Preview</value>
-  </data>
-  <data name="ddlEtiquetas.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <assembly alias="Telerik.WinControls" name="Telerik.WinControls, Version=2016.1.112.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
-  <data name="btnExaminar.DisplayStyle" type="Telerik.WinControls.DisplayStyle, Telerik.WinControls">
-    <value>Image</value>
-  </data>
-  <data name="RadLabel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.StopToolTip" xml:space="preserve">
-    <value>Stop</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ForwardToolTip" xml:space="preserve">
-    <value>Navigate forward in history</value>
-  </data>
-  <data name="&gt;&gt;RadLabel4.Name" xml:space="preserve">
-    <value>RadLabel4</value>
-  </data>
-  <data name="RadLabel2.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;RadLabel2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="RadLabel2.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="txtArchivo.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="gridDiseños.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gridDatos.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="pvpEtiquetas.Text" xml:space="preserve">
-    <value>Etiquetas adhesivas</value>
-  </data>
-  <data name="&gt;&gt;btnExaminar.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;gridDatos.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="btnCancelar.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersSelectAValueText" xml:space="preserve">
-    <value>&lt;select a value&gt;</value>
-  </data>
-  <data name="pvEtiqueta.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="rptvPrevisualizacion.Resources.RefreshToolTip" xml:space="preserve">
-    <value>Refresh</value>
-  </data>
-  <data name="btnExaminar.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="btnAceptar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>535, 357</value>
-  </data>
-  <data name="RadLabel1.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pvpEtiquetas.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="btnCancelar.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="&gt;&gt;EtiquetasBindingSource.Name" xml:space="preserve">
-    <value>EtiquetasBindingSource</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.StopProcessing" xml:space="preserve">
-    <value>Report processing was cancelled.</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.GenericMessageBoxCaption" xml:space="preserve">
-    <value>Report Viewer</value>
-  </data>
-  <data name="gridDatos.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="ddlEtiquetas.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnExaminar.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="rptvPrevisualizacion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersSelectAllText" xml:space="preserve">
-    <value>&lt;select all&gt;</value>
-  </data>
-  <data name="RadLabel2.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="gridDatos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="btnAceptar.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="pvpEtiquetasEnRollo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 41</value>
-  </data>
-  <data name="txtArchivo.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="&gt;&gt;gridDiseños.Name" xml:space="preserve">
-    <value>gridDiseños</value>
-  </data>
-  <data name="btnCancelar.Text" xml:space="preserve">
-    <value>Cancelar</value>
-  </data>
-  <data name="&gt;&gt;txtArchivo.Parent" xml:space="preserve">
-    <value>pvpDiseños</value>
-  </data>
-  <data name="txtArchivo.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="btnCancelar.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;pvpEtiquetasEnHoja.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnCancelar.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;ddlEtiquetas.Parent" xml:space="preserve">
-    <value>pvpDiseños</value>
-  </data>
-  <data name="&gt;&gt;txtArchivo.Name" xml:space="preserve">
-    <value>txtArchivo</value>
-  </data>
-  <data name="RadLabel4.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btnAceptar.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pvpDiseños.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersEmptyStringError" xml:space="preserve">
-    <value>Empty string value not allowed.</value>
-  </data>
-  <data name="pvEtiqueta.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="resource.Text3" xml:space="preserve">
-    <value>Aceptar</value>
-  </data>
-  <data name="pvEtiqueta.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="gridDiseños.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;btnCancelar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="GridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="GridViewTextBoxColumn3.HeaderText" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <metadata name="DiseñosEtiquetaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>574, 17</value>
+  </metadata>
+  <data name="gridDiseños.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="gridDiseños.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 219</value>
   </data>
   <data name="gridDiseños.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="rptvPrevisualizacion.Resources.AllFiles" xml:space="preserve">
-    <value>All Files</value>
+  <data name="&gt;&gt;gridDiseños.Name" xml:space="preserve">
+    <value>gridDiseños</value>
   </data>
-  <data name="RadLabel1.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
+  <data name="&gt;&gt;gridDiseños.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="rptvPrevisualizacion.Resources.LastPageToolTip" xml:space="preserve">
-    <value>Last page</value>
+  <data name="&gt;&gt;gridDiseños.Parent" xml:space="preserve">
+    <value>pvpDiseños</value>
   </data>
-  <data name="&gt;&gt;btnAceptar.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;gridDiseños.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;EtiquetasHBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pvpEtiquetasEnHoja.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
   </data>
-  <data name="btnExaminar.RootElement.KeyTip" xml:space="preserve">
-    <value />
+  <data name="pvpEtiquetasEnHoja.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 41</value>
   </data>
-  <data name="GridViewDecimalColumn9.HeaderText" xml:space="preserve">
-    <value>M. Der</value>
+  <data name="pvpEtiquetasEnHoja.Size" type="System.Drawing.Size, System.Drawing">
+    <value>685, 329</value>
+  </data>
+  <data name="pvpEtiquetasEnHoja.Text" xml:space="preserve">
+    <value>Etiq. en hoja</value>
+  </data>
+  <data name="&gt;&gt;pvpEtiquetasEnHoja.Name" xml:space="preserve">
+    <value>pvpEtiquetasEnHoja</value>
+  </data>
+  <data name="&gt;&gt;pvpEtiquetasEnHoja.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;pvpEtiquetasEnHoja.Parent" xml:space="preserve">
+    <value>pvEtiqueta</value>
+  </data>
+  <data name="&gt;&gt;pvpEtiquetasEnHoja.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gridEtiqutasR.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gridEtiqutasR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <metadata name="EtiquetasRBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>816, 22</value>
+  </metadata>
+  <data name="gridEtiqutasR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>685, 329</value>
+  </data>
+  <data name="gridEtiqutasR.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;gridEtiqutasR.Name" xml:space="preserve">
+    <value>gridEtiqutasR</value>
+  </data>
+  <data name="&gt;&gt;gridEtiqutasR.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;gridEtiqutasR.Parent" xml:space="preserve">
+    <value>pvpEtiquetasEnRollo</value>
+  </data>
+  <data name="&gt;&gt;gridEtiqutasR.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pvpEtiquetasEnRollo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="pvpEtiquetasEnRollo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 41</value>
+  </data>
+  <data name="pvpEtiquetasEnRollo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>685, 329</value>
+  </data>
+  <data name="pvpEtiquetasEnRollo.Text" xml:space="preserve">
+    <value>Etiq. en rollo</value>
+  </data>
+  <data name="&gt;&gt;pvpEtiquetasEnRollo.Name" xml:space="preserve">
+    <value>pvpEtiquetasEnRollo</value>
   </data>
   <data name="&gt;&gt;pvpEtiquetasEnRollo.Type" xml:space="preserve">
     <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="rptvPrevisualizacion.Resources.BackToolTip" xml:space="preserve">
-    <value>Navigate back in history</value>
+  <data name="&gt;&gt;pvpEtiquetasEnRollo.Parent" xml:space="preserve">
+    <value>pvEtiqueta</value>
   </data>
-  <data name="gridDiseños.RootElement.KeyTip" xml:space="preserve">
+  <data name="&gt;&gt;pvpEtiquetasEnRollo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnExaminar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="btnExaminar.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btnExaminar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 286</value>
+  </data>
+  <data name="btnExaminar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 24</value>
+  </data>
+  <data name="btnExaminar.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;btnExaminar.Name" xml:space="preserve">
+    <value>btnExaminar</value>
+  </data>
+  <data name="&gt;&gt;btnExaminar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnExaminar.Parent" xml:space="preserve">
+    <value>pvpDiseños</value>
+  </data>
+  <data name="&gt;&gt;btnExaminar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtArchivo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtArchivo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 286</value>
+  </data>
+  <data name="txtArchivo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="txtArchivo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 24</value>
+  </data>
+  <data name="txtArchivo.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;txtArchivo.Name" xml:space="preserve">
+    <value>txtArchivo</value>
+  </data>
+  <data name="&gt;&gt;txtArchivo.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtArchivo.Parent" xml:space="preserve">
+    <value>pvpDiseños</value>
+  </data>
+  <data name="&gt;&gt;txtArchivo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="resource.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="btnCancelar.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="RadDropDownList1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
   </data>
-  <data name="&gt;&gt;RadLabel4.Parent" xml:space="preserve">
+  <data name="RadDropDownList1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 225</value>
+  </data>
+  <data name="RadDropDownList1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 24</value>
+  </data>
+  <data name="RadDropDownList1.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;RadDropDownList1.Name" xml:space="preserve">
+    <value>RadDropDownList1</value>
+  </data>
+  <data name="&gt;&gt;RadDropDownList1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadDropDownList1.Parent" xml:space="preserve">
     <value>pvpDiseños</value>
+  </data>
+  <data name="&gt;&gt;RadDropDownList1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="EtiquetasDiseñoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>176, 17</value>
+  </metadata>
+  <data name="ddlEtiquetas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="ddlEtiquetas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 256</value>
+  </data>
+  <data name="ddlEtiquetas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 24</value>
+  </data>
+  <data name="ddlEtiquetas.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;ddlEtiquetas.Name" xml:space="preserve">
+    <value>ddlEtiquetas</value>
+  </data>
+  <data name="&gt;&gt;ddlEtiquetas.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;ddlEtiquetas.Parent" xml:space="preserve">
+    <value>pvpDiseños</value>
+  </data>
+  <data name="&gt;&gt;ddlEtiquetas.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="RadLabel3.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="RadLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="RadLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 227</value>
+  </data>
+  <data name="RadLabel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="RadLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 22</value>
+  </data>
+  <data name="RadLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="RadLabel3.Text" xml:space="preserve">
+    <value>Tipo etiqueta</value>
+  </data>
+  <data name="RadLabel3.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;RadLabel3.Name" xml:space="preserve">
+    <value>RadLabel3</value>
+  </data>
+  <data name="&gt;&gt;RadLabel3.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel3.Parent" xml:space="preserve">
+    <value>pvpDiseños</value>
+  </data>
+  <data name="&gt;&gt;RadLabel3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="rptvPrevisualizacion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 0</value>
+  </data>
+  <data name="rptvPrevisualizacion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="rptvPrevisualizacion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>343, 312</value>
+  </data>
+  <data name="rptvPrevisualizacion.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;rptvPrevisualizacion.Name" xml:space="preserve">
+    <value>rptvPrevisualizacion</value>
+  </data>
+  <data name="&gt;&gt;rptvPrevisualizacion.Type" xml:space="preserve">
+    <value>Telerik.ReportViewer.WinForms.ReportViewer, Telerik.ReportViewer.WinForms, Version=10.2.16.914, Culture=neutral, PublicKeyToken=a9d7983dfcc261be</value>
+  </data>
+  <data name="&gt;&gt;rptvPrevisualizacion.Parent" xml:space="preserve">
+    <value>pvpDiseños</value>
+  </data>
+  <data name="&gt;&gt;rptvPrevisualizacion.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="pvpDiseños.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="pvpDiseños.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 41</value>
+  </data>
+  <data name="pvpDiseños.Size" type="System.Drawing.Size, System.Drawing">
+    <value>685, 329</value>
+  </data>
+  <data name="pvpDiseños.Text" xml:space="preserve">
+    <value>Diseños de etiqueta</value>
+  </data>
+  <data name="&gt;&gt;pvpDiseños.Name" xml:space="preserve">
+    <value>pvpDiseños</value>
+  </data>
+  <data name="&gt;&gt;pvpDiseños.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;pvpDiseños.Parent" xml:space="preserve">
+    <value>pvEtiqueta</value>
+  </data>
+  <data name="&gt;&gt;pvpDiseños.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pvEtiqueta.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="pvEtiqueta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pvEtiqueta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>706, 381</value>
+  </data>
+  <data name="pvEtiqueta.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="pvEtiqueta.Text" xml:space="preserve">
+    <value>Configuración de etiqueta</value>
+  </data>
+  <data name="&gt;&gt;pvEtiqueta.Name" xml:space="preserve">
+    <value>pvEtiqueta</value>
+  </data>
+  <data name="&gt;&gt;pvEtiqueta.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadPageView, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;pvEtiqueta.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pvEtiqueta.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="resource.Text1" xml:space="preserve">
+    <value>Diseños de etiqueta</value>
+  </data>
+  <data name="btnCancelar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="btnCancelar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="btnCancelar.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btnCancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>619, 387</value>
+  </data>
+  <data name="btnCancelar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btnCancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 46</value>
+  </data>
+  <data name="btnCancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnCancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnCancelar.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.Name" xml:space="preserve">
+    <value>btnCancelar</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="resource.Text2" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnAceptar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="btnAceptar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="btnAceptar.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btnAceptar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>535, 387</value>
+  </data>
+  <data name="btnAceptar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btnAceptar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 46</value>
+  </data>
+  <data name="btnAceptar.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="btnAceptar.Text" xml:space="preserve">
     <value>Aceptar</value>
   </data>
-  <data name="GridViewDecimalColumn11.HeaderText" xml:space="preserve">
-    <value>M. Inf</value>
+  <data name="btnAceptar.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
   </data>
-  <data name="btnExaminar.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+  <data name="&gt;&gt;btnAceptar.Name" xml:space="preserve">
+    <value>btnAceptar</value>
   </data>
-  <data name="btnCancelar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="&gt;&gt;btnAceptar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnAceptar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnAceptar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="resource.Text3" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>72</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>706, 474</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3129,580 +3164,40 @@
         /////////w==
 </value>
   </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersFalseValueLabel" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="btnExaminar.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadLabel4.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;gridDatos.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="GridViewDecimalColumn1.HeaderText" xml:space="preserve">
-    <value>idImpuesto</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.PrintToolTip" xml:space="preserve">
-    <value>Print report</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.SessionExpired" xml:space="preserve">
-    <value>The current session has expired. Its history records will be discarded.</value>
-  </data>
-  <data name="frmEtiqueta.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="RadLabel4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="resource.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel4.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;rptvPrevisualizacion.Name" xml:space="preserve">
-    <value>rptvPrevisualizacion</value>
-  </data>
-  <data name="&gt;&gt;EtiquetasBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="gridDiseños.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="RadLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 18</value>
-  </data>
-  <data name="btnCancelar.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="txtArchivo.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="&gt;&gt;gridEtiqutasR.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="GridViewDecimalColumn2.HeaderText" xml:space="preserve">
-    <value>Ancho</value>
-  </data>
-  <data name="gridDiseños.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="gridEtiqutasR.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="btnAceptar.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ZoomPercentFormat" xml:space="preserve">
-    <value>{0}%</value>
-  </data>
-  <data name="btnAceptar.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="RadLabel1.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 22</value>
-  </data>
-  <data name="&gt;&gt;rptvPrevisualizacion.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="RadLabel2.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ddlEtiquetas.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="GridViewDecimalColumn8.HeaderText" xml:space="preserve">
-    <value>M. Izq</value>
-  </data>
-  <data name="btnAceptar.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="btnExaminar.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="frmEtiqueta.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pvEtiqueta.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel1.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gridDiseños.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="RadLabel1.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="frmEtiqueta.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;rptvPrevisualizacion.Parent" xml:space="preserve">
-    <value>pvpDiseños</value>
-  </data>
-  <data name="ddlEtiquetas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 236</value>
-  </data>
-  <data name="pvEtiqueta.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtArchivo.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmEtiqueta</value>
-  </data>
-  <data name="RadLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 269</value>
-  </data>
-  <data name="pvEtiqueta.Text" xml:space="preserve">
-    <value>Configuración de etiqueta</value>
-  </data>
-  <data name="&gt;&gt;RadLabel1.Parent" xml:space="preserve">
-    <value>pvpEtiquetasEnHoja</value>
-  </data>
-  <data name="RadLabel1.Text" xml:space="preserve">
-    <value>Las medidas en centimetros(cm)</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="pvpDiseños.Text" xml:space="preserve">
-    <value>Diseños de etiqueta</value>
-  </data>
-  <data name="&gt;&gt;DiseñosEtiquetaBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnAceptar.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="txtArchivo.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadLabel4.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="ddlEtiquetas.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;pvpEtiquetasEnRollo.Parent" xml:space="preserve">
-    <value>pvEtiqueta</value>
-  </data>
-  <data name="gridDatos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="GridViewDecimalColumn6.HeaderText" xml:space="preserve">
-    <value>Esp. H.</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.CurrentPageToolTip" xml:space="preserve">
-    <value>Current page</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersNullText" xml:space="preserve">
-    <value>NULL</value>
-  </data>
-  <data name="btnCancelar.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;pvpDiseños.Parent" xml:space="preserve">
-    <value>pvEtiqueta</value>
-  </data>
-  <data name="ddlEtiquetas.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="GridViewDecimalColumn4.HeaderText" xml:space="preserve">
-    <value>Fil.</value>
-  </data>
-  <data name="pvEtiqueta.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="GridViewDecimalColumn5.HeaderText" xml:space="preserve">
-    <value>Col.</value>
-  </data>
-  <data name="GridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Referencia</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersNoValueText" xml:space="preserve">
-    <value>Value required.</value>
-  </data>
-  <data name="pvEtiqueta.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="frmEtiqueta.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadLabel2.Text" xml:space="preserve">
-    <value>Arch. Diseño</value>
-  </data>
-  <data name="gridDatos.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gridDiseños.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="rptvPrevisualizacion.Resources.PreviousPageToolTip" xml:space="preserve">
-    <value>Previous page</value>
-  </data>
-  <data name="btnExaminar.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gridDatos.MasterTemplate.Caption" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnAceptar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 42</value>
-  </data>
-  <data name="GridViewTextBoxColumn3.HeaderText" xml:space="preserve">
-    <value>Descripción</value>
-  </data>
-  <data name="ddlEtiquetas.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="GridViewTextBoxColumn2.HeaderText" xml:space="preserve">
-    <value>Nombre</value>
-  </data>
-  <data name="gridDatos.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ddlEtiquetas.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="gridDiseños.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ddlEtiquetas.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;ddlEtiquetas.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;gridDatos.Parent" xml:space="preserve">
-    <value>pvpEtiquetasEnHoja</value>
-  </data>
-  <data name="&gt;&gt;gridDiseños.Parent" xml:space="preserve">
-    <value>pvpDiseños</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Config. Etiqueta</value>
   </data>
   <data name="&gt;&gt;EtiquetasHBindingSource.Name" xml:space="preserve">
     <value>EtiquetasHBindingSource</value>
   </data>
-  <data name="txtArchivo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="&gt;&gt;EtiquetasRBindingSource.Type" xml:space="preserve">
+  <data name="&gt;&gt;EtiquetasHBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="gridDiseños.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="frmEtiqueta.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="gridDatos.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;gridEtiqutasR.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="RadLabel4.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadLabel2.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="rptvPrevisualizacion.Resources.DocumentMapToolTip" xml:space="preserve">
-    <value>Click to close document map|Click to open document map</value>
-  </data>
-  <data name="pvEtiqueta.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadLabel2.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="txtArchivo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 264</value>
-  </data>
-  <data name="&gt;&gt;gridDiseños.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersInvalidValueText" xml:space="preserve">
-    <value>Invalid value.</value>
-  </data>
-  <data name="frmEtiqueta.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="&gt;&gt;btnCancelar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;EtiquetasDiseñoBindingSource.Name" xml:space="preserve">
-    <value>EtiquetasDiseñoBindingSource</value>
-  </data>
-  <data name="&gt;&gt;RadLabel1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;txtArchivo.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="RadGridView1.MasterTemplate.Caption" xml:space="preserve">
-    <value />
-  </data>
-  <data name="rptvPrevisualizacion.Resources.MissingReportSource" xml:space="preserve">
-    <value>The source of the report definition has not been specified.</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ProcessingReportMessage" xml:space="preserve">
-    <value>Generating report...</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ZoomToPageWidth" xml:space="preserve">
-    <value>Page width</value>
-  </data>
-  <data name="&gt;&gt;gridEtiquetasH.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="btnExaminar.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="&gt;&gt;RadLabel2.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="btnAceptar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="&gt;&gt;gridEtiquetasH.Name" xml:space="preserve">
-    <value>gridEtiquetasH</value>
-  </data>
-  <data name="txtArchivo.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btnExaminar.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnCancelar.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="RadLabel4.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;EtiquetasRBindingSource.Name" xml:space="preserve">
-    <value>EtiquetasRBindingSource</value>
-  </data>
-  <data name="gridDatos.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;RadLabel4.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="ddlEtiquetas.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;gridDatos.Name" xml:space="preserve">
-    <value>gridDatos</value>
-  </data>
-  <data name="&gt;&gt;gridEtiqutasR.Parent" xml:space="preserve">
-    <value>pvpEtiquetasEnRollo</value>
-  </data>
-  <data name="gridDiseños.MasterTemplate.Caption" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;ddlEtiquetas.Name" xml:space="preserve">
-    <value>ddlEtiquetas</value>
-  </data>
-  <data name="gridDatos.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ParametersToolTip" xml:space="preserve">
-    <value>Click to close parameters area|Click to open parameters area</value>
-  </data>
-  <data name="resource.Text1" xml:space="preserve">
-    <value>Diseños de etiqueta</value>
-  </data>
-  <data name="&gt;&gt;gridEtiquetasH.Parent" xml:space="preserve">
-    <value>pvpEtiquetasEnHoja</value>
-  </data>
-  <data name="btnExaminar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>296, 264</value>
-  </data>
-  <data name="btnCancelar.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="&gt;&gt;EtiquetasDiseñoBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ExportToolTip" xml:space="preserve">
-    <value>Export</value>
-  </data>
-  <data name="ddlEtiquetas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 24</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.TotalPagesToolTip" xml:space="preserve">
-    <value>Total pages</value>
   </data>
   <data name="&gt;&gt;DiseñosEtiquetaBindingSource.Name" xml:space="preserve">
     <value>DiseñosEtiquetaBindingSource</value>
   </data>
-  <data name="btnCancelar.RootElement.KeyTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;DiseñosEtiquetaBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pvpDiseños.Size" type="System.Drawing.Size, System.Drawing">
-    <value>685, 300</value>
+  <data name="&gt;&gt;EtiquetasRBindingSource.Name" xml:space="preserve">
+    <value>EtiquetasRBindingSource</value>
   </data>
-  <data name="&gt;&gt;pvpEtiquetasEnHoja.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="&gt;&gt;EtiquetasRBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnExaminar.Name" xml:space="preserve">
-    <value>btnExaminar</value>
+  <data name="&gt;&gt;EtiquetasDiseñoBindingSource.Name" xml:space="preserve">
+    <value>EtiquetasDiseñoBindingSource</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>706, 428</value>
+  <data name="&gt;&gt;EtiquetasDiseñoBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="gridDiseños.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmEtiqueta</value>
   </data>
-  <data name="gridDatos.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="gridDiseños.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="btnCancelar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 42</value>
-  </data>
-  <data name="&gt;&gt;pvpEtiquetas.Parent" xml:space="preserve">
-    <value>pvEtiqueta</value>
-  </data>
-  <data name="pvpEtiquetas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>685, 284</value>
-  </data>
-  <data name="btnExaminar.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="GridViewDecimalColumn10.HeaderText" xml:space="preserve">
-    <value>M. Sup</value>
-  </data>
-  <data name="&gt;&gt;RadLabel1.Name" xml:space="preserve">
-    <value>RadLabel1</value>
-  </data>
-  <data name="&gt;&gt;btnExaminar.Parent" xml:space="preserve">
-    <value>pvpDiseños</value>
-  </data>
-  <data name="txtArchivo.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;gridEtiquetasH.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.ReportParametersTrueValueLabel" xml:space="preserve">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;pvpEtiquetasEnHoja.Name" xml:space="preserve">
-    <value>pvpEtiquetasEnHoja</value>
-  </data>
-  <data name="&gt;&gt;btnCancelar.Name" xml:space="preserve">
-    <value>btnCancelar</value>
-  </data>
-  <data name="btnAceptar.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ddlEtiquetas.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="RadLabel4.Text" xml:space="preserve">
-    <value>Etiqueta</value>
-  </data>
-  <data name="RadLabel4.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="btnAceptar.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btnCancelar.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.PageSetupToolTip" xml:space="preserve">
-    <value>Page setup...</value>
-  </data>
-  <data name="RadLabel2.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.FirstPageToolTip" xml:space="preserve">
-    <value>First page</value>
-  </data>
-  <data name="&gt;&gt;pvpEtiquetasEnRollo.Name" xml:space="preserve">
-    <value>pvpEtiquetasEnRollo</value>
-  </data>
-  <data name="RadLabel4.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="&gt;&gt;pvpEtiquetasEnHoja.Parent" xml:space="preserve">
-    <value>pvEtiqueta</value>
-  </data>
-  <data name="pvEtiqueta.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pvpDiseños.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;btnAceptar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="rptvPrevisualizacion.Resources.PrintPreviewToolTip" xml:space="preserve">
-    <value>Switch to interactive layout|Switch to print preview</value>
-  </data>
-  <data name="gridEtiquetasH.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="pvEtiqueta.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="pvEtiqueta.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btnAceptar.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="frmEtiqueta.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="rptvPrevisualizacion.Resources.LabelOf" xml:space="preserve">
-    <value> of </value>
-  </data>
-  <data name="gridDiseños.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>zh</value>
-  </metadata>
-  <metadata name="EtiquetasHBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>394, 17</value>
-  </metadata>
-  <metadata name="EtiquetasDiseñoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>176, 17</value>
-  </metadata>
-  <metadata name="RadLabel1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>72</value>
-  </metadata>
-  <metadata name="RadLabel2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="EtiquetasRBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>816, 22</value>
-  </metadata>
-  <metadata name="DiseñosEtiquetaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>574, 17</value>
-  </metadata>
-  <metadata name="RadLabel4.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="EtiquetasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>394, 17</value>
-  </metadata>
 </root>
