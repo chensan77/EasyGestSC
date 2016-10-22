@@ -22,13 +22,13 @@ Namespace Presentacion.Formulario.Cuenta
             Try
                 PrepararControles(Me.Controls)
                 ' cargar los comboboxs                
-                If _cuenta.TipoPropietario.Equals(Util.Comunes.TIPO_PROPIETARIO_CLIENTE) Then
+                If _cuenta.TipoPropietario.Equals(Data.Entity.DatosBancario.TIPO_PROPIETARIO_CLIENTE) Then
                     ddlPropietario.ValueMember = "idCliente"
                     Using control As New ClientesController
                         PropietarioBindingSource.DataSource = control.GetItems("Activo = true")
                     End Using
                 End If
-                If _cuenta.TipoPropietario.Equals(Util.Comunes.TIPO_PROPIETARIO_PROVEEDOR) Then
+                If _cuenta.TipoPropietario.Equals(Data.Entity.DatosBancario.TIPO_PROPIETARIO_PROVEEDOR) Then
                     ddlPropietario.ValueMember = "idProveedor"
                     Using control As New ProveedoresController
                         PropietarioBindingSource.DataSource = control.GetItems("Activo = true")
@@ -67,11 +67,11 @@ Namespace Presentacion.Formulario.Cuenta
             End If
             _cuenta.TipoPropietario = tipo
 
-            If tipo.Equals(Util.Comunes.TIPO_PROPIETARIO_CLIENTE) Then
+            If tipo.Equals(Data.Entity.DatosBancario.TIPO_PROPIETARIO_CLIENTE) Then
                 Me.Text = String.Format(Me.Text, My.Resources.Application.TextoCliente)
                 lblCliPro.Text = My.Resources.Application.TextoCliente
             End If
-            If tipo.Equals(Util.Comunes.TIPO_PROPIETARIO_PROVEEDOR) Then
+            If tipo.Equals(Data.Entity.DatosBancario.TIPO_PROPIETARIO_PROVEEDOR) Then
                 Me.Text = String.Format(Me.Text, My.Resources.Application.TextoProveedor)
                 lblCliPro.Text = My.Resources.Application.TextoProveedor
             End If

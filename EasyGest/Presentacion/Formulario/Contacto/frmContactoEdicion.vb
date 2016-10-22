@@ -25,13 +25,13 @@ Namespace Presentacion.Formulario.Contacto
                 Using control As New FormasContactoController
                     FormasContactoBindingSource.DataSource = control.GetItems()
                 End Using
-                If _contacto.TipoPropietario.Equals(Util.Comunes.TIPO_PROPIETARIO_CLIENTE) Then
+                If _contacto.TipoPropietario.Equals(Data.Entity.Contactos.TIPO_PROPIETARIO_CLIENTE) Then
                     ddlPropietario.ValueMember = "idCliente"
                     Using control As New ClientesController
                         PropietarioBindingSource.DataSource = control.GetItems("Activo = true")
                     End Using
                 End If
-                If _contacto.TipoPropietario.Equals(Util.Comunes.TIPO_PROPIETARIO_PROVEEDOR) Then
+                If _contacto.TipoPropietario.Equals(Data.Entity.Contactos.TIPO_PROPIETARIO_PROVEEDOR) Then
                     ddlPropietario.ValueMember = "idProveedor"
                     Using control As New ProveedoresController
                         PropietarioBindingSource.DataSource = control.GetItems("Activo = true")
@@ -70,11 +70,11 @@ Namespace Presentacion.Formulario.Contacto
             End If
             _contacto.TipoPropietario = tipo
 
-            If tipo.Equals(Util.Comunes.TIPO_PROPIETARIO_CLIENTE) Then
+            If tipo.Equals(Data.Entity.Contactos.TIPO_PROPIETARIO_CLIENTE) Then
                 Me.Text = String.Format(Me.Text, My.Resources.Application.TextoCliente)
                 lblCliPro.Text = My.Resources.Application.TextoCliente
             End If
-            If tipo.Equals(Util.Comunes.TIPO_PROPIETARIO_PROVEEDOR) Then
+            If tipo.Equals(Data.Entity.Contactos.TIPO_PROPIETARIO_PROVEEDOR) Then
                 Me.Text = String.Format(Me.Text, My.Resources.Application.TextoProveedor)
                 lblCliPro.Text = My.Resources.Application.TextoProveedor
             End If

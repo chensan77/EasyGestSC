@@ -352,12 +352,29 @@ Namespace Controller
     Public Class EtiquetasEnRolloController
         Inherits BaseController(Of EtiquetasEnRollo, EasyGestDataContext)
 
-
+        Public Function GetEtiquetasGenericas() As List(Of Etiquetas)
+            Dim etiquetasR As List(Of EtiquetasEnRollo)
+            Dim etiquetas As New List(Of Etiquetas)()
+            etiquetasR = Me.GetItems()
+            For Each e As EtiquetasEnRollo In etiquetasR
+                etiquetas.Add(New Etiquetas(e.idEtiqueta, e.NombreEtiqueta, Data.Entity.Etiquetas.TIPO_ETIQUETA_ENROLLO))
+            Next
+            Return etiquetas
+        End Function
     End Class
 
     Public Class EtiquetasEnHojaController
         Inherits BaseController(Of EtiquetasEnHoja, EasyGestDataContext)
 
+        Public Function GetEtiquetasGenericas() As List(Of Etiquetas)
+            Dim etiquetasH As List(Of EtiquetasEnHoja)
+            Dim etiquetas As New List(Of Etiquetas)()
+            etiquetasH = Me.GetItems()
+            For Each e As EtiquetasEnHoja In etiquetasH
+                etiquetas.Add(New Etiquetas(e.idEtiqueta, e.NombreEtiqueta, Data.Entity.Etiquetas.TIPO_ETIQUETA_ENHOJA))
+            Next
+            Return etiquetas
+        End Function
 
     End Class
 

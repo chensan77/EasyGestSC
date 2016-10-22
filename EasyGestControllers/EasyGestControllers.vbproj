@@ -18,7 +18,7 @@
     </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
@@ -126,13 +126,11 @@
   <ItemGroup>
     <Compile Include="Class\BaseController.vb" />
     <Compile Include="Class\BaseDataContext.vb" />
-    <Compile Include="Class\clsConfiguracion.vb" />
+    <Compile Include="Class\EntidadConfiguracion.vb" />
     <Compile Include="Class\Comunes.vb" />
     <Compile Include="Class\Dynamic.vb" />
-    <Compile Include="Class\InfoCompraTemporal.vb" />
-    <Compile Include="Class\InfoExportacion.vb" />
-    <Compile Include="Class\InfoVentaTemporal.vb" />
-    <Compile Include="Class\modVarios.vb" />
+    <Compile Include="Class\EntidadesAuxiliares.vb" />
+    <Compile Include="Module\modVarios.vb" />
     <Compile Include="Context\EasyGestDataContext.designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -141,7 +139,6 @@
     <Compile Include="Context\EasyGestDataContext.vb">
       <DependentUpon>EasyGestDataContext.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Context\EntidadesAuxiliares.vb" />
     <Compile Include="Controller\EasyGestController.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

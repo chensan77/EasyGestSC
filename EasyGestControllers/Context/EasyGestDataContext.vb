@@ -282,6 +282,9 @@ Namespace Data.Entity
 
     Partial Class Contactos
 
+        Public Const TIPO_PROPIETARIO_CLIENTE As Char = "C"c
+        Public Const TIPO_PROPIETARIO_PROVEEDOR As Char = "P"c
+
         Private Sub OnCreated()
             _TipoPropietario = Microsoft.VisualBasic.ControlChars.NullChar
             _idPropietario = 0
@@ -289,8 +292,8 @@ Namespace Data.Entity
 
         Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
             If action = ChangeAction.Update Or action = ChangeAction.Insert Then
-                Return Not String.IsNullOrWhiteSpace(_DatoContacto) And _idPropietario > 0 And (_TipoPropietario.Equals(Util.Comunes.TIPO_PROPIETARIO_CLIENTE) Or
-                    _TipoPropietario.Equals(Util.Comunes.TIPO_PROPIETARIO_PROVEEDOR))
+                Return Not String.IsNullOrWhiteSpace(_DatoContacto) And _idPropietario > 0 And (_TipoPropietario.Equals(TIPO_PROPIETARIO_CLIENTE) Or
+                    _TipoPropietario.Equals(TIPO_PROPIETARIO_PROVEEDOR))
             ElseIf action = ChangeAction.Delete Then
                 Return True
             Else
@@ -308,6 +311,8 @@ Namespace Data.Entity
 
     Partial Class DatosBancario
 
+        Public Const TIPO_PROPIETARIO_CLIENTE As Char = "C"c
+        Public Const TIPO_PROPIETARIO_PROVEEDOR As Char = "P"c
         Private Sub OnCreated()
             _TipoPropietario = Microsoft.VisualBasic.ControlChars.NullChar
             _idPropietario = 0
@@ -315,8 +320,8 @@ Namespace Data.Entity
 
         Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
             If action = ChangeAction.Update Or action = ChangeAction.Insert Then
-                Return Not String.IsNullOrWhiteSpace(_Banco) And Not String.IsNullOrWhiteSpace(_CCC) And _idPropietario > 0 And (_TipoPropietario.Equals(Util.Comunes.TIPO_PROPIETARIO_CLIENTE) Or
-                    _TipoPropietario.Equals(Util.Comunes.TIPO_PROPIETARIO_PROVEEDOR))
+                Return Not String.IsNullOrWhiteSpace(_Banco) And Not String.IsNullOrWhiteSpace(_CCC) And _idPropietario > 0 And (_TipoPropietario.Equals(TIPO_PROPIETARIO_CLIENTE) Or
+                    _TipoPropietario.Equals(TIPO_PROPIETARIO_PROVEEDOR))
             Else
                 Return True
             End If
@@ -1432,10 +1437,10 @@ Namespace Data.Entity
 
         Public ReadOnly Property IconTipoPropietario() As Drawing.Image
             Get
-                If _TipoPropietario = Util.Comunes.TIPO_PROPIETARIO_CLIENTE Then
+                If _TipoPropietario = Data.Entity.Contactos.TIPO_PROPIETARIO_CLIENTE Then
                     Return My.Resources.user_green
                 End If
-                If _TipoPropietario = Util.Comunes.TIPO_PROPIETARIO_PROVEEDOR Then
+                If _TipoPropietario = Data.Entity.Contactos.TIPO_PROPIETARIO_PROVEEDOR Then
                     Return My.Resources.user_red
                 End If
                 Return Nothing
@@ -1483,10 +1488,10 @@ Namespace Data.Entity
 
         Public ReadOnly Property IconTipoPropietario() As Drawing.Image
             Get
-                If _TipoPropietario = Util.Comunes.TIPO_PROPIETARIO_CLIENTE Then
+                If _TipoPropietario = Data.Entity.DatosBancario.TIPO_PROPIETARIO_CLIENTE Then
                     Return My.Resources.user_green
                 End If
-                If _TipoPropietario = Util.Comunes.TIPO_PROPIETARIO_PROVEEDOR Then
+                If _TipoPropietario = Data.Entity.DatosBancario.TIPO_PROPIETARIO_PROVEEDOR Then
                     Return My.Resources.user_red
                 End If
                 Return Nothing

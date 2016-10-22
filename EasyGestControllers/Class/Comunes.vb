@@ -5,9 +5,7 @@ Imports System.Net
 Namespace Util
     Public Class Comunes
 
-        Public Const TIPO_PROPIETARIO_CLIENTE As Char = "C"c
-        Public Const TIPO_PROPIETARIO_PROVEEDOR As Char = "P"c
-        Public Const FECHA_REFERENCIA As Date = #1/1/2014#
+        Public Const FECHA_REFERENCIA As Date = #1/1/2016#
 
         Private Shared _Conexion As String = String.Empty
 

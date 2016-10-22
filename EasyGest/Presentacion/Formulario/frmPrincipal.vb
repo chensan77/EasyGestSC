@@ -174,15 +174,15 @@ Namespace Presentacion.Formulario
         End Sub
 
         Private Sub mitemContactosCli_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mitemContactosCli.Click
-            AddForm(New frmContacto(Util.Comunes.TIPO_PROPIETARIO_CLIENTE), True)
+            AddForm(New frmContacto(Data.Entity.Contactos.TIPO_PROPIETARIO_CLIENTE), True)
         End Sub
 
         Private Sub mitemCuentasCli_Click(sender As System.Object, e As System.EventArgs) Handles mitemCuentasCli.Click
-            AddForm(New frmCuenta(Util.Comunes.TIPO_PROPIETARIO_CLIENTE), True)
+            AddForm(New frmCuenta(Data.Entity.DatosBancario.TIPO_PROPIETARIO_CLIENTE), True)
         End Sub
 
         Private Sub mitemContactosPro_Click(sender As System.Object, e As System.EventArgs) Handles mitemContactosPro.Click
-            AddForm(New frmContacto(Util.Comunes.TIPO_PROPIETARIO_PROVEEDOR), True)
+            AddForm(New frmContacto(Data.Entity.Contactos.TIPO_PROPIETARIO_PROVEEDOR), True)
         End Sub
 
         Private Sub mbtnitemProveedor_Click(sender As Object, e As System.EventArgs) Handles mbtnitemProveedor.Click
@@ -218,7 +218,7 @@ Namespace Presentacion.Formulario
         End Sub
 
         Private Sub mitemCuentasPro_Click(sender As Object, e As System.EventArgs) Handles mitemCuentasPro.Click
-            AddForm(New frmCuenta(Util.Comunes.TIPO_PROPIETARIO_PROVEEDOR), True)
+            AddForm(New frmCuenta(Data.Entity.DatosBancario.TIPO_PROPIETARIO_PROVEEDOR), True)
         End Sub
 
         Private Sub mitemImpresionEtiqueta_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mitemImpresionEtiqueta.Click

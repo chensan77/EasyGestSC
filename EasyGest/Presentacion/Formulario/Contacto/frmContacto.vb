@@ -35,10 +35,10 @@ Namespace Presentacion.Formulario.Contacto
         Private Sub frmContacto_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
             'Establecer Permisos
             Dim perm As Integer = 0
-            If _tipo = Util.Comunes.TIPO_PROPIETARIO_PROVEEDOR Then
+            If _tipo = Data.Entity.Contactos.TIPO_PROPIETARIO_PROVEEDOR Then
                 perm = gUsuario.PermisoProveedor
             End If
-            If _tipo = Util.Comunes.TIPO_PROPIETARIO_CLIENTE Then
+            If _tipo = Data.Entity.Contactos.TIPO_PROPIETARIO_CLIENTE Then
                 perm = gUsuario.PermisoCliente
             End If
             cbbtnAgregar.Enabled = ((perm And Permiso.Modificacion) = Permiso.Modificacion)
@@ -176,11 +176,11 @@ Namespace Presentacion.Formulario.Contacto
         End Sub
 
         Private Sub ConfigurarBarraOrden()
-            Dim literalpropietario As String = String.Empty            
-            If _tipo = Util.Comunes.TIPO_PROPIETARIO_CLIENTE Then
+            Dim literalpropietario As String = String.Empty
+            If _tipo = Data.Entity.Contactos.TIPO_PROPIETARIO_CLIENTE Then
                 literalpropietario = My.Resources.Application.TextoCliente
             End If
-            If _tipo = Util.Comunes.TIPO_PROPIETARIO_PROVEEDOR Then
+            If _tipo = Data.Entity.Contactos.TIPO_PROPIETARIO_PROVEEDOR Then
                 literalpropietario = My.Resources.Application.TextoProveedor
             End If
             cbOrden = New Presentacion.Componente.CommandBarSortItem(cbstripeOrden)
@@ -202,11 +202,11 @@ Namespace Presentacion.Formulario.Contacto
             If Char.IsLetter(tipopropietario) Then
                 _filtro = String.Format("TipoPropietario = '{0}'", tipopropietario)
                 _tipo = tipopropietario
-                If tipopropietario.Equals(Util.Comunes.TIPO_PROPIETARIO_CLIENTE) Then
+                If tipopropietario.Equals(Data.Entity.Contactos.TIPO_PROPIETARIO_CLIENTE) Then
                     gridDatos.Columns("Propietario").HeaderText = My.Resources.Application.TextoCliente
                     Me.Text = String.Format(Me.Text, My.Resources.Application.TextoCliente)
                 End If
-                If tipopropietario.Equals(Util.Comunes.TIPO_PROPIETARIO_PROVEEDOR) Then
+                If tipopropietario.Equals(Data.Entity.Contactos.TIPO_PROPIETARIO_PROVEEDOR) Then
                     gridDatos.Columns("Propietario").HeaderText = My.Resources.Application.TextoProveedor
                     Me.Text = String.Format(Me.Text, My.Resources.Application.TextoProveedor)
                 End If
@@ -214,7 +214,7 @@ Namespace Presentacion.Formulario.Contacto
         End Sub
 
         Public Sub New(propietario As VWClientes)
-            Me.New(Util.Comunes.TIPO_PROPIETARIO_CLIENTE)
+            Me.New(Data.Entity.Contactos.TIPO_PROPIETARIO_CLIENTE)
             If Not IsNothing(propietario) Then
                 Me.Text &= " <" & propietario.Nombre & ">"
                 _nombrepropietario = propietario.NombreYNombreCN
@@ -225,7 +225,7 @@ Namespace Presentacion.Formulario.Contacto
         End Sub
 
         Public Sub New(propietario As VWProveedores)
-            Me.New(Util.Comunes.TIPO_PROPIETARIO_PROVEEDOR)
+            Me.New(Data.Entity.Contactos.TIPO_PROPIETARIO_PROVEEDOR)
             If Not IsNothing(propietario) Then
                 Me.Text &= " <" & propietario.Nombre & ">"
                 _nombrepropietario = propietario.NombreYNombreCN
