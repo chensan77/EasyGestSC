@@ -59,7 +59,7 @@
             Dim GridViewTextBoxColumn6 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
             Dim SortDescriptor2 As Telerik.WinControls.Data.SortDescriptor = New Telerik.WinControls.Data.SortDescriptor()
             Dim TableViewDefinition3 As Telerik.WinControls.UI.TableViewDefinition = New Telerik.WinControls.UI.TableViewDefinition()
-            Dim RadLabel3 As Telerik.WinControls.UI.RadLabel
+            Dim TableViewDefinition4 As Telerik.WinControls.UI.TableViewDefinition = New Telerik.WinControls.UI.TableViewDefinition()
             Dim InputBinding1 As Telerik.WinControls.Keyboard.InputBinding = New Telerik.WinControls.Keyboard.InputBinding()
             Dim Chord1 As Telerik.WinControls.Keyboard.Chord = New Telerik.WinControls.Keyboard.Chord()
             Dim ChordModifier1 As Telerik.WinControls.Keyboard.ChordModifier = New Telerik.WinControls.Keyboard.ChordModifier()
@@ -80,11 +80,10 @@
             Me.rptvPrevisualizacion = New Telerik.ReportViewer.WinForms.ReportViewer()
             Me.btnCancelar = New Telerik.WinControls.UI.RadButton()
             Me.btnAceptar = New Telerik.WinControls.UI.RadButton()
-            Me.RadDropDownList1 = New Telerik.WinControls.UI.RadDropDownList()
+            Me.RadMultiColumnComboBox1 = New Telerik.WinControls.UI.RadMultiColumnComboBox()
             RadLabel1 = New Telerik.WinControls.UI.RadLabel()
             RadLabel4 = New Telerik.WinControls.UI.RadLabel()
             RadLabel2 = New Telerik.WinControls.UI.RadLabel()
-            RadLabel3 = New Telerik.WinControls.UI.RadLabel()
             CType(RadLabel1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(RadLabel4, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(RadLabel2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -108,8 +107,9 @@
             CType(Me.EtiquetasDiseñoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.btnCancelar, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.btnAceptar, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(RadLabel3, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.RadDropDownList1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.RadMultiColumnComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.RadMultiColumnComboBox1.EditorControl, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
@@ -339,7 +339,7 @@
             CType(Me.pvEtiqueta.GetChildAt(0), Telerik.WinControls.UI.RadPageViewStripElement).Font = New System.Drawing.Font("Lucida Sans Unicode", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             CType(Me.pvEtiqueta.GetChildAt(0).GetChildAt(0).GetChildAt(0), Telerik.WinControls.UI.StripViewItemLayout).Font = New System.Drawing.Font("Lucida Sans Unicode", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             CType(Me.pvEtiqueta.GetChildAt(0).GetChildAt(2), Telerik.WinControls.UI.RadPageViewLabelElement).Text = resources.GetString("resource.Text1")
-            CType(Me.pvEtiqueta.GetChildAt(0).GetChildAt(2), Telerik.WinControls.UI.RadPageViewLabelElement).Font = New System.Drawing.Font("楷体", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            CType(Me.pvEtiqueta.GetChildAt(0).GetChildAt(2), Telerik.WinControls.UI.RadPageViewLabelElement).Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             '
             'pvpEtiquetasEnHoja
             '
@@ -434,12 +434,11 @@
             '
             'pvpDiseños
             '
+            Me.pvpDiseños.Controls.Add(Me.RadMultiColumnComboBox1)
             Me.pvpDiseños.Controls.Add(Me.btnExaminar)
             Me.pvpDiseños.Controls.Add(Me.txtArchivo)
-            Me.pvpDiseños.Controls.Add(Me.RadDropDownList1)
             Me.pvpDiseños.Controls.Add(Me.ddlEtiquetas)
             Me.pvpDiseños.Controls.Add(RadLabel2)
-            Me.pvpDiseños.Controls.Add(RadLabel3)
             Me.pvpDiseños.Controls.Add(RadLabel4)
             Me.pvpDiseños.Controls.Add(Me.rptvPrevisualizacion)
             Me.pvpDiseños.Controls.Add(Me.gridDiseños)
@@ -537,27 +536,30 @@
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).Text = resources.GetString("resource.Text3")
             CType(Me.btnAceptar.GetChildAt(0).GetChildAt(2), Telerik.WinControls.Primitives.BorderPrimitive).ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(66, Byte), Integer))
             '
-            'RadLabel3
+            'RadMultiColumnComboBox1
             '
-            resources.ApplyResources(RadLabel3, "RadLabel3")
-            RadLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
-            RadLabel3.Name = "RadLabel3"
+            resources.ApplyResources(Me.RadMultiColumnComboBox1, "RadMultiColumnComboBox1")
             '
-            'RadDropDownList1
+            'RadMultiColumnComboBox1.NestedRadGridView
             '
-            Me.RadDropDownList1.AllowShowFocusCues = True
-            Me.RadDropDownList1.AutoCompleteDisplayMember = "NombreEtiqueta"
-            Me.RadDropDownList1.AutoCompleteValueMember = "idEtiqueta"
-            Me.RadDropDownList1.DisplayMember = "NombreEtiqueta"
-            Me.RadDropDownList1.DropDownAnimationEasing = Telerik.WinControls.RadEasingType.InBounce
-            Me.RadDropDownList1.DropDownSizingMode = Telerik.WinControls.UI.SizingMode.UpDown
-            Me.RadDropDownList1.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
-            resources.ApplyResources(Me.RadDropDownList1, "RadDropDownList1")
-            Me.RadDropDownList1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
-            Me.RadDropDownList1.Name = "RadDropDownList1"
-            Me.RadDropDownList1.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending
-            Me.RadDropDownList1.ValueMember = "idEtiqueta"
-            CType(Me.RadDropDownList1.GetChildAt(0), Telerik.WinControls.UI.RadDropDownListElement).DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
+            Me.RadMultiColumnComboBox1.EditorControl.BackColor = System.Drawing.SystemColors.Window
+            resources.ApplyResources(Me.RadMultiColumnComboBox1.EditorControl, "RadMultiColumnComboBox1.NestedRadGridView")
+            Me.RadMultiColumnComboBox1.EditorControl.ForeColor = System.Drawing.SystemColors.ControlText
+            '
+            '
+            '
+            Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate.AllowAddNewRow = False
+            Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate.AllowCellContextMenu = False
+            Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate.AllowColumnChooser = False
+            Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate.EnableGrouping = False
+            Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate.ShowFilteringRow = False
+            Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate.ViewDefinition = TableViewDefinition4
+            Me.RadMultiColumnComboBox1.EditorControl.Name = "NestedRadGridView"
+            Me.RadMultiColumnComboBox1.EditorControl.ReadOnly = True
+            Me.RadMultiColumnComboBox1.EditorControl.ShowGroupPanel = False
+            Me.RadMultiColumnComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
+            Me.RadMultiColumnComboBox1.Name = "RadMultiColumnComboBox1"
+            Me.RadMultiColumnComboBox1.TabStop = False
             '
             'frmEtiqueta
             '
@@ -608,8 +610,9 @@
             CType(Me.EtiquetasDiseñoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.btnCancelar, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.btnAceptar, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(RadLabel3, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.RadDropDownList1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.RadMultiColumnComboBox1.EditorControl, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.RadMultiColumnComboBox1, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
 
@@ -632,7 +635,7 @@
         Friend WithEvents pvpEtiquetasEnRollo As RadPageViewPage
         Private WithEvents gridEtiqutasR As RadGridView
         Friend WithEvents EtiquetasRBindingSource As BindingSource
-        Friend WithEvents RadDropDownList1 As RadDropDownList
+        Friend WithEvents RadMultiColumnComboBox1 As RadMultiColumnComboBox
     End Class
 
 End Namespace

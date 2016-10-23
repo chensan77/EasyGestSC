@@ -144,6 +144,17 @@ Namespace Data.Entity
                 Return TipoEtiqueta & idEtiqueta
             End Get
         End Property
+        Public ReadOnly Property IconTipo As Image
+            Get
+                If TipoEtiqueta = TIPO_ETIQUETA_ENHOJA Then
+                    Return My.Resources.page
+                End If
+                If TipoEtiqueta = TIPO_ETIQUETA_ENROLLO Then
+                    Return My.Resources.script
+                End If
+                Return Nothing
+            End Get
+        End Property
 
         Public Const TIPO_ETIQUETA_ENROLLO As Char = "R"c
         Public Const TIPO_ETIQUETA_ENHOJA As Char = "H"c
@@ -153,6 +164,7 @@ Namespace Data.Entity
             NombreEtiqueta = nombre
             TipoEtiqueta = tipo
         End Sub
+
     End Class
 
 End Namespace

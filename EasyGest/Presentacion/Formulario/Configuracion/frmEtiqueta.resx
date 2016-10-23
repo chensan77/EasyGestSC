@@ -181,7 +181,7 @@
     <value>pvpDiseños</value>
   </data>
   <data name="&gt;&gt;RadLabel4.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <metadata name="RadLabel2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -217,7 +217,7 @@
     <value>pvpDiseños</value>
   </data>
   <data name="&gt;&gt;RadLabel2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="gridEtiquetasH.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -310,7 +310,7 @@
     <value>No</value>
   </data>
   <data name="gridDiseños.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 219</value>
+    <value>340, 250</value>
   </data>
   <data name="gridDiseños.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -325,7 +325,7 @@
     <value>pvpDiseños</value>
   </data>
   <data name="&gt;&gt;gridDiseños.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="pvpEtiquetasEnHoja.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
@@ -357,8 +357,26 @@
   <data name="gridEtiqutasR.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="GridViewTextBoxColumn5.HeaderText" xml:space="preserve">
+    <value>Referencia</value>
+  </data>
+  <data name="GridViewDecimalColumn16.HeaderText" xml:space="preserve">
+    <value>Ancho</value>
+  </data>
+  <data name="GridViewDecimalColumn17.HeaderText" xml:space="preserve">
+    <value>Alto</value>
+  </data>
+  <data name="GridViewDecimalColumn18.HeaderText" xml:space="preserve">
+    <value>GAP</value>
+  </data>
+  <data name="GridViewTextBoxColumn6.HeaderText" xml:space="preserve">
+    <value>UnidadMedida</value>
+  </data>
+  <data name="GridViewDecimalColumn19.HeaderText" xml:space="preserve">
+    <value>Usos</value>
+  </data>
   <metadata name="EtiquetasRBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>816, 22</value>
+    <value>775, 16</value>
   </metadata>
   <data name="gridEtiqutasR.Size" type="System.Drawing.Size, System.Drawing">
     <value>685, 329</value>
@@ -402,6 +420,117 @@
   <data name="&gt;&gt;pvpEtiquetasEnRollo.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="ddlEtiquetas.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <metadata name="EtiquetasDiseñoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>176, 17</value>
+  </metadata>
+  <data name="RadMultiColumnComboBox1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RadMultiColumnComboBox1.NestedRadGridView.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="RadMultiColumnComboBox1.NestedRadGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="RadMultiColumnComboBox1.NestedRadGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 150</value>
+  </data>
+  <data name="RadMultiColumnComboBox1.NestedRadGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;RadMultiColumnComboBox1.NestedRadGridView.Name" xml:space="preserve">
+    <value>RadMultiColumnComboBox1.NestedRadGridView</value>
+  </data>
+  <data name="&gt;&gt;RadMultiColumnComboBox1.NestedRadGridView.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.MultiColumnComboGridView, Telerik.WinControls.GridView, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="RadMultiColumnComboBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="RadMultiColumnComboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 258</value>
+  </data>
+  <data name="RadMultiColumnComboBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 24</value>
+  </data>
+  <data name="RadMultiColumnComboBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="RadMultiColumnComboBox1.Text" xml:space="preserve">
+    <value>RadMultiColumnComboBox1</value>
+  </data>
+  <data name="&gt;&gt;RadMultiColumnComboBox1.Name" xml:space="preserve">
+    <value>RadMultiColumnComboBox1</value>
+  </data>
+  <data name="&gt;&gt;RadMultiColumnComboBox1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMultiColumnComboBox, Telerik.WinControls.GridView, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="ddlEtiquetas.NestedRadGridView.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="ddlEtiquetas.NestedRadGridView.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ddlEtiquetas.NestedRadGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="GridViewDecimalColumn20.HeaderText" xml:space="preserve">
+    <value>idEtiqueta</value>
+  </data>
+  <data name="GridViewImageColumn1.HeaderText" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="GridViewTextBoxColumn7.HeaderText" xml:space="preserve">
+    <value>Nombre Etiqueta</value>
+  </data>
+  <data name="GridViewTextBoxColumn8.HeaderText" xml:space="preserve">
+    <value>TipoEtiqueta</value>
+  </data>
+  <data name="GridViewTextBoxColumn9.HeaderText" xml:space="preserve">
+    <value>UniqueIdEtiqueta</value>
+  </data>
+  <data name="ddlEtiquetas.NestedRadGridView.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="ddlEtiquetas.NestedRadGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 150</value>
+  </data>
+  <data name="ddlEtiquetas.NestedRadGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ddlEtiquetas.NestedRadGridView.Name" xml:space="preserve">
+    <value>ddlEtiquetas.NestedRadGridView</value>
+  </data>
+  <data name="&gt;&gt;ddlEtiquetas.NestedRadGridView.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.MultiColumnComboGridView, Telerik.WinControls.GridView, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="ddlEtiquetas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="ddlEtiquetas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 258</value>
+  </data>
+  <data name="ddlEtiquetas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 24</value>
+  </data>
+  <data name="ddlEtiquetas.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;ddlEtiquetas.Name" xml:space="preserve">
+    <value>ddlEtiquetas</value>
+  </data>
+  <data name="&gt;&gt;ddlEtiquetas.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMultiColumnComboBox, Telerik.WinControls.GridView, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;ddlEtiquetas.Parent" xml:space="preserve">
+    <value>pvpDiseños</value>
+  </data>
+  <data name="&gt;&gt;ddlEtiquetas.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btnExaminar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
   </data>
@@ -427,7 +556,7 @@
     <value>pvpDiseños</value>
   </data>
   <data name="&gt;&gt;btnExaminar.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="txtArchivo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
@@ -454,97 +583,10 @@
     <value>pvpDiseños</value>
   </data>
   <data name="&gt;&gt;txtArchivo.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="resource.Text" xml:space="preserve">
     <value />
-  </data>
-  <data name="RadDropDownList1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="RadDropDownList1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 225</value>
-  </data>
-  <data name="RadDropDownList1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 24</value>
-  </data>
-  <data name="RadDropDownList1.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;RadDropDownList1.Name" xml:space="preserve">
-    <value>RadDropDownList1</value>
-  </data>
-  <data name="&gt;&gt;RadDropDownList1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;RadDropDownList1.Parent" xml:space="preserve">
-    <value>pvpDiseños</value>
-  </data>
-  <data name="&gt;&gt;RadDropDownList1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="EtiquetasDiseñoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>176, 17</value>
-  </metadata>
-  <data name="ddlEtiquetas.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="ddlEtiquetas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 256</value>
-  </data>
-  <data name="ddlEtiquetas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 24</value>
-  </data>
-  <data name="ddlEtiquetas.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;ddlEtiquetas.Name" xml:space="preserve">
-    <value>ddlEtiquetas</value>
-  </data>
-  <data name="&gt;&gt;ddlEtiquetas.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;ddlEtiquetas.Parent" xml:space="preserve">
-    <value>pvpDiseños</value>
-  </data>
-  <data name="&gt;&gt;ddlEtiquetas.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <metadata name="RadLabel3.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="RadLabel3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="RadLabel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 227</value>
-  </data>
-  <data name="RadLabel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="RadLabel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 22</value>
-  </data>
-  <data name="RadLabel3.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="RadLabel3.Text" xml:space="preserve">
-    <value>Tipo etiqueta</value>
-  </data>
-  <data name="RadLabel3.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;RadLabel3.Name" xml:space="preserve">
-    <value>RadLabel3</value>
-  </data>
-  <data name="&gt;&gt;RadLabel3.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;RadLabel3.Parent" xml:space="preserve">
-    <value>pvpDiseños</value>
-  </data>
-  <data name="&gt;&gt;RadLabel3.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="rptvPrevisualizacion.Location" type="System.Drawing.Point, System.Drawing">
     <value>346, 0</value>
@@ -553,7 +595,7 @@
     <value>3, 4, 3, 4</value>
   </data>
   <data name="rptvPrevisualizacion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 312</value>
+    <value>343, 313</value>
   </data>
   <data name="rptvPrevisualizacion.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -568,16 +610,16 @@
     <value>pvpDiseños</value>
   </data>
   <data name="&gt;&gt;rptvPrevisualizacion.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="pvpDiseños.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
   </data>
   <data name="pvpDiseños.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 41</value>
+    <value>10, 37</value>
   </data>
   <data name="pvpDiseños.Size" type="System.Drawing.Size, System.Drawing">
-    <value>685, 329</value>
+    <value>685, 333</value>
   </data>
   <data name="pvpDiseños.Text" xml:space="preserve">
     <value>Diseños de etiqueta</value>
@@ -3164,6 +3206,9 @@
         /////////w==
 </value>
   </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
   </data>
@@ -3176,16 +3221,16 @@
   <data name="&gt;&gt;EtiquetasHBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DiseñosEtiquetaBindingSource.Name" xml:space="preserve">
-    <value>DiseñosEtiquetaBindingSource</value>
-  </data>
-  <data name="&gt;&gt;DiseñosEtiquetaBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;EtiquetasRBindingSource.Name" xml:space="preserve">
     <value>EtiquetasRBindingSource</value>
   </data>
   <data name="&gt;&gt;EtiquetasRBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DiseñosEtiquetaBindingSource.Name" xml:space="preserve">
+    <value>DiseñosEtiquetaBindingSource</value>
+  </data>
+  <data name="&gt;&gt;DiseñosEtiquetaBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;EtiquetasDiseñoBindingSource.Name" xml:space="preserve">
