@@ -412,6 +412,23 @@ Namespace Data.Entity
             End If
         End Function
 
+        Public Property UniqueIDEtiqueta As String
+            Get
+                Return String.Concat(TipoEtiqueta & idEtiqueta)
+            End Get
+            Set(value As String)
+                Dim tipo As Char = Etiquetas.TIPO_ETIQUETA_ENHOJA
+                Dim id As Long = 0
+                Try
+                    tipo = value.ToCharArray().First()
+                    id = CLng(value.Substring(1))
+                Catch ex As Exception
+
+                End Try
+                idEtiqueta = id
+                TipoEtiqueta = tipo
+            End Set
+        End Property
     End Class
 
     Partial Class Empresas

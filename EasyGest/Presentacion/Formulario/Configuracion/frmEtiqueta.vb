@@ -4,7 +4,8 @@ Namespace Presentacion.Formulario.Configuracion
 
     Public Class frmEtiqueta
 
-        Private _etiquetasdeleted As List(Of Etiquetas) = New List(Of Etiquetas)()
+        Private _etiquetasHdeleted As List(Of EtiquetasEnHoja) = New List(Of EtiquetasEnHoja)()
+        Private _etiquetasRdeleted As List(Of EtiquetasEnRollo) = New List(Of EtiquetasEnRollo)()
         Private _diseñodeleted As List(Of DiseñosEtiqueta) = New List(Of DiseñosEtiqueta)()
 
 #Region "Evento Form"
@@ -13,10 +14,22 @@ Namespace Presentacion.Formulario.Configuracion
             If Me.DialogResult = DialogResult.OK Then
                 Try
                     'tratar etiquetas
-                    Using control As New EtiquetasController
-                        Dim nuevos As New List(Of Etiquetas)()
-                        control.DeleteItems(_etiquetasdeleted)
-                        For Each Etiqueta As Etiquetas In EtiquetasHBindingSource.List
+                    Using control As New EtiquetasEnHojaController
+                        Dim nuevos As New List(Of EtiquetasEnHoja)()
+                        control.DeleteItems(_etiquetasHdeleted)
+                        For Each Etiqueta As EtiquetasEnHoja In EtiquetasHBindingSource.List
+                            If Etiqueta.idEtiqueta = 0 Then
+                                nuevos.Add(Etiqueta)
+                            Else
+                                control.UpdateItem(Etiqueta)
+                            End If
+                        Next
+                        control.AddItems(nuevos)
+                    End Using
+                    Using control As New EtiquetasEnRolloController
+                        Dim nuevos As New List(Of EtiquetasEnRollo)()
+                        control.DeleteItems(_etiquetasRdeleted)
+                        For Each Etiqueta As EtiquetasEnRollo In EtiquetasRBindingSource.List
                             If Etiqueta.idEtiqueta = 0 Then
                                 nuevos.Add(Etiqueta)
                             Else
@@ -68,8 +81,8 @@ Namespace Presentacion.Formulario.Configuracion
 
 #Region "Evento Grid"
 
-        Private Sub gridDatos_RowsChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles gridEtiquetasH.RowsChanging, gridDiseños.RowsChanging
-            If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Remove Then                
+        Private Sub gridDatos_RowsChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles gridEtiquetasH.RowsChanging, gridDiseños.RowsChanging, gridEtiqutasR.RowsChanging
+            If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Remove Then
                 e.Cancel = Not MostrarMensaje(My.Resources.Application.ConfirmacionBorrarDato, Me.Text, Telerik.WinControls.RadMessageIcon.Question, MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes
             End If
         End Sub
