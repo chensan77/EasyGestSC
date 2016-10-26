@@ -402,12 +402,36 @@
   <data name="gridEtiqutasR.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="gridEtiqutasR.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="gridEtiqutasR.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="gridEtiqutasR.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
+  </data>
+  <data name="GridViewTextBoxColumn4.HeaderText" xml:space="preserve">
+    <value>Referencia</value>
+  </data>
+  <data name="GridViewDecimalColumn16.HeaderText" xml:space="preserve">
+    <value>Ancho</value>
+  </data>
+  <data name="GridViewDecimalColumn17.HeaderText" xml:space="preserve">
+    <value>Alto</value>
+  </data>
+  <data name="GridViewDecimalColumn19.HeaderText" xml:space="preserve">
+    <value>GAP</value>
+  </data>
+  <data name="GridViewComboBoxColumn1.HeaderText" xml:space="preserve">
+    <value>U. Medida</value>
   </data>
   <metadata name="EtiquetasRBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>775, 16</value>
   </metadata>
+  <data name="gridEtiqutasR.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
   <data name="gridEtiqutasR.Size" type="System.Drawing.Size, System.Drawing">
     <value>685, 329</value>
   </data>
