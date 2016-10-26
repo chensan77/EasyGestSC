@@ -27,12 +27,16 @@
             Me.components = New System.ComponentModel.Container()
             Dim RadLabel1 As Telerik.WinControls.UI.RadLabel
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmEtiqueta))
+            Dim GridViewDecimalColumn1 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
+            Dim GridViewImageColumn1 As Telerik.WinControls.UI.GridViewImageColumn = New Telerik.WinControls.UI.GridViewImageColumn()
+            Dim GridViewTextBoxColumn1 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
+            Dim GridViewTextBoxColumn2 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
+            Dim GridViewTextBoxColumn3 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
             Dim TableViewDefinition1 As Telerik.WinControls.UI.TableViewDefinition = New Telerik.WinControls.UI.TableViewDefinition()
             Dim RadLabel4 As Telerik.WinControls.UI.RadLabel
             Dim RadLabel2 As Telerik.WinControls.UI.RadLabel
-            Dim GridViewDecimalColumn1 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
-            Dim GridViewTextBoxColumn1 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
             Dim GridViewDecimalColumn2 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
+            Dim GridViewTextBoxColumn4 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
             Dim GridViewDecimalColumn3 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
             Dim GridViewDecimalColumn4 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
             Dim GridViewDecimalColumn5 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
@@ -43,20 +47,21 @@
             Dim GridViewDecimalColumn10 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
             Dim GridViewDecimalColumn11 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
             Dim GridViewDecimalColumn12 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
+            Dim GridViewDecimalColumn13 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
             Dim SortDescriptor1 As Telerik.WinControls.Data.SortDescriptor = New Telerik.WinControls.Data.SortDescriptor()
             Dim TableViewDefinition2 As Telerik.WinControls.UI.TableViewDefinition = New Telerik.WinControls.UI.TableViewDefinition()
-            Dim GridViewDecimalColumn13 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
             Dim GridViewDecimalColumn14 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
-            Dim GridViewTextBoxColumn2 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
-            Dim GridViewTextBoxColumn3 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
-            Dim TableViewDefinition3 As Telerik.WinControls.UI.TableViewDefinition = New Telerik.WinControls.UI.TableViewDefinition()
             Dim GridViewDecimalColumn15 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
-            Dim GridViewTextBoxColumn4 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
+            Dim GridViewTextBoxColumn5 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
+            Dim GridViewTextBoxColumn6 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
+            Dim TableViewDefinition3 As Telerik.WinControls.UI.TableViewDefinition = New Telerik.WinControls.UI.TableViewDefinition()
             Dim GridViewDecimalColumn16 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
+            Dim GridViewTextBoxColumn7 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
             Dim GridViewDecimalColumn17 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
             Dim GridViewDecimalColumn18 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
             Dim GridViewDecimalColumn19 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
-            Dim GridViewTextBoxColumn5 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
+            Dim GridViewDecimalColumn20 As Telerik.WinControls.UI.GridViewDecimalColumn = New Telerik.WinControls.UI.GridViewDecimalColumn()
+            Dim GridViewTextBoxColumn8 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
             Dim GridViewComboBoxColumn1 As Telerik.WinControls.UI.GridViewComboBoxColumn = New Telerik.WinControls.UI.GridViewComboBoxColumn()
             Dim SortDescriptor2 As Telerik.WinControls.Data.SortDescriptor = New Telerik.WinControls.Data.SortDescriptor()
             Dim TableViewDefinition4 As Telerik.WinControls.UI.TableViewDefinition = New Telerik.WinControls.UI.TableViewDefinition()
@@ -122,10 +127,14 @@
             'RadMultiColumnComboBox1
             '
             resources.ApplyResources(Me.RadMultiColumnComboBox1, "RadMultiColumnComboBox1")
+            Me.RadMultiColumnComboBox1.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.DiseñosEtiquetaBindingSource, "UniqueIDEtiqueta", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+            Me.RadMultiColumnComboBox1.DataSource = Me.EtiquetasDiseñoBindingSource
+            Me.RadMultiColumnComboBox1.DisplayMember = "NombreEtiqueta"
             '
             'RadMultiColumnComboBox1.NestedRadGridView
             '
             Me.RadMultiColumnComboBox1.EditorControl.BackColor = System.Drawing.SystemColors.Window
+            Me.RadMultiColumnComboBox1.EditorControl.Cursor = System.Windows.Forms.Cursors.Default
             resources.ApplyResources(Me.RadMultiColumnComboBox1.EditorControl, "RadMultiColumnComboBox1.NestedRadGridView")
             Me.RadMultiColumnComboBox1.EditorControl.ForeColor = System.Drawing.SystemColors.ControlText
             '
@@ -134,6 +143,42 @@
             Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate.AllowAddNewRow = False
             Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate.AllowCellContextMenu = False
             Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate.AllowColumnChooser = False
+            GridViewDecimalColumn1.DataType = GetType(Long)
+            GridViewDecimalColumn1.EnableExpressionEditor = False
+            GridViewDecimalColumn1.FieldName = "idEtiqueta"
+            resources.ApplyResources(GridViewDecimalColumn1, "GridViewDecimalColumn1")
+            GridViewDecimalColumn1.IsAutoGenerated = True
+            GridViewDecimalColumn1.IsVisible = False
+            GridViewDecimalColumn1.Name = "idEtiqueta"
+            GridViewImageColumn1.EnableExpressionEditor = False
+            GridViewImageColumn1.FieldName = "IconTipo"
+            resources.ApplyResources(GridViewImageColumn1, "GridViewImageColumn1")
+            GridViewImageColumn1.IsAutoGenerated = True
+            GridViewImageColumn1.Name = "IconTipo"
+            GridViewImageColumn1.Width = 61
+            GridViewTextBoxColumn1.EnableExpressionEditor = False
+            GridViewTextBoxColumn1.FieldName = "NombreEtiqueta"
+            resources.ApplyResources(GridViewTextBoxColumn1, "GridViewTextBoxColumn1")
+            GridViewTextBoxColumn1.IsAutoGenerated = True
+            GridViewTextBoxColumn1.Name = "NombreEtiqueta"
+            GridViewTextBoxColumn1.ReadOnly = True
+            GridViewTextBoxColumn1.Width = 238
+            GridViewTextBoxColumn2.DataType = GetType(Char)
+            GridViewTextBoxColumn2.EnableExpressionEditor = False
+            GridViewTextBoxColumn2.FieldName = "TipoEtiqueta"
+            resources.ApplyResources(GridViewTextBoxColumn2, "GridViewTextBoxColumn2")
+            GridViewTextBoxColumn2.IsAutoGenerated = True
+            GridViewTextBoxColumn2.IsVisible = False
+            GridViewTextBoxColumn2.Name = "TipoEtiqueta"
+            GridViewTextBoxColumn3.EnableExpressionEditor = False
+            GridViewTextBoxColumn3.FieldName = "UniqueIdEtiqueta"
+            resources.ApplyResources(GridViewTextBoxColumn3, "GridViewTextBoxColumn3")
+            GridViewTextBoxColumn3.IsAutoGenerated = True
+            GridViewTextBoxColumn3.IsVisible = False
+            GridViewTextBoxColumn3.Name = "UniqueIdEtiqueta"
+            GridViewTextBoxColumn3.ReadOnly = True
+            Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate.Columns.AddRange(New Telerik.WinControls.UI.GridViewDataColumn() {GridViewDecimalColumn1, GridViewImageColumn1, GridViewTextBoxColumn1, GridViewTextBoxColumn2, GridViewTextBoxColumn3})
+            Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate.DataSource = Me.EtiquetasDiseñoBindingSource
             Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate.EnableGrouping = False
             Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate.ShowFilteringRow = False
             Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate.ViewDefinition = TableViewDefinition1
@@ -143,6 +188,7 @@
             Me.RadMultiColumnComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.RadMultiColumnComboBox1.Name = "RadMultiColumnComboBox1"
             Me.RadMultiColumnComboBox1.TabStop = False
+            Me.RadMultiColumnComboBox1.ValueMember = "UniqueIdEtiqueta"
             '
             'RadLabel4
             '
@@ -166,127 +212,127 @@
             '
             '
             Me.gridEtiquetasH.MasterTemplate.AllowRowResize = False
-            GridViewDecimalColumn1.DataType = GetType(Long)
-            GridViewDecimalColumn1.EnableExpressionEditor = False
-            GridViewDecimalColumn1.FieldName = "idEtiqueta"
-            resources.ApplyResources(GridViewDecimalColumn1, "GridViewDecimalColumn1")
-            GridViewDecimalColumn1.IsAutoGenerated = True
-            GridViewDecimalColumn1.IsVisible = False
-            GridViewDecimalColumn1.Name = "idEtiqueta"
-            GridViewTextBoxColumn1.EnableExpressionEditor = False
-            GridViewTextBoxColumn1.FieldName = "Referencia"
-            resources.ApplyResources(GridViewTextBoxColumn1, "GridViewTextBoxColumn1")
-            GridViewTextBoxColumn1.IsAutoGenerated = True
-            GridViewTextBoxColumn1.Name = "Referencia"
-            GridViewTextBoxColumn1.Width = 91
-            GridViewDecimalColumn2.DataType = GetType(Double)
+            GridViewDecimalColumn2.DataType = GetType(Long)
             GridViewDecimalColumn2.EnableExpressionEditor = False
-            GridViewDecimalColumn2.FieldName = "Ancho"
+            GridViewDecimalColumn2.FieldName = "idEtiqueta"
             resources.ApplyResources(GridViewDecimalColumn2, "GridViewDecimalColumn2")
             GridViewDecimalColumn2.IsAutoGenerated = True
-            GridViewDecimalColumn2.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
-            GridViewDecimalColumn2.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
-            GridViewDecimalColumn2.Name = "Ancho"
-            GridViewDecimalColumn2.ShowUpDownButtons = False
-            GridViewDecimalColumn2.Width = 54
+            GridViewDecimalColumn2.IsVisible = False
+            GridViewDecimalColumn2.Name = "idEtiqueta"
+            GridViewTextBoxColumn4.EnableExpressionEditor = False
+            GridViewTextBoxColumn4.FieldName = "Referencia"
+            resources.ApplyResources(GridViewTextBoxColumn4, "GridViewTextBoxColumn4")
+            GridViewTextBoxColumn4.IsAutoGenerated = True
+            GridViewTextBoxColumn4.Name = "Referencia"
+            GridViewTextBoxColumn4.Width = 91
             GridViewDecimalColumn3.DataType = GetType(Double)
             GridViewDecimalColumn3.EnableExpressionEditor = False
-            GridViewDecimalColumn3.FieldName = "Alto"
+            GridViewDecimalColumn3.FieldName = "Ancho"
             resources.ApplyResources(GridViewDecimalColumn3, "GridViewDecimalColumn3")
             GridViewDecimalColumn3.IsAutoGenerated = True
             GridViewDecimalColumn3.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
             GridViewDecimalColumn3.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
-            GridViewDecimalColumn3.Name = "Alto"
+            GridViewDecimalColumn3.Name = "Ancho"
             GridViewDecimalColumn3.ShowUpDownButtons = False
-            GridViewDecimalColumn3.Width = 60
-            GridViewDecimalColumn4.DataType = GetType(Short)
-            GridViewDecimalColumn4.DecimalPlaces = 0
+            GridViewDecimalColumn3.Width = 54
+            GridViewDecimalColumn4.DataType = GetType(Double)
             GridViewDecimalColumn4.EnableExpressionEditor = False
-            GridViewDecimalColumn4.FieldName = "Filas"
+            GridViewDecimalColumn4.FieldName = "Alto"
             resources.ApplyResources(GridViewDecimalColumn4, "GridViewDecimalColumn4")
             GridViewDecimalColumn4.IsAutoGenerated = True
             GridViewDecimalColumn4.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
-            GridViewDecimalColumn4.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-            GridViewDecimalColumn4.Name = "Filas"
-            GridViewDecimalColumn4.Width = 52
+            GridViewDecimalColumn4.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
+            GridViewDecimalColumn4.Name = "Alto"
+            GridViewDecimalColumn4.ShowUpDownButtons = False
+            GridViewDecimalColumn4.Width = 60
             GridViewDecimalColumn5.DataType = GetType(Short)
             GridViewDecimalColumn5.DecimalPlaces = 0
             GridViewDecimalColumn5.EnableExpressionEditor = False
-            GridViewDecimalColumn5.FieldName = "Columnas"
+            GridViewDecimalColumn5.FieldName = "Filas"
             resources.ApplyResources(GridViewDecimalColumn5, "GridViewDecimalColumn5")
             GridViewDecimalColumn5.IsAutoGenerated = True
             GridViewDecimalColumn5.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
             GridViewDecimalColumn5.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-            GridViewDecimalColumn5.Name = "Columnas"
+            GridViewDecimalColumn5.Name = "Filas"
             GridViewDecimalColumn5.Width = 52
-            GridViewDecimalColumn6.DataType = GetType(Double)
+            GridViewDecimalColumn6.DataType = GetType(Short)
+            GridViewDecimalColumn6.DecimalPlaces = 0
             GridViewDecimalColumn6.EnableExpressionEditor = False
-            GridViewDecimalColumn6.FieldName = "EspacioH"
+            GridViewDecimalColumn6.FieldName = "Columnas"
             resources.ApplyResources(GridViewDecimalColumn6, "GridViewDecimalColumn6")
             GridViewDecimalColumn6.IsAutoGenerated = True
             GridViewDecimalColumn6.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
-            GridViewDecimalColumn6.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
-            GridViewDecimalColumn6.Name = "EspacioH"
-            GridViewDecimalColumn6.ShowUpDownButtons = False
-            GridViewDecimalColumn6.Width = 58
+            GridViewDecimalColumn6.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+            GridViewDecimalColumn6.Name = "Columnas"
+            GridViewDecimalColumn6.Width = 52
             GridViewDecimalColumn7.DataType = GetType(Double)
             GridViewDecimalColumn7.EnableExpressionEditor = False
-            GridViewDecimalColumn7.FieldName = "EspacioV"
+            GridViewDecimalColumn7.FieldName = "EspacioH"
             resources.ApplyResources(GridViewDecimalColumn7, "GridViewDecimalColumn7")
             GridViewDecimalColumn7.IsAutoGenerated = True
             GridViewDecimalColumn7.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
             GridViewDecimalColumn7.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
-            GridViewDecimalColumn7.Name = "EspacioV"
+            GridViewDecimalColumn7.Name = "EspacioH"
             GridViewDecimalColumn7.ShowUpDownButtons = False
             GridViewDecimalColumn7.Width = 58
             GridViewDecimalColumn8.DataType = GetType(Double)
             GridViewDecimalColumn8.EnableExpressionEditor = False
-            GridViewDecimalColumn8.FieldName = "MargenIzq"
+            GridViewDecimalColumn8.FieldName = "EspacioV"
             resources.ApplyResources(GridViewDecimalColumn8, "GridViewDecimalColumn8")
             GridViewDecimalColumn8.IsAutoGenerated = True
             GridViewDecimalColumn8.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
             GridViewDecimalColumn8.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
-            GridViewDecimalColumn8.Name = "MargenIzq"
+            GridViewDecimalColumn8.Name = "EspacioV"
             GridViewDecimalColumn8.ShowUpDownButtons = False
-            GridViewDecimalColumn8.Width = 60
+            GridViewDecimalColumn8.Width = 58
             GridViewDecimalColumn9.DataType = GetType(Double)
             GridViewDecimalColumn9.EnableExpressionEditor = False
-            GridViewDecimalColumn9.FieldName = "MargenDer"
+            GridViewDecimalColumn9.FieldName = "MargenIzq"
             resources.ApplyResources(GridViewDecimalColumn9, "GridViewDecimalColumn9")
             GridViewDecimalColumn9.IsAutoGenerated = True
             GridViewDecimalColumn9.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
             GridViewDecimalColumn9.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
-            GridViewDecimalColumn9.Name = "MargenDer"
+            GridViewDecimalColumn9.Name = "MargenIzq"
             GridViewDecimalColumn9.ShowUpDownButtons = False
             GridViewDecimalColumn9.Width = 60
             GridViewDecimalColumn10.DataType = GetType(Double)
             GridViewDecimalColumn10.EnableExpressionEditor = False
-            GridViewDecimalColumn10.FieldName = "MargenSup"
+            GridViewDecimalColumn10.FieldName = "MargenDer"
             resources.ApplyResources(GridViewDecimalColumn10, "GridViewDecimalColumn10")
             GridViewDecimalColumn10.IsAutoGenerated = True
             GridViewDecimalColumn10.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
             GridViewDecimalColumn10.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
-            GridViewDecimalColumn10.Name = "MargenSup"
+            GridViewDecimalColumn10.Name = "MargenDer"
             GridViewDecimalColumn10.ShowUpDownButtons = False
             GridViewDecimalColumn10.Width = 60
             GridViewDecimalColumn11.DataType = GetType(Double)
             GridViewDecimalColumn11.EnableExpressionEditor = False
-            GridViewDecimalColumn11.FieldName = "MargenInf"
+            GridViewDecimalColumn11.FieldName = "MargenSup"
             resources.ApplyResources(GridViewDecimalColumn11, "GridViewDecimalColumn11")
             GridViewDecimalColumn11.IsAutoGenerated = True
             GridViewDecimalColumn11.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
             GridViewDecimalColumn11.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
-            GridViewDecimalColumn11.Name = "MargenInf"
+            GridViewDecimalColumn11.Name = "MargenSup"
             GridViewDecimalColumn11.ShowUpDownButtons = False
             GridViewDecimalColumn11.Width = 60
-            GridViewDecimalColumn12.DataType = GetType(Integer)
+            GridViewDecimalColumn12.DataType = GetType(Double)
             GridViewDecimalColumn12.EnableExpressionEditor = False
-            GridViewDecimalColumn12.FieldName = "Usos"
+            GridViewDecimalColumn12.FieldName = "MargenInf"
+            resources.ApplyResources(GridViewDecimalColumn12, "GridViewDecimalColumn12")
             GridViewDecimalColumn12.IsAutoGenerated = True
-            GridViewDecimalColumn12.IsVisible = False
-            GridViewDecimalColumn12.Name = "Usos"
-            GridViewDecimalColumn12.SortOrder = Telerik.WinControls.UI.RadSortOrder.Ascending
-            Me.gridEtiquetasH.MasterTemplate.Columns.AddRange(New Telerik.WinControls.UI.GridViewDataColumn() {GridViewDecimalColumn1, GridViewTextBoxColumn1, GridViewDecimalColumn2, GridViewDecimalColumn3, GridViewDecimalColumn4, GridViewDecimalColumn5, GridViewDecimalColumn6, GridViewDecimalColumn7, GridViewDecimalColumn8, GridViewDecimalColumn9, GridViewDecimalColumn10, GridViewDecimalColumn11, GridViewDecimalColumn12})
+            GridViewDecimalColumn12.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
+            GridViewDecimalColumn12.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
+            GridViewDecimalColumn12.Name = "MargenInf"
+            GridViewDecimalColumn12.ShowUpDownButtons = False
+            GridViewDecimalColumn12.Width = 60
+            GridViewDecimalColumn13.DataType = GetType(Integer)
+            GridViewDecimalColumn13.EnableExpressionEditor = False
+            GridViewDecimalColumn13.FieldName = "Usos"
+            GridViewDecimalColumn13.IsAutoGenerated = True
+            GridViewDecimalColumn13.IsVisible = False
+            GridViewDecimalColumn13.Name = "Usos"
+            GridViewDecimalColumn13.SortOrder = Telerik.WinControls.UI.RadSortOrder.Ascending
+            Me.gridEtiquetasH.MasterTemplate.Columns.AddRange(New Telerik.WinControls.UI.GridViewDataColumn() {GridViewDecimalColumn2, GridViewTextBoxColumn4, GridViewDecimalColumn3, GridViewDecimalColumn4, GridViewDecimalColumn5, GridViewDecimalColumn6, GridViewDecimalColumn7, GridViewDecimalColumn8, GridViewDecimalColumn9, GridViewDecimalColumn10, GridViewDecimalColumn11, GridViewDecimalColumn12, GridViewDecimalColumn13})
             Me.gridEtiquetasH.MasterTemplate.DataSource = Me.EtiquetasHBindingSource
             Me.gridEtiquetasH.MasterTemplate.EnableAlternatingRowColor = True
             Me.gridEtiquetasH.MasterTemplate.EnableGrouping = False
@@ -312,33 +358,33 @@
             '
             Me.gridDiseños.MasterTemplate.AllowRowResize = False
             Me.gridDiseños.MasterTemplate.AutoGenerateColumns = False
-            GridViewDecimalColumn13.DataType = GetType(Long)
-            GridViewDecimalColumn13.EnableExpressionEditor = False
-            GridViewDecimalColumn13.FieldName = "idEtiqueta"
-            resources.ApplyResources(GridViewDecimalColumn13, "GridViewDecimalColumn13")
-            GridViewDecimalColumn13.IsAutoGenerated = True
-            GridViewDecimalColumn13.IsVisible = False
-            GridViewDecimalColumn13.Name = "idEtiqueta"
             GridViewDecimalColumn14.DataType = GetType(Long)
             GridViewDecimalColumn14.EnableExpressionEditor = False
-            GridViewDecimalColumn14.FieldName = "idDiseño"
+            GridViewDecimalColumn14.FieldName = "idEtiqueta"
             resources.ApplyResources(GridViewDecimalColumn14, "GridViewDecimalColumn14")
             GridViewDecimalColumn14.IsAutoGenerated = True
             GridViewDecimalColumn14.IsVisible = False
-            GridViewDecimalColumn14.Name = "idDiseño"
-            GridViewTextBoxColumn2.EnableExpressionEditor = False
-            GridViewTextBoxColumn2.FieldName = "Nombre"
-            resources.ApplyResources(GridViewTextBoxColumn2, "GridViewTextBoxColumn2")
-            GridViewTextBoxColumn2.IsAutoGenerated = True
-            GridViewTextBoxColumn2.Name = "Nombre"
-            GridViewTextBoxColumn2.Width = 133
-            GridViewTextBoxColumn3.EnableExpressionEditor = False
-            GridViewTextBoxColumn3.FieldName = "Descripcion"
-            resources.ApplyResources(GridViewTextBoxColumn3, "GridViewTextBoxColumn3")
-            GridViewTextBoxColumn3.IsAutoGenerated = True
-            GridViewTextBoxColumn3.Name = "Descripcion"
-            GridViewTextBoxColumn3.Width = 178
-            Me.gridDiseños.MasterTemplate.Columns.AddRange(New Telerik.WinControls.UI.GridViewDataColumn() {GridViewDecimalColumn13, GridViewDecimalColumn14, GridViewTextBoxColumn2, GridViewTextBoxColumn3})
+            GridViewDecimalColumn14.Name = "idEtiqueta"
+            GridViewDecimalColumn15.DataType = GetType(Long)
+            GridViewDecimalColumn15.EnableExpressionEditor = False
+            GridViewDecimalColumn15.FieldName = "idDiseño"
+            resources.ApplyResources(GridViewDecimalColumn15, "GridViewDecimalColumn15")
+            GridViewDecimalColumn15.IsAutoGenerated = True
+            GridViewDecimalColumn15.IsVisible = False
+            GridViewDecimalColumn15.Name = "idDiseño"
+            GridViewTextBoxColumn5.EnableExpressionEditor = False
+            GridViewTextBoxColumn5.FieldName = "Nombre"
+            resources.ApplyResources(GridViewTextBoxColumn5, "GridViewTextBoxColumn5")
+            GridViewTextBoxColumn5.IsAutoGenerated = True
+            GridViewTextBoxColumn5.Name = "Nombre"
+            GridViewTextBoxColumn5.Width = 133
+            GridViewTextBoxColumn6.EnableExpressionEditor = False
+            GridViewTextBoxColumn6.FieldName = "Descripcion"
+            resources.ApplyResources(GridViewTextBoxColumn6, "GridViewTextBoxColumn6")
+            GridViewTextBoxColumn6.IsAutoGenerated = True
+            GridViewTextBoxColumn6.Name = "Descripcion"
+            GridViewTextBoxColumn6.Width = 178
+            Me.gridDiseños.MasterTemplate.Columns.AddRange(New Telerik.WinControls.UI.GridViewDataColumn() {GridViewDecimalColumn14, GridViewDecimalColumn15, GridViewTextBoxColumn5, GridViewTextBoxColumn6})
             Me.gridDiseños.MasterTemplate.DataSource = Me.DiseñosEtiquetaBindingSource
             Me.gridDiseños.MasterTemplate.EnableAlternatingRowColor = True
             Me.gridDiseños.MasterTemplate.EnableGrouping = False
@@ -359,7 +405,7 @@
             Me.pvEtiqueta.DefaultPage = Me.pvpDiseños
             resources.ApplyResources(Me.pvEtiqueta, "pvEtiqueta")
             Me.pvEtiqueta.Name = "pvEtiqueta"
-            Me.pvEtiqueta.SelectedPage = Me.pvpEtiquetasEnRollo
+            Me.pvEtiqueta.SelectedPage = Me.pvpDiseños
             CType(Me.pvEtiqueta.GetChildAt(0), Telerik.WinControls.UI.RadPageViewStripElement).ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             CType(Me.pvEtiqueta.GetChildAt(0), Telerik.WinControls.UI.RadPageViewStripElement).Font = New System.Drawing.Font("Lucida Sans Unicode", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             CType(Me.pvEtiqueta.GetChildAt(0).GetChildAt(0).GetChildAt(0), Telerik.WinControls.UI.StripViewItemLayout).Font = New System.Drawing.Font("Lucida Sans Unicode", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -396,61 +442,61 @@
             '
             Me.gridEtiqutasR.MasterTemplate.AllowRowResize = False
             Me.gridEtiqutasR.MasterTemplate.AutoGenerateColumns = False
-            GridViewDecimalColumn15.DataType = GetType(Long)
-            GridViewDecimalColumn15.EnableExpressionEditor = False
-            GridViewDecimalColumn15.FieldName = "idEtiqueta"
-            GridViewDecimalColumn15.IsAutoGenerated = True
-            GridViewDecimalColumn15.IsVisible = False
-            GridViewDecimalColumn15.Name = "idEtiqueta"
-            GridViewTextBoxColumn4.ColumnCharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-            GridViewTextBoxColumn4.EnableExpressionEditor = False
-            GridViewTextBoxColumn4.FieldName = "Referencia"
-            resources.ApplyResources(GridViewTextBoxColumn4, "GridViewTextBoxColumn4")
-            GridViewTextBoxColumn4.IsAutoGenerated = True
-            GridViewTextBoxColumn4.Name = "Referencia"
-            GridViewTextBoxColumn4.Width = 182
-            GridViewDecimalColumn16.DataType = GetType(Double)
+            GridViewDecimalColumn16.DataType = GetType(Long)
             GridViewDecimalColumn16.EnableExpressionEditor = False
-            GridViewDecimalColumn16.FieldName = "Ancho"
-            resources.ApplyResources(GridViewDecimalColumn16, "GridViewDecimalColumn16")
+            GridViewDecimalColumn16.FieldName = "idEtiqueta"
             GridViewDecimalColumn16.IsAutoGenerated = True
-            GridViewDecimalColumn16.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
-            GridViewDecimalColumn16.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
-            GridViewDecimalColumn16.Name = "Ancho"
-            GridViewDecimalColumn16.ShowUpDownButtons = False
-            GridViewDecimalColumn16.Width = 71
+            GridViewDecimalColumn16.IsVisible = False
+            GridViewDecimalColumn16.Name = "idEtiqueta"
+            GridViewTextBoxColumn7.ColumnCharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+            GridViewTextBoxColumn7.EnableExpressionEditor = False
+            GridViewTextBoxColumn7.FieldName = "Referencia"
+            resources.ApplyResources(GridViewTextBoxColumn7, "GridViewTextBoxColumn7")
+            GridViewTextBoxColumn7.IsAutoGenerated = True
+            GridViewTextBoxColumn7.Name = "Referencia"
+            GridViewTextBoxColumn7.Width = 182
             GridViewDecimalColumn17.DataType = GetType(Double)
             GridViewDecimalColumn17.EnableExpressionEditor = False
-            GridViewDecimalColumn17.FieldName = "Alto"
+            GridViewDecimalColumn17.FieldName = "Ancho"
             resources.ApplyResources(GridViewDecimalColumn17, "GridViewDecimalColumn17")
             GridViewDecimalColumn17.IsAutoGenerated = True
             GridViewDecimalColumn17.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
             GridViewDecimalColumn17.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
-            GridViewDecimalColumn17.Name = "Alto"
+            GridViewDecimalColumn17.Name = "Ancho"
             GridViewDecimalColumn17.ShowUpDownButtons = False
-            GridViewDecimalColumn17.Width = 70
-            GridViewDecimalColumn18.DataType = GetType(Integer)
+            GridViewDecimalColumn17.Width = 71
+            GridViewDecimalColumn18.DataType = GetType(Double)
             GridViewDecimalColumn18.EnableExpressionEditor = False
-            GridViewDecimalColumn18.FieldName = "Usos"
+            GridViewDecimalColumn18.FieldName = "Alto"
+            resources.ApplyResources(GridViewDecimalColumn18, "GridViewDecimalColumn18")
             GridViewDecimalColumn18.IsAutoGenerated = True
-            GridViewDecimalColumn18.IsVisible = False
-            GridViewDecimalColumn18.Name = "Usos"
-            GridViewDecimalColumn18.SortOrder = Telerik.WinControls.UI.RadSortOrder.Ascending
-            GridViewDecimalColumn18.VisibleInColumnChooser = False
-            GridViewDecimalColumn19.DataType = GetType(Double)
+            GridViewDecimalColumn18.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
+            GridViewDecimalColumn18.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
+            GridViewDecimalColumn18.Name = "Alto"
+            GridViewDecimalColumn18.ShowUpDownButtons = False
+            GridViewDecimalColumn18.Width = 70
+            GridViewDecimalColumn19.DataType = GetType(Integer)
             GridViewDecimalColumn19.EnableExpressionEditor = False
-            GridViewDecimalColumn19.FieldName = "GAP"
-            resources.ApplyResources(GridViewDecimalColumn19, "GridViewDecimalColumn19")
+            GridViewDecimalColumn19.FieldName = "Usos"
             GridViewDecimalColumn19.IsAutoGenerated = True
-            GridViewDecimalColumn19.Name = "GAP"
-            GridViewDecimalColumn19.Width = 59
-            GridViewTextBoxColumn5.EnableExpressionEditor = False
-            GridViewTextBoxColumn5.FieldName = "NombreEtiqueta"
-            GridViewTextBoxColumn5.IsAutoGenerated = True
-            GridViewTextBoxColumn5.IsVisible = False
-            GridViewTextBoxColumn5.Name = "NombreEtiqueta"
-            GridViewTextBoxColumn5.ReadOnly = True
-            GridViewTextBoxColumn5.VisibleInColumnChooser = False
+            GridViewDecimalColumn19.IsVisible = False
+            GridViewDecimalColumn19.Name = "Usos"
+            GridViewDecimalColumn19.SortOrder = Telerik.WinControls.UI.RadSortOrder.Ascending
+            GridViewDecimalColumn19.VisibleInColumnChooser = False
+            GridViewDecimalColumn20.DataType = GetType(Double)
+            GridViewDecimalColumn20.EnableExpressionEditor = False
+            GridViewDecimalColumn20.FieldName = "GAP"
+            resources.ApplyResources(GridViewDecimalColumn20, "GridViewDecimalColumn20")
+            GridViewDecimalColumn20.IsAutoGenerated = True
+            GridViewDecimalColumn20.Name = "GAP"
+            GridViewDecimalColumn20.Width = 59
+            GridViewTextBoxColumn8.EnableExpressionEditor = False
+            GridViewTextBoxColumn8.FieldName = "NombreEtiqueta"
+            GridViewTextBoxColumn8.IsAutoGenerated = True
+            GridViewTextBoxColumn8.IsVisible = False
+            GridViewTextBoxColumn8.Name = "NombreEtiqueta"
+            GridViewTextBoxColumn8.ReadOnly = True
+            GridViewTextBoxColumn8.VisibleInColumnChooser = False
             GridViewComboBoxColumn1.AllowGroup = False
             GridViewComboBoxColumn1.AllowSort = False
             GridViewComboBoxColumn1.EnableExpressionEditor = False
@@ -458,7 +504,7 @@
             resources.ApplyResources(GridViewComboBoxColumn1, "GridViewComboBoxColumn1")
             GridViewComboBoxColumn1.Name = "UnidadMedida"
             GridViewComboBoxColumn1.Width = 74
-            Me.gridEtiqutasR.MasterTemplate.Columns.AddRange(New Telerik.WinControls.UI.GridViewDataColumn() {GridViewDecimalColumn15, GridViewTextBoxColumn4, GridViewDecimalColumn16, GridViewDecimalColumn17, GridViewDecimalColumn18, GridViewDecimalColumn19, GridViewTextBoxColumn5, GridViewComboBoxColumn1})
+            Me.gridEtiqutasR.MasterTemplate.Columns.AddRange(New Telerik.WinControls.UI.GridViewDataColumn() {GridViewDecimalColumn16, GridViewTextBoxColumn7, GridViewDecimalColumn17, GridViewDecimalColumn18, GridViewDecimalColumn19, GridViewDecimalColumn20, GridViewTextBoxColumn8, GridViewComboBoxColumn1})
             Me.gridEtiqutasR.MasterTemplate.DataSource = Me.EtiquetasRBindingSource
             Me.gridEtiqutasR.MasterTemplate.EnableAlternatingRowColor = True
             Me.gridEtiqutasR.MasterTemplate.EnableGrouping = False
@@ -536,7 +582,7 @@
             '
             'EtiquetasDiseñoBindingSource
             '
-            Me.EtiquetasDiseñoBindingSource.DataSource = GetType(EasyGestControllers.Data.Entity.EtiquetasEnHoja)
+            Me.EtiquetasDiseñoBindingSource.DataSource = GetType(EasyGestControllers.Data.Entity.Etiquetas)
             '
             'rptvPrevisualizacion
             '

@@ -60,6 +60,8 @@ Namespace Presentacion.Formulario.Configuracion
 
         Private Sub frmEtiqueta_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
             pvEtiqueta.SelectedPage = pvpEtiquetasEnHoja
+            Dim colUidad As GridViewComboBoxColumn = DirectCast(gridEtiqutasR.Columns.Item("UnidadMedida"), GridViewComboBoxColumn)
+            colUidad.DataSource = New String() {"CM", "INCH", "POINT"}
             PrepararControles(pvpEtiquetasEnHoja.Controls)
             PrepararControles(pvpDiseños.Controls)
             btnAceptar.ButtonElement.Shortcuts.Add(New Telerik.WinControls.RadShortcut(Keys.Control, Keys.Enter))
@@ -99,16 +101,35 @@ Namespace Presentacion.Formulario.Configuracion
             End If
         End Sub
 
-        Private Sub gridDatos_RowsChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles gridEtiquetasH.RowsChanged
+        Private Sub gridEtiquetasH_RowsChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles gridEtiquetasH.RowsChanged
             If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Remove Then
                 Dim diseños As IList(Of DiseñosEtiqueta) = DirectCast(DiseñosEtiquetaBindingSource.DataSource, List(Of DiseñosEtiqueta))
                 For Each row As GridViewRowInfo In e.OldItems
-                    Dim etiqueta As Etiquetas = DirectCast(row.DataBoundItem, Etiquetas)
-                    If diseños.Any(Function(a As DiseñosEtiqueta) a.idEtiqueta = etiqueta.idEtiqueta) Then
+                    Dim etiqueta As EtiquetasEnHoja = DirectCast(row.DataBoundItem, EtiquetasEnHoja)
+                    If diseños.Any(Function(a As DiseñosEtiqueta) a.idEtiqueta = etiqueta.idEtiqueta And a.TipoEtiqueta = Etiquetas.TIPO_ETIQUETA_ENHOJA) Then
                         row.ErrorText = "No se puede eliminar"
                     Else
                         If Not IsNothing(etiqueta) AndAlso etiqueta.idEtiqueta > 0 Then
-                            _etiquetasdeleted.Add(etiqueta)
+                            _etiquetasHdeleted.Add(etiqueta)
+                        End If
+                    End If
+                Next
+            ElseIf e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged Then
+
+            End If
+
+        End Sub
+
+        Private Sub gridEtiqutasR_RowsChanged(sender As Object, e As GridViewCollectionChangedEventArgs) Handles gridEtiqutasR.RowsChanged
+            If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Remove Then
+                Dim diseños As IList(Of DiseñosEtiqueta) = DirectCast(DiseñosEtiquetaBindingSource.DataSource, List(Of DiseñosEtiqueta))
+                For Each row As GridViewRowInfo In e.OldItems
+                    Dim etiqueta As EtiquetasEnRollo = DirectCast(row.DataBoundItem, EtiquetasEnRollo)
+                    If diseños.Any(Function(a As DiseñosEtiqueta) a.idEtiqueta = etiqueta.idEtiqueta And a.TipoEtiqueta = Etiquetas.TIPO_ETIQUETA_ENROLLO) Then
+                        row.ErrorText = "No se puede eliminar"
+                    Else
+                        If Not IsNothing(etiqueta) AndAlso etiqueta.idEtiqueta > 0 Then
+                            _etiquetasRdeleted.Add(etiqueta)
                         End If
                     End If
                 Next
@@ -168,12 +189,17 @@ Namespace Presentacion.Formulario.Configuracion
 #Region "Operaciones ARD"
 
         Private Sub CargarDatos()
-            Using c As New Controller.EtiquetasController()
+            Dim listaEtiquetas As New List(Of Etiquetas)
+            Using c As New Controller.EtiquetasEnHojaController()
                 EtiquetasHBindingSource.DataSource = c.GetItems("", "Usos DESC, Referencia")
-                EtiquetasDiseñoBindingSource.DataSource = c.GetItems("", "Referencia")
+                listaEtiquetas.AddRange(c.GetEtiquetasGenericas())
             End Using
-
-            Using c As New Controller.DiseñosEtiquetaController()           
+            Using c As New Controller.EtiquetasEnRolloController()
+                EtiquetasRBindingSource.DataSource = c.GetItems("", "Usos DESC, Referencia")
+                listaEtiquetas.AddRange(c.GetEtiquetasGenericas())
+            End Using
+            EtiquetasDiseñoBindingSource.DataSource = listaEtiquetas
+            Using c As New Controller.DiseñosEtiquetaController()
                 DiseñosEtiquetaBindingSource.DataSource = c.GetItems("", "Nombre")
             End Using
         End Sub
@@ -187,6 +213,7 @@ Namespace Presentacion.Formulario.Configuracion
             xmlEle = xmlFile.Root
             Return xmlEle
         End Function
+
 
 
         'Private Sub ddlEtiquetas_SelectedValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles ddlEtiquetas.SelectedValueChanged

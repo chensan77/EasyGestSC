@@ -117,11 +117,270 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="CommandBarRowElement1.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CommandBarRowElement1.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CommandBarRowElement1.DisplayName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="CommandBarRowElement1.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CommandBarRowElement1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="CommandBarRowElement1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="CommandBarRowElement1.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeAccion.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="cbstripeAccion.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbstripeAccion.DisplayName" xml:space="preserve">
+    <value>Operación</value>
+  </data>
+  <data name="cbstripeAccion.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnAgregar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="cbbtnAgregar.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbbtnAgregar.DisplayName" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="cbbtnAgregar.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnAgregar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnAgregar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnAgregar.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnAgregar.Text" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="cbbtnAgregar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="cbbtnAgregar.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnEliminar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="cbbtnEliminar.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbbtnEliminar.DisplayName" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="cbbtnEliminar.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnEliminar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnEliminar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnEliminar.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnEliminar.Text" xml:space="preserve">
+    <value>Previsualizar</value>
+  </data>
+  <data name="cbbtnEliminar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="cbbtnEliminar.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnModificar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="cbbtnModificar.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbbtnModificar.DisplayName" xml:space="preserve">
+    <value>Modificar</value>
+  </data>
+  <data name="cbbtnModificar.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnModificar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnModificar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnModificar.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnModificar.Text" xml:space="preserve">
+    <value>Limpiar</value>
+  </data>
+  <data name="cbbtnModificar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="cbbtnModificar.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeAccion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment1" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.AngleTransform1" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.FlipText1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Margin1" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Padding1" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.RightToLeft1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.TextOrientation1" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.TextWrap1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeAccion.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbstripeAccion.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeAccion.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbstripeAccion.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="cbstripeAccion.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.TextWrap2" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.TextOrientation2" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.FlipText2" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text2" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.Padding2" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Margin2" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment2" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.RightToLeft2" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.AngleTransform2" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.TextWrap3" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.TextOrientation3" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.FlipText3" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text3" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.Padding3" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Margin3" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment3" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.RightToLeft3" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.AngleTransform3" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="CommandBarRowElement1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CommandBarRowElement1.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="CommandBarRowElement1.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="gridDatos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="gridDatos.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
   </data>
@@ -161,36 +420,8 @@
   <data name="gridDatos.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
-  <data name="gridDatos.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gridDatos.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gridDatos.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="gridDatos.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="gridDatos.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="gridDatos.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="gridDatos.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="gridDatos.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gridDatos.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="gridDatos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>379, 489</value>
+    <value>379, 514</value>
   </data>
   <data name="gridDatos.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -199,7 +430,7 @@
     <value>gridDatos</value>
   </data>
   <data name="&gt;&gt;gridDatos.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;gridDatos.Parent" xml:space="preserve">
     <value>SplitPanel1</value>
@@ -212,33 +443,6 @@
   </data>
   <data name="RadCommandBar1.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 5</value>
-  </data>
-  <data name="RadCommandBar1.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadCommandBar1.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadCommandBar1.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="RadCommandBar1.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="RadCommandBar1.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RadCommandBar1.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadCommandBar1.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadCommandBar1.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadCommandBar1.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
   </data>
   <data name="cbBuscarProducto.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
@@ -264,11 +468,68 @@
   <data name="cbstripeBusqueda.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
   </data>
+  <data name="cbstripeBusqueda.DisplayName" xml:space="preserve">
+    <value>Ordenación</value>
+  </data>
   <data name="cbstripeBusqueda.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Alignment4" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.AngleTransform4" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.FlipText4" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Margin4" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Padding4" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.RightToLeft4" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text4" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.TextOrientation4" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.TextWrap4" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="cbstripeBusqueda.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment5" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.AngleTransform5" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.FlipText5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Margin5" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Padding5" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.RightToLeft5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text5" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.TextOrientation5" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.TextWrap5" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="cbstripeBusqueda.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -284,6 +545,60 @@
   </data>
   <data name="cbstripeBusqueda.TextWrap" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="resource.TextWrap6" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.TextOrientation6" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.FlipText6" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text6" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.Padding6" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Margin6" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment6" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.RightToLeft6" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.AngleTransform6" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.TextWrap7" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.TextOrientation7" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.FlipText7" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.Padding7" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Margin7" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment7" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.RightToLeft7" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.AngleTransform7" type="System.Single, mscorlib">
+    <value>0</value>
   </data>
   <data name="cbBuscarProducto.Text" xml:space="preserve">
     <value />
@@ -307,7 +622,7 @@
     <value>RadCommandBar1</value>
   </data>
   <data name="&gt;&gt;RadCommandBar1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadCommandBar, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadCommandBar, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;RadCommandBar1.Parent" xml:space="preserve">
     <value>SplitPanel1</value>
@@ -324,35 +639,8 @@
   <data name="SplitPanel1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
-  <data name="SplitPanel1.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="SplitPanel1.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="SplitPanel1.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="SplitPanel1.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="SplitPanel1.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="SplitPanel1.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="SplitPanel1.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="SplitPanel1.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="SplitPanel1.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="SplitPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>389, 534</value>
+    <value>389, 559</value>
   </data>
   <data name="SplitPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -364,7 +652,7 @@
     <value>SplitPanel1</value>
   </data>
   <data name="&gt;&gt;SplitPanel1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.SplitPanel, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.SplitPanel, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;SplitPanel1.Parent" xml:space="preserve">
     <value>RadSplitContainer1</value>
@@ -387,33 +675,6 @@
   <data name="RadLabel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 27</value>
   </data>
-  <data name="RadLabel1.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadLabel1.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadLabel1.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="RadLabel1.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="RadLabel1.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RadLabel1.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadLabel1.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadLabel1.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadLabel1.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="RadLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 80</value>
   </data>
@@ -430,7 +691,7 @@
     <value>RadLabel1</value>
   </data>
   <data name="&gt;&gt;RadLabel1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;RadLabel1.Parent" xml:space="preserve">
     <value>RadPanel1</value>
@@ -440,33 +701,6 @@
   </data>
   <data name="RadPanel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
-  </data>
-  <data name="RadPanel1.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadPanel1.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadPanel1.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="RadPanel1.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="RadPanel1.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RadPanel1.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadPanel1.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadPanel1.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadPanel1.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
   </data>
   <data name="RadPanel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 107</value>
@@ -481,7 +715,7 @@
     <value>RadPanel1</value>
   </data>
   <data name="&gt;&gt;RadPanel1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadPanel, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadPanel, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;RadPanel1.Parent" xml:space="preserve">
     <value>TableLayoutPanel1</value>
@@ -499,7 +733,7 @@
     <value>2</value>
   </data>
   <data name="TableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>525, 420</value>
+    <value>525, 440</value>
   </data>
   <data name="TableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -517,7 +751,7 @@
     <value>0</value>
   </data>
   <data name="TableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="RadPanel1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50,Absolute,20,Absolute,20" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="RadPanel1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50,Absolute,20,Absolute,21" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="SplitPanel3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
@@ -528,35 +762,8 @@
   <data name="SplitPanel3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
-  <data name="SplitPanel3.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="SplitPanel3.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="SplitPanel3.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="SplitPanel3.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="SplitPanel3.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="SplitPanel3.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="SplitPanel3.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="SplitPanel3.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="SplitPanel3.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="SplitPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>537, 432</value>
+    <value>537, 452</value>
   </data>
   <data name="SplitPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -568,7 +775,7 @@
     <value>SplitPanel3</value>
   </data>
   <data name="&gt;&gt;SplitPanel3.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.SplitPanel, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.SplitPanel, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;SplitPanel3.Parent" xml:space="preserve">
     <value>RadSplitContainer2</value>
@@ -588,35 +795,8 @@
   <data name="lstvEtiquetas.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
-  <data name="lstvEtiquetas.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="lstvEtiquetas.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="lstvEtiquetas.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="lstvEtiquetas.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lstvEtiquetas.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lstvEtiquetas.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="lstvEtiquetas.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="lstvEtiquetas.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="lstvEtiquetas.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="lstvEtiquetas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>527, 88</value>
+    <value>527, 93</value>
   </data>
   <data name="lstvEtiquetas.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -628,7 +808,7 @@
     <value>lstvEtiquetas</value>
   </data>
   <data name="&gt;&gt;lstvEtiquetas.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadListView, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadListView, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;lstvEtiquetas.Parent" xml:space="preserve">
     <value>SplitPanel4</value>
@@ -637,40 +817,13 @@
     <value>0</value>
   </data>
   <data name="SplitPanel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 436</value>
+    <value>0, 456</value>
   </data>
   <data name="SplitPanel4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
-  <data name="SplitPanel4.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="SplitPanel4.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="SplitPanel4.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="SplitPanel4.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="SplitPanel4.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="SplitPanel4.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="SplitPanel4.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="SplitPanel4.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="SplitPanel4.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="SplitPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>537, 98</value>
+    <value>537, 103</value>
   </data>
   <data name="SplitPanel4.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -682,7 +835,7 @@
     <value>SplitPanel4</value>
   </data>
   <data name="&gt;&gt;SplitPanel4.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.SplitPanel, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.SplitPanel, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;SplitPanel4.Parent" xml:space="preserve">
     <value>RadSplitContainer2</value>
@@ -699,35 +852,8 @@
   <data name="RadSplitContainer2.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="RadSplitContainer2.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadSplitContainer2.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadSplitContainer2.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="RadSplitContainer2.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="RadSplitContainer2.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RadSplitContainer2.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadSplitContainer2.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadSplitContainer2.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadSplitContainer2.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="RadSplitContainer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>537, 534</value>
+    <value>537, 559</value>
   </data>
   <data name="RadSplitContainer2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -739,7 +865,7 @@
     <value>RadSplitContainer2</value>
   </data>
   <data name="&gt;&gt;RadSplitContainer2.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadSplitContainer, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadSplitContainer, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;RadSplitContainer2.Parent" xml:space="preserve">
     <value>SplitPanel2</value>
@@ -750,35 +876,8 @@
   <data name="SplitPanel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>393, 0</value>
   </data>
-  <data name="SplitPanel2.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="SplitPanel2.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="SplitPanel2.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="SplitPanel2.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="SplitPanel2.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="SplitPanel2.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="SplitPanel2.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="SplitPanel2.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="SplitPanel2.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="SplitPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>537, 534</value>
+    <value>537, 559</value>
   </data>
   <data name="SplitPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -790,7 +889,7 @@
     <value>SplitPanel2</value>
   </data>
   <data name="&gt;&gt;SplitPanel2.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.SplitPanel, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.SplitPanel, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;SplitPanel2.Parent" xml:space="preserve">
     <value>RadSplitContainer1</value>
@@ -802,37 +901,10 @@
     <value>Fill</value>
   </data>
   <data name="RadSplitContainer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 77</value>
-  </data>
-  <data name="RadSplitContainer1.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadSplitContainer1.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadSplitContainer1.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="RadSplitContainer1.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="RadSplitContainer1.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RadSplitContainer1.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadSplitContainer1.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadSplitContainer1.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadSplitContainer1.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+    <value>0, 52</value>
   </data>
   <data name="RadSplitContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>930, 534</value>
+    <value>930, 559</value>
   </data>
   <data name="RadSplitContainer1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -844,7 +916,7 @@
     <value>RadSplitContainer1</value>
   </data>
   <data name="&gt;&gt;RadSplitContainer1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadSplitContainer, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadSplitContainer, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;RadSplitContainer1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -855,197 +927,14 @@
   <metadata name="bgwCarga.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="CommandBarRowElement1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="CommandBarRowElement1.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="CommandBarRowElement1.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="CommandBarRowElement1.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="CommandBarRowElement1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="CommandBarRowElement1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="CommandBarRowElement1.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbstripeAccion.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="cbstripeAccion.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="cbstripeAccion.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbbtnAgregar.AccessibleDescription" xml:space="preserve">
-    <value>Agregar</value>
-  </data>
-  <data name="cbbtnAgregar.AccessibleName" xml:space="preserve">
-    <value>Agregar</value>
-  </data>
-  <data name="cbbtnAgregar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="cbbtnAgregar.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="cbbtnAgregar.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbbtnAgregar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbbtnAgregar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbbtnAgregar.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbbtnAgregar.Text" xml:space="preserve">
-    <value>Imprimir</value>
-  </data>
-  <data name="cbbtnAgregar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="cbbtnAgregar.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbbtnEliminar.AccessibleDescription" xml:space="preserve">
-    <value>Eliminar</value>
-  </data>
-  <data name="cbbtnEliminar.AccessibleName" xml:space="preserve">
-    <value>Eliminar</value>
-  </data>
-  <data name="cbbtnEliminar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="cbbtnEliminar.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="cbbtnEliminar.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbbtnEliminar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbbtnEliminar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbbtnEliminar.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbbtnEliminar.Text" xml:space="preserve">
-    <value>Previsualizar</value>
-  </data>
-  <data name="cbbtnEliminar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="cbbtnEliminar.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbbtnModificar.AccessibleDescription" xml:space="preserve">
-    <value>Modificar</value>
-  </data>
-  <data name="cbbtnModificar.AccessibleName" xml:space="preserve">
-    <value>Modificar</value>
-  </data>
-  <data name="cbbtnModificar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="cbbtnModificar.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="cbbtnModificar.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbbtnModificar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbbtnModificar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbbtnModificar.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbbtnModificar.Text" xml:space="preserve">
-    <value>Limpiar</value>
-  </data>
-  <data name="cbbtnModificar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="cbbtnModificar.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbstripeAccion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbstripeAccion.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbstripeAccion.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbstripeAccion.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="cbstripeAccion.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="cbstripeAccion.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="CommandBarRowElement1.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="CommandBarRowElement1.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="CommandBarRowElement1.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="cbComandos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="cbComandos.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="cbComandos.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="cbComandos.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="cbComandos.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="cbComandos.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="cbComandos.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbComandos.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbComandos.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbComandos.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="cbComandos.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="cbComandos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>930, 77</value>
+    <value>930, 52</value>
   </data>
   <data name="cbComandos.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1057,7 +946,7 @@
     <value>cbComandos</value>
   </data>
   <data name="&gt;&gt;cbComandos.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadCommandBar, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadCommandBar, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;cbComandos.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1065,9 +954,6 @@
   <data name="&gt;&gt;cbComandos.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="EtiquetasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>347, 17</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -3437,53 +3323,53 @@
         AAP///gAAAAAA/////gAAAAH//////AAAAf//////+AAB////////+AH/w==
 </value>
   </data>
-  <data name="frmEtiquetarProducto.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="frmEtiquetarProducto.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="frmEtiquetarProducto.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="frmEtiquetarProducto.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="frmEtiquetarProducto.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="frmEtiquetarProducto.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="frmEtiquetarProducto.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="frmEtiquetarProducto.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="frmEtiquetarProducto.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Etiquetado de producto</value>
   </data>
-  <data name="&gt;&gt;VWProductosBindingSource.Name" xml:space="preserve">
-    <value>VWProductosBindingSource</value>
+  <data name="&gt;&gt;CommandBarRowElement1.Name" xml:space="preserve">
+    <value>CommandBarRowElement1</value>
   </data>
-  <data name="&gt;&gt;VWProductosBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;CommandBarRowElement1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarRowElement, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;cbstripeAccion.Name" xml:space="preserve">
+    <value>cbstripeAccion</value>
+  </data>
+  <data name="&gt;&gt;cbstripeAccion.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarStripElement, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;cbbtnAgregar.Name" xml:space="preserve">
+    <value>cbbtnAgregar</value>
+  </data>
+  <data name="&gt;&gt;cbbtnAgregar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;cbbtnEliminar.Name" xml:space="preserve">
+    <value>cbbtnEliminar</value>
+  </data>
+  <data name="&gt;&gt;cbbtnEliminar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;cbbtnModificar.Name" xml:space="preserve">
+    <value>cbbtnModificar</value>
+  </data>
+  <data name="&gt;&gt;cbbtnModificar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;cbBuscarProducto.Name" xml:space="preserve">
     <value>cbBuscarProducto</value>
   </data>
   <data name="&gt;&gt;cbBuscarProducto.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarRowElement, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.CommandBarRowElement, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;cbstripeBusqueda.Name" xml:space="preserve">
     <value>cbstripeBusqueda</value>
   </data>
   <data name="&gt;&gt;cbstripeBusqueda.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarStripElement, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.CommandBarStripElement, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;bgwCarga.Name" xml:space="preserve">
     <value>bgwCarga</value>
@@ -3491,46 +3377,16 @@
   <data name="&gt;&gt;bgwCarga.Type" xml:space="preserve">
     <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;CommandBarRowElement1.Name" xml:space="preserve">
-    <value>CommandBarRowElement1</value>
+  <data name="&gt;&gt;VWProductosBindingSource.Name" xml:space="preserve">
+    <value>VWProductosBindingSource</value>
   </data>
-  <data name="&gt;&gt;CommandBarRowElement1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarRowElement, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;cbstripeAccion.Name" xml:space="preserve">
-    <value>cbstripeAccion</value>
-  </data>
-  <data name="&gt;&gt;cbstripeAccion.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarStripElement, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;cbbtnAgregar.Name" xml:space="preserve">
-    <value>cbbtnAgregar</value>
-  </data>
-  <data name="&gt;&gt;cbbtnAgregar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;cbbtnEliminar.Name" xml:space="preserve">
-    <value>cbbtnEliminar</value>
-  </data>
-  <data name="&gt;&gt;cbbtnEliminar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;cbbtnModificar.Name" xml:space="preserve">
-    <value>cbbtnModificar</value>
-  </data>
-  <data name="&gt;&gt;cbbtnModificar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;EtiquetasBindingSource.Name" xml:space="preserve">
-    <value>EtiquetasBindingSource</value>
-  </data>
-  <data name="&gt;&gt;EtiquetasBindingSource.Type" xml:space="preserve">
+  <data name="&gt;&gt;VWProductosBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmEtiquetarProducto</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2013.2.612.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
 </root>

@@ -26,13 +26,13 @@ Namespace Presentacion.Formulario.Producto
         End Sub
 
         Private Sub frmEtiquetarProducto_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
-            Try
-                Using control As New EtiquetasController
-                    EtiquetasBindingSource.DataSource = control.GetItems("", "Usos DESC")
-                End Using
-            Catch ex As Exception
-                MostrarMensaje(Me.Text, My.Resources.Application.ErrorCargarDatos, ex, Telerik.WinControls.RadMessageIcon.Exclamation)
-            End Try
+            'Try
+            '    Using control As New EtiquetasEnHojaController
+            '        EtiquetasBindingSource.DataSource = control.GetItems("", "Usos DESC")
+            '    End Using
+            'Catch ex As Exception
+            '    MostrarMensaje(Me.Text, My.Resources.Application.ErrorCargarDatos, ex, Telerik.WinControls.RadMessageIcon.Exclamation)
+            'End Try
 
         End Sub
 
