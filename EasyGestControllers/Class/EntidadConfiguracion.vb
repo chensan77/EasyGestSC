@@ -42,6 +42,8 @@ Namespace Data.Configuracion
         Public Property PeriodoActualizacionMeteologia As Single = 6.0
         Public Property MostrarInicioArranque As Boolean = True
         Public Property UsarCuchilloCorteImpresora As Boolean = True
+        Public Property ImpresoraEtiquetaEnRollo As String = String.Empty
+        Public Property ImpresoraEtiquetaEnHoja As String = String.Empty
 
         Public Sub New()
             Dim impresora As New System.Drawing.Printing.PrinterSettings()

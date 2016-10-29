@@ -126,6 +126,7 @@
   <ItemGroup>
     <Compile Include="Class\BaseController.vb" />
     <Compile Include="Class\BaseDataContext.vb" />
+    <Compile Include="Class\BaseDataEntity.vb" />
     <Compile Include="Class\EntidadConfiguracion.vb" />
     <Compile Include="Class\Comunes.vb" />
     <Compile Include="Class\Dynamic.vb" />
@@ -170,7 +171,6 @@
     <None Include="Resources\bullet_black.png" />
     <None Include="Resources\bullet_blue.png" />
     <None Include="Resources\bullet_red.png" />
-    <None Include="Resources\page_white.png" />
     <None Include="Resources\script.png" />
     <None Include="Resources\page.png" />
     <Content Include="Resources\user_green.png" />

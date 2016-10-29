@@ -92,12 +92,6 @@ Namespace Data.Context
     End Sub
     Partial Private Sub DeleteProvinciasEspañolas(instance As Data.Entity.ProvinciasEspañolas)
     End Sub
-    Partial Private Sub InsertPuestos(instance As Data.Entity.Puestos)
-    End Sub
-    Partial Private Sub UpdatePuestos(instance As Data.Entity.Puestos)
-    End Sub
-    Partial Private Sub DeletePuestos(instance As Data.Entity.Puestos)
-    End Sub
     Partial Private Sub InsertTiposIdentificacion(instance As Data.Entity.TiposIdentificacion)
     End Sub
     Partial Private Sub UpdateTiposIdentificacion(instance As Data.Entity.TiposIdentificacion)
@@ -434,10 +428,16 @@ Namespace Data.Context
     End Sub
     Partial Private Sub DeleteEtiquetasEnRollo(instance As Data.Entity.EtiquetasEnRollo)
     End Sub
+    Partial Private Sub InsertPuestos(instance As Data.Entity.Puestos)
+    End Sub
+    Partial Private Sub UpdatePuestos(instance As Data.Entity.Puestos)
+    End Sub
+    Partial Private Sub DeletePuestos(instance As Data.Entity.Puestos)
+    End Sub
     #End Region
 		
 		Public Sub New()
-			MyBase.New(Global.EasyGestControllers.My.MySettings.Default.EasyGestConnectionString6, mappingSource)
+			MyBase.New(Global.EasyGestControllers.My.MySettings.Default.EasyGestConnectionString7, mappingSource)
 			OnCreated
 		End Sub
 		
@@ -518,12 +518,6 @@ Namespace Data.Context
 		Friend ReadOnly Property ProvinciasEspañolas() As System.Data.Linq.Table(Of Data.Entity.ProvinciasEspañolas)
 			Get
 				Return Me.GetTable(Of Data.Entity.ProvinciasEspañolas)
-			End Get
-		End Property
-		
-		Friend ReadOnly Property Puestos() As System.Data.Linq.Table(Of Data.Entity.Puestos)
-			Get
-				Return Me.GetTable(Of Data.Entity.Puestos)
 			End Get
 		End Property
 		
@@ -860,6 +854,12 @@ Namespace Data.Context
 		Public ReadOnly Property EtiquetasEnRollo() As System.Data.Linq.Table(Of Data.Entity.EtiquetasEnRollo)
 			Get
 				Return Me.GetTable(Of Data.Entity.EtiquetasEnRollo)
+			End Get
+		End Property
+		
+		Public ReadOnly Property Puestos() As System.Data.Linq.Table(Of Data.Entity.Puestos)
+			Get
+				Return Me.GetTable(Of Data.Entity.Puestos)
 			End Get
 		End Property
 		
@@ -2187,112 +2187,6 @@ Namespace Data.Entity
 					Me._Provincia = value
 					Me.SendPropertyChanged("Provincia")
 					Me.OnProvinciaChanged
-				End If
-			End Set
-		End Property
-		
-		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-		
-		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-		
-		Protected Overridable Sub SendPropertyChanging()
-			If ((Me.PropertyChangingEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-			End If
-		End Sub
-		
-		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-			If ((Me.PropertyChangedEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-			End If
-		End Sub
-	End Class
-	
-	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Puestos")>  _
-	Partial Public Class Puestos
-		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-		
-		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-		
-		Private _idPuesto As Long
-		
-		Private _Puesto As String
-		
-		Private _Identificacion As String
-		
-    #Region "Definiciones de métodos de extensibilidad"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidPuestoChanging(value As Long)
-    End Sub
-    Partial Private Sub OnidPuestoChanged()
-    End Sub
-    Partial Private Sub OnPuestoChanging(value As String)
-    End Sub
-    Partial Private Sub OnPuestoChanged()
-    End Sub
-    Partial Private Sub OnIdentificacionChanging(value As String)
-    End Sub
-    Partial Private Sub OnIdentificacionChanged()
-    End Sub
-    #End Region
-		
-		Public Sub New()
-			MyBase.New
-			OnCreated
-		End Sub
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPuesto", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-		Public Property idPuesto() As Long
-			Get
-				Return Me._idPuesto
-			End Get
-			Set
-				If ((Me._idPuesto = value)  _
-							= false) Then
-					Me.OnidPuestoChanging(value)
-					Me.SendPropertyChanging
-					Me._idPuesto = value
-					Me.SendPropertyChanged("idPuesto")
-					Me.OnidPuestoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Puesto", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
-		Public Property Puesto() As String
-			Get
-				Return Me._Puesto
-			End Get
-			Set
-				If (String.Equals(Me._Puesto, value) = false) Then
-					Me.OnPuestoChanging(value)
-					Me.SendPropertyChanging
-					Me._Puesto = value
-					Me.SendPropertyChanged("Puesto")
-					Me.OnPuestoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Identificacion", DbType:="VarChar(100) NOT NULL", CanBeNull:=false)>  _
-		Public Property Identificacion() As String
-			Get
-				Return Me._Identificacion
-			End Get
-			Set
-				If (String.Equals(Me._Identificacion, value) = false) Then
-					Me.OnIdentificacionChanging(value)
-					Me.SendPropertyChanging
-					Me._Identificacion = value
-					Me.SendPropertyChanged("Identificacion")
-					Me.OnIdentificacionChanged
 				End If
 			End Set
 		End Property
@@ -19454,428 +19348,557 @@ Namespace Data.Entity
 			MyBase.New
 			OnCreated
 		End Sub
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idEtiqueta", DbType:="BigInt NOT NULL", IsPrimaryKey:=True)>
-        Public Property idEtiqueta() As Long
-            Get
-                Return Me._idEtiqueta
-            End Get
-            Set
-                If ((Me._idEtiqueta = Value) _
-                            = False) Then
-                    Me.OnidEtiquetaChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._idEtiqueta = Value
-                    Me.SendPropertyChanged("idEtiqueta")
-                    Me.OnidEtiquetaChanged()
-                End If
-            End Set
-        End Property
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Referencia", DbType:="VarChar(50) NOT NULL", CanBeNull:=False)>
-        Public Property Referencia() As String
-            Get
-                Return Me._Referencia
-            End Get
-            Set
-                If (String.Equals(Me._Referencia, Value) = False) Then
-                    Me.OnReferenciaChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._Referencia = Value
-                    Me.SendPropertyChanged("Referencia")
-                    Me.OnReferenciaChanged()
-                End If
-            End Set
-        End Property
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Ancho", DbType:="Float NOT NULL")>
-        Public Property Ancho() As Double
-            Get
-                Return Me._Ancho
-            End Get
-            Set
-                If ((Me._Ancho = Value) _
-                            = False) Then
-                    Me.OnAnchoChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._Ancho = Value
-                    Me.SendPropertyChanged("Ancho")
-                    Me.OnAnchoChanged()
-                End If
-            End Set
-        End Property
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Alto", DbType:="Float NOT NULL")>
-        Public Property Alto() As Double
-            Get
-                Return Me._Alto
-            End Get
-            Set
-                If ((Me._Alto = Value) _
-                            = False) Then
-                    Me.OnAltoChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._Alto = Value
-                    Me.SendPropertyChanged("Alto")
-                    Me.OnAltoChanged()
-                End If
-            End Set
-        End Property
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Filas", DbType:="SmallInt NOT NULL")>
-        Public Property Filas() As Short
-            Get
-                Return Me._Filas
-            End Get
-            Set
-                If ((Me._Filas = Value) _
-                            = False) Then
-                    Me.OnFilasChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._Filas = Value
-                    Me.SendPropertyChanged("Filas")
-                    Me.OnFilasChanged()
-                End If
-            End Set
-        End Property
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Columnas", DbType:="SmallInt NOT NULL")>
-        Public Property Columnas() As Short
-            Get
-                Return Me._Columnas
-            End Get
-            Set
-                If ((Me._Columnas = Value) _
-                            = False) Then
-                    Me.OnColumnasChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._Columnas = Value
-                    Me.SendPropertyChanged("Columnas")
-                    Me.OnColumnasChanged()
-                End If
-            End Set
-        End Property
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_EspacioH", DbType:="Float NOT NULL")>
-        Public Property EspacioH() As Double
-            Get
-                Return Me._EspacioH
-            End Get
-            Set
-                If ((Me._EspacioH = Value) _
-                            = False) Then
-                    Me.OnEspacioHChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._EspacioH = Value
-                    Me.SendPropertyChanged("EspacioH")
-                    Me.OnEspacioHChanged()
-                End If
-            End Set
-        End Property
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_EspacioV", DbType:="Float NOT NULL")>
-        Public Property EspacioV() As Double
-            Get
-                Return Me._EspacioV
-            End Get
-            Set
-                If ((Me._EspacioV = Value) _
-                            = False) Then
-                    Me.OnEspacioVChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._EspacioV = Value
-                    Me.SendPropertyChanged("EspacioV")
-                    Me.OnEspacioVChanged()
-                End If
-            End Set
-        End Property
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MargenIzq", DbType:="Float NOT NULL")>
-        Public Property MargenIzq() As Double
-            Get
-                Return Me._MargenIzq
-            End Get
-            Set
-                If ((Me._MargenIzq = Value) _
-                            = False) Then
-                    Me.OnMargenIzqChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._MargenIzq = Value
-                    Me.SendPropertyChanged("MargenIzq")
-                    Me.OnMargenIzqChanged()
-                End If
-            End Set
-        End Property
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MargenDer", DbType:="Float NOT NULL")>
-        Public Property MargenDer() As Double
-            Get
-                Return Me._MargenDer
-            End Get
-            Set
-                If ((Me._MargenDer = Value) _
-                            = False) Then
-                    Me.OnMargenDerChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._MargenDer = Value
-                    Me.SendPropertyChanged("MargenDer")
-                    Me.OnMargenDerChanged()
-                End If
-            End Set
-        End Property
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MargenSup", DbType:="Float NOT NULL")>
-        Public Property MargenSup() As Double
-            Get
-                Return Me._MargenSup
-            End Get
-            Set
-                If ((Me._MargenSup = Value) _
-                            = False) Then
-                    Me.OnMargenSupChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._MargenSup = Value
-                    Me.SendPropertyChanged("MargenSup")
-                    Me.OnMargenSupChanged()
-                End If
-            End Set
-        End Property
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MargenInf", DbType:="Float NOT NULL")>
-        Public Property MargenInf() As Double
-            Get
-                Return Me._MargenInf
-            End Get
-            Set
-                If ((Me._MargenInf = Value) _
-                            = False) Then
-                    Me.OnMargenInfChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._MargenInf = Value
-                    Me.SendPropertyChanged("MargenInf")
-                    Me.OnMargenInfChanged()
-                End If
-            End Set
-        End Property
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Usos", DbType:="Int NOT NULL")>
-        Public Property Usos() As Integer
-            Get
-                Return Me._Usos
-            End Get
-            Set
-                If ((Me._Usos = Value) _
-                            = False) Then
-                    Me.OnUsosChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._Usos = Value
-                    Me.SendPropertyChanged("Usos")
-                    Me.OnUsosChanged()
-                End If
-            End Set
-        End Property
-
-        Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-
-        Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-
-        Protected Overridable Sub SendPropertyChanging()
-            If ((Me.PropertyChangingEvent Is Nothing) _
-                        = False) Then
-                RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-            End If
-        End Sub
-
-        Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-            If ((Me.PropertyChangedEvent Is Nothing) _
-                        = False) Then
-                RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-            End If
-        End Sub
-    End Class
-
-    <Global.System.Data.Linq.Mapping.TableAttribute(Name:="")>
-    Partial Public Class EtiquetasEnRollo
-        Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-
-        Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-
-        Private _idEtiqueta As Long
-
-        Private _Referencia As String
-
-        Private _Ancho As Double
-
-        Private _Alto As Double
-
-        Private _GAP As Double
-
-        Private _UnidadMedida As String
-
-        Private _Usos As Integer
-
-#Region "Definiciones de métodos de extensibilidad"
-        Partial Private Sub OnLoaded()
-        End Sub
-        Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-        End Sub
-        Partial Private Sub OnCreated()
-        End Sub
-        Partial Private Sub OnidEtiquetaChanging(value As Long)
-        End Sub
-        Partial Private Sub OnidEtiquetaChanged()
-        End Sub
-        Partial Private Sub OnReferenciaChanging(value As String)
-        End Sub
-        Partial Private Sub OnReferenciaChanged()
-        End Sub
-        Partial Private Sub OnAnchoChanging(value As Double)
-        End Sub
-        Partial Private Sub OnAnchoChanged()
-        End Sub
-        Partial Private Sub OnAltoChanging(value As Double)
-        End Sub
-        Partial Private Sub OnAltoChanged()
-        End Sub
-        Partial Private Sub OnGAPChanging(value As Double)
-        End Sub
-        Partial Private Sub OnGAPChanged()
-        End Sub
-        Partial Private Sub OnUnidadMedidaChanging(value As String)
-        End Sub
-        Partial Private Sub OnUnidadMedidaChanged()
-        End Sub
-        Partial Private Sub OnUsosChanging(value As Integer)
-        End Sub
-        Partial Private Sub OnUsosChanged()
-        End Sub
-#End Region
-
-        Public Sub New()
-            MyBase.New
-            OnCreated()
-        End Sub
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idEtiqueta", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL IDENTITY", IsPrimaryKey:=True, IsDbGenerated:=True)>
-        Public Property idEtiqueta() As Long
-            Get
-                Return Me._idEtiqueta
-            End Get
-            Set
-                If ((Me._idEtiqueta = Value) _
-                            = False) Then
-                    Me.OnidEtiquetaChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._idEtiqueta = Value
-                    Me.SendPropertyChanged("idEtiqueta")
-                    Me.OnidEtiquetaChanged()
-                End If
-            End Set
-        End Property
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Referencia", DbType:="VarChar(50) NOT NULL", CanBeNull:=False)>
-        Public Property Referencia() As String
-            Get
-                Return Me._Referencia
-            End Get
-            Set
-                If (String.Equals(Me._Referencia, Value) = False) Then
-                    Me.OnReferenciaChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._Referencia = Value
-                    Me.SendPropertyChanged("Referencia")
-                    Me.OnReferenciaChanged()
-                End If
-            End Set
-        End Property
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Ancho", DbType:="Float NOT NULL")>
-        Public Property Ancho() As Double
-            Get
-                Return Me._Ancho
-            End Get
-            Set
-                If ((Me._Ancho = Value) _
-                            = False) Then
-                    Me.OnAnchoChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._Ancho = Value
-                    Me.SendPropertyChanged("Ancho")
-                    Me.OnAnchoChanged()
-                End If
-            End Set
-        End Property
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Alto", DbType:="Float NOT NULL")>
-        Public Property Alto() As Double
-            Get
-                Return Me._Alto
-            End Get
-            Set
-                If ((Me._Alto = Value) _
-                            = False) Then
-                    Me.OnAltoChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._Alto = Value
-                    Me.SendPropertyChanged("Alto")
-                    Me.OnAltoChanged()
-                End If
-            End Set
-        End Property
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GAP", DbType:="Float NOT NULL")>
-        Public Property GAP() As Double
-            Get
-                Return Me._GAP
-            End Get
-            Set
-                If ((Me._GAP = Value) _
-                            = False) Then
-                    Me.OnGAPChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._GAP = Value
-                    Me.SendPropertyChanged("GAP")
-                    Me.OnGAPChanged()
-                End If
-            End Set
-        End Property
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UnidadMedida", DbType:="VarChar(50) NOT NULL", CanBeNull:=False)>
-        Public Property UnidadMedida() As String
-            Get
-                Return Me._UnidadMedida
-            End Get
-            Set
-                If (String.Equals(Me._UnidadMedida, Value) = False) Then
-                    Me.OnUnidadMedidaChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._UnidadMedida = Value
-                    Me.SendPropertyChanged("UnidadMedida")
-                    Me.OnUnidadMedidaChanged()
-                End If
-            End Set
-        End Property
-
-        <Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Usos", DbType:="Int NOT NULL")>
-        Public Property Usos() As Integer
-            Get
-                Return Me._Usos
-            End Get
-            Set
-                If ((Me._Usos = Value) _
-                            = False) Then
-                    Me.OnUsosChanging(Value)
-                    Me.SendPropertyChanging()
-                    Me._Usos = Value
-                    Me.SendPropertyChanged("Usos")
-                    Me.OnUsosChanged()
-                End If
-            End Set
-        End Property
-
-        Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-
-        Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idEtiqueta", DbType:="BigInt NOT NULL", IsPrimaryKey:=true)>  _
+		Public Property idEtiqueta() As Long
+			Get
+				Return Me._idEtiqueta
+			End Get
+			Set
+				If ((Me._idEtiqueta = value)  _
+							= false) Then
+					Me.OnidEtiquetaChanging(value)
+					Me.SendPropertyChanging
+					Me._idEtiqueta = value
+					Me.SendPropertyChanged("idEtiqueta")
+					Me.OnidEtiquetaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Referencia", DbType:="VarChar(50) NOT NULL", CanBeNull:=false)>  _
+		Public Property Referencia() As String
+			Get
+				Return Me._Referencia
+			End Get
+			Set
+				If (String.Equals(Me._Referencia, value) = false) Then
+					Me.OnReferenciaChanging(value)
+					Me.SendPropertyChanging
+					Me._Referencia = value
+					Me.SendPropertyChanged("Referencia")
+					Me.OnReferenciaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Ancho", DbType:="Float NOT NULL")>  _
+		Public Property Ancho() As Double
+			Get
+				Return Me._Ancho
+			End Get
+			Set
+				If ((Me._Ancho = value)  _
+							= false) Then
+					Me.OnAnchoChanging(value)
+					Me.SendPropertyChanging
+					Me._Ancho = value
+					Me.SendPropertyChanged("Ancho")
+					Me.OnAnchoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Alto", DbType:="Float NOT NULL")>  _
+		Public Property Alto() As Double
+			Get
+				Return Me._Alto
+			End Get
+			Set
+				If ((Me._Alto = value)  _
+							= false) Then
+					Me.OnAltoChanging(value)
+					Me.SendPropertyChanging
+					Me._Alto = value
+					Me.SendPropertyChanged("Alto")
+					Me.OnAltoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Filas", DbType:="SmallInt NOT NULL")>  _
+		Public Property Filas() As Short
+			Get
+				Return Me._Filas
+			End Get
+			Set
+				If ((Me._Filas = value)  _
+							= false) Then
+					Me.OnFilasChanging(value)
+					Me.SendPropertyChanging
+					Me._Filas = value
+					Me.SendPropertyChanged("Filas")
+					Me.OnFilasChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Columnas", DbType:="SmallInt NOT NULL")>  _
+		Public Property Columnas() As Short
+			Get
+				Return Me._Columnas
+			End Get
+			Set
+				If ((Me._Columnas = value)  _
+							= false) Then
+					Me.OnColumnasChanging(value)
+					Me.SendPropertyChanging
+					Me._Columnas = value
+					Me.SendPropertyChanged("Columnas")
+					Me.OnColumnasChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_EspacioH", DbType:="Float NOT NULL")>  _
+		Public Property EspacioH() As Double
+			Get
+				Return Me._EspacioH
+			End Get
+			Set
+				If ((Me._EspacioH = value)  _
+							= false) Then
+					Me.OnEspacioHChanging(value)
+					Me.SendPropertyChanging
+					Me._EspacioH = value
+					Me.SendPropertyChanged("EspacioH")
+					Me.OnEspacioHChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_EspacioV", DbType:="Float NOT NULL")>  _
+		Public Property EspacioV() As Double
+			Get
+				Return Me._EspacioV
+			End Get
+			Set
+				If ((Me._EspacioV = value)  _
+							= false) Then
+					Me.OnEspacioVChanging(value)
+					Me.SendPropertyChanging
+					Me._EspacioV = value
+					Me.SendPropertyChanged("EspacioV")
+					Me.OnEspacioVChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MargenIzq", DbType:="Float NOT NULL")>  _
+		Public Property MargenIzq() As Double
+			Get
+				Return Me._MargenIzq
+			End Get
+			Set
+				If ((Me._MargenIzq = value)  _
+							= false) Then
+					Me.OnMargenIzqChanging(value)
+					Me.SendPropertyChanging
+					Me._MargenIzq = value
+					Me.SendPropertyChanged("MargenIzq")
+					Me.OnMargenIzqChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MargenDer", DbType:="Float NOT NULL")>  _
+		Public Property MargenDer() As Double
+			Get
+				Return Me._MargenDer
+			End Get
+			Set
+				If ((Me._MargenDer = value)  _
+							= false) Then
+					Me.OnMargenDerChanging(value)
+					Me.SendPropertyChanging
+					Me._MargenDer = value
+					Me.SendPropertyChanged("MargenDer")
+					Me.OnMargenDerChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MargenSup", DbType:="Float NOT NULL")>  _
+		Public Property MargenSup() As Double
+			Get
+				Return Me._MargenSup
+			End Get
+			Set
+				If ((Me._MargenSup = value)  _
+							= false) Then
+					Me.OnMargenSupChanging(value)
+					Me.SendPropertyChanging
+					Me._MargenSup = value
+					Me.SendPropertyChanged("MargenSup")
+					Me.OnMargenSupChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_MargenInf", DbType:="Float NOT NULL")>  _
+		Public Property MargenInf() As Double
+			Get
+				Return Me._MargenInf
+			End Get
+			Set
+				If ((Me._MargenInf = value)  _
+							= false) Then
+					Me.OnMargenInfChanging(value)
+					Me.SendPropertyChanging
+					Me._MargenInf = value
+					Me.SendPropertyChanged("MargenInf")
+					Me.OnMargenInfChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Usos", DbType:="Int NOT NULL")>  _
+		Public Property Usos() As Integer
+			Get
+				Return Me._Usos
+			End Get
+			Set
+				If ((Me._Usos = value)  _
+							= false) Then
+					Me.OnUsosChanging(value)
+					Me.SendPropertyChanging
+					Me._Usos = value
+					Me.SendPropertyChanged("Usos")
+					Me.OnUsosChanged
+				End If
+			End Set
+		End Property
+		
+		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+		
+		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+		
+		Protected Overridable Sub SendPropertyChanging()
+			If ((Me.PropertyChangingEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+			End If
+		End Sub
+		
+		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+			If ((Me.PropertyChangedEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+			End If
+		End Sub
+	End Class
+	
+	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="")>  _
+	Partial Public Class EtiquetasEnRollo
+		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+		
+		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+		
+		Private _idEtiqueta As Long
+		
+		Private _Referencia As String
+		
+		Private _Ancho As Double
+		
+		Private _Alto As Double
+		
+		Private _GAP As Double
+		
+		Private _UnidadMedida As String
+		
+		Private _Usos As Integer
+		
+    #Region "Definiciones de métodos de extensibilidad"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidEtiquetaChanging(value As Long)
+    End Sub
+    Partial Private Sub OnidEtiquetaChanged()
+    End Sub
+    Partial Private Sub OnReferenciaChanging(value As String)
+    End Sub
+    Partial Private Sub OnReferenciaChanged()
+    End Sub
+    Partial Private Sub OnAnchoChanging(value As Double)
+    End Sub
+    Partial Private Sub OnAnchoChanged()
+    End Sub
+    Partial Private Sub OnAltoChanging(value As Double)
+    End Sub
+    Partial Private Sub OnAltoChanged()
+    End Sub
+    Partial Private Sub OnGAPChanging(value As Double)
+    End Sub
+    Partial Private Sub OnGAPChanged()
+    End Sub
+    Partial Private Sub OnUnidadMedidaChanging(value As String)
+    End Sub
+    Partial Private Sub OnUnidadMedidaChanged()
+    End Sub
+    Partial Private Sub OnUsosChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnUsosChanged()
+    End Sub
+    #End Region
+		
+		Public Sub New()
+			MyBase.New
+			OnCreated
+		End Sub
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idEtiqueta", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+		Public Property idEtiqueta() As Long
+			Get
+				Return Me._idEtiqueta
+			End Get
+			Set
+				If ((Me._idEtiqueta = value)  _
+							= false) Then
+					Me.OnidEtiquetaChanging(value)
+					Me.SendPropertyChanging
+					Me._idEtiqueta = value
+					Me.SendPropertyChanged("idEtiqueta")
+					Me.OnidEtiquetaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Referencia", DbType:="VarChar(50) NOT NULL", CanBeNull:=false)>  _
+		Public Property Referencia() As String
+			Get
+				Return Me._Referencia
+			End Get
+			Set
+				If (String.Equals(Me._Referencia, value) = false) Then
+					Me.OnReferenciaChanging(value)
+					Me.SendPropertyChanging
+					Me._Referencia = value
+					Me.SendPropertyChanged("Referencia")
+					Me.OnReferenciaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Ancho", DbType:="Float NOT NULL")>  _
+		Public Property Ancho() As Double
+			Get
+				Return Me._Ancho
+			End Get
+			Set
+				If ((Me._Ancho = value)  _
+							= false) Then
+					Me.OnAnchoChanging(value)
+					Me.SendPropertyChanging
+					Me._Ancho = value
+					Me.SendPropertyChanged("Ancho")
+					Me.OnAnchoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Alto", DbType:="Float NOT NULL")>  _
+		Public Property Alto() As Double
+			Get
+				Return Me._Alto
+			End Get
+			Set
+				If ((Me._Alto = value)  _
+							= false) Then
+					Me.OnAltoChanging(value)
+					Me.SendPropertyChanging
+					Me._Alto = value
+					Me.SendPropertyChanged("Alto")
+					Me.OnAltoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GAP", DbType:="Float NOT NULL")>  _
+		Public Property GAP() As Double
+			Get
+				Return Me._GAP
+			End Get
+			Set
+				If ((Me._GAP = value)  _
+							= false) Then
+					Me.OnGAPChanging(value)
+					Me.SendPropertyChanging
+					Me._GAP = value
+					Me.SendPropertyChanged("GAP")
+					Me.OnGAPChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UnidadMedida", DbType:="VarChar(50) NOT NULL", CanBeNull:=false)>  _
+		Public Property UnidadMedida() As String
+			Get
+				Return Me._UnidadMedida
+			End Get
+			Set
+				If (String.Equals(Me._UnidadMedida, value) = false) Then
+					Me.OnUnidadMedidaChanging(value)
+					Me.SendPropertyChanging
+					Me._UnidadMedida = value
+					Me.SendPropertyChanged("UnidadMedida")
+					Me.OnUnidadMedidaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Usos", DbType:="Int NOT NULL")>  _
+		Public Property Usos() As Integer
+			Get
+				Return Me._Usos
+			End Get
+			Set
+				If ((Me._Usos = value)  _
+							= false) Then
+					Me.OnUsosChanging(value)
+					Me.SendPropertyChanging
+					Me._Usos = value
+					Me.SendPropertyChanged("Usos")
+					Me.OnUsosChanged
+				End If
+			End Set
+		End Property
+		
+		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+		
+		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+		
+		Protected Overridable Sub SendPropertyChanging()
+			If ((Me.PropertyChangingEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+			End If
+		End Sub
+		
+		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+			If ((Me.PropertyChangedEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+			End If
+		End Sub
+	End Class
+	
+	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Puestos")>  _
+	Partial Public Class Puestos
+		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+		
+		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+		
+		Private _idPuesto As Long
+		
+		Private _Puesto As String
+		
+		Private _Identificacion As String
+		
+		Private _EsCajaCentral As Boolean
+		
+    #Region "Definiciones de métodos de extensibilidad"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidPuestoChanging(value As Long)
+    End Sub
+    Partial Private Sub OnidPuestoChanged()
+    End Sub
+    Partial Private Sub OnPuestoChanging(value As String)
+    End Sub
+    Partial Private Sub OnPuestoChanged()
+    End Sub
+    Partial Private Sub OnIdentificacionChanging(value As String)
+    End Sub
+    Partial Private Sub OnIdentificacionChanged()
+    End Sub
+    Partial Private Sub OnEsCajaCentralChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnEsCajaCentralChanged()
+    End Sub
+    #End Region
+		
+		Public Sub New()
+			MyBase.New
+			OnCreated
+		End Sub
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPuesto", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+		Public Property idPuesto() As Long
+			Get
+				Return Me._idPuesto
+			End Get
+			Set
+				If ((Me._idPuesto = value)  _
+							= false) Then
+					Me.OnidPuestoChanging(value)
+					Me.SendPropertyChanging
+					Me._idPuesto = value
+					Me.SendPropertyChanged("idPuesto")
+					Me.OnidPuestoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Puesto", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
+		Public Property Puesto() As String
+			Get
+				Return Me._Puesto
+			End Get
+			Set
+				If (String.Equals(Me._Puesto, value) = false) Then
+					Me.OnPuestoChanging(value)
+					Me.SendPropertyChanging
+					Me._Puesto = value
+					Me.SendPropertyChanged("Puesto")
+					Me.OnPuestoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Identificacion", DbType:="VarChar(100) NOT NULL", CanBeNull:=false)>  _
+		Public Property Identificacion() As String
+			Get
+				Return Me._Identificacion
+			End Get
+			Set
+				If (String.Equals(Me._Identificacion, value) = false) Then
+					Me.OnIdentificacionChanging(value)
+					Me.SendPropertyChanging
+					Me._Identificacion = value
+					Me.SendPropertyChanged("Identificacion")
+					Me.OnIdentificacionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_EsCajaCentral", DbType:="Bit NOT NULL")>  _
+		Public Property EsCajaCentral() As Boolean
+			Get
+				Return Me._EsCajaCentral
+			End Get
+			Set
+				If ((Me._EsCajaCentral = value)  _
+							= false) Then
+					Me.OnEsCajaCentralChanging(value)
+					Me.SendPropertyChanging
+					Me._EsCajaCentral = value
+					Me.SendPropertyChanged("EsCajaCentral")
+					Me.OnEsCajaCentralChanged
+				End If
+			End Set
+		End Property
+		
+		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+		
+		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
 		
 		Protected Overridable Sub SendPropertyChanging()
 			If ((Me.PropertyChangingEvent Is Nothing)  _

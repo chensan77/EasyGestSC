@@ -150,6 +150,17 @@ Namespace My
                 Return CType(Me("EasyGestConnectionString6"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=CAJA\MSSQLSERVER2014;Initial Catalog=EasyGest;Integrated Security=Tru"& _ 
+            "e")>  _
+        Public ReadOnly Property EasyGestConnectionString7() As String
+            Get
+                Return CType(Me("EasyGestConnectionString7"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

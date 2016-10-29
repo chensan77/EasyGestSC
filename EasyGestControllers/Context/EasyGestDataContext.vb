@@ -1,4 +1,5 @@
-﻿Imports System.Data.Linq
+﻿Imports System.ComponentModel
+Imports System.Data.Linq
 
 Namespace Data.Entity
 
@@ -35,7 +36,7 @@ Namespace Data.Entity
         Alta = 1
     End Enum
 
-    <Flags()> _
+    <Flags()>
     Public Enum Permiso
         SinAcceso = 0
         Visualizacion = 1
@@ -45,8 +46,11 @@ Namespace Data.Entity
     End Enum
 #End Region
 
+
+
 #Region "Tablas"
     Partial Class Albaranes
+        Inherits BaseDataEntity
 
         Private Sub OnCreated()
             _FCreacion = Now()
@@ -57,7 +61,12 @@ Namespace Data.Entity
             _SerieAlbaran = ""
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
+        Private Sub OnLoaded()
+            MyBase.SetOriginalObject(Me)
+            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
+        End Sub
+
+        Public Overrides Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
             If action = ChangeAction.Update Then
                 Return True
             ElseIf action = ChangeAction.Insert Then
@@ -74,6 +83,7 @@ Namespace Data.Entity
                 _idUsuarioEmitido = Nothing
             End If
         End Sub
+
     End Class
 
     Partial Class ApuntesDiario
@@ -167,7 +177,7 @@ Namespace Data.Entity
 
         Public ReadOnly Property TipoDato() As Type
             Get
-                Select Case _tipo
+                Select Case _Tipo
                     Case TipoDatoEnum.Numerico
                         Return GetType(Double)
                     Case TipoDatoEnum.Fecha
@@ -184,6 +194,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class Clientes
+        Inherits BaseDataEntity
 
         Private Sub OnCreated()
             _Activo = True
@@ -193,6 +204,12 @@ Namespace Data.Entity
             _Pais = "ESPAÑA"
             _AplicableImpIndirecto = True
         End Sub
+
+        Private Sub OnLoaded()
+            MyBase.SetOriginalObject(Me)
+            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
+        End Sub
+
 
         Public ReadOnly Property Numero() As String
             Get
@@ -210,7 +227,7 @@ Namespace Data.Entity
             End Get
         End Property
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
+        Public Overrides Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
             If action = ChangeAction.Update Or action = ChangeAction.Insert Then
                 Return Not String.IsNullOrWhiteSpace(_Nombre) And Not String.IsNullOrWhiteSpace(_Codigo)
             ElseIf action = ChangeAction.Delete Then
@@ -266,17 +283,17 @@ Namespace Data.Entity
 
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Then
-                Return True
-            ElseIf action = ChangeAction.Insert Then
-                Return True
-            ElseIf action = ChangeAction.Delete Then
-                Return True
-            Else
-                Return True
-            End If
-        End Function
+        'Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
+        '    If action = ChangeAction.Update Then
+        '        Return True
+        '    ElseIf action = ChangeAction.Insert Then
+        '        Return True
+        '    ElseIf action = ChangeAction.Delete Then
+        '        Return True
+        '    Else
+        '        Return True
+        '    End If
+        'End Function
 
     End Class
 
@@ -304,7 +321,7 @@ Namespace Data.Entity
         Private Sub OnValidate(ByVal action As System.Data.Linq.ChangeAction)
             Select Case action
                 Case ChangeAction.Update Or ChangeAction.Insert
-                    _DatoContacto = _DatoContacto.Trim()                    
+                    _DatoContacto = _DatoContacto.Trim()
             End Select
         End Sub
     End Class
@@ -353,7 +370,7 @@ Namespace Data.Entity
     Partial Class Diarios
 
         Private Sub OnCreated()
-            _Apertura = Now()            
+            _Apertura = Now()
         End Sub
 
         Public ReadOnly Property Diferencia() As Single
