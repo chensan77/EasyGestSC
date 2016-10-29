@@ -46,8 +46,6 @@ Namespace Data.Entity
     End Enum
 #End Region
 
-
-
 #Region "Tablas"
     Partial Class Albaranes
         Inherits BaseDataEntity
@@ -298,6 +296,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class Contactos
+        Inherits BaseDataEntity
 
         Public Const TIPO_PROPIETARIO_CLIENTE As Char = "C"c
         Public Const TIPO_PROPIETARIO_PROVEEDOR As Char = "P"c
@@ -307,7 +306,12 @@ Namespace Data.Entity
             _idPropietario = 0
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
+        Private Sub OnLoaded()
+            MyBase.SetOriginalObject(Me)
+            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
+        End Sub
+
+        Public Overrides Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
             If action = ChangeAction.Update Or action = ChangeAction.Insert Then
                 Return Not String.IsNullOrWhiteSpace(_DatoContacto) And _idPropietario > 0 And (_TipoPropietario.Equals(TIPO_PROPIETARIO_CLIENTE) Or
                     _TipoPropietario.Equals(TIPO_PROPIETARIO_PROVEEDOR))
@@ -324,6 +328,10 @@ Namespace Data.Entity
                     _DatoContacto = _DatoContacto.Trim()
             End Select
         End Sub
+
+        Public Overrides Function IsValid(action As ChangeAction) As Boolean
+            Throw New NotImplementedException()
+        End Function
     End Class
 
     Partial Class DatosBancario

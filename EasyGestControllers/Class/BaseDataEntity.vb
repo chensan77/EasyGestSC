@@ -6,7 +6,9 @@ Namespace Data.Entity
         Private _isChanged As Boolean = False
 
         Protected Friend Sub SetOriginalObject(obj As Object)
-            _originalObject = obj
+            If Not IsNothing(obj) Then
+                obj.Clone(_originalObject)
+            End If
         End Sub
         Protected Sub OnPropertyChaged(obj As Object, e As PropertyChangedEventArgs)
             _isChanged = True
@@ -17,6 +19,7 @@ Namespace Data.Entity
         Public Sub Reset()
             If Not IsNothing(_originalObject) Then
                 _originalObject.Clone(Me)
+                _isChanged = False
             End If
         End Sub
 
