@@ -311,7 +311,14 @@ Namespace Data.Entity
             AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
         End Sub
 
-        Public Overrides Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
+        Private Sub OnValidate(ByVal action As System.Data.Linq.ChangeAction)
+            Select Case action
+                Case ChangeAction.Update Or ChangeAction.Insert
+                    _DatoContacto = _DatoContacto.Trim()
+            End Select
+        End Sub
+
+        Public Overrides Function IsValid(action As ChangeAction) As Boolean
             If action = ChangeAction.Update Or action = ChangeAction.Insert Then
                 Return Not String.IsNullOrWhiteSpace(_DatoContacto) And _idPropietario > 0 And (_TipoPropietario.Equals(TIPO_PROPIETARIO_CLIENTE) Or
                     _TipoPropietario.Equals(TIPO_PROPIETARIO_PROVEEDOR))
@@ -321,20 +328,10 @@ Namespace Data.Entity
                 Return True
             End If
         End Function
-
-        Private Sub OnValidate(ByVal action As System.Data.Linq.ChangeAction)
-            Select Case action
-                Case ChangeAction.Update Or ChangeAction.Insert
-                    _DatoContacto = _DatoContacto.Trim()
-            End Select
-        End Sub
-
-        Public Overrides Function IsValid(action As ChangeAction) As Boolean
-            Throw New NotImplementedException()
-        End Function
     End Class
 
     Partial Class DatosBancario
+        Inherits BaseDataEntity
 
         Public Const TIPO_PROPIETARIO_CLIENTE As Char = "C"c
         Public Const TIPO_PROPIETARIO_PROVEEDOR As Char = "P"c
@@ -343,7 +340,7 @@ Namespace Data.Entity
             _idPropietario = 0
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
+        Public Overrides Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
             If action = ChangeAction.Update Or action = ChangeAction.Insert Then
                 Return Not String.IsNullOrWhiteSpace(_Banco) And Not String.IsNullOrWhiteSpace(_CCC) And _idPropietario > 0 And (_TipoPropietario.Equals(TIPO_PROPIETARIO_CLIENTE) Or
                     _TipoPropietario.Equals(TIPO_PROPIETARIO_PROVEEDOR))
@@ -1147,22 +1144,29 @@ Namespace Data.Entity
     End Class
 
     Partial Class Puestos
+        Inherits BaseDataEntity
 
         Private Sub OnCreated()
 
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Then
-                Return True
-            ElseIf action = ChangeAction.Insert Then
-                Return True
+        Private Sub OnLoaded()
+            MyBase.SetOriginalObject(Me)
+            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
+        End Sub
+
+
+
+        Public Overrides Function IsValid(action As ChangeAction) As Boolean
+            If action = ChangeAction.Update Or action = ChangeAction.Insert Then
+                Return Not String.IsNullOrWhiteSpace(_Identificacion) And Not String.IsNullOrWhiteSpace(_Puesto)
             ElseIf action = ChangeAction.Delete Then
                 Return True
             Else
                 Return True
             End If
         End Function
+
 
     End Class
 

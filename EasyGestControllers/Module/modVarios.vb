@@ -52,8 +52,8 @@ Module modVarios
         Return entidad
     End Function
 
-    <System.Runtime.CompilerServices.Extension()> _
-    Public Sub Clone(Of T As Class)(ByVal source As T, ByRef target As Object)
+    <System.Runtime.CompilerServices.Extension()>
+    Public Sub Clone(Of T As Class)(ByVal source As T, ByRef target As T)
         Dim typeObj As Type = GetType(T)
         Dim typeTarget As Type
         Dim propsInfo As PropertyInfo()

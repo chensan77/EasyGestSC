@@ -932,6 +932,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Globe.ico" />
+    <None Include="Resources\arrow_undo.png" />
     <Content Include="Resources\VisualStudio2012Dark.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

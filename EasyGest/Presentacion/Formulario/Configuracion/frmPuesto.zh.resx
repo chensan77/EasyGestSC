@@ -123,7 +123,29 @@
   <data name="GridViewTextBoxColumn2.HeaderText" xml:space="preserve">
     <value>标识</value>
   </data>
+  <data name="GridViewCheckBoxColumn1.HeaderText" xml:space="preserve">
+    <value>中央收银台</value>
+  </data>
+  <data name="GridViewCommandColumn1.DefaultText" xml:space="preserve">
+    <value>Reset</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="GridViewCommandColumn1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI2SURBVDhPzZLdT9JxFMbZ+ju6Ihsj11aWBRXBHJaoUKYo
+        GGmEiuLLzwTfABEBIcQBvsyxVESCmKDBrDA1nIjmrFZzvZjdecn/0J7Q/RYjLuKyz92zs+d7znnOl/L/
+        8DjRCCIuQ/uGFIr1eshXJGh4VYvKCO9XbYifFAcqojVeAVE9KzhNWjIhNmUI//TjxaEfiz+8CB7MI/Dd
+        Dd/Xacx8noBt2wDly1YIXNxw2XgRg7SlaYtJsXToQyhlXDjw4Pm32RPz/BcX3PtTmPxog+uTE+qVLnDt
+        rHCx7UbmJC2rdWh6fR+yZRHql4SQLNyDyH8HQk85iIgcjl0LJj+MYuz9CGQ+CW4arxKk9d/wp7h2npNz
+        ZNnSw5TQQrXcDqa2IEqWc4NrY9kVQRmGEzroY30o7L+QJEtpqhaqTlV7+WpSZsA2M+1NgYcYiquhWe/G
+        xS569gNCL99d8bR0n5R/YJuYdoau8Ei9pkLPWwLNwUfI76BlriD0lI13RJqgWJShdKIIt+xsFFmvg21i
+        QDxTif5VJXSbfdBu9EDg5OGc4mw6ROFcubU93IixPSsce08wujsM644B5u1BGLcGoE+NrVxrgybWDcmc
+        CHRFXpjaTE2f8e50ibElJE0ZTRh5Z4JlZ+gkrKG4BoOprr1vOtEQqAPfWQK6PC9Ma6Rmf6TbTo5D+kyM
+        B54asAxXwBy4dJw0ClTnQe+kJ/NbaVGa/AyR0flvOGbG9DXd5awQc+b4jAxtQS8pc4BC+Q0hrStgCWSr
+        sAAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="btnCancelar.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
   </data>
