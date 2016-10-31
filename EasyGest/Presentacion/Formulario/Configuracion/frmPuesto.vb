@@ -82,7 +82,7 @@ Namespace Presentacion.Formulario.Configuracion
         Sub gridDatos_CommandCellClick(ByVal sender As Object, ByVal e As EventArgs) Handles gridDatos.CommandCellClick
             Dim cell As GridCommandCellElement = TryCast(sender, GridCommandCellElement)
             Dim puesto As Puestos = DirectCast(cell.RowInfo.DataBoundItem, Puestos)
-            puesto.Reset()
+            'puesto.Reset(puesto)
 
 
         End Sub

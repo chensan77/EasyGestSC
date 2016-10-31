@@ -48,7 +48,7 @@ Namespace Data.Entity
 
 #Region "Tablas"
     Partial Class Albaranes
-        Inherits BaseDataEntity
+        Inherits BaseDataEntity(Of Albaranes)
 
         Private Sub OnCreated()
             _FCreacion = Now()
@@ -192,7 +192,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class Clientes
-        Inherits BaseDataEntity
+        Inherits BaseDataEntity(Of Clientes)
 
         Private Sub OnCreated()
             _Activo = True
@@ -296,7 +296,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class Contactos
-        Inherits BaseDataEntity
+        Inherits BaseDataEntity(Of Contactos)
 
         Public Const TIPO_PROPIETARIO_CLIENTE As Char = "C"c
         Public Const TIPO_PROPIETARIO_PROVEEDOR As Char = "P"c
@@ -331,7 +331,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class DatosBancario
-        Inherits BaseDataEntity
+        Inherits BaseDataEntity(Of DatosBancario)
 
         Public Const TIPO_PROPIETARIO_CLIENTE As Char = "C"c
         Public Const TIPO_PROPIETARIO_PROVEEDOR As Char = "P"c
@@ -1144,7 +1144,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class Puestos
-        Inherits BaseDataEntity
+        Inherits BaseDataEntity(Of Puestos)
 
         Private Sub OnCreated()
 
@@ -1154,8 +1154,6 @@ Namespace Data.Entity
             MyBase.SetOriginalObject(Me)
             AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
         End Sub
-
-
 
         Public Overrides Function IsValid(action As ChangeAction) As Boolean
             If action = ChangeAction.Update Or action = ChangeAction.Insert Then

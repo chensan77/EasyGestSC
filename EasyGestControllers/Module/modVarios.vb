@@ -52,10 +52,11 @@ Module modVarios
         Return entidad
     End Function
 
+
     <System.Runtime.CompilerServices.Extension()>
     Public Sub Clone(Of T As Class)(ByVal source As T, ByRef target As T)
         Dim typeObj As Type = GetType(T)
-        Dim typeTarget As Type
+        'Dim typeTarget As Type = GetType(T)
         Dim propsInfo As PropertyInfo()
         Dim consInfo As ConstructorInfo
         Dim value1, value2 As Object
@@ -63,27 +64,26 @@ Module modVarios
         If source Is Nothing Then target = Nothing
         If target Is Nothing Then
             consInfo = typeObj.GetConstructor(System.Type.EmptyTypes)
-            target = consInfo.Invoke(New Object() {})
+            target = CType(consInfo.Invoke(New Object() {}), T)
         End If
-        typeTarget = target.GetType()
-        propsInfo = typeObj.GetProperties(BindingFlags.Public Or BindingFlags.Instance)
+        propsInfo = typeObj.GetProperties(BindingFlags.Public Or BindingFlags.Instance Or BindingFlags.NonPublic)
         For Each prop As PropertyInfo In propsInfo
             Try
-                Dim propTarget As PropertyInfo
-                propTarget = typeTarget.GetProperty(prop.Name, BindingFlags.Public Or BindingFlags.Instance)
-                If Not IsNothing(propTarget) Then
-                    value1 = prop.GetValue(source, Nothing)
-                    value2 = propTarget.GetValue(target, Nothing)
+                value1 = prop.GetValue(source, Nothing)
+                value2 = prop.GetValue(target, Nothing)
 
-                    If IsNothing(value1) Then
-                        propTarget.SetValue(target, value1, Nothing)
-                    Else
-                        If Not value1.Equals(value2) Then
-                            propTarget.SetValue(target, value1, Nothing)
-                        End If
+                If IsNothing(value1) Then
+                    prop.SetValue(target, value1, Nothing)
+                Else
+                    If Not value1.Equals(value2) Then
+                        prop.SetValue(target, value1, Nothing)
                     End If
                 End If
+                'Dim propTarget As PropertyInfo
+                'propTarget = typeTarget.GetProperty(prop.Name, BindingFlags.Public Or BindingFlags.Instance Or BindingFlags.NonPublic)
+                'If Not IsNothing(propTarget) AndAlso propTarget.CanWrite And prop.CanRead Then
 
+                'End If
             Catch ex As Exception
 
             End Try
