@@ -138,6 +138,10 @@ Namespace Controller
 
         End Sub
 
+        Public Sub ReloadItem(ByRef item As TEntity)
+            _context.Refresh(RefreshMode.OverwriteCurrentValues, item)
+        End Sub
+
         Public Function GetItem(ByVal id As Object) As TEntity
             Return GetItem(Of TEntity)(New Object() {id})
         End Function

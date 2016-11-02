@@ -1,15 +1,9 @@
 ﻿Imports System.ComponentModel
 
 Namespace Data.Entity
-    Public MustInherit Class BaseDataEntity(Of T As Class)
-        Private _originalObject As T
-        Private _isChanged As Boolean = False
+    Public MustInherit Class BaseDataEntity
 
-        Protected Friend Sub SetOriginalObject(obj As T)
-            If Not IsNothing(obj) Then
-                obj.Clone(_originalObject)
-            End If
-        End Sub
+        Private _isChanged As Boolean = False
         Protected Sub OnPropertyChaged(obj As Object, e As PropertyChangedEventArgs)
             _isChanged = True
         End Sub
@@ -18,7 +12,7 @@ Namespace Data.Entity
 
         'Public Sub Reset()
         '    If Not IsNothing(_originalObject) And DataChanged Then
-        '        _originalObject.Clone()
+        '        Me = _originalObject.MemberwiseClone()
         '        _isChanged = False
         '    End If
         'End Sub
