@@ -48,7 +48,6 @@ Namespace Data.Entity
 
 #Region "Tablas"
     Partial Class Albaranes
-        Inherits BaseDataEntity(Of Albaranes)
 
         Private Sub OnCreated()
             _FCreacion = Now()
@@ -59,15 +58,8 @@ Namespace Data.Entity
             _SerieAlbaran = ""
         End Sub
 
-        Private Sub OnLoaded()
-            MyBase.SetOriginalObject(Me)
-            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
-        End Sub
-
-        Public Overrides Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Then
-                Return True
-            ElseIf action = ChangeAction.Insert Then
+        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
+            If action = ChangeAction.Update And Not action = ChangeAction.Delete Then
                 Return True
             ElseIf action = ChangeAction.Delete Then
                 Return True
@@ -192,7 +184,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class Clientes
-        Inherits BaseDataEntity(Of Clientes)
+        Inherits BaseDataEntity
 
         Private Sub OnCreated()
             _Activo = True
@@ -204,7 +196,6 @@ Namespace Data.Entity
         End Sub
 
         Private Sub OnLoaded()
-            MyBase.SetOriginalObject(Me)
             AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
         End Sub
 
@@ -296,7 +287,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class Contactos
-        Inherits BaseDataEntity(Of Contactos)
+        Inherits BaseDataEntity
 
         Public Const TIPO_PROPIETARIO_CLIENTE As Char = "C"c
         Public Const TIPO_PROPIETARIO_PROVEEDOR As Char = "P"c
@@ -307,7 +298,6 @@ Namespace Data.Entity
         End Sub
 
         Private Sub OnLoaded()
-            MyBase.SetOriginalObject(Me)
             AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
         End Sub
 
@@ -331,13 +321,18 @@ Namespace Data.Entity
     End Class
 
     Partial Class DatosBancario
-        Inherits BaseDataEntity(Of DatosBancario)
+        Inherits BaseDataEntity
 
         Public Const TIPO_PROPIETARIO_CLIENTE As Char = "C"c
         Public Const TIPO_PROPIETARIO_PROVEEDOR As Char = "P"c
+
         Private Sub OnCreated()
             _TipoPropietario = Microsoft.VisualBasic.ControlChars.NullChar
             _idPropietario = 0
+        End Sub
+
+        Private Sub OnLoaded()
+            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
         End Sub
 
         Public Overrides Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
@@ -397,9 +392,7 @@ Namespace Data.Entity
         End Property
 
         Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Then
-                Return True
-            ElseIf action = ChangeAction.Insert Then
+            If action = ChangeAction.Update Or ChangeAction.Insert Then
                 Return True
             ElseIf action = ChangeAction.Delete Then
                 Return True
@@ -416,17 +409,20 @@ Namespace Data.Entity
     End Class
 
     Partial Class DiseñosEtiqueta
+        Inherits BaseDataEntity
 
         Private Sub OnCreated()
             _idEtiqueta = 0
             _XMLDiseño = Nothing
         End Sub
 
-        Public Function IsValid(ByVal action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Then
-                Return True
-            ElseIf action = ChangeAction.Insert Then
-                Return True
+        Private Sub OnLoaded()
+            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
+        End Sub
+
+        Public Overrides Function IsValid(ByVal action As System.Data.Linq.ChangeAction) As Boolean
+            If action = ChangeAction.Update Or action = ChangeAction.Insert Then
+                Return Not String.IsNullOrWhiteSpace(Nombre) And (TipoEtiqueta.Equals(Etiquetas.TIPO_ETIQUETA_ENHOJA) Or TipoEtiqueta.Equals(Etiquetas.TIPO_ETIQUETA_ENROLLO))
             ElseIf action = ChangeAction.Delete Then
                 Return True
             Else
@@ -544,12 +540,17 @@ Namespace Data.Entity
     End Class
 
     Partial Class EtiquetasEnHoja
+        Inherits BaseDataEntity
 
         Private Sub OnCreated()
             _idEtiqueta = Now().Ticks - Util.Comunes.FECHA_REFERENCIA.Ticks
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
+        Private Sub OnLoaded()
+            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
+        End Sub
+
+        Public Overrides Function IsValid(action As ChangeAction) As Boolean
             If action = ChangeAction.Update Or action = ChangeAction.Insert Then
                 Return _MargenDer >= 0.0 And _MargenInf >= 0.0 And _MargenIzq >= 0.0 And
                     _MargenSup >= 0.0 And _Alto > 0.0 And _Ancho > 0.0 And _Columnas > 0.0 And _Filas > 0.0 And
@@ -579,12 +580,17 @@ Namespace Data.Entity
     End Class
 
     Partial Class EtiquetasEnRollo
+        Inherits BaseDataEntity
 
         Private Sub OnCreated()
             _idEtiqueta = Now().Ticks - Util.Comunes.FECHA_REFERENCIA.Ticks
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
+        Private Sub OnLoaded()
+            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
+        End Sub
+
+        Public Overrides Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
             Dim unidades As String() = New String() {"CM", "INCH", "POINT"}
             If action = ChangeAction.Update Or action = ChangeAction.Insert Then
                 Return _Alto > 0.0 And _Ancho > 0.0 And Not String.IsNullOrWhiteSpace(_Referencia) And unidades.Contains(_UnidadMedida)
@@ -605,7 +611,9 @@ Namespace Data.Entity
     Partial Class Facturas
 
         Private Sub OnCreated()
-
+            _FCreacion = Now()
+            _FFactura = _FCreacion
+            _SerieFactura = ""
         End Sub
 
         Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
@@ -705,7 +713,7 @@ Namespace Data.Entity
 
     Partial Class LineasAlbaran
 
-        Private _fechaRefer As New Date(2000, 1, 1)
+        'Private _fechaRefer As New Date(2000, 1, 1)
 
         Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
             If action = ChangeAction.Update Then
@@ -720,7 +728,9 @@ Namespace Data.Entity
         End Function
 
         Private Sub OnCreated()
-            _idLinea = Now.Ticks - _fechaRefer.Ticks
+            _idLinea = Now.Ticks - Util.Comunes.FECHA_REFERENCIA.Ticks
+            _idProducto = Nothing
+            _DescripcionProducto = Nothing
             _Descuento = 0.0F
             _Precio = 0.0F
             _Importe = 0.0F
@@ -747,16 +757,51 @@ Namespace Data.Entity
 
     Partial Class LineasFactura
 
-        Private _fechaRefer As New Date(2000, 1, 1)
-
         Private Sub OnCreated()
-            _idLinea = Now.Ticks - _fechaRefer.Ticks
+            _idLinea = Now.Ticks - Util.Comunes.FECHA_REFERENCIA.Ticks
+            _idProducto = Nothing
+            _DescripcionProducto = Nothing
             _Precio = 0.0F
             _Importe = 0.0F
             _Cantidad = 1.0F
-            Referencia = ""
+            _Referencia = ""
         End Sub
 
+        Private Sub RecalcularPrecioFinal()
+            Dim imp As Single = 0.0F, re As Single = 0.0F
+            If _Impuesto.HasValue Then imp = _Impuesto.Value
+            If _Recargo.HasValue Then re = _Recargo.Value
+            _PrecioFinal = _Precio * (1.0F + imp + re)
+            RecalcularImporte()
+        End Sub
+
+        Private Sub RecalcularImporte()
+            _Importe = _Cantidad * _Precio * (1.0F - _Descuento / 100.0F)
+        End Sub
+
+        Private Sub OnCantidadChanged()
+            RecalcularImporte()
+        End Sub
+
+        Private Sub OnDescuentoChanged()
+            RecalcularImporte()
+        End Sub
+
+        Private Sub OnPrecioChanged()
+            RecalcularPrecioFinal()
+        End Sub
+
+        Private Sub OnPrecioFinalChanged()
+            RecalcularImporte()
+        End Sub
+
+        Private Sub OnidLineaChanged()
+            RecalcularPrecioFinal()
+        End Sub
+
+        Private Sub OnRecargoChanged()
+            RecalcularPrecioFinal()
+        End Sub
 
         Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
             If action = ChangeAction.Update Then
@@ -769,23 +814,20 @@ Namespace Data.Entity
                 Return True
             End If
         End Function
-
     End Class
 
     Partial Class LineasPedido
-
-        Private _fechaRefer As New Date(2000, 1, 1)
 
         Public Property PrecioVenta As Single
         Public Property Referencia As String
 
         Private Sub OnCreated()
-            _idLinea = Now.Ticks - _fechaRefer.Ticks
+            _idLinea = Now.Ticks - Util.Comunes.FECHA_REFERENCIA.Ticks
             _Precio = 0.0F
             _Importe = 0.0F
             _Cantidad = 1.0F
-            PrecioVenta = 0.0F
-            Referencia = ""
+            _PrecioVenta = 0.0F
+            _Referencia = ""
         End Sub
 
 
@@ -801,16 +843,40 @@ Namespace Data.Entity
             End If
         End Function
 
+        Private Sub RecalcularPrecioFinal()
+            Dim imp As Single = 0.0F, re As Single = 0.0F
+            If _Impuesto.HasValue Then imp = _Impuesto.Value
+            If _Recargo.HasValue Then re = _Recargo.Value
+            _PrecioFinal = _Precio * (1.0F + imp + re)
+            RecalcularImporte()
+        End Sub
+
         Private Sub RecalcularImporte()
-            _Importe = _Cantidad * _Precio
+            _Importe = _Cantidad * _PrecioFinal * (1.0F - _Descuento / 100.0F)
         End Sub
 
         Private Sub OnPrecioChanged()
-            RecalcularImporte()
+            RecalcularPrecioFinal()
         End Sub
 
         Private Sub OnCantidadChanged()
             RecalcularImporte()
+        End Sub
+
+        Private Sub OnDescuentoChanged()
+            RecalcularImporte()
+        End Sub
+
+        Private Sub OnRecargoChanged()
+            RecalcularPrecioFinal()
+        End Sub
+
+        Private Sub OnPrecioFinalChanged()
+            RecalcularImporte()
+        End Sub
+
+        Private Sub OnImpuestoChanged()
+            RecalcularPrecioFinal()
         End Sub
     End Class
 
@@ -907,8 +973,6 @@ Namespace Data.Entity
     Partial Class Ofertas
 
         'Public Const CaracterSeparador As Char = ":"c
-
-
         Private Sub OnCreated()
             _FCreacion = Now()
             _FInicio = Today()
@@ -1025,6 +1089,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class Productos
+        Inherits BaseDataEntity
 
         Private Sub OnCreated()
             _ControlStock = True
@@ -1038,7 +1103,11 @@ Namespace Data.Entity
             _UnidadXCaja = 1.0F
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
+        Private Sub OnLoaded()
+            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
+        End Sub
+
+        Public Overrides Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
             If action = ChangeAction.Update Or action = ChangeAction.Insert Then
                 Return Not String.IsNullOrWhiteSpace(_Referencia) And Not String.IsNullOrWhiteSpace(_Descripcion)
             ElseIf action = ChangeAction.Delete Then
@@ -1089,11 +1158,16 @@ Namespace Data.Entity
     End Class
 
     Partial Class Proveedores
+        Inherits BaseDataEntity
 
         Private Sub OnCreated()
             _Activo = True
             _FCreacion = Now()
             _Pais = "ESPAÑA"
+        End Sub
+
+        Private Sub OnLoaded()
+            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
         End Sub
 
         Public ReadOnly Property NombreYNombreCN() As String
@@ -1112,7 +1186,7 @@ Namespace Data.Entity
             End Get
         End Property
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
+        Public Overrides Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
             If action = ChangeAction.Update Or action = ChangeAction.Insert Then
                 Return Not String.IsNullOrWhiteSpace(_Nombre)
             ElseIf action = ChangeAction.Delete Then
@@ -1144,16 +1218,12 @@ Namespace Data.Entity
     End Class
 
     Partial Class Puestos
-        Inherits BaseDataEntity(Of Puestos)
+        Inherits BaseDataEntity
 
         Private Sub OnCreated()
 
         End Sub
 
-        Private Sub OnLoaded()
-            MyBase.SetOriginalObject(Me)
-            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
-        End Sub
 
         Public Overrides Function IsValid(action As ChangeAction) As Boolean
             If action = ChangeAction.Update Or action = ChangeAction.Insert Then
@@ -1169,6 +1239,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class Tareas
+        Inherits BaseDataEntity
 
         Private _avisoAntelacion As TimeSpan = TimeSpan.Zero
 
@@ -1177,7 +1248,7 @@ Namespace Data.Entity
             FechaTarea = Today()
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
+        Public Overrides Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
             If action = ChangeAction.Update Or action = ChangeAction.Insert Then
                 Return Not String.IsNullOrWhiteSpace(_Tarea)
             ElseIf action = ChangeAction.Delete Then
@@ -1209,6 +1280,7 @@ Namespace Data.Entity
 
         Private Sub OnLoaded()
             _avisoAntelacion = _FechaTarea.Subtract(_Aviso)
+            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
         End Sub
 
         Private Sub CambiarAviso()
@@ -1218,6 +1290,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class TarjetasFidelizacion
+        Inherits BaseDataEntity
 
         Private _FormulaSaldo As String = Nothing
 
@@ -1233,7 +1306,7 @@ Namespace Data.Entity
             _Saldo = 0
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
+        Public Overrides Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
             If action = ChangeAction.Update Or action = ChangeAction.Insert Then
                 Return _Base > 0.0 And _BasePunto > 0.0 And _Beneficio > 0.0 And _EquivalenciaPunto > 0.0 And Not String.IsNullOrWhiteSpace(_NumeroTarjeta)
             ElseIf action = ChangeAction.Delete Then
@@ -1263,7 +1336,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class TiposIdentificacion
-
         Private Sub OnCreated()
 
         End Sub
@@ -1341,7 +1413,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class Usuarios
-
+        Inherits BaseDataEntity
 
         Private Sub OnCreated()
             _Activo = True
@@ -1351,7 +1423,11 @@ Namespace Data.Entity
             _idUsuario = Now().Ticks - Util.Comunes.FECHA_REFERENCIA.Ticks
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
+        Private Sub OnLoaded()
+            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
+        End Sub
+
+        Public Overrides Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
             If action = ChangeAction.Update Or action = ChangeAction.Insert Then
                 Return Not String.IsNullOrWhiteSpace(_Nombre) And Not String.IsNullOrWhiteSpace(_NombreSesion) And Not String.IsNullOrWhiteSpace(_Contraseña)
             ElseIf action = ChangeAction.Delete Then
@@ -1364,6 +1440,7 @@ Namespace Data.Entity
         Public Function IsSuper() As Boolean
             Return _Nombre.Equals("Super") And _NombreSesion.Equals("Super") And _idUsuario = Context.EasyGestDataContext.IDUSUARIOSUPER
         End Function
+
     End Class
 
     Partial Class Vales
@@ -1787,6 +1864,7 @@ Namespace Data.Context
         'Private Shared _context As EasyGestDataContext
 
         Friend Const IDUSUARIOSUPER As Long = 0L
+        Friend Const FECHAREFERENCIA As Date = #2016/01/01#
 
         Protected Friend Shared Function GetTablesPrimaryKeys() As Dictionary(Of String, List(Of String))
             Dim tablesPrimaryKeys As New Dictionary(Of String, List(Of String))()

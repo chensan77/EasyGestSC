@@ -31,7 +31,9 @@ Namespace Controller
             End Get
         End Property
 
-        'Public MustOverride Function IsValid(action As System.Data.Linq.ChangeAction, entity As TEntity) As Boolean
+        Public Overridable Sub ResetItem(ByRef item As TEntity)
+            _context.Refresh(RefreshMode.OverwriteCurrentValues, item)
+        End Sub
 
         Public Shared Function NewItem() As TEntity
             Return DirectCast(Activator.CreateInstance(GetType(TEntity)), TEntity)
