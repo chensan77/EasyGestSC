@@ -255,7 +255,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property _date() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("date", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("_date", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

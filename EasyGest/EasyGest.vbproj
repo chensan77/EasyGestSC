@@ -295,6 +295,8 @@
     <Import Include="EasyGestControllers" />
     <Import Include="EasyGestControllers.Controller" />
     <Import Include="EasyGestControllers.Data" />
+    <Import Include="EasyGestControllers.Data.Configuracion" />
+    <Import Include="EasyGestControllers.Data.Context" />
     <Import Include="EasyGestControllers.Data.Entity" />
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
@@ -933,6 +935,7 @@
   <ItemGroup>
     <Content Include="Globe.ico" />
     <None Include="Resources\arrow_undo.png" />
+    <None Include="Resources\date.png" />
     <Content Include="Resources\VisualStudio2012Dark.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -1002,7 +1005,6 @@
     <None Include="Resources\europeanunion.png" />
     <None Include="Resources\book_next.png" />
     <None Include="Resources\calculator.png" />
-    <None Include="Resources\date.png" />
     <None Include="Resources\cart_put.png" />
     <Content Include="Resources\Aqua.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -1118,12 +1120,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EasyGestControllers\EasyGestControllers.vbproj">
-      <Project>{B98C069A-F339-4CE4-9268-D7F896D1BEA5}</Project>
+      <Project>{b98c069a-f339-4ce4-9268-d7f896d1bea5}</Project>
       <Name>EasyGestControllers</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EasyGestControllers\EasyGestControllers.vbproj">
-      <Name>EasyGestControllers</Name>
-      <Project>{B98C069A-F339-4CE4-9268-D7F896D1BEA5}</Project>
     </ProjectReference>
     <ProjectReference Include="..\EasyGestPrint\EasyGestPrint.csproj">
       <Project>{31d7d48d-d093-4b68-b540-0cd4f2220c30}</Project>

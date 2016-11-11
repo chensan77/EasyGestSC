@@ -2,6 +2,7 @@
 
 Namespace Data.Entity
     Public MustInherit Class BaseDataEntity
+        Implements ICloneable
 
         Private _isChanged As Boolean = False
 
@@ -10,6 +11,10 @@ Namespace Data.Entity
         End Sub
 
         Public MustOverride Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
+
+        Public Function Clone() As Object Implements ICloneable.Clone
+            Return Me.MemberwiseClone()
+        End Function
 
         Public ReadOnly Property DataChanged As Boolean
             Get

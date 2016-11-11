@@ -15,7 +15,7 @@ Namespace Presentacion.Formulario.Configuracion
                         For Each puesto As Puestos In PuestosBindingSource.List
                             control.UpdateItem(puesto)
                             If puesto.idPuesto = gPuesto.idPuesto Then
-                                puesto.Clone(gPuesto)
+                                gPuesto = DirectCast(puesto.Clone(), Puestos)
                                 My.Forms.frmPrincipal.lblePuesto.Text = My.Resources.Application.TextoPuesto & ": " & gPuesto.Puesto
                             End If
                         Next
@@ -82,8 +82,10 @@ Namespace Presentacion.Formulario.Configuracion
         Sub gridDatos_CommandCellClick(ByVal sender As Object, ByVal e As EventArgs) Handles gridDatos.CommandCellClick
             Dim cell As GridCommandCellElement = TryCast(sender, GridCommandCellElement)
             Dim puesto As Puestos = DirectCast(cell.RowInfo.DataBoundItem, Puestos)
-            'puesto.Reset(puesto)
-
+            Using c As New PuestosController
+                c.ResetItem(puesto)
+            End Using
+            cell.RowInfo.InvalidateRow()
 
         End Sub
 #End Region

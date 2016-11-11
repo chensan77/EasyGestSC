@@ -1,5 +1,5 @@
 ﻿Imports EasyGestControllers.Controller
-
+Imports EasyGestControllers.Data
 
 Namespace Presentacion.Formulario.Cliente
 
@@ -153,7 +153,7 @@ Namespace Presentacion.Formulario.Cliente
             RestarSaldoTarjetas(CSng(txtPunto.Value), _tarjetasPunto)
         End Sub
 
-        Private Sub RestarSaldoTarjetas(totalEmision As Single, tarjetas As ienumerable(Of VWTarjetasFidelizacion))
+        Private Sub RestarSaldoTarjetas(totalEmision As Single, tarjetas As IEnumerable(Of VWTarjetasFidelizacion))
             Using control As New TarjetasFidelizacionController
                 Dim descripcion As String = String.Format(My.Resources.Application.DescripcionMovTarjEmisionManual, gUsuario.Nombre)
                 Dim saldo, resto As Single

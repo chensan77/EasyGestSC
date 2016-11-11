@@ -1,4 +1,5 @@
-﻿Imports System.Reflection
+﻿Imports System.Resources
+Imports System.Reflection
 Imports System.Runtime.InteropServices
 
 ' General Information about an assembly is controlled through the following 
@@ -7,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("EasyGest")> 
-<Assembly: AssemblyDescription("Pequña aplicacion para gestion de comercio de bazar")> 
-<Assembly: AssemblyCompany("Softchen")> 
-<Assembly: AssemblyProduct("EasyGest")> 
-<Assembly: AssemblyCopyright("Copyright ©  2011")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTitle("EasyGest")>
+<Assembly: AssemblyDescription("Pequña aplicacion para gestion de comercio de bazar")>
+<Assembly: AssemblyCompany("Softchen")>
+<Assembly: AssemblyProduct("EasyGest")>
+<Assembly: AssemblyCopyright("Copyright ©  2011")>
+<Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("a67236af-df93-40ce-b6e6-2b017c70f4f3")> 
+<Assembly: Guid("a67236af-df93-40ce-b6e6-2b017c70f4f3")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -30,5 +31,6 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("2.0.0.0")> 
-<Assembly: AssemblyFileVersion("2.0.0.0")> 
+<Assembly: AssemblyVersion("2.0.0.0")>
+<Assembly: AssemblyFileVersion("2.0.0.0")>
+<Assembly: NeutralResourcesLanguage("es")>

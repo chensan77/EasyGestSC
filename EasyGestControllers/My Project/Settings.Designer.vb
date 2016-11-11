@@ -57,64 +57,10 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=CHENZHANG-PC\MSSQLSERVER2008;Initial Catalog=EasyGest;Persist Securit"& _ 
-            "y Info=True;User ID=EasyGest;Password=eg.2012")>  _
-        Public ReadOnly Property EasyGestConnectionString() As String
-            Get
-                Return CType(Me("EasyGestConnectionString"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=BAZAR-PC\sqlexpress;Persist Security Info=True;User ID=easygest;Passw"& _ 
-            "ord=eg.2012")>  _
-        Public ReadOnly Property DataSourceConnectionString() As String
-            Get
-                Return CType(Me("DataSourceConnectionString"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=EasyGest;Persist Security Info=True;User ID"& _ 
-            "=easygest;Password=eg.2013")>  _
-        Public ReadOnly Property EasyGestConnectionString1() As String
-            Get
-                Return CType(Me("EasyGestConnectionString1"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
          Global.System.Configuration.DefaultSettingValueAttribute("Data Source=CHENZHANG-PC;Initial Catalog=EasyGest;Integrated Security=True")>  _
         Public ReadOnly Property EasyGestConnectionString2() As String
             Get
                 Return CType(Me("EasyGestConnectionString2"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=EasyGest;Persist Security Info=True;User ID"& _ 
-            "=EasyGest;Password=eg.2014")>  _
-        Public ReadOnly Property EasyGestConnectionString3() As String
-            Get
-                Return CType(Me("EasyGestConnectionString3"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=CHENZHANG-PC;User ID=easygest;Password=eg.2016")>  _
-        Public ReadOnly Property DataSourceConnectionString1() As String
-            Get
-                Return CType(Me("DataSourceConnectionString1"),String)
             End Get
         End Property
         
@@ -137,17 +83,6 @@ Namespace My
         Public ReadOnly Property EasyGestConnectionString5() As String
             Get
                 Return CType(Me("EasyGestConnectionString5"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=CHENZHANG-PC;Initial Catalog=EasyGest;Integrated Security=True;Encryp"& _ 
-            "t=False;TrustServerCertificate=True")>  _
-        Public ReadOnly Property EasyGestConnectionString6() As String
-            Get
-                Return CType(Me("EasyGestConnectionString6"),String)
             End Get
         End Property
         

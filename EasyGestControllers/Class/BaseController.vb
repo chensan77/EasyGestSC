@@ -32,6 +32,7 @@ Namespace Controller
         End Property
 
         Public Overridable Sub ResetItem(ByRef item As TEntity)
+            Dim table As Table(Of TEntity) = _context.GetTable(Of TEntity)()
             _context.Refresh(RefreshMode.OverwriteCurrentValues, item)
         End Sub
 
