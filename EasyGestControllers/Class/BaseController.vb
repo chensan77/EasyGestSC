@@ -5,7 +5,7 @@ Imports System.Data.Linq.Mapping
 
 Namespace Controller
 
-    Public MustInherit Class BaseController(Of TEntity As Class, TContext As DataContext)
+    Public MustInherit Class BaseController(Of TEntity As Data.Entity.LINQEntityBase, TContext As DataContext)
         Implements IDisposable
 
         Private _disposed As Boolean = False
@@ -33,29 +33,153 @@ Namespace Controller
 
         Public Overridable Sub ResetItem(ByRef item As TEntity)
             Dim table As Table(Of TEntity) = _context.GetTable(Of TEntity)()
-            _context.Refresh(RefreshMode.OverwriteCurrentValues, item)
+            Try
+                table.Attach(item, True)
+                _context.Refresh(RefreshMode.OverwriteCurrentValues, item)
+            Catch ex As Exception
+
+            End Try
         End Sub
 
         Public Shared Function NewItem() As TEntity
-            Return DirectCast(Activator.CreateInstance(GetType(TEntity)), TEntity)
+            Dim Item As TEntity = DirectCast(Activator.CreateInstance(GetType(TEntity)), TEntity)
+            Item.SetAsInsertOnSubmit()
+            Return Item
         End Function
 
-        Public Overridable Function AddItem(ByVal item As TEntity) As TEntity
-            If _readonly Then Throw New ReadOnlyException("Entidad no modificable")
+        Public Overridable Sub SaveItem(ByRef item As TEntity)
             If item Is Nothing Then Throw New NullReferenceException()
 
-            Dim table As Table(Of TEntity) = _context.GetTable(Of TEntity)()
-
-            If table IsNot Nothing Then
-                table.InsertOnSubmit(item)
-                _context.SubmitChanges()
-                Return item
-            Else
-                Throw New ApplicationException("No hay un conjunto de entidad definido")
+            'Before doing anything, check to make sure that the New datacontext
+            'doesn 't try any deferred (lazy) loading
+            If _context.DeferredLoadingEnabled = True Then
+                Throw New ApplicationException("Syncronisation requires that the Deferred loading is disabled on the Target DataContext")
             End If
-        End Function
 
-        Public Overridable Sub AddItems(ByVal items As IEnumerable(Of TEntity))
+            Dim entities As List(Of TEntity) = Me.ToEntityTree().Distinct().ToList()
+            Dim entitiesDeleted As New List(Of TEntity)()
+
+            Try
+
+                ' Tell each entity that syncronisation is occuring
+                For Each entity As LINQEntityBase In entities
+                    entity._isSyncronisingWithDB = True
+                Next
+
+                ' For entities which have been Cancelled (Added as new then deleted before submission to DB)
+                ' detach these entities by removing it's references so that they can be garbage collected.
+
+                For Each entity As LINQEntityBase In entities
+                    If entity.LINQEntityState = EntityState.CancelNew Then
+                        For Each propInfo As PropertyInfo In _cacheAssociationFKProperties(entity.[GetType]()).Values
+                            propInfo.SetValue(entity, Nothing, Nothing)
+                        Next
+                    End If
+                Next
+
+                ' Loop through all the entities, attaching as appropriate to the data context
+
+                For Each entity As LINQEntityBase In entities
+                    If entity.LINQEntityState = EntityState.Original Then
+                        targetDataContext.GetTable(entity.GetEntityType()).Attach(entity, False)
+                    ElseIf entity.LINQEntityState = EntityState.[New] Then
+                        ' If the entity's state is new, LINQ to SQL Tries to attach an FK references as "New" as well.
+                        ' To avoid this, attach all FK references first as unmodified (unless they were intended to be new anyway) 
+                        ' then attach the new record.
+                        For Each fkPropInfo As PropertyInfo In _cacheAssociationFKProperties(entity.[GetType]()).Values
+                            Dim fkProp As LINQEntityBase = TryCast(fkPropInfo.GetValue(entity, Nothing), LINQEntityBase)
+                            If fkProp IsNot Nothing AndAlso fkProp.LINQEntityState <> EntityState.[New] Then
+                                Try
+                                    targetDataContext.GetTable(fkProp.[GetType]()).Attach(fkProp, False)
+                                    ' do nothing as the entity was already attached.
+                                Catch
+                                End Try
+                            End If
+                        Next
+
+                        targetDataContext.GetTable(entity.GetEntityType()).InsertOnSubmit(entity)
+                    ElseIf entity.LINQEntityState = EntityState.Modified OrElse entity.LINQEntityState = EntityState.Detached Then
+                        If entity.LINQEntityOriginalValue IsNot Nothing Then
+                            targetDataContext.GetTable(entity.GetEntityType()).Attach(entity, entity.LINQEntityOriginalValue)
+                        Else
+                            targetDataContext.GetTable(entity.GetEntityType()).Attach(entity, True)
+                        End If
+                    End If
+
+                    If entity.LINQEntityState = EntityState.Deleted AndAlso Not entitiesDeleted.Contains(entity) Then
+                        ' Check to see if cascading deletes is allowed
+                        If cascadeDelete Then
+                            ' Grab the entity tree and reverse it so that this entity is deleted last
+                            Dim entityTreeReversed As List(Of LINQEntityBase) = entity.ToEntityTree()
+                            entityTreeReversed.Reverse()
+
+                            ' Cascade delete children and then this object
+                            For Each toDelete As LINQEntityBase In entityTreeReversed
+                                ' Before we try and delete, make sure the entity hasn't been marked to be deleted already
+                                ' through another relationship linkng this entity in the same sub-tree that is being deleted.
+                                If Not entitiesDeleted.Contains(toDelete) Then
+                                    ' Mark for deletion
+                                    toDelete.SetAsDeleteOnSubmit()
+                                    targetDataContext.GetTable(toDelete.GetEntityType()).Attach(toDelete)
+                                    targetDataContext.GetTable(toDelete.GetEntityType()).DeleteOnSubmit(toDelete)
+
+                                    'add deleted entity to a list to make sure we don't delete them twice.
+                                    entitiesDeleted.Add(toDelete)
+                                End If
+                            Next
+                        Else
+                            ' Mark for deletion
+                            targetDataContext.GetTable(entity.GetEntityType()).Attach(entity)
+                            targetDataContext.GetTable(entity.GetEntityType()).DeleteOnSubmit(entity)
+
+                            'add deleted entity to a list to make sure we don't delete them twice.
+                            entitiesDeleted.Add(entity)
+                        End If
+                        targetDataContext.SubmitChanges()
+                        ' if this is the root object, there's no need to do more processing 
+                        ' so just quit the loop
+                        If Me Is entity Then
+                            Exit For
+                        End If
+                    End If
+                Next
+
+                ' Reset this entity as the change tracking root, getting a new copy of all objects
+
+                item.SetAsChangeTrackingRoot(item.LINQEntityKeepOriginal)
+            Finally
+                ' Tell each entity that syncronisation is occuring
+                For Each entity As Data.Entity.LINQEntityBase In entities
+                    entity.IsSyncronisingWithDB = False
+                Next
+            End Try
+
+        End Sub
+
+        Public Overridable Sub SaveItem(ByRef items As IEnumerable(Of TEntity))
+            If items Is Nothing Then Throw New NullReferenceException()
+            For Each item In items
+                SaveItem(item)
+            Next
+        End Sub
+
+        'Protected Overridable Function AddItem(ByVal item As TEntity) As TEntity
+        '    If _readonly Then Throw New ReadOnlyException("Entidad no modificable")
+        '    If item Is Nothing Then Throw New NullReferenceException()
+
+        '    Dim table As Table(Of TEntity) = _context.GetTable(Of TEntity)()
+
+        '    If table IsNot Nothing Then
+        '        table.Attach(item, False)
+        '        table.InsertOnSubmit(item)
+        '        _context.SubmitChanges()
+        '        Return item
+        '    Else
+        '        Throw New ApplicationException("No hay un conjunto de entidad definido")
+        '    End If
+        'End Function
+
+        Protected Overridable Sub AddItems(ByVal items As IEnumerable(Of TEntity))
             If _readonly Then Throw New ReadOnlyException("Entidad no modificable")
             If items Is Nothing Then Throw New NullReferenceException
 

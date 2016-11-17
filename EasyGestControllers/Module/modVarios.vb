@@ -5,43 +5,43 @@ Imports System.Linq.Expressions
 
 Module modVarios
 
-    <Extension()> _
-    Public Function Compara(Of T)(ByVal source As T, ByVal target As Object) As Boolean
-        Dim res As Boolean = True
+    '<Extension()> _
+    'Public Function Compara(Of T)(ByVal source As T, ByVal target As Object) As Boolean
+    '    Dim res As Boolean = True
 
-        Dim typeObj As Type = GetType(T)
-        Dim propsInfo As PropertyInfo()
-        Dim value1, value2 As Object
+    '    Dim typeObj As Type = GetType(T)
+    '    Dim propsInfo As PropertyInfo()
+    '    Dim value1, value2 As Object
 
-        Dim typeTarget As Type = target.GetType
+    '    Dim typeTarget As Type = target.GetType
 
-        If source Is Nothing Then
-            Return False
-        End If
-        If target Is Nothing Then
-            Return False
-        End If
-        propsInfo = typeObj.GetProperties(BindingFlags.Public Or BindingFlags.Instance)
-        For Each prop As PropertyInfo In propsInfo
-            Try
-                Dim propTarget As PropertyInfo
-                propTarget = typeTarget.GetProperty(prop.Name, BindingFlags.Public Or BindingFlags.Instance)
-                If Not IsNothing(propTarget) Then
-                    value1 = prop.GetValue(source, Nothing)
-                    value2 = propTarget.GetValue(target, Nothing)
+    '    If source Is Nothing Then
+    '        Return False
+    '    End If
+    '    If target Is Nothing Then
+    '        Return False
+    '    End If
+    '    propsInfo = typeObj.GetProperties(BindingFlags.Public Or BindingFlags.Instance)
+    '    For Each prop As PropertyInfo In propsInfo
+    '        Try
+    '            Dim propTarget As PropertyInfo
+    '            propTarget = typeTarget.GetProperty(prop.Name, BindingFlags.Public Or BindingFlags.Instance)
+    '            If Not IsNothing(propTarget) Then
+    '                value1 = prop.GetValue(source, Nothing)
+    '                value2 = propTarget.GetValue(target, Nothing)
 
-                    If Not value1.Equals(value2) Then
-                        res = False
-                        Exit For
-                    End If
-                End If
+    '                If Not value1.Equals(value2) Then
+    '                    res = False
+    '                    Exit For
+    '                End If
+    '            End If
 
-            Catch ex As Exception
+    '        Catch ex As Exception
 
-            End Try
-        Next
-        Return res
-    End Function
+    '        End Try
+    '    Next
+    '    Return res
+    'End Function
 
     <System.Runtime.CompilerServices.Extension()> _
     Public Function ConvertToEntitySet(Of T As Class)(ByVal source As IEnumerable(Of T)) As System.Data.Linq.EntitySet(Of T)
@@ -53,42 +53,42 @@ Module modVarios
     End Function
 
 
-    <System.Runtime.CompilerServices.Extension()>
-    Public Sub Clone(Of T As Class)(ByVal source As T, ByRef target As T)
-        Dim typeObj As Type = GetType(T)
-        'Dim typeTarget As Type = GetType(T)
-        Dim propsInfo As PropertyInfo()
-        Dim consInfo As ConstructorInfo
-        Dim value1, value2 As Object
+    '<System.Runtime.CompilerServices.Extension()>
+    'Public Sub Clone(Of T As Class)(ByVal source As T, ByRef target As T)
+    '    Dim typeObj As Type = GetType(T)
+    '    'Dim typeTarget As Type = GetType(T)
+    '    Dim propsInfo As PropertyInfo()
+    '    Dim consInfo As ConstructorInfo
+    '    Dim value1, value2 As Object
 
-        If source Is Nothing Then target = Nothing
-        If target Is Nothing Then
-            consInfo = typeObj.GetConstructor(System.Type.EmptyTypes)
-            target = CType(consInfo.Invoke(New Object() {}), T)
-        End If
-        propsInfo = typeObj.GetProperties(BindingFlags.Public Or BindingFlags.Instance Or BindingFlags.NonPublic)
-        For Each prop As PropertyInfo In propsInfo
-            Try
-                value1 = prop.GetValue(source, Nothing)
-                value2 = prop.GetValue(target, Nothing)
+    '    If source Is Nothing Then target = Nothing
+    '    If target Is Nothing Then
+    '        consInfo = typeObj.GetConstructor(System.Type.EmptyTypes)
+    '        target = CType(consInfo.Invoke(New Object() {}), T)
+    '    End If
+    '    propsInfo = typeObj.GetProperties(BindingFlags.Public Or BindingFlags.Instance Or BindingFlags.NonPublic)
+    '    For Each prop As PropertyInfo In propsInfo
+    '        Try
+    '            value1 = prop.GetValue(source, Nothing)
+    '            value2 = prop.GetValue(target, Nothing)
 
-                If IsNothing(value1) Then
-                    prop.SetValue(target, value1, Nothing)
-                Else
-                    If Not value1.Equals(value2) Then
-                        prop.SetValue(target, value1, Nothing)
-                    End If
-                End If
-                'Dim propTarget As PropertyInfo
-                'propTarget = typeTarget.GetProperty(prop.Name, BindingFlags.Public Or BindingFlags.Instance Or BindingFlags.NonPublic)
-                'If Not IsNothing(propTarget) AndAlso propTarget.CanWrite And prop.CanRead Then
+    '            If IsNothing(value1) Then
+    '                prop.SetValue(target, value1, Nothing)
+    '            Else
+    '                If Not value1.Equals(value2) Then
+    '                    prop.SetValue(target, value1, Nothing)
+    '                End If
+    '            End If
+    '            'Dim propTarget As PropertyInfo
+    '            'propTarget = typeTarget.GetProperty(prop.Name, BindingFlags.Public Or BindingFlags.Instance Or BindingFlags.NonPublic)
+    '            'If Not IsNothing(propTarget) AndAlso propTarget.CanWrite And prop.CanRead Then
 
-                'End If
-            Catch ex As Exception
+    '            'End If
+    '        Catch ex As Exception
 
-            End Try
-        Next
-    End Sub
+    '        End Try
+    '    Next
+    'End Sub
 
     <Extension()> _
       Public Function Where(Of T)(ByVal source As IQueryable(Of T), ByVal predicate As String, ByVal ParamArray values() As Object) As IQueryable(Of T)

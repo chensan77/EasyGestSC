@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EasyGest" EntityNamespace="Data.Entity" ContextNamespace="Data.Context" Class="EasyGestDataContext" BaseType="BaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=CAJA\MSSQLSERVER2014;Initial Catalog=EasyGest;Integrated Security=True" SettingsObjectName="EasyGestControllers.My.MySettings" SettingsPropertyName="EasyGestConnectionString7" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EasyGest" EntityNamespace="Data.Entity" ContextNamespace="Data.Context" Class="EasyGestDataContext" BaseType="BaseDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=CHENZHANG-PC;Initial Catalog=EasyGest;Persist Security Info=True;User ID=easygest;Password=eg2016" Provider="System.Data.SqlClient" />
   <Table Name="dbo.CodigosBarra" Member="CodigosBarra" AccessModifier="Internal">
     <Type Name="CodigosBarra">
       <Column Name="idCodigo" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />

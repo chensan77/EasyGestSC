@@ -12,7 +12,6 @@ Namespace Presentacion.Formulario.Configuracion
         Private _panel As New WaitingPanel()
         Private _orden As String = "Nombre ASC"
         Private _usuario As Entity.Usuarios = Nothing
-        Private _action As System.Data.Linq.ChangeAction = System.Data.Linq.ChangeAction.None
 
 #Region "Evento Form"
 
@@ -106,7 +105,7 @@ Namespace Presentacion.Formulario.Configuracion
 #Region "Eventos"
 
         Private Sub timValidar_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles timValidar.Tick
-            btnAceptar.Enabled = _usuario.IsValid(_action)
+            btnAceptar.Enabled = _usuario.IsValid()
         End Sub
 
 #End Region
@@ -122,12 +121,10 @@ Namespace Presentacion.Formulario.Configuracion
         Private Sub EditarAgregar(ByVal id As Long)
             If id = -1 Then
                 _usuario = Controller.UsuariosController.NewItem()
-                _action = System.Data.Linq.ChangeAction.Insert
             Else
                 Using c As New Controller.UsuariosController()
                     _usuario = c.GetItem(id)
                 End Using
-                _action = System.Data.Linq.ChangeAction.Update
             End If
             UsuarioBindingSource.DataSource = _usuario
             ChequearPermiso(_usuario)
@@ -155,7 +152,6 @@ Namespace Presentacion.Formulario.Configuracion
 
         Private Sub btnCancelar_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
             _usuario = Nothing
-            _action = System.Data.Linq.ChangeAction.None
             SplitPanel2.Collapsed = True
             SplitPanel1.Collapsed = False
             timValidar.Enabled = False
@@ -167,19 +163,21 @@ Namespace Presentacion.Formulario.Configuracion
             Try
                 GuardarPermiso(_usuario)
                 Using control As New UsuariosController()
-                    If _action = System.Data.Linq.ChangeAction.Insert Then
-                        _usuario = control.AddItem(_usuario)
-                        Me.UsuariosBindingSource.Add(_usuario)
-                    ElseIf _action = System.Data.Linq.ChangeAction.Update Then
-                        _usuario = control.UpdateItem(_usuario)
-                    Else
-                        Exit Sub
-                    End If
+                    'If _action = System.Data.Linq.ChangeAction.Insert Then
+                    '    _usuario = control.AddItem(_usuario)
+                    '    Me.UsuariosBindingSource.Add(_usuario)
+                    'ElseIf _action = System.Data.Linq.ChangeAction.Update Then
+                    '    _usuario = control.UpdateItem(_usuario)
+                    'Else
+                    '    Exit Sub
+                    'End If
+                    Dim esNuevo As Boolean = _usuario.LINQEntityState = EntityState.New
+                    _usuario = control.SaveItem(_usuario)
+                    If esNuevo Then Me.UsuariosBindingSource.Add(_usuario)
                 End Using
 
                 UpdateSelectGridRow(gridDatos, _usuario)
-                
-                _action = System.Data.Linq.ChangeAction.None
+
                 SplitPanel2.Collapsed = True
                 SplitPanel1.Collapsed = False
                 timValidar.Enabled = False
@@ -189,7 +187,7 @@ Namespace Presentacion.Formulario.Configuracion
                     If Not String.Equals(_usuario.Apariencia, gUsuario.Apariencia, StringComparison.OrdinalIgnoreCase) Then
                         AsignarTemaAplicacion(_usuario.Apariencia)
                     End If
-                    _usuario.Clone(gUsuario)
+                    gUsuario = DirectCast(_usuario.ShallowCopy(), Usuarios)
                 End If
             Catch ex As Exception
                 MostrarMensaje(Me.Text, My.Resources.Application.ErrorActualizarDatos, ex, Telerik.WinControls.RadMessageIcon.Exclamation)

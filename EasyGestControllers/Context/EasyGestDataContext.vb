@@ -1,5 +1,6 @@
 ﻿Imports System.ComponentModel
 Imports System.Data.Linq
+Imports System.Runtime.Serialization
 
 Namespace Data.Entity
 
@@ -1395,46 +1396,38 @@ Namespace Data.Entity
     End Class
 
     Partial Class Ubicaciones
+        Inherits LINQEntityBase
 
         Private Sub OnCreated()
-
+            _idUbicacion = Math.Abs(Now().Ticks - Util.Comunes.FECHA_REFERENCIA.Ticks) * -1
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Or action = ChangeAction.Insert Then
+        Public Overrides Function IsValid() As Boolean
+            If Me.LINQEntityState = EntityState.New Or Me.LINQEntityState = EntityState.Modified Then
                 Return Not String.IsNullOrWhiteSpace(_Ubicacion)
-            ElseIf action = ChangeAction.Delete Then
-                Return True
-            Else
-                Return True
             End If
+            Return True
         End Function
 
     End Class
 
     Partial Class Usuarios
-        Inherits BaseDataEntity
+        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _Activo = True
             _FCreacion = Today
             _IdiomaPreferente = "ES"
             _TamañoGrid = 0
-            _idUsuario = Now().Ticks - Util.Comunes.FECHA_REFERENCIA.Ticks
+            _idUsuario = Math.Abs(Now().Ticks - Util.Comunes.FECHA_REFERENCIA.Ticks) * -1
         End Sub
 
-        Private Sub OnLoaded()
-            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
-        End Sub
-
-        Public Overrides Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Or action = ChangeAction.Insert Then
+        Public Overrides Function IsValid() As Boolean
+            If Me.LINQEntityState = EntityState.New Or Me.LINQEntityState = EntityState.Modified Then
                 Return Not String.IsNullOrWhiteSpace(_Nombre) And Not String.IsNullOrWhiteSpace(_NombreSesion) And Not String.IsNullOrWhiteSpace(_Contraseña)
-            ElseIf action = ChangeAction.Delete Then
-                Return True
-            Else
-                Return True
             End If
+            Return True
+
         End Function
 
         Public Function IsSuper() As Boolean
@@ -1444,29 +1437,27 @@ Namespace Data.Entity
     End Class
 
     Partial Class Vales
+        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _Activo = True
             _FEmision = Now()
             _ObtenidoXFidelizacion = False
+            _idVale = Math.Abs(Now().Ticks - Util.Comunes.FECHA_REFERENCIA.Ticks) * -1
         End Sub
 
+        <DataMember()>
         Public ReadOnly Property Caducado As Boolean
             Get
                 Return _FValidez.HasValue AndAlso _FValidez.Value.CompareTo(Today()) < 0
             End Get
         End Property
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Then
-                Return True
-            ElseIf action = ChangeAction.Insert Then
-                Return True
-            ElseIf action = ChangeAction.Delete Then
-                Return True
-            Else
-                Return True
+        Public Overrides Function IsValid() As Boolean
+            If Me.LINQEntityState = EntityState.New Or Me.LINQEntityState = EntityState.Modified Then
+                Return _Importe >= 0.0F
             End If
+            Return True
         End Function
 
         Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
@@ -1488,6 +1479,7 @@ Namespace Data.Entity
 #End Region
 
 #Region "Vistas"
+
 
     Partial Class VWAlbaranes
 
@@ -1889,7 +1881,6 @@ Namespace Data.Context
             ctx.Dispose()
             Return dbExiste
         End Function
-
 
     End Class
 
