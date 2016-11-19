@@ -49,6 +49,7 @@ Namespace Data.Entity
 
 #Region "Tablas"
     Partial Class Albaranes
+        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _FCreacion = Now()

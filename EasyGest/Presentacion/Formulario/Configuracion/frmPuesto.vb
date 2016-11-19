@@ -83,7 +83,7 @@ Namespace Presentacion.Formulario.Configuracion
             Dim cell As GridCommandCellElement = TryCast(sender, GridCommandCellElement)
             Dim puesto As Puestos = DirectCast(cell.RowInfo.DataBoundItem, Puestos)
             Using c As New PuestosController
-                c.ResetItem(puesto)
+                c.ResfreshItem(puesto)
             End Using
             cell.RowInfo.InvalidateRow()
 

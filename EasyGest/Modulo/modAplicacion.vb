@@ -132,27 +132,6 @@ Namespace Modulo
             Return String.Concat(cadena.ConnectionString, IIf(String.IsNullOrWhiteSpace(otros), "", ";" & otros))
         End Function
 
-        'Public Function ProbarConexion(cadena As String) As Boolean
-        '    Dim conexion As SqlClient.SqlConnection = Nothing
-        '    Dim resultado As Boolean = False
-        '    Try
-        '        conexion = New SqlConnection(cadena)
-        '        conexion.Open()
-        '        resultado = True
-        '    Catch ex As Exception
-        '    Finally
-        '        If Not IsNothing(conexion) Then
-        '            If (conexion.State And ConnectionState.Open) = ConnectionState.Open Then
-        '                conexion.Close()
-        '            End If
-        '            conexion.Dispose()
-        '            conexion = Nothing
-        '        End If
-        '    End Try
-
-        '    Return resultado
-        'End Function
-
         Public Sub ActivarDesactivarControles(activo As Boolean, ByVal ParamArray controles As Control())
             For Each c As Control In controles
                 c.Enabled = activo

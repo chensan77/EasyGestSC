@@ -43,8 +43,8 @@ Module modVarios
     '    Return res
     'End Function
 
-    <System.Runtime.CompilerServices.Extension()> _
-    Public Function ConvertToEntitySet(Of T As Class)(ByVal source As IEnumerable(Of T)) As System.Data.Linq.EntitySet(Of T)
+    <System.Runtime.CompilerServices.Extension()>
+    Public Function ConvertToEntitySet(Of T As Data.Entity.LINQEntityBase)(ByVal source As IEnumerable(Of T)) As System.Data.Linq.EntitySet(Of T)
         Dim entidad As New System.Data.Linq.EntitySet(Of T)()
         If source IsNot Nothing Then
             entidad.AddRange(source)
@@ -90,8 +90,8 @@ Module modVarios
     '    Next
     'End Sub
 
-    <Extension()> _
-      Public Function Where(Of T)(ByVal source As IQueryable(Of T), ByVal predicate As String, ByVal ParamArray values() As Object) As IQueryable(Of T)
+    <Extension()>
+    Public Function Where(Of T)(ByVal source As IQueryable(Of T), ByVal predicate As String, ByVal ParamArray values() As Object) As IQueryable(Of T)
         Return DirectCast(Where(DirectCast(source, IQueryable), predicate, values), IQueryable(Of T))
     End Function
 

@@ -456,7 +456,7 @@ Namespace Data.Entity
         ''' Gets/Sets whether this entity has a change tracking root.
         ''' </summary>
         <DataMember(Order:=3)>
-        Private Property LINQEntityKeepOriginal() As Boolean
+        Friend Property LINQEntityKeepOriginal() As Boolean
             Get
                 Return _isKeepOriginal
             End Get
@@ -469,7 +469,7 @@ Namespace Data.Entity
         ''' Gets/Sets the original entity value before any changes
         ''' </summary>
         <DataMember(Order:=4)>
-        Private Property LINQEntityOriginalValue() As LINQEntityBase
+        Friend Property LINQEntityOriginalValue() As LINQEntityBase
             Get
                 Return _originalEntityValue
             End Get
@@ -859,7 +859,6 @@ Namespace Data.Entity
             If Me.LINQEntityState = EntityState.NotTracked Then
                 Throw New ApplicationException("You cannot change the Entity State when the Entity is not change tracked")
             End If
-
 
             LINQEntityState = EntityState.[New]
         End Sub
