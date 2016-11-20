@@ -131,6 +131,7 @@
     <Compile Include="Class\Comunes.vb" />
     <Compile Include="Class\Dynamic.vb" />
     <Compile Include="Class\EntidadesAuxiliares.vb" />
+    <Compile Include="Module\modAplicacion.vb" />
     <Compile Include="Module\modVarios.vb" />
     <Compile Include="Context\EasyGestDataContext.designer.vb">
       <AutoGen>True</AutoGen>

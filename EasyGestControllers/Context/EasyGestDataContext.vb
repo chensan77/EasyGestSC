@@ -211,28 +211,6 @@ Namespace Data.Entity
         End Sub
     End Class
 
-    'Partial Class Cobros
-
-    '    Private Sub OnCreated()
-    '        _AutoInsertado = False
-    '        _idModo = ModoPagoEnum.Metalico
-    '        _FCobro = Now()
-    '    End Sub
-
-    '    Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-    '        If action = ChangeAction.Update Then
-    '            Return True
-    '        ElseIf action = ChangeAction.Insert Then
-    '            Return True
-    '        ElseIf action = ChangeAction.Delete Then
-    '            Return True
-    '        Else
-    '            Return True
-    '        End If
-    '    End Function
-
-    'End Class
-
     Partial Class CodigosBarra
         Inherits LINQEntityBase
 
@@ -511,6 +489,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class Facturas
+        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _FCreacion = Now()
@@ -518,31 +497,18 @@ Namespace Data.Entity
             _SerieFactura = ""
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Then
-                Return True
-            ElseIf action = ChangeAction.Insert Then
-                Return True
-            ElseIf action = ChangeAction.Delete Then
-                Return True
-            Else
-                Return True
-            End If
-        End Function
-
     End Class
 
     Partial Class Familias
+        Inherits LINQEntityBase
 
         Private Sub OnCreated()
 
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Or action = ChangeAction.Insert Then
+        Public Overrides Function IsValid() As Boolean
+            If Me.LINQEntityState = EntityState.New Or Me.LINQEntityState = EntityState.Modified Then
                 Return Not String.IsNullOrWhiteSpace(_Familia)
-            ElseIf action = ChangeAction.Delete Then
-                Return True
             Else
                 Return True
             End If
@@ -551,10 +517,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class FormasContacto
-
-        Private Sub OnCreated()
-
-        End Sub
+        Inherits LINQEntityBase
 
         Public ReadOnly Property FormaContacto() As String
             Get
@@ -569,68 +532,31 @@ Namespace Data.Entity
     End Class
 
     Partial Class Galerias
-
+        Inherits LINQEntityBase
         Public Sub New(idProducto As Long)
             Me.New()
             _idProducto = idProducto
         End Sub
 
-        Private Sub OnCreated()
-
-        End Sub
-
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Then
-                Return True
-            ElseIf action = ChangeAction.Insert Then
-                Return True
-            ElseIf action = ChangeAction.Delete Then
-                Return True
-            Else
-                Return True
-            End If
-        End Function
-
     End Class
 
     Partial Class Impuestos
-
-        Private Sub OnCreated()
-
-        End Sub
-
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Then
-                Return True
-            ElseIf action = ChangeAction.Insert Then
-                Return True
-            ElseIf action = ChangeAction.Delete Then
-                Return True
-            Else
-                Return True
-            End If
-        End Function
+        Inherits LINQEntityBase
 
     End Class
 
     Partial Class LineasAlbaran
+        Inherits LINQEntityBase
 
-        'Private _fechaRefer As New Date(2000, 1, 1)
-
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Then
-                Return True
-            ElseIf action = ChangeAction.Insert Then
-                Return True
-            ElseIf action = ChangeAction.Delete Then
-                Return True
-            Else
-                Return True
-            End If
-        End Function
+        Public ReadOnly Property ImporteDescuento As Single
+            Get
+                Dim precioDesc As Single = IIf(DescuentoEnPrecioFinal, _PrecioFinal, _Precio)
+                Return _Cantidad * precioDesc * (_Descuento / 100.0F)
+            End Get
+        End Property
 
         Private Sub OnCreated()
-            _idLinea = Now.Ticks - Util.Comunes.FECHA_REFERENCIA.Ticks
+            _idLinea = Util.Comunes.FECHA_REFERENCIA.Ticks - Now.Ticks
             _idProducto = Nothing
             _DescripcionProducto = Nothing
             _Descuento = 0.0F
@@ -639,8 +565,16 @@ Namespace Data.Entity
             _Cantidad = 1.0F
         End Sub
 
+        Private Sub RecalcularPrecioFinal()
+            Dim imp As Single = 0.0F, re As Single = 0.0F
+            If _Impuesto.HasValue Then imp = _Impuesto.Value
+            If _Recargo.HasValue Then re = _Recargo.Value
+            _PrecioFinal = _Precio * (1.0F + imp + re)
+            RecalcularImporte()
+        End Sub
+
         Private Sub RecalcularImporte()
-            _Importe = _Cantidad * _Precio * (1.0F - _Descuento / 100.0F)
+            _Importe = _Cantidad * _PrecioFinal - ImporteDescuento
         End Sub
 
         Private Sub OnCantidadChanged()
@@ -652,12 +586,42 @@ Namespace Data.Entity
         End Sub
 
         Private Sub OnPrecioChanged()
+            RecalcularPrecioFinal()
+        End Sub
+
+        Private Sub OnImpuestoChanged()
+            RecalcularPrecioFinal()
+        End Sub
+
+        Private Sub OnRecargoChanged()
+            RecalcularPrecioFinal()
+        End Sub
+
+        Private Sub OnPrecioFinalChanged()
             RecalcularImporte()
         End Sub
+
+        Private ReadOnly Property DescuentoEnPrecioFinal As Boolean
+            Get
+                If IsNothing(gConfGlobal) Then
+                    Return True
+                Else
+                    Return gConfGlobal.DescuentoEnPrecioFinal
+                End If
+            End Get
+        End Property
 
     End Class
 
     Partial Class LineasFactura
+        Inherits LINQEntityBase
+
+        Public ReadOnly Property ImporteDescuento As Single
+            Get
+                Dim precioDesc As Single = IIf(DescuentoEnPrecioFinal, _PrecioFinal, _Precio)
+                Return _Cantidad * precioDesc * (_Descuento / 100.0F)
+            End Get
+        End Property
 
         Private Sub OnCreated()
             _idLinea = Now.Ticks - Util.Comunes.FECHA_REFERENCIA.Ticks
@@ -678,7 +642,7 @@ Namespace Data.Entity
         End Sub
 
         Private Sub RecalcularImporte()
-            _Importe = _Cantidad * _Precio * (1.0F - _Descuento / 100.0F)
+            _Importe = _Cantidad * _PrecioFinal - ImporteDescuento
         End Sub
 
         Private Sub OnCantidadChanged()
@@ -705,17 +669,16 @@ Namespace Data.Entity
             RecalcularPrecioFinal()
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Then
-                Return True
-            ElseIf action = ChangeAction.Insert Then
-                Return True
-            ElseIf action = ChangeAction.Delete Then
-                Return True
-            Else
-                Return True
-            End If
-        End Function
+        Private ReadOnly Property DescuentoEnPrecioFinal As Boolean
+            Get
+                If IsNothing(gConfGlobal) Then
+                    Return True
+                Else
+                    Return gConfGlobal.DescuentoEnPrecioFinal
+                End If
+            End Get
+        End Property
+
     End Class
 
     Partial Class LineasPedido
@@ -723,27 +686,21 @@ Namespace Data.Entity
         Public Property PrecioVenta As Single
         Public Property Referencia As String
 
+        Public ReadOnly Property ImporteDescuento As Single
+            Get
+                Dim precioDesc As Single = IIf(DescuentoEnPrecioFinal, _PrecioFinal, _Precio)
+                Return _Cantidad * precioDesc * (_Descuento / 100.0F)
+            End Get
+        End Property
+
         Private Sub OnCreated()
-            _idLinea = Now.Ticks - Util.Comunes.FECHA_REFERENCIA.Ticks
+            _idLinea = Util.Comunes.FECHA_REFERENCIA.Ticks - Now.Ticks
             _Precio = 0.0F
             _Importe = 0.0F
             _Cantidad = 1.0F
             _PrecioVenta = 0.0F
             _Referencia = ""
         End Sub
-
-
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Then
-                Return True
-            ElseIf action = ChangeAction.Insert Then
-                Return True
-            ElseIf action = ChangeAction.Delete Then
-                Return True
-            Else
-                Return True
-            End If
-        End Function
 
         Private Sub RecalcularPrecioFinal()
             Dim imp As Single = 0.0F, re As Single = 0.0F
@@ -754,7 +711,7 @@ Namespace Data.Entity
         End Sub
 
         Private Sub RecalcularImporte()
-            _Importe = _Cantidad * _PrecioFinal * (1.0F - _Descuento / 100.0F)
+            _Importe = _Cantidad * _PrecioFinal - ImporteDescuento
         End Sub
 
         Private Sub OnPrecioChanged()
@@ -780,6 +737,17 @@ Namespace Data.Entity
         Private Sub OnImpuestoChanged()
             RecalcularPrecioFinal()
         End Sub
+
+        Private ReadOnly Property DescuentoEnPrecioFinal As Boolean
+            Get
+                If IsNothing(gConfGlobal) Then
+                    Return True
+                Else
+                    Return gConfGlobal.DescuentoEnPrecioFinal
+                End If
+            End Get
+        End Property
+
     End Class
 
     Partial Class ListasCompra

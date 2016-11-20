@@ -11,15 +11,8 @@ Namespace Modulo
         Private ReadOnly gBorderFocusedColor As Color = Color.FromArgb(47, 82, 139)
         Private ReadOnly gBorderColor As Color = Color.FromArgb(156, 189, 232)
 
-        Public gCadenaConexion As String = ""
         Public gMostrarConfiguracionConexion As Boolean = False
         Public gMostrarSelectorEmpresas As Boolean = False
-        Public gConfLocal As New EasyGestControllers.Data.Configuracion.ConfiguracionLocal()
-        Public gConfGlobal As New EasyGestControllers.Data.Configuracion.ConfiguracionGlobal()
-        Public gPuesto As EasyGestControllers.Data.Entity.Puestos = Nothing
-        Public gEmpresa As EasyGestControllers.Data.Entity.Empresas = Nothing
-        Public gDiario As EasyGestControllers.Data.Entity.Diarios = Nothing
-        Public gUsuario As EasyGestControllers.Data.Entity.Usuarios = Nothing
         Public gIsChinese As Boolean = False
         Public gDefaultFont, gDefaultSmallerFont, gDefaultBiggerFont As Font
         Public ReadOnly gCBForeColor As Color = Color.FromArgb(0, 197, 45)
@@ -28,7 +21,6 @@ Namespace Modulo
         Public cLog As New General.Logs(My.Application.Info.DirectoryPath & "\logs", "EasyGest_")
         Public gChineseInputLanguage As InputLanguage = InputLanguage.DefaultInputLanguage
 
-        Public Const SQLERRORNUMBER_DUPLICATEINDEX As Integer = 2601
         Public Const CARACTERSEPARADOR As Char = ";"c
 
         Public Delegate Function GetApplicationCultureCallBack(f As Form) As System.Globalization.CultureInfo
