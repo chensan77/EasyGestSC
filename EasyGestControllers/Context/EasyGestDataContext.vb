@@ -60,16 +60,6 @@ Namespace Data.Entity
             _SerieAlbaran = ""
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update And Not action = ChangeAction.Delete Then
-                Return True
-            ElseIf action = ChangeAction.Delete Then
-                Return True
-            Else
-                Return True
-            End If
-        End Function
-
         Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
             If _idUsuarioEmitido.HasValue AndAlso _idUsuarioEmitido.Value = EasyGestControllers.Data.Context.EasyGestDataContext.IDUSUARIOSUPER Then
                 _idUsuarioEmitido = Nothing
@@ -79,6 +69,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class ApuntesDiario
+        Inherits LINQEntityBase
 
         Public Property EsEntrada As Boolean = True
 
@@ -86,11 +77,9 @@ Namespace Data.Entity
             _Importe = 0.0
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Or action = ChangeAction.Insert Then
+        Public Overrides Function IsValid() As Boolean
+            If Me.LINQEntityState = EntityState.[New] Or Me.LINQEntityState = EntityState.Modified Then
                 Return Not String.IsNullOrWhiteSpace(_Concepto)
-            ElseIf action = ChangeAction.Delete Then
-                Return True
             Else
                 Return True
             End If
@@ -104,7 +93,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class CaracteristicasProducto
-
+        Inherits LINQEntityBase
         Public Sub New(idProducto As Long)
             Me.New()
             _idProducto = idProducto
@@ -113,18 +102,6 @@ Namespace Data.Entity
         Private Sub OnCreated()
             _Valor = ""
         End Sub
-
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Then
-                Return True
-            ElseIf action = ChangeAction.Insert Then
-                Return True
-            ElseIf action = ChangeAction.Delete Then
-                Return True
-            Else
-                Return True
-            End If
-        End Function
 
         Public ReadOnly Property NombrePropiedad() As String
             Get
@@ -186,7 +163,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class Clientes
-        Inherits BaseDataEntity
+        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _Activo = True
@@ -196,11 +173,6 @@ Namespace Data.Entity
             _Pais = "ESPAÑA"
             _AplicableImpIndirecto = True
         End Sub
-
-        Private Sub OnLoaded()
-            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
-        End Sub
-
 
         Public ReadOnly Property Numero() As String
             Get
@@ -218,11 +190,9 @@ Namespace Data.Entity
             End Get
         End Property
 
-        Public Overrides Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Or action = ChangeAction.Insert Then
+        Public Overrides Function IsValid() As Boolean
+            If Me.LINQEntityState = EntityState.[New] Or Me.LINQEntityState = EntityState.Modified Then
                 Return Not String.IsNullOrWhiteSpace(_Nombre) And Not String.IsNullOrWhiteSpace(_Codigo)
-            ElseIf action = ChangeAction.Delete Then
-                Return True
             Else
                 Return True
             End If
@@ -264,6 +234,7 @@ Namespace Data.Entity
     'End Class
 
     Partial Class CodigosBarra
+        Inherits LINQEntityBase
 
         Public Sub New(idProducto As Long)
             Me.New()
@@ -274,22 +245,10 @@ Namespace Data.Entity
 
         End Sub
 
-        'Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-        '    If action = ChangeAction.Update Then
-        '        Return True
-        '    ElseIf action = ChangeAction.Insert Then
-        '        Return True
-        '    ElseIf action = ChangeAction.Delete Then
-        '        Return True
-        '    Else
-        '        Return True
-        '    End If
-        'End Function
-
     End Class
 
     Partial Class Contactos
-        Inherits BaseDataEntity
+        Inherits LINQEntityBase
 
         Public Const TIPO_PROPIETARIO_CLIENTE As Char = "C"c
         Public Const TIPO_PROPIETARIO_PROVEEDOR As Char = "P"c
@@ -297,10 +256,6 @@ Namespace Data.Entity
         Private Sub OnCreated()
             _TipoPropietario = Microsoft.VisualBasic.ControlChars.NullChar
             _idPropietario = 0
-        End Sub
-
-        Private Sub OnLoaded()
-            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
         End Sub
 
         Private Sub OnValidate(ByVal action As System.Data.Linq.ChangeAction)
@@ -310,12 +265,10 @@ Namespace Data.Entity
             End Select
         End Sub
 
-        Public Overrides Function IsValid(action As ChangeAction) As Boolean
-            If action = ChangeAction.Update Or action = ChangeAction.Insert Then
+        Public Overrides Function IsValid() As Boolean
+            If Me.LINQEntityState = EntityState.[New] Or Me.LINQEntityState = EntityState.Modified Then
                 Return Not String.IsNullOrWhiteSpace(_DatoContacto) And _idPropietario > 0 And (_TipoPropietario.Equals(TIPO_PROPIETARIO_CLIENTE) Or
                     _TipoPropietario.Equals(TIPO_PROPIETARIO_PROVEEDOR))
-            ElseIf action = ChangeAction.Delete Then
-                Return True
             Else
                 Return True
             End If
@@ -323,7 +276,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class DatosBancario
-        Inherits BaseDataEntity
+        Inherits LINQEntityBase
 
         Public Const TIPO_PROPIETARIO_CLIENTE As Char = "C"c
         Public Const TIPO_PROPIETARIO_PROVEEDOR As Char = "P"c
@@ -333,12 +286,8 @@ Namespace Data.Entity
             _idPropietario = 0
         End Sub
 
-        Private Sub OnLoaded()
-            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
-        End Sub
-
-        Public Overrides Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Or action = ChangeAction.Insert Then
+        Public Overrides Function IsValid() As Boolean
+            If Me.LINQEntityState = EntityState.[New] Or Me.LINQEntityState = EntityState.Modified Then
                 Return Not String.IsNullOrWhiteSpace(_Banco) And Not String.IsNullOrWhiteSpace(_CCC) And _idPropietario > 0 And (_TipoPropietario.Equals(TIPO_PROPIETARIO_CLIENTE) Or
                     _TipoPropietario.Equals(TIPO_PROPIETARIO_PROVEEDOR))
             Else
@@ -348,28 +297,8 @@ Namespace Data.Entity
 
     End Class
 
-    'Partial Class DeberesProveedor
-
-    '    Private Sub OnCreated()
-    '        _FCreacion = Now()
-    '        _Pagado = 0.0F
-    '    End Sub
-
-    '    Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-    '        If action = ChangeAction.Update Then
-    '            Return True
-    '        ElseIf action = ChangeAction.Insert Then
-    '            Return True
-    '        ElseIf action = ChangeAction.Delete Then
-    '            Return True
-    '        Else
-    '            Return True
-    '        End If
-    '    End Function
-
-    'End Class
-
     Partial Class Diarios
+        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _Apertura = Now()
@@ -393,16 +322,6 @@ Namespace Data.Entity
             End Get
         End Property
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Or ChangeAction.Insert Then
-                Return True
-            ElseIf action = ChangeAction.Delete Then
-                Return True
-            Else
-                Return True
-            End If
-        End Function
-
         Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
             If _idUsuario.HasValue() AndAlso _idUsuario.Value = EasyGestControllers.Data.Context.EasyGestDataContext.IDUSUARIOSUPER Then
                 _idUsuario = Nothing
@@ -411,22 +330,16 @@ Namespace Data.Entity
     End Class
 
     Partial Class DiseñosEtiqueta
-        Inherits BaseDataEntity
+        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _idEtiqueta = 0
             _XMLDiseño = Nothing
         End Sub
 
-        Private Sub OnLoaded()
-            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
-        End Sub
-
-        Public Overrides Function IsValid(ByVal action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Or action = ChangeAction.Insert Then
+        Public Overrides Function IsValid() As Boolean
+            If Me.LINQEntityState = EntityState.[New] Or Me.LINQEntityState = EntityState.Modified Then
                 Return Not String.IsNullOrWhiteSpace(Nombre) And (TipoEtiqueta.Equals(Etiquetas.TIPO_ETIQUETA_ENHOJA) Or TipoEtiqueta.Equals(Etiquetas.TIPO_ETIQUETA_ENROLLO))
-            ElseIf action = ChangeAction.Delete Then
-                Return True
             Else
                 Return True
             End If
@@ -452,6 +365,7 @@ Namespace Data.Entity
     End Class
 
     Partial Class Empresas
+        Inherits LINQEntityBase
 
         Public Const FormatoNumeracionNumero As String = "n"
         Public Const FormatoNumeracionAño As String = "a"
@@ -465,11 +379,9 @@ Namespace Data.Entity
             _Series = ""
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Or action = ChangeAction.Insert Then
+        Public Overrides Function IsValid() As Boolean
+            If Me.LINQEntityState = EntityState.[New] Or Me.LINQEntityState = EntityState.Modified Then
                 Return Not String.IsNullOrWhiteSpace(_NIF) And Not String.IsNullOrWhiteSpace(_Empresa)
-            ElseIf action = ChangeAction.Delete Then
-                Return True
             Else
                 Return True
             End If
@@ -524,16 +436,15 @@ Namespace Data.Entity
     End Class
 
     Partial Class Encargos
+        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _FechaEncargo = Today()
         End Sub
 
-        Public Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
-            If action = ChangeAction.Update Or action = ChangeAction.Insert Then
+        Public Overrides Function IsValid() As Boolean
+            If Me.LINQEntityState = EntityState.[New] Or Me.LINQEntityState = EntityState.Modified Then
                 Return Not String.IsNullOrWhiteSpace(_Descripcion) And Not String.IsNullOrWhiteSpace(_Cliente) And Not String.IsNullOrWhiteSpace(_Telefono)
-            ElseIf action = ChangeAction.Delete Then
-                Return True
             Else
                 Return True
             End If
@@ -542,23 +453,17 @@ Namespace Data.Entity
     End Class
 
     Partial Class EtiquetasEnHoja
-        Inherits BaseDataEntity
+        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _idEtiqueta = Now().Ticks - Util.Comunes.FECHA_REFERENCIA.Ticks
         End Sub
 
-        Private Sub OnLoaded()
-            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
-        End Sub
-
-        Public Overrides Function IsValid(action As ChangeAction) As Boolean
-            If action = ChangeAction.Update Or action = ChangeAction.Insert Then
+        Public Overrides Function IsValid() As Boolean
+            If Me.LINQEntityState = EntityState.[New] Or Me.LINQEntityState = EntityState.Modified Then
                 Return _MargenDer >= 0.0 And _MargenInf >= 0.0 And _MargenIzq >= 0.0 And
                     _MargenSup >= 0.0 And _Alto > 0.0 And _Ancho > 0.0 And _Columnas > 0.0 And _Filas > 0.0 And
                     _EspacioH >= 0.0 And _EspacioV >= 0.0 And Not String.IsNullOrWhiteSpace(_Referencia)
-            ElseIf action = ChangeAction.Delete Then
-                Return True
             Else
                 Return True
             End If
@@ -582,22 +487,17 @@ Namespace Data.Entity
     End Class
 
     Partial Class EtiquetasEnRollo
-        Inherits BaseDataEntity
+        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _idEtiqueta = Now().Ticks - Util.Comunes.FECHA_REFERENCIA.Ticks
         End Sub
 
-        Private Sub OnLoaded()
-            AddHandler Me.PropertyChanged, AddressOf MyBase.OnPropertyChaged
-        End Sub
 
-        Public Overrides Function IsValid(action As System.Data.Linq.ChangeAction) As Boolean
+        Public Overrides Function IsValid() As Boolean
             Dim unidades As String() = New String() {"CM", "INCH", "POINT"}
-            If action = ChangeAction.Update Or action = ChangeAction.Insert Then
+            If Me.LINQEntityState = EntityState.[New] Or Me.LINQEntityState = EntityState.Modified Then
                 Return _Alto > 0.0 And _Ancho > 0.0 And Not String.IsNullOrWhiteSpace(_Referencia) And unidades.Contains(_UnidadMedida)
-            ElseIf action = ChangeAction.Delete Then
-                Return True
             Else
                 Return True
             End If
