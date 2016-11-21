@@ -5,10 +5,6 @@ Imports System.Net
 Namespace Util
     Public Class Comunes
 
-        Public Const FECHA_REFERENCIA As Date = #1/1/2016#
-
-        Private Shared _Conexion As String = String.Empty
-
         Public Shared Function Nothing2EmptyText(ByVal obj As Object) As Object
             If obj Is Nothing Then
                 Return String.Empty
@@ -38,17 +34,8 @@ Namespace Util
         End Sub
 
 
-        Protected Friend Shared Property CadenaConexion As String
-            Get
-                Return _Conexion
-            End Get
-            Set(value As String)
-                _Conexion = value
-            End Set
-        End Property
-
         Public Shared Function EjecutarComandoBD(ByVal comando As String, ByVal tipo As System.Data.CommandType, Optional ByVal params() As SqlClient.SqlParameter = Nothing) As Integer
-            Dim _con As New System.Data.SqlClient.SqlConnection(_Conexion)
+            Dim _con As New System.Data.SqlClient.SqlConnection(gCadenaConexion)
             Dim _com As New System.Data.SqlClient.SqlCommand(comando, _con)
             Dim returnvalue As Integer = -1
             _com.CommandType = tipo

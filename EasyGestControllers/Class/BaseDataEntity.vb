@@ -241,13 +241,9 @@ Namespace Data.Entity
 
             _cacheAssociationProperties = New Dictionary(Of Type, Dictionary(Of String, PropertyInfo))()
 
-
             _cacheAssociationFKProperties = New Dictionary(Of Type, Dictionary(Of String, PropertyInfo))()
 
-
             _cacheDBGeneratedProperties = New Dictionary(Of Type, Dictionary(Of String, PropertyInfo))()
-
-
 
             For Each type As Type In GetKnownTypes()
                 _cacheAssociationProperties.Add(type, New Dictionary(Of String, PropertyInfo)())
@@ -359,6 +355,7 @@ Namespace Data.Entity
                 Return
             End If
 
+            If [ReadOnly] Then Return
             ' Do a check here to make sure that the entity is not change if it is supposed to be deleted
             If Me.LINQEntityState = EntityState.Deleted OrElse Me.LINQEntityState = EntityState.CancelNew Then
                 Return 'Throw New ApplicationException("You cannot modify a deleted entity")
@@ -477,6 +474,8 @@ Namespace Data.Entity
                 _originalEntityValue = Value
             End Set
         End Property
+
+        Friend Property [ReadOnly] As Boolean = False
 
         ''' <summary>
         ''' Gets/Sets the entities which have been detached.
