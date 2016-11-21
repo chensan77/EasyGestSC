@@ -206,10 +206,10 @@
         <elementListCompartment Id="b889b757-a034-48f3-a7b6-fc890ed0b4bf" absoluteBounds="0.51499999999999968, 8.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="cbb9727f-9a6c-4ab0-99c4-7eca3e502535" absoluteBounds="7.375, 7.375, 2, 2.5401025390625005">
+    <classShape Id="cbb9727f-9a6c-4ab0-99c4-7eca3e502535" absoluteBounds="7.5, 7.375, 2, 2.5401025390625005">
       <DataClassMoniker Name="/EasyGestDataContext/Diarios" />
       <nestedChildShapes>
-        <elementListCompartment Id="070d40f4-ac96-4a05-b789-cf54bc8f86e9" absoluteBounds="7.39, 7.8350000000000009, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="070d40f4-ac96-4a05-b789-cf54bc8f86e9" absoluteBounds="7.515, 7.8350000000000009, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <classShape Id="776f8485-374c-4c91-aee1-b5b31b497fe4" isExpanded="false" absoluteBounds="10.375, 5, 2, 0.45">
@@ -272,10 +272,10 @@
         <elementListCompartment Id="9035ef4f-3cc8-40e2-8ff9-20faf6eb0e95" absoluteBounds="3.1399999999999997, 8.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="f731aef2-c4a4-4796-b62a-ba3535394198" isExpanded="false" absoluteBounds="0.625, 8.875, 2, 0.45">
+    <classShape Id="f731aef2-c4a4-4796-b62a-ba3535394198" isExpanded="false" absoluteBounds="0.5, 9, 2, 0.45">
       <DataClassMoniker Name="/EasyGestDataContext/TiposDatoCaractProducto" />
       <nestedChildShapes>
-        <elementListCompartment Id="df493cb4-7243-4171-b91a-fe2fffd786a2" absoluteBounds="0.64000000000000057, 9.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="df493cb4-7243-4171-b91a-fe2fffd786a2" absoluteBounds="0.51500000000000057, 9.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <classShape Id="f43a6172-744f-4c3b-a78e-b0572c7c9f95" isExpanded="false" absoluteBounds="0.5, 0.5, 2, 0.45">
@@ -326,7 +326,7 @@
         <elementListCompartment Id="b903a446-2726-4463-84b8-0b12ed087b8a" absoluteBounds="0.51500000000000012, 4.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="2b065132-a5d7-4fa1-8bfc-412c1548ee75" isExpanded="false" absoluteBounds="7.5, 3.125, 2, 0.45">
+    <classShape Id="2b065132-a5d7-4fa1-8bfc-412c1548ee75" absoluteBounds="7.5, 3.125, 2, 2.3478011067708326">
       <DataClassMoniker Name="/EasyGestDataContext/LineasImpuestoAlbaran" />
       <nestedChildShapes>
         <elementListCompartment Id="b38d7ae8-d1fe-4885-93ae-9dab430001fa" absoluteBounds="7.5150000000000006, 3.5850000000000009, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
@@ -338,7 +338,7 @@
         <elementListCompartment Id="7bc4c057-357f-4611-a526-0dd926792cf2" absoluteBounds="3.0149999999999997, 8.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(8.5 : 2.825); (8.5 : 3.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(8.5 : 2.825); (8.5 : 3.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/EasyGestDataContext/Albaranes/Albaranes_LineasImpuestoAlbaran" />
       <nodes>
         <classShapeMoniker Id="b87f16d5-3158-4cd9-8ece-7bdcd441dbe1" />
