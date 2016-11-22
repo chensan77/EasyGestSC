@@ -812,7 +812,7 @@
       <Column Name="ImporteImpuesto" Type="System.Single" DbType="Real" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="ImporteRecargo" Type="System.Single" DbType="Real" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="Total" Type="System.Single" DbType="Real" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
-      <Association Name="Albaranes_LineasImpuestoAlbaran" Member="Albaranes" ThisKey="idAlbaran" OtherKey="idAlbaran" Type="Albaranes" IsForeignKey="true" />
+      <Association Name="Albaranes_LineasImpuestoAlbaran" Member="Albaran" ThisKey="idAlbaran" OtherKey="idAlbaran" Type="Albaranes" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.LineasImpuestoFactura" Member="LineasImpuestoFactura">
@@ -825,7 +825,7 @@
       <Column Name="ImporteImpuesto" Type="System.Single" DbType="Real" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="ImporteRecargo" Type="System.Single" DbType="Real" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="Total" Type="System.Single" DbType="Real" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
-      <Association Name="Facturas_LineasImpuestoFactura" Member="Facturas" ThisKey="idFactura" OtherKey="idFactura" Type="Facturas" IsForeignKey="true" />
+      <Association Name="Facturas_LineasImpuestoFactura" Member="Factura" Storage="_Facturas" ThisKey="idFactura" OtherKey="idFactura" Type="Facturas" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Proveedores" Member="Proveedores">
@@ -866,7 +866,7 @@
       <Column Name="Impuesto" Type="System.Single" DbType="Real" CanBeNull="true" />
       <Column Name="Recargo" Type="System.Single" DbType="Real" CanBeNull="true" />
       <Column Name="PrecioFinal" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Association Name="Facturas_LineasFactura" Member="Facturas" ThisKey="idFactura" OtherKey="idFactura" Type="Facturas" IsForeignKey="true" />
+      <Association Name="Facturas_LineasFactura" Member="Factura" Storage="_Facturas" ThisKey="idFactura" OtherKey="idFactura" Type="Facturas" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.LineasAlbaran" Member="LineasAlbaran">
@@ -882,7 +882,7 @@
       <Column Name="Impuesto" Type="System.Single" DbType="Real" CanBeNull="true" />
       <Column Name="Recargo" Type="System.Single" DbType="Real" CanBeNull="true" />
       <Column Name="PrecioFinal" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Association Name="Albaranes_LineasAlbaran" Member="Albaranes" ThisKey="idAlbaran" OtherKey="idAlbaran" Type="Albaranes" IsForeignKey="true" />
+      <Association Name="Albaranes_LineasAlbaran" Member="Albaran" ThisKey="idAlbaran" OtherKey="idAlbaran" Type="Albaranes" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.LineasPedido" Member="LineasPedido">
@@ -951,7 +951,7 @@
       <Column Name="Parametro" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Valor" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="idEmpresa" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
-      <Association Name="Empresas_Configuraciones" Member="Empresas" ThisKey="idEmpresa" OtherKey="idEmpresa" Type="Empresas" IsForeignKey="true" />
+      <Association Name="Empresas_Configuraciones" Member="Empresa" Storage="_Empresas" ThisKey="idEmpresa" OtherKey="idEmpresa" Type="Empresas" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.DiseñosEtiqueta" Member="DiseñosEtiqueta">

@@ -4984,12 +4984,12 @@ Namespace Data.Entity
 		
 		Private Sub attach_Configuraciones(ByVal entity As Configuraciones)
 			Me.SendPropertyChanging
-			entity.Empresas = Me
+			entity.Empresa = Me
 		End Sub
 		
 		Private Sub detach_Configuraciones(ByVal entity As Configuraciones)
 			Me.SendPropertyChanging
-			entity.Empresas = Nothing
+			entity.Empresa = Nothing
 		End Sub
 		
 		Private Sub Initialize()
@@ -5425,22 +5425,22 @@ Namespace Data.Entity
 		
 		Private Sub attach_LineasImpuestoFactura(ByVal entity As LineasImpuestoFactura)
 			Me.SendPropertyChanging
-			entity.Facturas = Me
+			entity.Factura = Me
 		End Sub
 		
 		Private Sub detach_LineasImpuestoFactura(ByVal entity As LineasImpuestoFactura)
 			Me.SendPropertyChanging
-			entity.Facturas = Nothing
+			entity.Factura = Nothing
 		End Sub
 		
 		Private Sub attach_LineasFactura(ByVal entity As LineasFactura)
 			Me.SendPropertyChanging
-			entity.Facturas = Me
+			entity.Factura = Me
 		End Sub
 		
 		Private Sub detach_LineasFactura(ByVal entity As LineasFactura)
 			Me.SendPropertyChanging
-			entity.Facturas = Nothing
+			entity.Factura = Nothing
 		End Sub
 		
 		Private Sub Initialize()
@@ -8070,22 +8070,22 @@ Namespace Data.Entity
 		
 		Private Sub attach_LineasImpuestoAlbaran(ByVal entity As LineasImpuestoAlbaran)
 			Me.SendPropertyChanging
-			entity.Albaranes = Me
+			entity.Albaran = Me
 		End Sub
 		
 		Private Sub detach_LineasImpuestoAlbaran(ByVal entity As LineasImpuestoAlbaran)
 			Me.SendPropertyChanging
-			entity.Albaranes = Nothing
+			entity.Albaran = Nothing
 		End Sub
 		
 		Private Sub attach_LineasAlbaran(ByVal entity As LineasAlbaran)
 			Me.SendPropertyChanging
-			entity.Albaranes = Me
+			entity.Albaran = Me
 		End Sub
 		
 		Private Sub detach_LineasAlbaran(ByVal entity As LineasAlbaran)
 			Me.SendPropertyChanging
-			entity.Albaranes = Nothing
+			entity.Albaran = Nothing
 		End Sub
 		
 		Private Sub Initialize()
@@ -17403,7 +17403,7 @@ Namespace Data.Entity
 		
 		Private _Total As System.Nullable(Of Single)
 		
-		Private _Albaranes As EntityRef(Of Albaranes)
+		Private _Albaran As EntityRef(Of Albaranes)
 		
     #Region "Definiciones de métodos de extensibilidad"
     Partial Private Sub OnLoaded()
@@ -17478,7 +17478,7 @@ Namespace Data.Entity
 			Set
 				If ((Me._idAlbaran = value)  _
 							= false) Then
-					If Me._Albaranes.HasLoadedOrAssignedValue Then
+					If Me._Albaran.HasLoadedOrAssignedValue Then
 						Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
 					End If
 					Me.OnidAlbaranChanging(value)
@@ -17595,22 +17595,22 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Albaranes_LineasImpuestoAlbaran", Storage:="_Albaranes", ThisKey:="idAlbaran", OtherKey:="idAlbaran", IsForeignKey:=true)>  _
-		Public Property Albaranes() As Albaranes
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Albaranes_LineasImpuestoAlbaran", Storage:="_Albaran", ThisKey:="idAlbaran", OtherKey:="idAlbaran", IsForeignKey:=true)>  _
+		Public Property Albaran() As Albaranes
 			Get
-				Return Me._Albaranes.Entity
+				Return Me._Albaran.Entity
 			End Get
 			Set
-				Dim previousValue As Albaranes = Me._Albaranes.Entity
+				Dim previousValue As Albaranes = Me._Albaran.Entity
 				If ((Object.Equals(previousValue, value) = false)  _
-							OrElse (Me._Albaranes.HasLoadedOrAssignedValue = false)) Then
+							OrElse (Me._Albaran.HasLoadedOrAssignedValue = false)) Then
 					Me.SendPropertyChanging
 					If ((previousValue Is Nothing)  _
 								= false) Then
-						Me._Albaranes.Entity = Nothing
+						Me._Albaran.Entity = Nothing
 						previousValue.LineasImpuestoAlbaran.Remove(Me)
 					End If
-					Me._Albaranes.Entity = value
+					Me._Albaran.Entity = value
 					If ((value Is Nothing)  _
 								= false) Then
 						value.LineasImpuestoAlbaran.Add(Me)
@@ -17618,7 +17618,7 @@ Namespace Data.Entity
 					Else
 						Me._idAlbaran = CType(Nothing, Long)
 					End If
-					Me.SendPropertyChanged("Albaranes")
+					Me.SendPropertyChanged("Albaran")
 				End If
 			End Set
 		End Property
@@ -17642,7 +17642,7 @@ Namespace Data.Entity
 		End Sub
 		
 		Private Sub Initialize()
-			Me._Albaranes = CType(Nothing, EntityRef(Of Albaranes))
+			Me._Albaran = CType(Nothing, EntityRef(Of Albaranes))
 			OnCreated
 		End Sub
 		
@@ -17869,7 +17869,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Facturas_LineasImpuestoFactura", Storage:="_Facturas", ThisKey:="idFactura", OtherKey:="idFactura", IsForeignKey:=true)>  _
-		Public Property Facturas() As Facturas
+		Public Property Factura() As Facturas
 			Get
 				Return Me._Facturas.Entity
 			End Get
@@ -17891,7 +17891,7 @@ Namespace Data.Entity
 					Else
 						Me._idFactura = CType(Nothing, Long)
 					End If
-					Me.SendPropertyChanged("Facturas")
+					Me.SendPropertyChanged("Factura")
 				End If
 			End Set
 		End Property
@@ -18750,7 +18750,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Facturas_LineasFactura", Storage:="_Facturas", ThisKey:="idFactura", OtherKey:="idFactura", IsForeignKey:=true)>  _
-		Public Property Facturas() As Facturas
+		Public Property Factura() As Facturas
 			Get
 				Return Me._Facturas.Entity
 			End Get
@@ -18772,7 +18772,7 @@ Namespace Data.Entity
 					Else
 						Me._idFactura = CType(Nothing, Long)
 					End If
-					Me.SendPropertyChanged("Facturas")
+					Me.SendPropertyChanged("Factura")
 				End If
 			End Set
 		End Property
@@ -18836,7 +18836,7 @@ Namespace Data.Entity
 		
 		Private _PrecioFinal As Single
 		
-		Private _Albaranes As EntityRef(Of Albaranes)
+		Private _Albaran As EntityRef(Of Albaranes)
 		
     #Region "Definiciones de métodos de extensibilidad"
     Partial Private Sub OnLoaded()
@@ -18923,7 +18923,7 @@ Namespace Data.Entity
 			Set
 				If ((Me._idAlbaran = value)  _
 							= false) Then
-					If Me._Albaranes.HasLoadedOrAssignedValue Then
+					If Me._Albaran.HasLoadedOrAssignedValue Then
 						Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
 					End If
 					Me.OnidAlbaranChanging(value)
@@ -19092,22 +19092,22 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Albaranes_LineasAlbaran", Storage:="_Albaranes", ThisKey:="idAlbaran", OtherKey:="idAlbaran", IsForeignKey:=true)>  _
-		Public Property Albaranes() As Albaranes
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Albaranes_LineasAlbaran", Storage:="_Albaran", ThisKey:="idAlbaran", OtherKey:="idAlbaran", IsForeignKey:=true)>  _
+		Public Property Albaran() As Albaranes
 			Get
-				Return Me._Albaranes.Entity
+				Return Me._Albaran.Entity
 			End Get
 			Set
-				Dim previousValue As Albaranes = Me._Albaranes.Entity
+				Dim previousValue As Albaranes = Me._Albaran.Entity
 				If ((Object.Equals(previousValue, value) = false)  _
-							OrElse (Me._Albaranes.HasLoadedOrAssignedValue = false)) Then
+							OrElse (Me._Albaran.HasLoadedOrAssignedValue = false)) Then
 					Me.SendPropertyChanging
 					If ((previousValue Is Nothing)  _
 								= false) Then
-						Me._Albaranes.Entity = Nothing
+						Me._Albaran.Entity = Nothing
 						previousValue.LineasAlbaran.Remove(Me)
 					End If
-					Me._Albaranes.Entity = value
+					Me._Albaran.Entity = value
 					If ((value Is Nothing)  _
 								= false) Then
 						value.LineasAlbaran.Add(Me)
@@ -19115,7 +19115,7 @@ Namespace Data.Entity
 					Else
 						Me._idAlbaran = CType(Nothing, Long)
 					End If
-					Me.SendPropertyChanged("Albaranes")
+					Me.SendPropertyChanged("Albaran")
 				End If
 			End Set
 		End Property
@@ -19139,7 +19139,7 @@ Namespace Data.Entity
 		End Sub
 		
 		Private Sub Initialize()
-			Me._Albaranes = CType(Nothing, EntityRef(Of Albaranes))
+			Me._Albaran = CType(Nothing, EntityRef(Of Albaranes))
 			OnCreated
 		End Sub
 		
@@ -20579,7 +20579,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Empresas_Configuraciones", Storage:="_Empresas", ThisKey:="idEmpresa", OtherKey:="idEmpresa", IsForeignKey:=true)>  _
-		Public Property Empresas() As Empresas
+		Public Property Empresa() As Empresas
 			Get
 				Return Me._Empresas.Entity
 			End Get
@@ -20601,7 +20601,7 @@ Namespace Data.Entity
 					Else
 						Me._idEmpresa = CType(Nothing, Long)
 					End If
-					Me.SendPropertyChanged("Empresas")
+					Me.SendPropertyChanged("Empresa")
 				End If
 			End Set
 		End Property

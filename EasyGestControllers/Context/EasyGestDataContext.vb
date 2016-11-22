@@ -58,12 +58,15 @@ Namespace Data.Entity
             _idModo = ModoPagoEnum.Metalico
             _Pendiente = 0.0F
             _SerieAlbaran = ""
-            _idAlbaran = Context.EasyGestDataContext.FECHAREFERENCIA.Ticks - Now().Ticks
+            _idAlbaran = Math.Abs(Context.EasyGestDataContext.FECHAREFERENCIA.Ticks - Now().Ticks) * -1L
+
         End Sub
 
         Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-            If _idUsuarioEmitido.HasValue AndAlso _idUsuarioEmitido.Value = EasyGestControllers.Data.Context.EasyGestDataContext.IDUSUARIOSUPER Then
-                _idUsuarioEmitido = Nothing
+            If action = ChangeAction.Insert Then
+                If _idUsuarioEmitido.HasValue() AndAlso _idUsuarioEmitido.Value = EasyGestControllers.Data.Context.EasyGestDataContext.IDUSUARIOSUPER Then
+                    _idUsuarioEmitido = Nothing
+                End If
             End If
         End Sub
 
@@ -76,7 +79,7 @@ Namespace Data.Entity
 
         Private Sub OnCreated()
             _Importe = 0.0
-            _idApunte = Context.EasyGestDataContext.FECHAREFERENCIA.Ticks - Now().Ticks
+            _idApunte = Math.Abs(Context.EasyGestDataContext.FECHAREFERENCIA.Ticks - Now().Ticks) * -1L
         End Sub
 
         Public Overrides Function IsValid() As Boolean
@@ -103,7 +106,7 @@ Namespace Data.Entity
 
         Private Sub OnCreated()
             _Valor = ""
-            _idCaracteristica = Context.EasyGestDataContext.FECHAREFERENCIA.Ticks - Now().Ticks
+            _idCaracteristica = Math.Abs(Context.EasyGestDataContext.FECHAREFERENCIA.Ticks - Now().Ticks) * -1L
         End Sub
 
         Public ReadOnly Property NombrePropiedad() As String
@@ -175,7 +178,7 @@ Namespace Data.Entity
             _FCreacion = Now()
             _Pais = "ESPAÑA"
             _AplicableImpIndirecto = True
-            _idCliente = Context.EasyGestDataContext.FECHAREFERENCIA.Ticks - Now().Ticks
+            _idCliente = Math.Abs(Context.EasyGestDataContext.FECHAREFERENCIA.Ticks - Now().Ticks) * -1L
         End Sub
 
         Public ReadOnly Property Numero() As String
@@ -224,7 +227,7 @@ Namespace Data.Entity
         End Sub
 
         Private Sub OnCreated()
-            _idCodigo = Context.EasyGestDataContext.FECHAREFERENCIA.Ticks - Now().Ticks
+            _idCodigo = Math.Abs(Context.EasyGestDataContext.FECHAREFERENCIA.Ticks - Now().Ticks) * -1L
         End Sub
 
     End Class
@@ -238,7 +241,7 @@ Namespace Data.Entity
         Private Sub OnCreated()
             _TipoPropietario = Microsoft.VisualBasic.ControlChars.NullChar
             _idPropietario = 0
-            _idContacto = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idContacto = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
         Private Sub OnValidate(ByVal action As System.Data.Linq.ChangeAction)
@@ -267,7 +270,7 @@ Namespace Data.Entity
         Private Sub OnCreated()
             _TipoPropietario = Microsoft.VisualBasic.ControlChars.NullChar
             _idPropietario = 0
-            _idCuenta = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idCuenta = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
         Private Sub OnValidate(action As ChangeAction)
@@ -293,7 +296,7 @@ Namespace Data.Entity
 
         Private Sub OnCreated()
             _Apertura = Now()
-            _idDiario = Context.EasyGestDataContext.FECHAREFERENCIA.Ticks - Now().Ticks
+            _idDiario = Math.Abs(Context.EasyGestDataContext.FECHAREFERENCIA.Ticks - Now().Ticks) * -1L
         End Sub
 
         Public ReadOnly Property Diferencia() As Single
@@ -325,7 +328,7 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            _idEtiqueta = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idEtiqueta = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
             _XMLDiseño = Nothing
         End Sub
 
@@ -430,7 +433,7 @@ Namespace Data.Entity
 
         Private Sub OnCreated()
             _FechaEncargo = Today()
-            _idEncargo = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idEncargo = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
         Public Overrides Function IsValid() As Boolean
@@ -447,7 +450,7 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            _idEtiqueta = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idEtiqueta = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
         Public Overrides Function IsValid() As Boolean
@@ -481,7 +484,7 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            _idEtiqueta = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idEtiqueta = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
         Public Overrides Function IsValid() As Boolean
@@ -507,11 +510,15 @@ Namespace Data.Entity
             _FCreacion = Now()
             _FFactura = _FCreacion
             _SerieFactura = ""
-            _idFactura = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idFactura = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
         Private Sub OnValidate(action As ChangeAction)
-
+            If action = ChangeAction.Insert Then
+                If _idUsuarioEmitido.HasValue() AndAlso _idUsuarioEmitido.Value = EasyGestControllers.Data.Context.EasyGestDataContext.IDUSUARIOSUPER Then
+                    _idUsuarioEmitido = Nothing
+                End If
+            End If
         End Sub
     End Class
 
@@ -603,13 +610,18 @@ Namespace Data.Entity
             End Get
         End Property
 
+        Public ReadOnly Property Importe As Single
+            Get
+                Return _Cantidad * _PrecioFinal - ImporteDescuento
+            End Get
+        End Property
+
         Private Sub OnCreated()
             _idLinea = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
             _idProducto = Nothing
             _DescripcionProducto = Nothing
             _Descuento = 0.0F
             _Precio = 0.0F
-            _Importe = 0.0F
             _Cantidad = 1.0F
         End Sub
 
@@ -618,22 +630,15 @@ Namespace Data.Entity
             If _Impuesto.HasValue Then imp = _Impuesto.Value
             If _Recargo.HasValue Then re = _Recargo.Value
             _PrecioFinal = _Precio * (1.0F + imp + re)
-            RecalcularImporte()
+        End Sub
+        Private Sub RecalcularPrecioNeto()
+            Dim imp As Single = 0.0F, re As Single = 0.0F
+            If _Impuesto.HasValue Then imp = _Impuesto.Value
+            If _Recargo.HasValue Then re = _Recargo.Value
+            _Precio = _PrecioFinal / (1.0F + imp + re)
         End Sub
 
-        Private Sub RecalcularImporte()
-            _Importe = _Cantidad * _PrecioFinal - ImporteDescuento
-        End Sub
-
-        Private Sub OnCantidadChanged()
-            RecalcularImporte()
-        End Sub
-
-        Private Sub OnDescuentoChanged()
-            RecalcularImporte()
-        End Sub
-
-        Private Sub OnPrecioChanged()
+        Private Sub OnPrecioNetoChanged()
             RecalcularPrecioFinal()
         End Sub
 
@@ -646,7 +651,7 @@ Namespace Data.Entity
         End Sub
 
         Private Sub OnPrecioFinalChanged()
-            RecalcularImporte()
+            RecalcularPrecioNeto()
         End Sub
 
         Private ReadOnly Property DescuentoEnPrecioFinal As Boolean
@@ -697,12 +702,17 @@ Namespace Data.Entity
             End Get
         End Property
 
+        Public ReadOnly Property Importe As Single
+            Get
+                Return _Cantidad * _PrecioFinal - ImporteDescuento
+            End Get
+        End Property
+
         Private Sub OnCreated()
             _idLinea = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
             _idProducto = Nothing
             _DescripcionProducto = Nothing
             _Precio = 0.0F
-            _Importe = 0.0F
             _Cantidad = 1.0F
             _Referencia = ""
         End Sub
@@ -712,30 +722,20 @@ Namespace Data.Entity
             If _Impuesto.HasValue Then imp = _Impuesto.Value
             If _Recargo.HasValue Then re = _Recargo.Value
             _PrecioFinal = _Precio * (1.0F + imp + re)
-            RecalcularImporte()
         End Sub
 
-        Private Sub RecalcularImporte()
-            _Importe = _Cantidad * _PrecioFinal - ImporteDescuento
-        End Sub
-
-        Private Sub OnCantidadChanged()
-            RecalcularImporte()
-        End Sub
-
-        Private Sub OnDescuentoChanged()
-            RecalcularImporte()
-        End Sub
-
-        Private Sub OnPrecioChanged()
-            RecalcularPrecioFinal()
+        Private Sub RecalcularPrecioNeto()
+            Dim imp As Single = 0.0F, re As Single = 0.0F
+            If _Impuesto.HasValue Then imp = _Impuesto.Value
+            If _Recargo.HasValue Then re = _Recargo.Value
+            _Precio = _PrecioFinal / (1.0F + imp + re)
         End Sub
 
         Private Sub OnPrecioFinalChanged()
-            RecalcularImporte()
+            RecalcularPrecioNeto()
         End Sub
 
-        Private Sub OnidLineaChanged()
+        Private Sub OnPrecioNetoChanged()
             RecalcularPrecioFinal()
         End Sub
 
@@ -768,8 +768,14 @@ Namespace Data.Entity
             End Get
         End Property
 
+        Public ReadOnly Property Importe As Single
+            Get
+                Return _Cantidad * _PrecioFinal - ImporteDescuento
+            End Get
+        End Property
+
         Private Sub OnCreated()
-            _idLinea = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idLinea = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
             _Precio = 0.0F
             _Cantidad = 1.0F
             _PrecioVenta = 0.0F
@@ -783,25 +789,19 @@ Namespace Data.Entity
             _PrecioFinal = _Precio * (1.0F + imp + re)
         End Sub
 
-        Private Sub RecalcularPrecio()
+        Private Sub RecalcularPrecioNeto()
             Dim imp As Single = 0.0F, re As Single = 0.0F
             If _Impuesto.HasValue Then imp = _Impuesto.Value
             If _Recargo.HasValue Then re = _Recargo.Value
             _Precio = _PrecioFinal / (1.0F + imp + re)
         End Sub
 
-        Public ReadOnly Property Importe As Single
-            Get
-                Return _Cantidad * _PrecioFinal - ImporteDescuento
-            End Get
-        End Property
-
         Private Sub OnRecargoChanged()
             RecalcularPrecioFinal()
         End Sub
 
         Private Sub OnPrecioFinalChanged()
-            RecalcularPrecio()
+            RecalcularPrecioNeto()
         End Sub
 
         Private Sub OnImpuestoChanged()
@@ -824,12 +824,28 @@ Namespace Data.Entity
 
     End Class
 
+    Partial Class LineasImpuestoAlbaran
+        Inherits LINQEntityBase
+
+        Private Sub OnCreated()
+            _idLineaImpuesto = Math.Abs(Context.EasyGestDataContext.FECHAREFERENCIA.Ticks - Now.Ticks) * -1L
+        End Sub
+
+    End Class
+
+    Partial Class LineasImpuestoFactura
+        Inherits LINQEntityBase
+        Private Sub OnCreated()
+            _idLineaImpuesto = Math.Abs(Context.EasyGestDataContext.FECHAREFERENCIA.Ticks - Now.Ticks) * -1L
+        End Sub
+    End Class
+
     Partial Class ListasCompra
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _FechaCreacion = Today()
-            _idEncargo = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idEncargo = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
         Public Overrides Function IsValid() As Boolean
@@ -852,7 +868,7 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            _idMarca = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idMarca = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
         Public Overrides Function IsValid() As Boolean
@@ -888,7 +904,7 @@ Namespace Data.Entity
 
         Private Sub OnCreated()
             _FMovimiento = Now()
-            _idMovimiento = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idMovimiento = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
     End Class
@@ -917,7 +933,7 @@ Namespace Data.Entity
             _Valor1 = 0.0
             _Valor2 = 0.0
             _NumeroOferta = "00000"
-            _idOferta = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idOferta = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
         Public Overrides Function IsValid() As Boolean
@@ -1002,12 +1018,14 @@ Namespace Data.Entity
             _FCreacion = Now()
             _Pagado = False
             _Pago = 0.0F
-            _idPedido = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idPedido = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
         Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-            If _idUsuarioEmitido.HasValue() AndAlso _idUsuarioEmitido.Value = EasyGestControllers.Data.Context.EasyGestDataContext.IDUSUARIOSUPER Then
-                _idUsuarioEmitido = Nothing
+            If action = ChangeAction.Insert Then
+                If _idUsuarioEmitido.HasValue() AndAlso _idUsuarioEmitido.Value = EasyGestControllers.Data.Context.EasyGestDataContext.IDUSUARIOSUPER Then
+                    _idUsuarioEmitido = Nothing
+                End If
             End If
         End Sub
     End Class
@@ -1025,7 +1043,7 @@ Namespace Data.Entity
             _Activo = True
             _UnidadVenta = 1.0F
             _UnidadXCaja = 1.0F
-            _idProducto = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idProducto = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
         Public Overrides Function IsValid() As Boolean
@@ -1084,7 +1102,7 @@ Namespace Data.Entity
             _Activo = True
             _FCreacion = Now()
             _Pais = "ESPAÑA"
-            _idProveedor = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idProveedor = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
         Public ReadOnly Property NombreYNombreCN() As String
@@ -1137,7 +1155,7 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            _idPuesto = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idPuesto = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
             _EsCajaCentral = False
             _Puesto = ""
         End Sub
@@ -1160,7 +1178,7 @@ Namespace Data.Entity
         Private _avisoAntelacion As TimeSpan = TimeSpan.Zero
 
         Private Sub OnCreated()
-            _idTarea = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idTarea = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
             _Prioridad = PrioridadTareaEnum.Normal
             _FechaTarea = Today()
         End Sub
@@ -1211,7 +1229,7 @@ Namespace Data.Entity
         End Property
 
         Private Sub OnCreated()
-            _idTarjeta = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idTarjeta = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
             _FCreacion = Today()
             _Activo = True
             _Saldo = 0
@@ -1292,7 +1310,7 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            _idUnidadMedida = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idUnidadMedida = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
         Public Overrides Function IsValid() As Boolean
@@ -1309,7 +1327,7 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            _idUbicacion = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idUbicacion = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
         Public Overrides Function IsValid() As Boolean
@@ -1329,7 +1347,7 @@ Namespace Data.Entity
             _FCreacion = Today
             _IdiomaPreferente = "ES"
             _TamañoGrid = 0
-            _idUsuario = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idUsuario = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
         Public Overrides Function IsValid() As Boolean
@@ -1353,7 +1371,7 @@ Namespace Data.Entity
             _Activo = True
             _FEmision = Now()
             _ObtenidoXFidelizacion = False
-            _idVale = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
+            _idVale = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
         <DataMember()>
@@ -1392,6 +1410,7 @@ Namespace Data.Entity
 
 
     Partial Class VWAlbaranes
+        Inherits LINQEntityBase
 
         Public Property Cambio As Single
         Public Property Entregado As Single
@@ -1406,13 +1425,26 @@ Namespace Data.Entity
             End Get
         End Property
 
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
     End Class
 
     Partial Class VWFacturas
+        Inherits LINQEntityBase
+
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
 
     End Class
 
     Partial Class VWClientes
+        Inherits LINQEntityBase
+
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
 
         Public ReadOnly Property Numero() As String
             Get
@@ -1443,7 +1475,11 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWCobros
+        Inherits LINQEntityBase
 
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
         Public ReadOnly Property ModoPago() As String
             Get
                 If Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName.Equals("zh") Then
@@ -1457,7 +1493,11 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWContactos
+        Inherits LINQEntityBase
 
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
         Public ReadOnly Property IconTipoPropietario() As Drawing.Image
             Get
                 If _TipoPropietario = Data.Entity.Contactos.TIPO_PROPIETARIO_CLIENTE Then
@@ -1492,6 +1532,11 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWCreditosCliente
+        Inherits LINQEntityBase
+
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
 
         Public ReadOnly Property DiaTardanza() As Integer
             Get
@@ -1508,6 +1553,11 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWDatosBancario
+        Inherits LINQEntityBase
+
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
 
         Public ReadOnly Property IconTipoPropietario() As Drawing.Image
             Get
@@ -1534,6 +1584,11 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWDeberesProveedor
+        Inherits LINQEntityBase
+
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
 
         Public ReadOnly Property DiaTardanza() As Integer
             Get
@@ -1550,26 +1605,52 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWDiarios
+        Inherits LINQEntityBase
 
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
     End Class
 
     Partial Class VWFacturacion
+        Inherits LINQEntityBase
 
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
     End Class
 
     Partial Class VWLineasAlbaran
+        Inherits LINQEntityBase
+
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
 
     End Class
 
     Partial Class VWLineasPedido
+        Inherits LINQEntityBase
 
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
     End Class
 
     Partial Class VWLineasFactura
+        Inherits LINQEntityBase
 
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
     End Class
 
     Partial Class VWTareas
+        Inherits LINQEntityBase
+
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
 
         Public ReadOnly Property PrioridadTexto() As String
             Get
@@ -1616,7 +1697,11 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWTarjetasFidelizacion
+        Inherits LINQEntityBase
 
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
         Public ReadOnly Property EnPunto As Boolean
             Get
                 Return Not _EnSaldo
@@ -1648,7 +1733,11 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWPagos
+        Inherits LINQEntityBase
 
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
         Public ReadOnly Property ModoPago() As String
             Get
                 If Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName.Equals("zh") Then
@@ -1662,10 +1751,19 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWPedidos
+        Inherits LINQEntityBase
 
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
     End Class
 
     Partial Class VWProductos
+        Inherits LINQEntityBase
+
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
 
         Public ReadOnly Property PlanOferta As String
             Get
@@ -1714,7 +1812,11 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWProveedores
+        Inherits LINQEntityBase
 
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
         Public ReadOnly Property Numero() As String
             Get
                 Return _FCreacion.ToString("yy") & "-" & Convert.ToString(_idProveedor).PadLeft(5, "0"c)
@@ -1744,6 +1846,11 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWVales
+        Inherits LINQEntityBase
+
+        Private Sub OnCreated()
+            Me.[ReadOnly] = True
+        End Sub
 
         Public ReadOnly Property Cliente As String
             Get
