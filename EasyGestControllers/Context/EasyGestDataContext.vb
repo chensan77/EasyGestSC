@@ -771,7 +771,6 @@ Namespace Data.Entity
         Private Sub OnCreated()
             _idLinea = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1
             _Precio = 0.0F
-            _Importe = 0.0F
             _Cantidad = 1.0F
             _PrecioVenta = 0.0F
             _Referencia = ""
@@ -782,34 +781,34 @@ Namespace Data.Entity
             If _Impuesto.HasValue Then imp = _Impuesto.Value
             If _Recargo.HasValue Then re = _Recargo.Value
             _PrecioFinal = _Precio * (1.0F + imp + re)
-            RecalcularImporte()
         End Sub
 
-        Private Sub RecalcularImporte()
-            _Importe = _Cantidad * _PrecioFinal - ImporteDescuento
+        Private Sub RecalcularPrecio()
+            Dim imp As Single = 0.0F, re As Single = 0.0F
+            If _Impuesto.HasValue Then imp = _Impuesto.Value
+            If _Recargo.HasValue Then re = _Recargo.Value
+            _Precio = _PrecioFinal / (1.0F + imp + re)
         End Sub
 
-        Private Sub OnPrecioChanged()
-            RecalcularPrecioFinal()
-        End Sub
-
-        Private Sub OnCantidadChanged()
-            RecalcularImporte()
-        End Sub
-
-        Private Sub OnDescuentoChanged()
-            RecalcularImporte()
-        End Sub
+        Public ReadOnly Property Importe As Single
+            Get
+                Return _Cantidad * _PrecioFinal - ImporteDescuento
+            End Get
+        End Property
 
         Private Sub OnRecargoChanged()
             RecalcularPrecioFinal()
         End Sub
 
         Private Sub OnPrecioFinalChanged()
-            RecalcularImporte()
+            RecalcularPrecio()
         End Sub
 
         Private Sub OnImpuestoChanged()
+            RecalcularPrecioFinal()
+        End Sub
+
+        Private Sub OnPrecioNetoChanged()
             RecalcularPrecioFinal()
         End Sub
 

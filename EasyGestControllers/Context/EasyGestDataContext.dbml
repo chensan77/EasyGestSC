@@ -230,6 +230,7 @@
       <Column Name="NumeracionFactura" AccessModifier="ProtectedInternal" AutoSync="OnInsert" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
       <Column Name="FCreacion" AutoSync="OnInsert" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
       <Association Name="Facturas_LineasImpuestoFactura" Member="LineasImpuestoFactura" ThisKey="idFactura" OtherKey="idFactura" Type="LineasImpuestoFactura" />
+      <Association Name="Facturas_LineasFactura" Member="LineasFactura" ThisKey="idFactura" OtherKey="idFactura" Type="LineasFactura" />
     </Type>
   </Table>
   <Table Name="dbo.VWLineasAlbaran" Member="VWLineasAlbaran">
@@ -352,6 +353,7 @@
       <Column Name="FCreacion" AutoSync="OnInsert" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
       <Column Name="Contable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Association Name="Albaranes_LineasImpuestoAlbaran" Member="LineasImpuestoAlbaran" ThisKey="idAlbaran" OtherKey="idAlbaran" Type="LineasImpuestoAlbaran" />
+      <Association Name="Albaranes_LineasAlbaran" Member="LineasAlbaran" ThisKey="idAlbaran" OtherKey="idAlbaran" Type="LineasAlbaran" />
     </Type>
   </Table>
   <Table Name="dbo.CaracteristicasProducto" Member="CaracteristicasProducto">
@@ -858,13 +860,13 @@
       <Column Name="idProducto" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
       <Column Name="Referencia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="DescripcionProducto" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="Precio" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="Precio" Member="PrecioNeto" Storage="_Precio" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Column Name="Cantidad" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Column Name="Descuento" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Column Name="Impuesto" Type="System.Single" DbType="Real" CanBeNull="true" />
       <Column Name="Recargo" Type="System.Single" DbType="Real" CanBeNull="true" />
       <Column Name="PrecioFinal" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="Importe" Type="System.Single" DbType="Real NOT NULL" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Facturas_LineasFactura" Member="Facturas" ThisKey="idFactura" OtherKey="idFactura" Type="Facturas" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.LineasAlbaran" Member="LineasAlbaran">
@@ -874,13 +876,13 @@
       <Column Name="idProducto" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
       <Column Name="Referencia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="DescripcionProducto" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="Precio" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="Precio" Member="PrecioNeto" Storage="_Precio" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Column Name="Cantidad" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Column Name="Descuento" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Column Name="Impuesto" Type="System.Single" DbType="Real" CanBeNull="true" />
       <Column Name="Recargo" Type="System.Single" DbType="Real" CanBeNull="true" />
       <Column Name="PrecioFinal" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="Importe" Type="System.Single" DbType="Real NOT NULL" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Albaranes_LineasAlbaran" Member="Albaranes" ThisKey="idAlbaran" OtherKey="idAlbaran" Type="Albaranes" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.LineasPedido" Member="LineasPedido">
@@ -889,13 +891,13 @@
       <Column Name="idPedido" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
       <Column Name="idProducto" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
       <Column Name="DescripcionProducto" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
-      <Column Name="Precio" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="Precio" Member="PrecioNeto" Storage="_Precio" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Column Name="Cantidad" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Column Name="Impuesto" Type="System.Single" DbType="Real" CanBeNull="true" />
       <Column Name="Recargo" Type="System.Single" DbType="Real" CanBeNull="true" />
       <Column Name="Descuento" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Column Name="PrecioFinal" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="Importe" Type="System.Single" DbType="Real NOT NULL" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Pedidos_LineasPedido" Member="Pedidos" ThisKey="idPedido" OtherKey="idPedido" Type="Pedidos" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Productos" Member="Productos">
@@ -940,6 +942,7 @@
       <Column Name="Pagado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="NumeracionPedido" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
       <Column Name="ImpIndIncluido" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Pedidos_LineasPedido" Member="LineasPedido" ThisKey="idPedido" OtherKey="idPedido" Type="LineasPedido" />
     </Type>
   </Table>
   <Table Name="dbo.Configuraciones" Member="Configuraciones">

@@ -5163,6 +5163,8 @@ Namespace Data.Entity
 		
 		Private _LineasImpuestoFactura As EntitySet(Of LineasImpuestoFactura)
 		
+		Private _LineasFactura As EntitySet(Of LineasFactura)
+		
 		Private serializing As Boolean
 		
     #Region "Definiciones de métodos de extensibilidad"
@@ -5388,6 +5390,21 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Facturas_LineasFactura", Storage:="_LineasFactura", ThisKey:="idFactura", OtherKey:="idFactura"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=10, EmitDefaultValue:=false)>  _
+		Public Property LineasFactura() As EntitySet(Of LineasFactura)
+			Get
+				If (Me.serializing  _
+							AndAlso (Me._LineasFactura.HasLoadedOrAssignedValues = false)) Then
+					Return Nothing
+				End If
+				Return Me._LineasFactura
+			End Get
+			Set
+				Me._LineasFactura.Assign(value)
+			End Set
+		End Property
+		
 		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
 		
 		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
@@ -5416,8 +5433,19 @@ Namespace Data.Entity
 			entity.Facturas = Nothing
 		End Sub
 		
+		Private Sub attach_LineasFactura(ByVal entity As LineasFactura)
+			Me.SendPropertyChanging
+			entity.Facturas = Me
+		End Sub
+		
+		Private Sub detach_LineasFactura(ByVal entity As LineasFactura)
+			Me.SendPropertyChanging
+			entity.Facturas = Nothing
+		End Sub
+		
 		Private Sub Initialize()
 			Me._LineasImpuestoFactura = New EntitySet(Of LineasImpuestoFactura)(AddressOf Me.attach_LineasImpuestoFactura, AddressOf Me.detach_LineasImpuestoFactura)
+			Me._LineasFactura = New EntitySet(Of LineasFactura)(AddressOf Me.attach_LineasFactura, AddressOf Me.detach_LineasFactura)
 			OnCreated
 		End Sub
 		
@@ -7650,6 +7678,8 @@ Namespace Data.Entity
 		
 		Private _LineasImpuestoAlbaran As EntitySet(Of LineasImpuestoAlbaran)
 		
+		Private _LineasAlbaran As EntitySet(Of LineasAlbaran)
+		
 		Private serializing As Boolean
 		
     #Region "Definiciones de métodos de extensibilidad"
@@ -8005,6 +8035,21 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Albaranes_LineasAlbaran", Storage:="_LineasAlbaran", ThisKey:="idAlbaran", OtherKey:="idAlbaran"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=16, EmitDefaultValue:=false)>  _
+		Public Property LineasAlbaran() As EntitySet(Of LineasAlbaran)
+			Get
+				If (Me.serializing  _
+							AndAlso (Me._LineasAlbaran.HasLoadedOrAssignedValues = false)) Then
+					Return Nothing
+				End If
+				Return Me._LineasAlbaran
+			End Get
+			Set
+				Me._LineasAlbaran.Assign(value)
+			End Set
+		End Property
+		
 		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
 		
 		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
@@ -8033,8 +8078,19 @@ Namespace Data.Entity
 			entity.Albaranes = Nothing
 		End Sub
 		
+		Private Sub attach_LineasAlbaran(ByVal entity As LineasAlbaran)
+			Me.SendPropertyChanging
+			entity.Albaranes = Me
+		End Sub
+		
+		Private Sub detach_LineasAlbaran(ByVal entity As LineasAlbaran)
+			Me.SendPropertyChanging
+			entity.Albaranes = Nothing
+		End Sub
+		
 		Private Sub Initialize()
 			Me._LineasImpuestoAlbaran = New EntitySet(Of LineasImpuestoAlbaran)(AddressOf Me.attach_LineasImpuestoAlbaran, AddressOf Me.detach_LineasImpuestoAlbaran)
+			Me._LineasAlbaran = New EntitySet(Of LineasAlbaran)(AddressOf Me.attach_LineasAlbaran, AddressOf Me.detach_LineasAlbaran)
 			OnCreated
 		End Sub
 		
@@ -18437,7 +18493,7 @@ Namespace Data.Entity
 		
 		Private _PrecioFinal As Single
 		
-		Private _Importe As Single
+		Private _Facturas As EntityRef(Of Facturas)
 		
     #Region "Definiciones de métodos de extensibilidad"
     Partial Private Sub OnLoaded()
@@ -18466,9 +18522,9 @@ Namespace Data.Entity
     End Sub
     Partial Private Sub OnDescripcionProductoChanged()
     End Sub
-    Partial Private Sub OnPrecioChanging(value As Single)
+    Partial Private Sub OnPrecioNetoChanging(value As Single)
     End Sub
-    Partial Private Sub OnPrecioChanged()
+    Partial Private Sub OnPrecioNetoChanged()
     End Sub
     Partial Private Sub OnCantidadChanging(value As Single)
     End Sub
@@ -18489,10 +18545,6 @@ Namespace Data.Entity
     Partial Private Sub OnPrecioFinalChanging(value As Single)
     End Sub
     Partial Private Sub OnPrecioFinalChanged()
-    End Sub
-    Partial Private Sub OnImporteChanging(value As Single)
-    End Sub
-    Partial Private Sub OnImporteChanged()
     End Sub
     #End Region
 		
@@ -18528,6 +18580,9 @@ Namespace Data.Entity
 			Set
 				If ((Me._idFactura = value)  _
 							= false) Then
+					If Me._Facturas.HasLoadedOrAssignedValue Then
+						Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+					End If
 					Me.OnidFacturaChanging(value)
 					Me.SendPropertyChanging
 					Me._idFactura = value
@@ -18588,20 +18643,20 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Precio", DbType:="Real NOT NULL"),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Name:="Precio", Storage:="_Precio", DbType:="Real NOT NULL"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=6)>  _
-		Public Property Precio() As Single
+		Public Property PrecioNeto() As Single
 			Get
 				Return Me._Precio
 			End Get
 			Set
 				If ((Me._Precio = value)  _
 							= false) Then
-					Me.OnPrecioChanging(value)
+					Me.OnPrecioNetoChanging(value)
 					Me.SendPropertyChanging
 					Me._Precio = value
-					Me.SendPropertyChanged("Precio")
-					Me.OnPrecioChanged
+					Me.SendPropertyChanged("PrecioNeto")
+					Me.OnPrecioNetoChanged
 				End If
 			End Set
 		End Property
@@ -18694,20 +18749,30 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Importe", AutoSync:=AutoSync.Always, DbType:="Real NOT NULL", IsDbGenerated:=true, UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=12)>  _
-		Public Property Importe() As Single
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Facturas_LineasFactura", Storage:="_Facturas", ThisKey:="idFactura", OtherKey:="idFactura", IsForeignKey:=true)>  _
+		Public Property Facturas() As Facturas
 			Get
-				Return Me._Importe
+				Return Me._Facturas.Entity
 			End Get
 			Set
-				If ((Me._Importe = value)  _
-							= false) Then
-					Me.OnImporteChanging(value)
+				Dim previousValue As Facturas = Me._Facturas.Entity
+				If ((Object.Equals(previousValue, value) = false)  _
+							OrElse (Me._Facturas.HasLoadedOrAssignedValue = false)) Then
 					Me.SendPropertyChanging
-					Me._Importe = value
-					Me.SendPropertyChanged("Importe")
-					Me.OnImporteChanged
+					If ((previousValue Is Nothing)  _
+								= false) Then
+						Me._Facturas.Entity = Nothing
+						previousValue.LineasFactura.Remove(Me)
+					End If
+					Me._Facturas.Entity = value
+					If ((value Is Nothing)  _
+								= false) Then
+						value.LineasFactura.Add(Me)
+						Me._idFactura = value.idFactura
+					Else
+						Me._idFactura = CType(Nothing, Long)
+					End If
+					Me.SendPropertyChanged("Facturas")
 				End If
 			End Set
 		End Property
@@ -18731,6 +18796,7 @@ Namespace Data.Entity
 		End Sub
 		
 		Private Sub Initialize()
+			Me._Facturas = CType(Nothing, EntityRef(Of Facturas))
 			OnCreated
 		End Sub
 		
@@ -18770,7 +18836,7 @@ Namespace Data.Entity
 		
 		Private _PrecioFinal As Single
 		
-		Private _Importe As Single
+		Private _Albaranes As EntityRef(Of Albaranes)
 		
     #Region "Definiciones de métodos de extensibilidad"
     Partial Private Sub OnLoaded()
@@ -18799,9 +18865,9 @@ Namespace Data.Entity
     End Sub
     Partial Private Sub OnDescripcionProductoChanged()
     End Sub
-    Partial Private Sub OnPrecioChanging(value As Single)
+    Partial Private Sub OnPrecioNetoChanging(value As Single)
     End Sub
-    Partial Private Sub OnPrecioChanged()
+    Partial Private Sub OnPrecioNetoChanged()
     End Sub
     Partial Private Sub OnCantidadChanging(value As Single)
     End Sub
@@ -18822,10 +18888,6 @@ Namespace Data.Entity
     Partial Private Sub OnPrecioFinalChanging(value As Single)
     End Sub
     Partial Private Sub OnPrecioFinalChanged()
-    End Sub
-    Partial Private Sub OnImporteChanging(value As Single)
-    End Sub
-    Partial Private Sub OnImporteChanged()
     End Sub
     #End Region
 		
@@ -18861,6 +18923,9 @@ Namespace Data.Entity
 			Set
 				If ((Me._idAlbaran = value)  _
 							= false) Then
+					If Me._Albaranes.HasLoadedOrAssignedValue Then
+						Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+					End If
 					Me.OnidAlbaranChanging(value)
 					Me.SendPropertyChanging
 					Me._idAlbaran = value
@@ -18921,20 +18986,20 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Precio", DbType:="Real NOT NULL"),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Name:="Precio", Storage:="_Precio", DbType:="Real NOT NULL"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=6)>  _
-		Public Property Precio() As Single
+		Public Property PrecioNeto() As Single
 			Get
 				Return Me._Precio
 			End Get
 			Set
 				If ((Me._Precio = value)  _
 							= false) Then
-					Me.OnPrecioChanging(value)
+					Me.OnPrecioNetoChanging(value)
 					Me.SendPropertyChanging
 					Me._Precio = value
-					Me.SendPropertyChanged("Precio")
-					Me.OnPrecioChanged
+					Me.SendPropertyChanged("PrecioNeto")
+					Me.OnPrecioNetoChanged
 				End If
 			End Set
 		End Property
@@ -19027,20 +19092,30 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Importe", AutoSync:=AutoSync.Always, DbType:="Real NOT NULL", IsDbGenerated:=true, UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=12)>  _
-		Public Property Importe() As Single
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Albaranes_LineasAlbaran", Storage:="_Albaranes", ThisKey:="idAlbaran", OtherKey:="idAlbaran", IsForeignKey:=true)>  _
+		Public Property Albaranes() As Albaranes
 			Get
-				Return Me._Importe
+				Return Me._Albaranes.Entity
 			End Get
 			Set
-				If ((Me._Importe = value)  _
-							= false) Then
-					Me.OnImporteChanging(value)
+				Dim previousValue As Albaranes = Me._Albaranes.Entity
+				If ((Object.Equals(previousValue, value) = false)  _
+							OrElse (Me._Albaranes.HasLoadedOrAssignedValue = false)) Then
 					Me.SendPropertyChanging
-					Me._Importe = value
-					Me.SendPropertyChanged("Importe")
-					Me.OnImporteChanged
+					If ((previousValue Is Nothing)  _
+								= false) Then
+						Me._Albaranes.Entity = Nothing
+						previousValue.LineasAlbaran.Remove(Me)
+					End If
+					Me._Albaranes.Entity = value
+					If ((value Is Nothing)  _
+								= false) Then
+						value.LineasAlbaran.Add(Me)
+						Me._idAlbaran = value.idAlbaran
+					Else
+						Me._idAlbaran = CType(Nothing, Long)
+					End If
+					Me.SendPropertyChanged("Albaranes")
 				End If
 			End Set
 		End Property
@@ -19064,6 +19139,7 @@ Namespace Data.Entity
 		End Sub
 		
 		Private Sub Initialize()
+			Me._Albaranes = CType(Nothing, EntityRef(Of Albaranes))
 			OnCreated
 		End Sub
 		
@@ -19101,7 +19177,7 @@ Namespace Data.Entity
 		
 		Private _PrecioFinal As Single
 		
-		Private _Importe As Single
+		Private _Pedidos As EntityRef(Of Pedidos)
 		
     #Region "Definiciones de métodos de extensibilidad"
     Partial Private Sub OnLoaded()
@@ -19126,9 +19202,9 @@ Namespace Data.Entity
     End Sub
     Partial Private Sub OnDescripcionProductoChanged()
     End Sub
-    Partial Private Sub OnPrecioChanging(value As Single)
+    Partial Private Sub OnPrecioNetoChanging(value As Single)
     End Sub
-    Partial Private Sub OnPrecioChanged()
+    Partial Private Sub OnPrecioNetoChanged()
     End Sub
     Partial Private Sub OnCantidadChanging(value As Single)
     End Sub
@@ -19149,10 +19225,6 @@ Namespace Data.Entity
     Partial Private Sub OnPrecioFinalChanging(value As Single)
     End Sub
     Partial Private Sub OnPrecioFinalChanged()
-    End Sub
-    Partial Private Sub OnImporteChanging(value As Single)
-    End Sub
-    Partial Private Sub OnImporteChanged()
     End Sub
     #End Region
 		
@@ -19188,6 +19260,9 @@ Namespace Data.Entity
 			Set
 				If ((Me._idPedido = value)  _
 							= false) Then
+					If Me._Pedidos.HasLoadedOrAssignedValue Then
+						Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+					End If
 					Me.OnidPedidoChanging(value)
 					Me.SendPropertyChanging
 					Me._idPedido = value
@@ -19231,20 +19306,20 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Precio", DbType:="Real NOT NULL"),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Name:="Precio", Storage:="_Precio", DbType:="Real NOT NULL"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=5)>  _
-		Public Property Precio() As Single
+		Public Property PrecioNeto() As Single
 			Get
 				Return Me._Precio
 			End Get
 			Set
 				If ((Me._Precio = value)  _
 							= false) Then
-					Me.OnPrecioChanging(value)
+					Me.OnPrecioNetoChanging(value)
 					Me.SendPropertyChanging
 					Me._Precio = value
-					Me.SendPropertyChanged("Precio")
-					Me.OnPrecioChanged
+					Me.SendPropertyChanged("PrecioNeto")
+					Me.OnPrecioNetoChanged
 				End If
 			End Set
 		End Property
@@ -19337,20 +19412,30 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Importe", AutoSync:=AutoSync.Always, DbType:="Real NOT NULL", IsDbGenerated:=true, UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=11)>  _
-		Public Property Importe() As Single
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Pedidos_LineasPedido", Storage:="_Pedidos", ThisKey:="idPedido", OtherKey:="idPedido", IsForeignKey:=true)>  _
+		Public Property Pedidos() As Pedidos
 			Get
-				Return Me._Importe
+				Return Me._Pedidos.Entity
 			End Get
 			Set
-				If ((Me._Importe = value)  _
-							= false) Then
-					Me.OnImporteChanging(value)
+				Dim previousValue As Pedidos = Me._Pedidos.Entity
+				If ((Object.Equals(previousValue, value) = false)  _
+							OrElse (Me._Pedidos.HasLoadedOrAssignedValue = false)) Then
 					Me.SendPropertyChanging
-					Me._Importe = value
-					Me.SendPropertyChanged("Importe")
-					Me.OnImporteChanged
+					If ((previousValue Is Nothing)  _
+								= false) Then
+						Me._Pedidos.Entity = Nothing
+						previousValue.LineasPedido.Remove(Me)
+					End If
+					Me._Pedidos.Entity = value
+					If ((value Is Nothing)  _
+								= false) Then
+						value.LineasPedido.Add(Me)
+						Me._idPedido = value.idPedido
+					Else
+						Me._idPedido = CType(Nothing, Long)
+					End If
+					Me.SendPropertyChanged("Pedidos")
 				End If
 			End Set
 		End Property
@@ -19374,6 +19459,7 @@ Namespace Data.Entity
 		End Sub
 		
 		Private Sub Initialize()
+			Me._Pedidos = CType(Nothing, EntityRef(Of Pedidos))
 			OnCreated
 		End Sub
 		
@@ -20070,6 +20156,10 @@ Namespace Data.Entity
 		
 		Private _ImpIndIncluido As Boolean
 		
+		Private _LineasPedido As EntitySet(Of LineasPedido)
+		
+		Private serializing As Boolean
+		
     #Region "Definiciones de métodos de extensibilidad"
     Partial Private Sub OnLoaded()
     End Sub
@@ -20301,6 +20391,21 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Pedidos_LineasPedido", Storage:="_LineasPedido", ThisKey:="idPedido", OtherKey:="idPedido"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=11, EmitDefaultValue:=false)>  _
+		Public Property LineasPedido() As EntitySet(Of LineasPedido)
+			Get
+				If (Me.serializing  _
+							AndAlso (Me._LineasPedido.HasLoadedOrAssignedValues = false)) Then
+					Return Nothing
+				End If
+				Return Me._LineasPedido
+			End Get
+			Set
+				Me._LineasPedido.Assign(value)
+			End Set
+		End Property
+		
 		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
 		
 		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
@@ -20319,7 +20424,18 @@ Namespace Data.Entity
 			End If
 		End Sub
 		
+		Private Sub attach_LineasPedido(ByVal entity As LineasPedido)
+			Me.SendPropertyChanging
+			entity.Pedidos = Me
+		End Sub
+		
+		Private Sub detach_LineasPedido(ByVal entity As LineasPedido)
+			Me.SendPropertyChanging
+			entity.Pedidos = Nothing
+		End Sub
+		
 		Private Sub Initialize()
+			Me._LineasPedido = New EntitySet(Of LineasPedido)(AddressOf Me.attach_LineasPedido, AddressOf Me.detach_LineasPedido)
 			OnCreated
 		End Sub
 		
@@ -20327,6 +20443,18 @@ Namespace Data.Entity
 		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
 		Public Sub OnDeserializing(ByVal context As StreamingContext)
 			Me.Initialize
+		End Sub
+		
+		<Global.System.Runtime.Serialization.OnSerializingAttribute(),  _
+		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
+		Public Sub OnSerializing(ByVal context As StreamingContext)
+			Me.serializing = true
+		End Sub
+		
+		<Global.System.Runtime.Serialization.OnSerializedAttribute(),  _
+		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
+		Public Sub OnSerialized(ByVal context As StreamingContext)
+			Me.serializing = false
 		End Sub
 	End Class
 	
