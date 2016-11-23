@@ -132,7 +132,6 @@ Namespace Data.Configuracion
         Public Property NumCopiaImpresaAlbaran As Integer = 1
         Public Property NumCopiaImpresaFactura As Integer = 2
         Public Property NumCopiaImpresaPedido As Integer = 1
-        Public Property DescuentoEnPrecioFinal As Boolean = True
 
         Public ReadOnly Property PorcentajeBeneficioFidelizacion As Single
             Get

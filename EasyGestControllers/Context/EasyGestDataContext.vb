@@ -579,15 +579,14 @@ Namespace Data.Entity
 
         Public ReadOnly Property ImporteDescuento As Single
             Get
-                Dim precioDesc As Single = IIf(DescuentoEnPrecioFinal, _PrecioFinal, _Precio)
-                Return _Cantidad * precioDesc * (_Descuento / 100.0F)
+                Return _Cantidad * _Precio * (_Descuento / 100.0F)
             End Get
         End Property
 
         Public ReadOnly Property ImporteRE As Single
             Get
                 If _Recargo.HasValue Then
-                    Return _Cantidad * _Precio * _Recargo.Value
+                    Return _Cantidad * _Precio * (_Recargo.Value / 100.0F)
                 Else
                     Return 0.0F
                 End If
@@ -597,7 +596,7 @@ Namespace Data.Entity
         Public ReadOnly Property ImporteImpuesto As Single
             Get
                 If _Impuesto.HasValue Then
-                    Return _Cantidad * _Precio * _Impuesto.Value
+                    Return _Cantidad * _Precio * (_Impuesto.Value / 100.0F)
                 Else
                     Return 0.0F
                 End If
@@ -612,7 +611,7 @@ Namespace Data.Entity
 
         Public ReadOnly Property Importe As Single
             Get
-                Return _Cantidad * _PrecioFinal - ImporteDescuento
+                Return _Cantidad * _PrecioFinal
             End Get
         End Property
 
@@ -627,15 +626,15 @@ Namespace Data.Entity
 
         Private Sub RecalcularPrecioFinal()
             Dim imp As Single = 0.0F, re As Single = 0.0F
-            If _Impuesto.HasValue Then imp = _Impuesto.Value
-            If _Recargo.HasValue Then re = _Recargo.Value
-            _PrecioFinal = _Precio * (1.0F + imp + re)
+            If _Impuesto.HasValue Then imp = _Impuesto.Value / 100.0F
+            If _Recargo.HasValue Then re = _Recargo.Value / 100.0F
+            _PrecioFinal = _Precio * (1.0F + imp + re) * (1.0F - _Descuento / 100.0)
         End Sub
         Private Sub RecalcularPrecioNeto()
             Dim imp As Single = 0.0F, re As Single = 0.0F
             If _Impuesto.HasValue Then imp = _Impuesto.Value
             If _Recargo.HasValue Then re = _Recargo.Value
-            _Precio = _PrecioFinal / (1.0F + imp + re)
+            _Precio = _PrecioFinal / ((1.0F + imp + re) * (1.0F - _Descuento / 100.0))
         End Sub
 
         Private Sub OnPrecioNetoChanged()
@@ -654,16 +653,9 @@ Namespace Data.Entity
             RecalcularPrecioNeto()
         End Sub
 
-        Private ReadOnly Property DescuentoEnPrecioFinal As Boolean
-            Get
-                If IsNothing(gConfGlobal) Then
-                    Return True
-                Else
-                    Return gConfGlobal.DescuentoEnPrecioFinal
-                End If
-            End Get
-        End Property
-
+        Private Sub OnDescuentoChanged()
+            RecalcularPrecioFinal()
+        End Sub
     End Class
 
     Partial Class LineasFactura
