@@ -9,7 +9,6 @@ Namespace Controller
         Implements IDisposable
 
         Private _disposed As Boolean = False
-        Private _readonly As Boolean = False
         Private _context As TContext = Nothing
         Private _entityType As Type = GetType(TEntity)
         Private _primaryKeys As New List(Of String)
@@ -19,11 +18,12 @@ Namespace Controller
             _primaryKeys = getPrimaryKeys()
         End Sub
 
-        Protected Sub New([readOnly] As Boolean)
-            Me.New()
-            _readonly = [readOnly]
-        End Sub
 
+        Public Shared Function NewItem() As TEntity
+            Dim Item As TEntity = DirectCast(Activator.CreateInstance(GetType(TEntity)), TEntity)
+            Item.SetAsInsertOnSubmit()
+            Return Item
+        End Function
 
         Friend ReadOnly Property Contexto() As TContext
             Get
@@ -37,12 +37,6 @@ Namespace Controller
             _context.Refresh(RefreshMode.OverwriteCurrentValues, item)
         End Sub
 
-        Public Shared Function NewItem() As TEntity
-            Dim Item As TEntity = DirectCast(Activator.CreateInstance(GetType(TEntity)), TEntity)
-            Item.SetAsInsertOnSubmit()
-            Return Item
-        End Function
-
         Public Overridable Sub SyncronisingItem(ByRef item As TEntity)
             If item Is Nothing Then Throw New NullReferenceException()
             Dim items As New List(Of TEntity)()
@@ -52,7 +46,6 @@ Namespace Controller
 
         Public Overridable Sub SyncronisingItem(ByRef items As IEnumerable(Of TEntity))
             If items Is Nothing Then Throw New NullReferenceException()
-            If _readonly Then Throw New ApplicationException("Entity dosn´t to modifie")
 
             'Before doing anything, check to make sure that the New datacontext
             'doesn 't try any deferred (lazy) loading
@@ -69,6 +62,7 @@ Namespace Controller
                 Dim insertItems As New List(Of TEntity)()
                 Dim deleteItems As New List(Of TEntity)()
                 For Each item As TEntity In items
+                    If item.ReadOnly Then Throw New ApplicationException("Entity dosn´t to modifie")
 
                     If item.LINQEntityState = Data.Entity.EntityState.Original Then
                         table.Attach(item, False)
@@ -310,7 +304,7 @@ Namespace Controller
             Return _context.ExecuteQuery(Of TEntity)(query, parametros)
         End Function
 
-        Public Overridable Function GetItemsBy(Of T As Class)(ByVal idName As String, ByVal values As Long()) As IEnumerable(Of T)
+        Public Overridable Function GetItemsBy(Of T As Data.Entity.LINQEntityBase)(ByVal idName As String, ByVal values As Long()) As IEnumerable(Of T)
             Dim filter As String = String.Empty
             Dim separator As String = String.Empty
             If String.IsNullOrEmpty(idName) Or IsNothing(values) OrElse values.Length = 0 Then
@@ -324,7 +318,7 @@ Namespace Controller
             Return GetItems(Of T)(filter)
         End Function
 
-        Public Function Paging(Of T As Class)(ByVal dataList As IEnumerable(Of T), ByVal start As Integer, ByVal limit As Integer, ByRef count As Integer) As IEnumerable(Of T)
+        Public Function Paging(Of T As Data.Entity.LINQEntityBase)(ByVal dataList As IEnumerable(Of T), ByVal start As Integer, ByVal limit As Integer, ByRef count As Integer) As IEnumerable(Of T)
             Dim query As IQueryable(Of T)
             count = 0
             If dataList Is Nothing Then Return Nothing

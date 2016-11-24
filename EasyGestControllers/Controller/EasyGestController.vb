@@ -45,7 +45,7 @@ Namespace Controller
 
         Public Shared Sub ResetConnectionString(cs As String)
             If String.IsNullOrWhiteSpace(cs) Then Throw New ArgumentNullException()
-            Util.Comunes.CadenaConexion = cs
+            gCadenaConexion = cs
             _tablesPrimaryKeys = EasyGestDataContext.GetTablesPrimaryKeys()
         End Sub
     End Class
@@ -65,7 +65,8 @@ Namespace Controller
             '    item.FFactura = item.FAlbaran
             'End If            
 
-            Return MyBase.AddItem(item)
+            MyBase.SyncronisingItem(item)
+            Return item
         End Function
 
         Public Sub FacturarAlbaran(ByVal idAlbaran As Long, ByVal idCliente As Long)
@@ -76,7 +77,7 @@ Namespace Controller
             '    albaran.idCliente = idCliente
             '    albaran.NumFactura = SiguienteNumFactura()
             'End If
-            UpdateItem(albaran)
+            MyBase.SyncronisingItem(albaran)
         End Sub
 
         Public Sub ResumenVentaXPuestoUsuario(empresa As Empresas, puesto As Puestos, usuario As Usuarios, fechaInicio As DateTime, ByRef numero As Integer?, ByRef total As Double?)
@@ -109,7 +110,9 @@ Namespace Controller
         Inherits BaseController(Of CaracteristicasProducto, EasyGestDataContext)
 
         Public Overloads Shared Function NewItem(ByVal idProducto As Long) As Data.Entity.CaracteristicasProducto
-            Return New Data.Entity.CaracteristicasProducto(idProducto)
+            Dim nuevo As CaracteristicasProducto = New Data.Entity.CaracteristicasProducto(idProducto)
+            nuevo.SetAsInsertOnSubmit()
+            Return nuevo
         End Function
 
         Public Function GetCaracteristicasByProducto(ByVal idProducto As Long) As IEnumerable(Of Data.Entity.CaracteristicasProducto)
@@ -121,7 +124,9 @@ Namespace Controller
         Public Sub SetCaracteristicasOfProducto(ByVal idProducto As Long, ByVal caracteristicas As IEnumerable(Of CaracteristicasProducto))
             Dim oldcaracteristicas As IEnumerable(Of CaracteristicasProducto)
             If IsNothing(caracteristicas) Then Return
-
+            For Each caract In caracteristicas
+                caract.idProducto = idProducto
+            Next
             oldcaracteristicas = From c As CaracteristicasProducto In Contexto.CaracteristicasProducto Where c.idProducto = idProducto Select c
             Contexto.CaracteristicasProducto.DeleteAllOnSubmit(oldcaracteristicas)
             Contexto.SubmitChanges()
@@ -133,21 +138,37 @@ Namespace Controller
     Public Class ClientesController
         Inherits BaseController(Of Clientes, EasyGestDataContext)
 
-        Public Overrides Function DeleteItem(id As Object) As Data.Entity.Clientes
-            Dim cliente As Clientes
-            cliente = GetItem(id)
-            Try
-                cliente = MyBase.DeleteItem(id)
-            Catch ex As Exception
-                cliente = GetItem(id)
-                If Not IsNothing(cliente) Then
-                    cliente.Activo = False
-                    cliente = UpdateItem(cliente)
-                End If
-            End Try
+        'Public Function DeleteItem(id As Object) As Data.Entity.Clientes
+        '    Dim cliente As Clientes
+        '    cliente = GetItem(id)
+        '    Try
+        '        cliente = MyBase.DeleteItem(id)
+        '    Catch ex As Exception
+        '        cliente = GetItem(id)
+        '        If Not IsNothing(cliente) Then
+        '            cliente.Activo = False
+        '            cliente = UpdateItem(cliente)
+        '        End If
+        '    End Try
 
-            Return cliente
-        End Function
+        '    Return cliente
+        'End Function
+
+        Public Overrides Sub SyncronisingItem(ByRef item As Clientes)
+
+            If item.LINQEntityState = EntityState.Deleted Then
+                Try
+                    Contexto.Clientes.DeleteOnSubmit(item)
+                    Contexto.SubmitChanges()
+                Catch ex As Exception
+
+                End Try
+            Else
+
+                MyBase.SyncronisingItem(item)
+            End If
+
+        End Sub
 
     End Class
 
@@ -200,7 +221,7 @@ Namespace Controller
     Public Class ConfiguracionesController
         Inherits BaseController(Of Configuraciones, EasyGestDataContext)
 
-        Public Overloads Function UpdateItem(ByVal parametro As String, ByVal valor As String, ByVal idEmpresa As Long) As Data.Entity.Configuraciones
+        Public Overloads Function SyncronisingItem(ByVal parametro As String, ByVal valor As String, ByVal idEmpresa As Long) As Data.Entity.Configuraciones
             Dim param As New Configuraciones()
             Dim params As IEnumerable(Of Configuraciones)
             param.Parametro = parametro
@@ -216,29 +237,13 @@ Namespace Controller
             Return param
         End Function
 
-        Public Overrides Function AddItem(item As Data.Entity.Configuraciones) As Data.Entity.Configuraciones
-            Return item
-        End Function
-
-        Public Overrides Sub AddItems(items As System.Collections.Generic.IEnumerable(Of Data.Entity.Configuraciones))
-            'Nothing to do
+        Public Overrides Sub SyncronisingItem(ByRef item As Configuraciones)
+            'do nothing
         End Sub
 
-        Public Overrides Function DeleteItem(id As Object) As Data.Entity.Configuraciones
-            Return Nothing
-        End Function
-
-        Public Overrides Function DeleteItem(ids As Object()) As Data.Entity.Configuraciones
-            Return Nothing
-        End Function
-
-        Public Overrides Sub DeleteItems(items As System.Collections.Generic.IEnumerable(Of Data.Entity.Configuraciones))
-            'Nothing to do
+        Public Overrides Sub SyncronisingItem(ByRef items As IEnumerable(Of Configuraciones))
+            'do nothing
         End Sub
-
-        Public Overrides Function UpdateItem(item As Data.Entity.Configuraciones) As Data.Entity.Configuraciones
-            Return UpdateItem(item.Parametro, item.Valor, item.idEmpresa)
-        End Function
 
     End Class
 
@@ -464,7 +469,7 @@ Namespace Controller
     Public Class ModosPagoController
         Inherits BaseController(Of ModosPago, EasyGestDataContext)
 
-       Public Sub New()
+        Public Sub New()
             MyBase.New(True)
         End Sub
 
@@ -652,8 +657,8 @@ Namespace Controller
                 Using control As New MovimientosTarjetaController()
                     Dim newMovimiento As MovimientosTarjeta = MovimientosTarjetaController.NewItem()
                     newMovimiento.Saldo = saldo
-                    newMovimiento.idTarjeta = idTarjeta                    
-                    newMovimiento.Descripcion = descripcion                    
+                    newMovimiento.idTarjeta = idTarjeta
+                    newMovimiento.Descripcion = descripcion
                     control.AddItem(newMovimiento)
                 End Using
             End If
@@ -710,7 +715,7 @@ Namespace Controller
             End If
             Return super
         End Function
- 
+
         Private Function CrearSuperUsuario() As Usuarios
             Dim super As Usuarios = NewItem()
             super.idUsuario = EasyGestDataContext.IDUSUARIOSUPER
