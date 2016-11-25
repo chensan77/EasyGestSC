@@ -2402,9 +2402,8 @@ Namespace Data.Entity
 			Me.Initialize
 		End Sub
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idTipo", DbType:="SmallInt NOT NULL", IsPrimaryKey:=true),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
-		Public Property idTipo() As Short
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idTipo", DbType:="SmallInt NOT NULL", IsPrimaryKey:=true)>  _
+		Friend Property idTipo() As Short
 			Get
 				Return Me._idTipo
 			End Get
@@ -2420,9 +2419,8 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TipoIdentificacionChn", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=2)>  _
-		Public Property TipoIdentificacionChn() As String
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TipoIdentificacionChn", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
+		Friend Property TipoIdentificacionChn() As String
 			Get
 				Return Me._TipoIdentificacionChn
 			End Get
@@ -2437,9 +2435,8 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TipoIdentificacionEsp", DbType:="VarChar(50) NOT NULL", CanBeNull:=false),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=3)>  _
-		Public Property TipoIdentificacionEsp() As String
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TipoIdentificacionEsp", DbType:="VarChar(50) NOT NULL", CanBeNull:=false)>  _
+		Friend Property TipoIdentificacionEsp() As String
 			Get
 				Return Me._TipoIdentificacionEsp
 			End Get
@@ -14071,7 +14068,7 @@ Namespace Data.Entity
 			Me.Initialize
 		End Sub
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPrioridad", DbType:="SmallInt NOT NULL", IsPrimaryKey:=true)>  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPrioridad", DbType:="SmallInt NOT NULL", IsPrimaryKey:=true, UpdateCheck:=UpdateCheck.Never)>  _
 		Friend Property idPrioridad() As Short
 			Get
 				Return Me._idPrioridad
@@ -14088,7 +14085,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrioridadChn", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrioridadChn", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never)>  _
 		Friend Property PrioridadChn() As String
 			Get
 				Return Me._PrioridadChn
@@ -14104,7 +14101,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrioridadEsp", DbType:="VarChar(50) NOT NULL", CanBeNull:=false)>  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrioridadEsp", DbType:="VarChar(50) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never)>  _
 		Friend Property PrioridadEsp() As String
 			Get
 				Return Me._PrioridadEsp

@@ -322,33 +322,33 @@ Namespace Controller
     Public Class EncargosController
         Inherits BaseController(Of Encargos, EasyGestDataContext)
 
-        Public Overloads Function UpdateItem(encargo As Encargos, ByRef lista As ListasCompra) As Encargos
-            Dim encargoNuevo As Encargos
-            encargoNuevo = MyBase.UpdateItem(encargo)
-            Using c As New ListasCompraController()
-                lista = c.GetItems("idEncargo = @0", encargoNuevo.idEncargo).FirstOrDefault
-                If IsNothing(lista) Then
-                    lista = ListasCompraController.NewItem()
-                    CopiarAListaCompra(lista, encargoNuevo)
-                    lista = c.AddItem(lista)
-                Else
-                    CopiarAListaCompra(lista, encargoNuevo)
-                    lista = c.UpdateItem(lista)
-                End If
-            End Using
-            Return encargoNuevo
-        End Function
+        'Public Overloads Function UpdateItem(encargo As Encargos, ByRef lista As ListasCompra) As Encargos
+        '    Dim encargoNuevo As Encargos
+        '    encargoNuevo = MyBase.UpdateItem(encargo)
+        '    Using c As New ListasCompraController()
+        '        lista = c.GetItems("idEncargo = @0", encargoNuevo.idEncargo).FirstOrDefault
+        '        If IsNothing(lista) Then
+        '            lista = ListasCompraController.NewItem()
+        '            CopiarAListaCompra(lista, encargoNuevo)
+        '            lista = c.AddItem(lista)
+        '        Else
+        '            CopiarAListaCompra(lista, encargoNuevo)
+        '            lista = c.UpdateItem(lista)
+        '        End If
+        '    End Using
+        '    Return encargoNuevo
+        'End Function
 
-        Public Overloads Function AddItem(encargo As Encargos, ByRef lista As ListasCompra) As Encargos
-            Dim encargoNuevo As Encargos
-            encargoNuevo = MyBase.AddItem(encargo)
-            Using c As New ListasCompraController()
-                lista = ListasCompraController.NewItem()
-                CopiarAListaCompra(lista, encargoNuevo)
-                c.AddItem(lista)
-            End Using
-            Return encargoNuevo
-        End Function
+        'Public Overloads Function AddItem(encargo As Encargos, ByRef lista As ListasCompra) As Encargos
+        '    Dim encargoNuevo As Encargos
+        '    encargoNuevo = MyBase.AddItem(encargo)
+        '    Using c As New ListasCompraController()
+        '        lista = ListasCompraController.NewItem()
+        '        CopiarAListaCompra(lista, encargoNuevo)
+        '        c.AddItem(lista)
+        '    End Using
+        '    Return encargoNuevo
+        'End Function
 
         Private Sub CopiarAListaCompra(ByRef lista As ListasCompra, encargo As Encargos)
             lista.Descripcion = encargo.Descripcion
@@ -396,10 +396,6 @@ Namespace Controller
 
     Public Class FormasContactoController
         Inherits BaseController(Of FormasContacto, EasyGestDataContext)
-
-        Public Sub New()
-            MyBase.New(True)
-        End Sub
 
     End Class
 
@@ -474,10 +470,6 @@ Namespace Controller
     Public Class ModosPagoController
         Inherits BaseController(Of ModosPago, EasyGestDataContext)
 
-        Public Sub New()
-            MyBase.New(True)
-        End Sub
-
     End Class
 
     Public Class MorosidadesController
@@ -498,10 +490,6 @@ Namespace Controller
 
     Public Class MunicipiosEspañolasController
         Inherits BaseController(Of MunicipiosEspañolas, EasyGestDataContext)
-
-        Public Sub New()
-            MyBase.New(True)
-        End Sub
 
         Public Function GetItemsByCodProvincia(ByVal codProvincia As String) As IEnumerable(Of MunicipiosEspañolas)
             Return GetItems(String.Format("CodProvincia = ""{0}""", codProvincia), "Municipio")
@@ -550,35 +538,31 @@ Namespace Controller
     Public Class PrioridadesTareaController
         Inherits BaseController(Of PrioridadesTarea, EasyGestDataContext)
 
-        Public Sub New()
-            MyBase.New(True)
-        End Sub
-
     End Class
 
     Public Class ProductosController
         Inherits BaseController(Of Productos, EasyGestDataContext)
 
-        Public Overrides Function DeleteItem(ByVal id As Object) As Data.Entity.Productos
-            Dim producto As Productos
-            producto = GetItem(id)
-            Try
-                producto = MyBase.DeleteItem(id)
-            Catch ex As Exception
-                producto = GetItem(id)
-                If Not IsNothing(producto) Then
-                    producto.Activo = False
-                    producto = UpdateItem(producto)
-                End If
-            End Try
+        'Public Overrides Function DeleteItem(ByVal id As Object) As Data.Entity.Productos
+        '    Dim producto As Productos
+        '    producto = GetItem(id)
+        '    Try
+        '        producto = MyBase.DeleteItem(id)
+        '    Catch ex As Exception
+        '        producto = GetItem(id)
+        '        If Not IsNothing(producto) Then
+        '            producto.Activo = False
+        '            producto = UpdateItem(producto)
+        '        End If
+        '    End Try
 
-            Return producto
-        End Function
+        '    Return producto
+        'End Function
 
-        Public Overrides Function UpdateItem(item As Data.Entity.Productos) As Data.Entity.Productos
-            item.FModificacion = Now()
-            Return MyBase.UpdateItem(item)
-        End Function
+        'Public Overrides Function UpdateItem(item As Data.Entity.Productos) As Data.Entity.Productos
+        '    item.FModificacion = Now()
+        '    Return MyBase.UpdateItem(item)
+        'End Function
 
         Public Function AsignarFamilia(ByVal idProducto As Long, ByVal idfamilia As Long?) As VWProductos
             Dim producto As Productos = GetItem(idProducto)

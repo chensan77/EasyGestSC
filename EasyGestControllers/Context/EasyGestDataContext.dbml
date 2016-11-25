@@ -83,9 +83,9 @@
   </Table>
   <Table Name="dbo.TiposIdentificacion" Member="TiposIdentificacion" AccessModifier="Internal">
     <Type Name="TiposIdentificacion">
-      <Column Name="idTipo" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="TipoIdentificacionChn" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="TipoIdentificacionEsp" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="idTipo" AccessModifier="Internal" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TipoIdentificacionChn" AccessModifier="Internal" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TipoIdentificacionEsp" AccessModifier="Internal" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.Ubicaciones" Member="Ubicaciones" AccessModifier="Internal">
@@ -642,9 +642,9 @@
   </Table>
   <Table Name="dbo.PrioridadesTarea" Member="PrioridadesTarea">
     <Type Name="PrioridadesTarea">
-      <Column Name="idPrioridad" AccessModifier="Internal" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="PrioridadChn" AccessModifier="Internal" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="PrioridadEsp" AccessModifier="Internal" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="idPrioridad" AccessModifier="Internal" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="PrioridadChn" AccessModifier="Internal" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="PrioridadEsp" AccessModifier="Internal" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
     </Type>
   </Table>
   <Table Name="dbo.TiposDatoCaractProducto" Member="TiposDatoCaractProducto">

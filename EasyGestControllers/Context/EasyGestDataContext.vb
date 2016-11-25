@@ -908,6 +908,30 @@ Namespace Data.Entity
         End Property
 
     End Class
+    Partial Class Morosidades
+        Inherits LINQEntityBase
+        Private Sub OnCreated()
+            _FCreacion = Now()
+            _idMorosidad = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
+        End Sub
+    End Class
+
+    Partial Class MovimientosMorosidad
+        Inherits LINQEntityBase
+
+        Private Sub OnCreated()
+            _FMovimiento = Now()
+            _idMovimiento = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
+        End Sub
+
+        Private Sub OnValidate(action As ChangeAction)
+            If action = ChangeAction.Insert Then
+                If _idUsuario.HasValue() AndAlso _idUsuario.Value = EasyGestControllers.Data.Context.EasyGestDataContext.IDUSUARIOSUPER Then
+                    _idUsuario = Nothing
+                End If
+            End If
+        End Sub
+    End Class
 
     Partial Class MovimientosTarjeta
         Inherits LINQEntityBase
@@ -927,8 +951,6 @@ Namespace Data.Entity
         End Sub
 
     End Class
-
-
 
     Partial Class Ofertas
         Inherits LINQEntityBase
@@ -1279,6 +1301,12 @@ Namespace Data.Entity
             Me.ReadOnly = True
         End Sub
 
+        Public ReadOnly Property TipoID As Short
+            Get
+                Return _idTipo
+            End Get
+        End Property
+
         Public ReadOnly Property TipoIdentificacion() As String
             Get
                 If Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName.Equals("zh") Then
@@ -1288,6 +1316,7 @@ Namespace Data.Entity
                 End If
             End Get
         End Property
+
 
     End Class
 
