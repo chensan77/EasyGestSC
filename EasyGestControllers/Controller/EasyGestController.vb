@@ -138,24 +138,7 @@ Namespace Controller
     Public Class ClientesController
         Inherits BaseController(Of Clientes, EasyGestDataContext)
 
-        'Public Function DeleteItem(id As Object) As Data.Entity.Clientes
-        '    Dim cliente As Clientes
-        '    cliente = GetItem(id)
-        '    Try
-        '        cliente = MyBase.DeleteItem(id)
-        '    Catch ex As Exception
-        '        cliente = GetItem(id)
-        '        If Not IsNothing(cliente) Then
-        '            cliente.Activo = False
-        '            cliente = UpdateItem(cliente)
-        '        End If
-        '    End Try
-
-        '    Return cliente
-        'End Function
-
         Public Overrides Sub SyncronisingItem(ByRef item As Clientes)
-
             If item.LINQEntityState = EntityState.Deleted Then
                 Try
                     Contexto.Clientes.DeleteOnSubmit(item)
@@ -173,6 +156,29 @@ Namespace Controller
                 End Try
             End If
             MyBase.SyncronisingItem(item)
+        End Sub
+
+        Public Overrides Sub SyncronisingItem(ByRef items As IEnumerable(Of Clientes))
+            For Each item In items
+                If item.LINQEntityState = EntityState.Deleted Then
+                    Try
+                        Contexto.Clientes.DeleteOnSubmit(item)
+                        Contexto.SubmitChanges()
+                        'Entidad eliminado, poner como no a tratar cuando llama a la funcion de la clase base
+                        item.SetAsNoChangeOnSubmit()
+                    Catch sqlex As SqlClient.SqlException
+                        If sqlex.Number = SQLERRORNUMBER_FKCONFLICTONDELETE Then
+                            item.Activo = False
+                            item.SetAsUpdateOnSubmit()
+                        Else
+                            Throw sqlex
+                        End If
+                    Catch ex As Exception
+                        Throw ex
+                    End Try
+                End If
+            Next
+            MyBase.SyncronisingItem(items)
         End Sub
 
     End Class
@@ -585,30 +591,54 @@ Namespace Controller
     Public Class ProveedoresController
         Inherits BaseController(Of Proveedores, EasyGestDataContext)
 
-        Public Overrides Function DeleteItem(id As Object) As Data.Entity.Proveedores
-            Dim proveedor As Proveedores
-            proveedor = GetItem(id)
-            Try
-                proveedor = MyBase.DeleteItem(id)
-            Catch ex As Exception
-                proveedor = GetItem(id)
-                If Not IsNothing(proveedor) Then
-                    proveedor.Activo = False
-                    proveedor = UpdateItem(proveedor)
-                End If
-            End Try
+        Public Overrides Sub SyncronisingItem(ByRef item As Proveedores)
+            If item.LINQEntityState = EntityState.Deleted Then
+                Try
+                    Contexto.Proveedores.DeleteOnSubmit(item)
+                    Contexto.SubmitChanges()
+                    Exit Sub
+                Catch sqlex As SqlClient.SqlException
+                    If sqlex.Number = SQLERRORNUMBER_FKCONFLICTONDELETE Then
+                        item.Activo = False
+                        item.SetAsUpdateOnSubmit()
+                    Else
+                        Throw sqlex
+                    End If
+                Catch ex As Exception
+                    Throw ex
+                End Try
+            End If
+            MyBase.SyncronisingItem(item)
+        End Sub
 
-            Return proveedor
-        End Function
+        Public Overrides Sub SyncronisingItem(ByRef items As IEnumerable(Of Proveedores))
+            For Each item In items
+                If item.LINQEntityState = EntityState.Deleted Then
+                    Try
+                        Contexto.Proveedores.DeleteOnSubmit(item)
+                        Contexto.SubmitChanges()
+                        'Entidad eliminado, poner como no a tratar cuando llama a la funcion de la clase base
+                        item.SetAsNoChangeOnSubmit()
+                    Catch sqlex As SqlClient.SqlException
+                        If sqlex.Number = SQLERRORNUMBER_FKCONFLICTONDELETE Then
+                            item.Activo = False
+                            item.SetAsUpdateOnSubmit()
+                        Else
+                            Throw sqlex
+                        End If
+                    Catch ex As Exception
+                        Throw ex
+                    End Try
+                End If
+            Next
+            MyBase.SyncronisingItem(items)
+        End Sub
+
 
     End Class
 
     Public Class ProvinciasEspañolasController
         Inherits BaseController(Of ProvinciasEspañolas, EasyGestDataContext)
-
-        Public Sub New()
-            MyBase.New(True)
-        End Sub
 
     End Class
 
@@ -642,13 +672,13 @@ Namespace Controller
             Dim tarjeta As TarjetasFidelizacion = GetItem(idTarjeta)
             If Not IsNothing(tarjeta) Then
                 tarjeta.Saldo += saldo
-                UpdateItem(tarjeta)
+                Me.SyncronisingItem(tarjeta)
                 Using control As New MovimientosTarjetaController()
                     Dim newMovimiento As MovimientosTarjeta = MovimientosTarjetaController.NewItem()
                     newMovimiento.Saldo = saldo
                     newMovimiento.idTarjeta = idTarjeta
                     newMovimiento.Descripcion = descripcion
-                    control.AddItem(newMovimiento)
+                    control.SyncronisingItem(newMovimiento)
                 End Using
             End If
         End Sub
