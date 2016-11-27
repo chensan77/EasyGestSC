@@ -586,36 +586,11 @@ Namespace Controller
             Return (From p In Contexto.VWProductos Where p.idProducto = idProducto Select p).First
         End Function
 
-    End Class
-
-    Public Class ProveedoresController
-        Inherits BaseController(Of Proveedores, EasyGestDataContext)
-
-        Public Overrides Sub SyncronisingItem(ByRef item As Proveedores)
-            If item.LINQEntityState = EntityState.Deleted Then
-                Try
-                    Contexto.Proveedores.DeleteOnSubmit(item)
-                    Contexto.SubmitChanges()
-                    Exit Sub
-                Catch sqlex As SqlClient.SqlException
-                    If sqlex.Number = SQLERRORNUMBER_FKCONFLICTONDELETE Then
-                        item.Activo = False
-                        item.SetAsUpdateOnSubmit()
-                    Else
-                        Throw sqlex
-                    End If
-                Catch ex As Exception
-                    Throw ex
-                End Try
-            End If
-            MyBase.SyncronisingItem(item)
-        End Sub
-
-        Public Overrides Sub SyncronisingItem(ByRef items As IEnumerable(Of Proveedores))
+        Public Overrides Sub SyncronisingItem(ByRef items As IEnumerable(Of Productos))
             For Each item In items
                 If item.LINQEntityState = EntityState.Deleted Then
                     Try
-                        Contexto.Proveedores.DeleteOnSubmit(item)
+                        Contexto.Productos.DeleteOnSubmit(item)
                         Contexto.SubmitChanges()
                         'Entidad eliminado, poner como no a tratar cuando llama a la funcion de la clase base
                         item.SetAsNoChangeOnSubmit()
@@ -688,18 +663,12 @@ Namespace Controller
     Public Class TiposIdentificacionController
         Inherits BaseController(Of TiposIdentificacion, EasyGestDataContext)
 
-        Public Sub New()
-            MyBase.New(True)
-        End Sub
 
     End Class
 
     Public Class TiposDatoCaractProductoController
         Inherits BaseController(Of TiposDatoCaractProducto, EasyGestDataContext)
 
-        Public Sub New()
-            MyBase.New(True)
-        End Sub
 
     End Class
 
@@ -725,11 +694,13 @@ Namespace Controller
             super = GetItem(EasyGestDataContext.IDUSUARIOSUPER)
             If IsNothing(super) Then
                 super = CrearSuperUsuario()
-                AddItem(super)
+                super.SetAsInsertOnSubmit()
+                SyncronisingItem(super)
             Else
                 If Not super.IsSuper Then
                     super = CrearSuperUsuario()
-                    super = UpdateItem(super)
+                    super.SetAsUpdateOnSubmit()
+                    SyncronisingItem(super)
                 End If
             End If
             Return super
@@ -785,7 +756,7 @@ Namespace Controller
             If vale IsNot Nothing AndAlso vale.Activo Then
                 vale.Activo = False
                 vale.FCancelacion = Now()
-                MyBase.UpdateItem(vale)
+                SyncronisingItem(vale)
             End If
         End Sub
 
@@ -795,7 +766,7 @@ Namespace Controller
             If vale IsNot Nothing AndAlso vale.Activo Then
                 vale.Activo = False
                 vale.FCancelacion = Now()
-                MyBase.UpdateItem(vale)
+                SyncronisingItem(vale)
             End If
         End Sub
 
@@ -814,35 +785,16 @@ Namespace Controller
         'End Sub
     End Class
 
-    Public Class VistasController(Of VEntity As Class)
+    Public Class VistasController(Of VEntity As LINQEntityBase)
         Inherits BaseController(Of VEntity, EasyGestDataContext)
 
-        Public Overrides Function AddItem(item As VEntity) As VEntity
-            Return item
-        End Function
+        Public Overrides Sub SyncronisingItem(ByRef item As VEntity)
 
-        Public Overrides Sub AddItems(items As System.Collections.Generic.IEnumerable(Of VEntity))
-            'Nothing to do
         End Sub
 
-        Public Overrides Function DeleteItem(id As Object) As VEntity
-            'Nothing to do
-            Return Nothing
-        End Function
+        Public Overrides Sub SyncronisingItem(ByRef items As IEnumerable(Of VEntity))
 
-        Public Overrides Function DeleteItem(keys() As Object) As VEntity
-            'Nothing to do
-            Return Nothing
-        End Function
-
-        Public Overrides Sub DeleteItems(items As System.Collections.Generic.IEnumerable(Of VEntity))
-            'Nothing to do
         End Sub
-
-        Public Overrides Function UpdateItem(item As VEntity) As VEntity
-            'Nothing to do
-            Return item
-        End Function
     End Class
 
 End Namespace
