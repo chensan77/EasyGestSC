@@ -83,11 +83,7 @@ Namespace Data.Entity
         End Sub
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.[New] Or Me.LINQEntityState = EntityState.Modified Then
-                Return Not String.IsNullOrWhiteSpace(_Concepto)
-            Else
-                Return True
-            End If
+            Return Not String.IsNullOrWhiteSpace(_Concepto)
         End Function
 
         Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
@@ -198,11 +194,7 @@ Namespace Data.Entity
         End Property
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.[New] Or Me.LINQEntityState = EntityState.Modified Then
-                Return Not String.IsNullOrWhiteSpace(_Nombre) And Not String.IsNullOrWhiteSpace(_Codigo)
-            Else
-                Return True
-            End If
+            Return Not String.IsNullOrWhiteSpace(_Nombre) And Not String.IsNullOrWhiteSpace(_Codigo)
         End Function
 
         Private Sub OnValidate(ByVal action As System.Data.Linq.ChangeAction)
@@ -260,12 +252,8 @@ Namespace Data.Entity
         End Sub
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.[New] Or Me.LINQEntityState = EntityState.Modified Then
-                Return Not String.IsNullOrWhiteSpace(_DatoContacto) And _idPropietario > 0 And (_TipoPropietario.Equals(TIPO_PROPIETARIO_CLIENTE) Or
-                    _TipoPropietario.Equals(TIPO_PROPIETARIO_PROVEEDOR))
-            Else
-                Return True
-            End If
+            Return Not String.IsNullOrWhiteSpace(_DatoContacto) And _idPropietario > 0 And (_TipoPropietario.Equals(TIPO_PROPIETARIO_CLIENTE) Or
+                _TipoPropietario.Equals(TIPO_PROPIETARIO_PROVEEDOR))
         End Function
     End Class
 
@@ -289,12 +277,8 @@ Namespace Data.Entity
         End Sub
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.[New] Or Me.LINQEntityState = EntityState.Modified Then
-                Return Not String.IsNullOrWhiteSpace(_Banco) And Not String.IsNullOrWhiteSpace(_CCC) And _idPropietario > 0 And (_TipoPropietario.Equals(TIPO_PROPIETARIO_CLIENTE) Or
-                    _TipoPropietario.Equals(TIPO_PROPIETARIO_PROVEEDOR))
-            Else
-                Return True
-            End If
+            Return Not String.IsNullOrWhiteSpace(_Banco) And Not String.IsNullOrWhiteSpace(_CCC) And _idPropietario > 0 And (_TipoPropietario.Equals(TIPO_PROPIETARIO_CLIENTE) Or
+                _TipoPropietario.Equals(TIPO_PROPIETARIO_PROVEEDOR))
         End Function
 
     End Class
@@ -341,11 +325,7 @@ Namespace Data.Entity
         End Sub
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.[New] Or Me.LINQEntityState = EntityState.Modified Then
-                Return Not String.IsNullOrWhiteSpace(Nombre) And (TipoEtiqueta.Equals(Etiquetas.TIPO_ETIQUETA_ENHOJA) Or TipoEtiqueta.Equals(Etiquetas.TIPO_ETIQUETA_ENROLLO))
-            Else
-                Return True
-            End If
+            Return Not String.IsNullOrWhiteSpace(Nombre) And (TipoEtiqueta.Equals(Etiquetas.TIPO_ETIQUETA_ENHOJA) Or TipoEtiqueta.Equals(Etiquetas.TIPO_ETIQUETA_ENROLLO))
         End Function
 
         Public Property UniqueIDEtiqueta As String
@@ -381,11 +361,7 @@ Namespace Data.Entity
         End Sub
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.[New] Or Me.LINQEntityState = EntityState.Modified Then
-                Return Not String.IsNullOrWhiteSpace(_NIF) And Not String.IsNullOrWhiteSpace(_Empresa)
-            Else
-                Return True
-            End If
+            Return Not String.IsNullOrWhiteSpace(_NIF) And Not String.IsNullOrWhiteSpace(_Empresa)
         End Function
 
         Public Property LogoImagen As Image
@@ -445,11 +421,7 @@ Namespace Data.Entity
         End Sub
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.[New] Or Me.LINQEntityState = EntityState.Modified Then
-                Return Not String.IsNullOrWhiteSpace(_Descripcion) And Not String.IsNullOrWhiteSpace(_Cliente) And Not String.IsNullOrWhiteSpace(_Telefono)
-            Else
-                Return True
-            End If
+            Return Not String.IsNullOrWhiteSpace(_Descripcion) And Not String.IsNullOrWhiteSpace(_Cliente) And Not String.IsNullOrWhiteSpace(_Telefono)
         End Function
 
     End Class
@@ -462,13 +434,9 @@ Namespace Data.Entity
         End Sub
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.[New] Or Me.LINQEntityState = EntityState.Modified Then
-                Return _MargenDer >= 0.0 And _MargenInf >= 0.0 And _MargenIzq >= 0.0 And
-                    _MargenSup >= 0.0 And _Alto > 0.0 And _Ancho > 0.0 And _Columnas > 0.0 And _Filas > 0.0 And
-                    _EspacioH >= 0.0 And _EspacioV >= 0.0 And Not String.IsNullOrWhiteSpace(_Referencia)
-            Else
-                Return True
-            End If
+            Return _MargenDer >= 0.0 And _MargenInf >= 0.0 And _MargenIzq >= 0.0 And
+                _MargenSup >= 0.0 And _Alto > 0.0 And _Ancho > 0.0 And _Columnas > 0.0 And _Filas > 0.0 And
+                _EspacioH >= 0.0 And _EspacioV >= 0.0 And Not String.IsNullOrWhiteSpace(_Referencia)
         End Function
 
         Public Property UnidadMediad As String
@@ -497,11 +465,7 @@ Namespace Data.Entity
 
         Public Overrides Function IsValid() As Boolean
             Dim unidades As String() = New String() {"CM", "INCH", "POINT"}
-            If Me.LINQEntityState = EntityState.[New] Or Me.LINQEntityState = EntityState.Modified Then
-                Return _Alto > 0.0 And _Ancho > 0.0 And Not String.IsNullOrWhiteSpace(_Referencia) And unidades.Contains(_UnidadMedida)
-            Else
-                Return True
-            End If
+            Return _Alto > 0.0 And _Ancho > 0.0 And Not String.IsNullOrWhiteSpace(_Referencia) And unidades.Contains(_UnidadMedida)
         End Function
 
         Public ReadOnly Property NombreEtiqueta() As String
@@ -538,11 +502,7 @@ Namespace Data.Entity
         End Sub
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.New Or Me.LINQEntityState = EntityState.Modified Then
-                Return Not String.IsNullOrWhiteSpace(_Familia)
-            Else
-                Return True
-            End If
+            Return Not String.IsNullOrWhiteSpace(_Familia)
         End Function
 
     End Class
@@ -859,11 +819,7 @@ Namespace Data.Entity
         End Sub
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.New Or Me.LINQEntityState = EntityState.Modified Then
-                Return Not String.IsNullOrWhiteSpace(_Descripcion)
-            Else
-                Return True
-            End If
+            Return Not String.IsNullOrWhiteSpace(_Descripcion)
         End Function
 
         Public ReadOnly Property EsEncargo As Boolean
@@ -882,11 +838,7 @@ Namespace Data.Entity
         End Sub
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.New Or Me.LINQEntityState = EntityState.Modified Then
-                Return Not String.IsNullOrWhiteSpace(_Marca)
-            Else
-                Return True
-            End If
+            Return Not String.IsNullOrWhiteSpace(_Marca)
         End Function
 
     End Class
@@ -969,11 +921,7 @@ Namespace Data.Entity
         End Sub
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.New Or Me.LINQEntityState = EntityState.Modified Then
-                Return Not (_Valor1 = 0.0 And _Valor2 = 0.0)
-            Else
-                Return True
-            End If
+            Return Not (_Valor1 = 0.0 And _Valor2 = 0.0)
         End Function
 
         Public Property DiaDuracion As Integer
@@ -1079,11 +1027,7 @@ Namespace Data.Entity
         End Sub
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.Modified Or Me.LINQEntityState = EntityState.New Then
-                Return Not String.IsNullOrWhiteSpace(_Referencia) And Not String.IsNullOrWhiteSpace(_Descripcion)
-            Else
-                Return True
-            End If
+            Return Not String.IsNullOrWhiteSpace(_Referencia) And Not String.IsNullOrWhiteSpace(_Descripcion)
         End Function
 
         Private Sub OnValidate(ByVal action As System.Data.Linq.ChangeAction)
@@ -1154,11 +1098,7 @@ Namespace Data.Entity
         End Property
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.Modified Or Me.LINQEntityState = EntityState.New Then
-                Return Not String.IsNullOrWhiteSpace(_Nombre)
-            Else
-                Return True
-            End If
+            Return Not String.IsNullOrWhiteSpace(_Nombre)
         End Function
 
         Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
@@ -1194,11 +1134,7 @@ Namespace Data.Entity
 
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.Modified Or Me.LINQEntityState = EntityState.New Then
-                Return Not String.IsNullOrWhiteSpace(_Identificacion) And Not String.IsNullOrWhiteSpace(_Puesto)
-            Else
-                Return True
-            End If
+            Return Not String.IsNullOrWhiteSpace(_Identificacion) And Not String.IsNullOrWhiteSpace(_Puesto)
         End Function
 
 
@@ -1216,11 +1152,7 @@ Namespace Data.Entity
         End Sub
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.Modified Or Me.LINQEntityState = EntityState.New Then
-                Return Not String.IsNullOrWhiteSpace(_Tarea)
-            Else
-                Return True
-            End If
+            Return Not String.IsNullOrWhiteSpace(_Tarea)
         End Function
 
         Public Shared PosiblesHorasAntelacion() As Integer = New Integer() {1, 2, 3, 4, 6, 8, 10, 12, 18, 24, 48, 72}
@@ -1268,11 +1200,7 @@ Namespace Data.Entity
         End Sub
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.Modified Or Me.LINQEntityState = EntityState.New Then
-                Return _Base > 0.0 And _BasePunto > 0.0 And _Beneficio > 0.0 And _EquivalenciaPunto > 0.0 And Not String.IsNullOrWhiteSpace(_NumeroTarjeta)
-            Else
-                Return True
-            End If
+            Return _Base > 0.0 And _BasePunto > 0.0 And _Beneficio > 0.0 And _EquivalenciaPunto > 0.0 And Not String.IsNullOrWhiteSpace(_NumeroTarjeta)
         End Function
 
         Public WriteOnly Property FormulaSaldo As String
@@ -1353,11 +1281,7 @@ Namespace Data.Entity
         End Sub
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.Modified Or Me.LINQEntityState = EntityState.New Then
-                Return Not String.IsNullOrWhiteSpace(_Medida) And Not String.IsNullOrWhiteSpace(_Abreviatura)
-            Else
-                Return True
-            End If
+            Return Not String.IsNullOrWhiteSpace(_Medida) And Not String.IsNullOrWhiteSpace(_Abreviatura)
         End Function
 
     End Class
@@ -1370,10 +1294,7 @@ Namespace Data.Entity
         End Sub
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.New Or Me.LINQEntityState = EntityState.Modified Then
-                Return Not String.IsNullOrWhiteSpace(_Ubicacion)
-            End If
-            Return True
+            Return Not String.IsNullOrWhiteSpace(_Ubicacion)
         End Function
 
     End Class
@@ -1390,11 +1311,7 @@ Namespace Data.Entity
         End Sub
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.New Or Me.LINQEntityState = EntityState.Modified Then
-                Return Not String.IsNullOrWhiteSpace(_Nombre) And Not String.IsNullOrWhiteSpace(_NombreSesion) And Not String.IsNullOrWhiteSpace(_Contraseña)
-            End If
-            Return True
-
+            Return Not String.IsNullOrWhiteSpace(_Nombre) And Not String.IsNullOrWhiteSpace(_NombreSesion) And Not String.IsNullOrWhiteSpace(_Contraseña)
         End Function
 
         Public Function IsSuper() As Boolean
@@ -1421,10 +1338,7 @@ Namespace Data.Entity
         End Property
 
         Public Overrides Function IsValid() As Boolean
-            If Me.LINQEntityState = EntityState.New Or Me.LINQEntityState = EntityState.Modified Then
-                Return _Importe >= 0.0F
-            End If
-            Return True
+            Return _Importe >= 0.0F
         End Function
 
         Private Sub OnValidate(action As System.Data.Linq.ChangeAction)

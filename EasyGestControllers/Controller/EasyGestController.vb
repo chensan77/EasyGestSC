@@ -612,6 +612,54 @@ Namespace Controller
 
     End Class
 
+    Public Class ProveedoresController
+        Inherits BaseController(Of Proveedores, EasyGestDataContext)
+
+        Public Overrides Sub SyncronisingItem(ByRef item As Proveedores)
+            If item.LINQEntityState = EntityState.Deleted Then
+                Try
+                    Contexto.Proveedores.DeleteOnSubmit(item)
+                    Contexto.SubmitChanges()
+                    Exit Sub
+                Catch sqlex As SqlClient.SqlException
+                    If sqlex.Number = SQLERRORNUMBER_FKCONFLICTONDELETE Then
+                        item.Activo = False
+                        item.SetAsUpdateOnSubmit()
+                    Else
+                        Throw sqlex
+                    End If
+                Catch ex As Exception
+                    Throw ex
+                End Try
+            End If
+            MyBase.SyncronisingItem(item)
+        End Sub
+
+        Public Overrides Sub SyncronisingItem(ByRef items As IEnumerable(Of Proveedores))
+            For Each item In items
+                If item.LINQEntityState = EntityState.Deleted Then
+                    Try
+                        Contexto.Proveedores.DeleteOnSubmit(item)
+                        Contexto.SubmitChanges()
+                        'Entidad eliminado, poner como no a tratar cuando llama a la funcion de la clase base
+                        item.SetAsNoChangeOnSubmit()
+                    Catch sqlex As SqlClient.SqlException
+                        If sqlex.Number = SQLERRORNUMBER_FKCONFLICTONDELETE Then
+                            item.Activo = False
+                            item.SetAsUpdateOnSubmit()
+                        Else
+                            Throw sqlex
+                        End If
+                    Catch ex As Exception
+                        Throw ex
+                    End Try
+                End If
+            Next
+            MyBase.SyncronisingItem(items)
+        End Sub
+
+    End Class
+
     Public Class ProvinciasEspañolasController
         Inherits BaseController(Of ProvinciasEspañolas, EasyGestDataContext)
 

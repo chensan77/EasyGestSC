@@ -6,7 +6,6 @@ Namespace Presentacion.Formulario.Cliente
     Public Class frmClienteEdicion
 
         Private _cliente As Entity.Clientes = Nothing
-        Private _action As System.Data.Linq.ChangeAction = System.Data.Linq.ChangeAction.None
 
         Protected Friend ReadOnly Property Cliente() As Entity.VWClientes
             Get
@@ -28,9 +27,7 @@ Namespace Presentacion.Formulario.Cliente
             ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
             If idCliente = -1 Then
                 _cliente = ClientesController.NewItem()
-                _action = System.Data.Linq.ChangeAction.Insert
             Else
-                _action = System.Data.Linq.ChangeAction.Update
                 Using control As New ClientesController
                     _cliente = control.GetItem(idCliente)
                 End Using
@@ -51,7 +48,7 @@ Namespace Presentacion.Formulario.Cliente
                     TiposIdentificacionBindingSource.DataSource = control.GetItems()
                 End Using
                 Using control As New MunicipiosEspañolasController
-                    If _action = System.Data.Linq.ChangeAction.Update And Not String.IsNullOrWhiteSpace(_cliente.Provincia) Then
+                    If _cliente.LINQEntityState <> EntityState.New And Not String.IsNullOrWhiteSpace(_cliente.Provincia) Then
                         MunicipiosEspañolasBindingSource.DataSource = control.GetItemsByNombreProvincia(_cliente.Provincia)
                     End If
                 End Using
@@ -68,7 +65,7 @@ Namespace Presentacion.Formulario.Cliente
 
 
         Private Sub timValidar_Tick(ByVal sender As Object, ByVal e As System.EventArgs) Handles timValidar.Tick
-            btnAceptar.Enabled = _cliente.IsValid(_action)
+            btnAceptar.Enabled = _cliente.IsValid()
         End Sub
 
         Private Sub CancelarForm()
@@ -80,11 +77,7 @@ Namespace Presentacion.Formulario.Cliente
         Private Sub AceptarForm()
             timValidar.Enabled = False
             Using control As New ClientesController
-                If _action = System.Data.Linq.ChangeAction.Insert Then
-                    _cliente = control.AddItem(_cliente)
-                ElseIf _action = System.Data.Linq.ChangeAction.Update Then
-                    control.UpdateItem(_cliente)
-                End If
+                control.SyncronisingItem(_cliente)
             End Using
             'Me.DialogResult = Windows.Forms.DialogResult.OK
         End Sub

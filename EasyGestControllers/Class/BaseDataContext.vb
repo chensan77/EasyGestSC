@@ -8,7 +8,7 @@ Namespace Data
         Private Shared mappingSource As System.Data.Linq.Mapping.MappingSource = New AttributeMappingSource
 
         Public Sub New()
-            MyBase.New(Util.Comunes.CadenaConexion, mappingSource)
+            MyBase.New(gCadenaConexion, mappingSource)
         End Sub
 
         Public Sub New(ByVal connectionstring As String, ByVal mapping As System.Data.Linq.Mapping.MappingSource)

@@ -68,13 +68,13 @@ Namespace Controller
                         table.Attach(item, False)
                     ElseIf item.LINQEntityState = Data.Entity.EntityState.[New] Then
                         insertItems.Add(item)
-                    ElseIf item.LINQEntityState = EntityState.Modified OrElse item.LINQEntityState = EntityState.Detached Then
+                    ElseIf item.LINQEntityState = EasyGestControllers.Data.Entity.EntityState.Modified OrElse item.LINQEntityState = EasyGestControllers.Data.Entity.EntityState.Detached Then
                         If item.LINQEntityOriginalValue IsNot Nothing Then
                             table.Attach(item, item.LINQEntityOriginalValue)
                         Else
                             table.Attach(item, True)
                         End If
-                    ElseIf item.LINQEntityState = EntityState.Deleted Then
+                    ElseIf item.LINQEntityState = EasyGestControllers.Data.Entity.EntityState.Deleted Then
                         table.Attach(item)
                         deleteItems.Add(item)
                     End If

@@ -109,7 +109,7 @@ Namespace Presentacion.Formulario.Cliente
         End Property
 
         Private Sub timValidar_Tick(ByVal sender As Object, ByVal e As System.EventArgs) Handles timValidar.Tick
-            btnAceptar.Enabled = _tarjeta.IsValid(_action)
+            btnAceptar.Enabled = _tarjeta.IsValid()
         End Sub
 
         Private Sub CancelarForm()

@@ -206,7 +206,10 @@ Namespace Presentacion.Formulario.Cliente
             If MostrarMensaje(My.Resources.Application.ConfirmacionBorrarDato, Me.Text, Telerik.WinControls.RadMessageIcon.Question, MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
                 Try
                     Using control As New TarjetasFidelizacionController
-                        control.DeleteItem(idSeleccionado)
+                        Dim toDelete As TarjetasFidelizacion
+                        toDelete = control.GetItem(idSeleccionado)
+                        toDelete.SetAsDeleteOnSubmit()
+                        control.SyncronisingItem(toDelete)
                     End Using
                     VWTarjetasFidelizacionBindingSource.RemoveCurrent()
                 Catch ex As Exception

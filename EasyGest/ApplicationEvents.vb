@@ -25,7 +25,7 @@
                     Using c As New UsuariosController
                         Dim usu As Usuarios = c.GetItem(gUsuario.idUsuario)
                         usu.PuestoEnSesion = Nothing
-                        c.UpdateItem(usu)
+                        c.SyncronisingItem(usu)
                     End Using
                 End If
             Catch ex As Exception
