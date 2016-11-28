@@ -7,7 +7,7 @@ Namespace Presentacion.Formulario.Configuracion
         Private _unidadesdeleted As List(Of UnidadesMedida) = New List(Of UnidadesMedida)()
         Private _ubicacionesdeleted As List(Of Ubicaciones) = New List(Of Ubicaciones)()
         Private _familiasdeleted As List(Of Familias) = New List(Of Familias)()
-        Private _tickreferencia As Long = New Date(2010, 1, 1).Ticks
+        'Private _tickreferencia As Long = New Date(2010, 1, 1).Ticks
 
 #Region "Eventos Form"
         Private Sub frmAuxiliarProducto_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
@@ -15,47 +15,33 @@ Namespace Presentacion.Formulario.Configuracion
                 Try
                     'tratar marcas
                     Using control As New MarcasController
-                        Dim nuevos As New List(Of Marcas)()
-                        control.DeleteItems(_marcasdeleted)
-                        For Each marca As Marcas In MarcasBindingSource.List
-                            If marca.idMarca = 0 Then
-                                nuevos.Add(marca)
-                            Else
-                                control.UpdateItem(marca)
-                            End If
-                        Next
-                        control.AddItems(nuevos)
+                        control.SyncronisingItem(_marcasdeleted.AsEnumerable())
+                        control.SyncronisingItem(DirectCast(MarcasBindingSource.List, IEnumerable(Of Marcas)))
                     End Using
                     'tratar medidas
                     Using control As New UnidadesMedidaController
-                        Dim nuevos As New List(Of UnidadesMedida)()
-                        control.DeleteItems(_unidadesdeleted)
-                        For Each medida As UnidadesMedida In UnidadesMedidaBindingSource.List
-                            If medida.idUnidadMedida = 0 Then
-                                nuevos.Add(medida)
-                            Else
-                                control.UpdateItem(medida)
-                            End If
-                        Next
-                        control.AddItems(nuevos)
+                        'Dim nuevos As New List(Of UnidadesMedida)()
+                        'control.DeleteItems(_unidadesdeleted)
+                        'For Each medida As UnidadesMedida In UnidadesMedidaBindingSource.List
+                        '    If medida.idUnidadMedida = 0 Then
+                        '        nuevos.Add(medida)
+                        '    Else
+                        '        control.UpdateItem(medida)
+                        '    End If
+                        'Next
+                        'control.AddItems(nuevos)
+                        control.SyncronisingItem(_unidadesdeleted.AsEnumerable())
+                        control.SyncronisingItem(DirectCast(UnidadesMedidaBindingSource.List, IEnumerable(Of UnidadesMedida)))
                     End Using
                     'tratar marcas
                     Using control As New UbicacionesController
-                        Dim nuevos As New List(Of Ubicaciones)()
-                        control.DeleteItems(_ubicacionesdeleted)
-                        For Each ubicacion As Ubicaciones In UbicacionesBindingSource.List
-                            If ubicacion.idUbicacion = 0 Then
-                                nuevos.Add(ubicacion)
-                            Else
-                                control.UpdateItem(ubicacion)
-                            End If
-                        Next
-                        control.AddItems(nuevos)
+                        control.SyncronisingItem(_ubicacionesdeleted.AsEnumerable())
+                        control.SyncronisingItem(DirectCast(UbicacionesBindingSource.List, IEnumerable(Of Ubicaciones)))
                     End Using
                     'tratar familias
                     Using control As New FamiliasController()
                         ActualizarFamilia(control, treeFamilia.Nodes)
-                        control.DeleteItems(_familiasdeleted)
+                        control.SyncronisingItem(_familiasdeleted.AsEnumerable())
                     End Using
                     gridMarcas.ContextMenuStrip = GetContextMenu()
                     gridUbicaciones.ContextMenuStrip = GetContextMenu()
@@ -95,11 +81,12 @@ Namespace Presentacion.Formulario.Configuracion
                 Else
                     familia.idFamiliaPadre = Nothing
                 End If
-                If familia.idFamilia > 0 Then
-                    familia = control.UpdateItem(familia)
-                Else
-                    familia = control.AddItem(familia)
-                End If
+                'If familia.idFamilia > 0 Then
+                '    familia = control.UpdateItem(familia)
+                'Else
+                '    familia = control.AddItem(familia)
+                'End If
+                control.SyncronisingItem(familia)
                 nodo.Tag = familia
                 ActualizarFamilia(control, nodo.Nodes)
             Next
@@ -153,34 +140,28 @@ Namespace Presentacion.Formulario.Configuracion
 
 #Region "Eventos Grilla"
 
-        Private Sub gridMarcas_RowsChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles gridMarcas.RowsChanged
-            If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Remove Then
+
+        Private Sub grid_RowsChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles gridUbicaciones.RowsChanged, gridMedidas.RowsChanged, gridMarcas.RowsChanged
+            If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Add Then
                 For Each row As GridViewRowInfo In e.NewItems
-                    Dim marca As Marcas = DirectCast(row.DataBoundItem, Marcas)
-                    If Not IsNothing(marca) AndAlso marca.idMarca > 0 Then
-                        _marcasdeleted.Add(marca)
-                    End If
+                    Dim item As LINQEntityBase = DirectCast(row.DataBoundItem, LINQEntityBase)
+                    item.SetAsInsertOnSubmit()
                 Next
             End If
-        End Sub
-
-        Private Sub gridUbicaciones_RowsChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles gridUbicaciones.RowsChanged
             If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Remove Then
                 For Each row As GridViewRowInfo In e.NewItems
-                    Dim ubicacion As Ubicaciones = DirectCast(row.DataBoundItem, Ubicaciones)
-                    If Not IsNothing(ubicacion) AndAlso ubicacion.idUbicacion > 0 Then
-                        _ubicacionesdeleted.Add(ubicacion)
-                    End If
-                Next
-            End If
-        End Sub
-
-        Private Sub gridMedidas_RowsChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles gridMedidas.RowsChanged
-            If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Remove Then
-                For Each row As GridViewRowInfo In e.NewItems
-                    Dim medida As UnidadesMedida = DirectCast(row.DataBoundItem, UnidadesMedida)
-                    If Not IsNothing(medida) AndAlso medida.idUnidadMedida > 0 Then
-                        _unidadesdeleted.Add(medida)
+                    Dim item As LINQEntityBase = DirectCast(row.DataBoundItem, LINQEntityBase)
+                    If Not IsNothing(item) Then
+                        If item.LINQEntityState <> EntityState.New Then
+                            item.SetAsDeleteOnSubmit()
+                            If TypeOf item Is Ubicaciones Then
+                                _ubicacionesdeleted.Add(DirectCast(item, Ubicaciones))
+                            ElseIf TypeOf item Is UnidadesMedida Then
+                                _unidadesdeleted.Add(DirectCast(item, UnidadesMedida))
+                            ElseIf TypeOf item Is Marcas Then
+                                _marcasdeleted.Add(DirectCast(item, Marcas))
+                            End If
+                        End If
                     End If
                 Next
             End If
@@ -339,8 +320,7 @@ Namespace Presentacion.Formulario.Configuracion
 #End Region
 
         Private Function AddFamilia(ByVal idPadre As Long?) As Familias
-            Dim familia As Familias = New Familias()
-            familia.idFamilia = _tickreferencia - Now().Ticks 'id negativo para identificar como nuevo registro
+            Dim familia As Familias = FamiliasController.NewItem()
             familia.Familia = "Nodo Nuevo"
             familia.idFamiliaPadre = idPadre
             FamiliasBindingSource.Add(familia)
@@ -360,7 +340,6 @@ Namespace Presentacion.Formulario.Configuracion
             AddHandler mitem.Click, AddressOf mitemRefrescar_Click
             Return (menu)
         End Function
-
 
     End Class
 

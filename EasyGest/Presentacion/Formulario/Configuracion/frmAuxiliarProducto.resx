@@ -142,13 +142,13 @@
     <value>518, 485</value>
   </data>
   <data name="&gt;&gt;pvpUbicaciones.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="mitemAgregarSubfamilia.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
-  <data name="gridMedidas.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
+  <data name="mitemAgregarSubfamilia.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="&gt;&gt;gridMedidas.Name" xml:space="preserve">
     <value>gridMedidas</value>
@@ -156,26 +156,32 @@
   <data name="mitemAgregar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="&gt;&gt;cmenuFamilia.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadContextMenu, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="btnAceptar.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridMedidas.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
   </data>
   <data name="btnAceptar.RootElement.KeyTip" xml:space="preserve">
     <value />
   </data>
+  <data name="mitemAgregar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
   <data name="&gt;&gt;gridMarcas.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="GridViewTextBoxColumn4.HeaderText" xml:space="preserve">
+    <value>Medida</value>
   </data>
   <data name="&gt;&gt;UnidadesMedidaBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="treeFamilia.RootElement.AngleTransform" type="System.Single, mscorlib">
+  <data name="&gt;&gt;btnRefrescar.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="btnCancelar.Location" type="System.Drawing.Point, System.Drawing">
     <value>631, 452</value>
-  </data>
-  <data name="mitemEliminar.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="mitemAgregar.AccessibleDescription" xml:space="preserve">
     <value>Agregar</value>
@@ -186,11 +192,17 @@
   <data name="gridUbicaciones.RootElement.KeyTip" xml:space="preserve">
     <value />
   </data>
+  <data name="gridUbicaciones.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
   <data name="treeFamilia.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="btnAceptar.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="pvDatosAuxiliaresProducto.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pvDatosAuxiliaresProducto.Text" xml:space="preserve">
+    <value>Parámetros</value>
   </data>
   <data name="mitemEditar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
@@ -216,14 +228,14 @@
   <data name="frmAuxiliarProducto.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="gridMarcas.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
+  <data name="gridUbicaciones.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="GridViewDecimalColumn2.HeaderText" xml:space="preserve">
+    <value>idUbicacion</value>
   </data>
   <data name="&gt;&gt;mitemAgregarSubfamilia.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="gridUbicaciones.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;UbicacionesBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -249,9 +261,6 @@
   <data name="RadMenuSeparatorItem1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="treeFamilia.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="mitemCrearNodoRaiz.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
@@ -264,11 +273,11 @@
   <data name="&gt;&gt;gridMarcas.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;gridMedidas.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="btnAceptar.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
-  <data name="btnCancelar.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+  <data name="gridUbicaciones.MasterTemplate.Caption" xml:space="preserve">
+    <value />
   </data>
   <data name="mitemAgregarSubfamilia.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -288,9 +297,6 @@
   <data name="RadMenuSeparatorItem1.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="gridUbicaciones.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
   <data name="mitemEditar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
@@ -298,13 +304,10 @@
     <value>Horizontal</value>
   </data>
   <data name="&gt;&gt;mitemRefrescar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="gridMarcas.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
-  </data>
-  <data name="pvDatosAuxiliaresProducto.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
   </data>
   <data name="gridMarcas.RootElement.ToolTipText" xml:space="preserve">
     <value />
@@ -317,6 +320,15 @@
   </data>
   <data name="btnCancelar.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
+  </data>
+  <data name="btnAceptar.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridMarcas.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mitemEliminar.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="btnCancelar.RootElement.ToolTipText" xml:space="preserve">
     <value />
@@ -333,17 +345,23 @@
   <data name="mitemAgregarFamiliaBase.ImageKey" xml:space="preserve">
     <value />
   </data>
+  <data name="gridMarcas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
   <data name="&gt;&gt;pvpUbicaciones.Parent" xml:space="preserve">
     <value>pvDatosAuxiliaresProducto</value>
   </data>
-  <data name="&gt;&gt;mitemCrearNodoRaiz.Name" xml:space="preserve">
-    <value>mitemCrearNodoRaiz</value>
+  <data name="mitemRefrescar.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
   </data>
   <data name="pvpMarcas.Text" xml:space="preserve">
     <value>Marcas</value>
   </data>
   <data name="gridUbicaciones.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
+  </data>
+  <data name="&gt;&gt;btnRefrescar.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="pvDatosAuxiliaresProducto.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -360,14 +378,14 @@
   <data name="btnRefrescar.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="treeFamilia.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
   <data name="mitemCrearNodoRaiz.AccessibleName" xml:space="preserve">
     <value>Crear Nodo Raiz</value>
   </data>
-  <data name="pvpFamilias.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 10</value>
-  </data>
   <data name="&gt;&gt;pvpUnidadesMedida.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="pvDatosAuxiliaresProducto.Size" type="System.Drawing.Size, System.Drawing">
     <value>626, 550</value>
@@ -386,7 +404,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAD+
-        CQAAAk1TRnQBSQFMAgEBCAEAAWABAAGEAQABEAEAARABAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CQAAAk1TRnQBSQFMAgEBCAEAAWABAAGIAQABEAEAARABAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAATADAAEBAQABCAYAAQwYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -438,10 +456,7 @@
     <value>False</value>
   </data>
   <data name="&gt;&gt;pvpMarcas.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="pvDatosAuxiliaresProducto.Text" xml:space="preserve">
-    <value>Parámetros</value>
+    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="gridMedidas.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -449,17 +464,14 @@
   <data name="&gt;&gt;btnRefrescar.Name" xml:space="preserve">
     <value>btnRefrescar</value>
   </data>
-  <data name="RadMenuSeparatorItem1.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
   <data name="mitemCrearNodoRaiz.Text" xml:space="preserve">
     <value>Crear Nodo Raiz</value>
   </data>
-  <data name="btnAceptar.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
   <data name="RadMenuSeparatorItem1.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
+  </data>
+  <data name="frmAuxiliarProducto.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="mitemEditar.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -473,707 +485,11 @@
   <data name="mitemCrearNodoRaiz.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;mitemAgregarFamiliaBase.Name" xml:space="preserve">
-    <value>mitemAgregarFamiliaBase</value>
-  </data>
-  <data name="&gt;&gt;btnAceptar.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="btnAceptar.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;gridUbicaciones.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="mitemRefrescar.AccessibleName" xml:space="preserve">
-    <value>Refrescar</value>
-  </data>
-  <data name="mitemEditar.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;pvpUnidadesMedida.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="mitemAgregarSubfamilia.ImageKey" xml:space="preserve">
-    <value />
-  </data>
-  <data name="mitemEditar.AccessibleName" xml:space="preserve">
-    <value>Editar</value>
-  </data>
-  <data name="&gt;&gt;btnAceptar.Name" xml:space="preserve">
-    <value>btnAceptar</value>
-  </data>
-  <data name="gridMarcas.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="treeFamilia.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="mitemRefrescar.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="frmAuxiliarProducto.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;pvpUbicaciones.Name" xml:space="preserve">
-    <value>pvpUbicaciones</value>
-  </data>
-  <data name="RadMenuSeparatorItem1.AccessibleName" xml:space="preserve">
-    <value>RadMenuSeparatorItem1</value>
-  </data>
-  <data name="&gt;&gt;gridUbicaciones.Parent" xml:space="preserve">
-    <value>pvpUbicaciones</value>
-  </data>
-  <data name="pvpUbicaciones.Text" xml:space="preserve">
-    <value>Ubicaciones</value>
-  </data>
-  <data name="mitemCrearNodoRaiz.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btnRefrescar.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="mitemEditar.ImageKey" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pvpUnidadesMedida.Text" xml:space="preserve">
-    <value>U. Medida</value>
-  </data>
-  <data name="mitemAgregarFamiliaBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="gridMedidas.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mitemCrearNodoRaiz.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="gridMarcas.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnCancelar.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="gridMarcas.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mitemAgregarFamiliaBase.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="gridMedidas.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnRefrescar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 46</value>
-  </data>
-  <data name="mitemEliminar.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="btnCancelar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="btnAceptar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>631, 402</value>
-  </data>
-  <data name="&gt;&gt;treeFamilia.Parent" xml:space="preserve">
-    <value>pvpFamilias</value>
-  </data>
-  <data name="mitemEliminar.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="gridMarcas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;treeFamilia.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadTreeView, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;pvpMarcas.Name" xml:space="preserve">
-    <value>pvpMarcas</value>
-  </data>
-  <data name="btnCancelar.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="RadMenuSeparatorItem1.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="gridUbicaciones.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="mitemRefrescar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="mitemAgregarFamiliaBase.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="mitemAgregar.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="gridMedidas.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;pvDatosAuxiliaresProducto.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="pvDatosAuxiliaresProducto.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="mitemEliminar.ImageKey" xml:space="preserve">
-    <value />
-  </data>
-  <data name="treeFamilia.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="pvDatosAuxiliaresProducto.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="mitemCrearNodoRaiz.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnAceptar.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="mitemAgregar.AccessibleName" xml:space="preserve">
-    <value>Agregar</value>
-  </data>
-  <data name="treeFamilia.Text" xml:space="preserve">
-    <value>Familia</value>
-  </data>
-  <data name="GridViewMaskBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Código EAN</value>
-  </data>
-  <data name="pvDatosAuxiliaresProducto.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="mitemAgregarSubfamilia.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="treeFamilia.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="mitemEditar.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="btnCancelar.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;MarcasBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="mitemAgregarSubfamilia.AccessibleName" xml:space="preserve">
-    <value>Subfamilia</value>
-  </data>
-  <data name="mitemAgregarFamiliaBase.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="&gt;&gt;mitemAgregar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="mitemEliminar.AccessibleDescription" xml:space="preserve">
-    <value>Eliminar</value>
-  </data>
-  <data name="gridMarcas.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="pvpFamilias.Size" type="System.Drawing.Size, System.Drawing">
-    <value>518, 529</value>
-  </data>
-  <data name="gridUbicaciones.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="gridMarcas.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="mitemAgregar.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="gridMedidas.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="treeFamilia.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="pvDatosAuxiliaresProducto.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="&gt;&gt;btnCancelar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;RadMenuSeparatorItem1.Name" xml:space="preserve">
-    <value>RadMenuSeparatorItem1</value>
-  </data>
-  <data name="&gt;&gt;pvpFamilias.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="mitemRefrescar.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnAceptar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="RadMenuSeparatorItem1.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="RadMenuSeparatorItem1.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;cmenuFamilia.Name" xml:space="preserve">
-    <value>cmenuFamilia</value>
-  </data>
-  <data name="gridMedidas.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="GridViewDecimalColumn3.HeaderText" xml:space="preserve">
-    <value>idUnidadMedida</value>
-  </data>
-  <data name="mitemAgregarFamiliaBase.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btnRefrescar.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnAceptar.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="GridViewMaskBoxColumn1.FormatString" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;imglFamilia.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pvDatosAuxiliaresProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;pvpMarcas.Parent" xml:space="preserve">
-    <value>pvDatosAuxiliaresProducto</value>
-  </data>
-  <data name="mitemAgregarFamiliaBase.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="mitemAgregarSubfamilia.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="mitemCrearNodoRaiz.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mitemEditar.AccessibleDescription" xml:space="preserve">
-    <value>Editar</value>
-  </data>
-  <data name="GridViewDecimalColumn1.HeaderText" xml:space="preserve">
-    <value>idMarca</value>
-  </data>
-  <data name="gridMarcas.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="mitemAgregarFamiliaBase.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="gridMarcas.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="pvpUbicaciones.Size" type="System.Drawing.Size, System.Drawing">
-    <value>518, 485</value>
-  </data>
-  <data name="&gt;&gt;gridMarcas.Parent" xml:space="preserve">
-    <value>pvpMarcas</value>
-  </data>
-  <data name="mitemEditar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="treeFamilia.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="mitemEliminar.Text" xml:space="preserve">
-    <value>Eliminar</value>
-  </data>
-  <data name="mitemCrearNodoRaiz.ImageKey" xml:space="preserve">
-    <value />
-  </data>
-  <data name="mitemRefrescar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadMenuSeparatorItem1.Text" xml:space="preserve">
-    <value>RadMenuSeparatorItem1</value>
-  </data>
-  <data name="&gt;&gt;FamiliasBindingSource.Name" xml:space="preserve">
-    <value>FamiliasBindingSource</value>
-  </data>
-  <data name="mitemEditar.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="gridMedidas.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="mitemAgregarSubfamilia.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="gridUbicaciones.Size" type="System.Drawing.Size, System.Drawing">
-    <value>518, 485</value>
-  </data>
-  <data name="btnRefrescar.Text" xml:space="preserve">
-    <value>Refrescar</value>
-  </data>
-  <data name="btnAceptar.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="btnRefrescar.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;pvpUbicaciones.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="treeFamilia.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;MarcasBindingSource.Name" xml:space="preserve">
-    <value>MarcasBindingSource</value>
-  </data>
-  <data name="pvpUnidadesMedida.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 10</value>
-  </data>
-  <data name="&gt;&gt;FamiliasBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="gridMedidas.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pvpFamilias.Name" xml:space="preserve">
-    <value>pvpFamilias</value>
-  </data>
-  <data name="frmAuxiliarProducto.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="gridUbicaciones.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;gridMedidas.Parent" xml:space="preserve">
-    <value>pvpUnidadesMedida</value>
-  </data>
-  <data name="btnRefrescar.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="mitemEliminar.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="mitemCrearNodoRaiz.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="btnRefrescar.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="mitemAgregarSubfamilia.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="gridUbicaciones.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gridUbicaciones.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="frmAuxiliarProducto.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="pvpFamilias.Text" xml:space="preserve">
-    <value>Familias</value>
-  </data>
-  <data name="mitemEditar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="btnAceptar.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="GridViewTextBoxColumn3.FormatString" xml:space="preserve">
-    <value />
-  </data>
-  <data name="gridUbicaciones.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gridMarcas.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="pvpUbicaciones.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 10</value>
-  </data>
-  <data name="mitemCrearNodoRaiz.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="mitemAgregar.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gridMarcas.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="btnCancelar.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;gridUbicaciones.Name" xml:space="preserve">
-    <value>gridUbicaciones</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmAuxiliarProducto</value>
-  </data>
-  <data name="mitemAgregar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="&gt;&gt;pvpFamilias.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="treeFamilia.TreeIndent" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="&gt;&gt;mitemEliminar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="btnAceptar.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="mitemCrearNodoRaiz.AccessibleDescription" xml:space="preserve">
-    <value>Crear Nodo Raiz</value>
-  </data>
-  <data name="gridMedidas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>518, 485</value>
-  </data>
-  <data name="mitemAgregar.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RadMenuSeparatorItem1.ImageKey" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnRefrescar.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="frmAuxiliarProducto.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;UbicacionesBindingSource.Name" xml:space="preserve">
-    <value>UbicacionesBindingSource</value>
-  </data>
-  <data name="GridViewTextBoxColumn4.FormatString" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;mitemEliminar.Name" xml:space="preserve">
-    <value>mitemEliminar</value>
-  </data>
-  <data name="pvDatosAuxiliaresProducto.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="gridMedidas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="btnCancelar.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="gridUbicaciones.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
-  </data>
-  <data name="mitemEditar.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="pvDatosAuxiliaresProducto.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="GridViewDecimalColumn2.HeaderText" xml:space="preserve">
-    <value>idUbicacion</value>
-  </data>
-  <data name="GridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Marca</value>
-  </data>
-  <data name="&gt;&gt;pvpUnidadesMedida.Name" xml:space="preserve">
-    <value>pvpUnidadesMedida</value>
-  </data>
-  <data name="mitemRefrescar.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="frmAuxiliarProducto.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnRefrescar.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="pvDatosAuxiliaresProducto.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btnCancelar.Text" xml:space="preserve">
-    <value>Cancelar</value>
-  </data>
-  <data name="btnRefrescar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>631, 10</value>
-  </data>
-  <data name="btnAceptar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 46</value>
-  </data>
-  <data name="GridViewTextBoxColumn3.HeaderText" xml:space="preserve">
-    <value>Descripción</value>
-  </data>
-  <data name="GridViewTextBoxColumn2.HeaderText" xml:space="preserve">
-    <value>Ubicación</value>
-  </data>
-  <data name="mitemAgregarSubfamilia.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="&gt;&gt;pvpMarcas.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="pvDatosAuxiliaresProducto.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="treeFamilia.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadMenuSeparatorItem1.AccessibleDescription" xml:space="preserve">
-    <value>RadMenuSeparatorItem1</value>
-  </data>
-  <data name="&gt;&gt;gridMedidas.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;pvDatosAuxiliaresProducto.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="frmAuxiliarProducto.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;mitemCrearNodoRaiz.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="gridMarcas.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pvpMarcas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>518, 529</value>
-  </data>
-  <data name="&gt;&gt;mitemAgregar.Name" xml:space="preserve">
-    <value>mitemAgregar</value>
-  </data>
-  <data name="gridMedidas.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="mitemAgregar.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnRefrescar.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="pvDatosAuxiliaresProducto.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;btnCancelar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="gridMedidas.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="treeFamilia.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="mitemRefrescar.Text" xml:space="preserve">
-    <value>Refrescar</value>
-  </data>
-  <data name="mitemEliminar.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mitemAgregarFamiliaBase.Text" xml:space="preserve">
-    <value>Familia Base</value>
-  </data>
   <data name="btnRefrescar.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageAboveText</value>
   </data>
-  <data name="btnAceptar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="mitemAgregar.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="gridUbicaciones.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;btnRefrescar.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="mitemAgregar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;mitemAgregarFamiliaBase.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="mitemEditar.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="treeFamilia.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnRefrescar.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="GridViewTextBoxColumn5.HeaderText" xml:space="preserve">
-    <value>Abreviatura</value>
-  </data>
-  <data name="mitemEliminar.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="mitemAgregarSubfamilia.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;btnRefrescar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="btnCancelar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="btnRefrescar.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="gridMarcas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>518, 529</value>
-  </data>
-  <data name="mitemAgregar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.Text1" xml:space="preserve">
-    <value>Cancelar</value>
-  </data>
-  <data name="treeFamilia.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btnCancelar.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="&gt;&gt;pvpUnidadesMedida.Parent" xml:space="preserve">
-    <value>pvDatosAuxiliaresProducto</value>
-  </data>
-  <data name="mitemRefrescar.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="treeFamilia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>518, 529</value>
-  </data>
-  <data name="mitemAgregarSubfamilia.AccessibleDescription" xml:space="preserve">
-    <value>Subfamilia</value>
-  </data>
-  <data name="mitemEliminar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="RadMenuSeparatorItem1.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="frmAuxiliarProducto.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="btnCancelar.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>719, 550</value>
-  </data>
-  <data name="&gt;&gt;mitemEditar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="gridMedidas.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
+  <data name="&gt;&gt;btnAceptar.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3616,17 +2932,725 @@
         /////////w==
 </value>
   </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="btnAceptar.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;gridUbicaciones.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="mitemRefrescar.AccessibleName" xml:space="preserve">
+    <value>Refrescar</value>
+  </data>
+  <data name="gridMedidas.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="mitemRefrescar.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;pvpUnidadesMedida.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;mitemAgregarSubfamilia.Name" xml:space="preserve">
+    <value>mitemAgregarSubfamilia</value>
+  </data>
+  <data name="mitemEditar.AccessibleName" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="&gt;&gt;btnAceptar.Name" xml:space="preserve">
+    <value>btnAceptar</value>
+  </data>
+  <data name="treeFamilia.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="mitemRefrescar.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;pvpUbicaciones.Name" xml:space="preserve">
+    <value>pvpUbicaciones</value>
+  </data>
+  <data name="RadMenuSeparatorItem1.AccessibleName" xml:space="preserve">
+    <value>RadMenuSeparatorItem1</value>
+  </data>
+  <data name="&gt;&gt;gridUbicaciones.Parent" xml:space="preserve">
+    <value>pvpUbicaciones</value>
+  </data>
+  <data name="pvpUbicaciones.Text" xml:space="preserve">
+    <value>Ubicaciones</value>
+  </data>
+  <data name="mitemCrearNodoRaiz.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="pvpUbicaciones.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 485</value>
+  </data>
+  <data name="mitemEditar.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pvpUnidadesMedida.Text" xml:space="preserve">
+    <value>U. Medida</value>
+  </data>
+  <data name="mitemAgregarFamiliaBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="pvpFamilias.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 10</value>
+  </data>
+  <data name="mitemEliminar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="mitemCrearNodoRaiz.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="gridMarcas.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnCancelar.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="gridMarcas.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mitemAgregarFamiliaBase.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="gridMedidas.RootElement.KeyTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mitemEliminar.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="btnCancelar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btnAceptar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>631, 402</value>
+  </data>
+  <data name="&gt;&gt;pvDatosAuxiliaresProducto.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadPageView, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="mitemEliminar.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridMarcas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;treeFamilia.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadTreeView, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="btnCancelar.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="btnRefrescar.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="RadMenuSeparatorItem1.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="gridMarcas.MasterTemplate.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="treeFamilia.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridMedidas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="mitemEliminar.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mitemRefrescar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="mitemAgregarFamiliaBase.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="frmAuxiliarProducto.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;pvDatosAuxiliaresProducto.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pvDatosAuxiliaresProducto.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="gridMarcas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 529</value>
+  </data>
+  <data name="mitemEliminar.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="treeFamilia.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pvDatosAuxiliaresProducto.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mitemCrearNodoRaiz.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnAceptar.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="mitemAgregar.AccessibleName" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="treeFamilia.Text" xml:space="preserve">
+    <value>Familia</value>
+  </data>
+  <data name="GridViewMaskBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Código EAN</value>
+  </data>
+  <data name="pvDatosAuxiliaresProducto.RootElement.ToolTipText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mitemAgregarSubfamilia.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="treeFamilia.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="mitemEditar.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btnCancelar.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;MarcasBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="frmAuxiliarProducto.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pvpUbicaciones.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 10</value>
+  </data>
+  <data name="btnCancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;mitemAgregar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="mitemEliminar.AccessibleDescription" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="gridMarcas.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridMedidas.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="gridUbicaciones.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gridMarcas.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnCancelar.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mitemAgregar.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="treeFamilia.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="pvDatosAuxiliaresProducto.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="mitemAgregarSubfamilia.Text" xml:space="preserve">
+    <value>Subfamilia</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadMenuSeparatorItem1.Name" xml:space="preserve">
+    <value>RadMenuSeparatorItem1</value>
+  </data>
+  <data name="&gt;&gt;pvpFamilias.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnRefrescar.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;btnAceptar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="RadMenuSeparatorItem1.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="RadMenuSeparatorItem1.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="gridMedidas.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;cmenuFamilia.Name" xml:space="preserve">
+    <value>cmenuFamilia</value>
+  </data>
+  <data name="btnCancelar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="gridMedidas.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="GridViewDecimalColumn3.HeaderText" xml:space="preserve">
+    <value>idUnidadMedida</value>
+  </data>
+  <data name="mitemAgregarFamiliaBase.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnRefrescar.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
   <data name="mitemEditar.Text" xml:space="preserve">
     <value>Editar</value>
   </data>
-  <data name="&gt;&gt;pvDatosAuxiliaresProducto.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadPageView, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="btnRefrescar.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
-  <data name="btnRefrescar.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+  <data name="GridViewMaskBoxColumn1.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;imglFamilia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MarcasBindingSource.Name" xml:space="preserve">
+    <value>MarcasBindingSource</value>
+  </data>
+  <data name="&gt;&gt;pvpMarcas.Parent" xml:space="preserve">
+    <value>pvDatosAuxiliaresProducto</value>
+  </data>
+  <data name="mitemAgregarFamiliaBase.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="mitemAgregarSubfamilia.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="mitemEditar.AccessibleDescription" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="GridViewDecimalColumn1.HeaderText" xml:space="preserve">
+    <value>idMarca</value>
+  </data>
+  <data name="mitemRefrescar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="mitemAgregarSubfamilia.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mitemAgregarFamiliaBase.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="gridMarcas.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnRefrescar.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;gridMarcas.Parent" xml:space="preserve">
+    <value>pvpMarcas</value>
+  </data>
+  <data name="btnAceptar.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="treeFamilia.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mitemAgregar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;FamiliasBindingSource.Name" xml:space="preserve">
+    <value>FamiliasBindingSource</value>
+  </data>
+  <data name="mitemCrearNodoRaiz.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mitemRefrescar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="RadMenuSeparatorItem1.Text" xml:space="preserve">
+    <value>RadMenuSeparatorItem1</value>
+  </data>
+  <data name="pvpUnidadesMedida.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 10</value>
+  </data>
+  <data name="mitemEditar.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="gridMedidas.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mitemAgregarSubfamilia.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridUbicaciones.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 485</value>
+  </data>
+  <data name="btnRefrescar.Text" xml:space="preserve">
+    <value>Refrescar</value>
+  </data>
+  <data name="btnAceptar.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="mitemAgregarSubfamilia.AccessibleName" xml:space="preserve">
+    <value>Subfamilia</value>
+  </data>
+  <data name="&gt;&gt;pvpUbicaciones.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="treeFamilia.RootElement.KeyTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;FamiliasBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gridMedidas.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pvpFamilias.Name" xml:space="preserve">
+    <value>pvpFamilias</value>
+  </data>
+  <data name="frmAuxiliarProducto.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="gridUbicaciones.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gridMedidas.Parent" xml:space="preserve">
+    <value>pvpUnidadesMedida</value>
+  </data>
+  <data name="btnRefrescar.RootElement.ToolTipText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mitemEliminar.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="mitemCrearNodoRaiz.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="mitemAgregar.Text" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="btnRefrescar.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="gridUbicaciones.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridUbicaciones.RootElement.ToolTipText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="frmAuxiliarProducto.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="pvpFamilias.Text" xml:space="preserve">
+    <value>Familias</value>
+  </data>
+  <data name="mitemEditar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;cmenuFamilia.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadContextMenu, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="GridViewTextBoxColumn3.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridUbicaciones.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridMarcas.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="treeFamilia.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 529</value>
+  </data>
+  <data name="mitemAgregar.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridMarcas.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;btnAceptar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;gridUbicaciones.Name" xml:space="preserve">
+    <value>gridUbicaciones</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmAuxiliarProducto</value>
+  </data>
+  <data name="mitemAgregar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;pvpFamilias.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="treeFamilia.TreeIndent" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="btnAceptar.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mitemCrearNodoRaiz.AccessibleDescription" xml:space="preserve">
+    <value>Crear Nodo Raiz</value>
+  </data>
+  <data name="GridViewTextBoxColumn1.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;imglFamilia.Name" xml:space="preserve">
+    <value>imglFamilia</value>
+  </data>
+  <data name="RadMenuSeparatorItem1.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;UbicacionesBindingSource.Name" xml:space="preserve">
+    <value>UbicacionesBindingSource</value>
+  </data>
+  <data name="mitemEditar.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="GridViewTextBoxColumn4.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;mitemEliminar.Name" xml:space="preserve">
+    <value>mitemEliminar</value>
+  </data>
+  <data name="pvDatosAuxiliaresProducto.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="gridMedidas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridUbicaciones.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridUbicaciones.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="mitemEditar.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="pvDatosAuxiliaresProducto.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="GridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Marca</value>
+  </data>
+  <data name="&gt;&gt;pvpUnidadesMedida.Name" xml:space="preserve">
+    <value>pvpUnidadesMedida</value>
+  </data>
+  <data name="resource.Text" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="mitemRefrescar.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="gridMarcas.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="frmAuxiliarProducto.RootElement.ToolTipText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnRefrescar.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnRefrescar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 46</value>
   </data>
   <data name="btnCancelar.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 46</value>
+  </data>
+  <data name="pvDatosAuxiliaresProducto.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnCancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnRefrescar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>631, 10</value>
+  </data>
+  <data name="mitemEditar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnAceptar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 46</value>
+  </data>
+  <data name="GridViewTextBoxColumn3.HeaderText" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="GridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Ubicación</value>
+  </data>
+  <data name="mitemAgregarSubfamilia.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;pvpMarcas.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="mitemAgregarSubfamilia.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadMenuSeparatorItem1.AccessibleDescription" xml:space="preserve">
+    <value>RadMenuSeparatorItem1</value>
+  </data>
+  <data name="&gt;&gt;gridMedidas.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;pvDatosAuxiliaresProducto.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="frmAuxiliarProducto.RootElement.KeyTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;mitemCrearNodoRaiz.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="gridMarcas.RootElement.KeyTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pvpMarcas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 529</value>
+  </data>
+  <data name="&gt;&gt;mitemAgregar.Name" xml:space="preserve">
+    <value>mitemAgregar</value>
+  </data>
+  <data name="mitemAgregar.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="mitemCrearNodoRaiz.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mitemAgregarSubfamilia.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="pvDatosAuxiliaresProducto.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;btnCancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnCancelar.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="treeFamilia.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="mitemRefrescar.Text" xml:space="preserve">
+    <value>Refrescar</value>
+  </data>
+  <data name="mitemEliminar.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnAceptar.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="mitemAgregarFamiliaBase.Text" xml:space="preserve">
+    <value>Familia Base</value>
+  </data>
+  <data name="GridViewTextBoxColumn2.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnAceptar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="mitemAgregar.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="gridUbicaciones.RootElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnCancelar.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="treeFamilia.RootElement.ToolTipText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewTextBoxColumn5.HeaderText" xml:space="preserve">
+    <value>Abreviatura</value>
+  </data>
+  <data name="mitemAgregarSubfamilia.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;btnRefrescar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="btnRefrescar.RootElement.KeyTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.Text1" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="treeFamilia.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="treeFamilia.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnCancelar.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="gridMedidas.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="frmAuxiliarProducto.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;pvpUnidadesMedida.Parent" xml:space="preserve">
+    <value>pvDatosAuxiliaresProducto</value>
+  </data>
+  <data name="mitemRefrescar.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mitemAgregarSubfamilia.AccessibleDescription" xml:space="preserve">
+    <value>Subfamilia</value>
+  </data>
+  <data name="mitemEliminar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="RadMenuSeparatorItem1.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="frmAuxiliarProducto.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="btnCancelar.RootElement.KeyTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>719, 550</value>
+  </data>
+  <data name="&gt;&gt;mitemEditar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;gridMedidas.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;mitemAgregarFamiliaBase.Name" xml:space="preserve">
+    <value>mitemAgregarFamiliaBase</value>
+  </data>
+  <data name="&gt;&gt;mitemCrearNodoRaiz.Name" xml:space="preserve">
+    <value>mitemCrearNodoRaiz</value>
+  </data>
+  <data name="mitemAgregarFamiliaBase.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="pvDatosAuxiliaresProducto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridMedidas.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="mitemAgregar.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="mitemAgregar.ImageKey" xml:space="preserve">
     <value />
@@ -3637,44 +3661,38 @@
   <data name="mitemAgregarFamiliaBase.AccessibleName" xml:space="preserve">
     <value>Familia Base</value>
   </data>
-  <data name="frmAuxiliarProducto.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="mitemAgregar.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="mitemEliminar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="treeFamilia.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="mitemAgregar.Text" xml:space="preserve">
-    <value>Agregar</value>
+  <data name="mitemCrearNodoRaiz.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;mitemAgregarFamiliaBase.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="mitemRefrescar.AccessibleDescription" xml:space="preserve">
     <value>Refrescar</value>
   </data>
-  <data name="gridMarcas.MasterTemplate.Caption" xml:space="preserve">
-    <value />
+  <data name="pvpFamilias.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 529</value>
   </data>
-  <data name="mitemRefrescar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="mitemRefrescar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+  <data name="RadMenuSeparatorItem1.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="btnAceptar.RootElement.ToolTipText" xml:space="preserve">
     <value />
-  </data>
-  <data name="gridUbicaciones.MasterTemplate.Caption" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;mitemAgregarSubfamilia.Name" xml:space="preserve">
-    <value>mitemAgregarSubfamilia</value>
   </data>
   <data name="&gt;&gt;btnCancelar.Name" xml:space="preserve">
     <value>btnCancelar</value>
   </data>
   <data name="frmAuxiliarProducto.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
-  </data>
-  <data name="GridViewTextBoxColumn1.FormatString" xml:space="preserve">
-    <value />
   </data>
   <data name="GridViewTextBoxColumn5.FormatString" xml:space="preserve">
     <value />
@@ -3688,68 +3706,50 @@
   <data name="btnAceptar.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="btnCancelar.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="&gt;&gt;treeFamilia.Parent" xml:space="preserve">
+    <value>pvpFamilias</value>
   </data>
   <data name="gridUbicaciones.Text" xml:space="preserve">
     <value>RadGridView1</value>
   </data>
-  <data name="mitemEliminar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="gridUbicaciones.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
-  </data>
-  <data name="resource.Text" xml:space="preserve">
-    <value>Aceptar</value>
-  </data>
-  <data name="&gt;&gt;btnCancelar.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="mitemAgregarFamiliaBase.AccessibleDescription" xml:space="preserve">
     <value>Familia Base</value>
   </data>
-  <data name="frmAuxiliarProducto.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="btnRefrescar.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;mitemEliminar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="pvDatosAuxiliaresProducto.RootElement.KeyTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="mitemAgregarSubfamilia.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="mitemEliminar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="GridViewTextBoxColumn4.HeaderText" xml:space="preserve">
-    <value>Medida</value>
   </data>
   <data name="btnCancelar.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;imglFamilia.Name" xml:space="preserve">
-    <value>imglFamilia</value>
+  <data name="mitemEliminar.Text" xml:space="preserve">
+    <value>Eliminar</value>
   </data>
-  <data name="mitemAgregarSubfamilia.Text" xml:space="preserve">
-    <value>Subfamilia</value>
+  <data name="btnRefrescar.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
-  <data name="&gt;&gt;btnAceptar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="gridMedidas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 485</value>
   </data>
-  <data name="mitemAgregarSubfamilia.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="&gt;&gt;btnRefrescar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="gridUbicaciones.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="&gt;&gt;pvpMarcas.Name" xml:space="preserve">
+    <value>pvpMarcas</value>
   </data>
   <data name="&gt;&gt;treeFamilia.Name" xml:space="preserve">
     <value>treeFamilia</value>
   </data>
-  <data name="mitemRefrescar.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="gridMedidas.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="mitemEditar.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="GridViewTextBoxColumn2.FormatString" xml:space="preserve">
-    <value />
+  <data name="gridMedidas.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="gridMarcas.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -3758,13 +3758,13 @@
     <value />
   </data>
   <data name="&gt;&gt;RadMenuSeparatorItem1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuSeparatorItem, Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="btnAceptar.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Telerik.WinControls.UI.RadMenuSeparatorItem, Telerik.WinControls.UI, Version=2016.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="btnAceptar.Text" xml:space="preserve">
     <value>Aceptar</value>
+  </data>
+  <data name="mitemRefrescar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>zh</value>
@@ -3772,11 +3772,11 @@
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="UnidadesMedidaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
   <metadata name="cmenuFamilia.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>240, 56</value>
+  </metadata>
+  <metadata name="UnidadesMedidaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
   </metadata>
   <metadata name="MarcasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -3787,10 +3787,10 @@
   <metadata name="FamiliasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>382, 17</value>
   </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>122</value>
-  </metadata>
   <metadata name="imglFamilia.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>367, 56</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>122</value>
   </metadata>
 </root>
