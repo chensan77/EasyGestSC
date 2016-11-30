@@ -12,7 +12,6 @@ Namespace Presentacion.Formulario.Configuracion
         Private _panel As New WaitingPanel()
         Private _orden As String = "NumeroOferta ASC"
         Private _oferta As Entity.Ofertas = Nothing
-        Private _action As System.Data.Linq.ChangeAction = System.Data.Linq.ChangeAction.None
 
 #Region "Evento Form"
 
@@ -85,12 +84,12 @@ Namespace Presentacion.Formulario.Configuracion
 #Region "Eventos"
 
         Private Sub timValidar_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles timValidar.Tick
-            btnAceptar.Enabled = _oferta.IsValid(_action)
+            btnAceptar.Enabled = _oferta.IsValid()
         End Sub
 
         Private Sub radPrecioEspecial_ToggleStateChanged(ByVal sender As System.Object, ByVal args As Telerik.WinControls.UI.StateChangedEventArgs) Handles radPrecioEspecial.ToggleStateChanged
             RadPanel1.Enabled = radPrecioEspecial.IsChecked
-            If radPrecioEspecial.IsChecked And _action <> System.Data.Linq.ChangeAction.None Then
+            If radPrecioEspecial.IsChecked And Not IsNothing(_oferta) Then
                 _oferta.Forma = FormaOfertaEnum.PrecioEspecial
                 txtPrecioEspecial.DataBindings.Add("Value", OfertaBindingSource, "Valor1", True, DataSourceUpdateMode.OnPropertyChanged, Nothing, "N2")
                 txtPrecioEspecial.Focus()
@@ -102,7 +101,7 @@ Namespace Presentacion.Formulario.Configuracion
 
         Private Sub radDescuentoEspecial_ToggleStateChanged(ByVal sender As Object, ByVal args As Telerik.WinControls.UI.StateChangedEventArgs) Handles radDescuentoPorcentual.ToggleStateChanged
             RadPanel2.Enabled = radDescuentoPorcentual.IsChecked
-            If radDescuentoPorcentual.IsChecked And _action <> System.Data.Linq.ChangeAction.None Then
+            If radDescuentoPorcentual.IsChecked And Not IsNothing(_oferta) Then
                 _oferta.Forma = FormaOfertaEnum.DescuentoPorcentual
                 txtDescPorc.DataBindings.Add("Value", OfertaBindingSource, "Valor1", True, DataSourceUpdateMode.OnPropertyChanged, Nothing, "N2")
                 txtDescPorc.Focus()
@@ -114,7 +113,7 @@ Namespace Presentacion.Formulario.Configuracion
 
         Private Sub radDescuentoFijo_ToggleStateChanged(ByVal sender As System.Object, ByVal args As Telerik.WinControls.UI.StateChangedEventArgs) Handles radDescuentoFijo.ToggleStateChanged
             RadPanel3.Enabled = radDescuentoFijo.IsChecked
-            If radDescuentoFijo.IsChecked And _action <> System.Data.Linq.ChangeAction.None Then
+            If radDescuentoFijo.IsChecked And Not IsNothing(_oferta) Then
                 _oferta.Forma = FormaOfertaEnum.DescuentoFijo
                 txtDescFijo.DataBindings.Add("Value", OfertaBindingSource, "Valor1", True, DataSourceUpdateMode.OnPropertyChanged, Nothing, "N2")
                 txtDescFijo.Focus()
@@ -126,7 +125,7 @@ Namespace Presentacion.Formulario.Configuracion
 
         Private Sub radUnidadGratis_ToggleStateChanged(ByVal sender As Object, ByVal args As Telerik.WinControls.UI.StateChangedEventArgs) Handles radUnidadGratis.ToggleStateChanged
             RadPanel4.Enabled = radUnidadGratis.IsChecked
-            If radUnidadGratis.IsChecked And _action <> System.Data.Linq.ChangeAction.None Then
+            If radUnidadGratis.IsChecked And Not IsNothing(_oferta) Then
                 _oferta.Forma = FormaOfertaEnum.UnidadGratis
                 txtUnidadBase.DataBindings.Add("Value", OfertaBindingSource, "Valor1", True, DataSourceUpdateMode.OnPropertyChanged, Nothing, "N0")
                 txtUnidadGratis.DataBindings.Add("Value", OfertaBindingSource, "Valor2", True, DataSourceUpdateMode.OnPropertyChanged, Nothing, "N0")
@@ -141,7 +140,7 @@ Namespace Presentacion.Formulario.Configuracion
 
         Private Sub radUnidadDescuento_ToggleStateChanged(ByVal sender As Object, ByVal args As Telerik.WinControls.UI.StateChangedEventArgs) Handles radUnidadDescuento.ToggleStateChanged
             RadPanel5.Enabled = radUnidadDescuento.IsChecked
-            If radUnidadDescuento.IsChecked And _action <> System.Data.Linq.ChangeAction.None Then
+            If radUnidadDescuento.IsChecked And Not IsNothing(_oferta) Then
                 _oferta.Forma = FormaOfertaEnum.UnidadConDescuento
                 txtUnidadBaseD.DataBindings.Add("Value", OfertaBindingSource, "Valor1", True, DataSourceUpdateMode.OnPropertyChanged, Nothing, "N0")
                 txtUnidadDesc.DataBindings.Add("Value", OfertaBindingSource, "Valor2", True, DataSourceUpdateMode.OnPropertyChanged, Nothing, "N2")
@@ -156,7 +155,7 @@ Namespace Presentacion.Formulario.Configuracion
 
         Private Sub radUnidadPrecio_ToggleStateChanged(ByVal sender As System.Object, ByVal args As Telerik.WinControls.UI.StateChangedEventArgs) Handles radUnidadPrecio.ToggleStateChanged
             RadPanel6.Enabled = radUnidadPrecio.IsChecked
-            If radUnidadPrecio.IsChecked And _action <> System.Data.Linq.ChangeAction.None Then
+            If radUnidadPrecio.IsChecked And Not IsNothing(_oferta) Then
                 _oferta.Forma = FormaOfertaEnum.UnidadAPrecioEspecial
                 txtUnidadBaseP.DataBindings.Add("Value", OfertaBindingSource, "Valor1", True, DataSourceUpdateMode.OnPropertyChanged, Nothing, "N0")
                 txtUnidadPrecio.DataBindings.Add("Value", OfertaBindingSource, "Valor2", True, DataSourceUpdateMode.OnPropertyChanged, Nothing, "N2")
@@ -183,7 +182,9 @@ Namespace Presentacion.Formulario.Configuracion
             If MostrarMensaje(My.Resources.Application.ConfirmacionBorrarDato, Me.Text, Telerik.WinControls.RadMessageIcon.Question, MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
                 Try
                     Using control As New OfertasController
-                        control.DeleteItem(idSeleccionado)
+                        Dim toDelete As Ofertas = control.GetItem(idSeleccionado)
+                        toDelete.SetAsDeleteOnSubmit()
+                        control.SyncronisingItem(toDelete)
                     End Using
                     OfertasBindingSource.RemoveCurrent()
                 Catch ex As Exception
@@ -195,12 +196,11 @@ Namespace Presentacion.Formulario.Configuracion
         Private Sub EditarAgregar(ByVal id As Long)
             If id = -1 Then
                 _oferta = Controller.OfertasController.NewItem()
-                _action = System.Data.Linq.ChangeAction.Insert
             Else
                 Using c As New Controller.OfertasController()
                     _oferta = c.GetItem(id)
                 End Using
-                _action = System.Data.Linq.ChangeAction.Update
+                _oferta.SetAsUpdateOnSubmit()
             End If
 
             OfertaBindingSource.DataSource = _oferta
@@ -215,7 +215,6 @@ Namespace Presentacion.Formulario.Configuracion
 
         Private Sub btnCancelar_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
             _oferta = Nothing
-            _action = System.Data.Linq.ChangeAction.None
             SplitPanel2.Collapsed = True
             SplitPanel1.Collapsed = False
             timValidar.Enabled = False
@@ -226,20 +225,15 @@ Namespace Presentacion.Formulario.Configuracion
         Private Sub btnAceptar_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnAceptar.Click
             Try
                 Using control As New OfertasController()
-                    If _action = System.Data.Linq.ChangeAction.Insert Then
-                        _oferta = control.AddItem(_oferta)
+                    If _oferta.LINQEntityState = EntityState.New Then
                         Me.OfertasBindingSource.Add(_oferta)
-                    ElseIf _action = System.Data.Linq.ChangeAction.Update Then
-                        _oferta = control.UpdateItem(_oferta)
-                    Else
-                        Exit Sub
                     End If
+                    control.SyncronisingItem(_oferta)
                 End Using
 
                 UpdateSelectGridRow(gridDatos, _oferta)
                 
                 OfertaBindingSource.RemoveCurrent()
-                _action = System.Data.Linq.ChangeAction.None
                 SplitPanel2.Collapsed = True
                 SplitPanel1.Collapsed = False
                 timValidar.Enabled = False

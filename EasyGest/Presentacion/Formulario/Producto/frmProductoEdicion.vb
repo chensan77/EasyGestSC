@@ -6,7 +6,6 @@ Namespace Presentacion.Formulario.Producto
     Public Class frmProductoEdicion
 
         Private _producto As Entity.Productos = Nothing
-        Private _action As System.Data.Linq.ChangeAction = System.Data.Linq.ChangeAction.None
         Private _modificadoCodigo As Boolean = False
 
         Private Sub frmProductoEdicion_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -61,9 +60,7 @@ Namespace Presentacion.Formulario.Producto
                 _producto.PrecioImpInc = gConfGlobal.ImpuestoIncluidoPrecioVenta
                 _producto.idImpuesto = gImpuestoPorDefecto.idImpuesto
                 _producto.ControlStock = gConfGlobal.ControlStock
-                _action = System.Data.Linq.ChangeAction.Insert
             Else
-                _action = System.Data.Linq.ChangeAction.Update
                 Using control As New ProductosController
                     _producto = control.GetItem(idProducto)
                 End Using
@@ -84,7 +81,7 @@ Namespace Presentacion.Formulario.Producto
         End Property
 
         Private Sub timValidar_Tick(ByVal sender As Object, ByVal e As System.EventArgs) Handles timValidar.Tick
-            btnAceptar.Enabled = _producto.IsValid(_action)
+            btnAceptar.Enabled = _producto.IsValid()
         End Sub
 
         Private Sub CancelarForm()
@@ -96,11 +93,7 @@ Namespace Presentacion.Formulario.Producto
         Private Sub AceptarForm()
             timValidar.Enabled = False
             Using control As New ProductosController
-                If _action = System.Data.Linq.ChangeAction.Insert Then
-                    _producto = control.AddItem(_producto)
-                ElseIf _action = System.Data.Linq.ChangeAction.Update Then
-                    control.UpdateItem(_producto)
-                End If
+                control.SyncronisingItem(_producto)
             End Using
             If _modificadoCodigo Then
                 Using control As New CodigosBarraController

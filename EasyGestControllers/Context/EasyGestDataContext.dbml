@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EasyGest" EntityNamespace="Data.Entity" ContextNamespace="Data.Context" Class="EasyGestDataContext" BaseType="BaseDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EasyGest" EntityNamespace="Data.Entity" ContextNamespace="Data.Context" Class="EasyGestDataContext" BaseType="BaseDataContext" Serialization="Unidirectional" EntityBase="Data.Entity.LinqEntityBase" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="ConnectionString" ConnectionString="Data Source=CHENZHANG-PC;Initial Catalog=EasyGest;Persist Security Info=True;User ID=easygest;Password=eg2016" Provider="System.Data.SqlClient" />
   <Table Name="dbo.CodigosBarra" Member="CodigosBarra" AccessModifier="Internal">
     <Type Name="CodigosBarra">

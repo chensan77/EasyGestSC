@@ -903,6 +903,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.CodigosBarra"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class CodigosBarra
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -1024,6 +1025,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Contactos"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Contactos
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -1216,6 +1218,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.DatosBancario"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class DatosBancario
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -1453,6 +1456,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Familias"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Familias
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -1573,6 +1577,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.FormasContacto"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class FormasContacto
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -1693,6 +1698,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Galerias"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Galerias
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -1861,6 +1867,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Impuestos"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Impuestos
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -2007,6 +2014,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.ModosPago"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class ModosPago
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -2127,6 +2135,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.MunicipiosEspañolas"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class MunicipiosEspañolas
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -2270,6 +2279,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.ProvinciasEspañolas"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class ProvinciasEspañolas
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -2366,6 +2376,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.TiposIdentificacion"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class TiposIdentificacion
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -2483,6 +2494,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Ubicaciones"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Ubicaciones
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -2603,6 +2615,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Marcas"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Marcas
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -2723,6 +2736,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWDatosBancario"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWDatosBancario
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -3006,6 +3020,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWLineasPedido"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWLineasPedido
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -3338,6 +3353,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWPedidos"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWPedidos
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -3669,6 +3685,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWContactos"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWContactos
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -3951,6 +3968,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWProveedores"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWProveedores
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -4508,6 +4526,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Empresas"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Empresas
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -5016,6 +5035,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.UnidadesMedida"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class UnidadesMedida
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -5136,6 +5156,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Facturas"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Facturas
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -5468,6 +5489,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWLineasAlbaran"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWLineasAlbaran
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -5938,6 +5960,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWLineasFactura"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWLineasFactura
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -6362,6 +6385,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWFacturas"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWFacturas
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -6716,6 +6740,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Ofertas"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Ofertas
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -7027,6 +7052,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWAlbaranes"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWAlbaranes
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -7639,6 +7665,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Albaranes"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Albaranes
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -8113,6 +8140,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.CaracteristicasProducto"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class CaracteristicasProducto
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -8281,6 +8309,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.MovimientosTarjeta"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class MovimientosTarjeta
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -8450,6 +8479,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWProductos"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWProductos
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -9361,6 +9391,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.TarjetasFidelizacion"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class TarjetasFidelizacion
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -9698,6 +9729,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWTarjetasFidelizacion"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWTarjetasFidelizacion
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -10079,6 +10111,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Encargos"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Encargos
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -10434,6 +10467,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.ListasCompra"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class ListasCompra
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -10647,6 +10681,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Diarios"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Diarios
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -10908,6 +10943,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWDiarios"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWDiarios
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -11261,6 +11297,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWApuntesDiario"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWApuntesDiario
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -11570,6 +11607,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.ApuntesDiario"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class ApuntesDiario
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -11739,6 +11777,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Morosidades"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Morosidades
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -12095,6 +12134,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.MovimientosMorosidad"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class MovimientosMorosidad
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -12334,6 +12374,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWCobros"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWCobros
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -12782,6 +12823,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWPagos"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWPagos
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -13230,6 +13272,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWCreditosCliente"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWCreditosCliente
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -13631,6 +13674,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWDeberesProveedor"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWDeberesProveedor
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -14032,6 +14076,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.PrioridadesTarea"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class PrioridadesTarea
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -14149,6 +14194,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.TiposDatoCaractProducto"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class TiposDatoCaractProducto
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -14266,6 +14312,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Usuarios"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Usuarios
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -14717,6 +14764,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Vales"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Vales
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -15050,6 +15098,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWVales"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWVales
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -15429,6 +15478,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Clientes"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Clientes
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -16036,6 +16086,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWClientes"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWClientes
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -16758,6 +16809,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Tareas"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Tareas
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -16950,6 +17002,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWTareas"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class VWTareas
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -17211,6 +17264,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.RevolucionPreciosCompra"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class RevolucionPreciosCompra
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -17380,6 +17434,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.LineasImpuestoAlbaran"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class LineasImpuestoAlbaran
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -17653,6 +17708,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.LineasImpuestoFactura"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class LineasImpuestoFactura
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -17926,6 +17982,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Proveedores"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Proveedores
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -18464,6 +18521,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.LineasFactura"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class LineasFactura
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -18807,6 +18865,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.LineasAlbaran"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class LineasAlbaran
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -19150,6 +19209,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.LineasPedido"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class LineasPedido
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -19470,6 +19530,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Productos"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Productos
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -20129,6 +20190,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Pedidos"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Pedidos
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -20458,6 +20520,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Configuraciones"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Configuraciones
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -20636,6 +20699,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.DiseñosEtiqueta"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class DiseñosEtiqueta
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -20827,6 +20891,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:=""),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class EtiquetasEnHoja
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -21188,6 +21253,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:=""),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class EtiquetasEnRollo
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
@@ -21404,6 +21470,7 @@ Namespace Data.Entity
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Puestos"),  _
 	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
 	Partial Public Class Puestos
+		Inherits Data.Entity.LinqEntityBase
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 		
 		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)

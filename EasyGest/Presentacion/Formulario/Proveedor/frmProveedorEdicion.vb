@@ -6,8 +6,6 @@ Namespace Presentacion.Formulario.Proveedor
     Public Class frmProveedorEdicion
 
         Private _proveedor As Entity.Proveedores = Nothing
-        Private _action As System.Data.Linq.ChangeAction = System.Data.Linq.ChangeAction.None
-
 
         Private Sub frmProveedorEdicion_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
@@ -21,7 +19,7 @@ Namespace Presentacion.Formulario.Proveedor
                     TiposIdentificacionBindingSource.DataSource = control.GetItems()
                 End Using
                 Using control As New MunicipiosEspañolasController
-                    If _action = System.Data.Linq.ChangeAction.Update And Not String.IsNullOrWhiteSpace(_proveedor.Provincia) Then
+                    If _proveedor.LINQEntityState <> EntityState.New And Not String.IsNullOrWhiteSpace(_proveedor.Provincia) Then
                         MunicipiosEspañolasBindingSource.DataSource = control.GetItemsByNombreProvincia(_proveedor.Provincia)
                     End If
                 End Using
@@ -44,9 +42,7 @@ Namespace Presentacion.Formulario.Proveedor
             ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
             If idProveedor = -1 Then
                 _proveedor = ProveedoresController.NewItem()
-                _action = System.Data.Linq.ChangeAction.Insert
             Else
-                _action = System.Data.Linq.ChangeAction.Update
                 Using control As New ProveedoresController
                     _proveedor = control.GetItem(idProveedor)
                 End Using
@@ -67,7 +63,7 @@ Namespace Presentacion.Formulario.Proveedor
         End Property
 
         Private Sub timValidar_Tick(sender As Object, e As System.EventArgs) Handles timValidar.Tick
-            btnAceptar.Enabled = _proveedor.IsValid(_action)
+            btnAceptar.Enabled = _proveedor.IsValid()
         End Sub
 
         Private Sub CancelarForm()
@@ -79,11 +75,7 @@ Namespace Presentacion.Formulario.Proveedor
         Private Sub AceptarForm()
             timValidar.Enabled = False
             Using control As New ProveedoresController
-                If _action = System.Data.Linq.ChangeAction.Insert Then
-                    _proveedor = control.AddItem(_proveedor)
-                ElseIf _action = System.Data.Linq.ChangeAction.Update Then
-                    control.UpdateItem(_proveedor)
-                End If
+                control.SyncronisingItem(_proveedor)
             End Using
             'Me.DialogResult = Windows.Forms.DialogResult.OK
         End Sub

@@ -6,7 +6,6 @@ Namespace Presentacion.Formulario.Cliente
     Public Class frmClienteTarjetaEdicion
 
         Private _tarjeta As Entity.TarjetasFidelizacion = Nothing
-        Private _action As System.Data.Linq.ChangeAction = System.Data.Linq.ChangeAction.None
         Private _propietariomodificable As Boolean = False
         Private _baseaux, _beneficioaux, _basepuntoaux, _equivalenciapuntoaux As Single
         Private _ensaldoaux As Boolean
@@ -44,7 +43,7 @@ Namespace Presentacion.Formulario.Cliente
                 End If
 
                 'Preparar controles si la accion es ACTUALIZACION de acuerdo al estado de activo
-                If _action = System.Data.Linq.ChangeAction.Update Then
+                If _tarjeta.LINQEntityState <> EntityState.New Then
                     toggleActivacion.Text = CStr(IIf(Not _tarjeta.Activo, My.Resources.Application.TextoActivar, My.Resources.Application.TextoDesactivar))
                     toggleActivacion.Image = DirectCast(IIf(Not _tarjeta.Activo, My.Resources.accept, My.Resources.delete), Image)
                     ActivarDesactivarControles(_tarjeta.Activo, ddlCliente, txtPropietario, txtNumeroTarjeta, txtSaldo, chkCondicionParticular)
@@ -79,10 +78,8 @@ Namespace Presentacion.Formulario.Cliente
                 _tarjeta.EnSaldo = gConfGlobal.ModoFidelizacion = EasyGestControllers.Data.Configuracion.TipoFidelizacionEnum.Saldo
                 _tarjeta.CondicionParticular = Not gConfGlobal.FidelizacionModoGlobal
                 _tarjeta.FormulaSaldo = gConfGlobal.FormulaFidelizacion
-                _action = System.Data.Linq.ChangeAction.Insert
                 toggleActivacion.Enabled = False
             Else
-                _action = System.Data.Linq.ChangeAction.Update
                 Using control As New TarjetasFidelizacionController
                     _tarjeta = control.GetItem(idTarjeta)
                 End Using
@@ -129,11 +126,7 @@ Namespace Presentacion.Formulario.Cliente
                     End If
                 End If
                 Using control As New TarjetasFidelizacionController
-                    If _action = System.Data.Linq.ChangeAction.Insert Then
-                        _tarjeta = control.AddItem(_tarjeta)
-                    ElseIf _action = System.Data.Linq.ChangeAction.Update Then
-                        control.UpdateItem(_tarjeta)
-                    End If
+                    control.SyncronisingItem(_tarjeta)
                 End Using
             Catch ex As SqlClient.SqlException
                 If ex.Number = SQLERRORNUMBER_DUPLICATEINDEX Then

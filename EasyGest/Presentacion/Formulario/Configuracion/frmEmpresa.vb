@@ -11,9 +11,8 @@ Namespace Presentacion.Formulario.Configuracion
         Private _panel As New WaitingPanel()
         Private _orden As String = "Empresa ASC"
         Private _empresa As Entity.Empresas = Nothing
-        Private _action As System.Data.Linq.ChangeAction = System.Data.Linq.ChangeAction.None
 
-        #Region "Evento Form"
+#Region "Evento Form"
 
         Private Sub frmEmpresa_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
             Me.Controls.Add(_panel)
@@ -115,7 +114,7 @@ Namespace Presentacion.Formulario.Configuracion
         End Sub
 
         Private Sub timValidar_Tick(sender As System.Object, e As System.EventArgs) Handles timValidar.Tick
-            btnAceptar.Enabled = _empresa.IsValid(_action)
+            btnAceptar.Enabled = _empresa.IsValid()
         End Sub
 
         Private Sub ddlFormato_SelectedIndexChanged(sender As Object, e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
@@ -162,12 +161,10 @@ Namespace Presentacion.Formulario.Configuracion
         Private Sub EditarAgregar(ByVal id As Long)
             If id = -1 Then
                 _empresa = Controller.EmpresasController.NewItem()
-                _action = System.Data.Linq.ChangeAction.Insert
             Else
                 Using c As New Controller.EmpresasController()
                     _empresa = c.GetItem(id)
                 End Using
-                _action = System.Data.Linq.ChangeAction.Update
             End If
             EmpresaBindingSource.DataSource = _empresa
             timValidar.Enabled = True
@@ -181,7 +178,6 @@ Namespace Presentacion.Formulario.Configuracion
 
         Private Sub btnCancelar_Click(sender As Object, e As System.EventArgs) Handles btnCancelar.Click
             _empresa = Nothing
-            _action = System.Data.Linq.ChangeAction.None
             SplitPanel2.Collapsed = True
             SplitPanel1.Collapsed = False
             timValidar.Enabled = False
@@ -192,14 +188,10 @@ Namespace Presentacion.Formulario.Configuracion
         Private Sub btnAceptar_Click(sender As Object, e As System.EventArgs) Handles btnAceptar.Click
             Try
                 Using control As New EmpresasController()
-                    If _action = System.Data.Linq.ChangeAction.Insert Then
-                        _empresa = control.AddItem(_empresa)
+                    If _empresa.LINQEntityState = EntityState.New Then
                         Me.EmpresasBindingSource.Add(_empresa)
-                    ElseIf _action = System.Data.Linq.ChangeAction.Update Then
-                        _empresa = control.UpdateItem(_empresa)
-                    Else
-                        Exit Sub
                     End If
+                    control.SyncronisingItem(_empresa)
                 End Using
 
                 'Dim row As GridViewRowInfo
@@ -211,7 +203,6 @@ Namespace Presentacion.Formulario.Configuracion
                 '    row.IsSelected = True
                 '    row.InvalidateRow()
                 'End If
-                _action = System.Data.Linq.ChangeAction.None
                 SplitPanel2.Collapsed = True
                 SplitPanel1.Collapsed = False
                 timValidar.Enabled = False

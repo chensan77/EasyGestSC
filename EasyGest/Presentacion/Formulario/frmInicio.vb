@@ -4,10 +4,10 @@ Namespace Presentacion.Formulario
 
     Public Class frmInicio
 
-        Private _actionEncargo As System.Data.Linq.ChangeAction = System.Data.Linq.ChangeAction.None
-        Private _actionTarea As System.Data.Linq.ChangeAction = System.Data.Linq.ChangeAction.None
-        Private _encargo As Encargos
-        Private _tarea As Tareas
+        'Private _actionEncargo As System.Data.Linq.ChangeAction = System.Data.Linq.ChangeAction.None
+        'Private _actionTarea As System.Data.Linq.ChangeAction = System.Data.Linq.ChangeAction.None
+        Private _encargo As Encargos = Nothing
+        Private _tarea As Tareas = Nothing
 
         Private Structure DatosInicio
             Dim Tareas As IEnumerable(Of VWTareas)
@@ -192,7 +192,7 @@ Namespace Presentacion.Formulario
         End Sub
 
         Private Sub btnAceptarTarea_Click(sender As Object, e As EventArgs) Handles btnAceptarTarea.Click
-            If _tarea.IsValid(_actionTarea) Then
+            If _tarea.IsValid() Then
                 Dim tarea As VWTareas = ActualizarTarea()
                 If Not IsNothing(tarea) Then
                     If _actionTarea = System.Data.Linq.ChangeAction.Insert Then
@@ -205,7 +205,7 @@ Namespace Presentacion.Formulario
         End Sub
 
         Private Sub btnAceptarEncargo_Click(sender As Object, e As EventArgs) Handles btnAceptarEncargo.Click
-            If _encargo.IsValid(_actionEncargo) Then
+            If _encargo.IsValid() Then
                 Dim lista As ListasCompra
                 lista = ActualizarEncargo()
                 If Not IsNothing(lista) Then
@@ -295,7 +295,10 @@ Namespace Presentacion.Formulario
             If MostrarMensaje(My.Resources.Application.ConfirmacionBorrarDato, Me.Text, Telerik.WinControls.RadMessageIcon.Question, MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
                 Try
                     Using control As New TareasController
-                        control.DeleteItem(idSeleccionado)
+                        Dim toDelete As Tareas
+                        toDelete = control.GetItem(idSeleccionado)
+                        toDelete.SetAsDeleteOnSubmit()
+                        control.SyncronisingItem(toDelete)
                     End Using
                 Catch ex As Exception
                     MostrarMensaje(Me.Text, My.Resources.Application.ErrorActualizarDatos, ex, Telerik.WinControls.RadMessageIcon.Exclamation)
@@ -394,7 +397,6 @@ Namespace Presentacion.Formulario
         Private Sub EditarAgregarEncargo(id As Long)
             If id = -1 Then
                 _encargo = EncargosController.NewItem()
-                _actionEncargo = System.Data.Linq.ChangeAction.Insert
                 EncargoBindingSource.DataSource = _encargo
                 SplitPanel2.Collapsed = False
                 dtpRecogida.MinDate = Today()
@@ -405,7 +407,6 @@ Namespace Presentacion.Formulario
                         _encargo = c.GetItem(id)
                     End Using
                     If Not IsNothing(_encargo) Then
-                        _actionEncargo = System.Data.Linq.ChangeAction.Update
                         EncargoBindingSource.DataSource = _encargo
                         SplitPanel2.Collapsed = False
                         If _encargo.FechaRecogidaPrevista.HasValue Then
@@ -514,7 +515,7 @@ Namespace Presentacion.Formulario
                 Dim itemAMod As ListasCompra = DirectCast(e.Row.DataBoundItem, ListasCompra)
                 Try
                     Using c As New ListasCompraController()
-                        c.UpdateItem(itemAMod)
+                        c.SyncronisingItem(itemAMod)
                     End Using
                 Catch ex As Exception
                     MostrarMensaje(Me.Text, My.Resources.Application.ErrorActualizarDatos, ex, Telerik.WinControls.RadMessageIcon.Exclamation)
@@ -523,47 +524,48 @@ Namespace Presentacion.Formulario
         End Sub
 
         Private Sub gridListaCompra_RowsChanging(sender As Object, e As GridViewCollectionChangingEventArgs) Handles gridListaCompra.RowsChanging
+            Dim itemABorrar As List(Of ListasCompra) = New List(Of ListasCompra)()
+            Dim item As ListasCompra = DirectCast(e.GridViewTemplate.MasterViewInfo.CurrentRow.DataBoundItem, ListasCompra)
             If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Add Then
-                Dim item As ListasCompra = DirectCast(e.GridViewTemplate.MasterViewInfo.CurrentRow.DataBoundItem, ListasCompra)
                 If item Is Nothing Then
                     e.Cancel = True
                 Else
-                    If Not item.IsValid(System.Data.Linq.ChangeAction.Insert) Then
+                    If Not item.IsValid() Then
                         e.Cancel = True
                         gridListaCompra.CurrentRow = gridListaCompra.MasterView.TableAddNewRow
                         gridListaCompra.CurrentRow.Cells(0).BeginEdit()
-                        Exit Sub
+                    Else
+                        item.SetAsInsertOnSubmit()
                     End If
-                    Try
-                        Using c As New ListasCompraController()
-                            c.AddItem(item)
-                        End Using
-                    Catch ex As Exception
-                        e.Cancel = True
-                        MostrarMensaje(Me.Text, My.Resources.Application.ErrorActualizarDatos, ex, Telerik.WinControls.RadMessageIcon.Exclamation)
-                    End Try
+
                 End If
             End If
             If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Remove Then
                 If MostrarMensaje(My.Resources.Application.ConfirmacionBorrarDato, Me.Text, Telerik.WinControls.RadMessageIcon.Question, MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
-                    Dim itemABorrar As List(Of ListasCompra) = New List(Of ListasCompra)()
+
                     For Each row As GridViewDataRowInfo In e.OldItems
                         If Not IsNothing(_encargo) AndAlso _encargo.idEncargo = DirectCast(row.DataBoundItem, ListasCompra).idEncargo Then
                             ResetearEncargo()
                         End If
-                        itemABorrar.Add(DirectCast(row.DataBoundItem, ListasCompra))
+                        Dim todelete As ListasCompra = DirectCast(row.DataBoundItem, ListasCompra)
+                        todelete.SetAsDeleteOnSubmit()
+                        itemABorrar.Add(todelete)
                     Next
-                    Try
-                        Using c As New ListasCompraController()
-                            c.DeleteItems(itemABorrar)
-                        End Using
-                    Catch ex As Exception
-                        e.Cancel = True
-                        MostrarMensaje(Me.Text, My.Resources.Application.ErrorActualizarDatos, ex, Telerik.WinControls.RadMessageIcon.Exclamation)
-                    End Try
+
                 Else
                     e.Cancel = True
                 End If
+            End If
+            If Not e.Cancel Then
+                Try
+                    Using c As New ListasCompraController()
+                        c.SyncronisingItem(item)
+                        c.SyncronisingItem(itemABorrar.AsEnumerable())
+                    End Using
+                Catch ex As Exception
+                    e.Cancel = True
+                    MostrarMensaje(Me.Text, My.Resources.Application.ErrorActualizarDatos, ex, Telerik.WinControls.RadMessageIcon.Exclamation)
+                End Try
             End If
         End Sub
 
@@ -594,14 +596,12 @@ Namespace Presentacion.Formulario
             SplitPanel4.Collapsed = True
             TareaBindingSource.Clear()
             _tarea = Nothing
-            _actionTarea = System.Data.Linq.ChangeAction.None
         End Sub
 
         Private Sub ResetearEncargo()
             SplitPanel2.Collapsed = True
             EncargoBindingSource.Clear()
             _encargo = Nothing
-            _actionEncargo = System.Data.Linq.ChangeAction.None
         End Sub
 
     End Class

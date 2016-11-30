@@ -15,7 +15,7 @@ Namespace Presentacion.Formulario.Cliente
                 PrepararControles(Me.Controls)
 
                 If _maximoSaldo > 0 Then
-                    _valeSaldo = ValesController.NewItem
+                    _valeSaldo = ValesController.NewItem()
                     _valeSaldo.idCliente = _tarjetasSaldo.First.idCliente
                     _valeSaldo.ObtenidoXFidelizacion = True
                     _valeSaldo.EsPunto = False
@@ -23,7 +23,7 @@ Namespace Presentacion.Formulario.Cliente
                     txtSaldo.Select()
                 End If
                 If _maximoPunto > 0 Then
-                    _valePunto = ValesController.NewItem
+                    _valePunto = ValesController.NewItem()
                     _valePunto.idCliente = _tarjetasPunto.First.idCliente
                     _valePunto.ObtenidoXFidelizacion = True
                     _valePunto.EsPunto = True
@@ -138,13 +138,13 @@ Namespace Presentacion.Formulario.Cliente
                     _valePunto.FComienzo = dtpFInicio.Value
                     _valePunto.FValidez = CDate(IIf(spinValidezBeneficio.Value = 0D, Nothing, _valePunto.FComienzo.Value.AddDays(spinValidezBeneficio.Value * 7)))
                     _valePunto.Importe = CSng(txtPunto.Value)
-                    _valePunto = control.AddItem(_valePunto)
+                    control.SyncronisingItem(_valePunto)
                 End If
                 If Not IsNothing(_valeSaldo) Then
                     _valeSaldo.FComienzo = dtpFInicio.Value
                     _valeSaldo.FValidez = CDate(IIf(spinValidezBeneficio.Value = 0, Nothing, _valeSaldo.FComienzo.Value.AddDays(spinValidezBeneficio.Value * 7)))
                     _valeSaldo.Importe = CSng(txtSaldo.Value)
-                    _valeSaldo = control.AddItem(_valeSaldo)
+                    control.SyncronisingItem(_valeSaldo)
                 End If
             End Using
 
