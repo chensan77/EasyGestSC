@@ -454,22 +454,19 @@ Namespace Presentacion.Formulario
         Private Function ActualizarEncargo() As ListasCompra
             Dim lista As ListasCompra = Nothing
             Try
-                If _actionEncargo = System.Data.Linq.ChangeAction.Insert Then
-                    Using c As New EncargosController()
-                        c.AddItem(_encargo, lista)
-                    End Using
+                Using c As New EncargosController()
+                    c.SyncronisingItem(_encargo, lista)
+                End Using
+
+                'Buscar en la listascompra si encuentra el nuevo elemento
+                Dim listas As IEnumerable(Of ListasCompra) = DirectCast(Me.ListasCompraBindingSource.DataSource, Global.System.Collections.Generic.IEnumerable(Of Global.EasyGestControllers.Data.Entity.ListasCompra))
+                listas = listas.Where(Function(l As ListasCompra) l.idCompra.Equals(lista.idCompra))
+                If listas.Count() = 0 Then
+                    Me.ListasCompraBindingSource.Add(lista)
+                Else
+
                 End If
-                If _actionEncargo = System.Data.Linq.ChangeAction.Update Then
-                    Using c As New EncargosController()
-                        c.UpdateItem(_encargo, lista)
-                    End Using
-                    'Buscar en la listascompra si encuentra el nuevo elemento
-                    Dim listas As IEnumerable(Of ListasCompra) = DirectCast(Me.ListasCompraBindingSource.DataSource, Global.System.Collections.Generic.IEnumerable(Of Global.EasyGestControllers.Data.Entity.ListasCompra))
-                    listas = listas.Where(Function(l As ListasCompra) l.idCompra.Equals(lista.idCompra))
-                    If listas.Count() = 0 Then
-                        Me.ListasCompraBindingSource.Add(lista)
-                    End If
-                End If
+
             Catch ex As Exception
                 MostrarMensaje(Me.Text, My.Resources.Application.ErrorActualizarDatos, ex, Telerik.WinControls.RadMessageIcon.Exclamation)
                 lista = Nothing

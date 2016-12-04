@@ -355,6 +355,18 @@ Namespace Controller
         '    End Using
         '    Return encargoNuevo
         'End Function
+        Public Overloads Sub SyncronisingItem(ByRef encargo As Encargos, ByRef lista As ListasCompra)
+            MyBase.SyncronisingItem(encargo)
+            Using c As New ListasCompraController()
+                lista = c.GetItemsBy("idEncargo", New Long() {encargo.idEncargo}).FirstOrDefault
+                If IsNothing(lista) Then
+                    lista = ListasCompraController.NewItem()
+                End If
+                CopiarAListaCompra(lista, encargo)
+                c.SyncronisingItem(lista)
+            End Using
+        End Sub
+
 
         Private Sub CopiarAListaCompra(ByRef lista As ListasCompra, encargo As Encargos)
             lista.Descripcion = encargo.Descripcion
