@@ -180,13 +180,13 @@ Namespace Presentacion.Formulario
         End Sub
 
         Private Sub cbbtnAgregarEncargo_Click(sender As Object, e As EventArgs) Handles cbbtnAgregarEncargo.Click
-            If _actionEncargo = System.Data.Linq.ChangeAction.None Then
+            If IsNothing(_encargo) Then
                 EditarAgregarEncargo(-1L)
             End If
         End Sub
 
         Private Sub cbbtnAgregarTarea_Click(sender As Object, e As EventArgs) Handles cbbtnAgregarTarea.Click
-            If _actionTarea = System.Data.Linq.ChangeAction.None Then
+            If IsNothing(_tarea) Then
                 EditarAgregarTarea(-1L)
             End If
         End Sub
@@ -195,7 +195,7 @@ Namespace Presentacion.Formulario
             If _tarea.IsValid() Then
                 Dim tarea As VWTareas = ActualizarTarea()
                 If Not IsNothing(tarea) Then
-                    If _actionTarea = System.Data.Linq.ChangeAction.Insert Then
+                    If Not HasEntityInBingdingSource(Me.TareasBindingSource, _tarea) Then
                         Me.TareasBindingSource.Add(tarea)
                     End If
                     UpdateSelectGridRow(gridTareas, tarea)
@@ -209,6 +209,7 @@ Namespace Presentacion.Formulario
                 Dim lista As ListasCompra
                 lista = ActualizarEncargo()
                 If Not IsNothing(lista) Then
+                    Me.ListasCompraBindingSource.DataSource
                     If _actionEncargo = System.Data.Linq.ChangeAction.Insert Then
                         Me.ListasCompraBindingSource.Add(lista)
                     End If
@@ -370,7 +371,6 @@ Namespace Presentacion.Formulario
             If id = -1 Then
                 _tarea = TareasController.NewItem()
                 If gUsuario.IsSuper() Then _tarea.idUsuario = gUsuario.idUsuario
-                _actionTarea = System.Data.Linq.ChangeAction.Insert
                 TareaBindingSource.DataSource = _tarea
                 dtpFechaTarea.MinDate = Today()
                 SplitPanel4.Collapsed = False
@@ -381,7 +381,6 @@ Namespace Presentacion.Formulario
                         _tarea = c.GetItem(id)
                     End Using
                     If Not IsNothing(_tarea) Then
-                        _actionTarea = System.Data.Linq.ChangeAction.Update
                         TareaBindingSource.DataSource = _tarea
                         dtpFechaTarea.MinDate = CDate(IIf(_tarea.FechaTarea.CompareTo(Today()) > 0, Today(), _tarea.FechaTarea))
                         SplitPanel4.Collapsed = False
@@ -430,18 +429,12 @@ Namespace Presentacion.Formulario
         Private Function ActualizarTarea() As VWTareas
             Dim tareaMod As VWTareas = Nothing
             Try
-                Dim tarea As Tareas = Nothing
-                Using control As New TareasController()
-                    If _actionTarea = System.Data.Linq.ChangeAction.Insert Then
-                        tarea = control.AddItem(_tarea)
-                    End If
-                    If _actionTarea = System.Data.Linq.ChangeAction.Update Then
-                        tarea = control.UpdateItem(_tarea)
-                    End If
-                End Using
-                If Not IsNothing(tarea) Then
+                If Not IsNothing(_tarea) Then
+                    Using control As New TareasController()
+                        control.SyncronisingItem(_tarea)
+                    End Using
                     Using control As New VistasController(Of VWTareas)()
-                        tareaMod = control.GetItem(tarea.idTarea)
+                        tareaMod = control.GetItem(_tarea.idTarea)
                     End Using
                 End If
             Catch ex As Exception

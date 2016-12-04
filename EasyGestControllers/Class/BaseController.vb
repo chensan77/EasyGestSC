@@ -11,11 +11,11 @@ Namespace Controller
         Private _disposed As Boolean = False
         Private _context As TContext = Nothing
         Private _entityType As Type = GetType(TEntity)
-        Private _primaryKeys As New List(Of String)
+        Private _primaryKeys As New Dictionary(Of String, PropertyInfo)
 
         Protected Sub New()
             _context = CType(Activator.CreateInstance(GetType(TContext), ""), TContext)
-            _primaryKeys = getPrimaryKeys()
+            _primaryKeys = Data.Entity.LINQEntityBase.GetLINQEntityPrimaryKeys(_entityType)
         End Sub
 
 
@@ -216,7 +216,7 @@ Namespace Controller
             Return GetItem(Of TEntity)(keys)
         End Function
 
-        Public Function GetItem(Of T As Class)(ByVal keys As Object()) As T
+        Public Function GetItem(Of T As Data.Entity.LINQEntityBase)(ByVal keys As Object()) As T
             If keys Is Nothing Then Throw New NullReferenceException()
             If keys.Length = 0 Then Throw New ArgumentException()
             If _primaryKeys.Count > keys.Length Then Throw New Exception("No se ha especificado las claves primarias")
@@ -224,7 +224,8 @@ Namespace Controller
             Dim separadorAnd As String = ""
             Dim i As Integer = 0
             Dim query As IEnumerable(Of T)
-            For Each key As String In _primaryKeys
+
+            For Each key As String In _primaryKeys.Keys
                 filtro &= separadorAnd & key & " == @" & i
                 i += 1
                 separadorAnd = " and "

@@ -118,6 +118,9 @@ Namespace Data.Entity
         ' stores the property info for foreingKey associations
         Private Shared _cacheDBGeneratedProperties As Dictionary(Of Type, Dictionary(Of String, PropertyInfo))
         ' stores the property info for columns that are DbGenerated
+        Private Shared _cacheTablesPrimaryKeysProperties As Dictionary(Of Type, Dictionary(Of String, PropertyInfo))
+        ' store table primary keys
+
 #End Region
 
 #Region "static_methods"
@@ -129,6 +132,14 @@ Namespace Data.Entity
         Private Shared Function GetKnownTypes() As List(Of Type)
             Return (From a In Assembly.GetExecutingAssembly().GetTypes() Where a.IsSubclassOf(GetType(LINQEntityBase))).ToList()
         End Function
+
+
+        Public Shared Function GetLINQEntityPrimaryKeys(entityType As Type) As Dictionary(Of String, PropertyInfo)
+            Dim primaryKeys As New Dictionary(Of String, PropertyInfo)
+            _cacheTablesPrimaryKeysProperties.TryGetValue(entityType, primaryKeys)
+            Return primaryKeys
+        End Function
+
 
         ''' <summary>
         ''' Serializes a LINQ Entity and it's children using DataContract serializer
@@ -212,7 +223,7 @@ Namespace Data.Entity
         ''' </summary>
         ''' <param name="source"></param>
         ''' <returns></returns>
-        Public Function ShallowCompare(entity1 As LINQEntityBase, entity2 As LINQEntityBase) As Boolean
+        Public Shared Function ShallowCompare(entity1 As LINQEntityBase, entity2 As LINQEntityBase) As Boolean
             If Not Object.ReferenceEquals(entity1.[GetType](), entity2.[GetType]()) Then
                 Return False
             End If
@@ -245,11 +256,13 @@ Namespace Data.Entity
 
             _cacheDBGeneratedProperties = New Dictionary(Of Type, Dictionary(Of String, PropertyInfo))()
 
+            _cacheTablesPrimaryKeysProperties = New Dictionary(Of Type, Dictionary(Of String, PropertyInfo))()
+
             For Each type As Type In GetKnownTypes()
                 _cacheAssociationProperties.Add(type, New Dictionary(Of String, PropertyInfo)())
                 _cacheAssociationFKProperties.Add(type, New Dictionary(Of String, PropertyInfo)())
                 _cacheDBGeneratedProperties.Add(type, New Dictionary(Of String, PropertyInfo)())
-
+                _cacheTablesPrimaryKeysProperties.Add(type, New Dictionary(Of String, PropertyInfo)())
                 For Each propInfo As PropertyInfo In type.GetProperties()
                     ' check it's an association attribute first
                     assocAttribute = DirectCast(Attribute.GetCustomAttribute(propInfo, GetType(AssociationAttribute), False), AssociationAttribute)
@@ -268,6 +281,10 @@ Namespace Data.Entity
 
                         If colAttribute IsNot Nothing AndAlso colAttribute.IsDbGenerated = True Then
                             _cacheDBGeneratedProperties(type).Add(propInfo.Name, propInfo)
+                            Continue For
+                        End If
+                        If colAttribute IsNot Nothing AndAlso colAttribute.IsPrimaryKey = True Then
+                            _cacheTablesPrimaryKeysProperties(type).Add(propInfo.Name, propInfo)
                             Continue For
                         End If
                     End If
@@ -499,6 +516,8 @@ Namespace Data.Entity
                 _changeTrackingReferences = Value
             End Set
         End Property
+
+
 
         ''' <summary>
         ''' For serialization purposes, returns null if false (so it doesn't take up space in xml)
@@ -1004,6 +1023,9 @@ Namespace Data.Entity
 
         End Function
 
+        'Public Function GetTableEntityPrimaryKeys() As Dictionary(Of String, PropertyInfo)
+        '    Return _cacheTablesPrimaryKeysProperties(Me.GetType())
+        'End Function
 
 #End Region
 

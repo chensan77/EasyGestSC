@@ -246,6 +246,18 @@ Namespace Modulo
             Return rowFound
         End Function
 
+        Public Function HasEntityInBingdingSource(bingding As BindingSource, entity As LINQEntityBase) As Boolean
+            Dim source As Object = bingding.DataSource
+            If IsNothing(source) Then Return False
+            If TypeOf source Is IEnumerable Then
+
+            End If
+            If TypeOf source Is LINQEntityBase Then
+                Return LINQEntityBase.ShallowCompare(DirectCast(source, LINQEntityBase), entity)
+            End If
+            Return False
+        End Function
+
         Public Sub AsignarTemaAplicacion(nombreTema As String)
 
             If Not String.IsNullOrWhiteSpace(nombreTema) Then
@@ -266,15 +278,15 @@ Namespace Modulo
 
         End Sub
 
-        Public Function UpdateSelectGridRow(Of T As Class)(ByRef grid As RadGridView, data As T) As GridViewRowInfo
+        Public Function UpdateSelectGridRow(ByRef grid As RadGridView, data As LINQEntityBase) As GridViewRowInfo
 
-            Dim claves As List(Of String)
+            Dim claves As Dictionary(Of String, PropertyInfo)
             Dim row As GridViewRowInfo
             If IsNothing(data) Then Return Nothing
-            claves = EasyGestController.GetPrimaryKeys(GetType(T))
-            row = FindGridRow(grid, claves, data)
+            claves = LINQEntityBase.GetLINQEntityPrimaryKeys(GetType(LINQEntityBase))
+            row = FindGridRow(grid, claves.Keys.ToList(), data)
             If Not IsNothing(row) Then
-                data.Clone(DirectCast(row.DataBoundItem, T))
+                data.Clone(DirectCast(row.DataBoundItem, LINQEntityBase))
                 grid.TableElement.ScrollToRow(row)
                 grid.CurrentRow = row
                 row.IsSelected = True

@@ -9,19 +9,19 @@ Namespace Controller
 
     Public Class EasyGestController
 
-        Private Shared _tablesPrimaryKeys As Dictionary(Of String, List(Of String)) = Nothing
+        'Private Shared _tablesPrimaryKeys As Dictionary(Of String, List(Of String)) = Nothing
 
-        Public Shared Function GetPrimaryKeys(entityType As Type) As List(Of String)
-            Dim keys As List(Of String) = New List(Of String)()
-            If IsNothing(_tablesPrimaryKeys) Then
-                _tablesPrimaryKeys = EasyGestDataContext.GetTablesPrimaryKeys()
-            End If
-            If _tablesPrimaryKeys.TryGetValue(entityType.Name, keys) Then
-                Return keys
-            Else
-                Return New List(Of String)
-            End If
-        End Function
+        'Public Shared Function GetPrimaryKeys(entityType As Type) As List(Of String)
+        '    Dim keys As List(Of String) = New List(Of String)()
+        '    If IsNothing(_tablesPrimaryKeys) Then
+        '        _tablesPrimaryKeys = EasyGestDataContext.GetTablesPrimaryKeys()
+        '    End If
+        '    If _tablesPrimaryKeys.TryGetValue(entityType.Name, keys) Then
+        '        Return keys
+        '    Else
+        '        Return New List(Of String)
+        '    End If
+        'End Function
 
         'Public Shared Function DataAccesible() As Boolean
         '    Dim result As Boolean
@@ -46,7 +46,7 @@ Namespace Controller
         Public Shared Sub ResetConnectionString(cs As String)
             If String.IsNullOrWhiteSpace(cs) Then Throw New ArgumentNullException()
             gCadenaConexion = cs
-            _tablesPrimaryKeys = EasyGestDataContext.GetTablesPrimaryKeys()
+            '_tablesPrimaryKeys = EasyGestDataContext.GetTablesPrimaryKeys()
         End Sub
     End Class
 
