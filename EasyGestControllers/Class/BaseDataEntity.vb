@@ -196,14 +196,14 @@ Namespace Data.Entity
         ''' </summary>
         ''' <param name="source">the source entity that will have it's values copied</param>
         ''' <returns></returns>
-        Public Function ShallowCopy() As LINQEntityBase
+        Public Sub ShallowCopy(ByRef destination As LINQEntityBase)
             Dim sourcePropInfos As PropertyInfo() = Me.[GetType]().GetProperties(BindingFlags.[Public] Or BindingFlags.Instance)
             Dim destinationPropInfos As PropertyInfo() = Me.[GetType]().GetProperties(BindingFlags.[Public] Or BindingFlags.Instance)
 
             ' create an object to copy values into
             Dim entityType As Type = Me.[GetType]()
-            Dim destination As LINQEntityBase
-            destination = TryCast(Activator.CreateInstance(entityType), LINQEntityBase)
+            If IsNothing(destination) Then _
+                destination = TryCast(Activator.CreateInstance(entityType), LINQEntityBase)
 
             For Each sourcePropInfo As PropertyInfo In sourcePropInfos
                 If Attribute.GetCustomAttribute(sourcePropInfo, GetType(ColumnAttribute), False) IsNot Nothing Then
@@ -215,8 +215,7 @@ Namespace Data.Entity
             destination.LINQEntityState = EntityState.Original
             destination.LINQEntityGUID = Me.LINQEntityGUID
 
-            Return destination
-        End Function
+        End Sub
 
         ''' <summary>
         ''' Returns true if two entities have the same property values (does not traverse releationships).
@@ -338,6 +337,33 @@ Namespace Data.Entity
         Private _originalEntityValue As LINQEntityBase
         ' holds the original entity values before modification
         Private _originalEntityValueTemp As LINQEntityBase
+
+        Public Function PrimaryKeyCompare(data As LINQEntityBase) As Boolean
+            Dim primaryKeySource As Dictionary(Of String, PropertyInfo)
+            Dim primaryKeyTarget As Dictionary(Of String, PropertyInfo)
+
+            primaryKeySource = GetLINQEntityPrimaryKeys(Me.GetType())
+            primaryKeyTarget = GetLINQEntityPrimaryKeys(data.GetType())
+
+            For Each e As KeyValuePair(Of String, PropertyInfo) In primaryKeySource
+                Dim sourceValue, targetValue As Object
+                If primaryKeyTarget.ContainsKey(e.Key) Then
+                    sourceValue = e.Value.GetValue(Me, Nothing)
+                    targetValue = primaryKeyTarget(e.Key).GetValue(data, Nothing)
+                    If IsNothing(sourceValue) Xor IsNothing(targetValue) Then
+                        Return False
+                    Else
+                        If (Not IsNothing(sourceValue) And Not IsNothing(targetValue)) AndAlso Not sourceValue.Equals(targetValue) Then
+                            Return False
+                        End If
+                    End If
+                Else
+                    Return False
+                End If
+            Next
+            Return True
+        End Function
+
         ' temporarily holds the original entity value until we no it's a true modification.
         ''' <summary>
         ''' This method binds to the events of the entity that are required.
@@ -381,7 +407,7 @@ Namespace Data.Entity
             ' If it's a change tracked object thats in "Original" state
             ' grab a copy of the object incase it's going to be modified
             If Me.LINQEntityState = EntityState.Original AndAlso LINQEntityKeepOriginal = True AndAlso LINQEntityOriginalValue Is Nothing Then
-                _originalEntityValueTemp = Me.ShallowCopy()
+                Me.ShallowCopy(_originalEntityValueTemp)
             End If
         End Sub
 
@@ -931,7 +957,7 @@ Namespace Data.Entity
             End If
 
             If OriginalValue IsNot Nothing Then
-                Me._originalEntityValue = Me.ShallowCopy()
+                Me.ShallowCopy(Me._originalEntityValue)
             Else
                 Me._originalEntityValue = Nothing
             End If

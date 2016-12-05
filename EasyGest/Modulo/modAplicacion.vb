@@ -208,41 +208,42 @@ Namespace Modulo
             gDefaultBiggerFont = New Font(gDefaultFont.FontFamily, gDefaultFont.SizeInPoints + 2.0F)
         End Sub
 
-        Private Function FindGridRow(ByVal grid As RadGridView, ByVal identidades As List(Of String), ByVal data As Object) As GridViewRowInfo
+        Private Function FindGridRow(ByVal grid As RadGridView, ByVal data As LINQEntityBase) As GridViewRowInfo
 
-            Dim tipo As Type = data.GetType()
-            Dim valoresidentidad As List(Of Object) = New List(Of Object)()
+            'Dim tipo As Type = data.GetType()
+            'Dim valoresidentidad As List(Of Object) = New List(Of Object)()
             Dim rowFound As GridViewRowInfo = Nothing
-            For Each identidad As String In identidades
-                Dim identidadProperty As PropertyInfo = tipo.GetProperty(identidad, BindingFlags.Public Or BindingFlags.Instance)
-                If Not IsNothing(identidadProperty) Then
-                    valoresidentidad.Add(identidadProperty.GetValue(data, Nothing))
-                Else
-                    valoresidentidad.Add(Nothing)
-                End If
-            Next
-            For Each row As GridViewRowInfo In grid.Rows
-                Dim rowdata As Object = row.DataBoundItem
-                Dim rowdatatype As Type = rowdata.GetType
-                rowFound = Nothing
-                If rowdatatype.Equals(tipo) Then
-                    If rowdata IsNot Nothing Then
-                        For i As Integer = 0 To identidades.Count - 1
-                            Dim rowdataProperty As PropertyInfo = rowdatatype.GetProperty(identidades(i))
-                            If rowdataProperty IsNot Nothing Then
-                                If Not rowdataProperty.GetValue(rowdata, Nothing).Equals(valoresidentidad(i)) Then
-                                    rowFound = Nothing
-                                    Exit For
-                                Else
-                                    rowFound = row
-                                End If
-                            End If
+            rowFound = grid.Rows.Cast(Of GridViewRowInfo)().FirstOrDefault(Function(s As GridViewRowInfo) DirectCast(s.DataBoundItem, LINQEntityBase).PrimaryKeyCompare(data))
+            'For Each identidad As String In identidades
+            '    Dim identidadProperty As PropertyInfo = tipo.GetProperty(identidad, BindingFlags.Public Or BindingFlags.Instance)
+            '    If Not IsNothing(identidadProperty) Then
+            '        valoresidentidad.Add(identidadProperty.GetValue(data, Nothing))
+            '    Else
+            '        valoresidentidad.Add(Nothing)
+            '    End If
+            'Next
+            'For Each row As GridViewRowInfo In grid.Rows
+            '    Dim rowdata As Object = row.DataBoundItem
+            '    Dim rowdatatype As Type = rowdata.GetType
+            '    rowFound = Nothing
+            '    If rowdatatype.Equals(tipo) Then
+            '        If rowdata IsNot Nothing Then
+            '            For i As Integer = 0 To identidades.Count - 1
+            '                Dim rowdataProperty As PropertyInfo = rowdatatype.GetProperty(identidades(i))
+            '                If rowdataProperty IsNot Nothing Then
+            '                    If Not rowdataProperty.GetValue(rowdata, Nothing).Equals(valoresidentidad(i)) Then
+            '                        rowFound = Nothing
+            '                        Exit For
+            '                    Else
+            '                        rowFound = row
+            '                    End If
+            '                End If
 
-                        Next
-                        If rowFound IsNot Nothing Then Exit For
-                    End If
-                End If
-            Next
+            '            Next
+            '            If rowFound IsNot Nothing Then Exit For
+            '        End If
+            '    End If
+            'Next
             Return rowFound
         End Function
 
@@ -280,17 +281,19 @@ Namespace Modulo
 
         Public Function UpdateSelectGridRow(ByRef grid As RadGridView, data As LINQEntityBase) As GridViewRowInfo
 
-            Dim claves As Dictionary(Of String, PropertyInfo)
             Dim row As GridViewRowInfo
             If IsNothing(data) Then Return Nothing
-            claves = LINQEntityBase.GetLINQEntityPrimaryKeys(GetType(LINQEntityBase))
-            row = FindGridRow(grid, claves.Keys.ToList(), data)
+            row = FindGridRow(grid, data)
             If Not IsNothing(row) Then
-                data.Clone(DirectCast(row.DataBoundItem, LINQEntityBase))
+                data.ShallowCopy(DirectCast(row.DataBoundItem, LINQEntityBase))
                 grid.TableElement.ScrollToRow(row)
                 grid.CurrentRow = row
                 row.IsSelected = True
                 row.InvalidateRow()
+            Else
+                Dim binding As BindingSource = TryCast(grid.MasterTemplate.DataSource, BindingSource)
+                If Not IsNothing(binding) Then _
+                    binding.Add(data)
             End If
             Return row
         End Function
