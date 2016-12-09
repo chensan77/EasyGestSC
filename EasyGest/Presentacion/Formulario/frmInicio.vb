@@ -195,9 +195,9 @@ Namespace Presentacion.Formulario
             If _tarea.IsValid() Then
                 Dim tarea As VWTareas = ActualizarTarea()
                 If Not IsNothing(tarea) Then
-                    If Not HasEntityInBingdingSource(Me.TareasBindingSource, _tarea) Then
-                        Me.TareasBindingSource.Add(tarea)
-                    End If
+                    'If Not HasEntityInBingdingSource(Me.TareasBindingSource, _tarea) Then
+                    '    Me.TareasBindingSource.Add(tarea)
+                    'End If
                     UpdateSelectGridRow(gridTareas, tarea)
                     ResetearTarea()
                 End If
@@ -209,10 +209,10 @@ Namespace Presentacion.Formulario
                 Dim lista As ListasCompra
                 lista = ActualizarEncargo()
                 If Not IsNothing(lista) Then
-                    Me.ListasCompraBindingSource.DataSource
-                    If _actionEncargo = System.Data.Linq.ChangeAction.Insert Then
-                        Me.ListasCompraBindingSource.Add(lista)
-                    End If
+                    'Me.ListasCompraBindingSource.DataSource
+                    'If _actionEncargo = System.Data.Linq.ChangeAction.Insert Then
+                    '    Me.ListasCompraBindingSource.Add(lista)
+                    'End If
                     UpdateSelectGridRow(gridListaCompra, lista)
                     ResetearEncargo()
                 End If
@@ -228,7 +228,7 @@ Namespace Presentacion.Formulario
         End Sub
 
         Private Sub cbbtnEditarTarea_Click(sender As Object, e As EventArgs) Handles cbbtnEditarTarea.Click
-            If _actionTarea = System.Data.Linq.ChangeAction.None Then
+            If IsNothing(_tarea) Then
                 Dim item As VWTareas = gridTareas.SelectedItem(Of VWTareas)()
                 If IsNothing(item) Then
                     MostrarMensaje(My.Resources.Application.AvisoSeleccionFila, Me.Text, Telerik.WinControls.RadMessageIcon.Info)
@@ -239,7 +239,7 @@ Namespace Presentacion.Formulario
         End Sub
 
         Private Sub cbbtnEditarEncargo_Click(sender As Object, e As EventArgs) Handles cbbtnEditarEncargo.Click
-            If _actionEncargo = System.Data.Linq.ChangeAction.None Then
+            If IsNothing(_encargo) Then
                 Dim item As ListasCompra = gridListaCompra.SelectedItem(Of ListasCompra)()
                 If IsNothing(item) Then
                     MostrarMensaje(My.Resources.Application.AvisoSeleccionFila, Me.Text, Telerik.WinControls.RadMessageIcon.Info)
@@ -250,7 +250,7 @@ Namespace Presentacion.Formulario
         End Sub
 
         Private Sub cbbtnEliminarTarea_Click(sender As Object, e As EventArgs) Handles cbbtnEliminarTarea.Click
-            If _actionTarea = System.Data.Linq.ChangeAction.None Then
+            If IsNothing(_tarea) Then
                 Dim item As VWTareas = gridTareas.SelectedItem(Of VWTareas)()
                 If IsNothing(item) Then
                     MostrarMensaje(My.Resources.Application.AvisoSeleccionFila, Me.Text, Telerik.WinControls.RadMessageIcon.Info)

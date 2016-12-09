@@ -24,7 +24,7 @@
             If Me.DialogResult = DialogResult.OK Then
                 Try                    
                     Using control As New DiariosController
-                        _diario = control.UpdateItem(_diario)
+                        control.SyncronisingItem(_diario)
                     End Using
 
                 Catch ex As Exception
@@ -70,7 +70,7 @@
 
             ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
             If IsNothing(gDiario) Then Throw New NoNullAllowedException()
-            gDiario.Clone(_diario)
+            gDiario.ShallowCopy(_diario)
             _diario.Cierre = Now()
             Using control As New ApuntesDiarioController()
                 _diario.CierreSupuesto = control.CalcularCierreVenta(_diario.idDiario)

@@ -4,6 +4,14 @@
 Namespace Presentacion.Formulario.Configuracion
 
     Public Class frmPuesto
+        Public Sub New()
+
+            ' Esta llamada es exigida por el diseñador.
+            InitializeComponent()
+
+            ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
+
+        End Sub
 
 #Region "Evento Form"
 
@@ -13,9 +21,9 @@ Namespace Presentacion.Formulario.Configuracion
                     'tratar impuestos
                     Using control As New PuestosController
                         For Each puesto As Puestos In PuestosBindingSource.List
-                            control.UpdateItem(puesto)
+                            control.SyncronisingItem(puesto)
                             If puesto.idPuesto = gPuesto.idPuesto Then
-                                gPuesto = DirectCast(puesto.Clone(), Puestos)
+                                puesto.ShallowCopy(DirectCast(gPuesto, LINQEntityBase))
                                 My.Forms.frmPrincipal.lblePuesto.Text = My.Resources.Application.TextoPuesto & ": " & gPuesto.Puesto
                             End If
                         Next

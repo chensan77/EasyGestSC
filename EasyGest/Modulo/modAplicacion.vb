@@ -247,17 +247,17 @@ Namespace Modulo
             Return rowFound
         End Function
 
-        Public Function HasEntityInBingdingSource(bingding As BindingSource, entity As LINQEntityBase) As Boolean
-            Dim source As Object = bingding.DataSource
-            If IsNothing(source) Then Return False
-            If TypeOf source Is IEnumerable Then
+        'Public Function HasEntityInBingdingSource(bingding As BindingSource, entity As LINQEntityBase) As Boolean
+        '    Dim source As Object = bingding.DataSource
+        '    If IsNothing(source) Then Return False
+        '    If TypeOf source Is IEnumerable Then
 
-            End If
-            If TypeOf source Is LINQEntityBase Then
-                Return LINQEntityBase.ShallowCompare(DirectCast(source, LINQEntityBase), entity)
-            End If
-            Return False
-        End Function
+        '    End If
+        '    If TypeOf source Is LINQEntityBase Then
+        '        Return LINQEntityBase.ShallowCompare(DirectCast(source, LINQEntityBase), entity)
+        '    End If
+        '    Return False
+        'End Function
 
         Public Sub AsignarTemaAplicacion(nombreTema As String)
 
@@ -286,15 +286,16 @@ Namespace Modulo
             row = FindGridRow(grid, data)
             If Not IsNothing(row) Then
                 data.ShallowCopy(DirectCast(row.DataBoundItem, LINQEntityBase))
-                grid.TableElement.ScrollToRow(row)
-                grid.CurrentRow = row
-                row.IsSelected = True
-                row.InvalidateRow()
             Else
                 Dim binding As BindingSource = TryCast(grid.MasterTemplate.DataSource, BindingSource)
                 If Not IsNothing(binding) Then _
                     binding.Add(data)
+                row = FindGridRow(grid, data)
             End If
+            grid.TableElement.ScrollToRow(row)
+            grid.CurrentRow = row
+            row.IsSelected = True
+            row.InvalidateRow()
             Return row
         End Function
 

@@ -535,7 +535,7 @@ Namespace Presentacion.Formulario.Producto
             If Not IsNothing(nodo) And Not IsNothing(itemToDrop) Then
                 For Each row In itemToDrop
                     Dim prod As VWProductos = AsignarFamilia(TryCast(nodo.Data.Tag, Familias), TryCast(row.DataBoundItem, VWProductos))
-                    prod.Clone(DirectCast(row.DataBoundItem, VWProductos))
+                    modVarios.ShallowCopy(prod,DirectCast(row.DataBoundItem, VWProductos))
                     row.InvalidateRow()
                     VWProductoBindingSource.DataSource = row.DataBoundItem
                 Next
@@ -592,7 +592,7 @@ Namespace Presentacion.Formulario.Producto
             If Not IsNothing(item) And Not IsNothing(itemToDrop) Then
                 For Each row In itemToDrop
                     Dim prod As VWProductos = AsignarOferta(TryCast(item.Row.Tag, Ofertas), TryCast(row.DataBoundItem, VWProductos))
-                    prod.Clone(DirectCast(row.DataBoundItem, VWProductos))
+                    modVarios.ShallowCopy(prod,DirectCast(row.DataBoundItem, VWProductos))
                     row.InvalidateRow()
                     VWProductoBindingSource.DataSource = row.DataBoundItem
                 Next

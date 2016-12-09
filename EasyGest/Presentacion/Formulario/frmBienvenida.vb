@@ -72,11 +72,12 @@ Namespace Presentacion.Formulario
             End Using
             If puestos.Count() = 0 Then
                 Dim puesto As Entity.Puestos
-                puesto = New Entity.Puestos
+                puesto = PuestosController.NewItem()
                 puesto.Puesto = My.Computer.Name
                 puesto.Identificacion = mac
                 Using c As New PuestosController()
-                    gPuesto = c.AddItem(puesto)
+                    c.SyncronisingItem(puesto)
+                    gPuesto = puesto
                 End Using
             Else
                 gPuesto = puestos.First()
@@ -134,7 +135,7 @@ Namespace Presentacion.Formulario
                     End If
                     Using c As New UsuariosController()
                         gUsuario.PuestoEnSesion = gPuesto.Puesto
-                        c.UpdateItem(gUsuario)
+                        c.SyncronisingItem(gUsuario)
                     End Using
                     ConfigurarIdioma(gUsuario.IdiomaPreferente)
 
@@ -153,7 +154,7 @@ Namespace Presentacion.Formulario
                         End Using
                         If Not IsNothing(diario) Then
                             If Not diario.Cerrado AndAlso diario.idPuesto = gPuesto.idPuesto AndAlso ((gUsuario.IsSuper And Not diario.idUsuario.HasValue()) Or (Not gUsuario.IsSuper And (diario.idUsuario.HasValue() AndAlso diario.idUsuario.Value = gUsuario.idUsuario))) Then
-                                diario.Clone(gDiario)
+                                diario.ShallowCopy(gDiario)
                             End If
                         End If
                     End If

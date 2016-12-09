@@ -150,7 +150,7 @@ Namespace Presentacion.Formulario.Configuracion
                     Dim emp As Empresas = DirectCast(row.DataBoundItem, Empresas)
                     emp.Activo = emp.idEmpresa = idEmpresa
                     row.InvalidateRow()
-                    If emp.idEmpresa.Equals(idEmpresa) Then emp.Clone(gEmpresa)
+                    If emp.idEmpresa.Equals(idEmpresa) Then emp.ShallowCopy(gEmpresa)
                 Next
                 ControlBox = True
             Catch ex As Exception

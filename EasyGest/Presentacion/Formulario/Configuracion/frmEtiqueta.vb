@@ -15,41 +15,41 @@ Namespace Presentacion.Formulario.Configuracion
                 Try
                     'tratar etiquetas
                     Using control As New EtiquetasEnHojaController
-                        Dim nuevos As New List(Of EtiquetasEnHoja)()
-                        control.DeleteItems(_etiquetasHdeleted)
-                        For Each Etiqueta As EtiquetasEnHoja In EtiquetasHBindingSource.List
-                            If Etiqueta.idEtiqueta = 0 Then
-                                nuevos.Add(Etiqueta)
-                            Else
-                                control.UpdateItem(Etiqueta)
-                            End If
-                        Next
-                        control.AddItems(nuevos)
+                        'Dim nuevos As New List(Of EtiquetasEnHoja)()
+                        control.SyncronisingItem(_etiquetasHdeleted.AsEnumerable)
+                        'For Each Etiqueta As EtiquetasEnHoja In EtiquetasHBindingSource.List
+                        '    If Etiqueta.idEtiqueta = 0 Then
+                        '        nuevos.Add(Etiqueta)
+                        '    Else
+                        '        control.UpdateItem(Etiqueta)
+                        '    End If
+                        'Next
+                        control.SyncronisingItem(DirectCast(EtiquetasHBindingSource.List, List(Of EtiquetasEnHoja)).AsEnumerable())
                     End Using
                     Using control As New EtiquetasEnRolloController
-                        Dim nuevos As New List(Of EtiquetasEnRollo)()
-                        control.DeleteItems(_etiquetasRdeleted)
-                        For Each Etiqueta As EtiquetasEnRollo In EtiquetasRBindingSource.List
-                            If Etiqueta.idEtiqueta = 0 Then
-                                nuevos.Add(Etiqueta)
-                            Else
-                                control.UpdateItem(Etiqueta)
-                            End If
-                        Next
-                        control.AddItems(nuevos)
+                        'Dim nuevos As New List(Of EtiquetasEnRollo)()
+                        control.SyncronisingItem(_etiquetasRdeleted.AsEnumerable)
+                        'For Each Etiqueta As EtiquetasEnRollo In EtiquetasRBindingSource.List
+                        '    If Etiqueta.idEtiqueta = 0 Then
+                        '        nuevos.Add(Etiqueta)
+                        '    Else
+                        '        control.UpdateItem(Etiqueta)
+                        '    End If
+                        'Next
+                        control.SyncronisingItem(DirectCast(EtiquetasRBindingSource.List, List(Of EtiquetasEnRollo)).AsEnumerable())
                     End Using
                     'tratar diseño etiquetas
                     Using control As New DiseñosEtiquetaController
-                        Dim nuevos As New List(Of DiseñosEtiqueta)()
-                        control.DeleteItems(_diseñodeleted)
-                        For Each Diseño As DiseñosEtiqueta In DiseñosEtiquetaBindingSource.List
-                            If Diseño.idDiseño = 0 Then
-                                nuevos.Add(Diseño)
-                            Else
-                                control.UpdateItem(Diseño)
-                            End If
-                        Next
-                        control.AddItems(nuevos)
+                        'Dim nuevos As New List(Of DiseñosEtiqueta)()
+                        control.SyncronisingItem(_diseñodeleted.AsEnumerable)
+                        'For Each Diseño As DiseñosEtiqueta In DiseñosEtiquetaBindingSource.List
+                        '    If Diseño.idDiseño = 0 Then
+                        '        nuevos.Add(Diseño)
+                        '    Else
+                        '        control.UpdateItem(Diseño)
+                        '    End If
+                        'Next
+                        control.SyncronisingItem(DirectCast(DiseñosEtiquetaBindingSource.List, List(Of DiseñosEtiqueta)).AsEnumerable())
                     End Using
                 Catch ex As Exception
                     MostrarMensaje(ex, Me.Text, Telerik.WinControls.RadMessageIcon.Error, MessageBoxButtons.OK)
@@ -87,17 +87,26 @@ Namespace Presentacion.Formulario.Configuracion
             If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Remove Then
                 e.Cancel = Not MostrarMensaje(My.Resources.Application.ConfirmacionBorrarDato, Me.Text, Telerik.WinControls.RadMessageIcon.Question, MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes
             End If
+
         End Sub
 
         Private Sub gridDiseños_RowsChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles gridDiseños.RowsChanged
             If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Remove Then
                 For Each row As GridViewRowInfo In e.OldItems
                     Dim diseño As DiseñosEtiqueta = DirectCast(row.DataBoundItem, DiseñosEtiqueta)
-                    If Not IsNothing(diseño) AndAlso diseño.idDiseño > 0 Then
+                    If Not IsNothing(diseño) AndAlso diseño.LINQEntityState <> EntityState.New Then
+                        diseño.SetAsDeleteOnSubmit()
                         _diseñodeleted.Add(diseño)
                         rptvPrevisualizacion.ReportSource = Nothing
                     End If
                 Next
+            End If
+            If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Add Then
+                For Each row As GridViewRowInfo In e.NewItems
+                    Dim diseño As DiseñosEtiqueta = DirectCast(row.DataBoundItem, DiseñosEtiqueta)
+                    diseño.SetAsInsertOnSubmit()
+                Next
+
             End If
         End Sub
 
@@ -213,6 +222,10 @@ Namespace Presentacion.Formulario.Configuracion
             xmlEle = xmlFile.Root
             Return xmlEle
         End Function
+
+        Private Sub gridDiseños_UserAddedRow(sender As Object, e As GridViewRowEventArgs) Handles gridDiseños.UserAddedRow
+            e.ShallowCopy
+        End Sub
 
 
 

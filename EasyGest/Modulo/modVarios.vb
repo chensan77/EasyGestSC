@@ -53,13 +53,13 @@ Module modVarios
         Return entidad
     End Function
 
-    <System.Runtime.CompilerServices.Extension()> _
-    Public Sub Clone(Of T As Class)(ByVal source As T, ByRef target As T)
+    <System.Runtime.CompilerServices.Extension()>
+    Public Sub ShallowCopy(Of T As Class)(ByVal source As T, ByRef target As T)
         Dim typeObj As Type = GetType(T)
-        'Dim typeTarget As Type = GetType(T)
-        Dim propsInfo As PropertyInfo()
+        Dim typeTarget As Type = GetType(T)
+        Dim propsInfo, targetPropsInfo As PropertyInfo()
         Dim consInfo As ConstructorInfo
-        Dim value1, value2 As Object
+        Dim value1 As Object
 
         If source Is Nothing Then target = Nothing
         If target Is Nothing Then
@@ -67,23 +67,14 @@ Module modVarios
             target = CType(consInfo.Invoke(New Object() {}), T)
         End If
         propsInfo = typeObj.GetProperties(BindingFlags.Public Or BindingFlags.Instance Or BindingFlags.NonPublic)
+        targetPropsInfo = typeTarget.GetProperties(BindingFlags.Public Or BindingFlags.Instance Or BindingFlags.NonPublic)
         For Each prop As PropertyInfo In propsInfo
             Try
-                value1 = prop.GetValue(source, Nothing)
-                value2 = prop.GetValue(target, Nothing)
-
-                If IsNothing(value1) Then
-                    prop.SetValue(target, value1, Nothing)
-                Else
-                    If Not value1.Equals(value2) Then
-                        prop.SetValue(target, value1, Nothing)
-                    End If
+                Dim destPropInfo As PropertyInfo = targetPropsInfo.Where(Function(pi) pi.Name = prop.Name And pi.PropertyType.Equals(prop.PropertyType)).First()
+                If Not IsNothing(destPropInfo) Then
+                    value1 = prop.GetValue(source, Nothing)
+                    destPropInfo.SetValue(target, value1, Nothing)
                 End If
-                'Dim propTarget As PropertyInfo
-                'propTarget = typeTarget.GetProperty(prop.Name, BindingFlags.Public Or BindingFlags.Instance Or BindingFlags.NonPublic)
-                'If Not IsNothing(propTarget) AndAlso propTarget.CanWrite And prop.CanRead Then
-
-                'End If
             Catch ex As Exception
 
             End Try

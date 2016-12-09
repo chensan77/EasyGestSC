@@ -206,6 +206,7 @@ Namespace Data.Entity
                 destination = TryCast(Activator.CreateInstance(entityType), LINQEntityBase)
 
             For Each sourcePropInfo As PropertyInfo In sourcePropInfos
+
                 If Attribute.GetCustomAttribute(sourcePropInfo, GetType(ColumnAttribute), False) IsNot Nothing Then
                     Dim destPropInfo As PropertyInfo = destinationPropInfos.Where(Function(pi) pi.Name = sourcePropInfo.Name).First()
                     destPropInfo.SetValue(destination, sourcePropInfo.GetValue(Me, Nothing), Nothing)
