@@ -22,7 +22,7 @@
             If Me.DialogResult = DialogResult.OK Then
                 Try
                     Using control As New DiariosController
-                        _diario = control.AddItem(_diario)
+                        control.SyncronisingItem(_diario)
                     End Using
 
                 Catch ex As Exception

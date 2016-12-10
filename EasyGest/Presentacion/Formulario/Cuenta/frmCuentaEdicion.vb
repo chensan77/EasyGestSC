@@ -6,7 +6,6 @@ Namespace Presentacion.Formulario.Cuenta
     Public Class frmCuentaEdicion
 
         Private _cuenta As Entity.DatosBancario = Nothing
-        Private _action As System.Data.Linq.ChangeAction = System.Data.Linq.ChangeAction.None
         Private _propietariomodificable As Boolean = False
 
         Friend WriteOnly Property PropietarioModificable As Boolean
@@ -58,9 +57,7 @@ Namespace Presentacion.Formulario.Cuenta
             If idCuenta = -1 Then
                 _cuenta = DatosBancarioController.NewItem()
                 _cuenta.idPropietario = idpropietario
-                _action = System.Data.Linq.ChangeAction.Insert
             Else
-                _action = System.Data.Linq.ChangeAction.Update
                 Using control As New DatosBancarioController
                     _cuenta = control.GetItem(idCuenta)
                 End Using
@@ -90,7 +87,7 @@ Namespace Presentacion.Formulario.Cuenta
         End Property
 
         Private Sub timValidar_Tick(ByVal sender As Object, ByVal e As System.EventArgs) Handles timValidar.Tick
-            btnAceptar.Enabled = _cuenta.IsValid(_action)
+            btnAceptar.Enabled = _cuenta.IsValid()
         End Sub
 
         Private Sub CancelarForm()
@@ -102,11 +99,12 @@ Namespace Presentacion.Formulario.Cuenta
         Private Sub AceptarForm()
             timValidar.Enabled = False
             Using control As New DatosBancarioController
-                If _action = System.Data.Linq.ChangeAction.Insert Then
-                    _cuenta = control.AddItem(_cuenta)
-                ElseIf _action = System.Data.Linq.ChangeAction.Update Then
-                    control.UpdateItem(_cuenta)
-                End If
+                'If _action = System.Data.Linq.ChangeAction.Insert Then
+                '    _cuenta = control.AddItem(_cuenta)
+                'ElseIf _action = System.Data.Linq.ChangeAction.Update Then
+                '    control.UpdateItem(_cuenta)
+                'End If
+                control.SyncronisingItem(_cuenta)
             End Using
         End Sub
 

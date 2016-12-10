@@ -149,7 +149,10 @@ Namespace Presentacion.Formulario.Cuenta
             If MostrarMensaje(My.Resources.Application.ConfirmacionBorrarDato, Me.Text, Telerik.WinControls.RadMessageIcon.Question, MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
                 Try
                     Using control As New DatosBancarioController
-                        control.DeleteItem(idSeleccionado)
+                        Dim toDelete As DatosBancario
+                        toDelete = control.GetItem(idSeleccionado)
+                        toDelete.SetAsDeleteOnSubmit()
+                        control.SyncronisingItem(toDelete)
                     End Using
                     VWCuentasBindingSource.RemoveCurrent()
                 Catch ex As Exception

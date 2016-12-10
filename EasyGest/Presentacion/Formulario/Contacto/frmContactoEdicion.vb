@@ -93,7 +93,7 @@ Namespace Presentacion.Formulario.Contacto
         End Property
 
         Private Sub timValidar_Tick(ByVal sender As Object, ByVal e As System.EventArgs) Handles timValidar.Tick
-            btnAceptar.Enabled = _contacto.IsValid(_action)
+            btnAceptar.Enabled = _contacto.IsValid()
         End Sub
 
         Private Sub CancelarForm()
