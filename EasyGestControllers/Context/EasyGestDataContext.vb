@@ -1852,6 +1852,9 @@ Namespace Data.Context
             Return dbExiste
         End Function
 
+        Private Sub OnCreated()
+            Me.DeferredLoadingEnabled = False
+        End Sub
     End Class
 
 

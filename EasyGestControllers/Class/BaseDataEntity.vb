@@ -312,7 +312,7 @@ Namespace Data.Entity
         Private Sub Init()
             _isSyncronisingWithDB = False
             _isRoot = False
-            _entityState = EntityState.NotTracked
+            _entityState = EntityState.Original
             _isKeepOriginal = False
 
             _entityTree = New EntityTree(Me, _cacheAssociationProperties(Me.[GetType]()))

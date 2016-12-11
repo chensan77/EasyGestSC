@@ -437,12 +437,6 @@ Namespace Data.Context
     End Sub
     #End Region
 		
-		Public Sub New()
-			MyBase.New("Data Source=CHENZHANG-PC;Initial Catalog=EasyGest;Persist Security Info=True;User"& _ 
-					" ID=easygest;Password=eg2016", mappingSource)
-			OnCreated
-		End Sub
-		
 		Public Sub New(ByVal connection As String)
 			MyBase.New(connection, mappingSource)
 			OnCreated

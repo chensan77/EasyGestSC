@@ -35,11 +35,10 @@ Namespace Presentacion.Formulario
                 Exit Sub
             Else
                 Dim cs As String = GenerarCadenaConexion(gConfLocal.DbServidor, gConfLocal.DbCatalogo, gConfLocal.DbUsuario, gConfLocal.DbContrasña, gConfLocal.DbAuxiliar)
+                Data.BaseDataContext.CadenaConexion = cs
                 If Not EasyGestController.DataAccesible(cs) Then
                     e.Result = 1
                     Exit Sub
-                Else
-                    EasyGestController.ResetConnectionString(cs)
                 End If
             End If
 
