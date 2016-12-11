@@ -35,7 +35,7 @@ Namespace Util
 
 
         Public Shared Function EjecutarComandoBD(ByVal comando As String, ByVal tipo As System.Data.CommandType, Optional ByVal params() As SqlClient.SqlParameter = Nothing) As Integer
-            Dim _con As New System.Data.SqlClient.SqlConnection(gCadenaConexion)
+            Dim _con As New System.Data.SqlClient.SqlConnection(Data.BaseDataContext.gCadenaConexion)
             Dim _com As New System.Data.SqlClient.SqlCommand(comando, _con)
             Dim returnvalue As Integer = -1
             _com.CommandType = tipo

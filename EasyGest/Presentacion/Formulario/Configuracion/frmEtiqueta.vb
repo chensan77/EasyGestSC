@@ -103,8 +103,7 @@ Namespace Presentacion.Formulario.Configuracion
             End If
             If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Add Then
                 For Each row As GridViewRowInfo In e.NewItems
-                    Dim diseño As DiseñosEtiqueta = DirectCast(row.DataBoundItem, DiseñosEtiqueta)
-                    diseño.SetAsInsertOnSubmit()
+                    DirectCast(row.DataBoundItem, DiseñosEtiqueta).SetAsInsertOnSubmit()
                 Next
 
             End If
@@ -123,8 +122,10 @@ Namespace Presentacion.Formulario.Configuracion
                         End If
                     End If
                 Next
-            ElseIf e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged Then
-
+            ElseIf e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Add Then
+                For Each row As GridViewRowInfo In e.NewItems
+                    DirectCast(row.DataBoundItem, EtiquetasEnHoja).SetAsInsertOnSubmit()
+                Next
             End If
 
         End Sub
@@ -142,8 +143,10 @@ Namespace Presentacion.Formulario.Configuracion
                         End If
                     End If
                 Next
-            ElseIf e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged Then
-
+            ElseIf e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Add Then
+                For Each row As GridViewRowInfo In e.NewItems
+                    DirectCast(row.DataBoundItem, EtiquetasEnRollo).SetAsInsertOnSubmit()
+                Next
             End If
 
         End Sub
@@ -222,11 +225,6 @@ Namespace Presentacion.Formulario.Configuracion
             xmlEle = xmlFile.Root
             Return xmlEle
         End Function
-
-        Private Sub gridDiseños_UserAddedRow(sender As Object, e As GridViewRowEventArgs) Handles gridDiseños.UserAddedRow
-            e.ShallowCopy
-        End Sub
-
 
 
         'Private Sub ddlEtiquetas_SelectedValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles ddlEtiquetas.SelectedValueChanged

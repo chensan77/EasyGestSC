@@ -6,7 +6,6 @@ Namespace Presentacion.Formulario.Contacto
     Public Class frmContactoEdicion
 
         Private _contacto As Entity.Contactos = Nothing
-        Private _action As System.Data.Linq.ChangeAction = System.Data.Linq.ChangeAction.None
         Private _propietariomodificable As Boolean = False
 
         Friend WriteOnly Property PropietarioModificable As Boolean
@@ -61,9 +60,7 @@ Namespace Presentacion.Formulario.Contacto
             If idContacto = -1 Then
                 _contacto = ContactosController.NewItem()
                 _contacto.idPropietario = idpropietario
-                _action = System.Data.Linq.ChangeAction.Insert
             Else
-                _action = System.Data.Linq.ChangeAction.Update
                 Using control As New ContactosController
                     _contacto = control.GetItem(idContacto)
                 End Using
@@ -105,11 +102,7 @@ Namespace Presentacion.Formulario.Contacto
         Private Sub AceptarForm()
             timValidar.Enabled = False
             Using control As New ContactosController
-                If _action = System.Data.Linq.ChangeAction.Insert Then
-                    _contacto = control.AddItem(_contacto)
-                ElseIf _action = System.Data.Linq.ChangeAction.Update Then
-                    control.UpdateItem(_contacto)
-                End If
+                control.SyncronisingItem(_contacto)
             End Using
         End Sub
 

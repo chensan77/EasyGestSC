@@ -278,10 +278,7 @@ Namespace Presentacion.Formulario.Cliente
             If MostrarMensaje(My.Resources.Application.ConfirmacionBorrarDato, Me.Text, Telerik.WinControls.RadMessageIcon.Question, MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
                 Try
                     Using control As New ClientesController
-                        Dim toDelete As Clientes
-                        toDelete = control.GetItem(idSeleccionado)
-                        toDelete.SetAsDeleteOnSubmit()
-                        control.SyncronisingItem(toDelete)
+                        control.DeleteItem(idSeleccionado)
                     End Using
                     VWClientesBindingSource.RemoveCurrent()
                 Catch ex As Exception

@@ -182,9 +182,7 @@ Namespace Presentacion.Formulario.Configuracion
             If MostrarMensaje(My.Resources.Application.ConfirmacionBorrarDato, Me.Text, Telerik.WinControls.RadMessageIcon.Question, MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
                 Try
                     Using control As New OfertasController
-                        Dim toDelete As Ofertas = control.GetItem(idSeleccionado)
-                        toDelete.SetAsDeleteOnSubmit()
-                        control.SyncronisingItem(toDelete)
+                        control.DeleteItem(idSeleccionado)
                     End Using
                     OfertasBindingSource.RemoveCurrent()
                 Catch ex As Exception

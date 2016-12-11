@@ -278,11 +278,8 @@ Namespace Presentacion.Formulario.Producto
         Private Sub Eliminar(ByVal idSeleccionado As Long)
             If MostrarMensaje(My.Resources.Application.ConfirmacionBorrarDato, Me.Text, Telerik.WinControls.RadMessageIcon.Question, MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
                 Try
-                    Dim toDelete As Productos
                     Using control As New ProductosController
-                        toDelete = control.GetItem(idSeleccionado)
-                        toDelete.SetAsDeleteOnSubmit()
-                        control.SyncronisingItem(toDelete)
+                        control.DeleteItem(idSeleccionado)
                     End Using
                     VWProductosBindingSource.RemoveCurrent()
                 Catch ex As Exception

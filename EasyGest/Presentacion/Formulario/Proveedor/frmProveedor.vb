@@ -253,11 +253,8 @@ Namespace Presentacion.Formulario.Proveedor
         Private Sub Eliminar(idSelecionado As Long)
             If MostrarMensaje(My.Resources.Application.ConfirmacionBorrarDato, Me.Text, Telerik.WinControls.RadMessageIcon.Question, MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
                 Try
-                    Dim toDelete As Proveedores
                     Using control As New ProveedoresController
-                        toDelete = control.GetItem(idSelecionado)
-                        toDelete.SetAsDeleteOnSubmit()
-                        control.SyncronisingItem(toDelete)
+                        control.DeleteItem(idSelecionado)
                     End Using
                     VWProveedoresBindingSource.RemoveCurrent()
                 Catch ex As Exception

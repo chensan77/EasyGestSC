@@ -9,6 +9,8 @@ Namespace Controller
 
     Public Class EasyGestController
 
+
+
         'Private Shared _tablesPrimaryKeys As Dictionary(Of String, List(Of String)) = Nothing
 
         'Public Shared Function GetPrimaryKeys(entityType As Type) As List(Of String)
@@ -45,7 +47,7 @@ Namespace Controller
 
         Public Shared Sub ResetConnectionString(cs As String)
             If String.IsNullOrWhiteSpace(cs) Then Throw New ArgumentNullException()
-            gCadenaConexion = cs
+            Data.BaseDataContext.gCadenaConexion = cs
             '_tablesPrimaryKeys = EasyGestDataContext.GetTablesPrimaryKeys()
         End Sub
     End Class

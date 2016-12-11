@@ -102,21 +102,12 @@ Namespace Controller
             End Try
         End Sub
 
-        'Protected Overridable Function AddItem(ByVal item As TEntity) As TEntity
-        '    If _readonly Then Throw New ReadOnlyException("Entidad no modificable")
-        '    If item Is Nothing Then Throw New NullReferenceException()
+        Protected Overridable Sub AddItem(ByRef item As TEntity)
+            If item Is Nothing Then Throw New NullReferenceException()
 
-        '    Dim table As Table(Of TEntity) = _context.GetTable(Of TEntity)()
-
-        '    If table IsNot Nothing Then
-        '        table.Attach(item, False)
-        '        table.InsertOnSubmit(item)
-        '        _context.SubmitChanges()
-        '        Return item
-        '    Else
-        '        Throw New ApplicationException("No hay un conjunto de entidad definido")
-        '    End If
-        'End Function
+            item.SetAsInsertOnSubmit()
+            SyncronisingItem(item)
+        End Sub
 
         'Protected Overridable Sub AddItems(ByVal items As IEnumerable(Of TEntity))
         '    If _readonly Then Throw New ReadOnlyException("Entidad no modificable")
@@ -132,48 +123,29 @@ Namespace Controller
         '    End If
         'End Sub
 
-        'Public Overridable Function UpdateItem(ByVal item As TEntity) As TEntity
-        '    If _readonly Then Throw New ReadOnlyException("Entidad no modificable")
-        '    If item Is Nothing Then Throw New NullReferenceException
+        Public Overridable Sub UpdateItem(ByRef item As TEntity)
+            If item Is Nothing Then Throw New NullReferenceException
 
-        '    Dim originalItem As TEntity
-        '    Dim valores As List(Of Object)
+            item.SetAsUpdateOnSubmit()
+            SyncronisingItem(item)
+        End Sub
 
-        '    valores = GetValuesOfPrimaryKey(item)
+        Public Overridable Function DeleteItem(ByVal id As Object) As TEntity
+            Return DeleteItem(New Object() {id})
+        End Function
 
-        '    originalItem = GetItem(valores.ToArray)
-        '    If originalItem IsNot Nothing Then
-        '        CloneEntity(item, originalItem)
-        '        Try
-        '            _context.SubmitChanges()
-        '        Catch ex As ChangeConflictException
-        '            For Each conflicto As ObjectChangeConflict In _context.ChangeConflicts
-        '                conflicto.Resolve(RefreshMode.KeepCurrentValues)
-        '            Next
-        '            _context.SubmitChanges(ConflictMode.FailOnFirstConflict)
-        '        Catch ex1 As Exception
-        '            Throw ex1
-        '        End Try
-        '    End If
-        '    Return originalItem
-        'End Function
+        Public Overridable Function DeleteItem(ByVal keys As Object()) As TEntity
+            Dim toDelete As TEntity = Nothing
+            'If  Then Throw New ReadOnlyException("Entidad no modificable")
 
-        'Public Overridable Function DeleteItem(ByVal id As Object) As TEntity
-        '    Return DeleteItem(New Object() {id})
-        'End Function
+            toDelete = GetItem(keys)
 
-        'Public Overridable Function DeleteItem(ByVal keys As Object()) As TEntity
-        '    Dim toDelete As TEntity = Nothing
-        '    If _readonly Then Throw New ReadOnlyException("Entidad no modificable")
-
-        '    toDelete = GetItem(keys)
-
-        '    If toDelete IsNot Nothing Then
-        '        _context.GetTable(Of TEntity)().DeleteOnSubmit(toDelete)
-        '        _context.SubmitChanges()
-        '    End If
-        '    Return toDelete
-        'End Function
+            If toDelete IsNot Nothing Then
+                toDelete.SetAsDeleteOnSubmit()
+                SyncronisingItem(toDelete)
+            End If
+            Return toDelete
+        End Function
 
         'Public Overridable Sub DeleteItems(ByVal items As IEnumerable(Of TEntity))
         '    If _readonly Then Throw New ReadOnlyException("Entidad no modificable")

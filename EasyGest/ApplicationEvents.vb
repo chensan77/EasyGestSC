@@ -37,8 +37,11 @@
             Try
                 Dim tempPath As String = IO.Path.Combine(My.Application.Info.DirectoryPath, My.Settings.DIRECTORIO_TEMP)
                 If Not IO.Directory.Exists(tempPath) Then
-                    IO.Directory.CreateDirectory(tempPath)
+                    gDirectorioTemp = IO.Directory.CreateDirectory(tempPath)
+                Else
+                    gDirectorioTemp = New IO.DirectoryInfo(tempPath)
                 End If
+
                 If e.CommandLine.Count > 0 Then
                     gMostrarConfiguracionConexion = e.CommandLine.Item(0).Equals("cc")
                     gMostrarSelectorEmpresas = e.CommandLine.Item(0).Equals("se")

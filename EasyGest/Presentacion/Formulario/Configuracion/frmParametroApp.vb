@@ -72,7 +72,7 @@ Namespace Presentacion.Formulario.Configuracion
                     Dim listaparam As List(Of Configuraciones) = EasyGestControllers.Data.Configuracion.ConfiguracionGlobal.DescargarConfiguracion(gConfGlobal, gEmpresa.idEmpresa)
                     Using c As New ConfiguracionesController()
                         For Each param As Configuraciones In listaparam
-                            c.UpdateItem(param)
+                            c.SyncronisingItem(param)
                         Next
                     End Using
                     If dialogresult = Windows.Forms.DialogResult.Yes Or dialogresult = Windows.Forms.DialogResult.No Then

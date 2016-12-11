@@ -17,11 +17,21 @@ Namespace Modulo
         Public gDefaultFont, gDefaultSmallerFont, gDefaultBiggerFont As Font
         Public ReadOnly gCBForeColor As Color = Color.FromArgb(0, 197, 45)
         Public ReadOnly gBTNBGColors As Color() = New Color(3) {Color.FromArgb(251, 241, 191), Color.FromArgb(185, 234, 71), Color.FromArgb(173, 215, 76), Color.FromArgb(251, 241, 191)}
+        Public gDirectorioTemp As IO.DirectoryInfo
         Public gImpuestoPorDefecto As Impuestos = Nothing
         Public cLog As New General.Logs(My.Application.Info.DirectoryPath & "\logs", "EasyGest_")
         Public gChineseInputLanguage As InputLanguage = InputLanguage.DefaultInputLanguage
 
         Public Const CARACTERSEPARADOR As Char = ";"c
+
+        Public gCadenaConexion As String = ""
+        Public gConfLocal As New EasyGestControllers.Data.Configuracion.ConfiguracionLocal()
+        Public gConfGlobal As New EasyGestControllers.Data.Configuracion.ConfiguracionGlobal()
+        Public gPuesto As EasyGestControllers.Data.Entity.Puestos = Nothing
+        Public gEmpresa As EasyGestControllers.Data.Entity.Empresas = Nothing
+        Public gDiario As EasyGestControllers.Data.Entity.Diarios = Nothing
+        Public gUsuario As EasyGestControllers.Data.Entity.Usuarios = Nothing
+
 
         Public Delegate Function GetApplicationCultureCallBack(f As Form) As System.Globalization.CultureInfo
 

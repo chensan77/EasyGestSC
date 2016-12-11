@@ -171,9 +171,8 @@ Namespace Presentacion.Formulario.Configuracion
                     'Else
                     '    Exit Sub
                     'End If
-                    Dim esNuevo As Boolean = _usuario.LINQEntityState = EntityState.New
-                    _usuario = control.SaveItem(_usuario)
-                    If esNuevo Then Me.UsuariosBindingSource.Add(_usuario)
+                    control.SyncronisingItem(_usuario)
+                    UpdateSelectGridRow(gridDatos, _usuario)
                 End Using
 
                 UpdateSelectGridRow(gridDatos, _usuario)
@@ -187,7 +186,7 @@ Namespace Presentacion.Formulario.Configuracion
                     If Not String.Equals(_usuario.Apariencia, gUsuario.Apariencia, StringComparison.OrdinalIgnoreCase) Then
                         AsignarTemaAplicacion(_usuario.Apariencia)
                     End If
-                    gUsuario = DirectCast(_usuario.ShallowCopy(), Usuarios)
+                    _usuario.ShallowCopy(gUsuario)
                 End If
             Catch ex As Exception
                 MostrarMensaje(Me.Text, My.Resources.Application.ErrorActualizarDatos, ex, Telerik.WinControls.RadMessageIcon.Exclamation)

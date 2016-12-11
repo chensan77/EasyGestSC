@@ -13,16 +13,8 @@ Namespace Presentacion.Formulario.Configuracion
                 Try
                     'tratar impuestos
                     Using control As New ImpuestosController
-                        Dim nuevos As New List(Of Impuestos)()
-                        control.DeleteItems(_impuestosdeleted)
-                        For Each impuesto As Impuestos In ImpuestosBindingSource.List
-                            If impuesto.idImpuesto = 0 Then
-                                nuevos.Add(impuesto)
-                            Else
-                                control.UpdateItem(impuesto)
-                            End If
-                        Next
-                        control.AddItems(nuevos)
+                        control.SyncronisingItem(_impuestosdeleted.AsEnumerable())
+                        control.SyncronisingItem(DirectCast(ImpuestosBindingSource.List, List(Of Impuestos)).AsEnumerable())
                         gImpuestoPorDefecto = control.GetImpuestoPorDefecto()
                     End Using                    
                 Catch ex As Exception
