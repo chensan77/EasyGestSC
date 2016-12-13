@@ -1,6 +1,7 @@
 ﻿Imports System.ComponentModel
 Imports System.Data.Linq
 Imports System.Runtime.Serialization
+Imports EasyGestControllers.Data.Entity
 
 Namespace Data.Entity
 
@@ -1855,6 +1856,7 @@ Namespace Data.Context
         Private Sub OnCreated()
             Me.DeferredLoadingEnabled = False
         End Sub
+
     End Class
 
 

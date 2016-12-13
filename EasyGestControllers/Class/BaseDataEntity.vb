@@ -281,11 +281,9 @@ Namespace Data.Entity
 
                         If colAttribute IsNot Nothing AndAlso colAttribute.IsDbGenerated = True Then
                             _cacheDBGeneratedProperties(type).Add(propInfo.Name, propInfo)
-                            Continue For
                         End If
                         If colAttribute IsNot Nothing AndAlso colAttribute.IsPrimaryKey = True Then
                             _cacheTablesPrimaryKeysProperties(type).Add(propInfo.Name, propInfo)
-                            Continue For
                         End If
                     End If
 

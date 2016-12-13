@@ -1,4 +1,5 @@
-﻿Imports System.Data.Linq.Mapping
+﻿Imports System.Data.Linq
+Imports System.Data.Linq.Mapping
 
 Namespace Data
 
@@ -27,6 +28,12 @@ Namespace Data
         Public Sub New(ByVal connection As IDbConnection)
             MyBase.New(connection, mappingSource)
         End Sub
+
+        Public Overrides Sub SubmitChanges(failureMode As ConflictMode)
+            MyBase.SubmitChanges(failureMode)
+
+        End Sub
+
 
     End Class
 End Namespace
