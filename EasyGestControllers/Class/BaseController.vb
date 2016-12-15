@@ -69,6 +69,7 @@ Namespace Controller
                     ElseIf item.LINQEntityState = Data.Entity.EntityState.[New] Then
                         insertItems.Add(item)
                     ElseIf item.LINQEntityState = EasyGestControllers.Data.Entity.EntityState.Modified OrElse item.LINQEntityState = EasyGestControllers.Data.Entity.EntityState.Detached Then
+                        item.SetAsChangeTrackingRoot(False)
                         If item.LINQEntityOriginalValue IsNot Nothing Then
                             table.Attach(item, item.LINQEntityOriginalValue)
                         Else
@@ -104,7 +105,7 @@ Namespace Controller
 
         Protected Overridable Sub AddItem(ByRef item As TEntity)
             If item Is Nothing Then Throw New NullReferenceException()
-
+            If item.ReadOnly Then Throw New ReadOnlyException("Entidad no modificable")
             item.SetAsInsertOnSubmit()
             SyncronisingItem(item)
         End Sub
@@ -125,7 +126,7 @@ Namespace Controller
 
         Public Overridable Sub UpdateItem(ByRef item As TEntity)
             If item Is Nothing Then Throw New NullReferenceException
-
+            If item.ReadOnly Then Throw New ReadOnlyException("Entidad no modificable")
             item.SetAsUpdateOnSubmit()
             SyncronisingItem(item)
         End Sub
@@ -136,9 +137,9 @@ Namespace Controller
 
         Public Overridable Function DeleteItem(ByVal keys As Object()) As TEntity
             Dim toDelete As TEntity = Nothing
-            'If  Then Throw New ReadOnlyException("Entidad no modificable")
 
             toDelete = GetItem(keys)
+            If toDelete.ReadOnly Then Throw New ReadOnlyException("Entidad no modificable")
 
             If toDelete IsNot Nothing Then
                 toDelete.SetAsDeleteOnSubmit()

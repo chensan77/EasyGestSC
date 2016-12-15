@@ -1081,7 +1081,11 @@ Namespace Data.Entity
                     If propInfo.PropertyType.IsGenericType AndAlso propInfo.PropertyType.GetGenericTypeDefinition() = GetType(System.Data.Linq.EntitySet(Of)) Then
                         ' It's an EntitySet<> so lets grab the value, loop through each value and
                         ' return each value as an EntityBase.
-                        Dim entityList As IEnumerator = TryCast(propInfo.GetValue(_entityRoot, Nothing), IEnumerable).GetEnumerator()
+                        Dim value As Object = propInfo.GetValue(_entityRoot, Nothing)
+                        If value Is Nothing Then
+                            Continue For
+                        End If
+                        Dim entityList As IEnumerator = TryCast(value, IEnumerable).GetEnumerator()
 
                         While entityList.MoveNext() = True
                             If entityList.Current.[GetType]().IsSubclassOf(GetType(LINQEntityBase)) Then
