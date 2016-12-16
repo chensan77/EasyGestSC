@@ -311,7 +311,7 @@ Namespace Data.Entity
             _isSyncronisingWithDB = False
             _isRoot = False
             _entityState = EntityState.Original
-            _isKeepOriginal = False
+            _isKeepOriginal = True
 
             _entityTree = New EntityTree(Me, _cacheAssociationProperties(Me.[GetType]()))
         End Sub

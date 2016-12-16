@@ -1854,7 +1854,7 @@ Namespace Data.Context
         End Function
 
         Private Sub OnCreated()
-            Me.DeferredLoadingEnabled = False
+            Me.DeferredLoadingEnabled = True
         End Sub
 
     End Class

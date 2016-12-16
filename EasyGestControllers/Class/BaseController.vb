@@ -41,7 +41,7 @@ Namespace Controller
             If item Is Nothing Then Throw New NullReferenceException()
             Dim items As New List(Of TEntity)()
             items.Add(item)
-            SyncronisingItem(items)
+            Me.SyncronisingItem(items)
         End Sub
 
         Public Overridable Sub SyncronisingItem(ByRef items As IEnumerable(Of TEntity))
@@ -49,9 +49,9 @@ Namespace Controller
 
             'Before doing anything, check to make sure that the New datacontext
             'doesn 't try any deferred (lazy) loading
-            If _context.DeferredLoadingEnabled = True Then
-                Throw New ApplicationException("Syncronisation requires that the Deferred loading is disabled on the Target DataContext")
-            End If
+            'If _context.DeferredLoadingEnabled = True Then
+            '    Throw New ApplicationException("Syncronisation requires that the Deferred loading is disabled on the Target DataContext")
+            'End If
             For Each item As TEntity In items
                 item.IsSyncronisingWithDB = True
             Next
@@ -69,7 +69,6 @@ Namespace Controller
                     ElseIf item.LINQEntityState = Data.Entity.EntityState.[New] Then
                         insertItems.Add(item)
                     ElseIf item.LINQEntityState = EasyGestControllers.Data.Entity.EntityState.Modified OrElse item.LINQEntityState = EasyGestControllers.Data.Entity.EntityState.Detached Then
-                        item.SetAsChangeTrackingRoot(False)
                         If item.LINQEntityOriginalValue IsNot Nothing Then
                             table.Attach(item, item.LINQEntityOriginalValue)
                         Else
@@ -107,7 +106,7 @@ Namespace Controller
             If item Is Nothing Then Throw New NullReferenceException()
             If item.ReadOnly Then Throw New ReadOnlyException("Entidad no modificable")
             item.SetAsInsertOnSubmit()
-            SyncronisingItem(item)
+            Me.SyncronisingItem(item)
         End Sub
 
         'Protected Overridable Sub AddItems(ByVal items As IEnumerable(Of TEntity))
