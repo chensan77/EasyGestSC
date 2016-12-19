@@ -218,6 +218,8 @@ Namespace Data.Entity
 
         End Sub
 
+
+
         ''' <summary>
         ''' Returns true if two entities have the same property values (does not traverse releationships).
         ''' </summary>
@@ -311,11 +313,14 @@ Namespace Data.Entity
             _isSyncronisingWithDB = False
             _isRoot = False
             _entityState = EntityState.Original
-            _isKeepOriginal = True
+            _isKeepOriginal = False
 
             _entityTree = New EntityTree(Me, _cacheAssociationProperties(Me.[GetType]()))
         End Sub
 
+        Protected Sub OnLoaded()
+
+        End Sub
 #End Region
 
 #Region "private_members"

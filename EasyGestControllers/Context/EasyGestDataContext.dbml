@@ -901,32 +901,32 @@
   </Table>
   <Table Name="dbo.Productos" Member="Productos">
     <Type Name="Productos">
-      <Column Name="idProducto" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="idUnidadMedida" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="idFamilia" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="idMarca" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="idUbicacion" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="idOferta" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="idImpuesto" Type="System.Int16" DbType="SmallInt" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="Referencia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="Descripcion" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="DescripcionLarga" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="Coste" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="PrecioVenta" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="Descuento" Type="System.Single" DbType="Real" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="UnidadXCaja" Type="System.Single" DbType="Real" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="StockSuelto" Type="System.Single" DbType="Real" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="StockCaja" Type="System.Single" DbType="Real" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="UnidadVenta" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="ControlStock" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="PrecioVariable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="Observacion" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="FCreacion" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="FModificacion" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="Activo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="PrecioImpInc" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="Fidelizable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="PorcentajeFacturacion" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="idProducto" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idUnidadMedida" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="idFamilia" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="idMarca" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="idUbicacion" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="idOferta" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="idImpuesto" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Referencia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="DescripcionLarga" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Coste" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="PrecioVenta" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="Descuento" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="UnidadXCaja" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="StockSuelto" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="StockCaja" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="UnidadVenta" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="ControlStock" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PrecioVariable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Observacion" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="FCreacion" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FModificacion" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Activo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PrecioImpInc" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Fidelizable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PorcentajeFacturacion" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.Pedidos" Member="Pedidos">

@@ -369,7 +369,7 @@
         <elementListCompartment Id="4c5dd397-8c51-4c2e-aa73-21effc4c535b" absoluteBounds="5.265, 1.585, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="19b881f0-81da-4293-827e-833c230aa436" absoluteBounds="0.5, 1.75, 2, 5.8092268880208326">
+    <classShape Id="19b881f0-81da-4293-827e-833c230aa436" isExpanded="false" absoluteBounds="0.5, 1.75, 2, 0.45">
       <DataClassMoniker Name="/EasyGestDataContext/Productos" />
       <nestedChildShapes>
         <elementListCompartment Id="a596fff3-6cbb-459c-b8bb-87937a3acdf1" absoluteBounds="0.51500000000000012, 2.21, 1.9700000000000002, 5.249226888020833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
@@ -425,7 +425,7 @@
         <classShapeMoniker Id="aa457c55-9fa0-4743-827b-5c56114dc216" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(4 : 7.2); (4 : 7.45); (2.75 : 7.45); (2.75 : 8.6); (3 : 8.6)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(4 : 7.2); (4 : 7.45); (2.75 : 7.45); (2.75 : 8.6); (3 : 8.6)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/EasyGestDataContext/Facturas/Facturas_LineasFactura" />
       <nodes>
         <classShapeMoniker Id="7561291b-b397-46c6-81ac-5f147db5dccf" />

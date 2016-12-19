@@ -19699,7 +19699,7 @@ Namespace Data.Entity
 			Me.Initialize
 		End Sub
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idProducto", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true, UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idProducto", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
 		Public Property idProducto() As Long
 			Get
@@ -19717,7 +19717,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUnidadMedida", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUnidadMedida", DbType:="BigInt"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=2)>  _
 		Public Property idUnidadMedida() As System.Nullable(Of Long)
 			Get
@@ -19734,7 +19734,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idFamilia", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idFamilia", DbType:="BigInt"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=3)>  _
 		Public Property idFamilia() As System.Nullable(Of Long)
 			Get
@@ -19751,7 +19751,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idMarca", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idMarca", DbType:="BigInt"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=4)>  _
 		Public Property idMarca() As System.Nullable(Of Long)
 			Get
@@ -19768,7 +19768,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUbicacion", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUbicacion", DbType:="BigInt"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=5)>  _
 		Public Property idUbicacion() As System.Nullable(Of Long)
 			Get
@@ -19785,7 +19785,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idOferta", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idOferta", DbType:="BigInt"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=6)>  _
 		Public Property idOferta() As System.Nullable(Of Long)
 			Get
@@ -19802,7 +19802,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idImpuesto", DbType:="SmallInt", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idImpuesto", DbType:="SmallInt"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=7)>  _
 		Public Property idImpuesto() As System.Nullable(Of Short)
 			Get
@@ -19819,7 +19819,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Referencia", DbType:="VarChar(50) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Referencia", DbType:="VarChar(50) NOT NULL", CanBeNull:=false),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=8)>  _
 		Public Property Referencia() As String
 			Get
@@ -19836,7 +19836,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Descripcion", DbType:="NVarChar(200) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Descripcion", DbType:="NVarChar(200) NOT NULL", CanBeNull:=false),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=9)>  _
 		Public Property Descripcion() As String
 			Get
@@ -19853,7 +19853,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DescripcionLarga", DbType:="NVarChar(1000)", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DescripcionLarga", DbType:="NVarChar(1000)"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=10)>  _
 		Public Property DescripcionLarga() As String
 			Get
@@ -19870,7 +19870,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Coste", DbType:="Real NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Coste", DbType:="Real NOT NULL"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=11)>  _
 		Public Property Coste() As Single
 			Get
@@ -19888,7 +19888,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioVenta", DbType:="Real NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioVenta", DbType:="Real NOT NULL"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=12)>  _
 		Public Property PrecioVenta() As Single
 			Get
@@ -19906,7 +19906,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Descuento", DbType:="Real", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Descuento", DbType:="Real"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=13)>  _
 		Public Property Descuento() As System.Nullable(Of Single)
 			Get
@@ -19923,7 +19923,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UnidadXCaja", DbType:="Real", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UnidadXCaja", DbType:="Real"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=14)>  _
 		Public Property UnidadXCaja() As System.Nullable(Of Single)
 			Get
@@ -19940,7 +19940,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_StockSuelto", DbType:="Real", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_StockSuelto", DbType:="Real"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=15)>  _
 		Public Property StockSuelto() As System.Nullable(Of Single)
 			Get
@@ -19957,7 +19957,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_StockCaja", DbType:="Real", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_StockCaja", DbType:="Real"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=16)>  _
 		Public Property StockCaja() As System.Nullable(Of Single)
 			Get
@@ -19974,7 +19974,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UnidadVenta", DbType:="Real NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UnidadVenta", DbType:="Real NOT NULL"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=17)>  _
 		Public Property UnidadVenta() As Single
 			Get
@@ -19992,7 +19992,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ControlStock", DbType:="Bit NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ControlStock", DbType:="Bit NOT NULL"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=18)>  _
 		Public Property ControlStock() As Boolean
 			Get
@@ -20010,7 +20010,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioVariable", DbType:="Bit NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioVariable", DbType:="Bit NOT NULL"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=19)>  _
 		Public Property PrecioVariable() As Boolean
 			Get
@@ -20028,7 +20028,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Observacion", DbType:="NVarChar(1000)", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Observacion", DbType:="NVarChar(1000)"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=20)>  _
 		Public Property Observacion() As String
 			Get
@@ -20045,7 +20045,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FCreacion", DbType:="SmallDateTime NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FCreacion", DbType:="SmallDateTime NOT NULL"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=21)>  _
 		Public Property FCreacion() As Date
 			Get
@@ -20063,7 +20063,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FModificacion", DbType:="SmallDateTime", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FModificacion", DbType:="SmallDateTime"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=22)>  _
 		Public Property FModificacion() As System.Nullable(Of Date)
 			Get
@@ -20080,7 +20080,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Activo", DbType:="Bit NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Activo", DbType:="Bit NOT NULL"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=23)>  _
 		Public Property Activo() As Boolean
 			Get
@@ -20098,7 +20098,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioImpInc", DbType:="Bit NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioImpInc", DbType:="Bit NOT NULL"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=24)>  _
 		Public Property PrecioImpInc() As Boolean
 			Get
@@ -20116,7 +20116,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Fidelizable", DbType:="Bit NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Fidelizable", DbType:="Bit NOT NULL"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=25)>  _
 		Public Property Fidelizable() As Boolean
 			Get
@@ -20134,7 +20134,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PorcentajeFacturacion", DbType:="Float NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PorcentajeFacturacion", DbType:="Float NOT NULL"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=26)>  _
 		Public Property PorcentajeFacturacion() As Double
 			Get
