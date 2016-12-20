@@ -961,9 +961,9 @@ Namespace Data.Entity
             End If
 
             If OriginalValue IsNot Nothing Then
-                Me.ShallowCopy(Me._originalEntityValue)
+                OriginalValue.ShallowCopy(Me._originalEntityValue)
             Else
-                Me._originalEntityValue = Nothing
+                Me.ShallowCopy(Me._originalEntityValue)
             End If
 
             Me.LINQEntityState = EntityState.Modified

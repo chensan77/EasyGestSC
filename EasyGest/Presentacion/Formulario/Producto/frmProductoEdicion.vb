@@ -63,6 +63,7 @@ Namespace Presentacion.Formulario.Producto
             Else
                 Using control As New ProductosController
                     _producto = control.GetItem(idProducto)
+                    _producto.SetAsUpdateOnSubmit(_producto)
                 End Using
             End If
 
