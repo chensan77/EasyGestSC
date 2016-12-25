@@ -196,7 +196,7 @@ Namespace Data.Entity
         ''' </summary>
         ''' <param name="source">the source entity that will have it's values copied</param>
         ''' <returns></returns>
-        Public Sub ShallowCopy(ByRef destination As LINQEntityBase)
+        Protected Sub ShallowCopy(ByRef destination As LINQEntityBase)
             Dim sourcePropInfos As PropertyInfo() = Me.[GetType]().GetProperties(BindingFlags.[Public] Or BindingFlags.Instance)
             Dim destinationPropInfos As PropertyInfo() = Me.[GetType]().GetProperties(BindingFlags.[Public] Or BindingFlags.Instance)
 
@@ -225,20 +225,20 @@ Namespace Data.Entity
         ''' </summary>
         ''' <param name="source"></param>
         ''' <returns></returns>
-        Public Shared Function ShallowCompare(entity1 As LINQEntityBase, entity2 As LINQEntityBase) As Boolean
-            If Not Object.ReferenceEquals(entity1.[GetType](), entity2.[GetType]()) Then
+        Protected Function ShallowCompare(entity As LINQEntityBase) As Boolean
+            If Not Object.ReferenceEquals(Me.[GetType](), entity.[GetType]()) Then
                 Return False
             End If
 
-            Dim entity1PropInfos As PropertyInfo() = entity1.[GetType]().GetProperties(BindingFlags.[Public] Or BindingFlags.Instance)
-            Dim entity2PropInfos As PropertyInfo() = entity2.[GetType]().GetProperties(BindingFlags.[Public] Or BindingFlags.Instance)
+            Dim entity1PropInfos As PropertyInfo() = Me.[GetType]().GetProperties(BindingFlags.[Public] Or BindingFlags.Instance)
+            Dim entity2PropInfos As PropertyInfo() = entity.[GetType]().GetProperties(BindingFlags.[Public] Or BindingFlags.Instance)
 
             ' Find if there are any properties that do not match that are custom attributes
             Dim compareResults = From prop1 In entity1PropInfos.Where(Function(p1) Attribute.GetCustomAttribute(p1, GetType(ColumnAttribute), False) IsNot Nothing)
                                  Group Join prop2 As PropertyInfo In entity2PropInfos.Where(Function(p2) Attribute.GetCustomAttribute(p2, GetType(ColumnAttribute), False) IsNot Nothing)
                                  On prop1.Name Equals prop2.Name Into pij = Group
                                  From prop2 In pij.DefaultIfEmpty()
-                                 Select New With {Key .Match = Object.Equals(prop1.GetValue(entity1, Nothing), prop2.GetValue(entity2, Nothing))}
+                                 Select New With {Key .Match = Object.Equals(prop1.GetValue(Me, Nothing), prop2.GetValue(entity, Nothing))}
 
             Return (compareResults.Where(Function(cr) cr.Match = False).Count() = 0)
 
@@ -305,21 +305,22 @@ Namespace Data.Entity
             _entityGUID = Guid.NewGuid().ToString()
             'a unique identifier for the entity
             Init()
-            BindToEntityEvents()
         End Sub
 
 
         Private Sub Init()
             _isSyncronisingWithDB = False
             _isRoot = False
-            _entityState = EntityState.Original
+            _entityState = EntityState.NotTracked
             _isKeepOriginal = False
 
             _entityTree = New EntityTree(Me, _cacheAssociationProperties(Me.[GetType]()))
         End Sub
 
         Protected Sub OnLoaded()
-
+            BindToEntityEvents()
+            _entityState = EntityState.Original
+            _isKeepOriginal = True
         End Sub
 #End Region
 
@@ -402,7 +403,9 @@ Namespace Data.Entity
                 Return
             End If
 
-            If [ReadOnly] Then Return
+            If [ReadOnly] Then
+                Return
+            End If
             ' Do a check here to make sure that the entity is not change if it is supposed to be deleted
             If Me.LINQEntityState = EntityState.Deleted OrElse Me.LINQEntityState = EntityState.CancelNew Then
                 Return 'Throw New ApplicationException("You cannot modify a deleted entity")
@@ -478,7 +481,7 @@ Namespace Data.Entity
                             ' if the object is already modified and the property values have reverted back to their
                             ' original values, set the state back to "Original"
                             If LINQEntityState = EntityState.Modified AndAlso Me._originalEntityValue IsNot Nothing Then
-                                If ShallowCompare(Me, Me._originalEntityValue) Then
+                                If Me.ShallowCompare(Me._originalEntityValue) Then
                                     LINQEntityState = EntityState.Original
                                     Me._originalEntityValue = Nothing
                                 End If
@@ -500,7 +503,7 @@ Namespace Data.Entity
         ''' Gets/Sets whether this entity has a change tracking root.
         ''' </summary>
         <DataMember(Order:=3)>
-        Friend Property LINQEntityKeepOriginal() As Boolean
+        Private Property LINQEntityKeepOriginal() As Boolean
             Get
                 Return _isKeepOriginal
             End Get
@@ -689,7 +692,7 @@ Namespace Data.Entity
         ''' Does not keep original values.
         ''' </summary>
         Public Sub SetAsChangeTrackingRoot()
-            SetAsChangeTrackingRoot(EntityState.Original, False)
+            SetAsChangeTrackingRoot(EntityState.Original, True)
         End Sub
 
         ''' <summary>
@@ -707,7 +710,7 @@ Namespace Data.Entity
         ''' </summary>
         ''' <param name="initialEntityState">The initial state of the root entity</param>
         Public Sub SetAsChangeTrackingRoot(initialEntityState As EntityState)
-            SetAsChangeTrackingRoot(initialEntityState, False)
+            SetAsChangeTrackingRoot(initialEntityState, True)
         End Sub
 
         ''' <summary>

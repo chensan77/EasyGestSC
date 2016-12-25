@@ -6,42 +6,58 @@ Imports System.Text
 
 Module modVarios
 
-    <Extension()> _
-    Public Function Compara(Of T)(ByVal source As T, ByVal target As Object) As Boolean
-        Dim res As Boolean = True
+    <Extension()>
+    Public Function ShallowCompare(Of T)(ByVal source As T, ByVal target As Object) As Boolean
+        'Dim res As Boolean = True
 
-        Dim typeObj As Type = GetType(T)
-        Dim propsInfo As PropertyInfo()
-        Dim value1, value2 As Object
+        'Dim typeObj As Type = GetType(T)
+        'Dim propsInfo As PropertyInfo()
+        'Dim value1, value2 As Object
 
-        Dim typeTarget As Type = target.GetType
+        'Dim typeTarget As Type = target.GetType
 
-        If source Is Nothing Then
+        'If source Is Nothing Then
+        '    Return False
+        'End If
+        'If target Is Nothing Then
+        '    Return False
+        'End If
+        'propsInfo = typeObj.GetProperties(BindingFlags.Public Or BindingFlags.Instance)
+        'For Each prop As PropertyInfo In propsInfo
+        '    Try
+        '        Dim propTarget As PropertyInfo
+        '        propTarget = typeTarget.GetProperty(prop.Name, BindingFlags.Public Or BindingFlags.Instance)
+        '        If Not IsNothing(propTarget) Then
+        '            value1 = prop.GetValue(source, Nothing)
+        '            value2 = propTarget.GetValue(target, Nothing)
+
+        '            If Not value1.Equals(value2) Then
+        '                res = False
+        '                Exit For
+        '            End If
+        '        End If
+
+        '    Catch ex As Exception
+
+        '    End Try
+        'Next
+        'Return res
+
+        If Not Object.ReferenceEquals(source.[GetType](), target.[GetType]()) Then
             Return False
         End If
-        If target Is Nothing Then
-            Return False
-        End If
-        propsInfo = typeObj.GetProperties(BindingFlags.Public Or BindingFlags.Instance)
-        For Each prop As PropertyInfo In propsInfo
-            Try
-                Dim propTarget As PropertyInfo
-                propTarget = typeTarget.GetProperty(prop.Name, BindingFlags.Public Or BindingFlags.Instance)
-                If Not IsNothing(propTarget) Then
-                    value1 = prop.GetValue(source, Nothing)
-                    value2 = propTarget.GetValue(target, Nothing)
 
-                    If Not value1.Equals(value2) Then
-                        res = False
-                        Exit For
-                    End If
-                End If
+        Dim entity1PropInfos As PropertyInfo() = source.[GetType]().GetProperties(BindingFlags.[Public] Or BindingFlags.Instance)
+        Dim entity2PropInfos As PropertyInfo() = target.[GetType]().GetProperties(BindingFlags.[Public] Or BindingFlags.Instance)
 
-            Catch ex As Exception
+        ' Find if there are any properties that do not match that are custom attributes
+        Dim compareResults = From prop1 In entity1PropInfos.Where(Function(p1) Attribute.GetCustomAttribute(p1, GetType(System.Data.Linq.Mapping.ColumnAttribute), False) IsNot Nothing)
+                             Group Join prop2 As PropertyInfo In entity2PropInfos.Where(Function(p2) Attribute.GetCustomAttribute(p2, GetType(System.Data.Linq.Mapping.ColumnAttribute), False) IsNot Nothing)
+                             On prop1.Name Equals prop2.Name Into pij = Group
+                             From prop2 In pij.DefaultIfEmpty()
+                             Select New With {Key .Match = Object.Equals(prop1.GetValue(source, Nothing), prop2.GetValue(target, Nothing))}
 
-            End Try
-        Next
-        Return res
+        Return (compareResults.Where(Function(cr) cr.Match = False).Count() = 0)
     End Function
 
     <System.Runtime.CompilerServices.Extension()> _

@@ -41,7 +41,7 @@ Namespace Controller
             If item Is Nothing Then Throw New NullReferenceException()
             Dim items As New List(Of TEntity)()
             items.Add(item)
-            Me.SyncronisingItem(items)
+            SyncronisingItem(items)
         End Sub
 
         Public Overridable Sub SyncronisingItem(ByRef items As IEnumerable(Of TEntity))
@@ -78,7 +78,7 @@ Namespace Controller
                         table.Attach(item)
                         deleteItems.Add(item)
                     End If
-                    item.SetAsChangeTrackingRoot(item.LINQEntityKeepOriginal)
+                    'item.SetAsChangeTrackingRoot()
 
                 Next
                 table.InsertAllOnSubmit(insertItems)
@@ -126,7 +126,7 @@ Namespace Controller
         Public Overridable Sub UpdateItem(ByRef item As TEntity)
             If item Is Nothing Then Throw New NullReferenceException
             If item.ReadOnly Then Throw New ReadOnlyException("Entidad no modificable")
-            item.SetAsUpdateOnSubmit()
+            'item.SetAsUpdateOnSubmit()
             SyncronisingItem(item)
         End Sub
 

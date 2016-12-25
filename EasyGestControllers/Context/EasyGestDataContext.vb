@@ -1027,6 +1027,10 @@ Namespace Data.Entity
             _idProducto = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
+        Private Sub OnLoaded()
+            MyBase.OnLoaded()
+        End Sub
+
         Public Overrides Function IsValid() As Boolean
             Return Not String.IsNullOrWhiteSpace(_Referencia) And Not String.IsNullOrWhiteSpace(_Descripcion)
         End Function
@@ -1294,6 +1298,10 @@ Namespace Data.Entity
             _idUbicacion = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
+        'Private Sub OnLoaded()
+        '    MyBase.OnLoaded()
+        'End Sub
+
         Public Overrides Function IsValid() As Boolean
             Return Not String.IsNullOrWhiteSpace(_Ubicacion)
         End Function
@@ -1310,6 +1318,10 @@ Namespace Data.Entity
             _TamañoGrid = 0
             _idUsuario = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
+
+        'Private Sub OnLoaded()
+        '    MyBase.OnLoaded()
+        'End Sub
 
         Public Overrides Function IsValid() As Boolean
             Return Not String.IsNullOrWhiteSpace(_Nombre) And Not String.IsNullOrWhiteSpace(_NombreSesion) And Not String.IsNullOrWhiteSpace(_Contraseña)
@@ -1357,6 +1369,9 @@ Namespace Data.Entity
             Return numero
         End Function
 
+        'Private Sub OnLoaded()
+        '    MyBase.OnLoaded()
+        'End Sub
     End Class
 #End Region
 

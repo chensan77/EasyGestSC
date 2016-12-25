@@ -140,25 +140,25 @@ Namespace Controller
     Public Class ClientesController
         Inherits BaseController(Of Clientes, EasyGestDataContext)
 
-        Public Overrides Sub SyncronisingItem(ByRef item As Clientes)
-            If item.LINQEntityState = EntityState.Deleted Then
-                Try
-                    Contexto.Clientes.DeleteOnSubmit(item)
-                    Contexto.SubmitChanges()
-                    Exit Sub
-                Catch sqlex As SqlClient.SqlException
-                    If sqlex.Number = SQLERRORNUMBER_FKCONFLICTONDELETE Then
-                        item.Activo = False
-                        item.SetAsUpdateOnSubmit()
-                    Else
-                        Throw sqlex
-                    End If
-                Catch ex As Exception
-                    Throw ex
-                End Try
-            End If
-            MyBase.SyncronisingItem(item)
-        End Sub
+        'Public Overrides Sub SyncronisingItem(ByRef item As Clientes)
+        '    If item.LINQEntityState = EntityState.Deleted Then
+        '        Try
+        '            Contexto.Clientes.DeleteOnSubmit(item)
+        '            Contexto.SubmitChanges()
+        '            Exit Sub
+        '        Catch sqlex As SqlClient.SqlException
+        '            If sqlex.Number = SQLERRORNUMBER_FKCONFLICTONDELETE Then
+        '                item.Activo = False
+        '                item.SetAsUpdateOnSubmit()
+        '            Else
+        '                Throw sqlex
+        '            End If
+        '        Catch ex As Exception
+        '            Throw ex
+        '        End Try
+        '    End If
+        '    MyBase.SyncronisingItem(item)
+        'End Sub
 
         Public Overrides Sub SyncronisingItem(ByRef items As IEnumerable(Of Clientes))
             For Each item In items
@@ -586,7 +586,6 @@ Namespace Controller
 
         Public Function AsignarFamilia(ByVal idProducto As Long, ByVal idfamilia As Long?) As VWProductos
             Dim producto As Productos = GetItem(idProducto)
-            producto = (From p In Contexto.Productos Where p.idProducto = idProducto Select p).First
             producto.idFamilia = idfamilia
             Contexto.SubmitChanges()
             Return (From p In Contexto.VWProductos Where p.idProducto = idProducto Select p).First
@@ -594,7 +593,6 @@ Namespace Controller
 
         Public Function AsignarOferta(ByVal idProducto As Long, idoferta As Long?) As VWProductos
             Dim producto As Productos = GetItem(idProducto)
-            producto = (From p In Contexto.Productos Where p.idProducto = idProducto Select p).First
             producto.idOferta = idoferta
             Contexto.SubmitChanges()
             Return (From p In Contexto.VWProductos Where p.idProducto = idProducto Select p).First
@@ -629,25 +627,6 @@ Namespace Controller
     Public Class ProveedoresController
         Inherits BaseController(Of Proveedores, EasyGestDataContext)
 
-        Public Overrides Sub SyncronisingItem(ByRef item As Proveedores)
-            If item.LINQEntityState = EntityState.Deleted Then
-                Try
-                    Contexto.Proveedores.DeleteOnSubmit(item)
-                    Contexto.SubmitChanges()
-                    Exit Sub
-                Catch sqlex As SqlClient.SqlException
-                    If sqlex.Number = SQLERRORNUMBER_FKCONFLICTONDELETE Then
-                        item.Activo = False
-                        item.SetAsUpdateOnSubmit()
-                    Else
-                        Throw sqlex
-                    End If
-                Catch ex As Exception
-                    Throw ex
-                End Try
-            End If
-            MyBase.SyncronisingItem(item)
-        End Sub
 
         Public Overrides Sub SyncronisingItem(ByRef items As IEnumerable(Of Proveedores))
             For Each item In items

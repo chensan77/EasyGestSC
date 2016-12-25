@@ -23,7 +23,7 @@ Namespace Presentacion.Formulario.Configuracion
                         For Each puesto As Puestos In PuestosBindingSource.List
                             control.SyncronisingItem(puesto)
                             If puesto.idPuesto = gPuesto.idPuesto Then
-                                puesto.ShallowCopy(DirectCast(gPuesto, LINQEntityBase))
+                                puesto.ShallowCopy(gPuesto)
                                 My.Forms.frmPrincipal.lblePuesto.Text = My.Resources.Application.TextoPuesto & ": " & gPuesto.Puesto
                             End If
                         Next
