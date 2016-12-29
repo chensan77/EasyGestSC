@@ -71,19 +71,24 @@ Module modVarios
 
     <System.Runtime.CompilerServices.Extension()>
     Public Sub ShallowCopy(Of T As Class)(ByVal source As T, ByRef target As T)
-        Dim typeObj As Type = GetType(T)
-        Dim typeTarget As Type = GetType(T)
+        Dim typeObj As Type
+        Dim typeTarget As Type = target.GetType()
         Dim propsInfo, targetPropsInfo As PropertyInfo()
         Dim consInfo As ConstructorInfo
         Dim value1 As Object
 
-        If source Is Nothing Then target = Nothing
+        If source Is Nothing Then
+            target = Nothing
+            Return
+        End If
+        typeObj = source.GetType()
+        typeTarget = target.GetType()
         If target Is Nothing Then
             consInfo = typeObj.GetConstructor(System.Type.EmptyTypes)
             target = CType(consInfo.Invoke(New Object() {}), T)
         End If
-        propsInfo = typeObj.GetProperties(BindingFlags.Public Or BindingFlags.Instance Or BindingFlags.NonPublic)
-        targetPropsInfo = typeTarget.GetProperties(BindingFlags.Public Or BindingFlags.Instance Or BindingFlags.NonPublic)
+        propsInfo = typeObj.GetProperties(BindingFlags.Public Or BindingFlags.Instance)
+        targetPropsInfo = typeTarget.GetProperties(BindingFlags.Public Or BindingFlags.Instance)
         For Each prop As PropertyInfo In propsInfo
             Try
                 Dim destPropInfo As PropertyInfo = targetPropsInfo.Where(Function(pi) pi.Name = prop.Name And pi.PropertyType.Equals(prop.PropertyType)).First()

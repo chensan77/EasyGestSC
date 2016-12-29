@@ -136,13 +136,13 @@ Namespace Controller
 
         Public Overridable Function DeleteItem(ByVal keys As Object()) As TEntity
             Dim toDelete As TEntity = Nothing
-
+            Dim table As Table(Of TEntity)
             toDelete = GetItem(keys)
             If toDelete.ReadOnly Then Throw New ReadOnlyException("Entidad no modificable")
-
+            table = Contexto.GetTable(Of TEntity)()
             If toDelete IsNot Nothing Then
-                toDelete.SetAsDeleteOnSubmit()
-                SyncronisingItem(toDelete)
+                table.DeleteOnSubmit(toDelete)
+                Contexto.SubmitChanges()
             End If
             Return toDelete
         End Function
@@ -204,7 +204,9 @@ Namespace Controller
             Next
             query = GetItems(Of T)(filtro, keys)
             Try
-                Return query.First()
+                Dim toReturn As T
+                toReturn = query.First()
+                Return toReturn
             Catch ex As Exception
                 Return Nothing
             End Try
