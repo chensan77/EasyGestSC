@@ -527,6 +527,7 @@ Namespace Data.Entity
 
         Friend Property [ReadOnly] As Boolean = False
 
+
         ''' <summary>
         ''' Gets/Sets the entities which have been detached.
         ''' (Data Contract Serialization Only)

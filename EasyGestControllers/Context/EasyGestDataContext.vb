@@ -1055,8 +1055,9 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.ReadOnly = True
+            [ReadOnly] = True
         End Sub
+
 
         Public ReadOnly Property PrioridadID As Short
             Get
