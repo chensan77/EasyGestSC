@@ -1844,6 +1844,13 @@ Namespace Data.Context
 
         Friend Const IDUSUARIOSUPER As Long = 0L
         Friend Const FECHAREFERENCIA As Date = #2016/01/01#
+        Private Shared ReadOnlyEntities As Type() = New Type() {GetType(Entity.FormasContacto),
+                                                                GetType(Entity.ModosPago),
+                                                                GetType(Entity.MunicipiosEspañolas),
+                                                                GetType(Entity.PrioridadesTarea),
+                                                                GetType(Entity.ProvinciasEspañolas),
+                                                                GetType(Entity.TiposDatoCaractProducto),
+                                                                GetType(Entity.TiposIdentificacion)}
 
         'Protected Friend Shared Function GetTablesPrimaryKeys() As Dictionary(Of String, List(Of String))
         '    Dim tablesPrimaryKeys As New Dictionary(Of String, List(Of String))()
@@ -1859,6 +1866,10 @@ Namespace Data.Context
         '    _context.Dispose()
         '    Return tablesPrimaryKeys
         'End Function
+
+        Protected Friend Shared Function IsReadOnlyEntity(entityType As Type) As Boolean
+            Return ReadOnlyEntities.Contains(entityType)
+        End Function
 
         Protected Friend Shared Function DataBaseAccesible(cs As String) As Boolean
             If String.IsNullOrWhiteSpace(cs) Then Throw New ArgumentNullException()

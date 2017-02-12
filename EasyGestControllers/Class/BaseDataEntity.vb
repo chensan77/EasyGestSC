@@ -525,8 +525,6 @@ Namespace Data.Entity
             End Set
         End Property
 
-        Friend Property [ReadOnly] As Boolean = False
-
 
         ''' <summary>
         ''' Gets/Sets the entities which have been detached.

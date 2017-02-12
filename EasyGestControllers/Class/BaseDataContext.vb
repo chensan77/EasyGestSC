@@ -29,11 +29,6 @@ Namespace Data
             MyBase.New(connection, mappingSource)
         End Sub
 
-        Public Overrides Sub SubmitChanges(failureMode As ConflictMode)
-            MyBase.SubmitChanges(failureMode)
-
-        End Sub
-
 
     End Class
 End Namespace

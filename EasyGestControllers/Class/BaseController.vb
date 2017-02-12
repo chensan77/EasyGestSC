@@ -62,7 +62,7 @@ Namespace Controller
                 Dim insertItems As New List(Of TEntity)()
                 Dim deleteItems As New List(Of TEntity)()
                 For Each item As TEntity In items
-                    If item.ReadOnly Then Throw New ApplicationException("Entity dosn´t to modifie")
+                    If _context.Then Then Throw New ApplicationException("Entity dosn´t to modifie")
 
                     If item.LINQEntityState = Data.Entity.EntityState.Original Then
                         table.Attach(item, False)
