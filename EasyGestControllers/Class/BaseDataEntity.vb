@@ -403,9 +403,6 @@ Namespace Data.Entity
                 Return
             End If
 
-            If [ReadOnly] Then
-                Return
-            End If
             ' Do a check here to make sure that the entity is not change if it is supposed to be deleted
             If Me.LINQEntityState = EntityState.Deleted OrElse Me.LINQEntityState = EntityState.CancelNew Then
                 Return 'Throw New ApplicationException("You cannot modify a deleted entity")

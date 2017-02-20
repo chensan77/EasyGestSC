@@ -47,7 +47,7 @@ Namespace Controller
 
         Public Shared Sub ResetConnectionString(cs As String)
             If String.IsNullOrWhiteSpace(cs) Then Throw New ArgumentNullException()
-            Data.BaseDataContext.CadenaConexion = cs
+            BaseDataContext.CadenaConexion = cs
             '_tablesPrimaryKeys = EasyGestDataContext.GetTablesPrimaryKeys()
         End Sub
     End Class

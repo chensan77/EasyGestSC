@@ -1,11 +1,11 @@
 ﻿Imports System.Reflection
 Imports System.Data.Linq
 Imports System.Data.Linq.Mapping
-
+Imports EasyGestControllers.Data.Context
 
 Namespace Controller
 
-    Public MustInherit Class BaseController(Of TEntity As Data.Entity.LINQEntityBase, TContext As DataContext)
+    Public MustInherit Class BaseController(Of TEntity As Data.Entity.LINQEntityBase, TContext As BaseDataContext)
         Implements IDisposable
 
         Private _disposed As Boolean = False
@@ -62,7 +62,7 @@ Namespace Controller
                 Dim insertItems As New List(Of TEntity)()
                 Dim deleteItems As New List(Of TEntity)()
                 For Each item As TEntity In items
-                    If _context.Then Then Throw New ApplicationException("Entity dosn´t to modifie")
+                    If BaseDataContext.IsReadOnlyEntity(GetType(TEntity)) Then Throw New ApplicationException("Entidad no modificable")
 
                     If item.LINQEntityState = Data.Entity.EntityState.Original Then
                         table.Attach(item, False)
@@ -104,7 +104,7 @@ Namespace Controller
 
         Protected Overridable Sub AddItem(ByRef item As TEntity)
             If item Is Nothing Then Throw New NullReferenceException()
-            If item.ReadOnly Then Throw New ReadOnlyException("Entidad no modificable")
+            If BaseDataContext.IsReadOnlyEntity(GetType(TEntity)) Then Throw New ReadOnlyException("Entidad no modificable")
             item.SetAsInsertOnSubmit()
             Me.SyncronisingItem(item)
         End Sub
@@ -125,7 +125,7 @@ Namespace Controller
 
         Public Overridable Sub UpdateItem(ByRef item As TEntity)
             If item Is Nothing Then Throw New NullReferenceException
-            If item.ReadOnly Then Throw New ReadOnlyException("Entidad no modificable")
+            If BaseDataContext.IsReadOnlyEntity(GetType(TEntity)) Then Throw New ReadOnlyException("Entidad no modificable")
             'item.SetAsUpdateOnSubmit()
             SyncronisingItem(item)
         End Sub
@@ -138,7 +138,7 @@ Namespace Controller
             Dim toDelete As TEntity = Nothing
             Dim table As Table(Of TEntity)
             toDelete = GetItem(keys)
-            If toDelete.ReadOnly Then Throw New ReadOnlyException("Entidad no modificable")
+            If BaseDataContext.IsReadOnlyEntity(GetType(TEntity)) Then Throw New ReadOnlyException("Entidad no modificable")
             table = Contexto.GetTable(Of TEntity)()
             If toDelete IsNot Nothing Then
                 table.DeleteOnSubmit(toDelete)

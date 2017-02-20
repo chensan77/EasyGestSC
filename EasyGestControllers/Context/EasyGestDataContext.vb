@@ -522,7 +522,6 @@ Namespace Data.Entity
         End Property
 
         Private Sub OnCreated()
-            Me.ReadOnly = True
         End Sub
     End Class
 
@@ -847,7 +846,6 @@ Namespace Data.Entity
     Partial Class ModosPago
         Inherits LINQEntityBase
         Private Sub OnCreated()
-            Me.ReadOnly = True
         End Sub
 
         Public ReadOnly Property ModoPago() As String
@@ -900,7 +898,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.ReadOnly = True
         End Sub
 
     End Class
@@ -1055,7 +1052,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            [ReadOnly] = True
         End Sub
 
 
@@ -1124,7 +1120,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.ReadOnly = True
         End Sub
 
     End Class
@@ -1232,7 +1227,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.ReadOnly = True
         End Sub
 
         Public ReadOnly Property TipoID As Short
@@ -1258,7 +1252,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.ReadOnly = True
         End Sub
 
         Public ReadOnly Property TipoID As Short
@@ -1396,7 +1389,6 @@ Namespace Data.Entity
         End Property
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
     End Class
 
@@ -1404,7 +1396,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
 
     End Class
@@ -1413,7 +1404,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
 
         Public ReadOnly Property Numero() As String
@@ -1448,7 +1438,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
         Public ReadOnly Property ModoPago() As String
             Get
@@ -1466,7 +1455,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
         Public ReadOnly Property IconTipoPropietario() As Drawing.Image
             Get
@@ -1505,7 +1493,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
 
         Public ReadOnly Property DiaTardanza() As Integer
@@ -1526,7 +1513,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
 
         Public ReadOnly Property IconTipoPropietario() As Drawing.Image
@@ -1557,7 +1543,7 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
+
         End Sub
 
         Public ReadOnly Property DiaTardanza() As Integer
@@ -1578,7 +1564,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
     End Class
 
@@ -1586,15 +1571,12 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
     End Class
 
     Partial Class VWLineasAlbaran
         Inherits LINQEntityBase
-
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
 
     End Class
@@ -1603,7 +1585,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
     End Class
 
@@ -1611,7 +1592,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
     End Class
 
@@ -1619,7 +1599,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
 
         Public ReadOnly Property PrioridadTexto() As String
@@ -1670,7 +1649,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
         Public ReadOnly Property EnPunto As Boolean
             Get
@@ -1706,7 +1684,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
         Public ReadOnly Property ModoPago() As String
             Get
@@ -1724,7 +1701,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
     End Class
 
@@ -1732,7 +1708,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
 
         Public ReadOnly Property PlanOferta As String
@@ -1785,7 +1760,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
         Public ReadOnly Property Numero() As String
             Get
@@ -1819,7 +1793,6 @@ Namespace Data.Entity
         Inherits LINQEntityBase
 
         Private Sub OnCreated()
-            Me.[ReadOnly] = True
         End Sub
 
         Public ReadOnly Property Cliente As String
@@ -1844,13 +1817,6 @@ Namespace Data.Context
 
         Friend Const IDUSUARIOSUPER As Long = 0L
         Friend Const FECHAREFERENCIA As Date = #2016/01/01#
-        Private Shared ReadOnlyEntities As Type() = New Type() {GetType(Entity.FormasContacto),
-                                                                GetType(Entity.ModosPago),
-                                                                GetType(Entity.MunicipiosEspañolas),
-                                                                GetType(Entity.PrioridadesTarea),
-                                                                GetType(Entity.ProvinciasEspañolas),
-                                                                GetType(Entity.TiposDatoCaractProducto),
-                                                                GetType(Entity.TiposIdentificacion)}
 
         'Protected Friend Shared Function GetTablesPrimaryKeys() As Dictionary(Of String, List(Of String))
         '    Dim tablesPrimaryKeys As New Dictionary(Of String, List(Of String))()
@@ -1867,9 +1833,15 @@ Namespace Data.Context
         '    Return tablesPrimaryKeys
         'End Function
 
-        Protected Friend Shared Function IsReadOnlyEntity(entityType As Type) As Boolean
-            Return ReadOnlyEntities.Contains(entityType)
-        End Function
+        Shared Sub New()
+            ReadOnlyEntities = New Type() {GetType(Entity.FormasContacto),
+                                           GetType(Entity.ModosPago),
+                                           GetType(Entity.MunicipiosEspañolas),
+                                           GetType(Entity.PrioridadesTarea),
+                                           GetType(Entity.ProvinciasEspañolas),
+                                           GetType(Entity.TiposDatoCaractProducto),
+                                           GetType(Entity.TiposIdentificacion)}
+        End Sub
 
         Protected Friend Shared Function DataBaseAccesible(cs As String) As Boolean
             If String.IsNullOrWhiteSpace(cs) Then Throw New ArgumentNullException()
