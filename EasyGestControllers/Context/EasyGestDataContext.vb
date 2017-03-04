@@ -540,6 +540,7 @@ Namespace Data.Entity
     Partial Class Impuestos
         Inherits LINQEntityBase
 
+
     End Class
 
     Partial Class LineasAlbaran
@@ -1025,7 +1026,7 @@ Namespace Data.Entity
         End Sub
 
         Private Sub OnLoaded()
-            MyBase.OnLoaded()
+            MyBase.EntityLoaded()
         End Sub
 
         Public Overrides Function IsValid() As Boolean
@@ -1083,6 +1084,10 @@ Namespace Data.Entity
             _idProveedor = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
         End Sub
 
+        Private Sub OnLoaded()
+            MyBase.EntityLoaded()
+        End Sub
+
         Public ReadOnly Property NombreYNombreCN() As String
             Get
                 If String.IsNullOrEmpty(_NombreCN) Then
@@ -1133,11 +1138,13 @@ Namespace Data.Entity
             _Puesto = ""
         End Sub
 
+        Private Sub OnLoaded()
+            MyBase.EntityLoaded()
+        End Sub
 
         Public Overrides Function IsValid() As Boolean
             Return Not String.IsNullOrWhiteSpace(_Identificacion) And Not String.IsNullOrWhiteSpace(_Puesto)
         End Function
-
 
     End Class
 
@@ -1150,6 +1157,10 @@ Namespace Data.Entity
             _idTarea = Math.Abs(Now().Ticks - Context.EasyGestDataContext.FECHAREFERENCIA.Ticks) * -1L
             _Prioridad = PrioridadTareaEnum.Normal
             _FechaTarea = Today()
+        End Sub
+
+        Private Sub OnLoaded()
+            MyBase.EntityLoaded()
         End Sub
 
         Public Overrides Function IsValid() As Boolean

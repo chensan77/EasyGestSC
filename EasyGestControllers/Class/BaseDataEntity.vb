@@ -317,7 +317,7 @@ Namespace Data.Entity
             _entityTree = New EntityTree(Me, _cacheAssociationProperties(Me.[GetType]()))
         End Sub
 
-        Protected Sub OnLoaded()
+        Protected Sub EntityLoaded()
             BindToEntityEvents()
             _entityState = EntityState.Original
             _isKeepOriginal = True
