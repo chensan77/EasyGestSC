@@ -423,4 +423,28 @@ Cancelar, deshacer los cambios en condiciones de la tarjeta de fidelización.</v
   <data name="ConfirmacionErrorNoControlado" xml:space="preserve">
     <value>Error no controlado en la ejecución, por favor consulte los archivos de log. ¿Deseas continuar la ejecución?</value>
   </data>
+  <data name="AvisoProductoAsignadoFamilia" xml:space="preserve">
+    <value>Se ha asignado correctamente el producto a la familia "{0}".</value>
+  </data>
+  <data name="AvisoProductoAsignadoOferta" xml:space="preserve">
+    <value>Se ha asignado correctamente el producto al plan de oferta "{0}".</value>
+  </data>
+  <data name="TextoProducto" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="GridHeaderTextBuscarCliente" xml:space="preserve">
+    <value>Nº cliente;Nombre;Tipo ident.;Nº ident.;Dirección;CP;Localidad;Provincia;F. creación</value>
+  </data>
+  <data name="GridHeaderTextBuscarProducto" xml:space="preserve">
+    <value>Referencia;Producto;P. venta;Ult. proveedor;Familia;Ubicación;Marca;F. creación</value>
+  </data>
+  <data name="GridHeaderTextBuscarProveedor" xml:space="preserve">
+    <value>Nº proveedor;Nombre;Nombre CN;Tipo ident.;Nº ident.;Dirección;CP;Localidad;Provincia;F. creación</value>
+  </data>
+  <data name="GridHeaderTextListaInicio" xml:space="preserve">
+    <value>Producto;Referencia;Observación;F.Creación;Encargo</value>
+  </data>
+  <data name="GridHeaderTextTareaInicio" xml:space="preserve">
+    <value>;Tarea;Fecha;Hora</value>
+  </data>
 </root>

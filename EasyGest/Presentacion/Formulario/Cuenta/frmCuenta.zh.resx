@@ -135,12 +135,6 @@
   <data name="GridViewTextBoxColumn6.HeaderText" xml:space="preserve">
     <value>国际银行代号（Switch）</value>
   </data>
-  <data name="gridDatos.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="gridDatos.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
   <data name="mitemAgregarTarjeta.Text" xml:space="preserve">
     <value>添加</value>
   </data>
@@ -149,66 +143,6 @@
   </data>
   <data name="mitemAgregarCuenta.Text" xml:space="preserve">
     <value>添加</value>
-  </data>
-  <data name="RadStatusStrip1.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadStatusStrip1.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="SplitPanel1.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="SplitPanel1.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadSplitContainer1.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadSplitContainer1.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.AccessibleDescription" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.AccessibleName" xml:space="preserve">
-    <value />
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="resource.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="resource.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="resource.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="resource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="resource.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="resource.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.ToolTipText" xml:space="preserve">
-    <value />
   </data>
   <data name="cbbtnAgregar.Text" xml:space="preserve">
     <value>添加</value>
@@ -219,129 +153,7 @@
   <data name="cbbtnModificar.Text" xml:space="preserve">
     <value>更改</value>
   </data>
-  <data name="resource.AccessibleDescription1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.AccessibleName1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.Alignment1" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="resource.AngleTransform1" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="resource.FlipText1" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.KeyTip1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.Margin1" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.Padding1" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.RightToLeft1" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.Text1" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="resource.TextOrientation1" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="resource.TextWrap1" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.ToolTipText1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.AccessibleDescription2" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.AccessibleName2" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.Alignment2" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="resource.AngleTransform2" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="resource.FlipText2" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.KeyTip2" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.Margin2" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.Padding2" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.RightToLeft2" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.Text2" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="resource.TextOrientation2" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="resource.TextWrap2" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.ToolTipText2" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.AccessibleDescription3" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.AccessibleName3" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.Alignment3" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="resource.AngleTransform3" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="resource.FlipText3" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.KeyTip3" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.Margin3" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.Padding3" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.RightToLeft3" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.Text3" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="resource.TextOrientation3" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="resource.TextWrap3" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.ToolTipText3" xml:space="preserve">
-    <value />
-  </data>
-  <data name="cbComandos.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="cbComandos.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
   </data>
@@ -2698,12 +2510,6 @@
         AAAAAAAA/wAAAAAAAAD/AAAAAAAAAf8AAAAAAAAB/wAAAAAAAAH/AAAAAAAAAf8AAAAAAAAD//gAAAAA
         AAP///gAAAAAA/////gAAAAH//////AAAAf//////+AAB////////+AH/w==
 </value>
-  </data>
-  <data name="frmCuenta.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="frmCuenta.RootElement.ToolTipText" xml:space="preserve">
-    <value />
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>{0}银行账户</value>

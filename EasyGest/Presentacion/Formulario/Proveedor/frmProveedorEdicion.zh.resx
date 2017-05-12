@@ -122,13 +122,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 15</value>
-  </data>
-  <data name="RadLabel1.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel1.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>15, 16</value>
   </data>
   <data name="RadLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 18</value>
@@ -140,13 +134,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>213, 45</value>
-  </data>
-  <data name="RadLabel2.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel2.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>213, 49</value>
   </data>
   <data name="RadLabel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 18</value>
@@ -160,12 +148,6 @@
   <data name="RadLabel4.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 49</value>
   </data>
-  <data name="RadLabel4.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel4.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
   <data name="RadLabel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 18</value>
   </data>
@@ -176,13 +158,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 83</value>
-  </data>
-  <data name="RadLabel5.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel5.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>2, 90</value>
   </data>
   <data name="RadLabel5.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 18</value>
@@ -194,13 +170,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 30</value>
-  </data>
-  <data name="RadLabel8.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel8.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>14, 33</value>
   </data>
   <data name="RadLabel8.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 18</value>
@@ -212,13 +182,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 59</value>
-  </data>
-  <data name="RadLabel9.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel9.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>14, 64</value>
   </data>
   <data name="RadLabel9.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 18</value>
@@ -230,13 +194,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 30</value>
-  </data>
-  <data name="RadLabel10.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel10.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>208, 33</value>
   </data>
   <data name="RadLabel10.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 18</value>
@@ -248,13 +206,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 59</value>
-  </data>
-  <data name="RadLabel11.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel11.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>208, 64</value>
   </data>
   <data name="RadLabel11.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 18</value>
@@ -266,13 +218,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 88</value>
-  </data>
-  <data name="RadLabel12.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel12.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>12, 95</value>
   </data>
   <data name="RadLabel12.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 18</value>
@@ -284,13 +230,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>325, 60</value>
-  </data>
-  <data name="RadLabel13.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel13.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>325, 65</value>
   </data>
   <data name="RadLabel13.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 18</value>
@@ -302,13 +242,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 60</value>
-  </data>
-  <data name="RadLabel14.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel14.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>12, 65</value>
   </data>
   <data name="RadLabel14.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 18</value>
@@ -320,13 +254,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 32</value>
-  </data>
-  <data name="RadLabel15.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel15.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>12, 35</value>
   </data>
   <data name="RadLabel15.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 18</value>
@@ -338,13 +266,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>213, 79</value>
-  </data>
-  <data name="RadLabel16.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel16.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>213, 86</value>
   </data>
   <data name="RadLabel16.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 18</value>
@@ -356,13 +278,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 118</value>
-  </data>
-  <data name="RadLabel17.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel17.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>12, 128</value>
   </data>
   <data name="RadLabel17.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 18</value>
@@ -374,13 +290,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 360</value>
-  </data>
-  <data name="RadLabel18.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel18.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>15, 390</value>
   </data>
   <data name="RadLabel18.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 18</value>
@@ -389,49 +299,25 @@
     <value>参考</value>
   </data>
   <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 53</value>
-  </data>
-  <data name="txtEmail.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtEmail.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>247, 57</value>
   </data>
   <data name="txtEmail.Size" type="System.Drawing.Size, System.Drawing">
     <value>199, 24</value>
   </data>
   <data name="txtFax.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 25</value>
-  </data>
-  <data name="txtFax.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtFax.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>247, 27</value>
   </data>
   <data name="txtFax.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 24</value>
   </data>
   <data name="txtMovil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 53</value>
-  </data>
-  <data name="txtMovil.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtMovil.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>51, 57</value>
   </data>
   <data name="txtMovil.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 24</value>
   </data>
   <data name="txtTelefono.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 25</value>
-  </data>
-  <data name="txtTelefono.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtTelefono.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>51, 27</value>
   </data>
   <data name="txtTelefono.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 24</value>
@@ -442,71 +328,35 @@
   <data name="grpbContacto.HeaderText" xml:space="preserve">
     <value>联络</value>
   </data>
-  <data name="grpbContacto.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="grpbContacto.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
   <data name="grpbContacto.Text" xml:space="preserve">
     <value>联络</value>
   </data>
   <data name="txtCodigoPostal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>364, 54</value>
-  </data>
-  <data name="txtCodigoPostal.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtCodigoPostal.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>364, 59</value>
   </data>
   <data name="txtCodigoPostal.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 24</value>
   </data>
   <data name="ddlLocalidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 112</value>
-  </data>
-  <data name="ddlLocalidad.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ddlLocalidad.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>51, 121</value>
   </data>
   <data name="ddlLocalidad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 26</value>
+    <value>280, 24</value>
   </data>
   <data name="ddlProvincia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 82</value>
-  </data>
-  <data name="ddlProvincia.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ddlProvincia.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>51, 89</value>
   </data>
   <data name="ddlProvincia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 26</value>
+    <value>280, 24</value>
   </data>
   <data name="txtPais.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 54</value>
-  </data>
-  <data name="txtPais.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtPais.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>51, 59</value>
   </data>
   <data name="txtPais.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 24</value>
   </data>
   <data name="txtDireccion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 26</value>
-  </data>
-  <data name="txtDireccion.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtDireccion.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>51, 28</value>
   </data>
   <data name="txtDireccion.Size" type="System.Drawing.Size, System.Drawing">
     <value>398, 24</value>
@@ -517,12 +367,6 @@
   <data name="grpbDireccion.HeaderText" xml:space="preserve">
     <value>地址</value>
   </data>
-  <data name="grpbDireccion.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="grpbDireccion.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
   <data name="grpbDireccion.Text" xml:space="preserve">
     <value>地址</value>
   </data>
@@ -530,13 +374,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="btnCancelar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>374, 414</value>
-  </data>
-  <data name="btnCancelar.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnCancelar.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>374, 449</value>
   </data>
   <data name="btnCancelar.Text" xml:space="preserve">
     <value>取消</value>
@@ -548,13 +386,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="btnAceptar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>275, 414</value>
-  </data>
-  <data name="btnAceptar.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnAceptar.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>275, 449</value>
   </data>
   <data name="btnAceptar.Text" xml:space="preserve">
     <value>确定</value>
@@ -566,67 +398,31 @@
     <value>楷体, 11.25pt</value>
   </data>
   <data name="ddlTipoIdentificacion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 43</value>
-  </data>
-  <data name="ddlTipoIdentificacion.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ddlTipoIdentificacion.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>54, 46</value>
   </data>
   <data name="ddlTipoIdentificacion.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 23</value>
   </data>
   <data name="txtNumeroIdentificacion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 77</value>
-  </data>
-  <data name="txtNumeroIdentificacion.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtNumeroIdentificacion.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>54, 83</value>
   </data>
   <data name="txtNumeroIdentificacion.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 24</value>
   </data>
   <data name="txtNombre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>53, 9</value>
-  </data>
-  <data name="txtNombre.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtNombre.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>53, 10</value>
   </data>
   <data name="txtNombre.Size" type="System.Drawing.Size, System.Drawing">
     <value>402, 24</value>
   </data>
-  <data name="txtNombreChino.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtNombreChino.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtNombreContacto.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtNombreContacto.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
   <data name="txtObservacion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>53, 360</value>
-  </data>
-  <data name="txtObservacion.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtObservacion.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+    <value>53, 390</value>
   </data>
   <data name="txtObservacion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>404, 48</value>
+    <value>404, 52</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>459, 463</value>
+    <value>459, 512</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
@@ -3069,12 +2865,6 @@
         AAAAAAAA/4AAAAAAAAD/AAAAAAAAAP8AAAAAAAAA/wAAAAAAAAH/AAAAAAAAAf8AAAAAAAAB/wAAAAAA
         AAH/AAAAAAAAA//4AAAAAAAD///4AAAAAAP////4AAAAA//////4AAAH///////wAAf////////gB/8=
 </value>
-  </data>
-  <data name="frmProveedorEdicion.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="frmProveedorEdicion.RootElement.ToolTipText" xml:space="preserve">
-    <value />
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>货商编辑</value>

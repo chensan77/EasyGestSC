@@ -46,6 +46,8 @@ Namespace Presentacion.LocalizationProvider
                     Return "Cerrar"
                 Case RadDockStringId.ContextMenuTabbedDocument
                     Return "Documento en pestaña"
+                Case RadDockStringId.ToolTabStripDockStateButton
+                    Return "Cerrar ventana"
                 Case Else
                     Return MyBase.GetLocalizedString(id)
             End Select
@@ -93,6 +95,8 @@ Namespace Presentacion.LocalizationProvider
                     Return "卡表"
                 Case RadDockStringId.DocumentTabStripCloseButton
                     Return "关闭"
+                Case RadDockStringId.ToolTabStripDockStateButton
+                    Return "关闭窗口"
                 Case RadDockStringId.ContextMenuTabbedDocument
                     Return "文件卡"
                 Case Else

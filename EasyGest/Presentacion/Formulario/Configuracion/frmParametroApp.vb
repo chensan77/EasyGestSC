@@ -25,19 +25,20 @@ Namespace Presentacion.Formulario.Configuracion
                         .DepositoCaja = CSng(spinDepositoInicial.Value)
                         .ImpresoraTicketNumCaracteres = CInt(spinNumCaracteres.Value)
                         .MostrarInicioArranque = chkMostrarInicio.Checked
-                        .PeriodoActualizacionInicio = CShort(spinPeriodoActInicio.Value)
+                        .PeriodoActualizacionInicio = trbInicio.Value * 60000.0F
+                        .PeriodoActualizacionDivisa = trbDivisa.Value * 3600000.0F
+                        .PeriodoActualizacionMeteologia = trbTiempo.Value * 3600000.0F
                         .UsarCuchilloCorteImpresora = chkUsarCuchilloCorte.Checked
                     End With
 
                     EasyGestControllers.Data.Configuracion.ConfiguracionLocal.EscribirConfiguracion(gConfLocal)
                     'Impresion.TareaImpresion.EstablecerImpresora(gConfLocal.ImpresoraTicket)
 
-                    Dim dialogresult As DialogResult = Windows.Forms.DialogResult.None
                     With gConfGlobal
                         If .UsarTarjetaFidelizacion Then
                             If _condicionTarjetaModificado Then
-                                dialogresult = MostrarMensaje(My.Resources.Application.ConfirmacionActualizarCondicionTarjeta, Me.Text, RadMessageIcon.Question, MessageBoxButtons.YesNoCancel)
-                                If dialogresult <> Windows.Forms.DialogResult.Cancel Then
+                                DialogResult = MostrarMensaje(My.Resources.Application.ConfirmacionActualizarCondicionTarjeta, Me.Text, RadMessageIcon.Question, MessageBoxButtons.YesNoCancel)
+                                If DialogResult <> Windows.Forms.DialogResult.Cancel Then
                                     .BuidFormulaFidelizacion(CSng(txtBaseEuro.Value), CSng(txtEquivalenteEuroBeneficio.Value), CSng(txtBasePunto.Value), CSng(txtEquivalenciaPuntoEuro.Value))
                                 End If
                             End If
@@ -72,14 +73,22 @@ Namespace Presentacion.Formulario.Configuracion
                     Dim listaparam As List(Of Configuraciones) = EasyGestControllers.Data.Configuracion.ConfiguracionGlobal.DescargarConfiguracion(gConfGlobal, gEmpresa.idEmpresa)
                     Using c As New ConfiguracionesController()
                         For Each param As Configuraciones In listaparam
-                            c.SyncronisingItem(param)
+                            c.SyncronisingItem(param.Parametro, param.Valor, param.idEmpresa)
                         Next
                     End Using
-                    If dialogresult = Windows.Forms.DialogResult.Yes Or dialogresult = Windows.Forms.DialogResult.No Then
-                        Using c As New TarjetasFidelizacionController
-                            c.ActualizarCondicionTarjeta(CSng(txtBaseEuro.Value), CSng(txtEquivalenteEuroBeneficio.Value),
-                                                         CSng(txtBasePunto.Value), CSng(txtEquivalenciaPuntoEuro.Value), dialogresult = Windows.Forms.DialogResult.Yes)
-                        End Using
+                    Using c As New TarjetasFidelizacionController
+                        c.ActualizarCondicionTarjeta(CSng(txtBaseEuro.Value), CSng(txtEquivalenteEuroBeneficio.Value),
+                                                     CSng(txtBasePunto.Value), CSng(txtEquivalenciaPuntoEuro.Value), dialogresult = Windows.Forms.DialogResult.Yes)
+                    End Using
+                    'Mostrar ou ocultar pagina de inicio segun la configuracion
+                    If gConfLocal.MostrarInicioArranque Then
+                        My.Forms.frmPrincipal.AddForm(New frmInicio(), True)
+                        For Each f As Form In My.Forms.frmPrincipal.FindFormByType(GetType(frmInicio))
+                            Dim fInicio As frmInicio = DirectCast(f, frmInicio)
+                            fInicio.ActualizarTimerInterval()
+                        Next
+                    Else
+                        My.Forms.frmPrincipal.RemoveForm(GetType(frmInicio))
                     End If
                 Catch ex As Exception
                     MostrarMensaje(ex, Me.Text, Telerik.WinControls.RadMessageIcon.Error, MessageBoxButtons.OK)
@@ -158,6 +167,9 @@ Namespace Presentacion.Formulario.Configuracion
                 spinNumCaracteres.Value = .ImpresoraTicketNumCaracteres
                 chkMostrarInicio.Checked = .MostrarInicioArranque
                 chkUsarCuchilloCorte.Checked = .UsarCuchilloCorteImpresora
+                trbInicio.Value = .PeriodoActualizacionInicio / 60000.0F
+                trbDivisa.Value = .PeriodoActualizacionDivisa / 3600000.0F
+                trbTiempo.Value = .PeriodoActualizacionMeteologia / 3600000.0F
             End With
 
             _condicionTarjetaModificado = False
@@ -201,7 +213,7 @@ Namespace Presentacion.Formulario.Configuracion
         End Sub
 
         Private Sub chkMostrarInicio_CheckStateChanged(sender As Object, e As EventArgs) Handles chkMostrarInicio.CheckStateChanged
-            spinPeriodoActInicio.ReadOnly = chkMostrarInicio.CheckState = CheckState.Unchecked
+            popupcmbParamInicio.Enabled = chkMostrarInicio.CheckState = CheckState.Checked
         End Sub
     End Class
 

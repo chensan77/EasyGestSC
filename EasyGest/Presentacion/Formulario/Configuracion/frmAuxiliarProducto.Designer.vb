@@ -136,11 +136,6 @@
             Me.gridMarcas.MasterTemplate.ViewDefinition = TableViewDefinition1
             Me.gridMarcas.Name = "gridMarcas"
             '
-            '
-            '
-            Me.gridMarcas.RootElement.AccessibleDescription = Nothing
-            Me.gridMarcas.RootElement.AccessibleName = Nothing
-            '
             'MarcasBindingSource
             '
             Me.MarcasBindingSource.DataSource = GetType(EasyGestControllers.Data.Entity.Marcas)
@@ -187,11 +182,6 @@
             Me.gridUbicaciones.MasterTemplate.EnableGrouping = False
             Me.gridUbicaciones.MasterTemplate.ViewDefinition = TableViewDefinition2
             Me.gridUbicaciones.Name = "gridUbicaciones"
-            '
-            '
-            '
-            Me.gridUbicaciones.RootElement.AccessibleDescription = Nothing
-            Me.gridUbicaciones.RootElement.AccessibleName = Nothing
             '
             'UbicacionesBindingSource
             '
@@ -240,11 +230,6 @@
             Me.gridMedidas.MasterTemplate.ViewDefinition = TableViewDefinition3
             Me.gridMedidas.Name = "gridMedidas"
             '
-            '
-            '
-            Me.gridMedidas.RootElement.AccessibleDescription = Nothing
-            Me.gridMedidas.RootElement.AccessibleName = Nothing
-            '
             'UnidadesMedidaBindingSource
             '
             Me.UnidadesMedidaBindingSource.DataSource = GetType(EasyGestControllers.Data.Entity.UnidadesMedida)
@@ -259,11 +244,6 @@
             Me.pvDatosAuxiliaresProducto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             Me.pvDatosAuxiliaresProducto.ItemSizeMode = Telerik.WinControls.UI.PageViewItemSizeMode.EqualWidth
             Me.pvDatosAuxiliaresProducto.Name = "pvDatosAuxiliaresProducto"
-            '
-            '
-            '
-            Me.pvDatosAuxiliaresProducto.RootElement.AccessibleDescription = Nothing
-            Me.pvDatosAuxiliaresProducto.RootElement.AccessibleName = Nothing
             Me.pvDatosAuxiliaresProducto.SelectedPage = Me.pvpMarcas
             CType(Me.pvDatosAuxiliaresProducto.GetChildAt(0), Telerik.WinControls.UI.RadPageViewStripElement).StripButtons = Telerik.WinControls.UI.StripViewButtons.None
             CType(Me.pvDatosAuxiliaresProducto.GetChildAt(0), Telerik.WinControls.UI.RadPageViewStripElement).ItemFitMode = Telerik.WinControls.UI.StripViewItemFitMode.FillHeight
@@ -331,11 +311,6 @@
             Me.treeFamilia.LineColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(185, Byte), Integer), CType(CType(249, Byte), Integer))
             Me.treeFamilia.Name = "treeFamilia"
             Me.treeFamilia.RadContextMenu = Me.cmenuFamilia
-            '
-            '
-            '
-            Me.treeFamilia.RootElement.AccessibleDescription = Nothing
-            Me.treeFamilia.RootElement.AccessibleName = Nothing
             Me.treeFamilia.ShowLines = True
             Me.treeFamilia.SpacingBetweenNodes = 2
             '
@@ -414,11 +389,6 @@
             resources.ApplyResources(Me.btnCancelar, "btnCancelar")
             Me.btnCancelar.Image = Global.EasyGest.My.Resources.Resources.cancel
             Me.btnCancelar.Name = "btnCancelar"
-            '
-            '
-            '
-            Me.btnCancelar.RootElement.AccessibleDescription = Nothing
-            Me.btnCancelar.RootElement.AccessibleName = Nothing
             CType(Me.btnCancelar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).Image = Global.EasyGest.My.Resources.Resources.cancel
             CType(Me.btnCancelar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
             CType(Me.btnCancelar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
@@ -430,11 +400,6 @@
             resources.ApplyResources(Me.btnAceptar, "btnAceptar")
             Me.btnAceptar.Image = Global.EasyGest.My.Resources.Resources.accept
             Me.btnAceptar.Name = "btnAceptar"
-            '
-            '
-            '
-            Me.btnAceptar.RootElement.AccessibleDescription = Nothing
-            Me.btnAceptar.RootElement.AccessibleName = Nothing
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).Image = Global.EasyGest.My.Resources.Resources.accept
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
@@ -468,8 +433,6 @@
             '
             '
             '
-            Me.RootElement.AccessibleDescription = Nothing
-            Me.RootElement.AccessibleName = Nothing
             Me.RootElement.ApplyShapeToControl = True
             Me.ShowInTaskbar = False
             CType(Me.gridMarcas.MasterTemplate, System.ComponentModel.ISupportInitialize).EndInit()

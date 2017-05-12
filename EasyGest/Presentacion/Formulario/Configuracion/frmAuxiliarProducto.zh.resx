@@ -134,7 +134,7 @@
     <value>描述</value>
   </data>
   <data name="gridUbicaciones.Size" type="System.Drawing.Size, System.Drawing">
-    <value>536, 525</value>
+    <value>536, 538</value>
   </data>
   <data name="GridViewTextBoxColumn4.HeaderText" xml:space="preserve">
     <value>单位</value>
@@ -143,7 +143,7 @@
     <value>缩写</value>
   </data>
   <data name="gridMedidas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>536, 525</value>
+    <value>536, 538</value>
   </data>
   <data name="pvpMarcas.Location" type="System.Drawing.Point, System.Drawing">
     <value>79, 10</value>
@@ -155,19 +155,19 @@
     <value>牌子</value>
   </data>
   <data name="pvpUbicaciones.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 11</value>
+    <value>79, 10</value>
   </data>
   <data name="pvpUbicaciones.Size" type="System.Drawing.Size, System.Drawing">
-    <value>536, 525</value>
+    <value>536, 538</value>
   </data>
   <data name="pvpUbicaciones.Text" xml:space="preserve">
     <value>位置</value>
   </data>
   <data name="pvpUnidadesMedida.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 11</value>
+    <value>79, 10</value>
   </data>
   <data name="pvpUnidadesMedida.Size" type="System.Drawing.Size, System.Drawing">
-    <value>536, 525</value>
+    <value>536, 538</value>
   </data>
   <data name="pvpUnidadesMedida.Text" xml:space="preserve">
     <value>衡量单位</value>
@@ -177,7 +177,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAD8
-        CQAAAk1TRnQBSQFMAgEBCAEAAWgBAAFoAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CQAAAk1TRnQBSQFMAgEBCAEAAXgBAAF4AQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAATADAAEBAQABCAYAAQwYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -241,13 +241,13 @@
     <value>刷新</value>
   </data>
   <data name="treeFamilia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>536, 525</value>
+    <value>536, 538</value>
   </data>
   <data name="pvpFamilias.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 11</value>
+    <value>79, 10</value>
   </data>
   <data name="pvpFamilias.Size" type="System.Drawing.Size, System.Drawing">
-    <value>536, 525</value>
+    <value>536, 538</value>
   </data>
   <data name="pvpFamilias.Text" xml:space="preserve">
     <value>品种</value>

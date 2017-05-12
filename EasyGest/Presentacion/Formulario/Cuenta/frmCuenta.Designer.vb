@@ -33,6 +33,7 @@
             Dim GridViewTextBoxColumn4 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
             Dim GridViewTextBoxColumn5 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
             Dim GridViewTextBoxColumn6 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
+            Dim TableViewDefinition1 As Telerik.WinControls.UI.TableViewDefinition = New Telerik.WinControls.UI.TableViewDefinition()
             Dim InputBinding1 As Telerik.WinControls.Keyboard.InputBinding = New Telerik.WinControls.Keyboard.InputBinding()
             Dim Chord1 As Telerik.WinControls.Keyboard.Chord = New Telerik.WinControls.Keyboard.Chord()
             Dim ChordModifier1 As Telerik.WinControls.Keyboard.ChordModifier = New Telerik.WinControls.Keyboard.ChordModifier()
@@ -72,10 +73,11 @@
             resources.ApplyResources(Me.gridDatos, "gridDatos")
             Me.gridDatos.ForeColor = System.Drawing.Color.Black
             '
-            'gridDatos
+            '
             '
             Me.gridDatos.MasterTemplate.AllowAddNewRow = False
             Me.gridDatos.MasterTemplate.AllowRowResize = False
+            Me.gridDatos.MasterTemplate.AllowSearchRow = True
             GridViewImageColumn1.AllowFiltering = False
             GridViewImageColumn1.AllowSort = False
             GridViewImageColumn1.EnableExpressionEditor = False
@@ -146,22 +148,11 @@
             Me.gridDatos.MasterTemplate.Columns.AddRange(New Telerik.WinControls.UI.GridViewDataColumn() {GridViewImageColumn1, GridViewTextBoxColumn1, GridViewTextBoxColumn2, GridViewTextBoxColumn3, GridViewTextBoxColumn4, GridViewTextBoxColumn5, GridViewTextBoxColumn6})
             Me.gridDatos.MasterTemplate.DataSource = Me.VWCuentasBindingSource
             Me.gridDatos.MasterTemplate.EnableAlternatingRowColor = True
-            Me.gridDatos.MasterTemplate.EnableFiltering = True
             Me.gridDatos.MasterTemplate.EnableGrouping = False
+            Me.gridDatos.MasterTemplate.SearchRowPosition = Telerik.WinControls.UI.SystemRowPosition.Bottom
+            Me.gridDatos.MasterTemplate.ViewDefinition = TableViewDefinition1
             Me.gridDatos.Name = "gridDatos"
             Me.gridDatos.ReadOnly = True
-            '
-            '
-            '
-            Me.gridDatos.RootElement.AccessibleDescription = resources.GetString("gridDatos.RootElement.AccessibleDescription")
-            Me.gridDatos.RootElement.AccessibleName = resources.GetString("gridDatos.RootElement.AccessibleName")
-            Me.gridDatos.RootElement.Alignment = CType(resources.GetObject("gridDatos.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.gridDatos.RootElement.AngleTransform = CType(resources.GetObject("gridDatos.RootElement.AngleTransform"), Single)
-            Me.gridDatos.RootElement.FlipText = CType(resources.GetObject("gridDatos.RootElement.FlipText"), Boolean)
-            Me.gridDatos.RootElement.Margin = CType(resources.GetObject("gridDatos.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.gridDatos.RootElement.Padding = CType(resources.GetObject("gridDatos.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.gridDatos.RootElement.Text = resources.GetString("gridDatos.RootElement.Text")
-            Me.gridDatos.RootElement.TextOrientation = CType(resources.GetObject("gridDatos.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
             Me.gridDatos.ShowGroupPanel = False
             '
             'VWCuentasBindingSource
@@ -176,27 +167,26 @@
             Me.mitemAgregarTarjeta.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.0!)
             Me.mitemAgregarTarjeta.Image = Global.EasyGest.My.Resources.Resources._112
             Me.mitemAgregarTarjeta.Name = "mitemAgregarTarjeta"
-            Me.mitemAgregarTarjeta.Visibility = Telerik.WinControls.ElementVisibility.Visible
             '
             'mitemAgregarContacto
             '
+            Me.mitemAgregarContacto.AccessibleDescription = "Agregar"
             resources.ApplyResources(Me.mitemAgregarContacto, "mitemAgregarContacto")
             Me.mitemAgregarContacto.DescriptionFont = New System.Drawing.Font("Lucida Sans Unicode", 9.0!)
             Me.mitemAgregarContacto.DescriptionText = "Agregar un contacto de cliente"
             Me.mitemAgregarContacto.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.mitemAgregarContacto.Image = Global.EasyGest.My.Resources.Resources._112
             Me.mitemAgregarContacto.Name = "mitemAgregarContacto"
-            Me.mitemAgregarContacto.Visibility = Telerik.WinControls.ElementVisibility.Visible
             '
             'mitemAgregarCuenta
             '
+            Me.mitemAgregarCuenta.AccessibleDescription = "Agregar"
             resources.ApplyResources(Me.mitemAgregarCuenta, "mitemAgregarCuenta")
             Me.mitemAgregarCuenta.DescriptionFont = New System.Drawing.Font("Lucida Sans Unicode", 9.0!)
             Me.mitemAgregarCuenta.DescriptionText = "Agregar una cuenta de banco"
             Me.mitemAgregarCuenta.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.mitemAgregarCuenta.Image = Global.EasyGest.My.Resources.Resources._112
             Me.mitemAgregarCuenta.Name = "mitemAgregarCuenta"
-            Me.mitemAgregarCuenta.Visibility = Telerik.WinControls.ElementVisibility.Visible
             '
             'RadSplitContainer1
             '
@@ -206,17 +196,7 @@
             '
             '
             '
-            Me.RadSplitContainer1.RootElement.AccessibleDescription = resources.GetString("RadSplitContainer1.RootElement.AccessibleDescription")
-            Me.RadSplitContainer1.RootElement.AccessibleName = resources.GetString("RadSplitContainer1.RootElement.AccessibleName")
-            Me.RadSplitContainer1.RootElement.Alignment = CType(resources.GetObject("RadSplitContainer1.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.RadSplitContainer1.RootElement.AngleTransform = CType(resources.GetObject("RadSplitContainer1.RootElement.AngleTransform"), Single)
-            Me.RadSplitContainer1.RootElement.FlipText = CType(resources.GetObject("RadSplitContainer1.RootElement.FlipText"), Boolean)
-            Me.RadSplitContainer1.RootElement.Margin = CType(resources.GetObject("RadSplitContainer1.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.RadSplitContainer1.RootElement.MinSize = New System.Drawing.Size(25, 25)
-            Me.RadSplitContainer1.RootElement.Padding = CType(resources.GetObject("RadSplitContainer1.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.RadSplitContainer1.RootElement.Text = resources.GetString("RadSplitContainer1.RootElement.Text")
-            Me.RadSplitContainer1.RootElement.TextOrientation = CType(resources.GetObject("RadSplitContainer1.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.RadSplitContainer1.SplitterWidth = 4
+            Me.RadSplitContainer1.RootElement.MinSize = New System.Drawing.Size(0, 0)
             Me.RadSplitContainer1.TabStop = False
             '
             'SplitPanel1
@@ -228,17 +208,8 @@
             '
             '
             '
-            Me.SplitPanel1.RootElement.AccessibleDescription = resources.GetString("SplitPanel1.RootElement.AccessibleDescription")
-            Me.SplitPanel1.RootElement.AccessibleName = resources.GetString("SplitPanel1.RootElement.AccessibleName")
-            Me.SplitPanel1.RootElement.Alignment = CType(resources.GetObject("SplitPanel1.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.SplitPanel1.RootElement.AngleTransform = CType(resources.GetObject("SplitPanel1.RootElement.AngleTransform"), Single)
-            Me.SplitPanel1.RootElement.FlipText = CType(resources.GetObject("SplitPanel1.RootElement.FlipText"), Boolean)
-            Me.SplitPanel1.RootElement.Margin = CType(resources.GetObject("SplitPanel1.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.SplitPanel1.RootElement.MinSize = New System.Drawing.Size(25, 25)
-            Me.SplitPanel1.RootElement.Padding = CType(resources.GetObject("SplitPanel1.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.SplitPanel1.RootElement.Text = resources.GetString("SplitPanel1.RootElement.Text")
-            Me.SplitPanel1.RootElement.TextOrientation = CType(resources.GetObject("SplitPanel1.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.SplitPanel1.SizeInfo.AutoSizeScale = New System.Drawing.SizeF(0.1980109!, 0.0!)
+            Me.SplitPanel1.RootElement.MinSize = New System.Drawing.Size(0, 0)
+            Me.SplitPanel1.SizeInfo.AutoSizeScale = New System.Drawing.SizeF(0.1980109!, 0!)
             Me.SplitPanel1.SizeInfo.SplitterCorrection = New System.Drawing.Size(189, 0)
             Me.SplitPanel1.TabStop = False
             '
@@ -248,26 +219,15 @@
             Me.RadStatusStrip1.Items.AddRange(New Telerik.WinControls.RadItem() {Me.lbleDiagnostico})
             Me.RadStatusStrip1.Name = "RadStatusStrip1"
             '
-            '
-            '
-            Me.RadStatusStrip1.RootElement.AccessibleDescription = resources.GetString("RadStatusStrip1.RootElement.AccessibleDescription")
-            Me.RadStatusStrip1.RootElement.AccessibleName = resources.GetString("RadStatusStrip1.RootElement.AccessibleName")
-            Me.RadStatusStrip1.RootElement.Alignment = CType(resources.GetObject("RadStatusStrip1.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.RadStatusStrip1.RootElement.AngleTransform = CType(resources.GetObject("RadStatusStrip1.RootElement.AngleTransform"), Single)
-            Me.RadStatusStrip1.RootElement.FlipText = CType(resources.GetObject("RadStatusStrip1.RootElement.FlipText"), Boolean)
-            Me.RadStatusStrip1.RootElement.Margin = CType(resources.GetObject("RadStatusStrip1.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.RadStatusStrip1.RootElement.Padding = CType(resources.GetObject("RadStatusStrip1.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.RadStatusStrip1.RootElement.Text = resources.GetString("RadStatusStrip1.RootElement.Text")
-            Me.RadStatusStrip1.RootElement.TextOrientation = CType(resources.GetObject("RadStatusStrip1.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            '
             'lbleDiagnostico
             '
+            Me.lbleDiagnostico.AccessibleDescription = "Núm. Registro:"
+            Me.lbleDiagnostico.AccessibleName = "Núm. Registro:"
             resources.ApplyResources(Me.lbleDiagnostico, "lbleDiagnostico")
             Me.lbleDiagnostico.Font = New System.Drawing.Font("楷体", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.lbleDiagnostico.Name = "lbleDiagnostico"
             Me.RadStatusStrip1.SetSpring(Me.lbleDiagnostico, True)
             Me.lbleDiagnostico.TextWrap = True
-            Me.lbleDiagnostico.Visibility = Telerik.WinControls.ElementVisibility.Visible
             '
             'bgwCarga
             '
@@ -278,7 +238,6 @@
             resources.ApplyResources(Me.CommandBarRowElement1, "CommandBarRowElement1")
             Me.CommandBarRowElement1.BorderDrawMode = Telerik.WinControls.BorderDrawModes.HorizontalOverVertical
             Me.CommandBarRowElement1.BorderLeftShadowColor = System.Drawing.Color.Empty
-            Me.CommandBarRowElement1.DisplayName = Nothing
             Me.CommandBarRowElement1.MinSize = New System.Drawing.Size(25, 25)
             Me.CommandBarRowElement1.Strips.AddRange(New Telerik.WinControls.UI.CommandBarStripElement() {Me.cbstripeAccion, Me.cbstripeOrden})
             '
@@ -287,12 +246,9 @@
             resources.ApplyResources(Me.cbstripeAccion, "cbstripeAccion")
             Me.cbstripeAccion.BorderDrawMode = Telerik.WinControls.BorderDrawModes.HorizontalOverVertical
             Me.cbstripeAccion.BorderLeftShadowColor = System.Drawing.Color.Empty
-            Me.cbstripeAccion.DisplayName = "Operación"
             '
             '
             '
-            Me.cbstripeAccion.Grip.AccessibleDescription = resources.GetString("resource.AccessibleDescription")
-            Me.cbstripeAccion.Grip.AccessibleName = resources.GetString("resource.AccessibleName")
             Me.cbstripeAccion.Grip.Alignment = CType(resources.GetObject("resource.Alignment"), System.Drawing.ContentAlignment)
             Me.cbstripeAccion.Grip.AngleTransform = CType(resources.GetObject("resource.AngleTransform"), Single)
             Me.cbstripeAccion.Grip.FlipText = CType(resources.GetObject("resource.FlipText"), Boolean)
@@ -307,8 +263,6 @@
             '
             '
             '
-            Me.cbstripeAccion.OverflowButton.AccessibleDescription = resources.GetString("resource.AccessibleDescription1")
-            Me.cbstripeAccion.OverflowButton.AccessibleName = resources.GetString("resource.AccessibleName1")
             Me.cbstripeAccion.OverflowButton.Alignment = CType(resources.GetObject("resource.Alignment1"), System.Drawing.ContentAlignment)
             Me.cbstripeAccion.OverflowButton.AngleTransform = CType(resources.GetObject("resource.AngleTransform1"), Single)
             Me.cbstripeAccion.OverflowButton.FlipText = CType(resources.GetObject("resource.FlipText1"), Boolean)
@@ -344,49 +298,41 @@
             Me.cbbtnAgregar.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(106, Byte), Integer))
             Me.cbbtnAgregar.BorderDrawMode = Telerik.WinControls.BorderDrawModes.HorizontalOverVertical
             Me.cbbtnAgregar.BorderLeftShadowColor = System.Drawing.Color.Empty
-            Me.cbbtnAgregar.DisplayName = "Agregar"
             Me.cbbtnAgregar.DrawText = True
             Me.cbbtnAgregar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(197, Byte), Integer), CType(CType(45, Byte), Integer))
             Me.cbbtnAgregar.Image = Global.EasyGest.My.Resources.Resources._127
             Me.cbbtnAgregar.Name = "cbbtnAgregar"
             Me.cbbtnAgregar.Shape = Nothing
             Me.cbbtnAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-            Me.cbbtnAgregar.Visibility = Telerik.WinControls.ElementVisibility.Visible
             '
             'cbbtnEliminar
             '
             resources.ApplyResources(Me.cbbtnEliminar, "cbbtnEliminar")
             Me.cbbtnEliminar.BorderDrawMode = Telerik.WinControls.BorderDrawModes.HorizontalOverVertical
             Me.cbbtnEliminar.BorderLeftShadowColor = System.Drawing.Color.Empty
-            Me.cbbtnEliminar.DisplayName = "Eliminar"
             Me.cbbtnEliminar.DrawText = True
             Me.cbbtnEliminar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(197, Byte), Integer), CType(CType(45, Byte), Integer))
             Me.cbbtnEliminar.Image = Global.EasyGest.My.Resources.Resources._128
             Me.cbbtnEliminar.Name = "cbbtnEliminar"
             Me.cbbtnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-            Me.cbbtnEliminar.Visibility = Telerik.WinControls.ElementVisibility.Visible
             '
             'cbbtnModificar
             '
             resources.ApplyResources(Me.cbbtnModificar, "cbbtnModificar")
             Me.cbbtnModificar.BorderDrawMode = Telerik.WinControls.BorderDrawModes.HorizontalOverVertical
             Me.cbbtnModificar.BorderLeftShadowColor = System.Drawing.Color.Empty
-            Me.cbbtnModificar.DisplayName = "Modificar"
             Me.cbbtnModificar.DrawText = True
             Me.cbbtnModificar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(197, Byte), Integer), CType(CType(45, Byte), Integer))
             Me.cbbtnModificar.Image = Global.EasyGest.My.Resources.Resources._130
             Me.cbbtnModificar.Name = "cbbtnModificar"
             Me.cbbtnModificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-            Me.cbbtnModificar.Visibility = Telerik.WinControls.ElementVisibility.Visible
             '
             'cbstripeOrden
             '
-            Me.cbstripeOrden.DisplayName = "Ordenación"
+            resources.ApplyResources(Me.cbstripeOrden, "cbstripeOrden")
             '
             '
             '
-            Me.cbstripeOrden.Grip.AccessibleDescription = resources.GetString("resource.AccessibleDescription2")
-            Me.cbstripeOrden.Grip.AccessibleName = resources.GetString("resource.AccessibleName2")
             Me.cbstripeOrden.Grip.Alignment = CType(resources.GetObject("resource.Alignment4"), System.Drawing.ContentAlignment)
             Me.cbstripeOrden.Grip.AngleTransform = CType(resources.GetObject("resource.AngleTransform4"), Single)
             Me.cbstripeOrden.Grip.FlipText = CType(resources.GetObject("resource.FlipText4"), Boolean)
@@ -400,8 +346,6 @@
             '
             '
             '
-            Me.cbstripeOrden.OverflowButton.AccessibleDescription = resources.GetString("resource.AccessibleDescription3")
-            Me.cbstripeOrden.OverflowButton.AccessibleName = resources.GetString("resource.AccessibleName3")
             Me.cbstripeOrden.OverflowButton.Alignment = CType(resources.GetObject("resource.Alignment5"), System.Drawing.ContentAlignment)
             Me.cbstripeOrden.OverflowButton.AngleTransform = CType(resources.GetObject("resource.AngleTransform5"), Single)
             Me.cbstripeOrden.OverflowButton.FlipText = CType(resources.GetObject("resource.FlipText5"), Boolean)
@@ -411,7 +355,6 @@
             Me.cbstripeOrden.OverflowButton.Text = resources.GetString("resource.Text5")
             Me.cbstripeOrden.OverflowButton.TextOrientation = CType(resources.GetObject("resource.TextOrientation5"), System.Windows.Forms.Orientation)
             Me.cbstripeOrden.OverflowButton.TextWrap = CType(resources.GetObject("resource.TextWrap5"), Boolean)
-            resources.ApplyResources(Me.cbstripeOrden, "cbstripeOrden")
             CType(Me.cbstripeOrden.GetChildAt(0), Telerik.WinControls.UI.RadCommandBarGrip).TextWrap = CType(resources.GetObject("resource.TextWrap6"), Boolean)
             CType(Me.cbstripeOrden.GetChildAt(0), Telerik.WinControls.UI.RadCommandBarGrip).TextOrientation = CType(resources.GetObject("resource.TextOrientation6"), System.Windows.Forms.Orientation)
             CType(Me.cbstripeOrden.GetChildAt(0), Telerik.WinControls.UI.RadCommandBarGrip).FlipText = CType(resources.GetObject("resource.FlipText6"), Boolean)
@@ -435,18 +378,6 @@
             '
             resources.ApplyResources(Me.cbComandos, "cbComandos")
             Me.cbComandos.Name = "cbComandos"
-            '
-            '
-            '
-            Me.cbComandos.RootElement.AccessibleDescription = resources.GetString("cbComandos.RootElement.AccessibleDescription")
-            Me.cbComandos.RootElement.AccessibleName = resources.GetString("cbComandos.RootElement.AccessibleName")
-            Me.cbComandos.RootElement.Alignment = CType(resources.GetObject("cbComandos.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.cbComandos.RootElement.AngleTransform = CType(resources.GetObject("cbComandos.RootElement.AngleTransform"), Single)
-            Me.cbComandos.RootElement.FlipText = CType(resources.GetObject("cbComandos.RootElement.FlipText"), Boolean)
-            Me.cbComandos.RootElement.Margin = CType(resources.GetObject("cbComandos.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.cbComandos.RootElement.Padding = CType(resources.GetObject("cbComandos.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.cbComandos.RootElement.Text = resources.GetString("cbComandos.RootElement.Text")
-            Me.cbComandos.RootElement.TextOrientation = CType(resources.GetObject("cbComandos.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
             Me.cbComandos.Rows.AddRange(New Telerik.WinControls.UI.CommandBarRowElement() {Me.CommandBarRowElement1})
             '
             'frmCuenta
@@ -466,16 +397,7 @@
             '
             '
             '
-            Me.RootElement.AccessibleDescription = resources.GetString("frmCuenta.RootElement.AccessibleDescription")
-            Me.RootElement.AccessibleName = resources.GetString("frmCuenta.RootElement.AccessibleName")
-            Me.RootElement.Alignment = CType(resources.GetObject("frmCuenta.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.RootElement.AngleTransform = CType(resources.GetObject("frmCuenta.RootElement.AngleTransform"), Single)
             Me.RootElement.ApplyShapeToControl = True
-            Me.RootElement.FlipText = CType(resources.GetObject("frmCuenta.RootElement.FlipText"), Boolean)
-            Me.RootElement.Margin = CType(resources.GetObject("frmCuenta.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.RootElement.Padding = CType(resources.GetObject("frmCuenta.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.RootElement.Text = resources.GetString("frmCuenta.RootElement.Text")
-            Me.RootElement.TextOrientation = CType(resources.GetObject("frmCuenta.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
             CType(Me.gridDatos.MasterTemplate, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.gridDatos, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.VWCuentasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

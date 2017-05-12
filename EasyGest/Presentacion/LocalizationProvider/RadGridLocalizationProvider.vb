@@ -188,6 +188,18 @@ Namespace Presentacion.LocalizationProvider
                     Return "de"
                 Case RadGridStringId.SearchRowMatchCase
                     Return "Coincidir mayúscula y minúscula"
+                Case RadGridStringId.SearchRowChooseColumns
+                    Return "Elije Columna"
+                Case RadGridStringId.SearchRowMenuItemAllColumns
+                    Return "Todas"
+                Case RadGridStringId.SearchRowMenuItemChildTemplates
+                    Return "Plantilla hija"
+                Case RadGridStringId.SearchRowMenuItemMasterTemplate
+                    Return "Plantilla maestra"
+                Case RadGridStringId.SearchRowSearchFromCurrentPosition
+                    Return "Desde posición actual"
+                Case RadGridStringId.SearchRowTextBoxNullText
+                    Return "Introduce texto para buscar..."
                 Case RadGridStringId.ConditionalFormattingSortAlphabetically
                     Return "Ordenar columnas alfabéticamente"
                 Case RadGridStringId.ConditionalFormattingCaption
@@ -588,6 +600,18 @@ Namespace Presentacion.LocalizationProvider
                     Return "之"
                 Case RadGridStringId.SearchRowMatchCase
                     Return "大小写匹配"
+                Case RadGridStringId.SearchRowChooseColumns
+                    Return "选择列"
+                Case RadGridStringId.SearchRowMenuItemAllColumns
+                    Return "所有"
+                Case RadGridStringId.SearchRowMenuItemChildTemplates
+                    Return "次板"
+                Case RadGridStringId.SearchRowMenuItemMasterTemplate
+                    Return "主板"
+                Case RadGridStringId.SearchRowSearchFromCurrentPosition
+                    Return "从当前位置开始"
+                Case RadGridStringId.SearchRowTextBoxNullText
+                    Return "输入文本用于查找..."
                 Case RadGridStringId.ConditionalFormattingSortAlphabetically
                     Return "列按字母顺序排列"
                 Case RadGridStringId.ConditionalFormattingCaption

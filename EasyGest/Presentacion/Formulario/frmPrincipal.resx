@@ -138,38 +138,14 @@
     <value>MiddleCenter</value>
   </data>
   <data name="btnSalir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 608</value>
+    <value>5, 659</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnSalir.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
-  <data name="btnSalir.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btnSalir.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btnSalir.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="btnSalir.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnSalir.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btnSalir.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="btnSalir.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btnSalir.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="btnSalir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 73</value>
+    <value>110, 79</value>
   </data>
   <data name="btnSalir.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -184,7 +160,7 @@
     <value>btnSalir</value>
   </data>
   <data name="&gt;&gt;btnSalir.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;btnSalir.Parent" xml:space="preserve">
     <value>ToolWindow1</value>
@@ -202,37 +178,13 @@
     <value>MiddleCenter</value>
   </data>
   <data name="btnConfiguracion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 521</value>
+    <value>5, 564</value>
   </data>
   <data name="btnConfiguracion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
-  <data name="btnConfiguracion.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btnConfiguracion.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btnConfiguracion.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="btnConfiguracion.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnConfiguracion.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btnConfiguracion.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="btnConfiguracion.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btnConfiguracion.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="btnConfiguracion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 81</value>
+    <value>110, 88</value>
   </data>
   <data name="btnConfiguracion.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -247,7 +199,7 @@
     <value>btnConfiguracion</value>
   </data>
   <data name="&gt;&gt;btnConfiguracion.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;btnConfiguracion.Parent" xml:space="preserve">
     <value>ToolWindow1</value>
@@ -265,37 +217,13 @@
     <value>MiddleCenter</value>
   </data>
   <data name="btnInforme.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 434</value>
+    <value>5, 470</value>
   </data>
   <data name="btnInforme.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
-  <data name="btnInforme.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btnInforme.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btnInforme.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="btnInforme.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnInforme.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btnInforme.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="btnInforme.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btnInforme.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="btnInforme.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 81</value>
+    <value>110, 88</value>
   </data>
   <data name="btnInforme.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -310,7 +238,7 @@
     <value>btnInforme</value>
   </data>
   <data name="&gt;&gt;btnInforme.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;btnInforme.Parent" xml:space="preserve">
     <value>ToolWindow1</value>
@@ -324,23 +252,11 @@
   <data name="sbtnPedido.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 11.25pt</value>
   </data>
-  <data name="mbtnitemPedido.AccessibleDescription" xml:space="preserve">
-    <value>Pedido</value>
-  </data>
-  <data name="mbtnitemPedido.AccessibleName" xml:space="preserve">
-    <value>Pedido</value>
-  </data>
   <data name="mbtnitemPedido.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
   <data name="mbtnitemPedido.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
-  </data>
-  <data name="mbtnitemPedido.ButtonElement.AccessibleDescription" xml:space="preserve">
-    <value>Pedido</value>
-  </data>
-  <data name="mbtnitemPedido.ButtonElement.AccessibleName" xml:space="preserve">
-    <value>Pedido</value>
   </data>
   <data name="mbtnitemPedido.ButtonElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
@@ -368,9 +284,6 @@
   </data>
   <data name="mbtnitemPedido.ButtonElement.RightToLeft" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="mbtnitemPedido.ButtonElement.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
   </data>
   <data name="mbtnitemPedido.ButtonElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
@@ -402,72 +315,41 @@
   <data name="mbtnitemPedido.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mbtnitemPedido.ButtonElement.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="mbtnitemPedido.ButtonElement.Image1" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="mbtnitemPedido.ButtonElement.ImageIndex" type="System.Int32, mscorlib">
+  <data name="mbtnitemPedido.ButtonElement.ImageIndex1" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
-  <data name="mbtnitemPedido.ButtonElement.ImageKey" xml:space="preserve">
+  <data name="mbtnitemPedido.ButtonElement.ImageKey1" xml:space="preserve">
     <value />
   </data>
-  <data name="mbtnitemPedido.ButtonElement.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="mbtnitemPedido.ButtonElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+  <data name="mbtnitemPedido.ButtonElement.TextOrientation1" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mbtnitemPedido.ButtonElement.FlipText" type="System.Boolean, mscorlib">
+  <data name="mbtnitemPedido.ButtonElement.FlipText1" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="mbtnitemPedido.ButtonElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="mbtnitemPedido.ButtonElement.Padding1" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="mbtnitemPedido.ButtonElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="mbtnitemPedido.ButtonElement.Margin1" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="mbtnitemPedido.ButtonElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="mbtnitemPedido.ButtonElement.Alignment1" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
-  <data name="mbtnitemPedido.ButtonElement.RightToLeft" type="System.Boolean, mscorlib">
+  <data name="mbtnitemPedido.ButtonElement.RightToLeft1" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="mbtnitemPedido.ButtonElement.AngleTransform" type="System.Single, mscorlib">
+  <data name="mbtnitemPedido.ButtonElement.AngleTransform1" type="System.Single, mscorlib">
     <value>0</value>
   </data>
   <data name="sbtnPedido.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 91</value>
-  </data>
-  <data name="sbtnPedido.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="sbtnPedido.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="sbtnPedido.RootElement.Alignment" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
-        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAB9TeXN0ZW0uRHJh
-        d2luZy5Db250ZW50QWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgCAAAAAAAAAAs=
-</value>
-  </data>
-  <data name="sbtnPedido.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="sbtnPedido.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="sbtnPedido.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="sbtnPedido.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="sbtnPedido.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+    <value>5, 99</value>
   </data>
   <data name="sbtnPedido.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 81</value>
+    <value>110, 88</value>
   </data>
   <data name="sbtnPedido.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -479,7 +361,7 @@
     <value>sbtnPedido</value>
   </data>
   <data name="&gt;&gt;sbtnPedido.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadSplitButton, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadSplitButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;sbtnPedido.Parent" xml:space="preserve">
     <value>ToolWindow1</value>
@@ -495,12 +377,6 @@
   </metadata>
   <data name="sbtnProducto.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 11.25pt</value>
-  </data>
-  <data name="mitemImpresionEtiqueta.AccessibleDescription" xml:space="preserve">
-    <value>Impresión Etiquetas</value>
-  </data>
-  <data name="mitemImpresionEtiqueta.AccessibleName" xml:space="preserve">
-    <value>Impresión Etiquetas</value>
   </data>
   <data name="mitemImpresionEtiqueta.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
@@ -560,23 +436,11 @@
   <data name="mitemImpresionEtiqueta.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mbtnitemProducto.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="mbtnitemProducto.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="mbtnitemProducto.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
   <data name="mbtnitemProducto.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
-  </data>
-  <data name="mbtnitemProducto.ButtonElement.AccessibleDescription" xml:space="preserve">
-    <value>Producto</value>
-  </data>
-  <data name="mbtnitemProducto.ButtonElement.AccessibleName" xml:space="preserve">
-    <value>Producto</value>
   </data>
   <data name="mbtnitemProducto.ButtonElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
@@ -604,9 +468,6 @@
   </data>
   <data name="mbtnitemProducto.ButtonElement.RightToLeft" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="mbtnitemProducto.ButtonElement.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
   </data>
   <data name="mbtnitemProducto.ButtonElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
@@ -638,72 +499,41 @@
   <data name="mbtnitemProducto.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mbtnitemProducto.ButtonElement.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="mbtnitemProducto.ButtonElement.Image1" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="mbtnitemProducto.ButtonElement.ImageIndex" type="System.Int32, mscorlib">
+  <data name="mbtnitemProducto.ButtonElement.ImageIndex1" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
-  <data name="mbtnitemProducto.ButtonElement.ImageKey" xml:space="preserve">
+  <data name="mbtnitemProducto.ButtonElement.ImageKey1" xml:space="preserve">
     <value />
   </data>
-  <data name="mbtnitemProducto.ButtonElement.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="mbtnitemProducto.ButtonElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+  <data name="mbtnitemProducto.ButtonElement.TextOrientation1" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mbtnitemProducto.ButtonElement.FlipText" type="System.Boolean, mscorlib">
+  <data name="mbtnitemProducto.ButtonElement.FlipText1" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="mbtnitemProducto.ButtonElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="mbtnitemProducto.ButtonElement.Padding1" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="mbtnitemProducto.ButtonElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="mbtnitemProducto.ButtonElement.Margin1" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="mbtnitemProducto.ButtonElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="mbtnitemProducto.ButtonElement.Alignment1" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
-  <data name="mbtnitemProducto.ButtonElement.RightToLeft" type="System.Boolean, mscorlib">
+  <data name="mbtnitemProducto.ButtonElement.RightToLeft1" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="mbtnitemProducto.ButtonElement.AngleTransform" type="System.Single, mscorlib">
+  <data name="mbtnitemProducto.ButtonElement.AngleTransform1" type="System.Single, mscorlib">
     <value>0</value>
   </data>
   <data name="sbtnProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 177</value>
-  </data>
-  <data name="sbtnProducto.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="sbtnProducto.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="sbtnProducto.RootElement.Alignment" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
-        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAB9TeXN0ZW0uRHJh
-        d2luZy5Db250ZW50QWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgCAAAAAAAAAAs=
-</value>
-  </data>
-  <data name="sbtnProducto.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="sbtnProducto.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="sbtnProducto.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="sbtnProducto.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="sbtnProducto.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+    <value>5, 192</value>
   </data>
   <data name="sbtnProducto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 81</value>
+    <value>110, 88</value>
   </data>
   <data name="sbtnProducto.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -715,7 +545,7 @@
     <value>sbtnProducto</value>
   </data>
   <data name="&gt;&gt;sbtnProducto.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadSplitButton, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadSplitButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;sbtnProducto.Parent" xml:space="preserve">
     <value>ToolWindow1</value>
@@ -731,9 +561,6 @@
   </metadata>
   <data name="sbtnVenta.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 11.25pt</value>
-  </data>
-  <data name="mitemIniciar.AccessibleDescription" xml:space="preserve">
-    <value>Iniciar Sesión</value>
   </data>
   <data name="mitemIniciar.AccessibleName" xml:space="preserve">
     <value>Iniciar Sesión</value>
@@ -771,9 +598,6 @@
   <data name="mitemIniciar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mitemCerrar.AccessibleDescription" xml:space="preserve">
-    <value>Cerrar</value>
-  </data>
   <data name="mitemCerrar.AccessibleName" xml:space="preserve">
     <value>Cerrar</value>
   </data>
@@ -810,12 +634,6 @@
   <data name="mitemCerrar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mitemVales.AccessibleDescription" xml:space="preserve">
-    <value>Vales</value>
-  </data>
-  <data name="mitemVales.AccessibleName" xml:space="preserve">
-    <value>Vales</value>
-  </data>
   <data name="mitemVales.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
@@ -849,23 +667,11 @@
   <data name="mitemVales.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mbtnitemVenta.AccessibleDescription" xml:space="preserve">
-    <value>Venta</value>
-  </data>
-  <data name="mbtnitemVenta.AccessibleName" xml:space="preserve">
-    <value>Venta</value>
-  </data>
   <data name="mbtnitemVenta.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
   <data name="mbtnitemVenta.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
-  </data>
-  <data name="mbtnitemVenta.ButtonElement.AccessibleDescription" xml:space="preserve">
-    <value>Venta</value>
-  </data>
-  <data name="mbtnitemVenta.ButtonElement.AccessibleName" xml:space="preserve">
-    <value>Venta</value>
   </data>
   <data name="mbtnitemVenta.ButtonElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
@@ -893,9 +699,6 @@
   </data>
   <data name="mbtnitemVenta.ButtonElement.RightToLeft" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="mbtnitemVenta.ButtonElement.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
   </data>
   <data name="mbtnitemVenta.ButtonElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
@@ -927,68 +730,41 @@
   <data name="mbtnitemVenta.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mbtnitemVenta.ButtonElement.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="mbtnitemVenta.ButtonElement.Image1" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="mbtnitemVenta.ButtonElement.ImageIndex" type="System.Int32, mscorlib">
+  <data name="mbtnitemVenta.ButtonElement.ImageIndex1" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
-  <data name="mbtnitemVenta.ButtonElement.ImageKey" xml:space="preserve">
+  <data name="mbtnitemVenta.ButtonElement.ImageKey1" xml:space="preserve">
     <value />
   </data>
-  <data name="mbtnitemVenta.ButtonElement.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="mbtnitemVenta.ButtonElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+  <data name="mbtnitemVenta.ButtonElement.TextOrientation1" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mbtnitemVenta.ButtonElement.FlipText" type="System.Boolean, mscorlib">
+  <data name="mbtnitemVenta.ButtonElement.FlipText1" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="mbtnitemVenta.ButtonElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="mbtnitemVenta.ButtonElement.Padding1" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="mbtnitemVenta.ButtonElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="mbtnitemVenta.ButtonElement.Margin1" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="mbtnitemVenta.ButtonElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="mbtnitemVenta.ButtonElement.Alignment1" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
-  <data name="mbtnitemVenta.ButtonElement.RightToLeft" type="System.Boolean, mscorlib">
+  <data name="mbtnitemVenta.ButtonElement.RightToLeft1" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="mbtnitemVenta.ButtonElement.AngleTransform" type="System.Single, mscorlib">
+  <data name="mbtnitemVenta.ButtonElement.AngleTransform1" type="System.Single, mscorlib">
     <value>0</value>
   </data>
   <data name="sbtnVenta.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 5</value>
   </data>
-  <data name="sbtnVenta.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="sbtnVenta.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="sbtnVenta.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="sbtnVenta.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="sbtnVenta.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="sbtnVenta.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="sbtnVenta.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="sbtnVenta.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="sbtnVenta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 81</value>
+    <value>110, 88</value>
   </data>
   <data name="sbtnVenta.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1000,7 +776,7 @@
     <value>sbtnVenta</value>
   </data>
   <data name="&gt;&gt;sbtnVenta.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadSplitButton, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadSplitButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;sbtnVenta.Parent" xml:space="preserve">
     <value>ToolWindow1</value>
@@ -1016,12 +792,6 @@
   </metadata>
   <data name="sbtnProveedor.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 11.25pt</value>
-  </data>
-  <data name="mitemContactosPro.AccessibleDescription" xml:space="preserve">
-    <value>Contactos</value>
-  </data>
-  <data name="mitemContactosPro.AccessibleName" xml:space="preserve">
-    <value>Contactos</value>
   </data>
   <data name="mitemContactosPro.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
@@ -1056,12 +826,6 @@
   <data name="mitemContactosPro.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mitemCuentasPro.AccessibleDescription" xml:space="preserve">
-    <value>Cuentas Bancarias</value>
-  </data>
-  <data name="mitemCuentasPro.AccessibleName" xml:space="preserve">
-    <value>Cuentas Bancarias</value>
-  </data>
   <data name="mitemCuentasPro.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
@@ -1094,9 +858,6 @@
   </data>
   <data name="mitemCuentasPro.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
-  </data>
-  <data name="mitemDeberes.AccessibleDescription" xml:space="preserve">
-    <value>Deberes a pagar</value>
   </data>
   <data name="mitemDeberes.AccessibleName" xml:space="preserve">
     <value>Deberes a pagar</value>
@@ -1160,23 +921,11 @@
   <data name="mitemDeberes.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mbtnitemProveedor.AccessibleDescription" xml:space="preserve">
-    <value>Proveedor</value>
-  </data>
-  <data name="mbtnitemProveedor.AccessibleName" xml:space="preserve">
-    <value>Proveedor</value>
-  </data>
   <data name="mbtnitemProveedor.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
   <data name="mbtnitemProveedor.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
-  </data>
-  <data name="mbtnitemProveedor.ButtonElement.AccessibleDescription" xml:space="preserve">
-    <value>Proveedor</value>
-  </data>
-  <data name="mbtnitemProveedor.ButtonElement.AccessibleName" xml:space="preserve">
-    <value>Proveedor</value>
   </data>
   <data name="mbtnitemProveedor.ButtonElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
@@ -1204,9 +953,6 @@
   </data>
   <data name="mbtnitemProveedor.ButtonElement.RightToLeft" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="mbtnitemProveedor.ButtonElement.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
   </data>
   <data name="mbtnitemProveedor.ButtonElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
@@ -1238,68 +984,41 @@
   <data name="mbtnitemProveedor.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mbtnitemProveedor.ButtonElement.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="mbtnitemProveedor.ButtonElement.Image1" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="mbtnitemProveedor.ButtonElement.ImageIndex" type="System.Int32, mscorlib">
+  <data name="mbtnitemProveedor.ButtonElement.ImageIndex1" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
-  <data name="mbtnitemProveedor.ButtonElement.ImageKey" xml:space="preserve">
+  <data name="mbtnitemProveedor.ButtonElement.ImageKey1" xml:space="preserve">
     <value />
   </data>
-  <data name="mbtnitemProveedor.ButtonElement.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="mbtnitemProveedor.ButtonElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+  <data name="mbtnitemProveedor.ButtonElement.TextOrientation1" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mbtnitemProveedor.ButtonElement.FlipText" type="System.Boolean, mscorlib">
+  <data name="mbtnitemProveedor.ButtonElement.FlipText1" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="mbtnitemProveedor.ButtonElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="mbtnitemProveedor.ButtonElement.Padding1" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="mbtnitemProveedor.ButtonElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="mbtnitemProveedor.ButtonElement.Margin1" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="mbtnitemProveedor.ButtonElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="mbtnitemProveedor.ButtonElement.Alignment1" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
-  <data name="mbtnitemProveedor.ButtonElement.RightToLeft" type="System.Boolean, mscorlib">
+  <data name="mbtnitemProveedor.ButtonElement.RightToLeft1" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="mbtnitemProveedor.ButtonElement.AngleTransform" type="System.Single, mscorlib">
+  <data name="mbtnitemProveedor.ButtonElement.AngleTransform1" type="System.Single, mscorlib">
     <value>0</value>
   </data>
   <data name="sbtnProveedor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 346</value>
-  </data>
-  <data name="sbtnProveedor.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="sbtnProveedor.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="sbtnProveedor.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="sbtnProveedor.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="sbtnProveedor.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="sbtnProveedor.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="sbtnProveedor.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="sbtnProveedor.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+    <value>5, 375</value>
   </data>
   <data name="sbtnProveedor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 81</value>
+    <value>110, 88</value>
   </data>
   <data name="sbtnProveedor.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1311,7 +1030,7 @@
     <value>sbtnProveedor</value>
   </data>
   <data name="&gt;&gt;sbtnProveedor.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadSplitButton, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadSplitButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;sbtnProveedor.Parent" xml:space="preserve">
     <value>ToolWindow1</value>
@@ -1327,12 +1046,6 @@
   </metadata>
   <data name="sbtnCliente.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 11.25pt</value>
-  </data>
-  <data name="mitemContactosCli.AccessibleDescription" xml:space="preserve">
-    <value>Contactos</value>
-  </data>
-  <data name="mitemContactosCli.AccessibleName" xml:space="preserve">
-    <value>Contactos</value>
   </data>
   <data name="mitemContactosCli.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
@@ -1367,12 +1080,6 @@
   <data name="mitemContactosCli.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mitemCuentasCli.AccessibleDescription" xml:space="preserve">
-    <value>Cuentas Bancarias</value>
-  </data>
-  <data name="mitemCuentasCli.AccessibleName" xml:space="preserve">
-    <value>Cuentas Bancarias</value>
-  </data>
   <data name="mitemCuentasCli.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
@@ -1405,9 +1112,6 @@
   </data>
   <data name="mitemCuentasCli.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
-  </data>
-  <data name="mitemTarjetas.AccessibleDescription" xml:space="preserve">
-    <value>Tarjetas</value>
   </data>
   <data name="mitemTarjetas.AccessibleName" xml:space="preserve">
     <value>Tarjetas</value>
@@ -1445,9 +1149,6 @@
   <data name="mitemTarjetas.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mitemHaberes.AccessibleDescription" xml:space="preserve">
-    <value>Haberes a cobrar</value>
-  </data>
   <data name="mitemHaberes.AccessibleName" xml:space="preserve">
     <value>Haberes a cobrar</value>
   </data>
@@ -1484,23 +1185,11 @@
   <data name="mitemHaberes.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mbtnitemCliente.AccessibleDescription" xml:space="preserve">
-    <value>Cliente</value>
-  </data>
-  <data name="mbtnitemCliente.AccessibleName" xml:space="preserve">
-    <value>Cliente</value>
-  </data>
   <data name="mbtnitemCliente.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
   <data name="mbtnitemCliente.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
-  </data>
-  <data name="mbtnitemCliente.ButtonElement.AccessibleDescription" xml:space="preserve">
-    <value>Cliente</value>
-  </data>
-  <data name="mbtnitemCliente.ButtonElement.AccessibleName" xml:space="preserve">
-    <value>Cliente</value>
   </data>
   <data name="mbtnitemCliente.ButtonElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
@@ -1528,9 +1217,6 @@
   </data>
   <data name="mbtnitemCliente.ButtonElement.RightToLeft" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="mbtnitemCliente.ButtonElement.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
   </data>
   <data name="mbtnitemCliente.ButtonElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
@@ -1562,68 +1248,41 @@
   <data name="mbtnitemCliente.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mbtnitemCliente.ButtonElement.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="mbtnitemCliente.ButtonElement.Image1" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="mbtnitemCliente.ButtonElement.ImageIndex" type="System.Int32, mscorlib">
+  <data name="mbtnitemCliente.ButtonElement.ImageIndex1" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
-  <data name="mbtnitemCliente.ButtonElement.ImageKey" xml:space="preserve">
+  <data name="mbtnitemCliente.ButtonElement.ImageKey1" xml:space="preserve">
     <value />
   </data>
-  <data name="mbtnitemCliente.ButtonElement.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="mbtnitemCliente.ButtonElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+  <data name="mbtnitemCliente.ButtonElement.TextOrientation1" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="mbtnitemCliente.ButtonElement.FlipText" type="System.Boolean, mscorlib">
+  <data name="mbtnitemCliente.ButtonElement.FlipText1" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="mbtnitemCliente.ButtonElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="mbtnitemCliente.ButtonElement.Padding1" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="mbtnitemCliente.ButtonElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="mbtnitemCliente.ButtonElement.Margin1" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="mbtnitemCliente.ButtonElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="mbtnitemCliente.ButtonElement.Alignment1" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
-  <data name="mbtnitemCliente.ButtonElement.RightToLeft" type="System.Boolean, mscorlib">
+  <data name="mbtnitemCliente.ButtonElement.RightToLeft1" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="mbtnitemCliente.ButtonElement.AngleTransform" type="System.Single, mscorlib">
+  <data name="mbtnitemCliente.ButtonElement.AngleTransform1" type="System.Single, mscorlib">
     <value>0</value>
   </data>
   <data name="sbtnCliente.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 262</value>
-  </data>
-  <data name="sbtnCliente.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="sbtnCliente.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="sbtnCliente.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="sbtnCliente.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="sbtnCliente.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="sbtnCliente.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="sbtnCliente.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="sbtnCliente.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+    <value>5, 284</value>
   </data>
   <data name="sbtnCliente.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 81</value>
+    <value>110, 88</value>
   </data>
   <data name="sbtnCliente.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -1635,7 +1294,7 @@
     <value>sbtnCliente</value>
   </data>
   <data name="&gt;&gt;sbtnCliente.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadSplitButton, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadSplitButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;sbtnCliente.Parent" xml:space="preserve">
     <value>ToolWindow1</value>
@@ -1646,11 +1305,14 @@
   <data name="resource.Text4" xml:space="preserve">
     <value>Cliente</value>
   </data>
+  <data name="ToolWindow1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
   <data name="ToolWindow1.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 26</value>
   </data>
   <data name="ToolWindow1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 513</value>
+    <value>145, 569</value>
   </data>
   <data name="ToolWindow1.Text" xml:space="preserve">
     <value>B. Herramienta</value>
@@ -1659,7 +1321,7 @@
     <value>ToolWindow1</value>
   </data>
   <data name="&gt;&gt;ToolWindow1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.ToolWindow, Telerik.WinControls.RadDock, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.ToolWindow, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;ToolWindow1.Parent" xml:space="preserve">
     <value>ToolTabStrip1</value>
@@ -1673,32 +1335,8 @@
   <data name="ToolTabStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
-  <data name="ToolTabStrip1.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ToolTabStrip1.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ToolTabStrip1.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="ToolTabStrip1.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ToolTabStrip1.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="ToolTabStrip1.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="ToolTabStrip1.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ToolTabStrip1.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="ToolTabStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 541</value>
+    <value>147, 597</value>
   </data>
   <data name="ToolTabStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1707,7 +1345,7 @@
     <value>ToolTabStrip1</value>
   </data>
   <data name="&gt;&gt;ToolTabStrip1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.ToolTabStrip, Telerik.WinControls.RadDock, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.ToolTabStrip, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;ToolTabStrip1.Parent" xml:space="preserve">
     <value>dokPrincipal</value>
@@ -1724,30 +1362,6 @@
   <data name="doccPrincipal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
   </data>
-  <data name="doccPrincipal.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="doccPrincipal.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="doccPrincipal.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="doccPrincipal.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="doccPrincipal.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="doccPrincipal.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="doccPrincipal.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="doccPrincipal.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="doccPrincipal.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -1755,7 +1369,7 @@
     <value>doccPrincipal</value>
   </data>
   <data name="&gt;&gt;doccPrincipal.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.DocumentContainer, Telerik.WinControls.RadDock, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.DocumentContainer, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;doccPrincipal.Parent" xml:space="preserve">
     <value>dokPrincipal</value>
@@ -1769,38 +1383,17 @@
   <data name="dokPrincipal.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="dokPrincipal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
   <data name="dokPrincipal.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="dokPrincipal.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="dokPrincipal.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="dokPrincipal.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="dokPrincipal.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="dokPrincipal.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="dokPrincipal.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="dokPrincipal.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="dokPrincipal.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="dokPrincipal.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="dokPrincipal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>916, 547</value>
+    <value>916, 603</value>
   </data>
   <data name="dokPrincipal.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1812,7 +1405,7 @@
     <value>dokPrincipal</value>
   </data>
   <data name="&gt;&gt;dokPrincipal.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.RadDock, Telerik.WinControls.RadDock, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.RadDock, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;dokPrincipal.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2010,34 +1603,10 @@
     <value />
   </data>
   <data name="sttEstado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 547</value>
-  </data>
-  <data name="sttEstado.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="sttEstado.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="sttEstado.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="sttEstado.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="sttEstado.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="sttEstado.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="sttEstado.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="sttEstado.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+    <value>0, 603</value>
   </data>
   <data name="sttEstado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>916, 24</value>
+    <value>916, 26</value>
   </data>
   <data name="sttEstado.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2049,7 +1618,7 @@
     <value>sttEstado</value>
   </data>
   <data name="&gt;&gt;sttEstado.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadStatusStrip, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadStatusStrip, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;sttEstado.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2066,40 +1635,6 @@
   <metadata name="alertTarea.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>541, 9</value>
   </metadata>
-  <data name="alertTarea.ContentImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6
-        JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAACXBIWXMAAC4iAAAuIgGq4t2SAAAGbUlE
-        QVRIS7WUW1DT2R3Hz/a27VMv04e2O+12Ojvb2T70pdPudnb2Zbe7bXWr7i43wyWSTUAgQgBRF+WaC4GQ
-        GBNCIAYhISEEkhAwQDBAkJsSgaKuuha8IYoKcifIJXx78ndgRNuZvvThM+f8zvmf3/d3OedPqqxuBnWF
-        g3h7BxmGr3yTG5cmEnCSMklX39BPPF2+6x/u477BTjxO3J39P/N4fTc/3Mt982B6PunzjXz/4uDXF8I4
-        R3a9+1EI2RORQlicLMKOzyMf7E0hRJCtZQiPyydFKiOprGl6y9nct5FfWLURxct429XWX6bU2sBJzGk6
-        misnrR0D9aryBvBSRJ7wA8mkxdMv1BlakFNwZu69j0J+/nnk4f8uwE7IJ+KTBu6xPPWkIPOkL5KXkWis
-        71z8+xdc/QnJ6UBU/LE3rU19gV1f8ExipRl79yf9yuTomgg/kO6Wqqz+PRH8A9T5Dyg/ogKv7xDYnyDm
-        spMknixp1b8yxbrZA3zRBDtJPF5lO4+YhLxxbkoBYg9JJmpdPkQfzJnmCSTgHJIsVNq6EcsXrsenF27y
-        BNIAT1AUZDMxQzH9/p6Ud4lUa2cQquvvCUvqIVRZIaMlyJKbELSLdY1Iz9VAVGJDjtICrbkdqdlqZk9I
-        105WuLb3n689J0dpxSeh/K+IvsYT5Ds1zRfWKTA4u5kDufJKBG2xyoy0HDUqbJ2MnVNchSPCMujrOxhb
-        qDQhW2aE8oyTsbcor/MilJ3sJQq9I8ivTxkboapuQnAUlZggLq2Bks4VlQ4kZhZBUdUApcEJSZkFsYI8
-        FFfYGLtAa0F0UhayFBWMvcUxuQHh0YntJC1HG+S9UrMLujo3CjS1kJZZIT/jgExvQwGdCzU1SMg8heOK
-        Shwt0iNNUg5+ngYJ2SrEHilGzOEiRKVLEZEiRmiyCCH8fHzMPoawqPhOIiysJnlS477F1TWsbAIDQzfx
-        eGaRmb+Ig5bu2UtrQfvCpesYuzvJzFeZtU0sr29AojIhhsNvI8KiaiJVWFKfzi8hKNLRNQw//SB44EWH
-        ja6+Hc63cHsu4dHMwo614LmvxDqwOXw3k8GpUofmgu86vN0jKCl1oPWcD83ui3C19KPpbC/szvOQndCg
-        Vu9AjZU2t6EHztYBtHUOQa2xY/jyGO4+mMbU3BL8GwGsBjZxvEAPdiy/lYiKTMRg8TRsqbe1X9oRORMR
-        PeD528fAW68h8PZ3sfz7H+LxH36B0fd/i9OsOCYQk7kNpdoGyOQWyBQW5CuMiGYnnmUyqLV7+7ecnaMp
-        v+g8yLx/FedD/gT8lbxC0yHeKwE9XVqB8rQdUTEJLSS/0Ei0usY7VpsX9fYupkRDNOX7kzNYfLZOowcm
-        Hs/icuo7wGHq9CUa5bm0LNjBxNQ8NPRdREbHNwYz+PalkdGV5fUAZqiykaY6fPU2uvu/Zhrocg/AaGpD
-        jaoQrepUtEhZcOf9BT3CP+KK7HfQKdWYeDKHOf8aljfoDaKMPZyCpqKBCsQ1BW/Rb7659QDzqxuYXlyB
-        82wfM3+RnovXMP5ols4DWFwLYIFmdo9mODgyBpHEAJuzBwbzOVRV00DoJbA190FvagYriucMlmh3M43y
-        8o17DB30Js1SBzMra5TguA4nbeIUFd+ytxinkRtrPK+sd/iuwezoxP5Iro3kFhgyRscfY+jaHRgtHlRW
-        u2lE3TDVtuN0ZTMstDcyRS1u3JnE1PIzTNOGP1l6xnB19AHqGrq37S3sngFYXT00A66dHMpQ6oZHx3GL
-        NrKlYwi3H81gcsGPR4t+TM4v4+b9J1Co6uneICx2L8x1Haim4gYauVrrgIb+bfv/OUq/m3p+jvZRV+uG
-        o+0iWJFf1pF9rCM/jfgyS5twVNF7ME3+tKT6LJxdg+i9OoaR2w9we2oOZWdcuE8f0TazS3g472cCctLy
-        NtGHWUl7QB8s1OVOCE+Z4fIO0xJxasmnYWlkd2gqM+4KEbxGxx/T8c97WRn8/bxsEy+96EpCmtyvpsL2
-        Th96qPBlWq6gsLWxB1duPcTdpwvb3KP/sVxlNZz0wbIi2dqXBbbHf4Snb+/tDkv91qdhqb+k6598FnU0
-        OepgXnlcRvFQnEC2pqLCDppx+9ANDI7ex1Xaz+Qs9VKSIH93aEjI9/5XATpP/U/7r9P9dyifh7AzT8Qk
-        iUwcgbR3T8Rh7mesNEIFCH2O+D8C8m/6rCq312arAwAAAABJRU5ErkJggg==
-</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -2110,10 +1645,10 @@
     <value>37</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>916, 571</value>
+    <value>916, 629</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 11.25pt</value>
@@ -4759,30 +4294,6 @@
         //8=
 </value>
   </data>
-  <data name="frmPrincipal.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="frmPrincipal.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="frmPrincipal.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="frmPrincipal.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="frmPrincipal.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="frmPrincipal.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="frmPrincipal.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="frmPrincipal.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
@@ -4793,168 +4304,168 @@
     <value>mbtnitemPedido</value>
   </data>
   <data name="&gt;&gt;mbtnitemPedido.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuButtonItem, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuButtonItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;mitemImpresionEtiqueta.Name" xml:space="preserve">
     <value>mitemImpresionEtiqueta</value>
   </data>
   <data name="&gt;&gt;mitemImpresionEtiqueta.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;mbtnitemProducto.Name" xml:space="preserve">
     <value>mbtnitemProducto</value>
   </data>
   <data name="&gt;&gt;mbtnitemProducto.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuButtonItem, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuButtonItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;mitemIniciar.Name" xml:space="preserve">
     <value>mitemIniciar</value>
   </data>
   <data name="&gt;&gt;mitemIniciar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;mitemCerrar.Name" xml:space="preserve">
     <value>mitemCerrar</value>
   </data>
   <data name="&gt;&gt;mitemCerrar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;mitemVales.Name" xml:space="preserve">
     <value>mitemVales</value>
   </data>
   <data name="&gt;&gt;mitemVales.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;mbtnitemVenta.Name" xml:space="preserve">
     <value>mbtnitemVenta</value>
   </data>
   <data name="&gt;&gt;mbtnitemVenta.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuButtonItem, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuButtonItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;mitemContactosPro.Name" xml:space="preserve">
     <value>mitemContactosPro</value>
   </data>
   <data name="&gt;&gt;mitemContactosPro.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;mitemCuentasPro.Name" xml:space="preserve">
     <value>mitemCuentasPro</value>
   </data>
   <data name="&gt;&gt;mitemCuentasPro.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;mitemDeberes.Name" xml:space="preserve">
     <value>mitemDeberes</value>
   </data>
   <data name="&gt;&gt;mitemDeberes.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;mbtnitemProveedor.Name" xml:space="preserve">
     <value>mbtnitemProveedor</value>
   </data>
   <data name="&gt;&gt;mbtnitemProveedor.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuButtonItem, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuButtonItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;mitemContactosCli.Name" xml:space="preserve">
     <value>mitemContactosCli</value>
   </data>
   <data name="&gt;&gt;mitemContactosCli.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;mitemCuentasCli.Name" xml:space="preserve">
     <value>mitemCuentasCli</value>
   </data>
   <data name="&gt;&gt;mitemCuentasCli.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;mitemTarjetas.Name" xml:space="preserve">
     <value>mitemTarjetas</value>
   </data>
   <data name="&gt;&gt;mitemTarjetas.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;mitemHaberes.Name" xml:space="preserve">
     <value>mitemHaberes</value>
   </data>
   <data name="&gt;&gt;mitemHaberes.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;mbtnitemCliente.Name" xml:space="preserve">
     <value>mbtnitemCliente</value>
   </data>
   <data name="&gt;&gt;mbtnitemCliente.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuButtonItem, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuButtonItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;RoundRectShape1.Name" xml:space="preserve">
     <value>RoundRectShape1</value>
   </data>
   <data name="&gt;&gt;RoundRectShape1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.RoundRectShape, Telerik.WinControls, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.RoundRectShape, Telerik.WinControls, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;lbleHoraInicio.Name" xml:space="preserve">
     <value>lbleHoraInicio</value>
   </data>
   <data name="&gt;&gt;lbleHoraInicio.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabelElement, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabelElement, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;lbleHoraApertura.Name" xml:space="preserve">
     <value>lbleHoraApertura</value>
   </data>
   <data name="&gt;&gt;lbleHoraApertura.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabelElement, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabelElement, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;lbleEmpresa.Name" xml:space="preserve">
     <value>lbleEmpresa</value>
   </data>
   <data name="&gt;&gt;lbleEmpresa.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabelElement, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabelElement, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;lblePuesto.Name" xml:space="preserve">
     <value>lblePuesto</value>
   </data>
   <data name="&gt;&gt;lblePuesto.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabelElement, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabelElement, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;lbleUsuario.Name" xml:space="preserve">
     <value>lbleUsuario</value>
   </data>
   <data name="&gt;&gt;lbleUsuario.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabelElement, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabelElement, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;lbleVersion.Name" xml:space="preserve">
     <value>lbleVersion</value>
   </data>
   <data name="&gt;&gt;lbleVersion.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabelElement, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabelElement, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;RadStatusBarPanelElement1.Name" xml:space="preserve">
     <value>RadStatusBarPanelElement1</value>
   </data>
   <data name="&gt;&gt;RadStatusBarPanelElement1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadStatusBarPanelElement, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadStatusBarPanelElement, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;RadThemeManager1.Name" xml:space="preserve">
     <value>RadThemeManager1</value>
   </data>
   <data name="&gt;&gt;RadThemeManager1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.RadThemeManager, Telerik.WinControls, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.RadThemeManager, Telerik.WinControls, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;menuPrincipal.Name" xml:space="preserve">
     <value>menuPrincipal</value>
   </data>
   <data name="&gt;&gt;menuPrincipal.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadContextMenu, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadContextMenu, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;alertTarea.Name" xml:space="preserve">
     <value>alertTarea</value>
   </data>
   <data name="&gt;&gt;alertTarea.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadDesktopAlert, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadDesktopAlert, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmPrincipal</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
 </root>

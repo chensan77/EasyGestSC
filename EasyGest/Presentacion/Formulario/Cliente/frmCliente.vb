@@ -37,19 +37,21 @@ Namespace Presentacion.Formulario.Cliente
             PrepararControles(pvpDetalle.Controls)
             PrepararControles(pvpOtro.Controls)
             PrepararControles(SplitPanel1.Controls)
-        End Sub
-
-#Region "Evento Form"
-
-        Private Sub frmCliente_Load(sender As Object, e As System.EventArgs) Handles Me.Load
             ConfigurarBarraBusqueda()
             ConfigurarBarraOrden()
             ConfigurarPaginacion()
             ConfigurarCommandBar(Me.cbstripeAccion)
             ConfigurarCommandBar(Me.cbstripeOrden)
             ConfigurarCommandBar(Me.cbstripeBusqueda)
+        End Sub
+
+#Region "Evento Form"
+
+        Private Sub frmCliente_Load(sender As Object, e As System.EventArgs) Handles Me.Load
             pvInfo.SelectedPage = pvpDetalle
             chkeNoActivos.ToggleState = Telerik.WinControls.Enumerations.ToggleState.Off
+            chkeNoActivos.Font = gDefaultFont
+            chkePaginar.Font = gDefaultFont
             lbleDiagnostico.Text = ""
             lblAplicarImpInd.Text = String.Format(lblAplicarImpInd.Text, gConfGlobal.NombreImpuesto)
             AddHandler chkePaginar.ToggleStateChanged, AddressOf chkePaginar_ToggleStateChanged

@@ -27,6 +27,7 @@ Namespace Presentacion.Formulario.Cliente
             ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
             If idCliente = -1 Then
                 _cliente = ClientesController.NewItem()
+
             Else
                 Using control As New ClientesController
                     _cliente = control.GetItem(idCliente)

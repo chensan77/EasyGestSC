@@ -69,15 +69,8 @@
             '
             '
             '
-            RadLabel1.RootElement.AccessibleDescription = resources.GetString("RadLabel1.RootElement.AccessibleDescription")
-            RadLabel1.RootElement.AccessibleName = resources.GetString("RadLabel1.RootElement.AccessibleName")
-            RadLabel1.RootElement.Alignment = CType(resources.GetObject("RadLabel1.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            RadLabel1.RootElement.AngleTransform = CType(resources.GetObject("RadLabel1.RootElement.AngleTransform"), Single)
-            RadLabel1.RootElement.FlipText = CType(resources.GetObject("RadLabel1.RootElement.FlipText"), Boolean)
-            RadLabel1.RootElement.Margin = CType(resources.GetObject("RadLabel1.RootElement.Margin"), System.Windows.Forms.Padding)
-            RadLabel1.RootElement.Padding = CType(resources.GetObject("RadLabel1.RootElement.Padding"), System.Windows.Forms.Padding)
-            RadLabel1.RootElement.Text = resources.GetString("RadLabel1.RootElement.Text")
-            RadLabel1.RootElement.TextOrientation = CType(resources.GetObject("RadLabel1.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
+            RadLabel1.RootElement.AccessibleDescription = Nothing
+            RadLabel1.RootElement.AccessibleName = Nothing
             '
             'RadLabel4
             '
@@ -87,15 +80,8 @@
             '
             '
             '
-            RadLabel4.RootElement.AccessibleDescription = resources.GetString("RadLabel4.RootElement.AccessibleDescription")
-            RadLabel4.RootElement.AccessibleName = resources.GetString("RadLabel4.RootElement.AccessibleName")
-            RadLabel4.RootElement.Alignment = CType(resources.GetObject("RadLabel4.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            RadLabel4.RootElement.AngleTransform = CType(resources.GetObject("RadLabel4.RootElement.AngleTransform"), Single)
-            RadLabel4.RootElement.FlipText = CType(resources.GetObject("RadLabel4.RootElement.FlipText"), Boolean)
-            RadLabel4.RootElement.Margin = CType(resources.GetObject("RadLabel4.RootElement.Margin"), System.Windows.Forms.Padding)
-            RadLabel4.RootElement.Padding = CType(resources.GetObject("RadLabel4.RootElement.Padding"), System.Windows.Forms.Padding)
-            RadLabel4.RootElement.Text = resources.GetString("RadLabel4.RootElement.Text")
-            RadLabel4.RootElement.TextOrientation = CType(resources.GetObject("RadLabel4.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
+            RadLabel4.RootElement.AccessibleDescription = Nothing
+            RadLabel4.RootElement.AccessibleName = Nothing
             '
             'RadLabel18
             '
@@ -105,15 +91,8 @@
             '
             '
             '
-            RadLabel18.RootElement.AccessibleDescription = resources.GetString("RadLabel18.RootElement.AccessibleDescription")
-            RadLabel18.RootElement.AccessibleName = resources.GetString("RadLabel18.RootElement.AccessibleName")
-            RadLabel18.RootElement.Alignment = CType(resources.GetObject("RadLabel18.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            RadLabel18.RootElement.AngleTransform = CType(resources.GetObject("RadLabel18.RootElement.AngleTransform"), Single)
-            RadLabel18.RootElement.FlipText = CType(resources.GetObject("RadLabel18.RootElement.FlipText"), Boolean)
-            RadLabel18.RootElement.Margin = CType(resources.GetObject("RadLabel18.RootElement.Margin"), System.Windows.Forms.Padding)
-            RadLabel18.RootElement.Padding = CType(resources.GetObject("RadLabel18.RootElement.Padding"), System.Windows.Forms.Padding)
-            RadLabel18.RootElement.Text = resources.GetString("RadLabel18.RootElement.Text")
-            RadLabel18.RootElement.TextOrientation = CType(resources.GetObject("RadLabel18.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
+            RadLabel18.RootElement.AccessibleDescription = Nothing
+            RadLabel18.RootElement.AccessibleName = Nothing
             '
             'btnCancelar
             '
@@ -124,15 +103,8 @@
             '
             '
             '
-            Me.btnCancelar.RootElement.AccessibleDescription = resources.GetString("btnCancelar.RootElement.AccessibleDescription")
-            Me.btnCancelar.RootElement.AccessibleName = resources.GetString("btnCancelar.RootElement.AccessibleName")
-            Me.btnCancelar.RootElement.Alignment = CType(resources.GetObject("btnCancelar.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.btnCancelar.RootElement.AngleTransform = CType(resources.GetObject("btnCancelar.RootElement.AngleTransform"), Single)
-            Me.btnCancelar.RootElement.FlipText = CType(resources.GetObject("btnCancelar.RootElement.FlipText"), Boolean)
-            Me.btnCancelar.RootElement.Margin = CType(resources.GetObject("btnCancelar.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.btnCancelar.RootElement.Padding = CType(resources.GetObject("btnCancelar.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.btnCancelar.RootElement.Text = resources.GetString("btnCancelar.RootElement.Text")
-            Me.btnCancelar.RootElement.TextOrientation = CType(resources.GetObject("btnCancelar.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
+            Me.btnCancelar.RootElement.AccessibleDescription = Nothing
+            Me.btnCancelar.RootElement.AccessibleName = Nothing
             CType(Me.btnCancelar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).Image = Global.EasyGest.My.Resources.Resources.cancel
             CType(Me.btnCancelar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
             CType(Me.btnCancelar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
@@ -148,15 +120,8 @@
             '
             '
             '
-            Me.btnAceptar.RootElement.AccessibleDescription = resources.GetString("btnAceptar.RootElement.AccessibleDescription")
-            Me.btnAceptar.RootElement.AccessibleName = resources.GetString("btnAceptar.RootElement.AccessibleName")
-            Me.btnAceptar.RootElement.Alignment = CType(resources.GetObject("btnAceptar.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.btnAceptar.RootElement.AngleTransform = CType(resources.GetObject("btnAceptar.RootElement.AngleTransform"), Single)
-            Me.btnAceptar.RootElement.FlipText = CType(resources.GetObject("btnAceptar.RootElement.FlipText"), Boolean)
-            Me.btnAceptar.RootElement.Margin = CType(resources.GetObject("btnAceptar.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.btnAceptar.RootElement.Padding = CType(resources.GetObject("btnAceptar.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.btnAceptar.RootElement.Text = resources.GetString("btnAceptar.RootElement.Text")
-            Me.btnAceptar.RootElement.TextOrientation = CType(resources.GetObject("btnAceptar.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
+            Me.btnAceptar.RootElement.AccessibleDescription = Nothing
+            Me.btnAceptar.RootElement.AccessibleName = Nothing
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).Image = Global.EasyGest.My.Resources.Resources.accept
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
@@ -172,15 +137,8 @@
             '
             '
             '
-            Me.txtContacto.RootElement.AccessibleDescription = resources.GetString("txtContacto.RootElement.AccessibleDescription")
-            Me.txtContacto.RootElement.AccessibleName = resources.GetString("txtContacto.RootElement.AccessibleName")
-            Me.txtContacto.RootElement.Alignment = CType(resources.GetObject("txtContacto.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.txtContacto.RootElement.AngleTransform = CType(resources.GetObject("txtContacto.RootElement.AngleTransform"), Single)
-            Me.txtContacto.RootElement.FlipText = CType(resources.GetObject("txtContacto.RootElement.FlipText"), Boolean)
-            Me.txtContacto.RootElement.Margin = CType(resources.GetObject("txtContacto.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.txtContacto.RootElement.Padding = CType(resources.GetObject("txtContacto.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.txtContacto.RootElement.Text = resources.GetString("txtContacto.RootElement.Text")
-            Me.txtContacto.RootElement.TextOrientation = CType(resources.GetObject("txtContacto.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
+            Me.txtContacto.RootElement.AccessibleDescription = Nothing
+            Me.txtContacto.RootElement.AccessibleName = Nothing
             Me.txtContacto.TabStop = False
             Me.txtContacto.Tag = ""
             CType(Me.txtContacto.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).Text = resources.GetString("resource.Text2")
@@ -208,16 +166,9 @@
             '
             '
             '
-            Me.txtObservacion.RootElement.AccessibleDescription = resources.GetString("txtObservacion.RootElement.AccessibleDescription")
-            Me.txtObservacion.RootElement.AccessibleName = resources.GetString("txtObservacion.RootElement.AccessibleName")
-            Me.txtObservacion.RootElement.Alignment = CType(resources.GetObject("txtObservacion.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.txtObservacion.RootElement.AngleTransform = CType(resources.GetObject("txtObservacion.RootElement.AngleTransform"), Single)
+            Me.txtObservacion.RootElement.AccessibleDescription = Nothing
+            Me.txtObservacion.RootElement.AccessibleName = Nothing
             Me.txtObservacion.RootElement.ApplyShapeToControl = False
-            Me.txtObservacion.RootElement.FlipText = CType(resources.GetObject("txtObservacion.RootElement.FlipText"), Boolean)
-            Me.txtObservacion.RootElement.Margin = CType(resources.GetObject("txtObservacion.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.txtObservacion.RootElement.Padding = CType(resources.GetObject("txtObservacion.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.txtObservacion.RootElement.Text = resources.GetString("txtObservacion.RootElement.Text")
-            Me.txtObservacion.RootElement.TextOrientation = CType(resources.GetObject("txtObservacion.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
             Me.txtObservacion.TabStop = False
             Me.txtObservacion.Tag = ""
             CType(Me.txtObservacion.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).Text = resources.GetString("resource.Text3")
@@ -237,15 +188,8 @@
             '
             '
             '
-            Me.lblCliPro.RootElement.AccessibleDescription = resources.GetString("lblCliPro.RootElement.AccessibleDescription")
-            Me.lblCliPro.RootElement.AccessibleName = resources.GetString("lblCliPro.RootElement.AccessibleName")
-            Me.lblCliPro.RootElement.Alignment = CType(resources.GetObject("lblCliPro.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.lblCliPro.RootElement.AngleTransform = CType(resources.GetObject("lblCliPro.RootElement.AngleTransform"), Single)
-            Me.lblCliPro.RootElement.FlipText = CType(resources.GetObject("lblCliPro.RootElement.FlipText"), Boolean)
-            Me.lblCliPro.RootElement.Margin = CType(resources.GetObject("lblCliPro.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.lblCliPro.RootElement.Padding = CType(resources.GetObject("lblCliPro.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.lblCliPro.RootElement.Text = resources.GetString("lblCliPro.RootElement.Text")
-            Me.lblCliPro.RootElement.TextOrientation = CType(resources.GetObject("lblCliPro.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
+            Me.lblCliPro.RootElement.AccessibleDescription = Nothing
+            Me.lblCliPro.RootElement.AccessibleName = Nothing
             '
             'txtPropietario
             '
@@ -257,15 +201,8 @@
             '
             '
             '
-            Me.txtPropietario.RootElement.AccessibleDescription = resources.GetString("txtPropietario.RootElement.AccessibleDescription")
-            Me.txtPropietario.RootElement.AccessibleName = resources.GetString("txtPropietario.RootElement.AccessibleName")
-            Me.txtPropietario.RootElement.Alignment = CType(resources.GetObject("txtPropietario.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.txtPropietario.RootElement.AngleTransform = CType(resources.GetObject("txtPropietario.RootElement.AngleTransform"), Single)
-            Me.txtPropietario.RootElement.FlipText = CType(resources.GetObject("txtPropietario.RootElement.FlipText"), Boolean)
-            Me.txtPropietario.RootElement.Margin = CType(resources.GetObject("txtPropietario.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.txtPropietario.RootElement.Padding = CType(resources.GetObject("txtPropietario.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.txtPropietario.RootElement.Text = resources.GetString("txtPropietario.RootElement.Text")
-            Me.txtPropietario.RootElement.TextOrientation = CType(resources.GetObject("txtPropietario.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
+            Me.txtPropietario.RootElement.AccessibleDescription = Nothing
+            Me.txtPropietario.RootElement.AccessibleName = Nothing
             Me.txtPropietario.TabStop = False
             Me.txtPropietario.Tag = ""
             CType(Me.txtPropietario.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).Text = resources.GetString("resource.Text4")
@@ -293,15 +230,8 @@
             '
             '
             '
-            Me.ddlPropietario.RootElement.AccessibleDescription = resources.GetString("ddlPropietario.RootElement.AccessibleDescription")
-            Me.ddlPropietario.RootElement.AccessibleName = resources.GetString("ddlPropietario.RootElement.AccessibleName")
-            Me.ddlPropietario.RootElement.Alignment = CType(resources.GetObject("ddlPropietario.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.ddlPropietario.RootElement.AngleTransform = CType(resources.GetObject("ddlPropietario.RootElement.AngleTransform"), Single)
-            Me.ddlPropietario.RootElement.FlipText = CType(resources.GetObject("ddlPropietario.RootElement.FlipText"), Boolean)
-            Me.ddlPropietario.RootElement.Margin = CType(resources.GetObject("ddlPropietario.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.ddlPropietario.RootElement.Padding = CType(resources.GetObject("ddlPropietario.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.ddlPropietario.RootElement.Text = resources.GetString("ddlPropietario.RootElement.Text")
-            Me.ddlPropietario.RootElement.TextOrientation = CType(resources.GetObject("ddlPropietario.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
+            Me.ddlPropietario.RootElement.AccessibleDescription = Nothing
+            Me.ddlPropietario.RootElement.AccessibleName = Nothing
             Me.ddlPropietario.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending
             Me.ddlPropietario.ValueMember = "idCliente"
             CType(Me.ddlPropietario.GetChildAt(0), Telerik.WinControls.UI.RadDropDownListElement).DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
@@ -328,16 +258,9 @@
             '
             '
             '
-            Me.ddlFormaContacto.RootElement.AccessibleDescription = resources.GetString("ddlFormaContacto.RootElement.AccessibleDescription")
-            Me.ddlFormaContacto.RootElement.AccessibleName = resources.GetString("ddlFormaContacto.RootElement.AccessibleName")
-            Me.ddlFormaContacto.RootElement.Alignment = CType(resources.GetObject("ddlFormaContacto.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.ddlFormaContacto.RootElement.AngleTransform = CType(resources.GetObject("ddlFormaContacto.RootElement.AngleTransform"), Single)
-            Me.ddlFormaContacto.RootElement.FlipText = CType(resources.GetObject("ddlFormaContacto.RootElement.FlipText"), Boolean)
-            Me.ddlFormaContacto.RootElement.Margin = CType(resources.GetObject("ddlFormaContacto.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.ddlFormaContacto.RootElement.Padding = CType(resources.GetObject("ddlFormaContacto.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.ddlFormaContacto.RootElement.Text = resources.GetString("ddlFormaContacto.RootElement.Text")
-            Me.ddlFormaContacto.RootElement.TextOrientation = CType(resources.GetObject("ddlFormaContacto.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.ddlFormaContacto.ValueMember = "idForma"
+            Me.ddlFormaContacto.RootElement.AccessibleDescription = Nothing
+            Me.ddlFormaContacto.RootElement.AccessibleName = Nothing
+            Me.ddlFormaContacto.ValueMember = "FormaID"
             CType(Me.ddlFormaContacto.GetChildAt(0), Telerik.WinControls.UI.RadDropDownListElement).DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
             '
             'FormasContactoBindingSource
@@ -369,16 +292,9 @@
             '
             '
             '
-            Me.RootElement.AccessibleDescription = resources.GetString("frmContactoEdicion.RootElement.AccessibleDescription")
-            Me.RootElement.AccessibleName = resources.GetString("frmContactoEdicion.RootElement.AccessibleName")
-            Me.RootElement.Alignment = CType(resources.GetObject("frmContactoEdicion.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.RootElement.AngleTransform = CType(resources.GetObject("frmContactoEdicion.RootElement.AngleTransform"), Single)
+            Me.RootElement.AccessibleDescription = Nothing
+            Me.RootElement.AccessibleName = Nothing
             Me.RootElement.ApplyShapeToControl = True
-            Me.RootElement.FlipText = CType(resources.GetObject("frmContactoEdicion.RootElement.FlipText"), Boolean)
-            Me.RootElement.Margin = CType(resources.GetObject("frmContactoEdicion.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.RootElement.Padding = CType(resources.GetObject("frmContactoEdicion.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.RootElement.Text = resources.GetString("frmContactoEdicion.RootElement.Text")
-            Me.RootElement.TextOrientation = CType(resources.GetObject("frmContactoEdicion.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
             Me.ShowInTaskbar = False
             Me.Tag = ""
             CType(RadLabel1, System.ComponentModel.ISupportInitialize).EndInit()

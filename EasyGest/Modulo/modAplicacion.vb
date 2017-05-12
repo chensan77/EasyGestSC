@@ -189,28 +189,30 @@ Namespace Modulo
 
             If idioma.Equals("zh", StringComparison.InvariantCultureIgnoreCase) Then
                 gIsChinese = True
-                Telerik.WinControls.UI.Localization.RadGridLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChineseRadGridLocationProvider()
-                Telerik.WinControls.UI.TreeViewLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChineseRadTreeViewLocalizationProvider()
-                Telerik.WinControls.RadMessageLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChineseRadMessageLocalizationProvider()
-                Telerik.WinControls.UI.CommandBarLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChineseCommandBarLocalizationProvider()
-                Telerik.WinControls.UI.Localization.RadDockLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChineseRadDockLocalizationProvider()
-                Telerik.WinControls.UI.ColorDialogLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChineseColorDialogLocalizationProvider()
-                Telerik.WinControls.UI.CalendarLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChineseCalendarLocalizationProvider()
-                Telerik.WinControls.UI.PropertyGridLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChinesePropertyGridLocalizationProvider()
-                Telerik.WinControls.UI.PrintDialogsLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChinesePrintDialogsLocalizationProvider()
-                Telerik.WinControls.UI.RadTimePickerLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChineseRadTimePickerLocalizationProvider()
+                Localization.RadGridLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChineseRadGridLocationProvider()
+                TreeViewLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChineseRadTreeViewLocalizationProvider()
+                RadMessageLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChineseRadMessageLocalizationProvider()
+                CommandBarLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChineseCommandBarLocalizationProvider()
+                Localization.RadDockLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChineseRadDockLocalizationProvider()
+                ColorDialogLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChineseColorDialogLocalizationProvider()
+                CalendarLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChineseCalendarLocalizationProvider()
+                PropertyGridLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChinesePropertyGridLocalizationProvider()
+                PrintDialogsLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChinesePrintDialogsLocalizationProvider()
+                RadTimePickerLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChineseRadTimePickerLocalizationProvider()
+                DataFilterLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.ChinesesDataFilterLocalizationProvider
                 gDefaultFont = gChineseDefaultFont
             Else
-                Telerik.WinControls.UI.Localization.RadGridLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishRadGridLocalizationProvider()
+                Localization.RadGridLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishRadGridLocalizationProvider()
                 TreeViewLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishRadTreeViewLocalizationProvider()
-                Telerik.WinControls.RadMessageLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishRadMessageLocalizationProvider()
-                Telerik.WinControls.UI.CommandBarLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishCommandBarLocalizationProvider()
-                Telerik.WinControls.UI.Localization.RadDockLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishRadDockLocalizationProvider()
-                Telerik.WinControls.UI.ColorDialogLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishColorDialogLocalizationProvider()
-                Telerik.WinControls.UI.CalendarLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishCalendarLocalizationProvider()
-                Telerik.WinControls.UI.PropertyGridLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishPropertyGridLocalizationProvider()
-                Telerik.WinControls.UI.PrintDialogsLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishPrintDialogLocalizationProvider
-                Telerik.WinControls.UI.RadTimePickerLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishRadTimePickerLocalizationProvider()
+                RadMessageLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishRadMessageLocalizationProvider()
+                CommandBarLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishCommandBarLocalizationProvider()
+                Localization.RadDockLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishRadDockLocalizationProvider()
+                ColorDialogLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishColorDialogLocalizationProvider()
+                CalendarLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishCalendarLocalizationProvider()
+                PropertyGridLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishPropertyGridLocalizationProvider()
+                PrintDialogsLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishPrintDialogLocalizationProvider
+                RadTimePickerLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishRadTimePickerLocalizationProvider()
+                DataFilterLocalizationProvider.CurrentProvider = New Presentacion.LocalizationProvider.SpanishDataFilterLocalizationProvider
 
                 gDefaultFont = gSpanishDefaultFont
             End If
@@ -268,6 +270,13 @@ Namespace Modulo
         '    End If
         '    Return False
         'End Function
+
+        Public Sub SettingGridHeaderText(ByRef grid As RadGridView, headertext As String())
+            For i As Integer = 0 To grid.Columns.Count - 1
+                If grid.Columns(i).IsVisible Then _
+                grid.Columns(i).HeaderText = headertext(i)
+            Next
+        End Sub
 
         Public Sub AsignarTemaAplicacion(nombreTema As String)
 

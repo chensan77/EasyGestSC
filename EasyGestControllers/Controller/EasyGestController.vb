@@ -263,10 +263,10 @@ Namespace Controller
     Public Class ContactosController
         Inherits BaseController(Of Contactos, EasyGestDataContext)
 
-        ''si propietarioid es 0 se filtra todos los contactos de cliente o proveedor
-        'Public Function GetItemsByPropietario(ByVal propietarioID As Long, tipo As Char) As System.Collections.Generic.IEnumerable(Of Data.Entity.Contactos)
-        '    Return MyBase.GetItems(String.Format("TipoPropietario = '{0}' AND (idPropietario = {1} OR {2})", tipo, propietarioID, IIf(propietarioID = 0, "1 = 1", "1 <> 1")))
-        'End Function
+        'si propietarioid es 0 se filtra todos los contactos de cliente o proveedor
+        Public Function GetItemsByPropietario(ByVal propietarioID As Long, tipo As Char) As System.Collections.Generic.IEnumerable(Of Data.Entity.Contactos)
+            Return MyBase.GetItems(String.Format("TipoPropietario = '{0}' AND (idPropietario = {1} OR {2})", tipo, propietarioID, IIf(propietarioID = 0, "1 = 1", "1 <> 1")))
+        End Function
 
     End Class
 
@@ -361,11 +361,13 @@ Namespace Controller
             MyBase.SyncronisingItem(encargo)
             Using c As New ListasCompraController()
                 lista = c.GetItemsBy("idEncargo", New Long() {encargo.idEncargo}).FirstOrDefault
-                If IsNothing(lista) Then
-                    lista = ListasCompraController.NewItem()
-                End If
+            End Using
+            If IsNothing(lista) Then
+                lista = ListasCompraController.NewItem()
+            End If
+            Using c As New ListasCompraController()
                 CopiarAListaCompra(lista, encargo)
-                c.SyncronisingItem(lista)
+                c.UpdateItem(lista)
             End Using
         End Sub
 
@@ -606,6 +608,7 @@ Namespace Controller
                         Contexto.SubmitChanges()
                         'Entidad eliminado, poner como no a tratar cuando llama a la funcion de la clase base
                         item.SetAsNoChangeOnSubmit()
+                        Continue For
                     Catch sqlex As SqlClient.SqlException
                         If sqlex.Number = SQLERRORNUMBER_FKCONFLICTONDELETE Then
                             item.Activo = False

@@ -37,9 +37,9 @@
   </Table>
   <Table Name="dbo.FormasContacto" Member="FormasContacto" AccessModifier="Internal">
     <Type Name="FormasContacto">
-      <Column Name="idForma" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="FormaContactoChn" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="FormaContactoEsp" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="idForma" AccessModifier="Internal" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FormaContactoChn" AccessModifier="Internal" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FormaContactoEsp" AccessModifier="Internal" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.Galerias" Member="Galerias" AccessModifier="Internal">
@@ -61,9 +61,9 @@
   </Table>
   <Table Name="dbo.ModosPago" Member="ModosPago" AccessModifier="Internal">
     <Type Name="ModosPago">
-      <Column Name="idModo" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="ModoPagoChn" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="ModoPagoEsp" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="idModo" AccessModifier="Internal" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ModoPagoChn" AccessModifier="Internal" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ModoPagoEsp" AccessModifier="Internal" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.MunicipiosEspañolas" Member="MunicipiosEspañolas" AccessModifier="Internal">
@@ -655,7 +655,7 @@
   </Table>
   <Table Name="dbo.Usuarios" Member="Usuarios">
     <Type Name="Usuarios">
-      <Column Name="idUsuario" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idUsuario" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="NombreSesion" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Nombre" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="Contraseña" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />

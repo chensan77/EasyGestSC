@@ -38,6 +38,7 @@ Namespace Presentacion.Formulario.Producto
             InitializeComponent()
 
             ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
+            _diagnostico = New Diagnostics.Stopwatch()
             Me.Controls.Add(_panel)
             _panel.BringToFront()
             PrepararControles(pvpDetalle.Controls)
@@ -50,7 +51,6 @@ Namespace Presentacion.Formulario.Producto
             ConfigurarCommandBar(Me.cbstripeAccion)
             ConfigurarCommandBar(Me.cbstripeOrden)
             ConfigurarCommandBar(Me.cbstripeBusqueda)
-            _diagnostico = New Diagnostics.Stopwatch()
         End Sub
 
 #Region "Evento Form"
@@ -60,6 +60,8 @@ Namespace Presentacion.Formulario.Producto
             pvInfo.SelectedPage = pvpDetalle
             gridDatos.GridViewElement.AllowDrag = True
             chkeNoActivos.ToggleState = Telerik.WinControls.Enumerations.ToggleState.Off
+            chkeNoActivos.Font = gDefaultFont
+            chkePaginar.Font = gDefaultFont
             lbleDiagnostico.Text = String.Empty
             lstvOfertas.Columns(0).HeaderText = My.Resources.Application.TextoNumeroOferta
             lstvOfertas.Columns(1).HeaderText = My.Resources.Application.TextoPlan
@@ -530,12 +532,14 @@ Namespace Presentacion.Formulario.Producto
             Dim itemToDrop As GridViewSelectedRowsCollection = DirectCast(e.Data.GetData(GetType(GridViewSelectedRowsCollection)), GridViewSelectedRowsCollection)
             Dim nodo As TreeNodeElement = GetItemFromPoint(Of TreeNodeElement)(treeFamilia, New Point(e.X, e.Y), True)
             If Not IsNothing(nodo) And Not IsNothing(itemToDrop) Then
+                Dim familia As Familias = TryCast(nodo.Data.Tag, Familias)
                 For Each row In itemToDrop
-                    Dim prod As VWProductos = AsignarFamilia(TryCast(nodo.Data.Tag, Familias), TryCast(row.DataBoundItem, VWProductos))
+                    Dim prod As VWProductos = AsignarFamilia(familia, TryCast(row.DataBoundItem, VWProductos))
                     prod.ShallowCopy(DirectCast(row.DataBoundItem, VWProductos))
                     row.InvalidateRow()
-                    VWProductoBindingSource.DataSource = row.DataBoundItem
+                    'VWProductoBindingSource.DataSource = row.DataBoundItem
                 Next
+                My.Forms.frmPrincipal.ShowAlerta(Me.Text, String.Format(My.Resources.Application.AvisoProductoAsignadoFamilia, familia.Familia))
                 nodo.ContentElement.ForeColor = Color.Black
             End If
             ReestablecerTreeNode()
@@ -581,18 +585,20 @@ Namespace Presentacion.Formulario.Producto
 
 #End Region
 
-#Region "Eventos Lista"
+#Region "Eventos Lista oferta"
 
         Private Sub lstvOfertas_DragDrop(ByVal sender As Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles lstvOfertas.DragDrop
             Dim itemToDrop As GridViewSelectedRowsCollection = DirectCast(e.Data.GetData(GetType(GridViewSelectedRowsCollection)), GridViewSelectedRowsCollection)
             Dim item As DetailListViewDataCellElement = GetItemFromPoint(Of DetailListViewDataCellElement)(lstvOfertas, New Point(e.X, e.Y), True)
             If Not IsNothing(item) And Not IsNothing(itemToDrop) Then
+                Dim oferta As Ofertas = TryCast(item.Row.Tag, Ofertas)
                 For Each row In itemToDrop
-                    Dim prod As VWProductos = AsignarOferta(TryCast(item.Row.Tag, Ofertas), TryCast(row.DataBoundItem, VWProductos))
-                    modVarios.ShallowCopy(prod,DirectCast(row.DataBoundItem, VWProductos))
+                    Dim prod As VWProductos = AsignarOferta(oferta, TryCast(row.DataBoundItem, VWProductos))
+                    modVarios.ShallowCopy(prod, DirectCast(row.DataBoundItem, VWProductos))
                     row.InvalidateRow()
-                    VWProductoBindingSource.DataSource = row.DataBoundItem
+                    'VWProductoBindingSource.DataSource = row.DataBoundItem
                 Next
+                My.Forms.frmPrincipal.ShowAlerta(Me.Text, String.Format(My.Resources.Application.AvisoProductoAsignadoOferta, oferta.Plan))
                 If IsNothing(item.Row.Tag) Then
                     item.Row.ForeColor = Color.Black
                 Else

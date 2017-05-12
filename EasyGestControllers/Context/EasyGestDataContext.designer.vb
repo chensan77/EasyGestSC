@@ -1608,9 +1608,8 @@ Namespace Data.Entity
 			Me.Initialize
 		End Sub
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idForma", DbType:="SmallInt NOT NULL", IsPrimaryKey:=true),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
-		Public Property idForma() As Short
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idForma", DbType:="SmallInt NOT NULL", IsPrimaryKey:=true)>  _
+		Friend Property idForma() As Short
 			Get
 				Return Me._idForma
 			End Get
@@ -1626,9 +1625,8 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FormaContactoChn", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=2)>  _
-		Public Property FormaContactoChn() As String
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FormaContactoChn", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
+		Friend Property FormaContactoChn() As String
 			Get
 				Return Me._FormaContactoChn
 			End Get
@@ -1643,9 +1641,8 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FormaContactoEsp", DbType:="VarChar(50) NOT NULL", CanBeNull:=false),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=3)>  _
-		Public Property FormaContactoEsp() As String
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FormaContactoEsp", DbType:="VarChar(50) NOT NULL", CanBeNull:=false)>  _
+		Friend Property FormaContactoEsp() As String
 			Get
 				Return Me._FormaContactoEsp
 			End Get
@@ -2045,9 +2042,8 @@ Namespace Data.Entity
 			Me.Initialize
 		End Sub
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idModo", DbType:="SmallInt NOT NULL", IsPrimaryKey:=true),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
-		Public Property idModo() As Short
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idModo", DbType:="SmallInt NOT NULL", IsPrimaryKey:=true)>  _
+		Friend Property idModo() As Short
 			Get
 				Return Me._idModo
 			End Get
@@ -2063,9 +2059,8 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ModoPagoChn", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=2)>  _
-		Public Property ModoPagoChn() As String
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ModoPagoChn", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
+		Friend Property ModoPagoChn() As String
 			Get
 				Return Me._ModoPagoChn
 			End Get
@@ -2080,9 +2075,8 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ModoPagoEsp", DbType:="VarChar(50) NOT NULL", CanBeNull:=false),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=3)>  _
-		Public Property ModoPagoEsp() As String
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ModoPagoEsp", DbType:="VarChar(50) NOT NULL", CanBeNull:=false)>  _
+		Friend Property ModoPagoEsp() As String
 			Get
 				Return Me._ModoPagoEsp
 			End Get
@@ -14427,7 +14421,7 @@ Namespace Data.Entity
 			Me.Initialize
 		End Sub
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUsuario", DbType:="BigInt NOT NULL", IsPrimaryKey:=true),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUsuario", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
 		Public Property idUsuario() As Long
 			Get

@@ -129,39 +129,11 @@
             RadLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel1.Name = "RadLabel1"
             '
-            '
-            '
-            RadLabel1.RootElement.AccessibleDescription = resources.GetString("RadLabel1.RootElement.AccessibleDescription")
-            RadLabel1.RootElement.AccessibleName = resources.GetString("RadLabel1.RootElement.AccessibleName")
-            RadLabel1.RootElement.Alignment = CType(resources.GetObject("RadLabel1.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            RadLabel1.RootElement.AngleTransform = CType(resources.GetObject("RadLabel1.RootElement.AngleTransform"), Single)
-            RadLabel1.RootElement.FlipText = CType(resources.GetObject("RadLabel1.RootElement.FlipText"), Boolean)
-            RadLabel1.RootElement.KeyTip = resources.GetString("RadLabel1.RootElement.KeyTip")
-            RadLabel1.RootElement.Margin = CType(resources.GetObject("RadLabel1.RootElement.Margin"), System.Windows.Forms.Padding)
-            RadLabel1.RootElement.Padding = CType(resources.GetObject("RadLabel1.RootElement.Padding"), System.Windows.Forms.Padding)
-            RadLabel1.RootElement.Text = resources.GetString("RadLabel1.RootElement.Text")
-            RadLabel1.RootElement.TextOrientation = CType(resources.GetObject("RadLabel1.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            RadLabel1.RootElement.ToolTipText = resources.GetString("RadLabel1.RootElement.ToolTipText")
-            '
             'RadLabel2
             '
             resources.ApplyResources(RadLabel2, "RadLabel2")
             RadLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel2.Name = "RadLabel2"
-            '
-            '
-            '
-            RadLabel2.RootElement.AccessibleDescription = resources.GetString("RadLabel2.RootElement.AccessibleDescription")
-            RadLabel2.RootElement.AccessibleName = resources.GetString("RadLabel2.RootElement.AccessibleName")
-            RadLabel2.RootElement.Alignment = CType(resources.GetObject("RadLabel2.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            RadLabel2.RootElement.AngleTransform = CType(resources.GetObject("RadLabel2.RootElement.AngleTransform"), Single)
-            RadLabel2.RootElement.FlipText = CType(resources.GetObject("RadLabel2.RootElement.FlipText"), Boolean)
-            RadLabel2.RootElement.KeyTip = resources.GetString("RadLabel2.RootElement.KeyTip")
-            RadLabel2.RootElement.Margin = CType(resources.GetObject("RadLabel2.RootElement.Margin"), System.Windows.Forms.Padding)
-            RadLabel2.RootElement.Padding = CType(resources.GetObject("RadLabel2.RootElement.Padding"), System.Windows.Forms.Padding)
-            RadLabel2.RootElement.Text = resources.GetString("RadLabel2.RootElement.Text")
-            RadLabel2.RootElement.TextOrientation = CType(resources.GetObject("RadLabel2.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            RadLabel2.RootElement.ToolTipText = resources.GetString("RadLabel2.RootElement.ToolTipText")
             '
             'RadLabel4
             '
@@ -169,39 +141,11 @@
             RadLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel4.Name = "RadLabel4"
             '
-            '
-            '
-            RadLabel4.RootElement.AccessibleDescription = resources.GetString("RadLabel4.RootElement.AccessibleDescription")
-            RadLabel4.RootElement.AccessibleName = resources.GetString("RadLabel4.RootElement.AccessibleName")
-            RadLabel4.RootElement.Alignment = CType(resources.GetObject("RadLabel4.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            RadLabel4.RootElement.AngleTransform = CType(resources.GetObject("RadLabel4.RootElement.AngleTransform"), Single)
-            RadLabel4.RootElement.FlipText = CType(resources.GetObject("RadLabel4.RootElement.FlipText"), Boolean)
-            RadLabel4.RootElement.KeyTip = resources.GetString("RadLabel4.RootElement.KeyTip")
-            RadLabel4.RootElement.Margin = CType(resources.GetObject("RadLabel4.RootElement.Margin"), System.Windows.Forms.Padding)
-            RadLabel4.RootElement.Padding = CType(resources.GetObject("RadLabel4.RootElement.Padding"), System.Windows.Forms.Padding)
-            RadLabel4.RootElement.Text = resources.GetString("RadLabel4.RootElement.Text")
-            RadLabel4.RootElement.TextOrientation = CType(resources.GetObject("RadLabel4.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            RadLabel4.RootElement.ToolTipText = resources.GetString("RadLabel4.RootElement.ToolTipText")
-            '
             'RadLabel5
             '
             resources.ApplyResources(RadLabel5, "RadLabel5")
             RadLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel5.Name = "RadLabel5"
-            '
-            '
-            '
-            RadLabel5.RootElement.AccessibleDescription = resources.GetString("RadLabel5.RootElement.AccessibleDescription")
-            RadLabel5.RootElement.AccessibleName = resources.GetString("RadLabel5.RootElement.AccessibleName")
-            RadLabel5.RootElement.Alignment = CType(resources.GetObject("RadLabel5.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            RadLabel5.RootElement.AngleTransform = CType(resources.GetObject("RadLabel5.RootElement.AngleTransform"), Single)
-            RadLabel5.RootElement.FlipText = CType(resources.GetObject("RadLabel5.RootElement.FlipText"), Boolean)
-            RadLabel5.RootElement.KeyTip = resources.GetString("RadLabel5.RootElement.KeyTip")
-            RadLabel5.RootElement.Margin = CType(resources.GetObject("RadLabel5.RootElement.Margin"), System.Windows.Forms.Padding)
-            RadLabel5.RootElement.Padding = CType(resources.GetObject("RadLabel5.RootElement.Padding"), System.Windows.Forms.Padding)
-            RadLabel5.RootElement.Text = resources.GetString("RadLabel5.RootElement.Text")
-            RadLabel5.RootElement.TextOrientation = CType(resources.GetObject("RadLabel5.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            RadLabel5.RootElement.ToolTipText = resources.GetString("RadLabel5.RootElement.ToolTipText")
             '
             'RadLabel8
             '
@@ -209,39 +153,11 @@
             RadLabel8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel8.Name = "RadLabel8"
             '
-            '
-            '
-            RadLabel8.RootElement.AccessibleDescription = resources.GetString("RadLabel8.RootElement.AccessibleDescription")
-            RadLabel8.RootElement.AccessibleName = resources.GetString("RadLabel8.RootElement.AccessibleName")
-            RadLabel8.RootElement.Alignment = CType(resources.GetObject("RadLabel8.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            RadLabel8.RootElement.AngleTransform = CType(resources.GetObject("RadLabel8.RootElement.AngleTransform"), Single)
-            RadLabel8.RootElement.FlipText = CType(resources.GetObject("RadLabel8.RootElement.FlipText"), Boolean)
-            RadLabel8.RootElement.KeyTip = resources.GetString("RadLabel8.RootElement.KeyTip")
-            RadLabel8.RootElement.Margin = CType(resources.GetObject("RadLabel8.RootElement.Margin"), System.Windows.Forms.Padding)
-            RadLabel8.RootElement.Padding = CType(resources.GetObject("RadLabel8.RootElement.Padding"), System.Windows.Forms.Padding)
-            RadLabel8.RootElement.Text = resources.GetString("RadLabel8.RootElement.Text")
-            RadLabel8.RootElement.TextOrientation = CType(resources.GetObject("RadLabel8.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            RadLabel8.RootElement.ToolTipText = resources.GetString("RadLabel8.RootElement.ToolTipText")
-            '
             'RadLabel9
             '
             resources.ApplyResources(RadLabel9, "RadLabel9")
             RadLabel9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel9.Name = "RadLabel9"
-            '
-            '
-            '
-            RadLabel9.RootElement.AccessibleDescription = resources.GetString("RadLabel9.RootElement.AccessibleDescription")
-            RadLabel9.RootElement.AccessibleName = resources.GetString("RadLabel9.RootElement.AccessibleName")
-            RadLabel9.RootElement.Alignment = CType(resources.GetObject("RadLabel9.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            RadLabel9.RootElement.AngleTransform = CType(resources.GetObject("RadLabel9.RootElement.AngleTransform"), Single)
-            RadLabel9.RootElement.FlipText = CType(resources.GetObject("RadLabel9.RootElement.FlipText"), Boolean)
-            RadLabel9.RootElement.KeyTip = resources.GetString("RadLabel9.RootElement.KeyTip")
-            RadLabel9.RootElement.Margin = CType(resources.GetObject("RadLabel9.RootElement.Margin"), System.Windows.Forms.Padding)
-            RadLabel9.RootElement.Padding = CType(resources.GetObject("RadLabel9.RootElement.Padding"), System.Windows.Forms.Padding)
-            RadLabel9.RootElement.Text = resources.GetString("RadLabel9.RootElement.Text")
-            RadLabel9.RootElement.TextOrientation = CType(resources.GetObject("RadLabel9.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            RadLabel9.RootElement.ToolTipText = resources.GetString("RadLabel9.RootElement.ToolTipText")
             '
             'RadLabel10
             '
@@ -249,39 +165,11 @@
             RadLabel10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel10.Name = "RadLabel10"
             '
-            '
-            '
-            RadLabel10.RootElement.AccessibleDescription = resources.GetString("RadLabel10.RootElement.AccessibleDescription")
-            RadLabel10.RootElement.AccessibleName = resources.GetString("RadLabel10.RootElement.AccessibleName")
-            RadLabel10.RootElement.Alignment = CType(resources.GetObject("RadLabel10.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            RadLabel10.RootElement.AngleTransform = CType(resources.GetObject("RadLabel10.RootElement.AngleTransform"), Single)
-            RadLabel10.RootElement.FlipText = CType(resources.GetObject("RadLabel10.RootElement.FlipText"), Boolean)
-            RadLabel10.RootElement.KeyTip = resources.GetString("RadLabel10.RootElement.KeyTip")
-            RadLabel10.RootElement.Margin = CType(resources.GetObject("RadLabel10.RootElement.Margin"), System.Windows.Forms.Padding)
-            RadLabel10.RootElement.Padding = CType(resources.GetObject("RadLabel10.RootElement.Padding"), System.Windows.Forms.Padding)
-            RadLabel10.RootElement.Text = resources.GetString("RadLabel10.RootElement.Text")
-            RadLabel10.RootElement.TextOrientation = CType(resources.GetObject("RadLabel10.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            RadLabel10.RootElement.ToolTipText = resources.GetString("RadLabel10.RootElement.ToolTipText")
-            '
             'RadLabel11
             '
             resources.ApplyResources(RadLabel11, "RadLabel11")
             RadLabel11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel11.Name = "RadLabel11"
-            '
-            '
-            '
-            RadLabel11.RootElement.AccessibleDescription = resources.GetString("RadLabel11.RootElement.AccessibleDescription")
-            RadLabel11.RootElement.AccessibleName = resources.GetString("RadLabel11.RootElement.AccessibleName")
-            RadLabel11.RootElement.Alignment = CType(resources.GetObject("RadLabel11.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            RadLabel11.RootElement.AngleTransform = CType(resources.GetObject("RadLabel11.RootElement.AngleTransform"), Single)
-            RadLabel11.RootElement.FlipText = CType(resources.GetObject("RadLabel11.RootElement.FlipText"), Boolean)
-            RadLabel11.RootElement.KeyTip = resources.GetString("RadLabel11.RootElement.KeyTip")
-            RadLabel11.RootElement.Margin = CType(resources.GetObject("RadLabel11.RootElement.Margin"), System.Windows.Forms.Padding)
-            RadLabel11.RootElement.Padding = CType(resources.GetObject("RadLabel11.RootElement.Padding"), System.Windows.Forms.Padding)
-            RadLabel11.RootElement.Text = resources.GetString("RadLabel11.RootElement.Text")
-            RadLabel11.RootElement.TextOrientation = CType(resources.GetObject("RadLabel11.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            RadLabel11.RootElement.ToolTipText = resources.GetString("RadLabel11.RootElement.ToolTipText")
             '
             'RadLabel12
             '
@@ -289,39 +177,11 @@
             RadLabel12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel12.Name = "RadLabel12"
             '
-            '
-            '
-            RadLabel12.RootElement.AccessibleDescription = resources.GetString("RadLabel12.RootElement.AccessibleDescription")
-            RadLabel12.RootElement.AccessibleName = resources.GetString("RadLabel12.RootElement.AccessibleName")
-            RadLabel12.RootElement.Alignment = CType(resources.GetObject("RadLabel12.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            RadLabel12.RootElement.AngleTransform = CType(resources.GetObject("RadLabel12.RootElement.AngleTransform"), Single)
-            RadLabel12.RootElement.FlipText = CType(resources.GetObject("RadLabel12.RootElement.FlipText"), Boolean)
-            RadLabel12.RootElement.KeyTip = resources.GetString("RadLabel12.RootElement.KeyTip")
-            RadLabel12.RootElement.Margin = CType(resources.GetObject("RadLabel12.RootElement.Margin"), System.Windows.Forms.Padding)
-            RadLabel12.RootElement.Padding = CType(resources.GetObject("RadLabel12.RootElement.Padding"), System.Windows.Forms.Padding)
-            RadLabel12.RootElement.Text = resources.GetString("RadLabel12.RootElement.Text")
-            RadLabel12.RootElement.TextOrientation = CType(resources.GetObject("RadLabel12.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            RadLabel12.RootElement.ToolTipText = resources.GetString("RadLabel12.RootElement.ToolTipText")
-            '
             'RadLabel13
             '
             resources.ApplyResources(RadLabel13, "RadLabel13")
             RadLabel13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel13.Name = "RadLabel13"
-            '
-            '
-            '
-            RadLabel13.RootElement.AccessibleDescription = resources.GetString("RadLabel13.RootElement.AccessibleDescription")
-            RadLabel13.RootElement.AccessibleName = resources.GetString("RadLabel13.RootElement.AccessibleName")
-            RadLabel13.RootElement.Alignment = CType(resources.GetObject("RadLabel13.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            RadLabel13.RootElement.AngleTransform = CType(resources.GetObject("RadLabel13.RootElement.AngleTransform"), Single)
-            RadLabel13.RootElement.FlipText = CType(resources.GetObject("RadLabel13.RootElement.FlipText"), Boolean)
-            RadLabel13.RootElement.KeyTip = resources.GetString("RadLabel13.RootElement.KeyTip")
-            RadLabel13.RootElement.Margin = CType(resources.GetObject("RadLabel13.RootElement.Margin"), System.Windows.Forms.Padding)
-            RadLabel13.RootElement.Padding = CType(resources.GetObject("RadLabel13.RootElement.Padding"), System.Windows.Forms.Padding)
-            RadLabel13.RootElement.Text = resources.GetString("RadLabel13.RootElement.Text")
-            RadLabel13.RootElement.TextOrientation = CType(resources.GetObject("RadLabel13.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            RadLabel13.RootElement.ToolTipText = resources.GetString("RadLabel13.RootElement.ToolTipText")
             '
             'RadLabel14
             '
@@ -329,39 +189,11 @@
             RadLabel14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel14.Name = "RadLabel14"
             '
-            '
-            '
-            RadLabel14.RootElement.AccessibleDescription = resources.GetString("RadLabel14.RootElement.AccessibleDescription")
-            RadLabel14.RootElement.AccessibleName = resources.GetString("RadLabel14.RootElement.AccessibleName")
-            RadLabel14.RootElement.Alignment = CType(resources.GetObject("RadLabel14.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            RadLabel14.RootElement.AngleTransform = CType(resources.GetObject("RadLabel14.RootElement.AngleTransform"), Single)
-            RadLabel14.RootElement.FlipText = CType(resources.GetObject("RadLabel14.RootElement.FlipText"), Boolean)
-            RadLabel14.RootElement.KeyTip = resources.GetString("RadLabel14.RootElement.KeyTip")
-            RadLabel14.RootElement.Margin = CType(resources.GetObject("RadLabel14.RootElement.Margin"), System.Windows.Forms.Padding)
-            RadLabel14.RootElement.Padding = CType(resources.GetObject("RadLabel14.RootElement.Padding"), System.Windows.Forms.Padding)
-            RadLabel14.RootElement.Text = resources.GetString("RadLabel14.RootElement.Text")
-            RadLabel14.RootElement.TextOrientation = CType(resources.GetObject("RadLabel14.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            RadLabel14.RootElement.ToolTipText = resources.GetString("RadLabel14.RootElement.ToolTipText")
-            '
             'RadLabel15
             '
             resources.ApplyResources(RadLabel15, "RadLabel15")
             RadLabel15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel15.Name = "RadLabel15"
-            '
-            '
-            '
-            RadLabel15.RootElement.AccessibleDescription = resources.GetString("RadLabel15.RootElement.AccessibleDescription")
-            RadLabel15.RootElement.AccessibleName = resources.GetString("RadLabel15.RootElement.AccessibleName")
-            RadLabel15.RootElement.Alignment = CType(resources.GetObject("RadLabel15.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            RadLabel15.RootElement.AngleTransform = CType(resources.GetObject("RadLabel15.RootElement.AngleTransform"), Single)
-            RadLabel15.RootElement.FlipText = CType(resources.GetObject("RadLabel15.RootElement.FlipText"), Boolean)
-            RadLabel15.RootElement.KeyTip = resources.GetString("RadLabel15.RootElement.KeyTip")
-            RadLabel15.RootElement.Margin = CType(resources.GetObject("RadLabel15.RootElement.Margin"), System.Windows.Forms.Padding)
-            RadLabel15.RootElement.Padding = CType(resources.GetObject("RadLabel15.RootElement.Padding"), System.Windows.Forms.Padding)
-            RadLabel15.RootElement.Text = resources.GetString("RadLabel15.RootElement.Text")
-            RadLabel15.RootElement.TextOrientation = CType(resources.GetObject("RadLabel15.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            RadLabel15.RootElement.ToolTipText = resources.GetString("RadLabel15.RootElement.ToolTipText")
             '
             'RadLabel16
             '
@@ -369,59 +201,17 @@
             RadLabel16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel16.Name = "RadLabel16"
             '
-            '
-            '
-            RadLabel16.RootElement.AccessibleDescription = resources.GetString("RadLabel16.RootElement.AccessibleDescription")
-            RadLabel16.RootElement.AccessibleName = resources.GetString("RadLabel16.RootElement.AccessibleName")
-            RadLabel16.RootElement.Alignment = CType(resources.GetObject("RadLabel16.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            RadLabel16.RootElement.AngleTransform = CType(resources.GetObject("RadLabel16.RootElement.AngleTransform"), Single)
-            RadLabel16.RootElement.FlipText = CType(resources.GetObject("RadLabel16.RootElement.FlipText"), Boolean)
-            RadLabel16.RootElement.KeyTip = resources.GetString("RadLabel16.RootElement.KeyTip")
-            RadLabel16.RootElement.Margin = CType(resources.GetObject("RadLabel16.RootElement.Margin"), System.Windows.Forms.Padding)
-            RadLabel16.RootElement.Padding = CType(resources.GetObject("RadLabel16.RootElement.Padding"), System.Windows.Forms.Padding)
-            RadLabel16.RootElement.Text = resources.GetString("RadLabel16.RootElement.Text")
-            RadLabel16.RootElement.TextOrientation = CType(resources.GetObject("RadLabel16.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            RadLabel16.RootElement.ToolTipText = resources.GetString("RadLabel16.RootElement.ToolTipText")
-            '
             'RadLabel17
             '
             resources.ApplyResources(RadLabel17, "RadLabel17")
             RadLabel17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel17.Name = "RadLabel17"
             '
-            '
-            '
-            RadLabel17.RootElement.AccessibleDescription = resources.GetString("RadLabel17.RootElement.AccessibleDescription")
-            RadLabel17.RootElement.AccessibleName = resources.GetString("RadLabel17.RootElement.AccessibleName")
-            RadLabel17.RootElement.Alignment = CType(resources.GetObject("RadLabel17.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            RadLabel17.RootElement.AngleTransform = CType(resources.GetObject("RadLabel17.RootElement.AngleTransform"), Single)
-            RadLabel17.RootElement.FlipText = CType(resources.GetObject("RadLabel17.RootElement.FlipText"), Boolean)
-            RadLabel17.RootElement.KeyTip = resources.GetString("RadLabel17.RootElement.KeyTip")
-            RadLabel17.RootElement.Margin = CType(resources.GetObject("RadLabel17.RootElement.Margin"), System.Windows.Forms.Padding)
-            RadLabel17.RootElement.Padding = CType(resources.GetObject("RadLabel17.RootElement.Padding"), System.Windows.Forms.Padding)
-            RadLabel17.RootElement.Text = resources.GetString("RadLabel17.RootElement.Text")
-            RadLabel17.RootElement.TextOrientation = CType(resources.GetObject("RadLabel17.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            RadLabel17.RootElement.ToolTipText = resources.GetString("RadLabel17.RootElement.ToolTipText")
-            '
             'RadLabel18
             '
             resources.ApplyResources(RadLabel18, "RadLabel18")
             RadLabel18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel18.Name = "RadLabel18"
-            '
-            '
-            '
-            RadLabel18.RootElement.AccessibleDescription = resources.GetString("RadLabel18.RootElement.AccessibleDescription")
-            RadLabel18.RootElement.AccessibleName = resources.GetString("RadLabel18.RootElement.AccessibleName")
-            RadLabel18.RootElement.Alignment = CType(resources.GetObject("RadLabel18.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            RadLabel18.RootElement.AngleTransform = CType(resources.GetObject("RadLabel18.RootElement.AngleTransform"), Single)
-            RadLabel18.RootElement.FlipText = CType(resources.GetObject("RadLabel18.RootElement.FlipText"), Boolean)
-            RadLabel18.RootElement.KeyTip = resources.GetString("RadLabel18.RootElement.KeyTip")
-            RadLabel18.RootElement.Margin = CType(resources.GetObject("RadLabel18.RootElement.Margin"), System.Windows.Forms.Padding)
-            RadLabel18.RootElement.Padding = CType(resources.GetObject("RadLabel18.RootElement.Padding"), System.Windows.Forms.Padding)
-            RadLabel18.RootElement.Text = resources.GetString("RadLabel18.RootElement.Text")
-            RadLabel18.RootElement.TextOrientation = CType(resources.GetObject("RadLabel18.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            RadLabel18.RootElement.ToolTipText = resources.GetString("RadLabel18.RootElement.ToolTipText")
             '
             'grpbContacto
             '
@@ -440,22 +230,9 @@
             Me.grpbContacto.HeaderAlignment = Telerik.WinControls.UI.HeaderAlignment.Far
             Me.grpbContacto.HeaderTextAlignment = System.Drawing.ContentAlignment.BottomCenter
             Me.grpbContacto.Name = "grpbContacto"
-            '
-            '
-            '
-            Me.grpbContacto.RootElement.AccessibleDescription = resources.GetString("grpbContacto.RootElement.AccessibleDescription")
-            Me.grpbContacto.RootElement.AccessibleName = resources.GetString("grpbContacto.RootElement.AccessibleName")
-            Me.grpbContacto.RootElement.Alignment = CType(resources.GetObject("grpbContacto.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.grpbContacto.RootElement.AngleTransform = CType(resources.GetObject("grpbContacto.RootElement.AngleTransform"), Single)
-            Me.grpbContacto.RootElement.FlipText = CType(resources.GetObject("grpbContacto.RootElement.FlipText"), Boolean)
-            Me.grpbContacto.RootElement.KeyTip = resources.GetString("grpbContacto.RootElement.KeyTip")
-            Me.grpbContacto.RootElement.Margin = CType(resources.GetObject("grpbContacto.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.grpbContacto.RootElement.Padding = CType(resources.GetObject("grpbContacto.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.grpbContacto.RootElement.Text = resources.GetString("grpbContacto.RootElement.Text")
-            Me.grpbContacto.RootElement.TextOrientation = CType(resources.GetObject("grpbContacto.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.grpbContacto.RootElement.ToolTipText = resources.GetString("grpbContacto.RootElement.ToolTipText")
             Me.grpbContacto.TabStop = False
             CType(Me.grpbContacto.GetChildAt(0), Telerik.WinControls.UI.RadGroupBoxElement).HeaderAlignment = Telerik.WinControls.UI.HeaderAlignment.Far
+            CType(Me.grpbContacto.GetChildAt(0), Telerik.WinControls.UI.RadGroupBoxElement).Padding = CType(resources.GetObject("resource.Padding"), System.Windows.Forms.Padding)
             CType(Me.grpbContacto.GetChildAt(0).GetChildAt(1), Telerik.WinControls.UI.GroupBoxHeader).GroupBoxStyle = Telerik.WinControls.UI.RadGroupBoxStyle.Office
             CType(Me.grpbContacto.GetChildAt(0).GetChildAt(1), Telerik.WinControls.UI.GroupBoxHeader).ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             '
@@ -465,20 +242,6 @@
             Me.txtEmail.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Email", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             Me.txtEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtEmail.Name = "txtEmail"
-            '
-            '
-            '
-            Me.txtEmail.RootElement.AccessibleDescription = resources.GetString("txtEmail.RootElement.AccessibleDescription")
-            Me.txtEmail.RootElement.AccessibleName = resources.GetString("txtEmail.RootElement.AccessibleName")
-            Me.txtEmail.RootElement.Alignment = CType(resources.GetObject("txtEmail.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.txtEmail.RootElement.AngleTransform = CType(resources.GetObject("txtEmail.RootElement.AngleTransform"), Single)
-            Me.txtEmail.RootElement.FlipText = CType(resources.GetObject("txtEmail.RootElement.FlipText"), Boolean)
-            Me.txtEmail.RootElement.KeyTip = resources.GetString("txtEmail.RootElement.KeyTip")
-            Me.txtEmail.RootElement.Margin = CType(resources.GetObject("txtEmail.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.txtEmail.RootElement.Padding = CType(resources.GetObject("txtEmail.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.txtEmail.RootElement.Text = resources.GetString("txtEmail.RootElement.Text")
-            Me.txtEmail.RootElement.TextOrientation = CType(resources.GetObject("txtEmail.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.txtEmail.RootElement.ToolTipText = resources.GetString("txtEmail.RootElement.ToolTipText")
             Me.txtEmail.TabStop = False
             CType(Me.txtEmail.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).Text = resources.GetString("resource.Text")
             CType(Me.txtEmail.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
@@ -494,20 +257,6 @@
             Me.txtFax.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Fax", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             Me.txtFax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtFax.Name = "txtFax"
-            '
-            '
-            '
-            Me.txtFax.RootElement.AccessibleDescription = resources.GetString("txtFax.RootElement.AccessibleDescription")
-            Me.txtFax.RootElement.AccessibleName = resources.GetString("txtFax.RootElement.AccessibleName")
-            Me.txtFax.RootElement.Alignment = CType(resources.GetObject("txtFax.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.txtFax.RootElement.AngleTransform = CType(resources.GetObject("txtFax.RootElement.AngleTransform"), Single)
-            Me.txtFax.RootElement.FlipText = CType(resources.GetObject("txtFax.RootElement.FlipText"), Boolean)
-            Me.txtFax.RootElement.KeyTip = resources.GetString("txtFax.RootElement.KeyTip")
-            Me.txtFax.RootElement.Margin = CType(resources.GetObject("txtFax.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.txtFax.RootElement.Padding = CType(resources.GetObject("txtFax.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.txtFax.RootElement.Text = resources.GetString("txtFax.RootElement.Text")
-            Me.txtFax.RootElement.TextOrientation = CType(resources.GetObject("txtFax.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.txtFax.RootElement.ToolTipText = resources.GetString("txtFax.RootElement.ToolTipText")
             Me.txtFax.TabStop = False
             CType(Me.txtFax.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).Text = resources.GetString("resource.Text1")
             CType(Me.txtFax.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
@@ -519,20 +268,6 @@
             Me.txtMovil.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Movil", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             Me.txtMovil.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtMovil.Name = "txtMovil"
-            '
-            '
-            '
-            Me.txtMovil.RootElement.AccessibleDescription = resources.GetString("txtMovil.RootElement.AccessibleDescription")
-            Me.txtMovil.RootElement.AccessibleName = resources.GetString("txtMovil.RootElement.AccessibleName")
-            Me.txtMovil.RootElement.Alignment = CType(resources.GetObject("txtMovil.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.txtMovil.RootElement.AngleTransform = CType(resources.GetObject("txtMovil.RootElement.AngleTransform"), Single)
-            Me.txtMovil.RootElement.FlipText = CType(resources.GetObject("txtMovil.RootElement.FlipText"), Boolean)
-            Me.txtMovil.RootElement.KeyTip = resources.GetString("txtMovil.RootElement.KeyTip")
-            Me.txtMovil.RootElement.Margin = CType(resources.GetObject("txtMovil.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.txtMovil.RootElement.Padding = CType(resources.GetObject("txtMovil.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.txtMovil.RootElement.Text = resources.GetString("txtMovil.RootElement.Text")
-            Me.txtMovil.RootElement.TextOrientation = CType(resources.GetObject("txtMovil.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.txtMovil.RootElement.ToolTipText = resources.GetString("txtMovil.RootElement.ToolTipText")
             Me.txtMovil.TabStop = False
             CType(Me.txtMovil.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).Text = resources.GetString("resource.Text2")
             CType(Me.txtMovil.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
@@ -544,20 +279,6 @@
             Me.txtTelefono.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Telefono", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             Me.txtTelefono.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtTelefono.Name = "txtTelefono"
-            '
-            '
-            '
-            Me.txtTelefono.RootElement.AccessibleDescription = resources.GetString("txtTelefono.RootElement.AccessibleDescription")
-            Me.txtTelefono.RootElement.AccessibleName = resources.GetString("txtTelefono.RootElement.AccessibleName")
-            Me.txtTelefono.RootElement.Alignment = CType(resources.GetObject("txtTelefono.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.txtTelefono.RootElement.AngleTransform = CType(resources.GetObject("txtTelefono.RootElement.AngleTransform"), Single)
-            Me.txtTelefono.RootElement.FlipText = CType(resources.GetObject("txtTelefono.RootElement.FlipText"), Boolean)
-            Me.txtTelefono.RootElement.KeyTip = resources.GetString("txtTelefono.RootElement.KeyTip")
-            Me.txtTelefono.RootElement.Margin = CType(resources.GetObject("txtTelefono.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.txtTelefono.RootElement.Padding = CType(resources.GetObject("txtTelefono.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.txtTelefono.RootElement.Text = resources.GetString("txtTelefono.RootElement.Text")
-            Me.txtTelefono.RootElement.TextOrientation = CType(resources.GetObject("txtTelefono.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.txtTelefono.RootElement.ToolTipText = resources.GetString("txtTelefono.RootElement.ToolTipText")
             Me.txtTelefono.TabStop = False
             CType(Me.txtTelefono.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).Text = resources.GetString("resource.Text3")
             CType(Me.txtTelefono.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
@@ -582,22 +303,9 @@
             Me.grpbDireccion.HeaderAlignment = Telerik.WinControls.UI.HeaderAlignment.Far
             Me.grpbDireccion.HeaderTextAlignment = System.Drawing.ContentAlignment.BottomCenter
             Me.grpbDireccion.Name = "grpbDireccion"
-            '
-            '
-            '
-            Me.grpbDireccion.RootElement.AccessibleDescription = resources.GetString("grpbDireccion.RootElement.AccessibleDescription")
-            Me.grpbDireccion.RootElement.AccessibleName = resources.GetString("grpbDireccion.RootElement.AccessibleName")
-            Me.grpbDireccion.RootElement.Alignment = CType(resources.GetObject("grpbDireccion.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.grpbDireccion.RootElement.AngleTransform = CType(resources.GetObject("grpbDireccion.RootElement.AngleTransform"), Single)
-            Me.grpbDireccion.RootElement.FlipText = CType(resources.GetObject("grpbDireccion.RootElement.FlipText"), Boolean)
-            Me.grpbDireccion.RootElement.KeyTip = resources.GetString("grpbDireccion.RootElement.KeyTip")
-            Me.grpbDireccion.RootElement.Margin = CType(resources.GetObject("grpbDireccion.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.grpbDireccion.RootElement.Padding = CType(resources.GetObject("grpbDireccion.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.grpbDireccion.RootElement.Text = resources.GetString("grpbDireccion.RootElement.Text")
-            Me.grpbDireccion.RootElement.TextOrientation = CType(resources.GetObject("grpbDireccion.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.grpbDireccion.RootElement.ToolTipText = resources.GetString("grpbDireccion.RootElement.ToolTipText")
             Me.grpbDireccion.TabStop = False
             CType(Me.grpbDireccion.GetChildAt(0), Telerik.WinControls.UI.RadGroupBoxElement).HeaderAlignment = Telerik.WinControls.UI.HeaderAlignment.Far
+            CType(Me.grpbDireccion.GetChildAt(0), Telerik.WinControls.UI.RadGroupBoxElement).Padding = CType(resources.GetObject("resource.Padding1"), System.Windows.Forms.Padding)
             CType(Me.grpbDireccion.GetChildAt(0).GetChildAt(1), Telerik.WinControls.UI.GroupBoxHeader).GroupBoxStyle = Telerik.WinControls.UI.RadGroupBoxStyle.Office
             CType(Me.grpbDireccion.GetChildAt(0).GetChildAt(1), Telerik.WinControls.UI.GroupBoxHeader).ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             '
@@ -607,20 +315,6 @@
             Me.txtCodigoPostal.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ProveedoresBindingSource, "CodigoPostal", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             Me.txtCodigoPostal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtCodigoPostal.Name = "txtCodigoPostal"
-            '
-            '
-            '
-            Me.txtCodigoPostal.RootElement.AccessibleDescription = resources.GetString("txtCodigoPostal.RootElement.AccessibleDescription")
-            Me.txtCodigoPostal.RootElement.AccessibleName = resources.GetString("txtCodigoPostal.RootElement.AccessibleName")
-            Me.txtCodigoPostal.RootElement.Alignment = CType(resources.GetObject("txtCodigoPostal.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.txtCodigoPostal.RootElement.AngleTransform = CType(resources.GetObject("txtCodigoPostal.RootElement.AngleTransform"), Single)
-            Me.txtCodigoPostal.RootElement.FlipText = CType(resources.GetObject("txtCodigoPostal.RootElement.FlipText"), Boolean)
-            Me.txtCodigoPostal.RootElement.KeyTip = resources.GetString("txtCodigoPostal.RootElement.KeyTip")
-            Me.txtCodigoPostal.RootElement.Margin = CType(resources.GetObject("txtCodigoPostal.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.txtCodigoPostal.RootElement.Padding = CType(resources.GetObject("txtCodigoPostal.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.txtCodigoPostal.RootElement.Text = resources.GetString("txtCodigoPostal.RootElement.Text")
-            Me.txtCodigoPostal.RootElement.TextOrientation = CType(resources.GetObject("txtCodigoPostal.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.txtCodigoPostal.RootElement.ToolTipText = resources.GetString("txtCodigoPostal.RootElement.ToolTipText")
             Me.txtCodigoPostal.TabStop = False
             Me.txtCodigoPostal.Tag = ""
             CType(Me.txtCodigoPostal.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).Text = resources.GetString("resource.Text4")
@@ -641,20 +335,6 @@
             Me.ddlLocalidad.DropDownSizingMode = Telerik.WinControls.UI.SizingMode.UpDown
             Me.ddlLocalidad.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.ddlLocalidad.Name = "ddlLocalidad"
-            '
-            '
-            '
-            Me.ddlLocalidad.RootElement.AccessibleDescription = resources.GetString("ddlLocalidad.RootElement.AccessibleDescription")
-            Me.ddlLocalidad.RootElement.AccessibleName = resources.GetString("ddlLocalidad.RootElement.AccessibleName")
-            Me.ddlLocalidad.RootElement.Alignment = CType(resources.GetObject("ddlLocalidad.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.ddlLocalidad.RootElement.AngleTransform = CType(resources.GetObject("ddlLocalidad.RootElement.AngleTransform"), Single)
-            Me.ddlLocalidad.RootElement.FlipText = CType(resources.GetObject("ddlLocalidad.RootElement.FlipText"), Boolean)
-            Me.ddlLocalidad.RootElement.KeyTip = resources.GetString("ddlLocalidad.RootElement.KeyTip")
-            Me.ddlLocalidad.RootElement.Margin = CType(resources.GetObject("ddlLocalidad.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.ddlLocalidad.RootElement.Padding = CType(resources.GetObject("ddlLocalidad.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.ddlLocalidad.RootElement.Text = resources.GetString("ddlLocalidad.RootElement.Text")
-            Me.ddlLocalidad.RootElement.TextOrientation = CType(resources.GetObject("ddlLocalidad.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.ddlLocalidad.RootElement.ToolTipText = resources.GetString("ddlLocalidad.RootElement.ToolTipText")
             Me.ddlLocalidad.SelectNextOnDoubleClick = True
             Me.ddlLocalidad.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending
             Me.ddlLocalidad.ValueMember = "CodMunicipio"
@@ -679,20 +359,6 @@
             Me.ddlProvincia.DropDownSizingMode = Telerik.WinControls.UI.SizingMode.UpDown
             Me.ddlProvincia.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.ddlProvincia.Name = "ddlProvincia"
-            '
-            '
-            '
-            Me.ddlProvincia.RootElement.AccessibleDescription = resources.GetString("ddlProvincia.RootElement.AccessibleDescription")
-            Me.ddlProvincia.RootElement.AccessibleName = resources.GetString("ddlProvincia.RootElement.AccessibleName")
-            Me.ddlProvincia.RootElement.Alignment = CType(resources.GetObject("ddlProvincia.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.ddlProvincia.RootElement.AngleTransform = CType(resources.GetObject("ddlProvincia.RootElement.AngleTransform"), Single)
-            Me.ddlProvincia.RootElement.FlipText = CType(resources.GetObject("ddlProvincia.RootElement.FlipText"), Boolean)
-            Me.ddlProvincia.RootElement.KeyTip = resources.GetString("ddlProvincia.RootElement.KeyTip")
-            Me.ddlProvincia.RootElement.Margin = CType(resources.GetObject("ddlProvincia.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.ddlProvincia.RootElement.Padding = CType(resources.GetObject("ddlProvincia.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.ddlProvincia.RootElement.Text = resources.GetString("ddlProvincia.RootElement.Text")
-            Me.ddlProvincia.RootElement.TextOrientation = CType(resources.GetObject("ddlProvincia.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.ddlProvincia.RootElement.ToolTipText = resources.GetString("ddlProvincia.RootElement.ToolTipText")
             Me.ddlProvincia.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending
             Me.ddlProvincia.ValueMember = "CodProvincia"
             CType(Me.ddlProvincia.GetChildAt(0), Telerik.WinControls.UI.RadDropDownListElement).DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDown
@@ -715,18 +381,7 @@
             '
             '
             '
-            Me.txtPais.RootElement.AccessibleDescription = resources.GetString("txtPais.RootElement.AccessibleDescription")
-            Me.txtPais.RootElement.AccessibleName = resources.GetString("txtPais.RootElement.AccessibleName")
-            Me.txtPais.RootElement.Alignment = CType(resources.GetObject("txtPais.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.txtPais.RootElement.AngleTransform = CType(resources.GetObject("txtPais.RootElement.AngleTransform"), Single)
             Me.txtPais.RootElement.ApplyShapeToControl = False
-            Me.txtPais.RootElement.FlipText = CType(resources.GetObject("txtPais.RootElement.FlipText"), Boolean)
-            Me.txtPais.RootElement.KeyTip = resources.GetString("txtPais.RootElement.KeyTip")
-            Me.txtPais.RootElement.Margin = CType(resources.GetObject("txtPais.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.txtPais.RootElement.Padding = CType(resources.GetObject("txtPais.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.txtPais.RootElement.Text = resources.GetString("txtPais.RootElement.Text")
-            Me.txtPais.RootElement.TextOrientation = CType(resources.GetObject("txtPais.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.txtPais.RootElement.ToolTipText = resources.GetString("txtPais.RootElement.ToolTipText")
             Me.txtPais.Tag = ""
             CType(Me.txtPais.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).Text = resources.GetString("resource.Text5")
             CType(Me.txtPais.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
@@ -744,18 +399,7 @@
             '
             '
             '
-            Me.txtDireccion.RootElement.AccessibleDescription = resources.GetString("txtDireccion.RootElement.AccessibleDescription")
-            Me.txtDireccion.RootElement.AccessibleName = resources.GetString("txtDireccion.RootElement.AccessibleName")
-            Me.txtDireccion.RootElement.Alignment = CType(resources.GetObject("txtDireccion.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.txtDireccion.RootElement.AngleTransform = CType(resources.GetObject("txtDireccion.RootElement.AngleTransform"), Single)
             Me.txtDireccion.RootElement.ApplyShapeToControl = False
-            Me.txtDireccion.RootElement.FlipText = CType(resources.GetObject("txtDireccion.RootElement.FlipText"), Boolean)
-            Me.txtDireccion.RootElement.KeyTip = resources.GetString("txtDireccion.RootElement.KeyTip")
-            Me.txtDireccion.RootElement.Margin = CType(resources.GetObject("txtDireccion.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.txtDireccion.RootElement.Padding = CType(resources.GetObject("txtDireccion.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.txtDireccion.RootElement.Text = resources.GetString("txtDireccion.RootElement.Text")
-            Me.txtDireccion.RootElement.TextOrientation = CType(resources.GetObject("txtDireccion.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.txtDireccion.RootElement.ToolTipText = resources.GetString("txtDireccion.RootElement.ToolTipText")
             Me.txtDireccion.Tag = ""
             CType(Me.txtDireccion.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).Text = resources.GetString("resource.Text6")
             CType(Me.txtDireccion.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
@@ -770,20 +414,6 @@
             Me.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
             Me.btnCancelar.Image = Global.EasyGest.My.Resources.Resources.cancel
             Me.btnCancelar.Name = "btnCancelar"
-            '
-            '
-            '
-            Me.btnCancelar.RootElement.AccessibleDescription = resources.GetString("btnCancelar.RootElement.AccessibleDescription")
-            Me.btnCancelar.RootElement.AccessibleName = resources.GetString("btnCancelar.RootElement.AccessibleName")
-            Me.btnCancelar.RootElement.Alignment = CType(resources.GetObject("btnCancelar.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.btnCancelar.RootElement.AngleTransform = CType(resources.GetObject("btnCancelar.RootElement.AngleTransform"), Single)
-            Me.btnCancelar.RootElement.FlipText = CType(resources.GetObject("btnCancelar.RootElement.FlipText"), Boolean)
-            Me.btnCancelar.RootElement.KeyTip = resources.GetString("btnCancelar.RootElement.KeyTip")
-            Me.btnCancelar.RootElement.Margin = CType(resources.GetObject("btnCancelar.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.btnCancelar.RootElement.Padding = CType(resources.GetObject("btnCancelar.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.btnCancelar.RootElement.Text = resources.GetString("btnCancelar.RootElement.Text")
-            Me.btnCancelar.RootElement.TextOrientation = CType(resources.GetObject("btnCancelar.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.btnCancelar.RootElement.ToolTipText = resources.GetString("btnCancelar.RootElement.ToolTipText")
             CType(Me.btnCancelar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).Image = Global.EasyGest.My.Resources.Resources.cancel
             CType(Me.btnCancelar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
             CType(Me.btnCancelar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
@@ -796,20 +426,6 @@
             Me.btnAceptar.DialogResult = System.Windows.Forms.DialogResult.OK
             Me.btnAceptar.Image = Global.EasyGest.My.Resources.Resources.accept
             Me.btnAceptar.Name = "btnAceptar"
-            '
-            '
-            '
-            Me.btnAceptar.RootElement.AccessibleDescription = resources.GetString("btnAceptar.RootElement.AccessibleDescription")
-            Me.btnAceptar.RootElement.AccessibleName = resources.GetString("btnAceptar.RootElement.AccessibleName")
-            Me.btnAceptar.RootElement.Alignment = CType(resources.GetObject("btnAceptar.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.btnAceptar.RootElement.AngleTransform = CType(resources.GetObject("btnAceptar.RootElement.AngleTransform"), Single)
-            Me.btnAceptar.RootElement.FlipText = CType(resources.GetObject("btnAceptar.RootElement.FlipText"), Boolean)
-            Me.btnAceptar.RootElement.KeyTip = resources.GetString("btnAceptar.RootElement.KeyTip")
-            Me.btnAceptar.RootElement.Margin = CType(resources.GetObject("btnAceptar.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.btnAceptar.RootElement.Padding = CType(resources.GetObject("btnAceptar.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.btnAceptar.RootElement.Text = resources.GetString("btnAceptar.RootElement.Text")
-            Me.btnAceptar.RootElement.TextOrientation = CType(resources.GetObject("btnAceptar.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.btnAceptar.RootElement.ToolTipText = resources.GetString("btnAceptar.RootElement.ToolTipText")
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).Image = Global.EasyGest.My.Resources.Resources.accept
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
@@ -830,22 +446,8 @@
             Me.ddlTipoIdentificacion.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
             Me.ddlTipoIdentificacion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.ddlTipoIdentificacion.Name = "ddlTipoIdentificacion"
-            '
-            '
-            '
-            Me.ddlTipoIdentificacion.RootElement.AccessibleDescription = resources.GetString("ddlTipoIdentificacion.RootElement.AccessibleDescription")
-            Me.ddlTipoIdentificacion.RootElement.AccessibleName = resources.GetString("ddlTipoIdentificacion.RootElement.AccessibleName")
-            Me.ddlTipoIdentificacion.RootElement.Alignment = CType(resources.GetObject("ddlTipoIdentificacion.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.ddlTipoIdentificacion.RootElement.AngleTransform = CType(resources.GetObject("ddlTipoIdentificacion.RootElement.AngleTransform"), Single)
-            Me.ddlTipoIdentificacion.RootElement.FlipText = CType(resources.GetObject("ddlTipoIdentificacion.RootElement.FlipText"), Boolean)
-            Me.ddlTipoIdentificacion.RootElement.KeyTip = resources.GetString("ddlTipoIdentificacion.RootElement.KeyTip")
-            Me.ddlTipoIdentificacion.RootElement.Margin = CType(resources.GetObject("ddlTipoIdentificacion.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.ddlTipoIdentificacion.RootElement.Padding = CType(resources.GetObject("ddlTipoIdentificacion.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.ddlTipoIdentificacion.RootElement.Text = resources.GetString("ddlTipoIdentificacion.RootElement.Text")
-            Me.ddlTipoIdentificacion.RootElement.TextOrientation = CType(resources.GetObject("ddlTipoIdentificacion.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.ddlTipoIdentificacion.RootElement.ToolTipText = resources.GetString("ddlTipoIdentificacion.RootElement.ToolTipText")
             Me.ddlTipoIdentificacion.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending
-            Me.ddlTipoIdentificacion.ValueMember = "idTipo"
+            Me.ddlTipoIdentificacion.ValueMember = "TipoID"
             CType(Me.ddlTipoIdentificacion.GetChildAt(0), Telerik.WinControls.UI.RadDropDownListElement).DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
             '
             'TiposIdentificacionBindingSource
@@ -862,18 +464,7 @@
             '
             '
             '
-            Me.txtNumeroIdentificacion.RootElement.AccessibleDescription = resources.GetString("txtNumeroIdentificacion.RootElement.AccessibleDescription")
-            Me.txtNumeroIdentificacion.RootElement.AccessibleName = resources.GetString("txtNumeroIdentificacion.RootElement.AccessibleName")
-            Me.txtNumeroIdentificacion.RootElement.Alignment = CType(resources.GetObject("txtNumeroIdentificacion.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.txtNumeroIdentificacion.RootElement.AngleTransform = CType(resources.GetObject("txtNumeroIdentificacion.RootElement.AngleTransform"), Single)
             Me.txtNumeroIdentificacion.RootElement.ApplyShapeToControl = False
-            Me.txtNumeroIdentificacion.RootElement.FlipText = CType(resources.GetObject("txtNumeroIdentificacion.RootElement.FlipText"), Boolean)
-            Me.txtNumeroIdentificacion.RootElement.KeyTip = resources.GetString("txtNumeroIdentificacion.RootElement.KeyTip")
-            Me.txtNumeroIdentificacion.RootElement.Margin = CType(resources.GetObject("txtNumeroIdentificacion.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.txtNumeroIdentificacion.RootElement.Padding = CType(resources.GetObject("txtNumeroIdentificacion.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.txtNumeroIdentificacion.RootElement.Text = resources.GetString("txtNumeroIdentificacion.RootElement.Text")
-            Me.txtNumeroIdentificacion.RootElement.TextOrientation = CType(resources.GetObject("txtNumeroIdentificacion.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.txtNumeroIdentificacion.RootElement.ToolTipText = resources.GetString("txtNumeroIdentificacion.RootElement.ToolTipText")
             Me.txtNumeroIdentificacion.Tag = ""
             CType(Me.txtNumeroIdentificacion.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).Text = resources.GetString("resource.Text9")
             CType(Me.txtNumeroIdentificacion.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
@@ -889,20 +480,6 @@
             Me.txtNombre.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Nombre", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             Me.txtNombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtNombre.Name = "txtNombre"
-            '
-            '
-            '
-            Me.txtNombre.RootElement.AccessibleDescription = resources.GetString("txtNombre.RootElement.AccessibleDescription")
-            Me.txtNombre.RootElement.AccessibleName = resources.GetString("txtNombre.RootElement.AccessibleName")
-            Me.txtNombre.RootElement.Alignment = CType(resources.GetObject("txtNombre.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.txtNombre.RootElement.AngleTransform = CType(resources.GetObject("txtNombre.RootElement.AngleTransform"), Single)
-            Me.txtNombre.RootElement.FlipText = CType(resources.GetObject("txtNombre.RootElement.FlipText"), Boolean)
-            Me.txtNombre.RootElement.KeyTip = resources.GetString("txtNombre.RootElement.KeyTip")
-            Me.txtNombre.RootElement.Margin = CType(resources.GetObject("txtNombre.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.txtNombre.RootElement.Padding = CType(resources.GetObject("txtNombre.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.txtNombre.RootElement.Text = resources.GetString("txtNombre.RootElement.Text")
-            Me.txtNombre.RootElement.TextOrientation = CType(resources.GetObject("txtNombre.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.txtNombre.RootElement.ToolTipText = resources.GetString("txtNombre.RootElement.ToolTipText")
             Me.txtNombre.Tag = "REQ"
             CType(Me.txtNombre.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).Text = resources.GetString("resource.Text10")
             CType(Me.txtNombre.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
@@ -920,18 +497,7 @@
             '
             '
             '
-            Me.txtNombreChino.RootElement.AccessibleDescription = resources.GetString("txtNombreChino.RootElement.AccessibleDescription")
-            Me.txtNombreChino.RootElement.AccessibleName = resources.GetString("txtNombreChino.RootElement.AccessibleName")
-            Me.txtNombreChino.RootElement.Alignment = CType(resources.GetObject("txtNombreChino.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.txtNombreChino.RootElement.AngleTransform = CType(resources.GetObject("txtNombreChino.RootElement.AngleTransform"), Single)
             Me.txtNombreChino.RootElement.ApplyShapeToControl = False
-            Me.txtNombreChino.RootElement.FlipText = CType(resources.GetObject("txtNombreChino.RootElement.FlipText"), Boolean)
-            Me.txtNombreChino.RootElement.KeyTip = resources.GetString("txtNombreChino.RootElement.KeyTip")
-            Me.txtNombreChino.RootElement.Margin = CType(resources.GetObject("txtNombreChino.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.txtNombreChino.RootElement.Padding = CType(resources.GetObject("txtNombreChino.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.txtNombreChino.RootElement.Text = resources.GetString("txtNombreChino.RootElement.Text")
-            Me.txtNombreChino.RootElement.TextOrientation = CType(resources.GetObject("txtNombreChino.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.txtNombreChino.RootElement.ToolTipText = resources.GetString("txtNombreChino.RootElement.ToolTipText")
             Me.txtNombreChino.Tag = ""
             CType(Me.txtNombreChino.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).Text = resources.GetString("resource.Text11")
             CType(Me.txtNombreChino.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
@@ -950,18 +516,7 @@
             '
             '
             '
-            Me.txtNombreContacto.RootElement.AccessibleDescription = resources.GetString("txtNombreContacto.RootElement.AccessibleDescription")
-            Me.txtNombreContacto.RootElement.AccessibleName = resources.GetString("txtNombreContacto.RootElement.AccessibleName")
-            Me.txtNombreContacto.RootElement.Alignment = CType(resources.GetObject("txtNombreContacto.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.txtNombreContacto.RootElement.AngleTransform = CType(resources.GetObject("txtNombreContacto.RootElement.AngleTransform"), Single)
             Me.txtNombreContacto.RootElement.ApplyShapeToControl = False
-            Me.txtNombreContacto.RootElement.FlipText = CType(resources.GetObject("txtNombreContacto.RootElement.FlipText"), Boolean)
-            Me.txtNombreContacto.RootElement.KeyTip = resources.GetString("txtNombreContacto.RootElement.KeyTip")
-            Me.txtNombreContacto.RootElement.Margin = CType(resources.GetObject("txtNombreContacto.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.txtNombreContacto.RootElement.Padding = CType(resources.GetObject("txtNombreContacto.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.txtNombreContacto.RootElement.Text = resources.GetString("txtNombreContacto.RootElement.Text")
-            Me.txtNombreContacto.RootElement.TextOrientation = CType(resources.GetObject("txtNombreContacto.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.txtNombreContacto.RootElement.ToolTipText = resources.GetString("txtNombreContacto.RootElement.ToolTipText")
             Me.txtNombreContacto.Tag = ""
             CType(Me.txtNombreContacto.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).Text = resources.GetString("resource.Text12")
             CType(Me.txtNombreContacto.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
@@ -984,18 +539,7 @@
             '
             '
             '
-            Me.txtObservacion.RootElement.AccessibleDescription = resources.GetString("txtObservacion.RootElement.AccessibleDescription")
-            Me.txtObservacion.RootElement.AccessibleName = resources.GetString("txtObservacion.RootElement.AccessibleName")
-            Me.txtObservacion.RootElement.Alignment = CType(resources.GetObject("txtObservacion.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.txtObservacion.RootElement.AngleTransform = CType(resources.GetObject("txtObservacion.RootElement.AngleTransform"), Single)
             Me.txtObservacion.RootElement.ApplyShapeToControl = False
-            Me.txtObservacion.RootElement.FlipText = CType(resources.GetObject("txtObservacion.RootElement.FlipText"), Boolean)
-            Me.txtObservacion.RootElement.KeyTip = resources.GetString("txtObservacion.RootElement.KeyTip")
-            Me.txtObservacion.RootElement.Margin = CType(resources.GetObject("txtObservacion.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.txtObservacion.RootElement.Padding = CType(resources.GetObject("txtObservacion.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.txtObservacion.RootElement.Text = resources.GetString("txtObservacion.RootElement.Text")
-            Me.txtObservacion.RootElement.TextOrientation = CType(resources.GetObject("txtObservacion.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.txtObservacion.RootElement.ToolTipText = resources.GetString("txtObservacion.RootElement.ToolTipText")
             Me.txtObservacion.Tag = ""
             CType(Me.txtObservacion.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).Text = resources.GetString("resource.Text13")
             CType(Me.txtObservacion.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
@@ -1011,6 +555,7 @@
             resources.ApplyResources(Me, "$this")
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
             Me.CancelButton = Me.btnCancelar
+            Me.Controls.Add(Me.ddlTipoIdentificacion)
             Me.Controls.Add(Me.txtNombreContacto)
             Me.Controls.Add(RadLabel16)
             Me.Controls.Add(Me.txtNombreChino)
@@ -1020,7 +565,6 @@
             Me.Controls.Add(Me.grpbDireccion)
             Me.Controls.Add(Me.grpbContacto)
             Me.Controls.Add(Me.txtNumeroIdentificacion)
-            Me.Controls.Add(Me.ddlTipoIdentificacion)
             Me.Controls.Add(RadLabel5)
             Me.Controls.Add(RadLabel4)
             Me.Controls.Add(Me.txtNombre)
@@ -1036,18 +580,7 @@
             '
             '
             '
-            Me.RootElement.AccessibleDescription = resources.GetString("frmProveedorEdicion.RootElement.AccessibleDescription")
-            Me.RootElement.AccessibleName = resources.GetString("frmProveedorEdicion.RootElement.AccessibleName")
-            Me.RootElement.Alignment = CType(resources.GetObject("frmProveedorEdicion.RootElement.Alignment"), System.Drawing.ContentAlignment)
-            Me.RootElement.AngleTransform = CType(resources.GetObject("frmProveedorEdicion.RootElement.AngleTransform"), Single)
             Me.RootElement.ApplyShapeToControl = True
-            Me.RootElement.FlipText = CType(resources.GetObject("frmProveedorEdicion.RootElement.FlipText"), Boolean)
-            Me.RootElement.KeyTip = resources.GetString("frmProveedorEdicion.RootElement.KeyTip")
-            Me.RootElement.Margin = CType(resources.GetObject("frmProveedorEdicion.RootElement.Margin"), System.Windows.Forms.Padding)
-            Me.RootElement.Padding = CType(resources.GetObject("frmProveedorEdicion.RootElement.Padding"), System.Windows.Forms.Padding)
-            Me.RootElement.Text = resources.GetString("frmProveedorEdicion.RootElement.Text")
-            Me.RootElement.TextOrientation = CType(resources.GetObject("frmProveedorEdicion.RootElement.TextOrientation"), System.Windows.Forms.Orientation)
-            Me.RootElement.ToolTipText = resources.GetString("frmProveedorEdicion.RootElement.ToolTipText")
             Me.ShowInTaskbar = False
             CType(RadLabel1, System.ComponentModel.ISupportInitialize).EndInit()
             CType(RadLabel2, System.ComponentModel.ISupportInitialize).EndInit()

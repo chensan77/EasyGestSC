@@ -11,16 +11,32 @@ Namespace Controller
         Private _disposed As Boolean = False
         Private _context As TContext = Nothing
         Private _entityType As Type = GetType(TEntity)
-        Private _primaryKeys As New Dictionary(Of String, PropertyInfo)
+        Private Shared _primaryKeys As New Dictionary(Of String, PropertyInfo)
+
+        Shared Sub New()
+            _primaryKeys = Data.Entity.LINQEntityBase.GetLINQEntityPrimaryKeys(GetType(TEntity))
+        End Sub
 
         Protected Sub New()
             _context = CType(Activator.CreateInstance(GetType(TContext), ""), TContext)
-            _primaryKeys = Data.Entity.LINQEntityBase.GetLINQEntityPrimaryKeys(_entityType)
         End Sub
 
 
         Public Shared Function NewItem() As TEntity
             Dim Item As TEntity = DirectCast(Activator.CreateInstance(GetType(TEntity)), TEntity)
+            Dim entityType As Type = GetType(TEntity)
+
+            If Not IsNothing(_primaryKeys) Then
+                For Each prop As PropertyInfo In _primaryKeys.Values
+                    Try
+                        prop.SetValue(Item, CLng(Rnd() * -1000000000))
+
+                    Catch ex As Exception
+
+                    End Try
+                Next
+            End If
+
             Item.SetAsInsertOnSubmit()
             Return Item
         End Function
@@ -39,9 +55,7 @@ Namespace Controller
 
         Public Overridable Sub SyncronisingItem(ByRef item As TEntity)
             If item Is Nothing Then Throw New NullReferenceException()
-            Dim items As New List(Of TEntity)()
-            items.Add(item)
-            SyncronisingItem(items)
+            SyncronisingItem(New TEntity() {item}.AsEnumerable())
         End Sub
 
         Public Overridable Sub SyncronisingItem(ByRef items As IEnumerable(Of TEntity))
@@ -63,19 +77,19 @@ Namespace Controller
                 Dim deleteItems As New List(Of TEntity)()
                 For Each item As TEntity In items
                     If BaseDataContext.IsReadOnlyEntity(GetType(TEntity)) Then Throw New ApplicationException("Entidad no modificable")
-
+                    Dim isAttached As Boolean = table.Contains(item)
                     If item.LINQEntityState = Data.Entity.EntityState.Original Then
-                        table.Attach(item, False)
+                        'If Not isAttached Then table.Attach(item, False)
                     ElseIf item.LINQEntityState = Data.Entity.EntityState.[New] Then
                         insertItems.Add(item)
                     ElseIf item.LINQEntityState = EasyGestControllers.Data.Entity.EntityState.Modified OrElse item.LINQEntityState = EasyGestControllers.Data.Entity.EntityState.Detached Then
                         If item.LINQEntityOriginalValue IsNot Nothing Then
-                            table.Attach(item, item.LINQEntityOriginalValue)
+                            If Not isAttached Then table.Attach(item, item.LINQEntityOriginalValue)
                         Else
-                            table.Attach(item, True)
+                            If Not isAttached Then table.Attach(item, True)
                         End If
                     ElseIf item.LINQEntityState = EasyGestControllers.Data.Entity.EntityState.Deleted Then
-                        table.Attach(item)
+                        If Not isAttached Then table.Attach(item)
                         deleteItems.Add(item)
                     End If
                     'item.SetAsChangeTrackingRoot()
@@ -102,7 +116,7 @@ Namespace Controller
             End Try
         End Sub
 
-        Protected Overridable Sub AddItem(ByRef item As TEntity)
+        Public Overridable Sub AddItem(ByRef item As TEntity)
             If item Is Nothing Then Throw New NullReferenceException()
             If BaseDataContext.IsReadOnlyEntity(GetType(TEntity)) Then Throw New ReadOnlyException("Entidad no modificable")
             item.SetAsInsertOnSubmit()
@@ -123,29 +137,41 @@ Namespace Controller
         '    End If
         'End Sub
 
+        Public Overridable Function ExecuteCMD(ByVal filtro As String) As IEnumerable(Of TEntity)
+            Dim comando As String
+            comando = "SELECT * FROM " & _entityType.Name & " WHERE " & filtro
+            Return _context.ExecuteQuery(Of TEntity)(comando).ToList()
+        End Function
+
+
         Public Overridable Sub UpdateItem(ByRef item As TEntity)
             If item Is Nothing Then Throw New NullReferenceException
             If BaseDataContext.IsReadOnlyEntity(GetType(TEntity)) Then Throw New ReadOnlyException("Entidad no modificable")
-            'item.SetAsUpdateOnSubmit()
+            item.SetAsUpdateOnSubmit()
             SyncronisingItem(item)
         End Sub
 
-        Public Overridable Function DeleteItem(ByVal id As Object) As TEntity
-            Return DeleteItem(New Object() {id})
-        End Function
+        'Public Overridable Function DeleteItem(ParamArray id As Object()) As TEntity
+        '    Return DeleteItem(New Object() {id})
+        'End Function
 
-        Public Overridable Function DeleteItem(ByVal keys As Object()) As TEntity
+        Public Overridable Function DeleteItem(ParamArray keys As Object()) As TEntity
             Dim toDelete As TEntity = Nothing
-            Dim table As Table(Of TEntity)
             toDelete = GetItem(keys)
-            If BaseDataContext.IsReadOnlyEntity(GetType(TEntity)) Then Throw New ReadOnlyException("Entidad no modificable")
-            table = Contexto.GetTable(Of TEntity)()
+
             If toDelete IsNot Nothing Then
-                table.DeleteOnSubmit(toDelete)
-                Contexto.SubmitChanges()
+                DeleteItems(New TEntity() {toDelete}.AsEnumerable())
             End If
             Return toDelete
         End Function
+
+        Public Overridable Sub DeleteItems(ByRef items As IEnumerable(Of TEntity))
+            If BaseDataContext.IsReadOnlyEntity(GetType(TEntity)) Then Throw New ReadOnlyException("Entidad no modificable")
+            For Each item In items
+                item.SetAsDeleteOnSubmit()
+            Next
+            SyncronisingItem(items)
+        End Sub
 
         'Public Overridable Sub DeleteItems(ByVal items As IEnumerable(Of TEntity))
         '    If _readonly Then Throw New ReadOnlyException("Entidad no modificable")
@@ -176,19 +202,19 @@ Namespace Controller
 
         'End Sub
 
-        Public Function GetItem(ByVal id As Object) As TEntity
-            Return GetItem(Of TEntity)(New Object() {id})
+        Public Function GetItem(ParamArray id As Object()) As TEntity
+            Return GetItem(Of TEntity)(id)
         End Function
 
-        Public Function GetItem(Of T As Class)(ByVal id As Object) As T
-            Return GetItem(Of T)(New Object() {id})
-        End Function
+        'Public Function GetItem(Of T As Class)(ByVal id As Object) As T
+        '    Return GetItem(Of T)(New Object() {id})
+        'End Function
 
-        Public Function GetItem(ByVal keys As Object()) As TEntity
-            Return GetItem(Of TEntity)(keys)
-        End Function
+        'Public Function GetItem(ByVal keys As Object()) As TEntity
+        '    Return GetItem(Of TEntity)(keys)
+        'End Function
 
-        Public Function GetItem(Of T As Data.Entity.LINQEntityBase)(ByVal keys As Object()) As T
+        Public Function GetItem(Of T As Data.Entity.LINQEntityBase)(ParamArray keys As Object()) As T
             If keys Is Nothing Then Throw New NullReferenceException()
             If keys.Length = 0 Then Throw New ArgumentException()
             If _primaryKeys.Count > keys.Length Then Throw New Exception("No se ha especificado las claves primarias")

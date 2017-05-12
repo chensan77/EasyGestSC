@@ -420,4 +420,28 @@
   <data name="ConfirmacionErrorNoControlado" xml:space="preserve">
     <value>程序运行时发生无法掌控的错误, 请参考log文件. 需要继续运行程序吗?</value>
   </data>
+  <data name="AvisoProductoAsignadoFamilia" xml:space="preserve">
+    <value>已成功将商品分配到 "{0}" 品种。</value>
+  </data>
+  <data name="AvisoProductoAsignadoOferta" xml:space="preserve">
+    <value>已成功将商品分配到 "{0}" 优惠方案。</value>
+  </data>
+  <data name="TextoProducto" xml:space="preserve">
+    <value>商品</value>
+  </data>
+  <data name="GridHeaderTextBuscarCliente" xml:space="preserve">
+    <value>货商号;名称;证件类型;证件号码;地址;邮编;城镇;省份;建立日期</value>
+  </data>
+  <data name="GridHeaderTextBuscarProducto" xml:space="preserve">
+    <value>编号;商品;售价;最新货商;品种;位置;品牌;建立日期</value>
+  </data>
+  <data name="GridHeaderTextBuscarProveedor" xml:space="preserve">
+    <value>货商号;名称;中文名;证件类型;证件号码;地址;邮编;城镇;省份;建立日期</value>
+  </data>
+  <data name="GridHeaderTextListaInicio" xml:space="preserve">
+    <value>商品;编码;备注;建立日期;订货</value>
+  </data>
+  <data name="GridHeaderTextTareaInicio" xml:space="preserve">
+    <value>;事件;日期;时间</value>
+  </data>
 </root>

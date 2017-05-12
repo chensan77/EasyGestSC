@@ -5,6 +5,7 @@ Imports EasyGest.Presentacion.Formulario.Dialogo
 Imports EasyGest.Presentacion.Formulario.Proveedor
 Imports EasyGest.Presentacion.Formulario.Configuracion
 Imports EasyGest.Presentacion.Formulario.Producto
+Imports Telerik.WinControls.UI.Docking
 
 Namespace Presentacion.Formulario
     Public Class frmPrincipal
@@ -152,24 +153,42 @@ Namespace Presentacion.Formulario
             Return continuar
         End Function
 
+        Friend Function FindFormByType(tipo As Type) As IEnumerable(Of Form)
+            Return dokPrincipal.MdiChildren.Where(Function(s As Form) s.GetType() Is tipo)
+        End Function
+
         Friend Sub AddForm(frm As RadForm, unico As Boolean)
             If IsNothing(frm) Then Return
             frm.KeyPreview = True
             If unico Then
-                For Each f As RadForm In dokPrincipal.MdiChildren
-                    If f.Text.Equals(frm.Text) Then
-                        dokPrincipal.ActivateMdiChild(f)
-                        Return
-                    End If
-                Next
+                Dim forms As IEnumerable(Of Form) = dokPrincipal.MdiChildren.Where(Function(s As Form) s.Name = frm.Name)
+                If forms.Count > 0 Then
+                    dokPrincipal.ActivateMdiChild(forms.First)
+                    Return
+                End If
+            Else
+                frm.Text &= Now().ToString("[hhmmss]")
             End If
             frm.MdiParent = Me
             frm.Show()
         End Sub
 
-        Friend Sub ShowAlerta(titulo As String, contenido As String)
+        Friend Sub RemoveForm(formType As Type)
+            Dim forms As IEnumerable(Of Form) = dokPrincipal.MdiChildren.Where(Function(s As Form) s.GetType() Is formType)
+
+            For Each f As Form In forms
+                f.Close()
+            Next
+        End Sub
+
+        Friend Sub ShowAlerta(titulo As String, contenido As String, Optional contIcon As Image = Nothing)
             alertTarea.CaptionText = titulo
             alertTarea.ContentText = contenido
+            If Not IsNothing(contIcon) Then
+                alertTarea.ContentImage = contIcon
+            Else
+                alertTarea.ContentImage = My.Resources.AQUA_ICONS_SYSTEM_ALERT_NOTE_ICON
+            End If
             alertTarea.Show()
         End Sub
 
@@ -254,6 +273,16 @@ Namespace Presentacion.Formulario
             mitemIniciar.Enabled = CajaCerrado
         End Sub
 
+        Private Sub dokPrincipal_DockWindowAdded(sender As Object, e As DockWindowEventArgs) Handles dokPrincipal.DockWindowAdded
+            Dim form As RadForm
+
+            If e.DockWindow.Controls.Count > 0 Then
+                form = TryCast(e.DockWindow.Controls(0), RadForm)
+                If Not IsNothing(form) Then e.DockWindow.TabStripItem.Image = New Bitmap(form.Icon.ToBitmap(), New Size(16, 16))
+
+            End If
+
+        End Sub
     End Class
 
 End Namespace

@@ -32,15 +32,6 @@ Namespace Presentacion.Formulario.Proveedor
 
             ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
             _diagnostico = New Diagnostics.Stopwatch()
-        End Sub
-
-#Region "Evento Form"
-
-        'Private Sub frmProveedor_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles Me.KeyPress
-        '    MostrarMensaje(e.KeyChar, "Proveedor")
-        'End Sub
-
-        Private Sub frmProveedor_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
             Me.Controls.Add(_panel)
             _panel.BringToFront()
             PrepararControles(pvpDetalle.Controls)
@@ -52,8 +43,20 @@ Namespace Presentacion.Formulario.Proveedor
             ConfigurarCommandBar(Me.cbstripeAccion)
             ConfigurarCommandBar(Me.cbstripeOrden)
             ConfigurarCommandBar(Me.cbstripeBusqueda)
+        End Sub
+
+#Region "Evento Form"
+
+        'Private Sub frmProveedor_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles Me.KeyPress
+        '    MostrarMensaje(e.KeyChar, "Proveedor")
+        'End Sub
+
+        Private Sub frmProveedor_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+
             pvInfo.SelectedPage = pvpDetalle
             chkeNoActivos.ToggleState = Telerik.WinControls.Enumerations.ToggleState.Off
+            chkeNoActivos.Font = gDefaultFont
+            chkePaginar.Font = gDefaultFont
             lbleDiagnostico.Text = ""
             AddHandler chkePaginar.ToggleStateChanged, AddressOf chkePaginar_ToggleStateChanged
         End Sub

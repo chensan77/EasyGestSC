@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="RadLabel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 12</value>
@@ -131,7 +131,7 @@
     <value>名称</value>
   </data>
   <data name="RadLabel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>226, 46</value>
@@ -143,7 +143,7 @@
     <value>中文名</value>
   </data>
   <data name="RadLabel3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 46</value>
@@ -155,7 +155,7 @@
     <value>编号</value>
   </data>
   <data name="RadLabel4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel4.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 80</value>
@@ -167,7 +167,7 @@
     <value>证件类</value>
   </data>
   <data name="RadLabel5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel5.Location" type="System.Drawing.Point, System.Drawing">
     <value>226, 80</value>
@@ -179,7 +179,7 @@
     <value>证件号</value>
   </data>
   <data name="RadLabel6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel6.Location" type="System.Drawing.Point, System.Drawing">
     <value>329, 116</value>
@@ -191,7 +191,7 @@
     <value>加算RE</value>
   </data>
   <data name="RadLabel7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel7.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 116</value>
@@ -203,7 +203,7 @@
     <value>折扣</value>
   </data>
   <data name="RadLabel8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel8.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 33</value>
@@ -215,7 +215,7 @@
     <value>固话</value>
   </data>
   <data name="RadLabel9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel9.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 64</value>
@@ -227,7 +227,7 @@
     <value>移动</value>
   </data>
   <data name="RadLabel10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel10.Location" type="System.Drawing.Point, System.Drawing">
     <value>208, 33</value>
@@ -239,7 +239,7 @@
     <value>传真</value>
   </data>
   <data name="RadLabel11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel11.Location" type="System.Drawing.Point, System.Drawing">
     <value>208, 64</value>
@@ -251,7 +251,7 @@
     <value>电邮</value>
   </data>
   <data name="RadLabel12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel12.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 95</value>
@@ -263,7 +263,7 @@
     <value>省份</value>
   </data>
   <data name="RadLabel13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel13.Location" type="System.Drawing.Point, System.Drawing">
     <value>325, 65</value>
@@ -275,7 +275,7 @@
     <value>邮编</value>
   </data>
   <data name="RadLabel14.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel14.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 65</value>
@@ -287,7 +287,7 @@
     <value>国家</value>
   </data>
   <data name="RadLabel15.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel15.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 35</value>
@@ -299,7 +299,7 @@
     <value>地址</value>
   </data>
   <data name="RadLabel16.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel16.Location" type="System.Drawing.Point, System.Drawing">
     <value>226, 150</value>
@@ -311,7 +311,7 @@
     <value>联络人</value>
   </data>
   <data name="RadLabel17.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel17.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 128</value>
@@ -323,7 +323,7 @@
     <value>城镇</value>
   </data>
   <data name="RadLabel18.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel18.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 457</value>
@@ -335,7 +335,7 @@
     <value>参考</value>
   </data>
   <data name="RadLabel19.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel19.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 150</value>
@@ -347,7 +347,7 @@
     <value>出生日期</value>
   </data>
   <data name="lblAplicarImpIndirecto.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="lblAplicarImpIndirecto.Location" type="System.Drawing.Point, System.Drawing">
     <value>186, 116</value>
@@ -387,7 +387,7 @@
     <value>136, 24</value>
   </data>
   <data name="grpbContacto.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="grpbContacto.HeaderText" xml:space="preserve">
     <value>联络</value>
@@ -426,7 +426,7 @@
     <value>398, 24</value>
   </data>
   <data name="grpbDireccion.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="grpbDireccion.HeaderText" xml:space="preserve">
     <value>地址</value>
@@ -435,7 +435,7 @@
     <value>地址</value>
   </data>
   <data name="btnCancelar.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="btnCancelar.Location" type="System.Drawing.Point, System.Drawing">
     <value>374, 518</value>
@@ -447,7 +447,7 @@
     <value>取消</value>
   </data>
   <data name="btnAceptar.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="btnAceptar.Location" type="System.Drawing.Point, System.Drawing">
     <value>275, 518</value>
@@ -459,7 +459,7 @@
     <value>确定</value>
   </data>
   <data name="ddlTipoIdentificacion.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 11.25pt</value>
+    <value>楷体, 11.25pt</value>
   </data>
   <data name="ddlTipoIdentificacion.Location" type="System.Drawing.Point, System.Drawing">
     <value>53, 78</value>
@@ -522,7 +522,7 @@
     <value>459, 581</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 9.75pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

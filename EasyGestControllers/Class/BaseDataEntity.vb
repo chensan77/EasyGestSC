@@ -134,7 +134,7 @@ Namespace Data.Entity
         End Function
 
 
-        Public Shared Function GetLINQEntityPrimaryKeys(entityType As Type) As Dictionary(Of String, PropertyInfo)
+        Protected Friend Shared Function GetLINQEntityPrimaryKeys(entityType As Type) As Dictionary(Of String, PropertyInfo)
             Dim primaryKeys As New Dictionary(Of String, PropertyInfo)
             _cacheTablesPrimaryKeysProperties.TryGetValue(entityType, primaryKeys)
             Return primaryKeys
@@ -310,7 +310,6 @@ Namespace Data.Entity
 
         Private Sub Init()
             _isSyncronisingWithDB = False
-            _isRoot = False
             _entityState = EntityState.NotTracked
             _isKeepOriginal = False
 
@@ -327,8 +326,6 @@ Namespace Data.Entity
 #Region "private_members"
 
         Private _isSyncronisingWithDB As Boolean
-        Private _isRoot As Boolean
-        ' indicates if the entity is the root of the entity tree
         Private _entityState As EntityState
         'returns the current entity state
         Private _isKeepOriginal As Boolean
@@ -532,13 +529,13 @@ Namespace Data.Entity
             Get
                 ' if in the root object, get all detached records 
                 ' except for root object if marked as detached
-                If Me.IsRoot = True Then
-                    Dim entities As New List(Of LINQEntityBase)()
-                    entities.AddRange(_changeTrackingReferences.Where(Function(e) e.LINQEntityState = EntityState.Detached AndAlso Not e.Equals(Me)))
-                    Return entities
-                Else
-                    Return Nothing
-                End If
+                'If Me.IsRoot = True Then
+                Dim entities As New List(Of LINQEntityBase)()
+                entities.AddRange(_changeTrackingReferences.Where(Function(e) e.LINQEntityState = EntityState.Detached AndAlso Not e.Equals(Me)))
+                Return entities
+                'Else
+                '    Return Nothing
+                'End If
             End Get
 
             Set
@@ -548,24 +545,24 @@ Namespace Data.Entity
 
 
 
-        ''' <summary>
-        ''' For serialization purposes, returns null if false (so it doesn't take up space in xml)
-        ''' Or true if this object is the root.
-        ''' </summary>
-        <DataMember(Order:=6)>
-        Private Property IsRoot() As System.Nullable(Of Boolean)
-            Get
-                Dim temp As System.Nullable(Of Boolean) = Nothing
-                Return If((_isRoot), True, temp)
-            End Get
-            Set
-                If Value Is Nothing Then
-                    _isRoot = False
-                Else
-                    _isRoot = Value.Value
-                End If
-            End Set
-        End Property
+        '''' <summary>
+        '''' For serialization purposes, returns null if false (so it doesn't take up space in xml)
+        '''' Or true if this object is the root.
+        '''' </summary>
+        '<DataMember(Order:=6)>
+        'Private Property IsRoot() As System.Nullable(Of Boolean)
+        '    Get
+        '        Dim temp As System.Nullable(Of Boolean) = Nothing
+        '        Return If((_isRoot), True, temp)
+        '    End Get
+        '    Set
+        '        If Value Is Nothing Then
+        '            _isRoot = False
+        '        Else
+        '            _isRoot = Value.Value
+        '        End If
+        '    End Set
+        'End Property
 
         ''' <summary>
         ''' When starting deserialization, call this method to make sure that 
@@ -592,18 +589,18 @@ Namespace Data.Entity
             ' And set the changetracking references
             If Me.LINQEntityState = EntityState.NotTracked Then
                 BindToEntityEvents()
-            ElseIf Me.IsRoot = True Then
-                ' Set the change tracking references to the value which 
-                ' ToEntityTree() returns, which will inlcude not only the 
-                ' entity tree, but the detached entities as well.
-                _changeTrackingReferences = Me.ToEntityTree()
+                'ElseIf Me.IsRoot = True Then
+                '    ' Set the change tracking references to the value which 
+                '    ' ToEntityTree() returns, which will inlcude not only the 
+                '    ' entity tree, but the detached entities as well.
+                '    _changeTrackingReferences = Me.ToEntityTree()
 
-                ' Bind to events for every entity in the tree, doing this only as
-                ' the very last step of deserialization because we don't want
-                ' any of the events to accidentally fire while deserializing.
-                For Each entity As LINQEntityBase In _changeTrackingReferences
-                    entity.BindToEntityEvents()
-                Next
+                '    ' Bind to events for every entity in the tree, doing this only as
+                '    ' the very last step of deserialization because we don't want
+                '    ' any of the events to accidentally fire while deserializing.
+                '    For Each entity As LINQEntityBase In _changeTrackingReferences
+                '        entity.BindToEntityEvents()
+                '    Next
             End If
         End Sub
 
@@ -663,7 +660,7 @@ Namespace Data.Entity
         ''' This method flattens the hierachy of objects into a single list that can be queried by linq
         ''' </summary>
         ''' <returns></returns>
-        Public Function ToEntityTree() As List(Of LINQEntityBase)
+        Friend Function ToEntityTree() As List(Of LINQEntityBase)
             ' Deleted records won't show up in entity tree
             ' So include these when returning the results
 
@@ -671,9 +668,9 @@ Namespace Data.Entity
 
             entities = (From t In _entityTree).ToList()
 
-            If Me.IsRoot = True Then
-                entities.AddRange(LINQEntityDetachedEntities)
-            End If
+            'If Me.IsRoot = True Then
+            entities.AddRange(LINQEntityDetachedEntities)
+            'End If
 
             Return entities
         End Function
@@ -687,7 +684,7 @@ Namespace Data.Entity
         ''' Assumes object is in original state (unmodified)
         ''' Does not keep original values.
         ''' </summary>
-        Public Sub SetAsChangeTrackingRoot()
+        Friend Sub SetAsChangeTrackingRoot()
             SetAsChangeTrackingRoot(EntityState.Original, True)
         End Sub
 
@@ -696,7 +693,7 @@ Namespace Data.Entity
         ''' Assumes object is in original state (unmodified)
         ''' </summary>
         ''' <param name="OnModifyKeepOriginal">If modified, original entity state is kept for attachment to context later on.</param>
-        Public Sub SetAsChangeTrackingRoot(onModifyKeepOriginal As Boolean)
+        Friend Sub SetAsChangeTrackingRoot(onModifyKeepOriginal As Boolean)
             SetAsChangeTrackingRoot(EntityState.Original, onModifyKeepOriginal)
         End Sub
 
@@ -705,7 +702,7 @@ Namespace Data.Entity
         ''' Does not keep original values.
         ''' </summary>
         ''' <param name="initialEntityState">The initial state of the root entity</param>
-        Public Sub SetAsChangeTrackingRoot(initialEntityState As EntityState)
+        Friend Sub SetAsChangeTrackingRoot(initialEntityState As EntityState)
             SetAsChangeTrackingRoot(initialEntityState, True)
         End Sub
 
@@ -714,11 +711,11 @@ Namespace Data.Entity
         ''' </summary>
         ''' <param name="initialEntityState">The initial state of the root entity</param>
         ''' <param name="onModifyKeepOriginal">If modified, original entity state is kept for attachment to context later on.</param>
-        Public Sub SetAsChangeTrackingRoot(initialEntityState As EntityState, onModifyKeepOriginal As Boolean)
+        Friend Sub SetAsChangeTrackingRoot(initialEntityState As EntityState, onModifyKeepOriginal As Boolean)
             ' Throw an exception if this object is already being change tracked
-            If Me.LINQEntityState <> EntityState.NotTracked AndAlso Me.IsRoot = False Then
-                Throw New ApplicationException("This entity is already being Change Tracked and cannot be the root.")
-            End If
+            'If Me.LINQEntityState <> EntityState.NotTracked AndAlso Me.IsRoot = False Then
+            '    Throw New ApplicationException("This entity is already being Change Tracked and cannot be the root.")
+            'End If
 
             ' Throw an exception if "Modified" is passed in - this is not allowed
             If initialEntityState = EntityState.Modified Then
@@ -733,7 +730,7 @@ Namespace Data.Entity
             ' This is the root object, so grab a list of all the references and keep for later.
             ' We need this, so that we can track entity deletions.
             _changeTrackingReferences = Me._entityTree.ToList()
-            _isRoot = True
+            '_isRoot = True
 
             ' Reset all the change tracked object states
             For Each entity As LINQEntityBase In _changeTrackingReferences
@@ -903,9 +900,9 @@ Namespace Data.Entity
                 Throw New ApplicationException("You cannot change the Entity State from 'Detached' to 'New'")
             End If
 
-            If Me.LINQEntityState = EntityState.NotTracked Then
-                Throw New ApplicationException("You cannot change the Entity State when the Entity is not change tracked")
-            End If
+            'If Me.LINQEntityState = EntityState.NotTracked Then
+            '    Throw New ApplicationException("You cannot change the Entity State when the Entity is not change tracked")
+            'End If
 
             LINQEntityState = EntityState.[New]
         End Sub
@@ -955,9 +952,9 @@ Namespace Data.Entity
                 Throw New ApplicationException("You cannot change the Entity State from 'Detached' to 'Modified'")
             End If
 
-            If Me.LINQEntityState = EntityState.NotTracked Then
-                Throw New ApplicationException("You cannot change the Entity State when the Entity is not change tracked")
-            End If
+            'If Me.LINQEntityState = EntityState.NotTracked Then
+            '    Throw New ApplicationException("You cannot change the Entity State when the Entity is not change tracked")
+            'End If
 
             If OriginalValue IsNot Nothing Then
                 OriginalValue.ShallowCopy(Me._originalEntityValue)
@@ -992,9 +989,9 @@ Namespace Data.Entity
                 Throw New ApplicationException("You cannot change the Entity State from 'Detached' to 'Original'")
             End If
 
-            If Me.LINQEntityState = EntityState.NotTracked Then
-                Throw New ApplicationException("You cannot change the Entity State when the Entity is not change tracked")
-            End If
+            'If Me.LINQEntityState = EntityState.NotTracked Then
+            '    Throw New ApplicationException("You cannot change the Entity State when the Entity is not change tracked")
+            'End If
 
             Me.LINQEntityState = EntityState.Original
         End Sub
@@ -1023,9 +1020,9 @@ Namespace Data.Entity
                 Throw New ApplicationException("You cannot modify the Entity State from 'Detached' to 'Delete' ")
             End If
 
-            If Me.LINQEntityState = EntityState.NotTracked Then
-                Throw New ApplicationException("You cannot change the Entity State when the Entity is not change tracked")
-            End If
+            'If Me.LINQEntityState = EntityState.NotTracked Then
+            '    Throw New ApplicationException("You cannot change the Entity State when the Entity is not change tracked")
+            'End If
 
             If Me.LINQEntityState = EntityState.[New] Then
                 Me.LINQEntityState = EntityState.CancelNew
@@ -1035,22 +1032,22 @@ Namespace Data.Entity
 
         End Sub
 
-        ''' <summary>
-        ''' Finds the Entity Type of the current object by find the class marked with the TableAttribute
-        ''' </summary>
-        ''' <returns></returns>
-        Public Function GetEntityType() As Type
-            Dim type As Type = Me.[GetType]()
-            Dim tableAttribute As TableAttribute = DirectCast(Attribute.GetCustomAttribute(type, GetType(TableAttribute), False), TableAttribute)
+        '''' <summary>
+        '''' Finds the Entity Type of the current object by find the class marked with the TableAttribute
+        '''' </summary>
+        '''' <returns></returns>
+        'Public Function GetEntityType() As Type
+        '    Dim type As Type = Me.[GetType]()
+        '    Dim tableAttribute As TableAttribute = DirectCast(Attribute.GetCustomAttribute(type, GetType(TableAttribute), False), TableAttribute)
 
-            While tableAttribute Is Nothing AndAlso type <> GetType(LINQEntityBase)
-                type = type.BaseType
-                tableAttribute = DirectCast(Attribute.GetCustomAttribute(type, GetType(TableAttribute), False), TableAttribute)
-            End While
+        '    While tableAttribute Is Nothing AndAlso type <> GetType(LINQEntityBase)
+        '        type = type.BaseType
+        '        tableAttribute = DirectCast(Attribute.GetCustomAttribute(type, GetType(TableAttribute), False), TableAttribute)
+        '    End While
 
-            Return type
+        '    Return type
 
-        End Function
+        'End Function
 
         'Public Function GetTableEntityPrimaryKeys() As Dictionary(Of String, PropertyInfo)
         '    Return _cacheTablesPrimaryKeysProperties(Me.GetType())

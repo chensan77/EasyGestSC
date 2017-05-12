@@ -120,26 +120,19 @@
   <data name="&gt;&gt;timValidar.Name" xml:space="preserve">
     <value>timValidar</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="RadLabel17.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="&gt;&gt;lblAplicarImpIndirecto.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtCodigoPostal.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="RadLabel6.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="resource.Text11" xml:space="preserve">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="RadLabel9.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="&gt;&gt;chkAplicarRE.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadCheckBox, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadCheckBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="txtDireccion.Size" type="System.Drawing.Size, System.Drawing">
     <value>369, 24</value>
@@ -156,11 +149,9 @@
   <data name="RadLabel17.RootElement.ToolTipText" xml:space="preserve">
     <value />
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnCancelar.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="RadLabel4.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;txtTelefono.Parent" xml:space="preserve">
     <value>grpbContacto</value>
@@ -196,7 +187,7 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;txtDireccion.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="txtDireccion.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -205,7 +196,7 @@
     <value>18</value>
   </data>
   <data name="&gt;&gt;txtMovil.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="txtNombreContacto.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -216,9 +207,6 @@
   <data name="txtDireccion.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="txtEmail.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
   <data name="&gt;&gt;RadLabel12.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
@@ -227,6 +215,9 @@
   </data>
   <data name="ddlLocalidad.Size" type="System.Drawing.Size, System.Drawing">
     <value>251, 24</value>
+  </data>
+  <data name="RadLabel11.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="txtCodigo.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -245,6 +236,9 @@
   </data>
   <data name="RadLabel2.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
+  </data>
+  <data name="btnAceptar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 50</value>
   </data>
   <data name="&gt;&gt;txtFax.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -288,6 +282,9 @@
   <data name="txtCodigoPostal.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="RadLabel19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="resource.Text1" xml:space="preserve">
     <value>_________</value>
   </data>
@@ -303,11 +300,14 @@
   <data name="RadLabel12.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="btnAceptar.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="RadLabel13.Text" xml:space="preserve">
     <value>C.P.</value>
   </data>
-  <data name="dtpFNacimiento.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
+  <data name="txtCodigo.RootElement.ToolTipText" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;RadLabel18.Name" xml:space="preserve">
     <value>RadLabel18</value>
@@ -316,22 +316,22 @@
     <value />
   </data>
   <data name="&gt;&gt;RadLabel3.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="ddlProvincia.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
   </data>
   <data name="&gt;&gt;lblAplicarImpIndirecto.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="RadLabel9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="&gt;&gt;dtpFNacimiento.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadDateTimePicker, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="RadLabel14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="btnCancelar.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+  <data name="&gt;&gt;btnCancelar.Name" xml:space="preserve">
+    <value>btnCancelar</value>
   </data>
   <data name="RadLabel16.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
@@ -345,14 +345,11 @@
   <data name="&gt;&gt;RadLabel4.Name" xml:space="preserve">
     <value>RadLabel4</value>
   </data>
-  <data name="txtNombre.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
   <data name="lblAplicarImpIndirecto.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="RadLabel5.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
+  <data name="RadLabel7.Text" xml:space="preserve">
+    <value>Descuento</value>
   </data>
   <data name="RadLabel14.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -366,14 +363,11 @@
   <data name="grpbContacto.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 20, 2, 2</value>
   </data>
-  <data name="RadLabel10.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
   <data name="RadLabel10.Location" type="System.Drawing.Point, System.Drawing">
     <value>213, 29</value>
   </data>
-  <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 57</value>
+  <data name="RadLabel1.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
   </data>
   <data name="RadLabel16.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 22</value>
@@ -390,44 +384,38 @@
   <data name="txtMovil.Location" type="System.Drawing.Point, System.Drawing">
     <value>70, 57</value>
   </data>
-  <data name="&gt;&gt;btnCancelar.Name" xml:space="preserve">
-    <value>btnCancelar</value>
+  <data name="ddlTipoIdentificacion.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
   </data>
   <data name="RadLabel7.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 22</value>
   </data>
-  <data name="RadLabel1.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
+  <data name="ddlProvincia.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="txtPais.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="RadLabel17.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
   </data>
-  <data name="txtTelefono.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
+  <data name="chkAplicarRE.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;txtFax.Name" xml:space="preserve">
-    <value>txtFax</value>
+  <data name="spinDescuento.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="txtDireccion.RootElement.ToolTipText" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;RadLabel14.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="RadLabel7.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+  <data name="RadLabel17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
   </data>
   <data name="&gt;&gt;ddlLocalidad.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="&gt;&gt;RadLabel14.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="txtFax.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -489,17 +477,11 @@
   <data name="RadLabel18.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 22</value>
   </data>
-  <data name="txtNumeroIdentificacion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 82</value>
-  </data>
-  <data name="txtMovil.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="txtObservacion.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="btnCancelar.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 50</value>
-  </data>
-  <data name="RadLabel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 82</value>
   </data>
   <data name="RadLabel2.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -513,14 +495,11 @@
   <data name="txtTelefono.Text" xml:space="preserve">
     <value>_________</value>
   </data>
-  <data name="RadLabel4.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
   <data name="RadLabel16.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="&gt;&gt;RadLabel17.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="RadLabel10.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -546,17 +525,20 @@
   <data name="&gt;&gt;chkAplicarImpInd.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="RadLabel19.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="RadLabel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 22</value>
   </data>
   <data name="RadLabel16.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="&gt;&gt;txtEmail.Parent" xml:space="preserve">
-    <value>grpbContacto</value>
+  <data name="RadLabel1.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
-  <data name="RadLabel18.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
+  <data name="RadLabel4.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="txtPais.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -591,14 +573,14 @@
   <data name="btnAceptar.RootElement.KeyTip" xml:space="preserve">
     <value />
   </data>
-  <data name="RadLabel10.Text" xml:space="preserve">
-    <value>Fax</value>
+  <data name="RadLabel14.RootElement.ToolTipText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
   <data name="txtPais.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
-  </data>
-  <data name="grpbContacto.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
   </data>
   <data name="RadLabel11.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
@@ -616,7 +598,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="&gt;&gt;RadLabel11.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;RadLabel18.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -624,8 +606,11 @@
   <data name="RadLabel4.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
-  <data name="RadLabel13.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="&gt;&gt;txtFax.Name" xml:space="preserve">
+    <value>txtFax</value>
+  </data>
+  <data name="RadLabel4.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="RadLabel12.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 94</value>
@@ -636,11 +621,17 @@
   <data name="txtNumeroIdentificacion.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
+  <data name="&gt;&gt;MunicipiosEspañolasBindingSource.Name" xml:space="preserve">
+    <value>MunicipiosEspañolasBindingSource</value>
+  </data>
   <data name="RadLabel12.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="resource.Text2" xml:space="preserve">
     <value>_________</value>
+  </data>
+  <data name="RadLabel8.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="RadLabel8.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
@@ -650,6 +641,12 @@
   </data>
   <data name="txtMovil.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
+  </data>
+  <data name="btnAceptar.RootElement.ToolTipText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadLabel18.RootElement.ToolTipText" xml:space="preserve">
+    <value />
   </data>
   <data name="resource.Text7" xml:space="preserve">
     <value>Cancelar</value>
@@ -669,8 +666,8 @@
   <data name="chkAplicarRE.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;txtPais.Parent" xml:space="preserve">
-    <value>grpbDireccion</value>
+  <data name="txtPais.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>ALEMANIA</value>
   </data>
   <data name="&gt;&gt;RadLabel6.Parent" xml:space="preserve">
     <value>$this</value>
@@ -723,11 +720,11 @@
   <data name="RadLabel3.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
+  <data name="txtNombre.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="txtTelefono.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
-  </data>
-  <data name="grpbDireccion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 189</value>
   </data>
   <data name="txtObservacion.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
@@ -747,6 +744,9 @@
   <data name="&gt;&gt;RadLabel17.Name" xml:space="preserve">
     <value>RadLabel17</value>
   </data>
+  <data name="&gt;&gt;RadLabel19.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;RadLabel16.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -762,9 +762,6 @@
   <data name="RadLabel11.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;txtNumeroIdentificacion.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
   <data name="RadLabel16.RootElement.ToolTipText" xml:space="preserve">
     <value />
   </data>
@@ -773,6 +770,9 @@
   </data>
   <data name="RadLabel4.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
+  </data>
+  <data name="&gt;&gt;RadLabel5.ZOrder" xml:space="preserve">
+    <value>16</value>
   </data>
   <data name="RadLabel3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
@@ -804,12 +804,6 @@
   <data name="chkAplicarImpInd.RootElement.ToolTipText" xml:space="preserve">
     <value />
   </data>
-  <data name="RadLabel17.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;RadLabel6.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
   <data name="dtpFNacimiento.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
@@ -817,7 +811,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtEmail.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="RadLabel10.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -849,8 +843,8 @@
   <data name="&gt;&gt;RadLabel10.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="RadLabel7.Text" xml:space="preserve">
-    <value>Descuento</value>
+  <data name="btnAceptar.Text" xml:space="preserve">
+    <value>Aceptar</value>
   </data>
   <data name="RadLabel20.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -861,14 +855,14 @@
   <data name="txtFax.RootElement.KeyTip" xml:space="preserve">
     <value />
   </data>
+  <data name="dtpFNacimiento.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
   <data name="RadLabel12.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
   <data name="txtMovil.RootElement.ToolTipText" xml:space="preserve">
     <value />
-  </data>
-  <data name="RadLabel17.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
   </data>
   <data name="RadLabel13.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 22</value>
@@ -876,8 +870,8 @@
   <data name="RadLabel5.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="RadLabel12.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="RadLabel14.RootElement.KeyTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;txtCodigo.ZOrder" xml:space="preserve">
     <value>20</value>
@@ -885,8 +879,11 @@
   <data name="txtObservacion.RootElement.ToolTipText" xml:space="preserve">
     <value />
   </data>
+  <data name="RadLabel17.RootElement.KeyTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;RadLabel4.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="RadLabel8.TextWrap" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -901,25 +898,28 @@
     <value>Aplicar RE</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="RadLabel1.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;dtpFNacimiento.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadDateTimePicker, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="RadLabel20.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="RadLabel18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
+  <data name="RadLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 45</value>
+  </data>
   <data name="RadLabel9.Text" xml:space="preserve">
     <value>Móvil</value>
   </data>
-  <data name="btnAceptar.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="dtpFNacimiento.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="&gt;&gt;grpbDireccion.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="RadLabel10.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 22</value>
@@ -933,6 +933,9 @@
   <data name="RadLabel3.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="&gt;&gt;txtPais.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="&gt;&gt;RadLabel15.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
@@ -945,8 +948,8 @@
   <data name="&gt;&gt;RadLabel4.ZOrder" xml:space="preserve">
     <value>21</value>
   </data>
-  <data name="RadLabel8.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+  <data name="RadLabel2.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="RadLabel5.Text" xml:space="preserve">
     <value>N. Ident.</value>
@@ -971,6 +974,9 @@
   </data>
   <data name="RadLabel13.TextWrap" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="grpbDireccion.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
   </data>
   <data name="spinDescuento.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
@@ -1002,20 +1008,11 @@
   <data name="RadLabel8.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="RadLabel11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="txtCodigo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 24</value>
-  </data>
   <data name="spinDescuento.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="txtPais.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="txtEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 24</value>
   </data>
   <data name="dtpFNacimiento.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
@@ -1056,14 +1053,20 @@
   <data name="RadLabel18.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 453</value>
   </data>
+  <data name="RadLabel9.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="&gt;&gt;txtFax.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="RadLabel8.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;MunicipiosEspañolasBindingSource.Name" xml:space="preserve">
-    <value>MunicipiosEspañolasBindingSource</value>
+  <data name="RadLabel16.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RadLabel14.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
   </data>
   <data name="txtObservacion.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1123,7 +1126,13 @@
     <value>TopLeft</value>
   </data>
   <data name="&gt;&gt;btnCancelar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtNombreContacto.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="txtNombreContacto.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
   </data>
   <data name="txtFax.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1137,11 +1146,8 @@
   <data name="RadLabel2.RootElement.ToolTipText" xml:space="preserve">
     <value />
   </data>
-  <data name="RadLabel7.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
   <data name="&gt;&gt;txtCodigoPostal.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="chkAplicarImpInd.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1161,13 +1167,10 @@
   <data name="ddlProvincia.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;RadLabel9.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
   <data name="txtPais.RootElement.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
   </data>
-  <data name="txtObservacion.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="chkAplicarRE.RootElement.ToolTipText" xml:space="preserve">
     <value />
   </data>
   <data name="resource.Text4" xml:space="preserve">
@@ -1194,6 +1197,9 @@
   <data name="RadLabel11.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
+  <data name="RadLabel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 61</value>
+  </data>
   <data name="RadLabel7.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
@@ -1215,22 +1221,22 @@
   <data name="txtNombre.RootElement.ToolTipText" xml:space="preserve">
     <value />
   </data>
+  <data name="RadLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 22</value>
+  </data>
   <data name="txtObservacion.Location" type="System.Drawing.Point, System.Drawing">
     <value>94, 453</value>
   </data>
   <data name="txtEmail.RootElement.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;RadLabel12.Parent" xml:space="preserve">
-    <value>grpbDireccion</value>
+  <data name="ddlTipoIdentificacion.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="RadLabel13.RootElement.ToolTipText" xml:space="preserve">
     <value />
   </data>
   <data name="RadLabel17.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="RadLabel18.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
   <data name="btnCancelar.RootElement.KeyTip" xml:space="preserve">
@@ -1258,7 +1264,7 @@
     <value />
   </data>
   <data name="&gt;&gt;txtObservacion.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="RadLabel8.RootElement.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
@@ -1266,20 +1272,23 @@
   <data name="RadLabel11.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 57</value>
+  </data>
   <data name="btnAceptar.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;txtEmail.Parent" xml:space="preserve">
+    <value>grpbContacto</value>
   </data>
   <data name="&gt;&gt;RadLabel16.Name" xml:space="preserve">
     <value>RadLabel16</value>
   </data>
-  <data name="&gt;&gt;txtTelefono.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;txtDireccion.Parent" xml:space="preserve">
+    <value>grpbDireccion</value>
   </data>
   <data name="&gt;&gt;chkAplicarImpInd.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadCheckBox, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="RadLabel1.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Telerik.WinControls.UI.RadCheckBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="txtPais.RootElement.ToolTipText" xml:space="preserve">
     <value />
@@ -1308,14 +1317,8 @@
   <data name="txtObservacion.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
-  <data name="ddlProvincia.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="RadLabel15.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 34</value>
-  </data>
-  <data name="&gt;&gt;ddlTipoIdentificacion.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="ddlTipoIdentificacion.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
@@ -1329,17 +1332,17 @@
   <data name="RadLabel20.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="grpbDireccion.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="RadLabel5.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="RadLabel18.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="spinDescuento.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
-  <data name="txtFax.Mask" xml:space="preserve">
-    <value>#########</value>
-  </data>
-  <data name="ddlTipoIdentificacion.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
+  <data name="txtNombreContacto.RootElement.KeyTip" xml:space="preserve">
+    <value />
   </data>
   <data name="chkAplicarImpInd.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 15</value>
@@ -1350,17 +1353,17 @@
   <data name="RadLabel3.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="txtNombreChino.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
+  <data name="RadLabel18.Text" xml:space="preserve">
+    <value>Observación</value>
   </data>
-  <data name="RadLabel8.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="resource.Text11" xml:space="preserve">
+    <value />
   </data>
   <data name="RadLabel19.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="RadLabel17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 125</value>
+  <data name="txtEmail.RootElement.ToolTipText" xml:space="preserve">
+    <value />
   </data>
   <data name="grpbContacto.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
@@ -1374,8 +1377,8 @@
   <data name="btnAceptar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="grpbDireccion.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+  <data name="txtMovil.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
   <data name="&gt;&gt;txtMovil.Parent" xml:space="preserve">
     <value>grpbContacto</value>
@@ -1384,19 +1387,22 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="&gt;&gt;RadLabel15.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="btnAceptar.Text" xml:space="preserve">
-    <value>Aceptar</value>
+  <data name="grpbContacto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 355</value>
   </data>
-  <data name="txtEmail.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="ddlTipoIdentificacion.RootElement.ToolTipText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadLabel7.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="ddlTipoIdentificacion.RootElement.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;spinDescuento.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadSpinEditor, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadSpinEditor, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="RadLabel5.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -1410,11 +1416,11 @@
   <data name="ddlProvincia.RootElement.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
   </data>
-  <data name="txtCodigo.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="txtDireccion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
-  <data name="&gt;&gt;RadLabel19.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="RadLabel9.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="RadLabel4.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1431,11 +1437,11 @@
   <data name="RadLabel15.RootElement.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
   </data>
-  <data name="txtMovil.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="ddlLocalidad.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
+  </data>
+  <data name="txtNombreChino.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="txtEmail.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1446,20 +1452,17 @@
   <data name="lblAplicarImpIndirecto.RootElement.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
   </data>
-  <data name="txtFax.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="&gt;&gt;RadLabel5.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="lblAplicarImpIndirecto.RootElement.ToolTipText" xml:space="preserve">
+    <value />
   </data>
   <data name="RadLabel16.Location" type="System.Drawing.Point, System.Drawing">
     <value>230, 152</value>
   </data>
   <data name="&gt;&gt;RadLabel18.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="RadLabel18.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="txtMovil.RootElement.KeyTip" xml:space="preserve">
+    <value />
   </data>
   <data name="ddlLocalidad.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
@@ -1470,9 +1473,6 @@
   <data name="spinDescuento.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;ddlProvincia.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
   <data name="RadLabel7.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 118</value>
   </data>
@@ -1482,8 +1482,8 @@
   <data name="ddlLocalidad.RootElement.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
   </data>
-  <data name="ddlTipoIdentificacion.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+  <data name="RadLabel16.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="txtPais.Location" type="System.Drawing.Point, System.Drawing">
     <value>80, 62</value>
@@ -1515,17 +1515,17 @@
   <data name="btnCancelar.Text" xml:space="preserve">
     <value>Cancelar</value>
   </data>
-  <data name="chkAplicarRE.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="txtNombreContacto.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
   </data>
   <data name="ddlTipoIdentificacion.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="RadCheckBox1.RootElement.FlipText" type="System.Boolean, mscorlib">
+  <data name="RadLabel12.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="btnCancelar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="RadCheckBox1.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
@@ -1535,9 +1535,6 @@
   </data>
   <data name="ddlTipoIdentificacion.Location" type="System.Drawing.Point, System.Drawing">
     <value>66, 82</value>
-  </data>
-  <data name="RadLabel12.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="RadLabel19.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
@@ -1554,17 +1551,14 @@
   <data name="txtMovil.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
-  <data name="txtPais.AutoCompleteCustomSource2" xml:space="preserve">
-    <value>ITALIA</value>
-  </data>
   <data name="RadLabel7.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="&gt;&gt;RadLabel15.Name" xml:space="preserve">
     <value>RadLabel15</value>
   </data>
-  <data name="RadLabel8.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="RadLabel9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="RadLabel16.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -1575,17 +1569,17 @@
   <data name="&gt;&gt;RadLabel19.Name" xml:space="preserve">
     <value>RadLabel19</value>
   </data>
+  <data name="ddlLocalidad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 125</value>
+  </data>
   <data name="RadLabel6.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
   <data name="RadLabel19.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnCancelar.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;RadLabel14.Name" xml:space="preserve">
-    <value>RadLabel14</value>
+  <data name="RadLabel3.RootElement.KeyTip" xml:space="preserve">
+    <value />
   </data>
   <data name="ddlProvincia.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1600,16 +1594,16 @@
     <value />
   </data>
   <data name="&gt;&gt;txtPais.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="txtFax.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="txtDireccion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="RadLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 22</value>
   </data>
-  <data name="RadLabel5.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="lblAplicarImpIndirecto.Text" xml:space="preserve">
+    <value>Aplicar {0}</value>
   </data>
   <data name="RadLabel12.RootElement.KeyTip" xml:space="preserve">
     <value />
@@ -1620,13 +1614,13 @@
   <data name="grpbDireccion.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;RadLabel2.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="RadLabel11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
   </data>
   <data name="grpbDireccion.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
-  <data name="RadLabel3.RootElement.KeyTip" xml:space="preserve">
+  <data name="txtEmail.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="txtNombre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -1646,9 +1640,6 @@
   </data>
   <data name="ddlLocalidad.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
-  </data>
-  <data name="RadLabel14.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
   </data>
   <data name="&gt;&gt;RadLabel19.ZOrder" xml:space="preserve">
     <value>15</value>
@@ -1671,7 +1662,7 @@
   <data name="RadLabel7.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="chkAplicarImpInd.RootElement.AngleTransform" type="System.Single, mscorlib">
+  <data name="RadLabel4.RootElement.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
   </data>
   <data name="txtNumeroIdentificacion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -1695,6 +1686,9 @@
   <data name="RadLabel1.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
+  <data name="&gt;&gt;chkAplicarRE.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <data name="txtObservacion.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
@@ -1709,9 +1703,6 @@
   </data>
   <data name="spinDescuento.RootElement.ToolTipText" xml:space="preserve">
     <value />
-  </data>
-  <data name="RadLabel13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
   </data>
   <data name="txtCodigoPostal.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1761,9 +1752,6 @@
   <data name="txtObservacion.RootElement.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
   </data>
-  <data name="txtNombre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 10</value>
-  </data>
   <data name="txtCodigo.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
@@ -1772,9 +1760,6 @@
   </data>
   <data name="txtNombre.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadLabel9.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
   </data>
   <data name="RadLabel6.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1785,8 +1770,8 @@
   <data name="&gt;&gt;grpbDireccion.Name" xml:space="preserve">
     <value>grpbDireccion</value>
   </data>
-  <data name="RadLabel2.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="txtNombreContacto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 24</value>
   </data>
   <data name="txtDireccion.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1806,8 +1791,8 @@
   <data name="RadLabel4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
   </data>
-  <data name="spinDescuento.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="btnCancelar.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
   </data>
   <data name="grpbDireccion.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1836,9 +1821,6 @@
   <data name="RadLabel5.Location" type="System.Drawing.Point, System.Drawing">
     <value>201, 82</value>
   </data>
-  <data name="txtCodigo.RootElement.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
   <data name="RadLabel7.RootElement.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
   </data>
@@ -1851,10 +1833,10 @@
   <data name="RadLabel19.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="txtNombre.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="frmClienteEdicion.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="frmClienteEdicion.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="frmClienteEdicion.RootElement.ToolTipText" xml:space="preserve">
     <value />
   </data>
   <data name="RadLabel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -1881,6 +1863,9 @@
   <data name="&gt;&gt;txtCodigoPostal.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="txtDireccion.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="RadLabel4.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
@@ -1893,7 +1878,13 @@
   <data name="lblAplicarImpIndirecto.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 22</value>
   </data>
+  <data name="RadLabel8.RootElement.ToolTipText" xml:space="preserve">
+    <value />
+  </data>
   <data name="grpbContacto.RootElement.ToolTipText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAplicarImpInd.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="&gt;&gt;RadLabel11.ZOrder" xml:space="preserve">
@@ -1914,7 +1905,10 @@
   <data name="chkAplicarRE.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="RadLabel14.RootElement.ToolTipText" xml:space="preserve">
+  <data name="&gt;&gt;RadLabel5.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="txtNombreContacto.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="&gt;&gt;RadLabel1.Name" xml:space="preserve">
@@ -1926,17 +1920,14 @@
   <data name="RadLabel4.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;RadLabel13.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="frmClienteEdicion.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
   <data name="RadLabel19.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="grpbDireccion.Size" type="System.Drawing.Size, System.Drawing">
     <value>456, 160</value>
+  </data>
+  <data name="RadLabel18.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
   </data>
   <data name="RadLabel13.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1962,9 +1953,6 @@
   <data name="btnCancelar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
   </data>
-  <data name="ddlProvincia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 92</value>
-  </data>
   <data name="txtFax.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -1986,32 +1974,23 @@
   <data name="RadLabel7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="RadLabel9.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="&gt;&gt;RadLabel14.Name" xml:space="preserve">
+    <value>RadLabel14</value>
   </data>
-  <data name="RadLabel16.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;RadLabel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="RadLabel9.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="RadLabel18.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
   </data>
   <data name="RadLabel6.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="txtNombreContacto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 24</value>
+  <data name="txtNombre.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
   </data>
-  <data name="RadLabel4.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="RadLabel11.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
   </data>
   <data name="txtNombreContacto.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
-  </data>
-  <data name="RadLabel17.Text" xml:space="preserve">
-    <value>Localidad</value>
   </data>
   <data name="RadLabel3.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -2032,16 +2011,25 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;btnAceptar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="RadLabel6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
+  <data name="txtCodigo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
   <data name="chkAplicarRE.RootElement.KeyTip" xml:space="preserve">
     <value />
   </data>
-  <data name="txtFax.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="chkAplicarImpInd.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="RadLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="txtTelefono.Mask" xml:space="preserve">
+    <value>#########</value>
   </data>
   <data name="grpbDireccion.HeaderText" xml:space="preserve">
     <value>Dirección Postal</value>
@@ -2058,13 +2046,10 @@
   <data name="RadLabel20.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="dtpFNacimiento.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;txtCodigo.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="txtNombreChino.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtMovil.RootElement.KeyTip" xml:space="preserve">
+  <data name="RadLabel17.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="&gt;&gt;lblAplicarImpIndirecto.Name" xml:space="preserve">
@@ -2076,7 +2061,7 @@
   <data name="RadLabel4.RootElement.ToolTipText" xml:space="preserve">
     <value />
   </data>
-  <assembly alias="Telerik.WinControls" name="Telerik.WinControls, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  <assembly alias="Telerik.WinControls" name="Telerik.WinControls, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
   <data name="chkAplicarImpInd.DisplayStyle" type="Telerik.WinControls.DisplayStyle, Telerik.WinControls">
     <value>Text</value>
   </data>
@@ -2086,9 +2071,6 @@
   <data name="txtMovil.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 24</value>
   </data>
-  <data name="RadLabel7.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
   <data name="ddlTipoIdentificacion.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
@@ -2096,7 +2078,7 @@
     <value />
   </data>
   <data name="&gt;&gt;grpbContacto.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="RadLabel6.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -2104,11 +2086,11 @@
   <data name="txtCodigoPostal.Location" type="System.Drawing.Point, System.Drawing">
     <value>355, 63</value>
   </data>
-  <data name="RadLabel18.RootElement.ToolTipText" xml:space="preserve">
+  <data name="RadLabel5.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="RadLabel7.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+  <data name="RadLabel17.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="RadLabel14.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -2118,9 +2100,6 @@
   </data>
   <data name="resource.Text15" xml:space="preserve">
     <value />
-  </data>
-  <data name="ddlProvincia.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
   </data>
   <data name="btnCancelar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -2134,11 +2113,11 @@
   <data name="RadLabel19.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 151</value>
   </data>
-  <data name="&gt;&gt;dtpFNacimiento.Name" xml:space="preserve">
-    <value>dtpFNacimiento</value>
+  <data name="dtpFNacimiento.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
   </data>
   <data name="&gt;&gt;RadLabel7.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="RadLabel5.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2149,9 +2128,6 @@
   <data name="RadLabel10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="txtCodigoPostal.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="txtTelefono.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
@@ -2161,8 +2137,8 @@
   <data name="&gt;&gt;grpbContacto.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;txtDireccion.Parent" xml:space="preserve">
-    <value>grpbDireccion</value>
+  <data name="&gt;&gt;RadLabel9.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="txtPais.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
@@ -2176,9 +2152,6 @@
   <data name="spinDescuento.RootElement.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
   </data>
-  <data name="txtPais.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
   <data name="RadLabel15.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 22</value>
   </data>
@@ -2191,14 +2164,14 @@
   <data name="chkAplicarImpInd.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="btnAceptar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 50</value>
-  </data>
-  <data name="txtNombreContacto.RootElement.KeyTip" xml:space="preserve">
+  <data name="grpbDireccion.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="txtEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 24</value>
+  </data>
   <data name="&gt;&gt;ddlLocalidad.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;ddlTipoIdentificacion.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2215,8 +2188,8 @@
   <data name="txtObservacion.Size" type="System.Drawing.Size, System.Drawing">
     <value>364, 52</value>
   </data>
-  <data name="txtNombreContacto.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;txtNumeroIdentificacion.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="RadLabel2.RootElement.KeyTip" xml:space="preserve">
     <value />
@@ -2230,8 +2203,8 @@
   <data name="RadLabel17.RootElement.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
   </data>
-  <data name="RadLabel20.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;RadLabel13.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="ddlTipoIdentificacion.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -2239,8 +2212,8 @@
   <data name="txtCodigoPostal.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="&gt;&gt;txtPais.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="RadLabel17.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="&gt;&gt;spinDescuento.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -2249,7 +2222,7 @@
     <value>Lucida Sans Unicode, 9pt</value>
   </data>
   <data name="&gt;&gt;RadLabel8.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="resource.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 20, 2, 2</value>
@@ -2263,23 +2236,32 @@
   <data name="ddlProvincia.RootElement.ToolTipText" xml:space="preserve">
     <value />
   </data>
+  <data name="ddlTipoIdentificacion.RootElement.KeyTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="RadCheckBox1.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="&gt;&gt;RadLabel10.Name" xml:space="preserve">
     <value>RadLabel10</value>
   </data>
+  <data name="txtTelefono.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="RadLabel20.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
-  <data name="RadLabel14.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="ddlProvincia.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
   </data>
   <data name="&gt;&gt;btnAceptar.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="RadLabel18.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
+  </data>
+  <data name="txtFax.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4720,8 +4702,8 @@
         AAH/AAAAAAAAA//4AAAAAAAD///4AAAAAAP////4AAAAA//////4AAAH///////wAAf////////gB/8=
 </value>
   </data>
-  <data name="txtPais.AutoCompleteCustomSource4" xml:space="preserve">
-    <value>ALEMANIA</value>
+  <data name="&gt;&gt;RadLabel6.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="txtPais.AutoCompleteCustomSource5" xml:space="preserve">
     <value>CHINA</value>
@@ -4735,8 +4717,8 @@
   <data name="txtPais.AutoCompleteCustomSource1" xml:space="preserve">
     <value>PORTUGAL</value>
   </data>
-  <data name="RadLabel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="txtPais.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>ITALIA</value>
   </data>
   <data name="txtPais.AutoCompleteCustomSource3" xml:space="preserve">
     <value>FRANCIA</value>
@@ -4745,19 +4727,19 @@
     <value>Lucida Sans Unicode, 9pt</value>
   </data>
   <data name="&gt;&gt;txtNombreChino.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="txtPais.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="txtNombreContacto.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="txtCodigo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 24</value>
   </data>
   <data name="txtMovil.Mask" xml:space="preserve">
     <value>#########</value>
   </data>
   <data name="&gt;&gt;RadLabel16.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="chkAplicarImpInd.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
@@ -4786,8 +4768,8 @@
   <data name="RadLabel19.Text" xml:space="preserve">
     <value>F. Nacimiento</value>
   </data>
-  <data name="RadLabel7.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="btnCancelar.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="&gt;&gt;chkAplicarImpInd.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -4804,8 +4786,11 @@
   <data name="RadLabel16.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="RadLabel11.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="txtCodigoPostal.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RadLabel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="RadCheckBox1.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -4814,10 +4799,7 @@
     <value>Lucida Sans Unicode, 9pt</value>
   </data>
   <data name="&gt;&gt;RadLabel12.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="RadLabel11.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="txtEmail.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
@@ -4827,6 +4809,9 @@
   </data>
   <data name="txtTelefono.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
+  </data>
+  <data name="RadLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 11</value>
   </data>
   <data name="spinDescuento.RootElement.KeyTip" xml:space="preserve">
     <value />
@@ -4843,17 +4828,14 @@
   <data name="&gt;&gt;txtTelefono.Name" xml:space="preserve">
     <value>txtTelefono</value>
   </data>
-  <data name="RadLabel14.RootElement.KeyTip" xml:space="preserve">
-    <value />
+  <data name="RadLabel14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
   </data>
-  <data name="RadLabel18.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="txtNombre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 10</value>
   </data>
-  <data name="txtNombreChino.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;RadLabel14.Parent" xml:space="preserve">
-    <value>grpbDireccion</value>
+  <data name="txtCodigoPostal.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
   </data>
   <data name="RadLabel10.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -4861,14 +4843,11 @@
   <data name="RadLabel15.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="txtTelefono.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;dtpFNacimiento.Name" xml:space="preserve">
+    <value>dtpFNacimiento</value>
   </data>
-  <data name="&gt;&gt;txtCodigo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txtCodigoPostal.Name" xml:space="preserve">
-    <value>txtCodigoPostal</value>
+  <data name="&gt;&gt;RadLabel14.Parent" xml:space="preserve">
+    <value>grpbDireccion</value>
   </data>
   <data name="&gt;&gt;MunicipiosEspañolasBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4880,7 +4859,7 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;RadLabel10.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="dtpFNacimiento.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -4894,8 +4873,8 @@
   <data name="frmClienteEdicion.RootElement.KeyTip" xml:space="preserve">
     <value />
   </data>
-  <data name="RadLabel14.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
+  <data name="txtFax.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
   </data>
   <data name="grpbContacto.RootElement.KeyTip" xml:space="preserve">
     <value />
@@ -4903,8 +4882,11 @@
   <data name="RadLabel18.RootElement.KeyTip" xml:space="preserve">
     <value />
   </data>
+  <data name="RadLabel15.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
   <data name="&gt;&gt;RadLabel19.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="RadLabel9.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -4927,11 +4909,8 @@
   <data name="btnCancelar.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="RadLabel16.RootElement.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtNombreContacto.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+  <data name="RadLabel10.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
   </data>
   <data name="lblAplicarImpIndirecto.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -4942,11 +4921,11 @@
   <data name="RadLabel19.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
-  <data name="chkAplicarImpInd.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;ddlTipoIdentificacion.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="RadLabel9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 61</value>
+  <data name="RadLabel10.Text" xml:space="preserve">
+    <value>Fax</value>
   </data>
   <data name="RadLabel11.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -4972,23 +4951,23 @@
   <data name="txtTelefono.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="RadLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 45</value>
+  <data name="RadLabel14.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
-  <data name="&gt;&gt;RadLabel1.ZOrder" xml:space="preserve">
-    <value>23</value>
+  <data name="btnCancelar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
-  <data name="txtNombre.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;txtTelefono.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;ddlProvincia.Name" xml:space="preserve">
     <value>ddlProvincia</value>
   </data>
   <data name="&gt;&gt;RadLabel2.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="ddlTipoIdentificacion.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="&gt;&gt;txtPais.Parent" xml:space="preserve">
+    <value>grpbDireccion</value>
   </data>
   <data name="RadLabel11.TextWrap" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -4996,8 +4975,11 @@
   <data name="&gt;&gt;txtPais.Name" xml:space="preserve">
     <value>txtPais</value>
   </data>
-  <data name="ddlTipoIdentificacion.RootElement.ToolTipText" xml:space="preserve">
+  <data name="grpbContacto.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
+  </data>
+  <data name="RadLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 82</value>
   </data>
   <data name="RadLabel13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -5008,8 +4990,8 @@
   <data name="RadLabel15.Text" xml:space="preserve">
     <value>Dirección</value>
   </data>
-  <data name="txtNombreContacto.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
+  <data name="txtNombre.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="txtObservacion.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -5017,14 +4999,14 @@
   <data name="lblAplicarImpIndirecto.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="txtDireccion.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="chkAplicarImpInd.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
   </data>
   <data name="txtCodigo.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="txtNombreChino.Font" type="System.Drawing.Font, System.Drawing">
-    <value>KaiTi, 11.25pt</value>
+    <value>楷体, 11.25pt</value>
   </data>
   <data name="ddlProvincia.Size" type="System.Drawing.Size, System.Drawing">
     <value>210, 24</value>
@@ -5035,20 +5017,20 @@
   <data name="txtCodigo.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="dtpFNacimiento.Text" xml:space="preserve">
-    <value>02/09/2013</value>
+  <data name="RadLabel17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 125</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
   <data name="&gt;&gt;txtCodigo.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="RadLabel14.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="btnAceptar.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
+  </data>
+  <data name="RadLabel9.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;RadLabel9.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -5056,11 +5038,14 @@
   <data name="txtNombreChino.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="RadLabel17.RootElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="RadLabel10.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
-  <data name="chkAplicarRE.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+  <data name="RadLabel13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
   </data>
   <data name="&gt;&gt;RadLabel8.Name" xml:space="preserve">
     <value>RadLabel8</value>
@@ -5068,8 +5053,8 @@
   <data name="txtCodigo.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="RadLabel19.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="txtNombreChino.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
   </data>
   <data name="RadLabel20.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -5077,14 +5062,11 @@
   <data name="btnAceptar.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="ddlLocalidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 125</value>
+  <data name="txtEmail.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
   </data>
   <data name="txtNombreChino.Location" type="System.Drawing.Point, System.Drawing">
     <value>264, 47</value>
-  </data>
-  <data name="txtCodigo.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
   </data>
   <data name="RadLabel7.RootElement.KeyTip" xml:space="preserve">
     <value />
@@ -5092,8 +5074,8 @@
   <data name="btnCancelar.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
-  <data name="RadLabel8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
+  <data name="RadLabel7.RootElement.ToolTipText" xml:space="preserve">
+    <value />
   </data>
   <data name="RadLabel16.Text" xml:space="preserve">
     <value>Pers. Cto.</value>
@@ -5116,8 +5098,11 @@
   <data name="RadCheckBox1.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="RadLabel17.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="RadLabel8.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="&gt;&gt;RadLabel14.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="RadLabel8.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -5137,17 +5122,23 @@
   <data name="lblAplicarImpIndirecto.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="RadLabel18.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;RadLabel1.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
   <data name="grpbContacto.RootElement.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
   </data>
-  <data name="RadLabel2.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+  <data name="txtCodigo.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
   </data>
   <data name="txtNumeroIdentificacion.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="&gt;&gt;txtTelefono.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="RadLabel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -5158,11 +5149,11 @@
   <data name="RadLabel14.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="RadLabel8.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+  <data name="RadLabel2.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
   </data>
-  <data name="lblAplicarImpIndirecto.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+  <data name="ddlProvincia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 92</value>
   </data>
   <data name="&gt;&gt;grpbContacto.Name" xml:space="preserve">
     <value>grpbContacto</value>
@@ -5179,8 +5170,11 @@
   <data name="&gt;&gt;ddlProvincia.Parent" xml:space="preserve">
     <value>grpbDireccion</value>
   </data>
-  <data name="lblAplicarImpIndirecto.Text" xml:space="preserve">
-    <value>Aplicar {0}</value>
+  <data name="grpbContacto.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="RadLabel5.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
   </data>
   <data name="txtCodigoPostal.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -5191,11 +5185,14 @@
   <data name="txtNumeroIdentificacion.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="RadLabel9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 22</value>
+  <data name="RadLabel13.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;txtNombreContacto.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="RadLabel12.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RadLabel2.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;txtEmail.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -5204,7 +5201,7 @@
     <value />
   </data>
   <data name="&gt;&gt;txtNombre.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="txtNombreContacto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -5221,11 +5218,14 @@
   <data name="RadLabel15.RootElement.KeyTip" xml:space="preserve">
     <value />
   </data>
+  <data name="RadLabel8.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
   <data name="resource.Text3" xml:space="preserve">
     <value>_________</value>
   </data>
-  <data name="RadLabel19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="RadLabel16.RootElement.KeyTip" xml:space="preserve">
+    <value />
   </data>
   <data name="txtDireccion.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
@@ -5235,9 +5235,6 @@
   </data>
   <data name="grpbDireccion.RootElement.KeyTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="RadLabel15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
   </data>
   <data name="RadLabel11.Text" xml:space="preserve">
     <value>Email</value>
@@ -5251,20 +5248,20 @@
   <data name="txtCodigoPostal.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 24</value>
   </data>
-  <data name="RadLabel15.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+  <data name="RadLabel15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
-  <data name="RadLabel16.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="txtNumeroIdentificacion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 82</value>
   </data>
-  <data name="ddlTipoIdentificacion.RootElement.KeyTip" xml:space="preserve">
-    <value />
+  <data name="ddlTipoIdentificacion.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
   </data>
   <data name="RadLabel5.RootElement.ToolTipText" xml:space="preserve">
     <value />
   </data>
-  <data name="RadLabel17.RootElement.KeyTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;RadLabel12.Parent" xml:space="preserve">
+    <value>grpbDireccion</value>
   </data>
   <data name="RadLabel4.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
@@ -5281,20 +5278,20 @@
   <data name="txtNombre.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="RadLabel3.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
+  <data name="dtpFNacimiento.Text" xml:space="preserve">
+    <value>02/09/2013</value>
   </data>
   <data name="RadLabel7.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="RadLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 11</value>
+  <data name="&gt;&gt;ddlProvincia.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="grpbContacto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 355</value>
+  <data name="RadLabel14.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;RadLabel1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2014.2.617.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="txtDireccion.Location" type="System.Drawing.Point, System.Drawing">
     <value>80, 31</value>
@@ -5317,17 +5314,20 @@
   <data name="RadLabel1.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="RadLabel12.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="RadLabel7.RootElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
   </data>
   <data name="RadLabel19.RootElement.ToolTipText" xml:space="preserve">
     <value />
   </data>
-  <data name="btnAceptar.RootElement.ToolTipText" xml:space="preserve">
+  <data name="txtNombreChino.RootElement.KeyTip" xml:space="preserve">
     <value />
   </data>
-  <data name="RadLabel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 22</value>
+  <data name="frmClienteEdicion.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtTelefono.RootElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
   </data>
   <data name="RadLabel6.RootElement.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
@@ -5338,11 +5338,11 @@
   <data name="txtDireccion.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;RadLabel5.ZOrder" xml:space="preserve">
-    <value>16</value>
+  <data name="RadLabel7.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
-  <data name="&gt;&gt;chkAplicarRE.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="RadLabel12.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="RadLabel9.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -5362,17 +5362,17 @@
   <data name="RadLabel5.RootElement.KeyTip" xml:space="preserve">
     <value />
   </data>
-  <data name="grpbContacto.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="&gt;&gt;RadLabel1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="RadLabel18.Text" xml:space="preserve">
-    <value>Observación</value>
-  </data>
-  <data name="txtEmail.RootElement.ToolTipText" xml:space="preserve">
+  <data name="txtMovil.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="RadLabel9.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="txtFax.Mask" xml:space="preserve">
+    <value>#########</value>
+  </data>
+  <data name="RadLabel17.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="RadLabel18.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -5389,7 +5389,7 @@
   <data name="frmClienteEdicion.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="chkAplicarImpInd.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="txtNombreContacto.RootElement.ToolTipText" xml:space="preserve">
     <value />
   </data>
   <data name="dtpFNacimiento.RootElement.FlipText" type="System.Boolean, mscorlib">
@@ -5401,14 +5401,14 @@
   <data name="&gt;&gt;btnAceptar.ZOrder" xml:space="preserve">
     <value>25</value>
   </data>
-  <data name="txtTelefono.Mask" xml:space="preserve">
-    <value>#########</value>
+  <data name="&gt;&gt;txtCodigoPostal.Name" xml:space="preserve">
+    <value>txtCodigoPostal</value>
   </data>
-  <data name="RadLabel5.RootElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="RadLabel3.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
   </data>
-  <data name="frmClienteEdicion.RootElement.ToolTipText" xml:space="preserve">
-    <value />
+  <data name="grpbContacto.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
   <data name="&gt;&gt;txtCodigo.Name" xml:space="preserve">
     <value>txtCodigo</value>
@@ -5422,17 +5422,17 @@
   <data name="txtNombre.RootElement.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="grpbContacto.RootElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="grpbDireccion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 189</value>
   </data>
   <data name="grpbDireccion.RootElement.ToolTipText" xml:space="preserve">
     <value />
   </data>
-  <data name="dtpFNacimiento.RootElement.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
+  <data name="RadLabel17.Text" xml:space="preserve">
+    <value>Localidad</value>
   </data>
-  <data name="RadLabel17.RootElement.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="txtPais.RootElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
   </data>
   <data name="&gt;&gt;ddlProvincia.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -5485,6 +5485,9 @@
   <metadata name="RadLabel2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <metadata name="RadLabel12.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
   <metadata name="RadLabel6.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -5518,13 +5521,10 @@
   <metadata name="RadLabel10.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <metadata name="RadLabel12.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
+  <metadata name="MunicipiosEspañolasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
   </metadata>
   <metadata name="ClientesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>385, 17</value>
-  </metadata>
-  <metadata name="MunicipiosEspañolasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
   </metadata>
 </root>

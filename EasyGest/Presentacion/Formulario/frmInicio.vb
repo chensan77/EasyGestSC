@@ -40,20 +40,16 @@ Namespace Presentacion.Formulario
         End Sub
 
         Private Sub frmInicio_Load(sender As Object, e As System.EventArgs) Handles Me.Load
-            AddHandler trbDivisa.ValueChanged, AddressOf trbDivisa_ValueChanged
-            AddHandler trbTiempo.ValueChanged, AddressOf trbTiempo_ValueChanged
             AddHandler cbtoggleTodasTareas.ToggleStateChanged, AddressOf cbtoggleTodasTareas_ToggleStateChanged
             ConfigurarCommandBar(cbstripListasCompra)
             ConfigurarCommandBar(cbstripTarea)
             calCalendario.TodayButton.Font = gDefaultFont
             calCalendario.ClearButton.Font = gDefaultFont
-            trbDivisa.Value = gConfLocal.PeriodoActualizacionDivisa
-            trbTiempo.Value = gConfLocal.PeriodoActualizacionMeteologia
             gridListaCompra.MasterTemplate.AddNewBoundRowBeforeEdit = True
             SplitPanel2.Collapsed = True
             SplitPanel4.Collapsed = True
             cbbtnEditarEncargo.Enabled = False
-            ActualizarTimerInterval(timerRefrescoInicio, CInt(gConfLocal.PeriodoActualizacionInicio * 1000.0F))
+            ActualizarTimerInterval()
             For Each hora As Integer In Tareas.PosiblesHorasAntelacion
                 Dim item As New RadListDataItem(CStr(hora) & " H", hora)
                 item.ForeColor = ddlAviso.ForeColor
@@ -62,6 +58,7 @@ Namespace Presentacion.Formulario
             Next
             toolTarea.AutoHideSize = New System.Drawing.Size(500, 600)
             toolTarea.AutoHide()
+            calCalendario.SelectedDate = Today
             Try
                 Using control As New PrioridadesTareaController()
                     PrioridadesTareaBindingSource.DataSource = control.GetItems()
@@ -92,19 +89,9 @@ Namespace Presentacion.Formulario
 
 #Region "Refresco contenido"
 
-        Private Sub trbTiempo_ValueChanged(sender As Object, e As System.EventArgs)
-            gConfLocal.PeriodoActualizacionMeteologia = trbTiempo.Value
-            ActualizarTimerInterval(timerRefrescoMeteo, CInt(gConfLocal.PeriodoActualizacionMeteologia * 3600000.0F))
-        End Sub
-
         Private Sub timerRefrescoMeteo_Tick(sender As Object, e As System.EventArgs) Handles timerRefrescoMeteo.Tick
             If Not wbwMeteo.IsBusy Then _
                 wbwMeteo.Refresh(WebBrowserRefreshOption.Completely)
-        End Sub
-
-        Private Sub trbDivisa_ValueChanged(sender As Object, e As System.EventArgs)
-            gConfLocal.PeriodoActualizacionDivisa = trbDivisa.Value
-            ActualizarTimerInterval(timerRefrescoDivisa, CInt(gConfLocal.PeriodoActualizacionDivisa * 3600000.0F))
         End Sub
 
         Private Sub timerRefrescoDivisa_Tick(sender As Object, e As System.EventArgs) Handles timerRefrescoDivisa.Tick
@@ -112,22 +99,27 @@ Namespace Presentacion.Formulario
                 wbwDivisa.Refresh(WebBrowserRefreshOption.Completely)
         End Sub
 
-        Private Sub btnActualizarDivisa_Click(sender As System.Object, e As System.EventArgs) Handles btnActualizarDivisa.Click
-            If Not wbwDivisa.IsBusy Then _
-                wbwDivisa.Refresh(WebBrowserRefreshOption.Completely)
-        End Sub
+        Friend Sub ActualizarTimerInterval()
+            timerRefrescoDivisa.Stop()
+            timerRefrescoInicio.Stop()
+            timerRefrescoMeteo.Stop()
 
-        Private Sub btnActualizarMeteologia_Click(sender As Object, e As System.EventArgs) Handles btnActualizarMeteologia.Click
-            If Not wbwMeteo.IsBusy Then _
-                wbwMeteo.Refresh(WebBrowserRefreshOption.Completely)
-        End Sub
+            timerRefrescoDivisa.Enabled = False
+            timerRefrescoInicio.Enabled = False
+            timerRefrescoMeteo.Enabled = False
 
-        Private Sub ActualizarTimerInterval(ByVal temporizador As Timer, intervalo As Integer)
-            temporizador.Stop()
-            temporizador.Enabled = False
-            temporizador.Interval = intervalo
-            temporizador.Enabled = True
-            temporizador.Start()
+            timerRefrescoDivisa.Interval = CInt(gConfLocal.PeriodoActualizacionDivisa)
+            timerRefrescoInicio.Interval = CInt(gConfLocal.PeriodoActualizacionInicio)
+            timerRefrescoMeteo.Interval = CInt(gConfLocal.PeriodoActualizacionMeteologia)
+
+            timerRefrescoDivisa.Enabled = True
+            timerRefrescoInicio.Enabled = True
+            timerRefrescoMeteo.Enabled = True
+
+            timerRefrescoDivisa.Start()
+            timerRefrescoInicio.Start()
+            timerRefrescoMeteo.Start()
+
         End Sub
 
         Private Sub ActualizarResumenVenta(ByRef numero As Integer?, ByRef total As Double?)
@@ -251,12 +243,13 @@ Namespace Presentacion.Formulario
 
         Private Sub cbbtnEliminarTarea_Click(sender As Object, e As EventArgs) Handles cbbtnEliminarTarea.Click
             If IsNothing(_tarea) Then
-                Dim item As VWTareas = gridTareas.SelectedItem(Of VWTareas)()
-                If IsNothing(item) Then
+                Dim item As List(Of VWTareas) = gridTareas.SelectedItems(Of VWTareas)()
+                If item.Count = 0 Then
                     MostrarMensaje(My.Resources.Application.AvisoSeleccionFila, Me.Text, Telerik.WinControls.RadMessageIcon.Info)
                 Else
-                    EliminarTarea(item.idTarea)
-                    TareasBindingSource.Remove(item)
+                    If MostrarMensaje(My.Resources.Application.ConfirmacionBorrarDato, Me.Text, Telerik.WinControls.RadMessageIcon.Question, MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
+                        EliminarTarea(item)
+                    End If
                 End If
             End If
         End Sub
@@ -292,19 +285,17 @@ Namespace Presentacion.Formulario
             bgwInicio.RunWorkerAsync(dato)
         End Sub
 
-        Private Sub EliminarTarea(ByVal idSeleccionado As Long)
-            If MostrarMensaje(My.Resources.Application.ConfirmacionBorrarDato, Me.Text, Telerik.WinControls.RadMessageIcon.Question, MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
-                Try
-                    Using control As New TareasController
-                        Dim toDelete As Tareas
-                        toDelete = control.GetItem(idSeleccionado)
-                        toDelete.SetAsDeleteOnSubmit()
-                        control.SyncronisingItem(toDelete)
-                    End Using
-                Catch ex As Exception
-                    MostrarMensaje(Me.Text, My.Resources.Application.ErrorActualizarDatos, ex, Telerik.WinControls.RadMessageIcon.Exclamation)
-                End Try
-            End If
+        Private Sub EliminarTarea(ByVal items As List(Of VWTareas))
+            Try
+                Using control As New TareasController
+                    For Each tarea As VWTareas In items
+                        control.DeleteItem(tarea.idTarea)
+                        TareasBindingSource.Remove(tarea)
+                    Next
+                End Using
+            Catch ex As Exception
+                MostrarMensaje(Me.Text, My.Resources.Application.ErrorActualizarDatos, ex, Telerik.WinControls.RadMessageIcon.Exclamation)
+            End Try
         End Sub
 
         Private Sub bgwInicio_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles bgwInicio.DoWork
@@ -314,11 +305,8 @@ Namespace Presentacion.Formulario
             If datos.CargarTarea Then
                 If datos.TodasTareas Then
                     Dim filtro As String
-                    If gUsuario.IsSuper Then
-                        filtro = "idUsuario == NULL"
-                    Else
-                        filtro = "idUsuario == " & gUsuario.idUsuario
-                    End If
+                    filtro = "idUsuario == " & gUsuario.idUsuario
+
                     Using c As New VistasController(Of VWTareas)()
                         datos.Tareas = c.GetItems(filtro, "FechaTarea")
                     End Using
@@ -370,10 +358,11 @@ Namespace Presentacion.Formulario
         Private Sub EditarAgregarTarea(id As Long)
             If id = -1 Then
                 _tarea = TareasController.NewItem()
-                If gUsuario.IsSuper() Then _tarea.idUsuario = gUsuario.idUsuario
+                _tarea.idUsuario = gUsuario.idUsuario
                 TareaBindingSource.DataSource = _tarea
                 dtpFechaTarea.MinDate = Today()
                 SplitPanel4.Collapsed = False
+
                 dtpFechaTarea.Focus()
             Else
                 Try
@@ -456,8 +445,6 @@ Namespace Presentacion.Formulario
                 listas = listas.Where(Function(l As ListasCompra) l.idCompra.Equals(lista.idCompra))
                 If listas.Count() = 0 Then
                     Me.ListasCompraBindingSource.Add(lista)
-                Else
-
                 End If
 
             Catch ex As Exception
@@ -514,9 +501,8 @@ Namespace Presentacion.Formulario
         End Sub
 
         Private Sub gridListaCompra_RowsChanging(sender As Object, e As GridViewCollectionChangingEventArgs) Handles gridListaCompra.RowsChanging
-            Dim itemABorrar As List(Of ListasCompra) = New List(Of ListasCompra)()
-            Dim item As ListasCompra = DirectCast(e.GridViewTemplate.MasterViewInfo.CurrentRow.DataBoundItem, ListasCompra)
             If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Add Then
+                Dim item As ListasCompra = DirectCast(e.GridViewTemplate.MasterViewInfo.CurrentRow.DataBoundItem, ListasCompra)
                 If item Is Nothing Then
                     e.Cancel = True
                 Else
@@ -527,11 +513,19 @@ Namespace Presentacion.Formulario
                     Else
                         item.SetAsInsertOnSubmit()
                     End If
-
+                    Try
+                        Using c As New ListasCompraController()
+                            c.SyncronisingItem(item)
+                        End Using
+                    Catch ex As Exception
+                        e.Cancel = True
+                        MostrarMensaje(Me.Text, My.Resources.Application.ErrorActualizarDatos, ex, Telerik.WinControls.RadMessageIcon.Exclamation)
+                    End Try
                 End If
             End If
             If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Remove Then
                 If MostrarMensaje(My.Resources.Application.ConfirmacionBorrarDato, Me.Text, Telerik.WinControls.RadMessageIcon.Question, MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
+                    Dim itemABorrar As List(Of ListasCompra) = New List(Of ListasCompra)()
 
                     For Each row As GridViewDataRowInfo In e.OldItems
                         If Not IsNothing(_encargo) AndAlso _encargo.idEncargo = DirectCast(row.DataBoundItem, ListasCompra).idEncargo Then
@@ -542,20 +536,15 @@ Namespace Presentacion.Formulario
                         itemABorrar.Add(todelete)
                     Next
 
-                Else
-                    e.Cancel = True
+                    Try
+                        Using c As New ListasCompraController()
+                            c.SyncronisingItem(itemABorrar.AsEnumerable())
+                        End Using
+                    Catch ex As Exception
+                        e.Cancel = True
+                        MostrarMensaje(Me.Text, My.Resources.Application.ErrorActualizarDatos, ex, Telerik.WinControls.RadMessageIcon.Exclamation)
+                    End Try
                 End If
-            End If
-            If Not e.Cancel Then
-                Try
-                    Using c As New ListasCompraController()
-                        c.SyncronisingItem(item)
-                        c.SyncronisingItem(itemABorrar.AsEnumerable())
-                    End Using
-                Catch ex As Exception
-                    e.Cancel = True
-                    MostrarMensaje(Me.Text, My.Resources.Application.ErrorActualizarDatos, ex, Telerik.WinControls.RadMessageIcon.Exclamation)
-                End Try
             End If
         End Sub
 
@@ -577,7 +566,8 @@ Namespace Presentacion.Formulario
             PrepararControles(SplitPanel2.Controls)
             PrepararControles(SplitPanel3.Controls)
             PrepararControles(SplitPanel4.Controls)
-
+            SettingGridHeaderText(gridListaCompra, My.Resources.Application.GridHeaderTextListaInicio.Split(CARACTERSEPARADOR))
+            SettingGridHeaderText(gridTareas, My.Resources.Application.GridHeaderTextTareaInicio.Split(CARACTERSEPARADOR))
             TryCast(Me.dtpFechaTarea.DateTimePickerElement.CurrentBehavior, RadDateTimePickerCalendar).ShowTimePicker = True
             TryCast(Me.dtpFechaTarea.DateTimePickerElement.CurrentBehavior, RadDateTimePickerCalendar).DropDownMinSize = New System.Drawing.Size(450, 330)
         End Sub
@@ -594,5 +584,30 @@ Namespace Presentacion.Formulario
             _encargo = Nothing
         End Sub
 
+        Private Sub btnBuscarProducto_Click(sender As Object, e As EventArgs) Handles btnBuscarProducto.Click
+            Dim frm As frmBuscador
+            frm = New frmBuscador(frmBuscador.ObjetoBusqueda.Producto)
+            If frm.ShowDialog() = DialogResult.OK Then
+                If Not IsNothing(frm.ObjetoEncontrado) Then
+                    Dim producto As VWProductos = TryCast(frm.ObjetoEncontrado, VWProductos)
+                    txtReferencia.Text = producto.Referencia
+                    txtProducto.Text = producto.Descripcion
+
+                End If
+            End If
+        End Sub
+
+        Private Sub btnBuscarCliente_Click(sender As Object, e As EventArgs) Handles btnBuscarCliente.Click
+            Dim frm As frmBuscador
+            frm = New frmBuscador(frmBuscador.ObjetoBusqueda.Cliente)
+            If frm.ShowDialog() = DialogResult.OK Then
+                If Not IsNothing(frm.ObjetoEncontrado) Then
+                    Dim cliente As VWClientes = TryCast(frm.ObjetoEncontrado, VWClientes)
+                    txtNombre.Text = cliente.NombreYNombreCN
+                    txtTelefono.Text = cliente.Telefono
+
+                End If
+            End If
+        End Sub
     End Class
 End Namespace
