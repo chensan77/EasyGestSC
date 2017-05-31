@@ -447,4 +447,12 @@ Cancelar, deshacer los cambios en condiciones de la tarjeta de fidelización.</v
   <data name="GridHeaderTextTareaInicio" xml:space="preserve">
     <value>;Tarea;Fecha;Hora</value>
   </data>
+  <data name="ConfirmacionCancelarVale" xml:space="preserve">
+    <value>Confirme la cancelación del vale seleccionado
+Nº: {0} Importe: {1}</value>
+  </data>
+  <data name="ConfirmacionReactivarVale" xml:space="preserve">
+    <value>Confirme la reactivación del vale seleccionado
+Nº: {0} Importe: {1}</value>
+  </data>
 </root>

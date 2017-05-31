@@ -27,18 +27,7 @@ namespace EasyGest.Print
         RIGHT
     }
 
-    public enum POSFontFormat
-    {
-        CPP10 = 0,
-        CPP12 = 1,
-        PROPORTIONAL = 2,
-        COMPRESSED = 4,
-        BOLD = 8,
-        DOUBLEHEIGHT = 16,
-        DOUBLEWIDTH = 32,
-        CURSIVE = 64,
-        UNDERLINE = 128
-    }
+
     public enum ElementUploadRotation
     {
         NO_ROTATION = 0,
@@ -145,7 +134,13 @@ namespace EasyGest.Print
 
     }
 
-    public enum Codepage8
+    public enum POSFont
+    {
+        Font_A = 0, // 12x24dot 
+        Font_B = 1  // 9x17dot
+    }
+
+   public enum Codepage8
     {
         DOS_437 = 0,
         DOS_850,

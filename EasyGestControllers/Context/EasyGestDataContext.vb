@@ -5,6 +5,8 @@ Imports EasyGestControllers.Data.Entity
 
 Namespace Data.Entity
 
+
+
 #Region "Enums"
 
     Public Enum FormaOfertaEnum
@@ -50,16 +52,36 @@ Namespace Data.Entity
 
 #Region "Tablas"
     Partial Class Albaranes
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _FCreacion = Now()
             _Cobrado = False
             _FAlbaran = _FCreacion
-            _idModo = ModoPagoEnum.Metalico
             _Pendiente = 0.0F
             _SerieAlbaran = ""
         End Sub
+
+        Public Property Cliente As String = String.Empty
+
+        Public ReadOnly Property Importe As Single
+            Get
+                If IsNothing(LineasAlbaran) Then
+                    Return 0.0
+                Else
+                    Return LineasAlbaran.Sum(Function(l) l.Importe)
+                End If
+            End Get
+        End Property
+
+        Public ReadOnly Property NumeroPiezas As Single
+            Get
+                If IsNothing(LineasAlbaran) Then
+                    Return 0.0
+                Else
+                    Return LineasAlbaran.Sum(Function(l) l.Cantidad)
+                End If
+            End Get
+        End Property
 
         Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
             If action = ChangeAction.Insert Then
@@ -76,7 +98,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class ApuntesDiario
-        Inherits LINQEntityBase
 
         Public Property EsEntrada As Boolean = True
 
@@ -175,7 +196,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class Clientes
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _Activo = True
@@ -224,7 +244,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class CodigosBarra
-        Inherits LINQEntityBase
 
         Public Sub New(idProducto As Long)
             Me.New()
@@ -245,7 +264,6 @@ Namespace Data.Entity
 
     End Class
     Partial Class Contactos
-        Inherits LINQEntityBase
 
         Public Const TIPO_PROPIETARIO_CLIENTE As Char = "C"c
         Public Const TIPO_PROPIETARIO_PROVEEDOR As Char = "P"c
@@ -273,7 +291,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class DatosBancario
-        Inherits LINQEntityBase
 
         Public Const TIPO_PROPIETARIO_CLIENTE As Char = "C"c
         Public Const TIPO_PROPIETARIO_PROVEEDOR As Char = "P"c
@@ -302,7 +319,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class Diarios
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _Apertura = Now()
@@ -331,14 +347,13 @@ Namespace Data.Entity
         End Property
 
         Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-            If _idUsuario.HasValue() AndAlso _idUsuario.Value = EasyGestControllers.Data.Context.EasyGestDataContext.IDUSUARIOSUPER Then
-                _idUsuario = Nothing
-            End If
+            'If _idUsuario.HasValue() AndAlso _idUsuario.Value = EasyGestControllers.Data.Context.EasyGestDataContext.IDUSUARIOSUPER Then
+            '    _idUsuario = Nothing
+            'End If
         End Sub
     End Class
 
     Partial Class DiseñosEtiqueta
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _XMLDiseño = Nothing
@@ -372,7 +387,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class Empresas
-        Inherits LINQEntityBase
 
         Public Const FormatoNumeracionNumero As String = "n"
         Public Const FormatoNumeracionAño As String = "a"
@@ -440,7 +454,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class Encargos
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _FechaEncargo = Today()
@@ -457,7 +470,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class EtiquetasEnHoja
-        Inherits LINQEntityBase
 
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
@@ -487,7 +499,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class EtiquetasEnRollo
-        Inherits LINQEntityBase
 
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
@@ -506,7 +517,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class Facturas
-        Inherits LINQEntityBase
 
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
@@ -519,16 +529,15 @@ Namespace Data.Entity
         End Sub
 
         Private Sub OnValidate(action As ChangeAction)
-            If action = ChangeAction.Insert Then
-                If _idUsuarioEmitido.HasValue() AndAlso _idUsuarioEmitido.Value = EasyGestControllers.Data.Context.EasyGestDataContext.IDUSUARIOSUPER Then
-                    _idUsuarioEmitido = Nothing
-                End If
-            End If
+            'If action = ChangeAction.Insert Then
+            '    If _idUsuarioEmitido.HasValue() AndAlso _idUsuarioEmitido.Value = EasyGestControllers.Data.Context.EasyGestDataContext.IDUSUARIOSUPER Then
+            '        _idUsuarioEmitido = Nothing
+            '    End If
+            'End If
         End Sub
     End Class
 
     Partial Class Familias
-        Inherits LINQEntityBase
 
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
@@ -541,7 +550,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class FormasContacto
-        Inherits LINQEntityBase
 
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
@@ -566,7 +574,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class Galerias
-        Inherits LINQEntityBase
         Public Sub New(idProducto As Long)
             Me.New()
             _idProducto = idProducto
@@ -579,7 +586,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class Impuestos
-        Inherits LINQEntityBase
 
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
@@ -588,11 +594,27 @@ Namespace Data.Entity
     End Class
 
     Partial Class LineasAlbaran
-        Inherits LINQEntityBase
 
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
         End Sub
+
+        Public Property PrecioImpIncluido As Boolean = True
+
+        Public Property ClienteRecargo As Boolean = False
+
+        Public Property StockProductoActual As Single?
+
+        Public Property UnidadXCaja As Single?
+
+        Public Property UnidadVenta As Single
+
+        Public ReadOnly Property PrecioNeto As Single
+            Get
+
+            End Get
+        End Property
+
 
         Public ReadOnly Property ImporteDescuento As Single
             Get
@@ -602,18 +624,23 @@ Namespace Data.Entity
 
         Public ReadOnly Property ImporteRE As Single
             Get
-                If _Recargo.HasValue Then
-                    Return _Cantidad * _Precio * (_Recargo.Value / 100.0F)
+                If ClienteRecargo Then
+                    If _Recargo.HasValue Then
+                        Return _Cantidad * PrecioNeto * (_Recargo.Value / 100.0F)
+                    Else
+                        Return 0.0F
+                    End If
                 Else
                     Return 0.0F
                 End If
+
             End Get
         End Property
 
         Public ReadOnly Property ImporteImpuesto As Single
             Get
                 If _Impuesto.HasValue Then
-                    Return _Cantidad * _Precio * (_Impuesto.Value / 100.0F)
+                    Return _Cantidad * PrecioNeto * (_Impuesto.Value / 100.0F)
                 Else
                     Return 0.0F
                 End If
@@ -622,7 +649,7 @@ Namespace Data.Entity
 
         Public ReadOnly Property ImporteBase As Single
             Get
-                Return _Cantidad * _Precio
+                Return _Cantidad * PrecioNeto
             End Get
         End Property
 
@@ -638,6 +665,7 @@ Namespace Data.Entity
             _Descuento = 0.0F
             _Precio = 0.0F
             _Cantidad = 1.0F
+            _PrecioFinal = 0.0F
         End Sub
 
         Private Sub RecalcularPrecioFinal()
@@ -675,7 +703,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class LineasFactura
-        Inherits LINQEntityBase
 
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
@@ -763,7 +790,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class LineasPedido
-        Inherits LINQEntityBase
 
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
@@ -849,7 +875,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class LineasImpuestoAlbaran
-        Inherits LINQEntityBase
 
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
@@ -858,7 +883,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class LineasImpuestoFactura
-        Inherits LINQEntityBase
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
         End Sub
@@ -866,8 +890,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class ListasCompra
-        Inherits LINQEntityBase
-
         Private Sub OnCreated()
             _FechaCreacion = Today()
         End Sub
@@ -889,7 +911,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class Marcas
-        Inherits LINQEntityBase
 
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
@@ -901,8 +922,14 @@ Namespace Data.Entity
 
     End Class
 
+    Partial Class MediosPagosAlbaranPedido
+
+        Private Sub OnLoaded()
+            MyBase.EntityLoaded()
+        End Sub
+    End Class
+
     Partial Class ModosPago
-        Inherits LINQEntityBase
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
         End Sub
@@ -925,7 +952,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class Morosidades
-        Inherits LINQEntityBase
         Private Sub OnCreated()
             _FCreacion = Now()
         End Sub
@@ -936,7 +962,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class MovimientosMorosidad
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _FMovimiento = Now()
@@ -947,16 +972,15 @@ Namespace Data.Entity
         End Sub
 
         Private Sub OnValidate(action As ChangeAction)
-            If action = ChangeAction.Insert Then
-                If _idUsuario.HasValue() AndAlso _idUsuario.Value = EasyGestControllers.Data.Context.EasyGestDataContext.IDUSUARIOSUPER Then
-                    _idUsuario = Nothing
-                End If
-            End If
+            'If action = ChangeAction.Insert Then
+            '    If _idUsuario.HasValue() AndAlso _idUsuario.Value = EasyGestControllers.Data.Context.EasyGestDataContext.IDUSUARIOSUPER Then
+            '        _idUsuario = Nothing
+            '    End If
+            'End If
         End Sub
     End Class
 
     Partial Class MovimientosTarjeta
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _FMovimiento = Now()
@@ -969,7 +993,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class MunicipiosEspañolas
-        Inherits LINQEntityBase
 
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
@@ -978,7 +1001,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class Ofertas
-        Inherits LINQEntityBase
 
         'Public Const CaracterSeparador As Char = ":"c
         Private Sub OnCreated()
@@ -1068,7 +1090,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class Pedidos
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _FCreacion = Now()
@@ -1080,17 +1101,16 @@ Namespace Data.Entity
             MyBase.EntityLoaded()
         End Sub
 
-        Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-            If action = ChangeAction.Insert Then
-                If _idUsuarioEmitido.HasValue() AndAlso _idUsuarioEmitido.Value = EasyGestControllers.Data.Context.EasyGestDataContext.IDUSUARIOSUPER Then
-                    _idUsuarioEmitido = Nothing
-                End If
-            End If
-        End Sub
+        'Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+        '    If action = ChangeAction.Insert Then
+        '        If _idUsuarioEmitido.HasValue() AndAlso _idUsuarioEmitido.Value = EasyGestControllers.Data.Context.EasyGestDataContext.IDUSUARIOSUPER Then
+        '            _idUsuarioEmitido = Nothing
+        '        End If
+        '    End If
+        'End Sub
     End Class
 
     Partial Class Productos
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _ControlStock = True
@@ -1129,7 +1149,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class PrioridadesTarea
-        Inherits LINQEntityBase
 
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
@@ -1154,7 +1173,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class Proveedores
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _Activo = True
@@ -1200,7 +1218,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class ProvinciasEspañolas
-        Inherits LINQEntityBase
 
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
@@ -1209,7 +1226,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class Puestos
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _EsCajaCentral = False
@@ -1227,7 +1243,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class Tareas
-        Inherits LINQEntityBase
 
         Private _avisoAntelacion As TimeSpan = TimeSpan.Zero
 
@@ -1273,7 +1288,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class TarjetasFidelizacion
-        Inherits LINQEntityBase
 
         Private _FormulaSaldo As String = Nothing
 
@@ -1317,7 +1331,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class TiposIdentificacion
-        Inherits LINQEntityBase
 
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
@@ -1343,7 +1356,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class TiposDatoCaractProducto
-        Inherits LINQEntityBase
 
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
@@ -1368,8 +1380,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class UnidadesMedida
-        Inherits LINQEntityBase
-
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
         End Sub
@@ -1381,15 +1391,10 @@ Namespace Data.Entity
     End Class
 
     Partial Class Ubicaciones
-        Inherits LINQEntityBase
 
         Private Sub OnLoaded()
             MyBase.EntityLoaded()
         End Sub
-
-        'Private Sub OnLoaded()
-        '    MyBase.OnLoaded()
-        'End Sub
 
         Public Overrides Function IsValid() As Boolean
             Return Not String.IsNullOrWhiteSpace(_Ubicacion)
@@ -1398,7 +1403,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class Usuarios
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _Activo = True
@@ -1422,12 +1426,14 @@ Namespace Data.Entity
     End Class
 
     Partial Class Vales
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
             _Activo = True
             _FEmision = Now()
             _ObtenidoXFidelizacion = False
+            _EsPunto = False
+            _Imprimido = False
+            _Numero = ""
         End Sub
 
         Private Sub OnLoaded()
@@ -1442,7 +1448,7 @@ Namespace Data.Entity
         End Property
 
         Public Overrides Function IsValid() As Boolean
-            Return _Importe >= 0.0F
+            Return _Importe > 0.0F
         End Function
 
         Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
@@ -1455,8 +1461,7 @@ Namespace Data.Entity
             Dim numero As String = _FEmision.ToString("yy")
             numero &= _FEmision.DayOfYear.ToString().PadLeft(3, "0"c)
             numero &= _FEmision.ToString("HHmm")
-            numero &= DirectCast(IIf(_EsPunto, "1", "0"), String)
-            numero &= FormatNumber(_Importe, 2).Replace(Threading.Thread.CurrentThread.CurrentCulture.NumberFormat.NumberDecimalSeparator, "").PadLeft(5, "0"c)
+            numero &= FormatNumber(_Importe, 2).Replace(Threading.Thread.CurrentThread.CurrentCulture.NumberFormat.NumberDecimalSeparator, "").PadLeft(4, "0"c)
             Return numero
         End Function
 
@@ -1467,11 +1472,16 @@ Namespace Data.Entity
 
 
     Partial Class VWAlbaranes
-        Inherits LINQEntityBase
 
         Public Property Cambio As Single
         Public Property Entregado As Single
 
+        Private Sub OnCreated()
+        End Sub
+
+    End Class
+
+    Partial Public Class VWApuntesDiario
         Public ReadOnly Property ModoPago() As String
             Get
                 If Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName.Equals("zh") Then
@@ -1482,12 +1492,9 @@ Namespace Data.Entity
             End Get
         End Property
 
-        Private Sub OnCreated()
-        End Sub
     End Class
 
     Partial Class VWFacturas
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
         End Sub
@@ -1495,7 +1502,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWClientes
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
         End Sub
@@ -1529,7 +1535,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWCobros
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
         End Sub
@@ -1546,7 +1551,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWContactos
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
         End Sub
@@ -1584,7 +1588,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWCreditosCliente
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
         End Sub
@@ -1604,7 +1607,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWDatosBancario
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
         End Sub
@@ -1634,7 +1636,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWDeberesProveedor
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
 
@@ -1655,28 +1656,24 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWDiarios
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
         End Sub
     End Class
 
     Partial Class VWFacturacion
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
         End Sub
     End Class
 
     Partial Class VWLineasAlbaran
-        Inherits LINQEntityBase
         Private Sub OnCreated()
         End Sub
 
     End Class
 
     Partial Class VWLineasPedido
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
         End Sub
@@ -1690,7 +1687,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWTareas
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
         End Sub
@@ -1740,7 +1736,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWTarjetasFidelizacion
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
         End Sub
@@ -1775,7 +1770,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWPagos
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
         End Sub
@@ -1792,14 +1786,12 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWPedidos
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
         End Sub
     End Class
 
     Partial Class VWProductos
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
         End Sub
@@ -1851,7 +1843,6 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWProveedores
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
         End Sub
@@ -1884,18 +1875,26 @@ Namespace Data.Entity
     End Class
 
     Partial Class VWVales
-        Inherits LINQEntityBase
 
         Private Sub OnCreated()
         End Sub
 
         Public ReadOnly Property Cliente As String
             Get
-                If String.IsNullOrEmpty(_NombreCN) Then
-                    Return _Nombre
+                If _idCliente.HasValue Then
+                    If String.IsNullOrEmpty(_NombreCN) Then
+                        Return _Nombre
+                    Else
+                        Return _Nombre & " (" & _NombreCN & ")"
+                    End If
                 Else
-                    Return _Nombre & " (" & _NombreCN & ")"
+                    If Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName.Equals("zh") Then
+                        Return "不属于任何客户"
+                    Else
+                        Return "No perteneciente a ningún cliente"
+                    End If
                 End If
+
             End Get
         End Property
     End Class
@@ -1910,22 +1909,6 @@ Namespace Data.Context
         'Private Shared _context As EasyGestDataContext
 
         Friend Const IDUSUARIOSUPER As Long = 0L
-        'Friend Const FECHAREFERENCIA As Date = #2016/01/01#
-
-        'Protected Friend Shared Function GetTablesPrimaryKeys() As Dictionary(Of String, List(Of String))
-        '    Dim tablesPrimaryKeys As New Dictionary(Of String, List(Of String))()
-        '    Dim _context As EasyGestDataContext = New EasyGestDataContext()
-        '    For Each model As System.Data.Linq.Mapping.MetaTable In _context.Mapping.GetTables()
-        '        Dim members As Collections.ObjectModel.ReadOnlyCollection(Of System.Data.Linq.Mapping.MetaDataMember) = model.RowType.IdentityMembers
-        '        Dim primaryKeys As New List(Of String)
-        '        For Each member As System.Data.Linq.Mapping.MetaDataMember In members
-        '            primaryKeys.Add(member.Name)
-        '        Next
-        '        tablesPrimaryKeys.Add(model.RowType.Name, primaryKeys)
-        '    Next
-        '    _context.Dispose()
-        '    Return tablesPrimaryKeys
-        'End Function
 
         Shared Sub New()
             ReadOnlyEntities = New Type() {GetType(Entity.FormasContacto),

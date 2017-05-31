@@ -32,7 +32,7 @@ Namespace Modulo
         Public gDiario As EasyGestControllers.Data.Entity.Diarios = Nothing
         Public gUsuario As EasyGestControllers.Data.Entity.Usuarios = Nothing
 
-
+        Public ImpresionErroCallBack As New Print.Printing.PrintJobs.PrintingErrorDelgate(AddressOf VerImpresionError)
         Public Delegate Function GetApplicationCultureCallBack(f As Form) As System.Globalization.CultureInfo
 
         Public ReadOnly Property CajaCerrado As Boolean
@@ -600,6 +600,13 @@ Namespace Modulo
 
             End Try
         End Sub
+        Private Sub spin_GotFocus(ByVal sender As System.Object, ByVal e As System.EventArgs)
+            Try
+                DirectCast(sender, RadSpinEditor).SpinElement.TextBoxItem.SelectAll()
+            Catch ex As Exception
+
+            End Try
+        End Sub
 
         Private Sub ddl_ItemDataBound(sender As System.Object, args As Telerik.WinControls.UI.ListItemDataBoundEventArgs)
             Try
@@ -640,7 +647,7 @@ Namespace Modulo
             'radSpinEditor.AllowShowFocusCues = True
             'radSpinEditor.ForeColor = gEditControlForecolor
             radSpinEditor.BackColor = Color.Transparent
-            AddHandler radSpinEditor.GotFocus, AddressOf txt_GotFocus
+            AddHandler radSpinEditor.GotFocus, AddressOf spin_GotFocus
             AddHandler radSpinEditor.GotFocus, AddressOf radControl_GotFocus
             AddHandler radSpinEditor.LostFocus, AddressOf radContro_LostFocus
         End Sub
@@ -650,6 +657,9 @@ Namespace Modulo
             AddHandler calculatorDropDown.LostFocus, AddressOf radContro_LostFocus
         End Sub
 
+        Private Sub VerImpresionError(ByVal ex As Exception)
+            MostrarMensaje(My.Application.Info.ProductName, My.Resources.Application.ErrorNoImprimir, ex, Telerik.WinControls.RadMessageIcon.Exclamation)
+        End Sub
     End Module
 
 End Namespace

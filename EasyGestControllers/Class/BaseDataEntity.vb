@@ -196,7 +196,7 @@ Namespace Data.Entity
         ''' </summary>
         ''' <param name="source">the source entity that will have it's values copied</param>
         ''' <returns></returns>
-        Protected Sub ShallowCopy(ByRef destination As LINQEntityBase)
+        Protected Friend Sub ShallowCopy(ByRef destination As LINQEntityBase)
             Dim sourcePropInfos As PropertyInfo() = Me.[GetType]().GetProperties(BindingFlags.[Public] Or BindingFlags.Instance)
             Dim destinationPropInfos As PropertyInfo() = Me.[GetType]().GetProperties(BindingFlags.[Public] Or BindingFlags.Instance)
 
@@ -225,7 +225,7 @@ Namespace Data.Entity
         ''' </summary>
         ''' <param name="source"></param>
         ''' <returns></returns>
-        Protected Function ShallowCompare(entity As LINQEntityBase) As Boolean
+        Protected Friend Function ShallowCompare(entity As LINQEntityBase) As Boolean
             If Not Object.ReferenceEquals(Me.[GetType](), entity.[GetType]()) Then
                 Return False
             End If
@@ -678,6 +678,12 @@ Namespace Data.Entity
         Public Overridable Function IsValid() As Boolean
             Return True
         End Function
+
+        Public Overridable Sub Reset()
+            Dim newEntity As LINQEntityBase
+            newEntity = TryCast(Activator.CreateInstance(Me.GetType), LINQEntityBase)
+            newEntity.ShallowCopy(Me)
+        End Sub
 
         ''' <summary>
         ''' Sets the current entity as the root for change tracking.

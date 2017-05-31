@@ -585,8 +585,8 @@ Namespace Presentacion.Formulario
         End Sub
 
         Private Sub btnBuscarProducto_Click(sender As Object, e As EventArgs) Handles btnBuscarProducto.Click
-            Dim frm As frmBuscador
-            frm = New frmBuscador(frmBuscador.ObjetoBusqueda.Producto)
+            Dim frm As Dialogo.frmBuscador
+            frm = New Dialogo.frmBuscador(Dialogo.frmBuscador.ObjetoBusqueda.Producto)
             If frm.ShowDialog() = DialogResult.OK Then
                 If Not IsNothing(frm.ObjetoEncontrado) Then
                     Dim producto As VWProductos = TryCast(frm.ObjetoEncontrado, VWProductos)
@@ -598,8 +598,8 @@ Namespace Presentacion.Formulario
         End Sub
 
         Private Sub btnBuscarCliente_Click(sender As Object, e As EventArgs) Handles btnBuscarCliente.Click
-            Dim frm As frmBuscador
-            frm = New frmBuscador(frmBuscador.ObjetoBusqueda.Cliente)
+            Dim frm As Dialogo.frmBuscador
+            frm = New Dialogo.frmBuscador(Dialogo.frmBuscador.ObjetoBusqueda.Cliente)
             If frm.ShowDialog() = DialogResult.OK Then
                 If Not IsNothing(frm.ObjetoEncontrado) Then
                     Dim cliente As VWClientes = TryCast(frm.ObjetoEncontrado, VWClientes)

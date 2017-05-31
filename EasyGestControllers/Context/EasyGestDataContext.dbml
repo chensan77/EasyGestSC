@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EasyGest" EntityNamespace="Data.Entity" ContextNamespace="Data.Context" Class="EasyGestDataContext" BaseType="BaseDataContext" Serialization="Unidirectional" EntityBase="Data.Entity.LinqEntityBase" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=CHENZHANG-PC;Initial Catalog=EasyGest;Integrated Security=True;Encrypt=False;TrustServerCertificate=True" SettingsObjectName="EasyGestControllers.My.MySettings" SettingsPropertyName="EasyGestConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.CodigosBarra" Member="CodigosBarra" AccessModifier="Internal">
     <Type Name="CodigosBarra">
       <Column Name="idCodigo" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -49,14 +50,7 @@
       <Column Name="Tipo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Descripcion" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
       <Column Name="Origen" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Impuestos" Member="Impuestos" AccessModifier="Internal">
-    <Type Name="Impuestos">
-      <Column Name="idImpuesto" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Impuesto" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
-      <Column Name="RE" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Column Name="PorDefecto" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Productos_Galerias" Member="Productos" ThisKey="idProducto" OtherKey="idProducto" Type="Productos" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.ModosPago" Member="ModosPago" AccessModifier="Internal">
@@ -149,16 +143,16 @@
   </Table>
   <Table Name="dbo.VWContactos" Member="VWContactos">
     <Type Name="VWContactos">
-      <Column Name="idContacto" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="idPropietario" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
-      <Column Name="TipoPropietario" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
-      <Column Name="idFormaContacto" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
-      <Column Name="DatoContacto" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="Observacion" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
-      <Column Name="Nombre" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
-      <Column Name="NombreCN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="FormaContactoChn" AccessModifier="Internal" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="FormaContactoEsp" AccessModifier="Internal" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="idContacto" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="idPropietario" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="TipoPropietario" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="idFormaContacto" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DatoContacto" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Observacion" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="NombreCN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="FormaContactoChn" AccessModifier="Internal" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="FormaContactoEsp" AccessModifier="Internal" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
     </Type>
   </Table>
   <Table Name="dbo.VWProveedores" Member="VWProveedores">
@@ -185,29 +179,6 @@
       <Column Name="Fax" Type="System.String" DbType="VarChar(50)" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="Telefono" Type="System.String" DbType="VarChar(50)" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="FModificacion" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" UpdateCheck="Never" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Empresas" Member="Empresas">
-    <Type Name="Empresas">
-      <Column Name="idEmpresa" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Empresa" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="NIF" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="Direccion" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="Localidad" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="Provincia" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="CodigoPostal" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="Telefono" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Movil" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Fax" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Web" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Logo" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="NombreComercial" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="CuentaBanco" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Series" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Activo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="FormatoNumeracion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Association Name="Empresas_Configuraciones" Member="Configuraciones" ThisKey="idEmpresa" OtherKey="idEmpresa" Type="Configuraciones" />
     </Type>
   </Table>
   <Table Name="dbo.UnidadesMedida" Member="UnidadesMedida">
@@ -317,9 +288,6 @@
       <Column Name="Nombre" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="NombreCN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="TotalAlbaran" Type="System.Double" DbType="Float" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="idModo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="ModoPagoChn" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="ModoPagoEsp" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
       <Column Name="FCreacion" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" UpdateCheck="Never" />
       <Column Name="Usuario" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="Puesto" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
@@ -340,7 +308,6 @@
       <Column Name="idCliente" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
       <Column Name="idUsuarioEmitido" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
       <Column Name="idPuestoEmitido" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
-      <Column Name="idModo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="idEmpresa" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
       <Column Name="idFactura" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
       <Column Name="NumAlbaran" AutoSync="OnInsert" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -353,6 +320,7 @@
       <Column Name="Contable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Association Name="Albaranes_LineasImpuestoAlbaran" Member="LineasImpuestoAlbaran" ThisKey="idAlbaran" OtherKey="idAlbaran" Type="LineasImpuestoAlbaran" />
       <Association Name="Albaranes_LineasAlbaran" Member="LineasAlbaran" ThisKey="idAlbaran" OtherKey="idAlbaran" Type="LineasAlbaran" />
+      <Association Name="Albaranes_MediosPagosAlbaranPedido" Member="MediosPagosAlbaranPedido" ThisKey="idAlbaran" OtherKey="idAlbaran" Type="MediosPagosAlbaranPedido" />
     </Type>
   </Table>
   <Table Name="dbo.CaracteristicasProducto" Member="CaracteristicasProducto">
@@ -362,6 +330,7 @@
       <Column Name="Caracteristica" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="Valor" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
       <Column Name="Tipo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Association Name="Productos_CaracteristicasProducto" Member="Productos" ThisKey="idProducto" OtherKey="idProducto" Type="Productos" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.MovimientosTarjeta" Member="MovimientosTarjeta">
@@ -371,47 +340,6 @@
       <Column Name="FMovimiento" AutoSync="OnInsert" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Column Name="Saldo" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Column Name="Descripcion" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.VWProductos" Member="VWProductos">
-    <Type Name="VWProductos">
-      <Column Name="idProducto" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="Referencia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="Descripcion" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="DescripcionLarga" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="PrecioVenta" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="UnidadVenta" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="UltimoPrecioEntrada" Type="System.Single" DbType="Real" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="UltimoProveedor" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="Coste" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="Descuento" Type="System.Single" DbType="Real" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="UnidadXCaja" Type="System.Single" DbType="Real" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="StockSuelto" Type="System.Single" DbType="Real" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="StockCaja" Type="System.Single" DbType="Real" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="Activo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="ControlStock" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="PrecioVariable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="Familia" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="Ubicacion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="Marca" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="Observacion" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="idUnidadMedida" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="idFamilia" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="idMarca" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="idUbicacion" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="FModificacion" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="FCreacion" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="Medida" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="Abreviatura" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="FormaOferta" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="OfertaVigente" Type="System.Boolean" DbType="Bit" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="idOferta" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="OfertaFormula1" Type="System.Double" DbType="Float" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="OfertaFormula2" Type="System.Double" DbType="Float" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="Impuesto" Type="System.Int16" DbType="SmallInt" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="RE" Type="System.Double" DbType="Float" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="PrecioImpInc" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="Fidelizable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="Never" />
     </Type>
   </Table>
   <Table Name="dbo.TarjetasFidelizacion" Member="TarjetasFidelizacion">
@@ -504,30 +432,6 @@
       <Column Name="Incidencia" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="idPuesto" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" UpdateCheck="Never" />
       <Column Name="idUsuario" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
-    </Type>
-  </Table>
-  <Table Name="dbo.VWApuntesDiario" Member="VWApuntesDiario">
-    <Type Name="VWApuntesDiario">
-      <Column Name="idApunte" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="idDiario" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="Concepto" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="Importe" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="Apertura" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="Cierre" Type="System.DateTime" DbType="DateTime" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="idPuesto" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="idUsuario" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="Nombre" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="Puesto" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="FApunte" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-    </Type>
-  </Table>
-  <Table Name="dbo.ApuntesDiario" Member="ApuntesDiario">
-    <Type Name="ApuntesDiario">
-      <Column Name="idApunte" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="idDiario" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
-      <Column Name="Concepto" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
-      <Column Name="Importe" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="FApunte" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.Morosidades" Member="Morosidades">
@@ -799,6 +703,7 @@
       <Column Name="Fecha" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Column Name="idProveedor" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
       <Column Name="PrecioFinal" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Association Name="Productos_RevolucionPreciosCompra" Member="Productos" ThisKey="idProducto" OtherKey="idProducto" Type="Productos" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.LineasImpuestoAlbaran" Member="LineasImpuestoAlbaran">
@@ -866,6 +771,7 @@
       <Column Name="Recargo" Type="System.Single" DbType="Real" CanBeNull="true" />
       <Column Name="PrecioFinal" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Association Name="Facturas_LineasFactura" Member="Factura" Storage="_Facturas" ThisKey="idFactura" OtherKey="idFactura" Type="Facturas" IsForeignKey="true" />
+      <Association Name="Productos_LineasFactura" Member="Productos" ThisKey="idProducto" OtherKey="idProducto" Type="Productos" IsForeignKey="true" DeleteRule="SET NULL" />
     </Type>
   </Table>
   <Table Name="dbo.LineasAlbaran" Member="LineasAlbaran">
@@ -875,7 +781,7 @@
       <Column Name="idProducto" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
       <Column Name="Referencia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="DescripcionProducto" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="Precio" Member="PrecioNeto" Storage="_Precio" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="Precio" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Column Name="Cantidad" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Column Name="Descuento" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Column Name="Impuesto" Type="System.Single" DbType="Real" CanBeNull="true" />
@@ -897,36 +803,7 @@
       <Column Name="Descuento" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Column Name="PrecioFinal" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Association Name="Pedidos_LineasPedido" Member="Pedidos" ThisKey="idPedido" OtherKey="idPedido" Type="Pedidos" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Productos" Member="Productos">
-    <Type Name="Productos">
-      <Column Name="idProducto" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="idUnidadMedida" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="idFamilia" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="idMarca" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="idUbicacion" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="idOferta" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="idImpuesto" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
-      <Column Name="Referencia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Descripcion" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
-      <Column Name="DescripcionLarga" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
-      <Column Name="Coste" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="PrecioVenta" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="Descuento" Type="System.Single" DbType="Real" CanBeNull="true" />
-      <Column Name="UnidadXCaja" Type="System.Single" DbType="Real" CanBeNull="true" />
-      <Column Name="StockSuelto" Type="System.Single" DbType="Real" CanBeNull="true" />
-      <Column Name="StockCaja" Type="System.Single" DbType="Real" CanBeNull="true" />
-      <Column Name="UnidadVenta" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="ControlStock" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="PrecioVariable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="Observacion" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
-      <Column Name="FCreacion" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
-      <Column Name="FModificacion" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
-      <Column Name="Activo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="PrecioImpInc" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="Fidelizable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="PorcentajeFacturacion" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="Productos_LineasPedido" Member="Productos" ThisKey="idProducto" OtherKey="idProducto" Type="Productos" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Pedidos" Member="Pedidos">
@@ -942,6 +819,7 @@
       <Column Name="NumeracionPedido" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
       <Column Name="ImpIndIncluido" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Association Name="Pedidos_LineasPedido" Member="LineasPedido" ThisKey="idPedido" OtherKey="idPedido" Type="LineasPedido" />
+      <Association Name="Pedidos_MediosPagosAlbaranPedido" Member="MediosPagosAlbaranPedido" ThisKey="idPedido" OtherKey="idPedido" Type="MediosPagosAlbaranPedido" />
     </Type>
   </Table>
   <Table Name="dbo.Configuraciones" Member="Configuraciones">
@@ -950,7 +828,7 @@
       <Column Name="Parametro" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Valor" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="idEmpresa" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
-      <Association Name="Empresas_Configuraciones" Member="Empresa" Storage="_Empresas" ThisKey="idEmpresa" OtherKey="idEmpresa" Type="Empresas" IsForeignKey="true" />
+      <Association Name="Empresas_Configuraciones" Member="Empresas" ThisKey="idEmpresa" OtherKey="idEmpresa" Type="Empresas" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.DiseñosEtiqueta" Member="DiseñosEtiqueta">
@@ -997,6 +875,160 @@
       <Column Name="Puesto" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Identificacion" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="EsCajaCentral" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ApuntesDiario" Member="ApuntesDiario">
+    <Type Name="ApuntesDiario">
+      <Column Name="idApunte" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idDiario" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="idModoPago" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Concepto" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Importe" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="FApunte" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Entrada" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MediosPagosAlbaranPedido" Member="MediosPagosAlbaranPedido">
+    <Type Name="MediosPagosAlbaranPedido">
+      <Column Name="idMediospagos" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idAlbaran" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="idPedido" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="idModo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Importe" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Association Name="Albaranes_MediosPagosAlbaranPedido" Member="Albaranes" ThisKey="idAlbaran" OtherKey="idAlbaran" Type="Albaranes" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="Pedidos_MediosPagosAlbaranPedido" Member="Pedidos" ThisKey="idPedido" OtherKey="idPedido" Type="Pedidos" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VWApuntesDiario" Member="VWApuntesDiario">
+    <Type Name="VWApuntesDiario">
+      <Column Name="idApunte" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="idDiario" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Concepto" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Importe" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Apertura" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Cierre" Type="System.DateTime" DbType="DateTime" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="idPuesto" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="idUsuario" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Puesto" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="FApunte" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Entrada" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="idModoPago" Type="System.Int16" DbType="SmallInt" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ModoPagoChn" AccessModifier="Private" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ModoPagoEsp" AccessModifier="Private" Type="System.String" DbType="VarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Impuestos" Member="Impuestos">
+    <Type Name="Impuestos">
+      <Column Name="idImpuesto" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Impuesto" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="RE" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="PorDefecto" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Impuestos_Productos" Member="Productos" ThisKey="idImpuesto" OtherKey="idImpuesto" Type="Productos" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Productos" Member="Productos">
+    <Type Name="Productos">
+      <Column Name="idProducto" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idUnidadMedida" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="idFamilia" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="idMarca" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="idUbicacion" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="idOferta" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="idImpuesto" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Referencia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="DescripcionLarga" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Coste" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="PrecioVenta" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="PrecioAlmayor" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="Descuento" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="UnidadXCaja" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="StockSuelto" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="StockCaja" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="UnidadVenta" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="ControlStock" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PrecioVariable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Observacion" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="FCreacion" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FModificacion" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Activo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PrecioImpInc" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Fidelizable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PorcentajeFacturacion" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="Productos_Galerias" Member="Galerias" ThisKey="idProducto" OtherKey="idProducto" Type="Galerias" />
+      <Association Name="Productos_CaracteristicasProducto" Member="CaracteristicasProducto" ThisKey="idProducto" OtherKey="idProducto" Type="CaracteristicasProducto" />
+      <Association Name="Productos_RevolucionPreciosCompra" Member="RevolucionPreciosCompra" ThisKey="idProducto" OtherKey="idProducto" Type="RevolucionPreciosCompra" />
+      <Association Name="Productos_LineasFactura" Member="LineasFactura" ThisKey="idProducto" OtherKey="idProducto" Type="LineasFactura" />
+      <Association Name="Productos_LineasPedido" Member="LineasPedido" ThisKey="idProducto" OtherKey="idProducto" Type="LineasPedido" />
+      <Association Name="Impuestos_Productos" Member="Impuestos" ThisKey="idImpuesto" OtherKey="idImpuesto" Type="Impuestos" IsForeignKey="true" DeleteRule="SET NULL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Empresas" Member="Empresas">
+    <Type Name="Empresas">
+      <Column Name="idEmpresa" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Empresa" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="NIF" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Direccion" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Localidad" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Provincia" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CodigoPostal" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Telefono" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Movil" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Web" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Logo" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="NombreComercial" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CuentaBanco" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Series" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Activo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FormatoNumeracion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VentaDetalle" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VentaAlmayor" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Empresas_Configuraciones" Member="Configuraciones" ThisKey="idEmpresa" OtherKey="idEmpresa" Type="Configuraciones" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VWProductos" Member="VWProductos">
+    <Type Name="VWProductos">
+      <Column Name="idProducto" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Referencia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Descripcion" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DescripcionLarga" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PrecioVenta" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="PrecioAlmayor" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="UnidadVenta" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="UltimoPrecioEntrada" Type="System.Single" DbType="Real" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="UltimoProveedor" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Coste" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Descuento" Type="System.Single" DbType="Real" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="UnidadXCaja" Type="System.Single" DbType="Real" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="StockSuelto" Type="System.Single" DbType="Real" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="StockCaja" Type="System.Single" DbType="Real" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Activo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="ControlStock" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="PrecioVariable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Familia" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Ubicacion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Marca" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Observacion" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="idUnidadMedida" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="idFamilia" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="idMarca" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="idUbicacion" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="FModificacion" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="FCreacion" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Medida" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Abreviatura" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="FormaOferta" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="OfertaVigente" Type="System.Boolean" DbType="Bit" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="idOferta" Type="System.Int64" DbType="BigInt" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="OfertaFormula1" Type="System.Double" DbType="Float" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="OfertaFormula2" Type="System.Double" DbType="Float" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Impuesto" Type="System.Single" DbType="Real" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="RE" Type="System.Single" DbType="Real" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PrecioImpInc" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Fidelizable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="Never" />
     </Type>
   </Table>
   <Function Name="dbo.SPInformeCompra" Method="SPInformeCompra" AccessModifier="Internal">

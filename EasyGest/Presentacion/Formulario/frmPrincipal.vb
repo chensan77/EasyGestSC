@@ -187,7 +187,7 @@ Namespace Presentacion.Formulario
             If Not IsNothing(contIcon) Then
                 alertTarea.ContentImage = contIcon
             Else
-                alertTarea.ContentImage = My.Resources.AQUA_ICONS_SYSTEM_ALERT_NOTE_ICON
+                alertTarea.ContentImage = My.Resources.AquaAlert
             End If
             alertTarea.Show()
         End Sub
@@ -257,7 +257,7 @@ Namespace Presentacion.Formulario
         End Sub
 
         Private Sub mitemVales_Click(sender As System.Object, e As System.EventArgs) Handles mitemVales.Click
-
+            AddForm(New CompraVenta.frmVale(), True)
         End Sub
 
         Private Sub mitemCerrar_Click(sender As Object, e As System.EventArgs) Handles mitemCerrar.Click
@@ -279,10 +279,22 @@ Namespace Presentacion.Formulario
             If e.DockWindow.Controls.Count > 0 Then
                 form = TryCast(e.DockWindow.Controls(0), RadForm)
                 If Not IsNothing(form) Then e.DockWindow.TabStripItem.Image = New Bitmap(form.Icon.ToBitmap(), New Size(16, 16))
-
             End If
 
         End Sub
+
+        Private Sub mbtnitemVenta_Click(sender As Object, e As EventArgs) Handles mbtnitemVenta.Click
+            Dim frm As New CompraVenta.frmVenta()
+            If CajaCerrado Then
+                If AperturaCaja() Then
+                    AddForm(frm, True)
+                End If
+            Else
+                AddForm(frm, True)
+            End If
+        End Sub
+
+
     End Class
 
 End Namespace

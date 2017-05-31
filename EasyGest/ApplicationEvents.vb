@@ -58,7 +58,7 @@
 
         Private Sub MyApplication_UnhandledException(sender As Object, e As ApplicationServices.UnhandledExceptionEventArgs) Handles Me.UnhandledException
             My.Application.Log.WriteException(e.Exception)
-            e.ExitApplication = MostrarMensaje(My.Resources.Application.TituloErrorAplicativo, My.Resources.Application.ConfirmacionErrorNoControlado, e.Exception, RadMessageIcon.Question, MessageBoxButtons.YesNo, True) = DialogResult.Yes
+            e.ExitApplication = MostrarMensaje(My.Resources.Application.TituloErrorAplicativo, My.Resources.Application.ConfirmacionErrorNoControlado, e.Exception, RadMessageIcon.Question, MessageBoxButtons.YesNo, True) = DialogResult.No
         End Sub
     End Class
 

@@ -539,7 +539,9 @@ Namespace Presentacion.Formulario.Producto
                     row.InvalidateRow()
                     'VWProductoBindingSource.DataSource = row.DataBoundItem
                 Next
-                My.Forms.frmPrincipal.ShowAlerta(Me.Text, String.Format(My.Resources.Application.AvisoProductoAsignadoFamilia, familia.Familia))
+                Dim nombre As String = "Sin Familia"
+                If Not IsNothing(familia) Then nombre = familia.Familia
+                My.Forms.frmPrincipal.ShowAlerta(Me.Text, String.Format(My.Resources.Application.AvisoProductoAsignadoFamilia, nombre))
                 nodo.ContentElement.ForeColor = Color.Black
             End If
             ReestablecerTreeNode()
@@ -598,7 +600,9 @@ Namespace Presentacion.Formulario.Producto
                     row.InvalidateRow()
                     'VWProductoBindingSource.DataSource = row.DataBoundItem
                 Next
-                My.Forms.frmPrincipal.ShowAlerta(Me.Text, String.Format(My.Resources.Application.AvisoProductoAsignadoOferta, oferta.Plan))
+                Dim plan As String = "Sin Plan"
+                If Not IsNothing(oferta) Then plan = oferta.Plan
+                My.Forms.frmPrincipal.ShowAlerta(Me.Text, String.Format(My.Resources.Application.AvisoProductoAsignadoOferta, plan))
                 If IsNothing(item.Row.Tag) Then
                     item.Row.ForeColor = Color.Black
                 Else

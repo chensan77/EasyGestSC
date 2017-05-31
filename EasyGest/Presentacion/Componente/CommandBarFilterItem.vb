@@ -50,9 +50,9 @@ Namespace Presentacion.Componente
             _texteditor.Font = gDefaultFont
             _texteditor.ShowBorder = True
             _texteditor.Border.ForeColor = gCBForeColor
-            _texteditor.AutoSize = True
+            _texteditor.AutoSize = False
             '_texteditor.BackColor = System.Drawing.Color.FromArgb(255, 255, 255)
-            _texteditor.MinSize = New Size(120, 28)
+            _texteditor.Size = New Size(125, 45)
             _texteditor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
             _texteditor.ForeColor = gCBForeColor
             _texteditor.AutoSizeMode = RadAutoSizeMode.FitToAvailableSize
@@ -61,12 +61,12 @@ Namespace Presentacion.Componente
             '
             _numbereditor.ShowBorder = True
             _numbereditor.Font = gDefaultFont
-            _numbereditor.AutoSize = True
+            _numbereditor.AutoSize = False
             _numbereditor.DecimalPlaces = 2
             _numbereditor.MinValue = Decimal.MinValue
             _numbereditor.MaxValue = Decimal.MaxValue
             _numbereditor.ThousandsSeparator = True
-            _numbereditor.MinSize = New Size(120, 28)
+            _numbereditor.Size = New Size(125, 45)
             _numbereditor.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center
             _numbereditor.ForeColor = gCBForeColor
             _numbereditor.ShowBorder = True
@@ -81,12 +81,14 @@ Namespace Presentacion.Componente
             '_dateeditor.ShowUpDown = True
             _dateeditor.Value = Nothing
             _dateeditor.Font = gDefaultFont
-            _dateeditor.AutoSize = True
-            _dateeditor.AutoSizeMode = RadAutoSizeMode.Auto
-            _dateeditor.Size = New Size(120, 28)
+            _dateeditor.AutoSize = False
+            _dateeditor.AutoSizeMode = RadAutoSizeMode.FitToAvailableSize
+            _dateeditor.Size = New Size(125, 45)
             _dateeditor.ForeColor = gCBForeColor
             '_dateeditor.BackColor = System.Drawing.Color.FromArgb(255, 255, 255)
             _dateeditor.TextBoxElement.TextAlign = HorizontalAlignment.Center
+            _dateeditor.TextBoxElement.ShowBorder = True
+            _dateeditor.TextBoxElement.Border.ForeColor = gCBForeColor
             '
             'cbddlCampo
             '
@@ -122,7 +124,8 @@ Namespace Presentacion.Componente
             Me._cbddlFiltro.Padding = New Padding(0, 0, 0, 0)
             Me._cbddlFiltro.ForeColor = gCBForeColor
             Me._cbddlFiltro.CaptureOnMouseDown = True
-            Me._cbddlFiltro.DropDownSizingMode = SizingMode.UpDown
+            Me._cbddlFiltro.DropDownSizingMode = SizingMode.UpDownAndRightBottom
+
             Me._cbddlFiltro.Font = gDefaultFont
             Me._cbddlFiltro.ListElement.Font = gDefaultFont
             Me._cbddlFiltro.DropDownListElement.EditorElement.Font = gDefaultFont
@@ -130,15 +133,18 @@ Namespace Presentacion.Componente
             'cbhostValor
             '
             Me._cbhostValor.AutoSize = True
+            'Me._cbhostValor.Size = New Size(130, 48)
             Me._cbhostValor.DisplayName = My.Resources.Application.TextoValor
-            Me._cbhostValor.DrawBorder = False
-            Me._cbhostValor.DrawFill = True
+            Me._cbhostValor.DrawBorder = True
+            Me._cbhostValor.BorderColor = gCBForeColor
+            Me._cbhostValor.DrawFill = False
             Me._cbhostValor.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
             Me._cbhostValor.Visibility = Telerik.WinControls.ElementVisibility.Visible
             Me._cbhostValor.VisibleInOverflowMenu = True
             Me._cbhostValor.ForeColor = gCBForeColor
-            Me._cbhostValor.Padding = New Padding(0, 0, 0, 0)
+            Me._cbhostValor.Padding = New Padding(1)
             Me._cbhostValor.Alignment = ContentAlignment.MiddleCenter
+
             '
             '_cbbtnFilter
             '

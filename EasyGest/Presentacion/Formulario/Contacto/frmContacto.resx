@@ -117,9 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="resource.KeyTip3" xml:space="preserve">
+    <value />
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="resource.AngleTransform5" type="System.Single, mscorlib">
-    <value>0</value>
+  <data name="cbbtnEliminar.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="RadStatusStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -127,16 +130,13 @@
   <data name="cbbtnAgregar.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;RadStatusStrip1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="mitemAgregarCuenta.AccessibleName" xml:space="preserve">
+    <value>Agregar</value>
   </data>
   <data name="lbleDiagnostico.ImageKey" xml:space="preserve">
     <value />
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="resource.Margin7" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
   <data name="cbstripeAccion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
@@ -147,14 +147,8 @@
   <data name="resource.Text2" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;RadSplitContainer1.Name" xml:space="preserve">
-    <value>RadSplitContainer1</value>
-  </data>
-  <data name="&gt;&gt;cbbtnAgregar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="RadSplitContainer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 48</value>
+  <data name="resource.Margin7" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="cbbtnModificar.Text" xml:space="preserve">
     <value>Modificar</value>
@@ -162,23 +156,20 @@
   <data name="resource.AngleTransform6" type="System.Single, mscorlib">
     <value>0</value>
   </data>
+  <data name="cbbtnAgregar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
   <data name="CommandBarRowElement1.RightToLeft" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="resource.Alignment1" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
-  <data name="resource.Text7" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="resource.Text3" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="gridDatos.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 5</value>
-  </data>
-  <data name="resource.RightToLeft6" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="cbbtnModificar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -225,8 +216,8 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Contactos {0}</value>
   </data>
-  <data name="cbComandos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1109, 48</value>
+  <data name="MasterTemplate.MasterTemplate.Caption" xml:space="preserve">
+    <value />
   </data>
   <data name="resource.TextWrap5" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -248,6 +239,9 @@
   </data>
   <data name="resource.DisplayName" xml:space="preserve">
     <value />
+  </data>
+  <data name="cbbtnAgregar.DisplayName" xml:space="preserve">
+    <value>Agregar</value>
   </data>
   <data name="RadStatusStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1099, 28</value>
@@ -2966,6 +2960,9 @@
   <data name="resource.TextWrap4" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="&gt;&gt;cbstripeOrden.Name" xml:space="preserve">
+    <value>cbstripeOrden</value>
+  </data>
   <data name="resource.TextOrientation3" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
@@ -2996,14 +2993,11 @@
   <data name="&gt;&gt;cbbtnAgregar.Name" xml:space="preserve">
     <value>cbbtnAgregar</value>
   </data>
-  <data name="&gt;&gt;VWContactosBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="SplitPanel1.Text" xml:space="preserve">
     <value>SplitPanel1</value>
   </data>
-  <data name="gridDatos.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
+  <data name="resource.AngleTransform4" type="System.Single, mscorlib">
+    <value>0</value>
   </data>
   <data name="lbleDiagnostico.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
@@ -3011,8 +3005,8 @@
   <data name="cbbtnEliminar.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
   </data>
-  <data name="resource.AngleTransform4" type="System.Single, mscorlib">
-    <value>0</value>
+  <data name="resource.TextWrap7" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="cbstripeAccion.Text" xml:space="preserve">
     <value />
@@ -3026,6 +3020,9 @@
   <data name="cbComandos.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="RadSplitContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
   <data name="CommandBarRowElement1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
@@ -3035,11 +3032,8 @@
   <data name="cbbtnModificar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="resource.Margin6" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.RightToLeft5" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="lbleDiagnostico.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
   </data>
   <data name="resource.TextWrap6" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -3068,8 +3062,8 @@
   <data name="resource.Alignment5" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
-  <data name="resource.KeyTip3" xml:space="preserve">
-    <value />
+  <data name="cbbtnModificar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
   </data>
   <data name="&gt;&gt;cbbtnModificar.Type" xml:space="preserve">
     <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
@@ -3101,17 +3095,11 @@
   <data name="&gt;&gt;CommandBarRowElement1.Name" xml:space="preserve">
     <value>CommandBarRowElement1</value>
   </data>
-  <data name="cbbtnAgregar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.Margin5" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="resource.Padding1" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="&gt;&gt;mitemAgregarCuenta.Type" xml:space="preserve">
     <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="lbleDiagnostico.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
   </data>
   <data name="cbbtnModificar.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
@@ -3121,9 +3109,6 @@
   </data>
   <data name="cbstripeAccion.TextWrap" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="resource.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
   </data>
   <data name="resource.KeyTip" xml:space="preserve">
     <value />
@@ -3143,17 +3128,14 @@
   <data name="lbleDiagnostico.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
-  <data name="&gt;&gt;lbleDiagnostico.Name" xml:space="preserve">
-    <value>lbleDiagnostico</value>
-  </data>
   <data name="cbbtnModificar.TextWrap" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="cbstripeAccion.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
   </data>
-  <data name="resource.Alignment7" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
+  <data name="CommandBarRowElement1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="&gt;&gt;cbComandos.Type" xml:space="preserve">
     <value>Telerik.WinControls.UI.RadCommandBar, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
@@ -3164,26 +3146,32 @@
   <data name="cbbtnModificar.DisplayName" xml:space="preserve">
     <value>Modificar</value>
   </data>
-  <data name="CommandBarRowElement1.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="resource.FlipText4" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="RadSplitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="resource.DisplayName2" xml:space="preserve">
-    <value />
+  <data name="cbbtnEliminar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
   </data>
   <data name="resource.KeyTip1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridDatos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="gridDatos.MasterTemplate.Caption" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;bgwCarga.Name" xml:space="preserve">
     <value>bgwCarga</value>
   </data>
-  <data name="lbleDiagnostico.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
+  <data name="lbleDiagnostico.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lbleDiagnostico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
   </data>
   <data name="resource.RightToLeft3" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -3200,11 +3188,11 @@
   <data name="RadStatusStrip1.Text" xml:space="preserve">
     <value>RadStatusStrip1</value>
   </data>
-  <data name="&gt;&gt;cbstripeOrden.Name" xml:space="preserve">
-    <value>cbstripeOrden</value>
+  <data name="resource.RightToLeft6" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="cbbtnModificar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+  <data name="resource.RightToLeft5" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="resource.RightToLeft4" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -3212,14 +3200,14 @@
   <data name="&gt;&gt;gridDatos.Type" xml:space="preserve">
     <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="resource.ToolTipText" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;RadStatusStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="resource.FlipText5" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="CommandBarRowElement1.Text" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;cbbtnAgregar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="cbbtnModificar.RightToLeft" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -3233,7 +3221,10 @@
   <data name="resource.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="lbleDiagnostico.RightToLeft" type="System.Boolean, mscorlib">
+  <data name="resource.AngleTransform5" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.TextWrap2" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
@@ -3254,23 +3245,17 @@
   <data name="resource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="resource.Padding4" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
   <data name="cbbtnAgregar.TextWrap" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="gridDatos.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;cbbtnModificar.Name" xml:space="preserve">
-    <value>cbbtnModificar</value>
+  <data name="mitemAgregarContacto.Text" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;cbstripeAccion.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarStripElement, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="resource.Alignment4" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
+  <data name="resource.Text7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="resource.ToolTipText3" xml:space="preserve">
     <value />
@@ -3290,11 +3275,14 @@
   <data name="cbbtnEliminar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="mitemAgregarCuenta.AccessibleName" xml:space="preserve">
-    <value>Agregar</value>
+  <data name="resource.Margin6" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="resource.FlipText6" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="resource.Alignment7" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
   </data>
   <data name="cbbtnEliminar.RightToLeft" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -3311,6 +3299,9 @@
   <data name="resource.FlipText7" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="resource.ToolTipText" xml:space="preserve">
+    <value />
+  </data>
   <data name="resource.KeyTip2" xml:space="preserve">
     <value />
   </data>
@@ -3320,8 +3311,8 @@
   <data name="&gt;&gt;cbComandos.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="resource.TextWrap7" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="lbleDiagnostico.Text" xml:space="preserve">
+    <value />
   </data>
   <data name="SplitPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3335,20 +3326,20 @@
   <data name="resource.Margin4" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="cbbtnAgregar.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="CommandBarRowElement1.Text" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
+  <data name="cbbtnAgregar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
   <data name="&gt;&gt;mitemAgregarCuenta.Name" xml:space="preserve">
     <value>mitemAgregarCuenta</value>
   </data>
-  <data name="resource.Text6" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="cbbtnEliminar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
+  <data name="&gt;&gt;cbstripeAccion.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarStripElement, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="cbbtnEliminar.Text" xml:space="preserve">
     <value>Eliminar</value>
@@ -3359,8 +3350,8 @@
   <data name="lbleDiagnostico.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="cbstripeOrden.DisplayName" xml:space="preserve">
-    <value>Ordenación</value>
+  <data name="resource.Alignment4" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
   </data>
   <data name="cbbtnEliminar.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -3368,14 +3359,11 @@
   <data name="resource.Text5" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="mitemAgregarContacto.Text" xml:space="preserve">
-    <value />
+  <data name="resource.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
   </data>
-  <data name="resource.DisplayName1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="CommandBarRowElement1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="&gt;&gt;VWContactosBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;RadSplitContainer1.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -3386,8 +3374,14 @@
   <data name="resource.Alignment6" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
+  <data name="cbstripeOrden.DisplayName" xml:space="preserve">
+    <value>Ordenación</value>
+  </data>
   <data name="GridViewTextBoxColumn3.HeaderText" xml:space="preserve">
     <value>Propietario</value>
+  </data>
+  <data name="cbbtnModificar.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="resource.AngleTransform3" type="System.Single, mscorlib">
     <value>0</value>
@@ -3398,11 +3392,8 @@
   <data name="RadSplitContainer1.Text" xml:space="preserve">
     <value>RadSplitContainer1</value>
   </data>
-  <data name="CommandBarRowElement1.DisplayName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="gridDatos.MasterTemplate.Caption" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;lbleDiagnostico.Name" xml:space="preserve">
+    <value>lbleDiagnostico</value>
   </data>
   <data name="&gt;&gt;RadStatusStrip1.Parent" xml:space="preserve">
     <value>SplitPanel1</value>
@@ -3410,11 +3401,14 @@
   <data name="&gt;&gt;SplitPanel1.Parent" xml:space="preserve">
     <value>RadSplitContainer1</value>
   </data>
-  <data name="gridDatos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="resource.Text6" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
-  <data name="cbbtnAgregar.DisplayName" xml:space="preserve">
-    <value>Agregar</value>
+  <data name="CommandBarRowElement1.DisplayName" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="gridDatos.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
   </data>
   <data name="&gt;&gt;RadSplitContainer1.Type" xml:space="preserve">
     <value>Telerik.WinControls.UI.RadSplitContainer, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
@@ -3428,7 +3422,7 @@
   <data name="SplitPanel1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
-  <data name="lbleDiagnostico.Text" xml:space="preserve">
+  <data name="resource.DisplayName2" xml:space="preserve">
     <value />
   </data>
   <data name="resource.DisplayName3" xml:space="preserve">
@@ -3437,14 +3431,17 @@
   <data name="resource.AngleTransform7" type="System.Single, mscorlib">
     <value>0</value>
   </data>
-  <data name="cbbtnModificar.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="resource.DisplayName1" xml:space="preserve">
+    <value />
   </data>
   <data name="lbleDiagnostico.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 10, 0</value>
   </data>
-  <data name="RadSplitContainer1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="cbComandos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1109, 48</value>
+  </data>
+  <data name="CommandBarRowElement1.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="CommandBarRowElement1.FlipText" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -3464,8 +3461,8 @@
   <data name="resource.Padding3" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="lbleDiagnostico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
+  <data name="&gt;&gt;RadSplitContainer1.Name" xml:space="preserve">
+    <value>RadSplitContainer1</value>
   </data>
   <data name="resource.Padding6" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -3473,8 +3470,8 @@
   <data name="resource.Padding7" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="cbbtnEliminar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+  <data name="resource.Padding4" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="resource.Padding5" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -3488,13 +3485,16 @@
   <data name="&gt;&gt;bgwCarga.Type" xml:space="preserve">
     <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="lbleDiagnostico.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="GridViewTextBoxColumn4.HeaderText" xml:space="preserve">
     <value>Observación</value>
   </data>
   <data name="gridDatos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="cbbtnAgregar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="resource.Margin5" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="&gt;&gt;mitemAgregarTarjeta.Name" xml:space="preserve">
@@ -3503,8 +3503,8 @@
   <data name="resource.Text4" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="resource.Padding1" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="cbbtnAgregar.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="mitemAgregarTarjeta.Text" xml:space="preserve">
     <value>Agregar</value>
@@ -3512,14 +3512,17 @@
   <data name="RadStatusStrip1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 8.25pt</value>
   </data>
-  <data name="resource.TextWrap2" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;cbbtnModificar.Name" xml:space="preserve">
+    <value>cbbtnModificar</value>
   </data>
   <data name="cbbtnAgregar.AngleTransform" type="System.Single, mscorlib">
     <value>0</value>
   </data>
-  <data name="cbbtnEliminar.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="cbbtnEliminar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="RadSplitContainer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 48</value>
   </data>
   <data name="resource.Margin1" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>

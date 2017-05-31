@@ -239,6 +239,16 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Busca una cadena traducida similar a Confirme la cancelación del vale seleccionado
+        '''Nº: {0} Importe: {1}.
+        '''</summary>
+        Friend Shared ReadOnly Property ConfirmacionCancelarVale() As String
+            Get
+                Return ResourceManager.GetString("ConfirmacionCancelarVale", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Busca una cadena traducida similar a Ante de abandonar la aplicación desea cerrar curso actual de la caja?.
         '''</summary>
         Friend Shared ReadOnly Property ConfirmacionCerrarCaja() As String
@@ -316,6 +326,16 @@ Namespace My.Resources
         Friend Shared ReadOnly Property ConfirmacionImprimirAlbaran() As String
             Get
                 Return ResourceManager.GetString("ConfirmacionImprimirAlbaran", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca una cadena traducida similar a Confirme la reactivación del vale seleccionado
+        '''Nº: {0} Importe: {1}.
+        '''</summary>
+        Friend Shared ReadOnly Property ConfirmacionReactivarVale() As String
+            Get
+                Return ResourceManager.GetString("ConfirmacionReactivarVale", resourceCulture)
             End Get
         End Property
         

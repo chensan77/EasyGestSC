@@ -131,24 +131,6 @@
   <data name="gridDatos.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 5</value>
   </data>
-  <data name="GridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Titular</value>
-  </data>
-  <data name="GridViewTextBoxColumn2.HeaderText" xml:space="preserve">
-    <value>Banco</value>
-  </data>
-  <data name="GridViewTextBoxColumn3.HeaderText" xml:space="preserve">
-    <value>CCC</value>
-  </data>
-  <data name="GridViewTextBoxColumn4.HeaderText" xml:space="preserve">
-    <value>IBAN</value>
-  </data>
-  <data name="GridViewTextBoxColumn5.HeaderText" xml:space="preserve">
-    <value>Switch</value>
-  </data>
-  <data name="GridViewTextBoxColumn6.HeaderText" xml:space="preserve">
-    <value>Propietario</value>
-  </data>
   <metadata name="VWCuentasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>129, 17</value>
   </metadata>

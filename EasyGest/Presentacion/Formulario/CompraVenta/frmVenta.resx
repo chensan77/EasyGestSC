@@ -1,0 +1,2371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cbstripeAccion.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cbstripeAccion.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbstripeAccion.DisplayName" xml:space="preserve">
+    <value>cbstripeAccion</value>
+  </data>
+  <data name="cbstripeAccion.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="resource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text" xml:space="preserve">
+    <value>0.00€</value>
+  </data>
+  <data name="resource.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnCrear.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="cbbtnCrear.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbbtnCrear.DisplayName" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="cbbtnCrear.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnCrear.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnCrear.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnCrear.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnCrear.Text" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="cbbtnCrear.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="cbbtnCrear.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnCancelar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="cbbtnCancelar.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbbtnCancelar.DisplayName" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="cbbtnCancelar.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnCancelar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnCancelar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnCancelar.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnCancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="cbbtnCancelar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="cbbtnCancelar.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CommandBarSeparator1.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="CommandBarSeparator1.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="CommandBarSeparator1.DisplayName" xml:space="preserve">
+    <value>CommandBarSeparator1</value>
+  </data>
+  <data name="CommandBarSeparator1.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CommandBarSeparator1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="CommandBarSeparator1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="CommandBarSeparator1.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CommandBarSeparator1.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="CommandBarSeparator1.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnTerminar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="cbbtnTerminar.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbbtnTerminar.DisplayName" xml:space="preserve">
+    <value>Terminar</value>
+  </data>
+  <data name="cbbtnTerminar.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnTerminar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFn
+        ZVJlYWR5ccllPAAAA9lJREFUSEutVetPk1cc5k/gw9ThDQVhauZki7u4LF6mZDPZMhbcBVtKKagUpIAX
+        FOccQ+WirRUol4LQFihFdL1YlILa1yIUu0mQzG3EW80ucck+8AX4+nh+p6dumQEUfJI3fZP3nOf3nOd5
+        ThrxIpCCpsj+P1uUA39YiukZfGxaJj7NDd5HxrGu0Qqcu10E69B+lHm2oemmGp57ZyCWzB7dd3Uw+GTo
+        GD7EyPfB8pMGuqufwziQAe+jepNYNns47pRAezUJbbf2wvxjLlOeharrX8P1a+nc1RPcv5U7jAMqNPp3
+        4ezgbq6e3h1BfaRYMneYbXXQuhQw9uajq/cCWu31QfHp5cDcaYDL5UIgEIDT6YTH43k59liHDhSTLQaf
+        HJXSVzh9LRnG8yXo6elB3Q0lOocPJ4ilLw5zIGespi+VBZoCvfcLHnS7oxFdHidKLm3G0Ysf4FvX+2gf
+        KnSILc+PBv9OTlx7QwELa87J3k959/1+P4rdGzlxkf1tHDi/FgXnVqFpUD0mts4MQ588qPduR02fHKZA
+        Dq/kie5ElHRtxuTkJL5xvodDP7yF/Z1rkN+xEpr2eOS2rkCVVzZzLnopeZP2ymdM8Se87w0DmcyOD/Gd
+        ewN8o218wMO/R3Dtlybk2eIZeRxy21ZgT0ssMmqWoMYnn/4kZEVp90eo61eivj8d1b4dOMLsmJiYwIPH
+        t3HcnYjKKzLc+b0PGisjZ8pzLLHINsVA3bQcCu2rqJZkmwTdszh2aQv3OBzu8cuJqJVUfEBBx6qQaiLm
+        qv8lz2LkuxuikXpqAbS9SVNbdcS5Hocd77DWbOetKbKv48Q0gB7XkA57wqrNTHXzcmSdXYZdjHxn/VKk
+        6aOw1/zm1AMKLyTw8CpYBmWej9n7G8LnOLhu6Z4O+uuf+yHVjYzcGI3MuqUsg8VQ6KKQ17xm6gFhG8iq
+        75lVBbbVIcUsxBymmOw4Zt/Gh1z/2cpVZ9YugcqwGOmViyCrmI9C27qpB+TbVnK11HOyal/H6yErRIhh
+        O2jAyAMJGYxYVbUIyjMLkXY6CiknXmE1fndY0D0L1mkT+atpjedW0YlOub/E+Pg4Rh5KuDl68alNquqQ
+        6jT9Qm4NBZxSOg8HHWun/5dTN4daQReI/CePyYpyezInPmrdinShWsFUp7Jqyk+GyDXtr818o7Pb4hLC
+        raALRBZRgKSYThK2I0wsK5+PHWXzuBBBMTOyW2KUdDN5eKSWWaEkK/5LzAIlYhpAdRVbnx95puhIOgl1
+        m3v8P2J5xQJ+qmxLjCS2zB6sQcXsCZJSyoj9SmpTbJL4PA0iIp4A2IHbSyz09fAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="cbbtnTerminar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnTerminar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnTerminar.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnTerminar.Text" xml:space="preserve">
+    <value>Terminar</value>
+  </data>
+  <data name="cbbtnTerminar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="cbbtnTerminar.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeAccion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment1" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.AngleTransform1" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.FlipText1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Margin1" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Padding1" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.RightToLeft1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.TextOrientation1" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.TextWrap1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeAccion.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbstripeAccion.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeAccion.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbstripeAccion.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="cbstripeAccion.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.TextWrap2" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.TextOrientation2" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.FlipText2" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text2" xml:space="preserve">
+    <value>0.00€</value>
+  </data>
+  <data name="resource.Padding2" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Margin2" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment2" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.RightToLeft2" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.AngleTransform2" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.TextWrap3" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.TextOrientation3" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.FlipText3" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.Padding3" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Margin3" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment3" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.RightToLeft3" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.AngleTransform3" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="RadCommandBar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="RadCommandBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="CommandBarRowElement1.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="CommandBarRowElement1.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="CommandBarRowElement1.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CommandBarRowElement1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="CommandBarRowElement1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="CommandBarRowElement1.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeBuscar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="cbstripeBuscar.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbstripeBuscar.DisplayName" xml:space="preserve">
+    <value>CommandBarStripElement2</value>
+  </data>
+  <data name="cbstripeBuscar.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Alignment4" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.AngleTransform4" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.FlipText4" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Margin4" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Padding4" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.RightToLeft4" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.TextOrientation4" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.TextWrap4" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnBuscarCliente.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="cbbtnBuscarCliente.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbbtnBuscarCliente.DisplayName" xml:space="preserve">
+    <value>Buscar Cliente</value>
+  </data>
+  <data name="cbbtnBuscarCliente.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mitemCrearCliente.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="mitemCrearCliente.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="mitemCrearCliente.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mitemCrearCliente.HintText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mitemCrearCliente.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="mitemCrearCliente.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mitemCrearCliente.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mitemCrearCliente.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mitemCrearCliente.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mitemCrearCliente.Text" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="mitemCrearCliente.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="mitemCrearCliente.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="cbbtnBuscarCliente.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnBuscarCliente.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnBuscarCliente.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnBuscarCliente.Text" xml:space="preserve">
+    <value>Buscar Cliente</value>
+  </data>
+  <data name="cbbtnBuscarCliente.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="cbbtnBuscarCliente.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnBuscarProducto.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="cbbtnBuscarProducto.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbbtnBuscarProducto.DisplayName" xml:space="preserve">
+    <value>Buscar Producto</value>
+  </data>
+  <data name="cbbtnBuscarProducto.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mitemCrearProducto.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="mitemCrearProducto.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="mitemCrearProducto.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mitemCrearProducto.HintText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mitemCrearProducto.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="mitemCrearProducto.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mitemCrearProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mitemCrearProducto.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mitemCrearProducto.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mitemCrearProducto.Text" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="mitemCrearProducto.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="mitemCrearProducto.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="cbbtnBuscarProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnBuscarProducto.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnBuscarProducto.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnBuscarProducto.Text" xml:space="preserve">
+    <value>Buscar Producto</value>
+  </data>
+  <data name="cbbtnBuscarProducto.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="cbbtnBuscarProducto.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeBuscar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment5" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.AngleTransform5" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.FlipText5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Margin5" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Padding5" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.RightToLeft5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text5" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="resource.TextOrientation5" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.TextWrap5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeBuscar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbstripeBuscar.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeBuscar.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbstripeBuscar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="cbstripeBuscar.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.TextWrap6" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.TextOrientation6" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.FlipText6" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.Padding6" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Margin6" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment6" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.RightToLeft6" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.AngleTransform6" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.TextWrap7" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.TextOrientation7" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.FlipText7" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text7" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="resource.Padding7" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Margin7" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment7" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.RightToLeft7" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.AngleTransform7" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbstripeSerie.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="cbstripeSerie.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbstripeSerie.DisplayName" xml:space="preserve">
+    <value>CommandBarStripElement2</value>
+  </data>
+  <data name="cbstripeSerie.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Alignment8" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.AngleTransform8" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.FlipText8" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Margin8" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Padding8" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.RightToLeft8" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.TextOrientation8" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.TextWrap8" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CommandBarLabel1.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="CommandBarLabel1.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="CommandBarLabel1.DisplayName" xml:space="preserve">
+    <value>CommandBarLabel1</value>
+  </data>
+  <data name="CommandBarLabel1.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CommandBarLabel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="CommandBarLabel1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 10, 0</value>
+  </data>
+  <data name="CommandBarLabel1.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CommandBarLabel1.Text" xml:space="preserve">
+    <value>Series:</value>
+  </data>
+  <data name="CommandBarLabel1.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="CommandBarLabel1.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbddlSeries.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="cbddlSeries.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbddlSeries.DisplayName" xml:space="preserve">
+    <value>CommandBarDropDownList1</value>
+  </data>
+  <data name="cbddlSeries.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbddlSeries.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbddlSeries.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbddlSeries.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbddlSeries.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbddlSeries.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="cbddlSeries.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeSerie.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment9" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.AngleTransform9" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.FlipText9" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Margin9" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Padding9" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.RightToLeft9" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text9" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.TextOrientation9" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.TextWrap9" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeSerie.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbstripeSerie.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeSerie.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbstripeSerie.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="cbstripeSerie.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.TextWrap10" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.TextOrientation10" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.FlipText10" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text10" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.Padding10" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Margin10" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment10" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.RightToLeft10" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.AngleTransform10" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.TextWrap11" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.TextOrientation11" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.FlipText11" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text11" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.Padding11" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Margin11" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment11" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.RightToLeft11" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.AngleTransform11" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="CommandBarRowElement1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CommandBarRowElement1.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="CommandBarRowElement1.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RadCommandBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>900, 48</value>
+  </data>
+  <data name="RadCommandBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="RadCommandBar1.Text" xml:space="preserve">
+    <value>RadCommandBar1</value>
+  </data>
+  <data name="&gt;&gt;RadCommandBar1.Name" xml:space="preserve">
+    <value>RadCommandBar1</value>
+  </data>
+  <data name="&gt;&gt;RadCommandBar1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadCommandBar, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadCommandBar1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RadCommandBar1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadLabel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9.75pt</value>
+  </data>
+  <data name="RadLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>410, 10</value>
+  </data>
+  <data name="RadLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 24</value>
+  </data>
+  <data name="RadLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RadLabel4.Text" xml:space="preserve">
+    <value>Cliente actual:</value>
+  </data>
+  <data name="&gt;&gt;RadLabel4.Name" xml:space="preserve">
+    <value>RadLabel4</value>
+  </data>
+  <data name="&gt;&gt;RadLabel4.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel4.Parent" xml:space="preserve">
+    <value>ToolWindow3</value>
+  </data>
+  <data name="&gt;&gt;RadLabel4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtCliente.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtCliente.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 14.25pt</value>
+  </data>
+  <data name="txtCliente.Location" type="System.Drawing.Point, System.Drawing">
+    <value>513, 7</value>
+  </data>
+  <data name="txtCliente.Size" type="System.Drawing.Size, System.Drawing">
+    <value>319, 31</value>
+  </data>
+  <data name="txtCliente.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtCliente.Name" xml:space="preserve">
+    <value>txtCliente</value>
+  </data>
+  <data name="&gt;&gt;txtCliente.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtCliente.Parent" xml:space="preserve">
+    <value>ToolWindow3</value>
+  </data>
+  <data name="&gt;&gt;txtCliente.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadSeparator1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="RadSeparator1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 3</value>
+  </data>
+  <data name="RadSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 38</value>
+  </data>
+  <data name="RadSeparator1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="RadSeparator1.Text" xml:space="preserve">
+    <value>RadSeparator1</value>
+  </data>
+  <data name="&gt;&gt;RadSeparator1.Name" xml:space="preserve">
+    <value>RadSeparator1</value>
+  </data>
+  <data name="&gt;&gt;RadSeparator1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadSeparator, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadSeparator1.Parent" xml:space="preserve">
+    <value>ToolWindow3</value>
+  </data>
+  <data name="&gt;&gt;RadSeparator1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="ProductosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>426, 17</value>
+  </metadata>
+  <data name="txtIntroduccion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 15.75pt</value>
+  </data>
+  <data name="txtIntroduccion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 7</value>
+  </data>
+  <data name="txtIntroduccion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 31</value>
+  </data>
+  <data name="txtIntroduccion.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtIntroduccion.Name" xml:space="preserve">
+    <value>txtIntroduccion</value>
+  </data>
+  <data name="&gt;&gt;txtIntroduccion.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadTextBoxControl, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtIntroduccion.Parent" xml:space="preserve">
+    <value>ToolWindow3</value>
+  </data>
+  <data name="&gt;&gt;txtIntroduccion.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblVentaActual.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblVentaActual.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblVentaActual.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 14.25pt, style=Bold</value>
+  </data>
+  <data name="lblVentaActual.Location" type="System.Drawing.Point, System.Drawing">
+    <value>838, 3</value>
+  </data>
+  <data name="lblVentaActual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 41</value>
+  </data>
+  <data name="lblVentaActual.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lblVentaActual.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lblVentaActual.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblVentaActual.Name" xml:space="preserve">
+    <value>lblVentaActual</value>
+  </data>
+  <data name="&gt;&gt;lblVentaActual.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;lblVentaActual.Parent" xml:space="preserve">
+    <value>ToolWindow3</value>
+  </data>
+  <data name="&gt;&gt;lblVentaActual.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="resource.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="resource.Text12" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToolWindow3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="ToolWindow3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 2</value>
+  </data>
+  <data name="ToolWindow3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>888, 45</value>
+  </data>
+  <data name="ToolWindow3.Text" xml:space="preserve">
+    <value>ToolWindow3</value>
+  </data>
+  <data name="&gt;&gt;ToolWindow3.Name" xml:space="preserve">
+    <value>ToolWindow3</value>
+  </data>
+  <data name="&gt;&gt;ToolWindow3.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Docking.ToolWindow, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;ToolWindow3.Parent" xml:space="preserve">
+    <value>ToolTabStrip3</value>
+  </data>
+  <data name="&gt;&gt;ToolWindow3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ToolTabStrip3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 5</value>
+  </data>
+  <data name="ToolTabStrip3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>890, 49</value>
+  </data>
+  <data name="ToolTabStrip3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ToolTabStrip3.Name" xml:space="preserve">
+    <value>ToolTabStrip3</value>
+  </data>
+  <data name="&gt;&gt;ToolTabStrip3.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Docking.ToolTabStrip, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;ToolTabStrip3.Parent" xml:space="preserve">
+    <value>dockVenta</value>
+  </data>
+  <data name="&gt;&gt;ToolTabStrip3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pagevVentas.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pagevVentas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="pagevVentas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pagevVentas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>756, 221</value>
+  </data>
+  <data name="pagevVentas.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pagevVentas.Name" xml:space="preserve">
+    <value>pagevVentas</value>
+  </data>
+  <data name="&gt;&gt;pagevVentas.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadPageView, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;pagevVentas.Parent" xml:space="preserve">
+    <value>DocumentWindow1</value>
+  </data>
+  <data name="&gt;&gt;pagevVentas.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DocumentWindow1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="DocumentWindow1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="DocumentWindow1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>756, 221</value>
+  </data>
+  <data name="DocumentWindow1.Text" xml:space="preserve">
+    <value>DocumentWindow1</value>
+  </data>
+  <data name="&gt;&gt;DocumentWindow1.Name" xml:space="preserve">
+    <value>DocumentWindow1</value>
+  </data>
+  <data name="&gt;&gt;DocumentWindow1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Docking.DocumentWindow, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;DocumentWindow1.Parent" xml:space="preserve">
+    <value>DocumentTabStrip1</value>
+  </data>
+  <data name="&gt;&gt;DocumentWindow1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DocumentTabStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="DocumentTabStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>768, 233</value>
+  </data>
+  <data name="DocumentTabStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DocumentTabStrip1.Name" xml:space="preserve">
+    <value>DocumentTabStrip1</value>
+  </data>
+  <data name="&gt;&gt;DocumentTabStrip1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Docking.DocumentTabStrip, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;DocumentTabStrip1.Parent" xml:space="preserve">
+    <value>doccVentas</value>
+  </data>
+  <data name="&gt;&gt;DocumentTabStrip1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="doccVentas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="&gt;&gt;doccVentas.Name" xml:space="preserve">
+    <value>doccVentas</value>
+  </data>
+  <data name="&gt;&gt;doccVentas.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Docking.DocumentContainer, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;doccVentas.Parent" xml:space="preserve">
+    <value>RadSplitContainer1</value>
+  </data>
+  <data name="&gt;&gt;doccVentas.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gridUltimosVentas.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gridUltimosVentas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <metadata name="VWAlbaranesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="gridUltimosVentas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>766, 112</value>
+  </data>
+  <data name="gridUltimosVentas.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridUltimosVentas.Text" xml:space="preserve">
+    <value>RadGridView1</value>
+  </data>
+  <data name="&gt;&gt;gridUltimosVentas.Name" xml:space="preserve">
+    <value>gridUltimosVentas</value>
+  </data>
+  <data name="&gt;&gt;gridUltimosVentas.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;gridUltimosVentas.Parent" xml:space="preserve">
+    <value>ToolWindow1</value>
+  </data>
+  <data name="&gt;&gt;gridUltimosVentas.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ToolWindow1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="ToolWindow1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 22</value>
+  </data>
+  <data name="ToolWindow1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>766, 112</value>
+  </data>
+  <data name="ToolWindow1.Text" xml:space="preserve">
+    <value>Ultimos venta</value>
+  </data>
+  <data name="&gt;&gt;ToolWindow1.Name" xml:space="preserve">
+    <value>ToolWindow1</value>
+  </data>
+  <data name="&gt;&gt;ToolWindow1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Docking.ToolWindow, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;ToolWindow1.Parent" xml:space="preserve">
+    <value>ToolTabStrip1</value>
+  </data>
+  <data name="&gt;&gt;ToolWindow1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ToolTabStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 237</value>
+  </data>
+  <data name="ToolTabStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>768, 136</value>
+  </data>
+  <data name="ToolTabStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ToolTabStrip1.Name" xml:space="preserve">
+    <value>ToolTabStrip1</value>
+  </data>
+  <data name="&gt;&gt;ToolTabStrip1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Docking.ToolTabStrip, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;ToolTabStrip1.Parent" xml:space="preserve">
+    <value>RadSplitContainer1</value>
+  </data>
+  <data name="&gt;&gt;ToolTabStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadSplitContainer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="RadSplitContainer1.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="RadSplitContainer1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="RadSplitContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>768, 373</value>
+  </data>
+  <data name="RadSplitContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;RadSplitContainer1.Name" xml:space="preserve">
+    <value>RadSplitContainer1</value>
+  </data>
+  <data name="&gt;&gt;RadSplitContainer1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadSplitContainer, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadSplitContainer1.Parent" xml:space="preserve">
+    <value>RadSplitContainer2</value>
+  </data>
+  <data name="&gt;&gt;RadSplitContainer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadLabel6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="RadLabel6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9.75pt, style=Bold</value>
+  </data>
+  <data name="RadLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 285</value>
+  </data>
+  <data name="RadLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 24</value>
+  </data>
+  <data name="RadLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RadLabel6.Text" xml:space="preserve">
+    <value>Nº pieza:</value>
+  </data>
+  <data name="&gt;&gt;RadLabel6.Name" xml:space="preserve">
+    <value>RadLabel6</value>
+  </data>
+  <data name="&gt;&gt;RadLabel6.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel6.Parent" xml:space="preserve">
+    <value>ToolWindow2</value>
+  </data>
+  <data name="&gt;&gt;RadLabel6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadLabel5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="RadLabel5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9.75pt, style=Bold</value>
+  </data>
+  <data name="RadLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 204</value>
+  </data>
+  <data name="RadLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 24</value>
+  </data>
+  <data name="RadLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RadLabel5.Text" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="&gt;&gt;RadLabel5.Name" xml:space="preserve">
+    <value>RadLabel5</value>
+  </data>
+  <data name="&gt;&gt;RadLabel5.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel5.Parent" xml:space="preserve">
+    <value>ToolWindow2</value>
+  </data>
+  <data name="&gt;&gt;RadLabel5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9.75pt, style=Bold</value>
+  </data>
+  <data name="RadLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 4</value>
+  </data>
+  <data name="RadLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 24</value>
+  </data>
+  <data name="RadLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RadLabel2.Text" xml:space="preserve">
+    <value>Stock actual:</value>
+  </data>
+  <data name="&gt;&gt;RadLabel2.Name" xml:space="preserve">
+    <value>RadLabel2</value>
+  </data>
+  <data name="&gt;&gt;RadLabel2.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel2.Parent" xml:space="preserve">
+    <value>ToolWindow2</value>
+  </data>
+  <data name="&gt;&gt;RadLabel2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RadLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9.75pt, style=Bold</value>
+  </data>
+  <data name="RadLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 81</value>
+  </data>
+  <data name="RadLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 24</value>
+  </data>
+  <data name="RadLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RadLabel1.Text" xml:space="preserve">
+    <value>Unidad venta:</value>
+  </data>
+  <data name="&gt;&gt;RadLabel1.Name" xml:space="preserve">
+    <value>RadLabel1</value>
+  </data>
+  <data name="&gt;&gt;RadLabel1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel1.Parent" xml:space="preserve">
+    <value>ToolWindow2</value>
+  </data>
+  <data name="&gt;&gt;RadLabel1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblNumPieza.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="lblNumPieza.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblNumPieza.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 15.75pt, style=Bold</value>
+  </data>
+  <data name="lblNumPieza.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 312</value>
+  </data>
+  <data name="lblNumPieza.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 50</value>
+  </data>
+  <data name="lblNumPieza.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="lblNumPieza.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblNumPieza.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lblNumPieza.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblNumPieza.Name" xml:space="preserve">
+    <value>lblNumPieza</value>
+  </data>
+  <data name="&gt;&gt;lblNumPieza.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;lblNumPieza.Parent" xml:space="preserve">
+    <value>ToolWindow2</value>
+  </data>
+  <data name="&gt;&gt;lblNumPieza.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="resource.TextAlignment1" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="resource.Text13" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblUnidadVenta.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblUnidadVenta.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblUnidadVenta.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 12pt</value>
+  </data>
+  <data name="lblUnidadVenta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 111</value>
+  </data>
+  <data name="lblUnidadVenta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 41</value>
+  </data>
+  <data name="lblUnidadVenta.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="lblUnidadVenta.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lblUnidadVenta.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblUnidadVenta.Name" xml:space="preserve">
+    <value>lblUnidadVenta</value>
+  </data>
+  <data name="&gt;&gt;lblUnidadVenta.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;lblUnidadVenta.Parent" xml:space="preserve">
+    <value>ToolWindow2</value>
+  </data>
+  <data name="&gt;&gt;lblUnidadVenta.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="resource.TextAlignment2" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="resource.Text14" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTotal.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="lblTotal.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblTotal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 15.75pt, style=Bold</value>
+  </data>
+  <data name="lblTotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 232</value>
+  </data>
+  <data name="lblTotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 50</value>
+  </data>
+  <data name="lblTotal.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lblTotal.Text" xml:space="preserve">
+    <value>0.00€</value>
+  </data>
+  <data name="lblTotal.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lblTotal.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblTotal.Name" xml:space="preserve">
+    <value>lblTotal</value>
+  </data>
+  <data name="&gt;&gt;lblTotal.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;lblTotal.Parent" xml:space="preserve">
+    <value>ToolWindow2</value>
+  </data>
+  <data name="&gt;&gt;lblTotal.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="resource.TextAlignment3" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="resource.Text15" xml:space="preserve">
+    <value>0.00€</value>
+  </data>
+  <data name="lblStockActual.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblStockActual.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblStockActual.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 12pt</value>
+  </data>
+  <data name="lblStockActual.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 34</value>
+  </data>
+  <data name="lblStockActual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 41</value>
+  </data>
+  <data name="lblStockActual.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lblStockActual.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lblStockActual.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblStockActual.Name" xml:space="preserve">
+    <value>lblStockActual</value>
+  </data>
+  <data name="&gt;&gt;lblStockActual.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;lblStockActual.Parent" xml:space="preserve">
+    <value>ToolWindow2</value>
+  </data>
+  <data name="&gt;&gt;lblStockActual.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="resource.TextAlignment4" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="resource.Text16" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToolWindow2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="ToolWindow2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 22</value>
+  </data>
+  <data name="ToolWindow2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 349</value>
+  </data>
+  <data name="ToolWindow2.Text" xml:space="preserve">
+    <value>Detalle</value>
+  </data>
+  <data name="&gt;&gt;ToolWindow2.Name" xml:space="preserve">
+    <value>ToolWindow2</value>
+  </data>
+  <data name="&gt;&gt;ToolWindow2.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Docking.ToolWindow, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;ToolWindow2.Parent" xml:space="preserve">
+    <value>ToolTabStrip2</value>
+  </data>
+  <data name="&gt;&gt;ToolWindow2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ToolTabStrip2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>772, 0</value>
+  </data>
+  <data name="ToolTabStrip2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 373</value>
+  </data>
+  <data name="ToolTabStrip2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ToolTabStrip2.Name" xml:space="preserve">
+    <value>ToolTabStrip2</value>
+  </data>
+  <data name="&gt;&gt;ToolTabStrip2.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Docking.ToolTabStrip, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;ToolTabStrip2.Parent" xml:space="preserve">
+    <value>RadSplitContainer2</value>
+  </data>
+  <data name="&gt;&gt;ToolTabStrip2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadSplitContainer2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 58</value>
+  </data>
+  <data name="RadSplitContainer2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="RadSplitContainer2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>890, 373</value>
+  </data>
+  <data name="RadSplitContainer2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;RadSplitContainer2.Name" xml:space="preserve">
+    <value>RadSplitContainer2</value>
+  </data>
+  <data name="&gt;&gt;RadSplitContainer2.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadSplitContainer, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadSplitContainer2.Parent" xml:space="preserve">
+    <value>dockVenta</value>
+  </data>
+  <data name="&gt;&gt;RadSplitContainer2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dockVenta.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dockVenta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 48</value>
+  </data>
+  <data name="dockVenta.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="dockVenta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>900, 436</value>
+  </data>
+  <data name="dockVenta.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="dockVenta.Text" xml:space="preserve">
+    <value>RadDock1</value>
+  </data>
+  <data name="&gt;&gt;dockVenta.Name" xml:space="preserve">
+    <value>dockVenta</value>
+  </data>
+  <data name="&gt;&gt;dockVenta.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Docking.RadDock, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;dockVenta.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dockVenta.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="cmenuUltimasVentas.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>612, 17</value>
+  </metadata>
+  <data name="mitemImprimir.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="mitemImprimir.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="mitemImprimir.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mitemImprimir.HintText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mitemImprimir.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="mitemImprimir.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mitemImprimir.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mitemImprimir.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mitemImprimir.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mitemImprimir.Text" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="mitemImprimir.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="mitemImprimir.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <metadata name="cmenuLineaAlbaran.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>778, 17</value>
+  </metadata>
+  <data name="mitemModificarProducto.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="mitemModificarProducto.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="mitemModificarProducto.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mitemModificarProducto.HintText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mitemModificarProducto.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="mitemModificarProducto.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mitemModificarProducto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mitemModificarProducto.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mitemModificarProducto.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mitemModificarProducto.Text" xml:space="preserve">
+    <value>Modificar producto</value>
+  </data>
+  <data name="mitemModificarProducto.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="mitemModificarProducto.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <metadata name="LineasAlbaranBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>220, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>900, 484</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAgAMDAAAAEACACoDgAAhgAAACAgAAABAAgAqAgAAC4PAAAYGAAAAQAIAMgGAADWFwAAEBAAAAEA
+        CABoBQAAnh4AADAwAAABACAAqCUAAAYkAAAgIAAAAQAgAKgQAACuSQAAGBgAAAEAIACICQAAVloAABAQ
+        AAABACAAaAQAAN5jAAAoAAAAMAAAAGAAAAABAAgAAAAAAAAJAAAAAAAAAAAAAAABAAAAAQAAAAAAABER
+        EgAXFxgAGhoaABwcHAAjIyMAJCQkACgoKAAtLS0APC0pADIyMwA6OjoAPT0+AEsxKgBSPjQAQUFBAEND
+        RABEREUAR0dIAEhISQBNTU0AUVFRAFVVVQBZWVkAWlpcAGVKQgBoSUAAbUtAAG1TSABzVUoAdVlSAG5g
+        WgBzYV0AX19gAGVlZQBnZ2gAaWlqAGxsbgBza2kAb29wAHFxcgB3c3MAdHR0AHh4eQB8fH0AjjUsAI84
+        LwCQOC8Aljw0AIBENQCESjwAi0o8AJhANwCWQjkAm0U9AKBGPQCOTkEAlE5CAJNSRgCbXFEAp0pCAKlO
+        RgCiU0kArlJJAKpZTwCxVU0ApF1SAKpZUQC0WlIAlGBUAKNiWQCiaV0AtmBXALViWgC4Y1sAjm9gAIVt
+        aACZb2IAjHRoAIl5cgCEe3kAlHp0AJR8dAClbGEAumdgALNrYwC7bWUAvm9oALN3bwC0eW8Asn12AL17
+        cgCPgHoAiYJ/AI+DfQCfiHsAoIh6ALeEfgCyjX8AwYV+AIKCggCEhIQAhoaIAIiIiACLi4wAmpGOAJ6T
+        jgCVlZYAm5ubAJycnACjjIgAu4uEAKaQhQCqkoYAo5GJAKqWiwCvmIsAs5SEALGTiQCylokAtZeIALOa
+        jQC6m4sAppSQAKualQCunZkAtJ2RAL+ckQCvoJoAtqCSALmjlAC8qJcAsqKcALqmmwC9qZoAu6idAL2o
+        nQC9r50AoKCgAKqqqgCqqqwArKytALupogC+rqgAv7CpALa2uAC5uboAvLy+AMiQiQDDnJQA0JuVAMOj
+        lQDCpZkAy6aZAMKqmgDEqJkAwKucAMarngDArJ8Axa6eAMuomgDCsJ8AyqeiAMCroADBrKIAxq2gAMKu
+        pADEr6UAz6iiAM2tqADRr6kAwbKhAMawoQDAtaMAwrCkAMSxpwDCtqYAxbSlAMiwowDJsqUAyrSmAMKx
+        qQDEsqgAwrSqAMS0qgDFta4AyLSrAMy0qADIta0AzratAMW6qwDKuasA17KtANqxrQDGtrAAy7qzAMO8
+        ugDSu7QAzcK2AM7JvQDSwrsA28O7ANLJuwDBwcEAw8PEAM/NwgDYxsAA0svDANrJwgDfzsgA1tLHANvR
+        xADW2M4A2tjOAN3V0ADhxcAA48zDAOLOyADh0csA5NLKAOXTzADl1MwA6NHMAOTV0QDo1dAA4t/WAOvZ
+        0gDs2tIA6N3RAO3d0gDs29QA7dzVAOTf2gDt3dgA8N/YAOPg1wDt4d0A8uPbAPjm3QD56NwA4+bgAOzn
+        4ADs6uMA8uXhAPXq5QD76uIA8u3rAPvt6ADr8+8A9fDnAPPx7AD78usA9/f0AP328AD7+vcAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        kswAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACSkwAAAAAAAAAAAAAAAAAAAAAAAGsoJSVoAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAjCsnJSuSAAAAAAAAAAAAAAAAAAAAIwoWKGUXFQAAAAAAAAAAAAAAAAAAAAAAAAAA
+        CBIoKygQAAAAAAAAAAAAAAAAAAAABgQWFhYrBgAAAAAAAAAAAAAAAAAAAAAAAAAVARIWFysQJQAAAAAA
+        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
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////wAA////////AAD///////8AAP///////wAA////////
+        AAD///////8AAP/8////PwAA//B///wPAAD/4D///A8AAP/gP//4BwAA/+Af//gHAAD/4D//+AcAAP/w
+        P//8DwAA//A///4PAAD//AAADg8AAP/8AAAABwAA//8AAAAHAAD//wAAAAcAAP//AAAABwAA//4AAAAH
+        AAD//gAAAAcAAP/8AAAABwAA//wAAAAHAAD/+AAAAAcAAP/4AAAABwAA//AAAAAHAAD/8AAAAAcAAP/w
+        AAAABwAA/+AAAAADAAD/4AAAAAMAAP/AAAAAAwAA/8AAAAADAAD/gAAAAAMAAP+AAAAAAwAA/wAAAAAH
+        AAD/AAAAH/8AAP4AAP///wAA/gP/////AAD8//////8AAPz//////wAA+f//////AACD//////8AAIf/
+        /////wAA////////AAD///////8AAP///////wAA////////AAD///////8AACgAAAAgAAAAQAAAAAEA
+        CAAAAAAAAAQAAAAAAAAAAAAAAAEAAAABAAAAAAAADw8PACQkJQAyMjIAOzs7AD8/PwBDQ0MASUlKAFVO
+        TABSUlIAVFRVAFlZWQBfX18AZVFMAGlVUABsY14AfGZeAGFhYQBlZWYAZ2doAGpqawBtbW0AcGxsAHFx
+        cgBzcnQAdXV1AH5+fgCUOzIAlTwzAIhIOgCKTD4Al0E4AJhCOQCiRz4AjE5BAJdOQQCYUUUAmlVJAKNK
+        QQCkTEMApExEAKdXTACuUkoAtFlRALNcUwC2XlYAg2lfAKZmXwC5Zl8Ah3RtAI51bwCsdm0AoHhtALtz
+        awC0fXUAu3lyAL94cQDBe3MAw3t0AKiAdACnhHkAxYN8AIWFhQCNjY4Amo2KAJWVlQCampoAnZ2eAKWN
+        gQC3ioIAsY+EAKqWjQCvmY0AupaHALybjQC+nY8AppmSAKqYkQCrm5UAr52VAKKamQCunJgAsJyQALCd
+        lAC9nZIAvaGPALWilwC4opcAuKaWAL6olgC1opgAsqKcALilmQC4pp8AvKicAL+vngClpaYAp6eqAKmp
+        qwCyo6AAv6ygALqqpQC/sKUAsLCxALa2uAC7u70AwImBAMWSigDKkYsAwp+RAMqdlwDNnpkAwaCRAMKi
+        lQDCpZYAxKSWAMillwDHoZkAxKaYAMaknADKopsAyaWYAMujnADIpp8AzaScAMSomADFq5wAwqycANKl
+        ngDBq6EAwq2jAMerpQDBr6QAxq6mAMyrpwDIr6YA1qmjAMGwoQDGsKEAw7GnAMe0pgDIs6QAybSmAMKw
+        qgDFsqgAxbSpAMOzrQDEtK0AyrWsAMW5qQDLuqwAzbquANC9rwDKu7IAzbmwAM28sQDLurQAzby2AMG7
+        uADOvrgA0L+2AM7BtQDPwLkAzcW4AM7JvADRwbcA0MC5ANLDvQDXxb4A3cG7ANPIuQDXx8AA1snDANjI
+        wgDfzscA3djNAN/a0QDgz8gA58/KAOTRxgDh0MkA5NDKAODTzQDn2MwA6dfQAOPY0gDq2NEA7t3RAO3c
+        1QDo39sA8N/YAOXj3gDk5t8A7OXeAO7o3wDx4NkA9ubbAPPi3ADy5N0A9+XdAPjm3gDu6uQA8ubjAPTo
+        4wD06eQA+OjhAPzq4QD57eYA/ezlAPXu7QD57ugA/u/pAPbw7gD49fEAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABiaAAAAAAAAAAAAAAA
+        AAAAAGlhAAAAAAAAAAAAAAAABxQXFAAAAAAAAAAAAAAAAAATCxcSZwAAAAAAAAAAAAYDEhQEAAAAAAAA
+        AAAAAAAAAAELCxkHAAAAAAAAAAAACwtCQQUAAAAAAAAAAAAAAAAAAkFBPgoAAAAAAAAAAAAACkI/FgAA
+        AAAAAAAAAAAAAAAZGWIXAAAAAAAAAAAAAAAACA4ujJSXmpqlpQAAAAAAAAAPDhAAAAAAAAAAAAAAAAAA
+        DUS1usPIzs7Dt6qVX1lVcUpJrIQAAAAAAAAAAAAAAAAAmrG4vsPOztPCr6OVf3FxcXTRmgAAAAAAAAAA
+        AAAAAISosbrDztO0RjQ8ZqSMfXFxdNGaAAAAAAAAAAAAAAAAhKixusPPdx4dIh4dO6N/cXF01JoAAAAA
+        AAAAAAAAAIycqLG6w7UkJXe1hCUjVI1xcXTUowAAAAAAAAAAAAAAV5qtsbrPaylq1cnAmoWHjXdxedGf
+        AAAAAAAAAAAAAACFn62xus83LD2IgHl8eXWXcXF51KMAAAAAAAAAAAAASIyfqLG4zzksLTAwMC0sNaNx
+        cXnUpgAAAAAAAAAAAABdkp+trrjKbCo5ysHANypqmndxedSmAAAAAAAAAAAAUmWSn6ixuMO1ISdvvYYn
+        J5SNcX101KgAAAAAAAAAAABPZYyfra66w9JvIBwcHB9Fo39xcXnUqAAAAAAAAAAAV1tlkp+trrrDz9Ko
+        Ni8zhKOUfXF/dNGoAAAAAAAAAABHW2WSn62uur7KztLSwrColYxxcXFtuYwAAAAAAAAAXE9bZZKfrbW9
+        w8jIu7OYhFdfVZUAAAAAAAAAAAAAAABETFJbXGWEhIyaAAAAAAAAAAAAAAAAAAAAAAAAAAAAnkwAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1OMgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//////////////////////n//P/w//g/4P
+        /4P+D/+D/w//h/+AH8f/wAAD/+AAA//AAAP/wAAD/4AAA/+AAAP/gAAD/wAAA/8AAAP+AAAD/gAAA/wA
+        AAP8AAAD+AAAf/gB///z////9////4////+f////////////////////KAAAABgAAAAwAAAAAQAIAAAA
+        AABAAgAAAAAAAAAAAAAAAQAAAAEAAAAAAAA0NDQAPj4+AFlGQgBRUVEAVVVVAFtbWwBhYWIAZmZmAGho
+        aQBsbGsAdW9tAHp3dwB7e3sAkjkwAJQ9NACQTD8AlFNHAKRJQQClVUoAslZOALNZUQC0W1IAhWdbAJ5i
+        VgCdZVoAimxgAJptYQCfeWwAqGtjALt0awC8e3QAjIyMAJSIgwCRkJEAmJiaAKSOhACyiYAApZKIAKqW
+        iwC1kYcAvZWMAK6akACrmZUAsZ6UALqjlwC3pJsAsaKcALiimAC7ppkAuaacALynnAC7qpsAvqiaAL6t
+        ngC9qqAAu6umALyrpgC9raYAva2oALW1twDLj4gAxZGJAMCVjADLkooAz5WPAMCflQDPmpMAy5+ZANKf
+        mQDCopUAwqSWAMaklwDIpZcAxKiXAMCnnADJp5kAzqSeAMWomgDCrp0AxqydAMGtogDBrqQAyqijANSn
+        ogDDsaMAx7CiAMKwpQDGs6QAxbanAMKxqADEsqkAxrSqAMe2rQDKt6oAxrytAMy6rgDJvK4A1bCpANO2
+        rwDJuLEAzL21ANC9sADQv7cAzsO2AM/KvgDVwroA1cS+AN7DvwDaybwA3cm+AMDAwQDXxsAA2NPGAOHL
+        wQDhzMEA587IAOLRygDk08wA7t3SAO3c1QDg39gA7t7YAO7g2QDq4d0A7+fdAPLj3gD25d0A+OfdAPTm
+        4QDx7ecA/OviAPjq5AD87OUA8u3rAPPt7AD07u0A/e/pAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8IwAAAAAAAAAAAAAAbyMA
+        AAAAAAAAAAACCQQAAAAAAAAAAAAAAQgGAAAAAAAAAA0IIAQAAAAAAAAAAAAABCAJAAAAAAAAAAAIIgsA
+        AAAAAAAAAAAACCINAAAAAAAAAAAAAxdqbnJybmZVNjY1KhokAAAAAAAAAAAAADV1eH+Dg31xX09GRkaI
+        XQAAAAAAAAAAAGd1eH9+KBscUmFGRkyIVQAAAAAAAAAAUmp1eH4ZESUZEE9PRkaIVQAAAAAAAAAAXWp1
+        e2ITbIJ5KUJWRkyIVwAAAAAAAAA2ZGt1fUMWPUA+Pj5eRkmIVwAAAAAAAAAuZGt1e0UUQFRNFh5hRkmI
+        VwAAAAAAAF04ZGt1e3USH31TEj5VRkmINQAAAAAAACdSZGt1eIREDw4OHWhPRkmINQAAAAAAAC44ZGt1
+        e3+JemJnaVVJRkyILQAAAAAAJy87ZGt2e39/d25dNi1XXl4AAAAAAAAAJipSWmRkAAAAAAAAAAAAAAAA
+        AAAAAAAhAAAAAAAAAAAAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD///8A////AP///wD8/+cA/H/jAPh/4wD8f+MA/gADAP8AAQD/AAEA/gABAP4AAQD8AAEA/AABAPgA
+        AQD4AAEA+AABAPAABwDwP/8A7///AN///wD///8A////AP///wAoAAAAEAAAACAAAAABAAgAAAAAAAAB
+        AAAAAAAAAAAAAAABAAAAAQAAAAAAAGFhYQBvb28Aem5qAHhwbgB5eHgAoVZOAK1XTwCZaFsAp2FXAKdo
+        XwC5Zl4AnXJlALd3bgDBg3wAj4+PAJGRkwCij4cAuZKHAK+elwCjm5kAv6GSALinngC9q50ApqanALup
+        oAC+rqgAvbKtAMeHgADElY8AwJ6PAMOmlwDGpJYAxKeYAM+kngDAqp0AxqudAMGvngDFqqIAxa2hAMur
+        owDDsKQAyLKkAMCwqgDHs6gAxbauAMm2rQDJva8A27OtAMvBvgDRwboA0ce6ANPCvADTxr4A1cfAAObL
+        xQDkzMUA5NLOAOXUzQDm2c4A4tbRAOPY1ADk2dYA9OLbAPHl2wD049wA9OXeAPjo3wD86+MAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAY
+        AAAAAAAAAA8AAAAAAAABAQAAAAAAAAIFAQAAAAAABQMAAAAAAAAABBQAAAAAAAAROj9EPzMlFR42AAAA
+        AAAALjo/KAgMKR8fPAAAAAAAADI6OAk8JhIlIDwAAAAAABkyOjALHA4OKiA8AAAAAAAaMjo4BzodDSgf
+        PQAAAAAWGjI6PyIGCiwhID0AAAAAEywyPD9EOy8XJSYyAAAAGywAAAAAAAAAAAAAAAAAMQAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAPP7AADz8QAA8/kAAPgB
+        AAD4AQAA+AEAAPABAADwAQAA4AEAAOABAADP/wAAv/8AAP//AAD//wAAKAAAADAAAABgAAAAAQAgAAAA
+        AACAJQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAJWVmCqVlZhxk5OVopaWmJCamp1AmZmcCQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAjY2PFpeXmlqTk5aclJSXnJmZnFiamp0UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZ2doJ3p6fMxubnD5bGxu/2xsbv98fH3hjo6QbgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABUVFUIfHx+pHBwcvBsbG7/bGxu/3R0dvCMjI6ghoaHCAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjIyQVJSUmsTIyM/9WVlf/dHR0/4KC
+        g/9ZWVn/SUlJ9mVlZjQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgIAMiIiN3LS0u/0dHSP9ycnL/fn5+/29vcP9BQUL/ZGRlcmNj
+        ZAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFBQU2BQUG3xwc
+        HP9TU1P/VFRU/1dXV/94eHj/IyMj/zc3N3YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBBUFBQW6ERES/0lJSv9WVlb/VFRU/3p6
+        ev9BQUH/MDAwtz09PRQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAABAQJAAQEC6CwsLP99fX3/fX19/3x8fP+CgoL/JCQk/yIiIogJCQkCAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAR0CAgLGGhoa/3V1
+        df98fHz/fX19/4SEhP9QUFD/FxcXxC8vMBsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAATExQqFhYX1ERERP+qqqr/m5ub/52dnf+FhYT/KCgo/zAwMV8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMT
+        FA0UFBWnLi4u/5ycnP+goKD/m5ub/5aWlv9ERET/JSUloioqKwsAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAApKSoEIiIja0BAQveGhoj/wcHB/6ysrf9oaGr/VVNT41pW
+        VQ4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAhIiQ1MTEy6Gpqa/+9vb7/ubm6/3h5ev9WVlfwRERFMQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHx8gDBgYGYM2NjfmZWVm/3V0
+        dv9za2n/g3Vv5Y93aTmCYlAqi2hSHI1qVBaJZ1EThmVREINjTwqAYU4EAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBODMBFxcZWScnKN1aWlz/cXFz/3dzc/+CeHTOin57AgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAMCAg0MCAb72VKQv9oSUD/jm9g/siwpPfKsaX0yrGk8cqwou7Hrp/qxquc58Knl9+/o5PZvJ+Oz7ea
+        iMqukoDEqIt5vaCEcLGafmuomnxomZl6ZZGVdmGMk3NfhJBwXHmRb1xvdVxOWk05L4pQOzH7bVNI/3NV
+        Sv+OdWzxnYmBLZyIgAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAKAgECHg4Li0UqI/ZtS0D/sZWI++DPyPHl0svx69nS8fDe1vH149ry+ebd8vzo
+        3/P96eHz/enh9Pnn2/Tt3NH149LG9dTGtvXJvKv1vrKg9busmvW6pZP0uqCN9LiaiPO4lobyuJWF8LaT
+        g+2yjn7zsYx9+8i0q/7CsKf8ooV1rolqWRwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwMCBiYTEDR5XE7Zzbiv9t7MxPHj0Mnx6tfQ8e7c
+        1PH04tnx+OXc8fvo3/H96uHx/eri8frp3/Hw49fy59vP8tnOwfLOxLXxw7io8b+yofG/rJrxv6eV8b+i
+        kPG/no/xv52P8b+dj/HBnI7xyKKU8fTr6PLz7+/xspqM3IRkUDkAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGRLPBCskYLi1sS98t7M
+        xPHj0cnx6tfQ8e7c1PH04dnx+OXd8fvq4fH97OTy/e7n8/vw6PT18Of17unh9eHe1fTV0cX0yMK088K4
+        qPLArpzxv6eW8b+ikPG/no/xv52P8b+dj/HBnI7xyKKU8fTr6PHx7ezxtJuO4oVkUkgAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhmdTBItr
+        VnHJs6v418W+8d7MxfHk0crx6tjQ8e/c1PH04trx+Off8fvt5vP98+316t7Y+NC5sfu2l438sZKI/LSb
+        kfzCs6n6z83D987LwPXGuKnzwqyc8b+ikfG/no/xv52P8b+dj/HBnI7xyKKU8fTr6PHx7ezxtp6R5Ydn
+        U1MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAgWNQJJ+CccnRwLnx1sS98d7MxfHk0crx69jQ8e/d1PH149vx+eni8vvy7PbUvLX6lGBU/oRK
+        PP6ARDX/gEM0/4FFNv+FSz3+mW5h/cGzqfnQyr71xrWm88CllPG/n4/xv56P8b+ej/HBnY7xyKKU8fTr
+        6PHx7evxuKCU5ohnU1kAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAi2xYZLqkme/Rv7jx1sS98d7MxfHk0crx69jR8e/e1vH25+Dz+/Hs9sKd
+        lfyMSz3+i0s9/4tJPP+OTkH+kFNG/oxLPv+LSj3/i0k7/4tKPf/ArKL6z8W59cSsnPLAoZHxv56P8b+e
+        j/HBnY7xyKKV8fTs6PHx7evxuaKX6IloVWEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAm31susazq/TQvrjx1sS98d7MxfHk0crx69jR8fDf
+        2PL37Ob059TP+ZdSRv6UTkL/lE5C/6VsYf7Tu7X82MnC+8Cjmv2bXFH+lU9D/5ROQv+iaFz9y7ux98aw
+        ofPBopPxv56P8b+ej/HBnY7xyKKU8fTs6fHx7evxu6SZ6YpqVmUAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACFZVFStZ2R+cm4sfHQvrjx1sS98d7M
+        xfHk0crx69nR8fDh2vL06eT2vomB/aFTSP+hVEn/tHhu/fHn5Pr18u747erj9+nt5/jSw7z7pFxR/qVe
+        U/6lXlP+vpqP+cm1p/PCpJXxwJ6Q8cCekPHCnY/xyKKU8fTs6fHx7ezxvKWa6oxrVmoAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIFjUAqRcV+cwa+o9Mm3
+        sPHQvrjx1sS98d7MxfHk0crx69nS8fHj3PPt3Nj4tG5l/qpZT/+nVEn/17Kt/Pv69/r08Or37eni9uXm
+        3/fh5uD51czG/NTLxfzQwrv7zr+0+Mi1p/PCpZbxwJ+Q8cCekPHCnY/xyKKV8fTs6fHx7ezxvaec64xr
+        V2wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIVm
+        U0GojoLgw7Ks8cm3sPHQvrjx1sS98d7MxfHk0crx69rT8fHl3vTnzsn6tmRb/rNcU/+xWVD/2rGt/OXK
+        xvzhxb/73cK8+9nAufvWwLr81MG7/NTAuvzRurT7zbWs+cu6rfTDp5nywJ+Q8cCfkPHCnY/xyKKV8fTs
+        6fHx7ezxvaec7I1rV28AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAJBxX5+1oJjzwrGr8cm3sPHQvrjx1sS98d7MxfHk0crx69rT8fLl3/Tnzcf6uGNb/rVd
+        VP+1XFP/t2BX/7dgWP+3YFf/t2BX/7dgV/+3YFf/tmBX/7ZgV/+2XVX/vXpx/c7Dt/TEqpzywJ+Q8cCf
+        kPHCnY/xyKKV8fTs6fHx7ezxvqec7I5rWHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAgmNQHKSJe+i7qqTywrGr8cm3sPHQvrjx1sS98d7MxfHk0crx69rT8fHk
+        3vTo0Mv5uWNc/rVaUv+0WFH/umdg/r5vaP69bmf+vG5m/rxuZv67bWb+tVxU/7RZUf+0V0//wYV9/dDG
+        uvXFqpzywJ+Q8cCfkPHCno/xyaOV8fTs6fHx7ezxvqed7I5sWHIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiWhVaLGck/i7q6TxwrGr8cm3sPHQvrjx1sS98d7M
+        xfHk0crx69nS8fHj3PPu3Nj4umtj/rBWTf+uUkn/0JuV/fHi4Pvt4d376N3Y++Tf2vvd1dD7sltT/7BV
+        TP+wVUz/xZmR+8/DuPXEqZvywJ+Q8cCfkPHCno/xyaOV8fXs6fHx7ezxvqid7Y1sWHIAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAYVAimXxsyLaloPG7qqPxwrGr8cm3
+        sPHQvrjx1sS98d7MxfHk0crx69jR8fHh2vL16+b2yI+I/KdLQ/+pTkb/s2Rd/unU0fv39/T68fPu+evz
+        7/rNraf8p0pB/6lORv+tWVH+zbmw+cq4qvTDpZbxwJ+Q8cCfkPHCno/xyaOV8fXt6vHy7uzxwKmf8I1s
+        WIoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACJaVZoppCF7rWk
+        n/G7qqPxwrGr8cm3sPHQvrjx1sS98d7MxfHk0crx69jR8fDf2PL37Of15s7J+aBGPf+hRz7/oUc+/7Jp
+        Yv7dxMD84tbS+8qmofyoWVH+oUc+/6BGPf+zdm790sm+98exovLCo5TxwJ+Q8cCfkPHCno/xyaOV8fXt
+        6vHy7uzxwauh8o9uW5gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIFj
+        UAWXemnJrp2V9LWknvG8qqTxw7Kr8cm4sfHQv7jx1sW+8d7MxfHk0crx69jR8fDe1/H25t/z+/Pu9cyg
+        mfubRT3+lz82/5c/N/+VOjH/ljwz/5Y8M/+YQDf/lz01/6FTS/7PxLv4zcK09MSqmvHBoJLxwZ+R8cCf
+        kPHCno/xyaOV8fXt6vHy7u3xwq2j85JxXqQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAIZlUTmii4Dzr5+Z8baln/G8qqTxw7Kr8cm4sfHRv7jx18W+8d/NxfHk0srx69jR8e/d
+        1vH15Nzx+evk8/js6PfPp6H7lkI5/440K/+POC//kDgv/482Lf+PNSz/o2JZ/se2rfnPyb31x7Wm8sKn
+        lvHBoJHxwZ+R8cGfkfHCnpDxyaOV8fXt6vHy7u3xw66l85RzYKwAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAgmRQE5FyX7KqmZTzsJ+Z8baln/G8q6Xxw7Kr8cm4sfHRv7jx18W+8d/N
+        xfHk0srx69nS8e/e1vH149zx+efh8fvt5/P99vD18ePe+NGuqPu3g338snx1/biNhvvIs6v61dfN983J
+        vfTFt6fyw62c8cGkk/HBoJHxwaCR8cGgkfHCnpDxyaSW8fXt6vHy7u3xxK+m9JZ1YrMAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhWZTNpyCdN6sm5bxsJ+Z8bamoPG8q6Xxw7Kr8cm4
+        sfHRv7jx18W+8d/NxfHk0srx69nS8e/e1vH149vx+eff8fzr4/H97uby/vLr9Pvz7PXz7OX27Off9uLf
+        1vXZ18z1y8a488W7q/LCsKDxwaqZ8cGlk/HBoZLxwaGS8cKhkvHDoJHxyqaZ8ffv7fLy7+3zxK6l+Jd2
+        Y7oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBZFABkHFen6SRifOrm5XxsJ+Z8bem
+        oPG8q6XxxLOs8cm4svHRv7nx18W/8d/NxfHk0srx69nS8fDe1vH149zx+eff8f3r4/H+7uXx/u/n8fzu
+        5PLy5tvz6N3R9NvRw/TPxbb0wram9b6vn/W8p5X1uJ+N87aYhu6zk4HurYt65KqIdtqng3HZon9r1aeL
+        e66hhXSlkHBdhodnVD4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBYk8omoBx7qaV
+        j/Krm5XxsKCZ8bemoPG8rKXxxLOs8cq5svHSwbvx2MjB8eHQyPHn1c7x793W8fPh2vL149vz9uPb9/Xi
+        2fjv29D44s3A+NzGuffLtKTxuqGQ46+WhNqmjHnRmn5qspZ5ZqCTdGCVj25beotrWFuKaVZYh2dUQYRl
+        UjCDZFEvgmNRK4toUw+GZlILhWVSAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIhx
+        YwOOcF6EoY6G+KaVkPOrmZP1rp2V9bShmfW2o5r0uqSb8L2nne+8pJjpuaCT37mgktqzl4nVqYt6vKaJ
+        d7OdfmyrknJeho5uWniKalZ4h2VQWIlmUTGEY1AihmVRC4dlUgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAJ2VkR6ah3vEm4N185uAcdeXemm/lnhmpZV2ZJqRcV+EkG9cYo5uW12JaldKiGhUN4Zm
+        UzGDZFErhGRQF4JjUBGBY1ANgmRRAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAjYB6ApmOipVsXlj7lYqEfItzZgUAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsqejOoJxavB5Z2DVd2ZfFQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAKGMhgh5ZF4cc1lSIH1nYDS6q6d4qJaR4XFWUNt8Y1xFAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHhiXE2Jc27BkXlzypZ8d96Rdm/2dVlS/411
+        bmx3XFQGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC4fHVBROTXLVDw2z0Mv
+        K8AvIh6QJBkXT3daUwIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALq1
+        tArAubglu7a1Jbazshi2s7IEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
+        /////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP/wP//8DwAA/+A///gH
+        AAD/wB//8AMAAP/AH//wAwAA/8AP//ADAAD/wB//8AMAAP/AH//4BwAA/+AAP/gHAAD/+AAAAAMAAP/4
+        AAAAAwAA//wAAAADAAD//gAAAAMAAP/8AAAAAwAA//wAAAADAAD//AAAAAMAAP/8AAAAAwAA//gAAAAD
+        AAD/8AAAAAMAAP/wAAAAAwAA//AAAAADAAD/4AAAAAMAAP/gAAAAAwAA/8AAAAADAAD/wAAAAAMAAP+A
+        AAAAAwAA/4AAAAADAAD/AAAAAAMAAP8AAAAAAwAA/gAAAAADAAD+AAAAAAcAAPwAAAH//wAA/AAA////
+        AAD4P/////8AAPh//////wAAAP//////AAAA//////8AAAH//////wAAB///////AAD///////8AAP//
+        /////wAA////////AAD///////8AACgAAAAgAAAAQAAAAAEAIAAAAAAAgBAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        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
+        xvHp19Dx9Ork9cF6cv2zXFP/xYN8/tapo/3SpJ38zaOb/MujnP3Kopv9x6CY+8m3qfTAoZLxwJ6Q8cag
+        k/H17+3xzLy07bOcj0oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBiUAymjYDjwK+p8cu5
+        svHVw7zx4M3G8enX0PH06uT1w3pz/bVaUv+3X1f+umdf/rpnX/65Zl/+tl5W/rRZUf+7cmr9zb6x9MGh
+        k/HAnpDxxqGT8fXv7fHNvLTus5yPSwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiWpXXbWj
+        m/TAr6nxy7my8dXDvPHgzcbx6dfQ8fTo4vTKkIr8rlNK/794cf7y5uP77OTf+uXj3vu7eXL+rlJK/8CJ
+        gfzLuq30wKCS8cCfkPHGoZPx9u/t8c68te+znY9QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBi
+        UAmbgXLIt6ag8cCvqfHLubLx1cO88eDNxvHp1s/x8uPc8+fOyfiiRz7/pExD/s2emf3o39v6zKum/KRM
+        RP6jSkH/yrOq+cavoPLAn5DxwJ+Q8cahk/H28O7xz7638bSekWMAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAh2hVS6qXju+3pqDxwbCp8cu6s/HVw7zx4M3G8enWz/Hx4Njx+e7n9MqclvuYQjn+lTwz/5Q7
+        Mv+VPDP/l0E4/raJgfvNwrX0wqeX8cGfkfHBn5DxxqGT8fbw7vHQwLnytqGUbwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAIJkUQiWemuyrp2X8benofHBsKnxy7qz8dXEvfHgzsbx6dfQ8fHf2PH45+Dx++/q9d3A
+        uvm0fHT8pmVe/ax1bPzCqqH6zce79cSxovLBpJPxwZ+R8cGfkfHHopTx9vDu8dHBu/O4opV2AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAhmdUNaKNg+mvnpjxuKeh8cGwqvHLurPx1cS98eDOxvHp19Dx8d/Y8fjm
+        3vH96+Px/u/o8vnv5/Tt5d313tnP9M3IuvPEt6fxwqyb8cGkk/LAn5Dzv52N9cCcjfXi1tDwwKug6bag
+        lGcAAAAAAAAAAAAAAAAAAAAAAAAAAH9iTwSQdGKip5aQ8q6emPG4p6HxwrGq8cy7tPHWxb/x4tDJ8eza
+        0/Hz4drx9+Tc9Pfl2/Xu3ND249DE9c24qey6ppXiqZJ/0KGHdLyafGmolXViiZBwXXeLbFhciWlWWI5t
+        WS2HaFQerZiMBgAAAAAAAAAAAAAAAAAAAAAAAAAAj3tvI5yEeOqlkorvqZWL6q2YjeaulorasJeJ0qqP
+        gL2ojHywnoBulph6aIKOb1xkiGlWUIZmUkGJZ1IfhmVSC4ZmUgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACVioWUinlvwYxwX0GLalUriGdUIIhn
+        Uw6FZlIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACUgHoDua2pVHplXuZ7aGI3AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACJdG9VgWljm5V9eMGJb2n0gGdgZ3RZ
+        UQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE0+O1tjTkqkTj88hT0z
+        MUCOc20BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA//////////////////////4P/4P+B/8B/gf/Af4H/wH+AH8D/wAAA/+A
+        AAH/wAAB/4AAAf+AAAH/AAAB/wAAAf8AAAH+AAAB/gAAAfwAAAH8AAAB+AAAAfgAAAHwAAAB8AAH//Af
+        ///D////A////wf///////////////////8oAAAAGAAAADAAAAABACAAAAAAAGAJAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABYWFoJhISHmICAgsyPj5JmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAT09QAoSEhoGAgILNjY2Pf4KCgwIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVFRV3Pj4+/2ho
+        af9PT0/8R0dIKwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAExMTUjQ0NP9mZmf/W1tb/01N
+        TlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALCwuJZmZm/4yMjP9VVVX/ICAgOgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAACgoLZVZWVv+NjY3/bGxr/yUlJmMAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAlJSYfRUVH2JKRkv9tZ2Xxcl9VHI5rVQyJaFMIg2NQAwAAAAAAAAAAAAAAAAAAAAAAAAAAPjYyDTY2
+        N8eQkJH/cm5u72NeXQ0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQkJDT4oI9uFZlr91sC389zG
+        vPHfyL3t38e76NrCteDJs6TbtqGP0auVgsWni3i+pIRxs4xvYbCIal36o4yC+pmAdD4AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAADMhGhKymo/p4c7H8eza0vH249vx/Orh8fzs5PLv5tzz19HE88O5
+        qfG/qpjxv6CP8b+dj/HEn5Hx8+3r8Zx/b5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIxu
+        W1nSv7jy4c/H8e3a0vH25d7x8uPd9rWQhvyabGD9n3hr/b6uo/nHuarzv6GR8b+dj/HEn5Hx8+zq8Z+D
+        c54AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKmQgsDTwbvx4c/I8e3b1PH05uD1nmJW/pRT
+        R/6yiX/9nWVa/pBMP/+/pZr5w6iY8b+ej/HEoJHx8uzq8aKGdqYAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAhmdUPsKvp/TTwbvx4c/I8e7d1vLVr6j6pVVK/97Dvvvx7ef34N/Y+b2VjP3AnpT7xa2e8sCe
+        kPHFoJLx8uzq8aSIeasAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnYFzrca0rvHTwbvx4c/I8e7f
+        2fPPmZL8tFtS/8uPiP3Lkor9x5CI/cWQif3Ekor8yLSm88CfkPHFoJLx8uzq8aWJeq4AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACEZVIhs5+W8ca0rfHTwbvx4c/I8e7f2PLSnpj7slZO/8+Vj/3UpqH8zqSe/bNZ
+        Uf+7c2r9yreq88CfkPHFoJLx8+3q8aaKeq8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACSdmaQuKeh8ca0
+        rfHTwbvx4c/I8e7c1fHnzcf4pElB/7x6c/3q4d36yqei/KRJQf/AlIv7xaye8sCfkPHFoZLx8+3r8aeM
+        fcEAAAAAAAAAAAAAAAAAAAAAAAAAAINkUQ+mkIbouaeh8ca1rvHTwrvx4c/I8e3b1PH46uPzy56Y+5Q9
+        NP+SOTD/kzox/6hqYv3NwbT1wqSV8cCfkPHFoZLx8+3r8auQgc4AAAAAAAAAAAAAAAAAAAAAAAAAAI1v
+        XnatnZfxuaii8ca1rvHUwrvx4tDI8e3b1PH35d7x/e/o8+/d1/fSta75z761+M3IvPTDr5/xwaOS8cGg
+        kfHGopTx9O7s8a2ShNYAAAAAAAAAAAAAAAAAAAAAgGNQCp2Get2tnZfxuqmj8ce2r/HVw73x49HK8e/d
+        1vH25Nzz+Obc9O7c0fXYxrjvv66e5ayXhc+line+n4Buo5h4ZYyTcmCClnhlW4hoVTEAAAAAAAAAAAAA
+        AAAAAAAAk39zWp+Kf+2hin7TpIt+wqWKfKehhXaSnYBwg5V3ZGaNbltQhmdUPIhnUiKGZVILhmZSAQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACrn5oPgHFr1YBuZSUAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAh3FsTIZtZ3+ahH/TfGNcZQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfnJvU4J1cnNwaGY4AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///wD///8A+H/BAPg/wQD4P8EA+AfBAPwA
+        AQD+AAEA/gABAP4AAQD8AAEA/AABAPgAAQD4AAEA8AABAPAAAQDgAAEA4AD/AMf//wAP//8AH///AP//
+        /wD///8AKAAAABAAAAAgAAAAAQAgAAAAAABABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAQUFDGnNzdcd9fX6tfX1/BQAAAAAAAAAAAAAAAAAAAAAAAAAATU1OP3l5etV8fH1+AAAAAAAA
+        AAAAAAAAAAAAAAkJCVxiYmL/YGBg/yEgICcAAAAAAAAAAAAAAAAAAAAAAAAAAA8PEJl4eHj/UFBR5rq6
+        uwYAAAAAAAAAAAAAAAAnJygNSEZGuXdqZviVfW9hn4BtVJl6Z0mYeGRBjm9bN4prWC5RQztNbmZk7Xds
+        aawAAAAAAAAAAAAAAAAAAAAAAAAAABoMChCGbWLC5NLL8fTh2fH86uLy8eTa88/Ft/O+q5nyvJyM8b2Z
+        ivLRwrro1szFEQAAAAAAAAAAAAAAAAAAAACEZVIPwqyi3+TSyvH05Nzyyqqi+plnWv2dcWT9wa6h9sCh
+        kfHCn5Dx39PN7dfMxR4AAAAAAAAAAAAAAAAAAAAAk3dmZ8+9t/Hk0svx5MvE96dhV/7j1tD5xamh+7iR
+        hvvDp5jxw5+R8eDVz+7YzcYjAAAAAAAAAAAAAAAAf2JQA62XjNLQvrfx5dLL8duyrPm5Zl7+x4eA/cKD
+        e/3Ag3v9xq6g8sOfkfHh1dDv2c3HJQAAAAAAAAAAAAAAAIlsWku7qqPx0L638eTSy/HmysT3rVdP/uTS
+        zvvElY/9t3Zt/MSqnPLDoJHx4tbS8NnOxy0AAAAAAAAAAIJkUQKdhnm4vKul8dC/uPHk0svx9eXe8s+j
+        nfqhVk7+p2de/cWxpfbBopPxxKCS8ePY1PLb0Mo5AAAAAAAAAACGaFY3qpiR772spvHRv7nx5tTM8fTi
+        2/L459705dfM8sS2p+awmojSqYp4uaWDcqeulYeJ2M3HGwAAAAAAAAAAkoB3mZmAcpGbf297mXxsZpN1
+        Y1GLbFo5hWZSJIhnUwoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACFbmg8m4eBg3pjXGEAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAq6KgQKKcmzEAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAOHx
+        AADh8AAA4AEAAPAAAADwAAAA8AAAAOAAAADgAAAAwAAAAMAAAADAPwAAH/8AAD//AAD//wAA
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Venta</value>
+  </data>
+  <data name="&gt;&gt;cbstripeAccion.Name" xml:space="preserve">
+    <value>cbstripeAccion</value>
+  </data>
+  <data name="&gt;&gt;cbstripeAccion.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarStripElement, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;cbbtnCrear.Name" xml:space="preserve">
+    <value>cbbtnCrear</value>
+  </data>
+  <data name="&gt;&gt;cbbtnCrear.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;cbbtnCancelar.Name" xml:space="preserve">
+    <value>cbbtnCancelar</value>
+  </data>
+  <data name="&gt;&gt;cbbtnCancelar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;CommandBarSeparator1.Name" xml:space="preserve">
+    <value>CommandBarSeparator1</value>
+  </data>
+  <data name="&gt;&gt;CommandBarSeparator1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarSeparator, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;cbbtnTerminar.Name" xml:space="preserve">
+    <value>cbbtnTerminar</value>
+  </data>
+  <data name="&gt;&gt;cbbtnTerminar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;CommandBarRowElement1.Name" xml:space="preserve">
+    <value>CommandBarRowElement1</value>
+  </data>
+  <data name="&gt;&gt;CommandBarRowElement1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarRowElement, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;cbstripeBuscar.Name" xml:space="preserve">
+    <value>cbstripeBuscar</value>
+  </data>
+  <data name="&gt;&gt;cbstripeBuscar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarStripElement, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;cbbtnBuscarCliente.Name" xml:space="preserve">
+    <value>cbbtnBuscarCliente</value>
+  </data>
+  <data name="&gt;&gt;cbbtnBuscarCliente.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarDropDownButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;mitemCrearCliente.Name" xml:space="preserve">
+    <value>mitemCrearCliente</value>
+  </data>
+  <data name="&gt;&gt;mitemCrearCliente.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;cbbtnBuscarProducto.Name" xml:space="preserve">
+    <value>cbbtnBuscarProducto</value>
+  </data>
+  <data name="&gt;&gt;cbbtnBuscarProducto.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarDropDownButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;mitemCrearProducto.Name" xml:space="preserve">
+    <value>mitemCrearProducto</value>
+  </data>
+  <data name="&gt;&gt;mitemCrearProducto.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;cbstripeSerie.Name" xml:space="preserve">
+    <value>cbstripeSerie</value>
+  </data>
+  <data name="&gt;&gt;cbstripeSerie.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarStripElement, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;CommandBarLabel1.Name" xml:space="preserve">
+    <value>CommandBarLabel1</value>
+  </data>
+  <data name="&gt;&gt;CommandBarLabel1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;cbddlSeries.Name" xml:space="preserve">
+    <value>cbddlSeries</value>
+  </data>
+  <data name="&gt;&gt;cbddlSeries.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarDropDownList, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;ProductosBindingSource.Name" xml:space="preserve">
+    <value>ProductosBindingSource</value>
+  </data>
+  <data name="&gt;&gt;ProductosBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;VWAlbaranesBindingSource.Name" xml:space="preserve">
+    <value>VWAlbaranesBindingSource</value>
+  </data>
+  <data name="&gt;&gt;VWAlbaranesBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmenuUltimasVentas.Name" xml:space="preserve">
+    <value>cmenuUltimasVentas</value>
+  </data>
+  <data name="&gt;&gt;cmenuUltimasVentas.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadContextMenu, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;mitemImprimir.Name" xml:space="preserve">
+    <value>mitemImprimir</value>
+  </data>
+  <data name="&gt;&gt;mitemImprimir.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;cmenuLineaAlbaran.Name" xml:space="preserve">
+    <value>cmenuLineaAlbaran</value>
+  </data>
+  <data name="&gt;&gt;cmenuLineaAlbaran.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadContextMenu, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;mitemModificarProducto.Name" xml:space="preserve">
+    <value>mitemModificarProducto</value>
+  </data>
+  <data name="&gt;&gt;mitemModificarProducto.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;LineasAlbaranBindingSource.Name" xml:space="preserve">
+    <value>LineasAlbaranBindingSource</value>
+  </data>
+  <data name="&gt;&gt;LineasAlbaranBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmVenta</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+</root>

@@ -93,6 +93,7 @@
     <Compile Include="Commands\GraphicTSCPLCommand.cs" />
     <Compile Include="Commands\GraphicZPLCommand.cs" />
     <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="Commands\StandardPOSCommand.cs" />
     <Compile Include="Commands\StandardTSCPLCommand.cs" />
     <Compile Include="Commands\StandardZPLCommand.cs" />
     <Compile Include="EnumDefinitions.cs" />
@@ -132,6 +133,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EasyGestControllers\EasyGestControllers.vbproj">
+      <Project>{b98c069a-f339-4ce4-9268-d7f896d1bea5}</Project>
+      <Name>EasyGestControllers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

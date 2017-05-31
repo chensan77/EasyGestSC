@@ -7,6 +7,8 @@ namespace EasyGest.Print.Printing
     {
         public PrinterSettings Settings { get; set; }
 
+        private SpoolPrinter() { }
+
         public SpoolPrinter(PrinterSettings settings)
         {
             Settings = settings;

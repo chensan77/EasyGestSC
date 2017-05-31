@@ -119,40 +119,40 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="RadLabel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 89</value>
+    <value>6, 93</value>
   </data>
   <data name="RadLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 17</value>
+    <value>60, 18</value>
   </data>
   <data name="RadLabel1.Text" xml:space="preserve">
-    <value>联系</value>
+    <value>联络数据</value>
   </data>
   <data name="RadLabel4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 53</value>
+    <value>30, 54</value>
   </data>
   <data name="RadLabel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 17</value>
+    <value>34, 18</value>
   </data>
   <data name="RadLabel4.Text" xml:space="preserve">
     <value>方式</value>
   </data>
   <data name="RadLabel18.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9pt</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 125</value>
+    <value>30, 127</value>
   </data>
   <data name="RadLabel18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 17</value>
+    <value>34, 18</value>
   </data>
   <data name="RadLabel18.Text" xml:space="preserve">
-    <value>参考</value>
+    <value>备注</value>
   </data>
   <data name="btnCancelar.Location" type="System.Drawing.Point, System.Drawing">
     <value>184, 185</value>
@@ -179,10 +179,7 @@
     <value>66, 123</value>
   </data>
   <data name="lblCliPro.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9pt</value>
-  </data>
-  <data name="lblCliPro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 13</value>
+    <value>楷体, 9.75pt</value>
   </data>
   <data name="lblCliPro.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 22</value>
@@ -199,15 +196,8 @@
   <data name="ddlFormaContacto.Location" type="System.Drawing.Point, System.Drawing">
     <value>66, 53</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ddlFormaContacto.RootElement.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ddlFormaContacto.RootElement.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="ddlFormaContacto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 22</value>
+    <value>198, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>278, 239</value>

@@ -160,28 +160,27 @@ Namespace Controller
         '    MyBase.SyncronisingItem(item)
         'End Sub
 
-        Public Overrides Sub SyncronisingItem(ByRef items As IEnumerable(Of Clientes))
-            For Each item In items
-                If item.LINQEntityState = EntityState.Deleted Then
-                    Try
-                        Contexto.Clientes.DeleteOnSubmit(item)
+        Public Overrides Function DeleteItem(ParamArray keys As Object()) As Clientes
+            Dim item As Clientes
+            item = GetItem(keys)
+            If Not IsNothing(item) Then
+                Try
+                    Contexto.Clientes.DeleteOnSubmit(item)
+                    Contexto.SubmitChanges()
+                    'Entidad eliminado, poner como no a tratar cuando llama a la funcion de la clase base
+                Catch sqlex As SqlClient.SqlException
+                    If sqlex.Number = SQLERRORNUMBER_FKCONFLICTONDELETE Then
+                        item.Activo = False
                         Contexto.SubmitChanges()
-                        'Entidad eliminado, poner como no a tratar cuando llama a la funcion de la clase base
-                        item.SetAsNoChangeOnSubmit()
-                    Catch sqlex As SqlClient.SqlException
-                        If sqlex.Number = SQLERRORNUMBER_FKCONFLICTONDELETE Then
-                            item.Activo = False
-                            item.SetAsUpdateOnSubmit()
-                        Else
-                            Throw sqlex
-                        End If
-                    Catch ex As Exception
-                        Throw ex
-                    End Try
-                End If
-            Next
-            MyBase.SyncronisingItem(items)
-        End Sub
+                    Else
+                        Throw sqlex
+                    End If
+                Catch ex As Exception
+                    Throw ex
+                End Try
+            End If
+            Return item
+        End Function
 
     End Class
 
@@ -367,7 +366,7 @@ Namespace Controller
             End If
             Using c As New ListasCompraController()
                 CopiarAListaCompra(lista, encargo)
-                c.UpdateItem(lista)
+                c.SyncronisingItem(lista)
             End Using
         End Sub
 
@@ -600,59 +599,64 @@ Namespace Controller
             Return (From p In Contexto.VWProductos Where p.idProducto = idProducto Select p).First
         End Function
 
-        Public Overrides Sub SyncronisingItem(ByRef items As IEnumerable(Of Productos))
-            For Each item In items
-                If item.LINQEntityState = EntityState.Deleted Then
-                    Try
-                        Contexto.Productos.DeleteOnSubmit(item)
+        Public Overrides Function DeleteItem(ParamArray keys As Object()) As Productos
+            Dim item As Productos
+            item = GetItem(keys)
+            If Not IsNothing(item) Then
+                Try
+                    Contexto.Productos.DeleteOnSubmit(item)
+                    Contexto.SubmitChanges()
+                    'Entidad eliminado, poner como no a tratar cuando llama a la funcion de la clase base
+                Catch sqlex As SqlClient.SqlException
+                    If sqlex.Number = SQLERRORNUMBER_FKCONFLICTONDELETE Then
+                        item.Activo = False
                         Contexto.SubmitChanges()
-                        'Entidad eliminado, poner como no a tratar cuando llama a la funcion de la clase base
-                        item.SetAsNoChangeOnSubmit()
-                        Continue For
-                    Catch sqlex As SqlClient.SqlException
-                        If sqlex.Number = SQLERRORNUMBER_FKCONFLICTONDELETE Then
-                            item.Activo = False
-                            item.SetAsUpdateOnSubmit()
-                        Else
-                            Throw sqlex
-                        End If
-                    Catch ex As Exception
-                        Throw ex
-                    End Try
-                End If
-            Next
-            MyBase.SyncronisingItem(items)
-        End Sub
+                    Else
+                        Throw sqlex
+                    End If
+                Catch ex As Exception
+                    Throw ex
+                End Try
+            End If
+            Return item
+        End Function
 
-
+        Public Function GetItemsByReference(referencia As String) As IEnumerable(Of VWProductos)
+            Dim productos As IEnumerable(Of VWProductos)
+            Dim codigos As IEnumerable(Of Long)
+            Using control As New CodigosBarraController
+                codigos = control.GetItems("CodigoBarra.Equals(""" + referencia + """)").Select(Function(c As CodigosBarra) c.idProducto).ToList
+            End Using
+            productos = From p As VWProductos In Contexto.VWProductos Where p.Activo = True And (p.Referencia = referencia Or codigos.Contains(p.idProducto)) Select p
+            Return productos.ToList()
+        End Function
     End Class
 
     Public Class ProveedoresController
         Inherits BaseController(Of Proveedores, EasyGestDataContext)
 
 
-        Public Overrides Sub SyncronisingItem(ByRef items As IEnumerable(Of Proveedores))
-            For Each item In items
-                If item.LINQEntityState = EntityState.Deleted Then
-                    Try
-                        Contexto.Proveedores.DeleteOnSubmit(item)
+        Public Overrides Function DeleteItem(ParamArray keys As Object()) As Proveedores
+            Dim item As Proveedores
+            item = GetItem(keys)
+            If Not IsNothing(item) Then
+                Try
+                    Contexto.Proveedores.DeleteOnSubmit(item)
+                    Contexto.SubmitChanges()
+                    'Entidad eliminado, poner como no a tratar cuando llama a la funcion de la clase base
+                Catch sqlex As SqlClient.SqlException
+                    If sqlex.Number = SQLERRORNUMBER_FKCONFLICTONDELETE Then
+                        item.Activo = False
                         Contexto.SubmitChanges()
-                        'Entidad eliminado, poner como no a tratar cuando llama a la funcion de la clase base
-                        item.SetAsNoChangeOnSubmit()
-                    Catch sqlex As SqlClient.SqlException
-                        If sqlex.Number = SQLERRORNUMBER_FKCONFLICTONDELETE Then
-                            item.Activo = False
-                            item.SetAsUpdateOnSubmit()
-                        Else
-                            Throw sqlex
-                        End If
-                    Catch ex As Exception
-                        Throw ex
-                    End Try
-                End If
-            Next
-            MyBase.SyncronisingItem(items)
-        End Sub
+                    Else
+                        Throw sqlex
+                    End If
+                Catch ex As Exception
+                    Throw ex
+                End Try
+            End If
+            Return item
+        End Function
 
     End Class
 
@@ -814,19 +818,30 @@ Namespace Controller
             End If
         End Sub
 
-        'Public Overrides Function AddItem(item As Data.Entity.Vales) As Data.Entity.Vales
+        Public Sub ReactivarVale(idVale As Long)
+            Dim vale As Data.Entity.Vales = Nothing
+            vale = MyBase.GetItem(idVale)
+            If vale IsNot Nothing AndAlso Not vale.Activo Then
+                vale.Activo = True
+                vale.FCancelacion = Nothing
+                SyncronisingItem(vale)
+            End If
+        End Sub
+
+        'Public Overrides Sub AddItem(ByRef item As Data.Entity.Vales)
         '    item.Numero = GenerarNumeracion(item)
-        '    Return MyBase.AddItem(item)
-        'End Function
-
-        'Public Overrides Sub AddItems(items As System.Collections.Generic.IEnumerable(Of Data.Entity.Vales))
-        '    For Each i As Vales In items
-
-        '    Next
-
-
-        '    MyBase.AddItems(items)
+        '    MyBase.AddItem(item)
         'End Sub
+
+        'Private Function GenerarNumeracion(ByVal item As Vales) As String
+        '    Dim hoy As Date = Today
+        '    Dim numero As String = hoy.ToString("yy")
+        '    Dim numVale As Integer = 0
+        '    numero &= hoy.DayOfYear.ToString().PadLeft(3, "0")
+        '    numVale = (From e In Contexto.Vales Where e.FEmision.CompareTo(hoy) >= 0 And e.FEmision.CompareTo(hoy.AddDays(1)) < 0).Count
+        '    numero &= numVale.ToString().PadLeft(2, "0")
+        '    Return numero & FormatNumber(item.Importe, 2).Replace(".", "").PadLeft(2, "0")
+        'End Function
     End Class
 
     Public Class VistasController(Of VEntity As LINQEntityBase)

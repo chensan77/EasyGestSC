@@ -67,21 +67,11 @@
             RadLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel1.Name = "RadLabel1"
             '
-            '
-            '
-            RadLabel1.RootElement.AccessibleDescription = Nothing
-            RadLabel1.RootElement.AccessibleName = Nothing
-            '
             'RadLabel4
             '
             resources.ApplyResources(RadLabel4, "RadLabel4")
             RadLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel4.Name = "RadLabel4"
-            '
-            '
-            '
-            RadLabel4.RootElement.AccessibleDescription = Nothing
-            RadLabel4.RootElement.AccessibleName = Nothing
             '
             'RadLabel18
             '
@@ -89,22 +79,12 @@
             RadLabel18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel18.Name = "RadLabel18"
             '
-            '
-            '
-            RadLabel18.RootElement.AccessibleDescription = Nothing
-            RadLabel18.RootElement.AccessibleName = Nothing
-            '
             'btnCancelar
             '
             resources.ApplyResources(Me.btnCancelar, "btnCancelar")
             Me.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
             Me.btnCancelar.Image = Global.EasyGest.My.Resources.Resources.cancel
             Me.btnCancelar.Name = "btnCancelar"
-            '
-            '
-            '
-            Me.btnCancelar.RootElement.AccessibleDescription = Nothing
-            Me.btnCancelar.RootElement.AccessibleName = Nothing
             CType(Me.btnCancelar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).Image = Global.EasyGest.My.Resources.Resources.cancel
             CType(Me.btnCancelar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
             CType(Me.btnCancelar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
@@ -117,11 +97,6 @@
             Me.btnAceptar.DialogResult = System.Windows.Forms.DialogResult.OK
             Me.btnAceptar.Image = Global.EasyGest.My.Resources.Resources.accept
             Me.btnAceptar.Name = "btnAceptar"
-            '
-            '
-            '
-            Me.btnAceptar.RootElement.AccessibleDescription = Nothing
-            Me.btnAceptar.RootElement.AccessibleName = Nothing
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).Image = Global.EasyGest.My.Resources.Resources.accept
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
@@ -130,15 +105,10 @@
             '
             'txtContacto
             '
-            Me.txtContacto.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ContactosBindingSource, "DatoContacto", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             resources.ApplyResources(Me.txtContacto, "txtContacto")
+            Me.txtContacto.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ContactosBindingSource, "DatoContacto", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             Me.txtContacto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtContacto.Name = "txtContacto"
-            '
-            '
-            '
-            Me.txtContacto.RootElement.AccessibleDescription = Nothing
-            Me.txtContacto.RootElement.AccessibleName = Nothing
             Me.txtContacto.TabStop = False
             Me.txtContacto.Tag = ""
             CType(Me.txtContacto.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).Text = resources.GetString("resource.Text2")
@@ -166,8 +136,6 @@
             '
             '
             '
-            Me.txtObservacion.RootElement.AccessibleDescription = Nothing
-            Me.txtObservacion.RootElement.AccessibleName = Nothing
             Me.txtObservacion.RootElement.ApplyShapeToControl = False
             Me.txtObservacion.TabStop = False
             Me.txtObservacion.Tag = ""
@@ -186,23 +154,13 @@
             Me.lblCliPro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             Me.lblCliPro.Name = "lblCliPro"
             '
-            '
-            '
-            Me.lblCliPro.RootElement.AccessibleDescription = Nothing
-            Me.lblCliPro.RootElement.AccessibleName = Nothing
-            '
             'txtPropietario
             '
-            Me.txtPropietario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
             resources.ApplyResources(Me.txtPropietario, "txtPropietario")
+            Me.txtPropietario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
             Me.txtPropietario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtPropietario.Name = "txtPropietario"
             Me.txtPropietario.ReadOnly = True
-            '
-            '
-            '
-            Me.txtPropietario.RootElement.AccessibleDescription = Nothing
-            Me.txtPropietario.RootElement.AccessibleName = Nothing
             Me.txtPropietario.TabStop = False
             Me.txtPropietario.Tag = ""
             CType(Me.txtPropietario.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).Text = resources.GetString("resource.Text4")
@@ -214,6 +172,7 @@
             '
             'ddlPropietario
             '
+            resources.ApplyResources(Me.ddlPropietario, "ddlPropietario")
             Me.ddlPropietario.AllowShowFocusCues = True
             Me.ddlPropietario.AutoCompleteDisplayMember = "NombreYNombreCN"
             Me.ddlPropietario.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
@@ -224,14 +183,8 @@
             Me.ddlPropietario.DropDownAnimationEasing = Telerik.WinControls.RadEasingType.InBounce
             Me.ddlPropietario.DropDownSizingMode = CType((Telerik.WinControls.UI.SizingMode.RightBottom Or Telerik.WinControls.UI.SizingMode.UpDown), Telerik.WinControls.UI.SizingMode)
             Me.ddlPropietario.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
-            resources.ApplyResources(Me.ddlPropietario, "ddlPropietario")
             Me.ddlPropietario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.ddlPropietario.Name = "ddlPropietario"
-            '
-            '
-            '
-            Me.ddlPropietario.RootElement.AccessibleDescription = Nothing
-            Me.ddlPropietario.RootElement.AccessibleName = Nothing
             Me.ddlPropietario.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending
             Me.ddlPropietario.ValueMember = "idCliente"
             CType(Me.ddlPropietario.GetChildAt(0), Telerik.WinControls.UI.RadDropDownListElement).DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
@@ -242,6 +195,7 @@
             '
             'ddlFormaContacto
             '
+            resources.ApplyResources(Me.ddlFormaContacto, "ddlFormaContacto")
             Me.ddlFormaContacto.AllowShowFocusCues = True
             Me.ddlFormaContacto.AutoCompleteDisplayMember = "FormaContacto"
             Me.ddlFormaContacto.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
@@ -252,14 +206,8 @@
             Me.ddlFormaContacto.DropDownAnimationEasing = Telerik.WinControls.RadEasingType.InBounce
             Me.ddlFormaContacto.DropDownSizingMode = CType((Telerik.WinControls.UI.SizingMode.RightBottom Or Telerik.WinControls.UI.SizingMode.UpDown), Telerik.WinControls.UI.SizingMode)
             Me.ddlFormaContacto.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
-            resources.ApplyResources(Me.ddlFormaContacto, "ddlFormaContacto")
             Me.ddlFormaContacto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.ddlFormaContacto.Name = "ddlFormaContacto"
-            '
-            '
-            '
-            Me.ddlFormaContacto.RootElement.AccessibleDescription = Nothing
-            Me.ddlFormaContacto.RootElement.AccessibleName = Nothing
             Me.ddlFormaContacto.ValueMember = "FormaID"
             CType(Me.ddlFormaContacto.GetChildAt(0), Telerik.WinControls.UI.RadDropDownListElement).DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
             '
@@ -292,8 +240,6 @@
             '
             '
             '
-            Me.RootElement.AccessibleDescription = Nothing
-            Me.RootElement.AccessibleName = Nothing
             Me.RootElement.ApplyShapeToControl = True
             Me.ShowInTaskbar = False
             Me.Tag = ""

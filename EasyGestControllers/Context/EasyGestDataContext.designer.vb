@@ -69,12 +69,6 @@ Namespace Data.Context
     End Sub
     Partial Private Sub DeleteGalerias(instance As Data.Entity.Galerias)
     End Sub
-    Partial Private Sub InsertImpuestos(instance As Data.Entity.Impuestos)
-    End Sub
-    Partial Private Sub UpdateImpuestos(instance As Data.Entity.Impuestos)
-    End Sub
-    Partial Private Sub DeleteImpuestos(instance As Data.Entity.Impuestos)
-    End Sub
     Partial Private Sub InsertModosPago(instance As Data.Entity.ModosPago)
     End Sub
     Partial Private Sub UpdateModosPago(instance As Data.Entity.ModosPago)
@@ -141,12 +135,6 @@ Namespace Data.Context
     End Sub
     Partial Private Sub DeleteVWProveedores(instance As Data.Entity.VWProveedores)
     End Sub
-    Partial Private Sub InsertEmpresas(instance As Data.Entity.Empresas)
-    End Sub
-    Partial Private Sub UpdateEmpresas(instance As Data.Entity.Empresas)
-    End Sub
-    Partial Private Sub DeleteEmpresas(instance As Data.Entity.Empresas)
-    End Sub
     Partial Private Sub InsertUnidadesMedida(instance As Data.Entity.UnidadesMedida)
     End Sub
     Partial Private Sub UpdateUnidadesMedida(instance As Data.Entity.UnidadesMedida)
@@ -207,12 +195,6 @@ Namespace Data.Context
     End Sub
     Partial Private Sub DeleteMovimientosTarjeta(instance As Data.Entity.MovimientosTarjeta)
     End Sub
-    Partial Private Sub InsertVWProductos(instance As Data.Entity.VWProductos)
-    End Sub
-    Partial Private Sub UpdateVWProductos(instance As Data.Entity.VWProductos)
-    End Sub
-    Partial Private Sub DeleteVWProductos(instance As Data.Entity.VWProductos)
-    End Sub
     Partial Private Sub InsertTarjetasFidelizacion(instance As Data.Entity.TarjetasFidelizacion)
     End Sub
     Partial Private Sub UpdateTarjetasFidelizacion(instance As Data.Entity.TarjetasFidelizacion)
@@ -248,18 +230,6 @@ Namespace Data.Context
     Partial Private Sub UpdateVWDiarios(instance As Data.Entity.VWDiarios)
     End Sub
     Partial Private Sub DeleteVWDiarios(instance As Data.Entity.VWDiarios)
-    End Sub
-    Partial Private Sub InsertVWApuntesDiario(instance As Data.Entity.VWApuntesDiario)
-    End Sub
-    Partial Private Sub UpdateVWApuntesDiario(instance As Data.Entity.VWApuntesDiario)
-    End Sub
-    Partial Private Sub DeleteVWApuntesDiario(instance As Data.Entity.VWApuntesDiario)
-    End Sub
-    Partial Private Sub InsertApuntesDiario(instance As Data.Entity.ApuntesDiario)
-    End Sub
-    Partial Private Sub UpdateApuntesDiario(instance As Data.Entity.ApuntesDiario)
-    End Sub
-    Partial Private Sub DeleteApuntesDiario(instance As Data.Entity.ApuntesDiario)
     End Sub
     Partial Private Sub InsertMorosidades(instance As Data.Entity.Morosidades)
     End Sub
@@ -393,12 +363,6 @@ Namespace Data.Context
     End Sub
     Partial Private Sub DeleteLineasPedido(instance As Data.Entity.LineasPedido)
     End Sub
-    Partial Private Sub InsertProductos(instance As Data.Entity.Productos)
-    End Sub
-    Partial Private Sub UpdateProductos(instance As Data.Entity.Productos)
-    End Sub
-    Partial Private Sub DeleteProductos(instance As Data.Entity.Productos)
-    End Sub
     Partial Private Sub InsertPedidos(instance As Data.Entity.Pedidos)
     End Sub
     Partial Private Sub UpdatePedidos(instance As Data.Entity.Pedidos)
@@ -435,7 +399,54 @@ Namespace Data.Context
     End Sub
     Partial Private Sub DeletePuestos(instance As Data.Entity.Puestos)
     End Sub
+    Partial Private Sub InsertApuntesDiario(instance As Data.Entity.ApuntesDiario)
+    End Sub
+    Partial Private Sub UpdateApuntesDiario(instance As Data.Entity.ApuntesDiario)
+    End Sub
+    Partial Private Sub DeleteApuntesDiario(instance As Data.Entity.ApuntesDiario)
+    End Sub
+    Partial Private Sub InsertMediosPagosAlbaranPedido(instance As Data.Entity.MediosPagosAlbaranPedido)
+    End Sub
+    Partial Private Sub UpdateMediosPagosAlbaranPedido(instance As Data.Entity.MediosPagosAlbaranPedido)
+    End Sub
+    Partial Private Sub DeleteMediosPagosAlbaranPedido(instance As Data.Entity.MediosPagosAlbaranPedido)
+    End Sub
+    Partial Private Sub InsertVWApuntesDiario(instance As Data.Entity.VWApuntesDiario)
+    End Sub
+    Partial Private Sub UpdateVWApuntesDiario(instance As Data.Entity.VWApuntesDiario)
+    End Sub
+    Partial Private Sub DeleteVWApuntesDiario(instance As Data.Entity.VWApuntesDiario)
+    End Sub
+    Partial Private Sub InsertImpuestos(instance As Data.Entity.Impuestos)
+    End Sub
+    Partial Private Sub UpdateImpuestos(instance As Data.Entity.Impuestos)
+    End Sub
+    Partial Private Sub DeleteImpuestos(instance As Data.Entity.Impuestos)
+    End Sub
+    Partial Private Sub InsertProductos(instance As Data.Entity.Productos)
+    End Sub
+    Partial Private Sub UpdateProductos(instance As Data.Entity.Productos)
+    End Sub
+    Partial Private Sub DeleteProductos(instance As Data.Entity.Productos)
+    End Sub
+    Partial Private Sub InsertEmpresas(instance As Data.Entity.Empresas)
+    End Sub
+    Partial Private Sub UpdateEmpresas(instance As Data.Entity.Empresas)
+    End Sub
+    Partial Private Sub DeleteEmpresas(instance As Data.Entity.Empresas)
+    End Sub
+    Partial Private Sub InsertVWProductos(instance As Data.Entity.VWProductos)
+    End Sub
+    Partial Private Sub UpdateVWProductos(instance As Data.Entity.VWProductos)
+    End Sub
+    Partial Private Sub DeleteVWProductos(instance As Data.Entity.VWProductos)
+    End Sub
     #End Region
+		
+		Public Sub New()
+			MyBase.New(Global.EasyGestControllers.My.MySettings.Default.EasyGestConnectionString, mappingSource)
+			OnCreated
+		End Sub
 		
 		Public Sub New(ByVal connection As String)
 			MyBase.New(connection, mappingSource)
@@ -490,12 +501,6 @@ Namespace Data.Context
 		Friend ReadOnly Property Galerias() As System.Data.Linq.Table(Of Data.Entity.Galerias)
 			Get
 				Return Me.GetTable(Of Data.Entity.Galerias)
-			End Get
-		End Property
-		
-		Friend ReadOnly Property Impuestos() As System.Data.Linq.Table(Of Data.Entity.Impuestos)
-			Get
-				Return Me.GetTable(Of Data.Entity.Impuestos)
 			End Get
 		End Property
 		
@@ -565,12 +570,6 @@ Namespace Data.Context
 			End Get
 		End Property
 		
-		Public ReadOnly Property Empresas() As System.Data.Linq.Table(Of Data.Entity.Empresas)
-			Get
-				Return Me.GetTable(Of Data.Entity.Empresas)
-			End Get
-		End Property
-		
 		Public ReadOnly Property UnidadesMedida() As System.Data.Linq.Table(Of Data.Entity.UnidadesMedida)
 			Get
 				Return Me.GetTable(Of Data.Entity.UnidadesMedida)
@@ -631,12 +630,6 @@ Namespace Data.Context
 			End Get
 		End Property
 		
-		Public ReadOnly Property VWProductos() As System.Data.Linq.Table(Of Data.Entity.VWProductos)
-			Get
-				Return Me.GetTable(Of Data.Entity.VWProductos)
-			End Get
-		End Property
-		
 		Public ReadOnly Property TarjetasFidelizacion() As System.Data.Linq.Table(Of Data.Entity.TarjetasFidelizacion)
 			Get
 				Return Me.GetTable(Of Data.Entity.TarjetasFidelizacion)
@@ -670,18 +663,6 @@ Namespace Data.Context
 		Public ReadOnly Property VWDiarios() As System.Data.Linq.Table(Of Data.Entity.VWDiarios)
 			Get
 				Return Me.GetTable(Of Data.Entity.VWDiarios)
-			End Get
-		End Property
-		
-		Public ReadOnly Property VWApuntesDiario() As System.Data.Linq.Table(Of Data.Entity.VWApuntesDiario)
-			Get
-				Return Me.GetTable(Of Data.Entity.VWApuntesDiario)
-			End Get
-		End Property
-		
-		Public ReadOnly Property ApuntesDiario() As System.Data.Linq.Table(Of Data.Entity.ApuntesDiario)
-			Get
-				Return Me.GetTable(Of Data.Entity.ApuntesDiario)
 			End Get
 		End Property
 		
@@ -817,12 +798,6 @@ Namespace Data.Context
 			End Get
 		End Property
 		
-		Public ReadOnly Property Productos() As System.Data.Linq.Table(Of Data.Entity.Productos)
-			Get
-				Return Me.GetTable(Of Data.Entity.Productos)
-			End Get
-		End Property
-		
 		Public ReadOnly Property Pedidos() As System.Data.Linq.Table(Of Data.Entity.Pedidos)
 			Get
 				Return Me.GetTable(Of Data.Entity.Pedidos)
@@ -856,6 +831,48 @@ Namespace Data.Context
 		Public ReadOnly Property Puestos() As System.Data.Linq.Table(Of Data.Entity.Puestos)
 			Get
 				Return Me.GetTable(Of Data.Entity.Puestos)
+			End Get
+		End Property
+		
+		Public ReadOnly Property ApuntesDiario() As System.Data.Linq.Table(Of Data.Entity.ApuntesDiario)
+			Get
+				Return Me.GetTable(Of Data.Entity.ApuntesDiario)
+			End Get
+		End Property
+		
+		Public ReadOnly Property MediosPagosAlbaranPedido() As System.Data.Linq.Table(Of Data.Entity.MediosPagosAlbaranPedido)
+			Get
+				Return Me.GetTable(Of Data.Entity.MediosPagosAlbaranPedido)
+			End Get
+		End Property
+		
+		Public ReadOnly Property VWApuntesDiario() As System.Data.Linq.Table(Of Data.Entity.VWApuntesDiario)
+			Get
+				Return Me.GetTable(Of Data.Entity.VWApuntesDiario)
+			End Get
+		End Property
+		
+		Public ReadOnly Property Impuestos() As System.Data.Linq.Table(Of Data.Entity.Impuestos)
+			Get
+				Return Me.GetTable(Of Data.Entity.Impuestos)
+			End Get
+		End Property
+		
+		Public ReadOnly Property Productos() As System.Data.Linq.Table(Of Data.Entity.Productos)
+			Get
+				Return Me.GetTable(Of Data.Entity.Productos)
+			End Get
+		End Property
+		
+		Public ReadOnly Property Empresas() As System.Data.Linq.Table(Of Data.Entity.Empresas)
+			Get
+				Return Me.GetTable(Of Data.Entity.Empresas)
+			End Get
+		End Property
+		
+		Public ReadOnly Property VWProductos() As System.Data.Linq.Table(Of Data.Entity.VWProductos)
+			Get
+				Return Me.GetTable(Of Data.Entity.VWProductos)
 			End Get
 		End Property
 		
@@ -1704,6 +1721,8 @@ Namespace Data.Entity
 		
 		Private _Origen As String
 		
+		Private _Productos As EntityRef(Of Productos)
+		
     #Region "Definiciones de métodos de extensibilidad"
     Partial Private Sub OnLoaded()
     End Sub
@@ -1765,6 +1784,9 @@ Namespace Data.Entity
 			Set
 				If ((Me._idProducto = value)  _
 							= false) Then
+					If Me._Productos.HasLoadedOrAssignedValue Then
+						Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+					End If
 					Me.OnidProductoChanging(value)
 					Me.SendPropertyChanging
 					Me._idProducto = value
@@ -1826,149 +1848,30 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-		
-		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-		
-		Protected Overridable Sub SendPropertyChanging()
-			If ((Me.PropertyChangingEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-			End If
-		End Sub
-		
-		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-			If ((Me.PropertyChangedEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-			End If
-		End Sub
-		
-		Private Sub Initialize()
-			OnCreated
-		End Sub
-		
-		<Global.System.Runtime.Serialization.OnDeserializingAttribute(),  _
-		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
-		Public Sub OnDeserializing(ByVal context As StreamingContext)
-			Me.Initialize
-		End Sub
-	End Class
-	
-	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Impuestos"),  _
-	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
-	Partial Public Class Impuestos
-		Inherits Data.Entity.LinqEntityBase
-		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-		
-		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-		
-		Private _idImpuesto As Short
-		
-		Private _Impuesto As Short
-		
-		Private _RE As Double
-		
-		Private _PorDefecto As Boolean
-		
-    #Region "Definiciones de métodos de extensibilidad"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidImpuestoChanging(value As Short)
-    End Sub
-    Partial Private Sub OnidImpuestoChanged()
-    End Sub
-    Partial Private Sub OnImpuestoChanging(value As Short)
-    End Sub
-    Partial Private Sub OnImpuestoChanged()
-    End Sub
-    Partial Private Sub OnREChanging(value As Double)
-    End Sub
-    Partial Private Sub OnREChanged()
-    End Sub
-    Partial Private Sub OnPorDefectoChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnPorDefectoChanged()
-    End Sub
-    #End Region
-		
-		Public Sub New()
-			MyBase.New
-			Me.Initialize
-		End Sub
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idImpuesto", AutoSync:=AutoSync.OnInsert, DbType:="SmallInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
-		Public Property idImpuesto() As Short
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Productos_Galerias", Storage:="_Productos", ThisKey:="idProducto", OtherKey:="idProducto", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
+		Public Property Productos() As Productos
 			Get
-				Return Me._idImpuesto
+				Return Me._Productos.Entity
 			End Get
 			Set
-				If ((Me._idImpuesto = value)  _
-							= false) Then
-					Me.OnidImpuestoChanging(value)
+				Dim previousValue As Productos = Me._Productos.Entity
+				If ((Object.Equals(previousValue, value) = false)  _
+							OrElse (Me._Productos.HasLoadedOrAssignedValue = false)) Then
 					Me.SendPropertyChanging
-					Me._idImpuesto = value
-					Me.SendPropertyChanged("idImpuesto")
-					Me.OnidImpuestoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Impuesto", DbType:="SmallInt NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=2)>  _
-		Public Property Impuesto() As Short
-			Get
-				Return Me._Impuesto
-			End Get
-			Set
-				If ((Me._Impuesto = value)  _
-							= false) Then
-					Me.OnImpuestoChanging(value)
-					Me.SendPropertyChanging
-					Me._Impuesto = value
-					Me.SendPropertyChanged("Impuesto")
-					Me.OnImpuestoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_RE", DbType:="Float NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=3)>  _
-		Public Property RE() As Double
-			Get
-				Return Me._RE
-			End Get
-			Set
-				If ((Me._RE = value)  _
-							= false) Then
-					Me.OnREChanging(value)
-					Me.SendPropertyChanging
-					Me._RE = value
-					Me.SendPropertyChanged("RE")
-					Me.OnREChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PorDefecto", DbType:="Bit NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=4)>  _
-		Public Property PorDefecto() As Boolean
-			Get
-				Return Me._PorDefecto
-			End Get
-			Set
-				If ((Me._PorDefecto = value)  _
-							= false) Then
-					Me.OnPorDefectoChanging(value)
-					Me.SendPropertyChanging
-					Me._PorDefecto = value
-					Me.SendPropertyChanged("PorDefecto")
-					Me.OnPorDefectoChanged
+					If ((previousValue Is Nothing)  _
+								= false) Then
+						Me._Productos.Entity = Nothing
+						previousValue.Galerias.Remove(Me)
+					End If
+					Me._Productos.Entity = value
+					If ((value Is Nothing)  _
+								= false) Then
+						value.Galerias.Add(Me)
+						Me._idProducto = value.idProducto
+					Else
+						Me._idProducto = CType(Nothing, Long)
+					End If
+					Me.SendPropertyChanged("Productos")
 				End If
 			End Set
 		End Property
@@ -1992,6 +1895,7 @@ Namespace Data.Entity
 		End Sub
 		
 		Private Sub Initialize()
+			Me._Productos = CType(Nothing, EntityRef(Of Productos))
 			OnCreated
 		End Sub
 		
@@ -3752,7 +3656,7 @@ Namespace Data.Entity
 			Me.Initialize
 		End Sub
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idContacto", DbType:="BigInt NOT NULL", IsPrimaryKey:=true),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idContacto", DbType:="BigInt NOT NULL", IsPrimaryKey:=true, UpdateCheck:=UpdateCheck.Never),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
 		Public Property idContacto() As Long
 			Get
@@ -3770,7 +3674,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPropietario", DbType:="BigInt NOT NULL"),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPropietario", DbType:="BigInt NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=2)>  _
 		Public Property idPropietario() As Long
 			Get
@@ -3788,7 +3692,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TipoPropietario", DbType:="Char(1) NOT NULL"),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_TipoPropietario", DbType:="Char(1) NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=3)>  _
 		Public Property TipoPropietario() As Char
 			Get
@@ -3806,7 +3710,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idFormaContacto", DbType:="SmallInt NOT NULL"),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idFormaContacto", DbType:="SmallInt NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=4)>  _
 		Public Property idFormaContacto() As Short
 			Get
@@ -3824,7 +3728,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DatoContacto", DbType:="NVarChar(100) NOT NULL", CanBeNull:=false),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DatoContacto", DbType:="NVarChar(100) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=5)>  _
 		Public Property DatoContacto() As String
 			Get
@@ -3841,7 +3745,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Observacion", DbType:="NVarChar(500)"),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Observacion", DbType:="NVarChar(500)", UpdateCheck:=UpdateCheck.Never),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=6)>  _
 		Public Property Observacion() As String
 			Get
@@ -3858,7 +3762,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Nombre", DbType:="NVarChar(200) NOT NULL", CanBeNull:=false),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Nombre", DbType:="NVarChar(200) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=7)>  _
 		Public Property Nombre() As String
 			Get
@@ -3875,7 +3779,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NombreCN", DbType:="NVarChar(100)"),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NombreCN", DbType:="NVarChar(100)", UpdateCheck:=UpdateCheck.Never),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=8)>  _
 		Public Property NombreCN() As String
 			Get
@@ -3892,7 +3796,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FormaContactoChn", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false)>  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FormaContactoChn", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never)>  _
 		Friend Property FormaContactoChn() As String
 			Get
 				Return Me._FormaContactoChn
@@ -3908,7 +3812,7 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FormaContactoEsp", DbType:="VarChar(50) NOT NULL", CanBeNull:=false)>  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FormaContactoEsp", DbType:="VarChar(50) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never)>  _
 		Friend Property FormaContactoEsp() As String
 			Get
 				Return Me._FormaContactoEsp
@@ -4508,515 +4412,6 @@ Namespace Data.Entity
 		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
 		Public Sub OnDeserializing(ByVal context As StreamingContext)
 			Me.Initialize
-		End Sub
-	End Class
-	
-	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Empresas"),  _
-	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
-	Partial Public Class Empresas
-		Inherits Data.Entity.LinqEntityBase
-		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-		
-		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-		
-		Private _idEmpresa As Long
-		
-		Private _Empresa As String
-		
-		Private _NIF As String
-		
-		Private _Direccion As String
-		
-		Private _Localidad As String
-		
-		Private _Provincia As String
-		
-		Private _CodigoPostal As String
-		
-		Private _Telefono As String
-		
-		Private _Movil As String
-		
-		Private _Fax As String
-		
-		Private _Email As String
-		
-		Private _Web As String
-		
-		Private _Logo As System.Data.Linq.Binary
-		
-		Private _NombreComercial As String
-		
-		Private _CuentaBanco As String
-		
-		Private _Series As String
-		
-		Private _Activo As Boolean
-		
-		Private _FormatoNumeracion As String
-		
-		Private _Configuraciones As EntitySet(Of Configuraciones)
-		
-		Private serializing As Boolean
-		
-    #Region "Definiciones de métodos de extensibilidad"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidEmpresaChanging(value As Long)
-    End Sub
-    Partial Private Sub OnidEmpresaChanged()
-    End Sub
-    Partial Private Sub OnEmpresaChanging(value As String)
-    End Sub
-    Partial Private Sub OnEmpresaChanged()
-    End Sub
-    Partial Private Sub OnNIFChanging(value As String)
-    End Sub
-    Partial Private Sub OnNIFChanged()
-    End Sub
-    Partial Private Sub OnDireccionChanging(value As String)
-    End Sub
-    Partial Private Sub OnDireccionChanged()
-    End Sub
-    Partial Private Sub OnLocalidadChanging(value As String)
-    End Sub
-    Partial Private Sub OnLocalidadChanged()
-    End Sub
-    Partial Private Sub OnProvinciaChanging(value As String)
-    End Sub
-    Partial Private Sub OnProvinciaChanged()
-    End Sub
-    Partial Private Sub OnCodigoPostalChanging(value As String)
-    End Sub
-    Partial Private Sub OnCodigoPostalChanged()
-    End Sub
-    Partial Private Sub OnTelefonoChanging(value As String)
-    End Sub
-    Partial Private Sub OnTelefonoChanged()
-    End Sub
-    Partial Private Sub OnMovilChanging(value As String)
-    End Sub
-    Partial Private Sub OnMovilChanged()
-    End Sub
-    Partial Private Sub OnFaxChanging(value As String)
-    End Sub
-    Partial Private Sub OnFaxChanged()
-    End Sub
-    Partial Private Sub OnEmailChanging(value As String)
-    End Sub
-    Partial Private Sub OnEmailChanged()
-    End Sub
-    Partial Private Sub OnWebChanging(value As String)
-    End Sub
-    Partial Private Sub OnWebChanged()
-    End Sub
-    Partial Private Sub OnLogoChanging(value As System.Data.Linq.Binary)
-    End Sub
-    Partial Private Sub OnLogoChanged()
-    End Sub
-    Partial Private Sub OnNombreComercialChanging(value As String)
-    End Sub
-    Partial Private Sub OnNombreComercialChanged()
-    End Sub
-    Partial Private Sub OnCuentaBancoChanging(value As String)
-    End Sub
-    Partial Private Sub OnCuentaBancoChanged()
-    End Sub
-    Partial Private Sub OnSeriesChanging(value As String)
-    End Sub
-    Partial Private Sub OnSeriesChanged()
-    End Sub
-    Partial Private Sub OnActivoChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnActivoChanged()
-    End Sub
-    Partial Private Sub OnFormatoNumeracionChanging(value As String)
-    End Sub
-    Partial Private Sub OnFormatoNumeracionChanged()
-    End Sub
-    #End Region
-		
-		Public Sub New()
-			MyBase.New
-			Me.Initialize
-		End Sub
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idEmpresa", DbType:="BigInt NOT NULL", IsPrimaryKey:=true),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
-		Public Property idEmpresa() As Long
-			Get
-				Return Me._idEmpresa
-			End Get
-			Set
-				If ((Me._idEmpresa = value)  _
-							= false) Then
-					Me.OnidEmpresaChanging(value)
-					Me.SendPropertyChanging
-					Me._idEmpresa = value
-					Me.SendPropertyChanged("idEmpresa")
-					Me.OnidEmpresaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Empresa", DbType:="NVarChar(100) NOT NULL", CanBeNull:=false),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=2)>  _
-		Public Property Empresa() As String
-			Get
-				Return Me._Empresa
-			End Get
-			Set
-				If (String.Equals(Me._Empresa, value) = false) Then
-					Me.OnEmpresaChanging(value)
-					Me.SendPropertyChanging
-					Me._Empresa = value
-					Me.SendPropertyChanged("Empresa")
-					Me.OnEmpresaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NIF", DbType:="VarChar(20) NOT NULL", CanBeNull:=false),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=3)>  _
-		Public Property NIF() As String
-			Get
-				Return Me._NIF
-			End Get
-			Set
-				If (String.Equals(Me._NIF, value) = false) Then
-					Me.OnNIFChanging(value)
-					Me.SendPropertyChanging
-					Me._NIF = value
-					Me.SendPropertyChanged("NIF")
-					Me.OnNIFChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Direccion", DbType:="NVarChar(200)"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=4)>  _
-		Public Property Direccion() As String
-			Get
-				Return Me._Direccion
-			End Get
-			Set
-				If (String.Equals(Me._Direccion, value) = false) Then
-					Me.OnDireccionChanging(value)
-					Me.SendPropertyChanging
-					Me._Direccion = value
-					Me.SendPropertyChanged("Direccion")
-					Me.OnDireccionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Localidad", DbType:="NVarChar(100)"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=5)>  _
-		Public Property Localidad() As String
-			Get
-				Return Me._Localidad
-			End Get
-			Set
-				If (String.Equals(Me._Localidad, value) = false) Then
-					Me.OnLocalidadChanging(value)
-					Me.SendPropertyChanging
-					Me._Localidad = value
-					Me.SendPropertyChanged("Localidad")
-					Me.OnLocalidadChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Provincia", DbType:="NVarChar(50)"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=6)>  _
-		Public Property Provincia() As String
-			Get
-				Return Me._Provincia
-			End Get
-			Set
-				If (String.Equals(Me._Provincia, value) = false) Then
-					Me.OnProvinciaChanging(value)
-					Me.SendPropertyChanging
-					Me._Provincia = value
-					Me.SendPropertyChanged("Provincia")
-					Me.OnProvinciaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CodigoPostal", DbType:="VarChar(10)"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=7)>  _
-		Public Property CodigoPostal() As String
-			Get
-				Return Me._CodigoPostal
-			End Get
-			Set
-				If (String.Equals(Me._CodigoPostal, value) = false) Then
-					Me.OnCodigoPostalChanging(value)
-					Me.SendPropertyChanging
-					Me._CodigoPostal = value
-					Me.SendPropertyChanged("CodigoPostal")
-					Me.OnCodigoPostalChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Telefono", DbType:="VarChar(20)"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=8)>  _
-		Public Property Telefono() As String
-			Get
-				Return Me._Telefono
-			End Get
-			Set
-				If (String.Equals(Me._Telefono, value) = false) Then
-					Me.OnTelefonoChanging(value)
-					Me.SendPropertyChanging
-					Me._Telefono = value
-					Me.SendPropertyChanged("Telefono")
-					Me.OnTelefonoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Movil", DbType:="VarChar(20)"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=9)>  _
-		Public Property Movil() As String
-			Get
-				Return Me._Movil
-			End Get
-			Set
-				If (String.Equals(Me._Movil, value) = false) Then
-					Me.OnMovilChanging(value)
-					Me.SendPropertyChanging
-					Me._Movil = value
-					Me.SendPropertyChanged("Movil")
-					Me.OnMovilChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Fax", DbType:="VarChar(20)"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=10)>  _
-		Public Property Fax() As String
-			Get
-				Return Me._Fax
-			End Get
-			Set
-				If (String.Equals(Me._Fax, value) = false) Then
-					Me.OnFaxChanging(value)
-					Me.SendPropertyChanging
-					Me._Fax = value
-					Me.SendPropertyChanged("Fax")
-					Me.OnFaxChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Email", DbType:="VarChar(100)"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=11)>  _
-		Public Property Email() As String
-			Get
-				Return Me._Email
-			End Get
-			Set
-				If (String.Equals(Me._Email, value) = false) Then
-					Me.OnEmailChanging(value)
-					Me.SendPropertyChanging
-					Me._Email = value
-					Me.SendPropertyChanged("Email")
-					Me.OnEmailChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Web", DbType:="VarChar(100)"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=12)>  _
-		Public Property Web() As String
-			Get
-				Return Me._Web
-			End Get
-			Set
-				If (String.Equals(Me._Web, value) = false) Then
-					Me.OnWebChanging(value)
-					Me.SendPropertyChanging
-					Me._Web = value
-					Me.SendPropertyChanged("Web")
-					Me.OnWebChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Logo", DbType:="Image", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=13)>  _
-		Public Property Logo() As System.Data.Linq.Binary
-			Get
-				Return Me._Logo
-			End Get
-			Set
-				If (Object.Equals(Me._Logo, value) = false) Then
-					Me.OnLogoChanging(value)
-					Me.SendPropertyChanging
-					Me._Logo = value
-					Me.SendPropertyChanged("Logo")
-					Me.OnLogoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NombreComercial", DbType:="NVarChar(100)"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=14)>  _
-		Public Property NombreComercial() As String
-			Get
-				Return Me._NombreComercial
-			End Get
-			Set
-				If (String.Equals(Me._NombreComercial, value) = false) Then
-					Me.OnNombreComercialChanging(value)
-					Me.SendPropertyChanging
-					Me._NombreComercial = value
-					Me.SendPropertyChanged("NombreComercial")
-					Me.OnNombreComercialChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CuentaBanco", DbType:="VarChar(50)"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=15)>  _
-		Public Property CuentaBanco() As String
-			Get
-				Return Me._CuentaBanco
-			End Get
-			Set
-				If (String.Equals(Me._CuentaBanco, value) = false) Then
-					Me.OnCuentaBancoChanging(value)
-					Me.SendPropertyChanging
-					Me._CuentaBanco = value
-					Me.SendPropertyChanged("CuentaBanco")
-					Me.OnCuentaBancoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Series", DbType:="VarChar(50)"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=16)>  _
-		Public Property Series() As String
-			Get
-				Return Me._Series
-			End Get
-			Set
-				If (String.Equals(Me._Series, value) = false) Then
-					Me.OnSeriesChanging(value)
-					Me.SendPropertyChanging
-					Me._Series = value
-					Me.SendPropertyChanged("Series")
-					Me.OnSeriesChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Activo", DbType:="Bit NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=17)>  _
-		Public Property Activo() As Boolean
-			Get
-				Return Me._Activo
-			End Get
-			Set
-				If ((Me._Activo = value)  _
-							= false) Then
-					Me.OnActivoChanging(value)
-					Me.SendPropertyChanging
-					Me._Activo = value
-					Me.SendPropertyChanged("Activo")
-					Me.OnActivoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FormatoNumeracion", DbType:="VarChar(50) NOT NULL", CanBeNull:=false),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=18)>  _
-		Public Property FormatoNumeracion() As String
-			Get
-				Return Me._FormatoNumeracion
-			End Get
-			Set
-				If (String.Equals(Me._FormatoNumeracion, value) = false) Then
-					Me.OnFormatoNumeracionChanging(value)
-					Me.SendPropertyChanging
-					Me._FormatoNumeracion = value
-					Me.SendPropertyChanged("FormatoNumeracion")
-					Me.OnFormatoNumeracionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Empresas_Configuraciones", Storage:="_Configuraciones", ThisKey:="idEmpresa", OtherKey:="idEmpresa"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=19, EmitDefaultValue:=false)>  _
-		Public Property Configuraciones() As EntitySet(Of Configuraciones)
-			Get
-				If (Me.serializing  _
-							AndAlso (Me._Configuraciones.HasLoadedOrAssignedValues = false)) Then
-					Return Nothing
-				End If
-				Return Me._Configuraciones
-			End Get
-			Set
-				Me._Configuraciones.Assign(value)
-			End Set
-		End Property
-		
-		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-		
-		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-		
-		Protected Overridable Sub SendPropertyChanging()
-			If ((Me.PropertyChangingEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-			End If
-		End Sub
-		
-		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-			If ((Me.PropertyChangedEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-			End If
-		End Sub
-		
-		Private Sub attach_Configuraciones(ByVal entity As Configuraciones)
-			Me.SendPropertyChanging
-			entity.Empresa = Me
-		End Sub
-		
-		Private Sub detach_Configuraciones(ByVal entity As Configuraciones)
-			Me.SendPropertyChanging
-			entity.Empresa = Nothing
-		End Sub
-		
-		Private Sub Initialize()
-			Me._Configuraciones = New EntitySet(Of Configuraciones)(AddressOf Me.attach_Configuraciones, AddressOf Me.detach_Configuraciones)
-			OnCreated
-		End Sub
-		
-		<Global.System.Runtime.Serialization.OnDeserializingAttribute(),  _
-		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
-		Public Sub OnDeserializing(ByVal context As StreamingContext)
-			Me.Initialize
-		End Sub
-		
-		<Global.System.Runtime.Serialization.OnSerializingAttribute(),  _
-		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
-		Public Sub OnSerializing(ByVal context As StreamingContext)
-			Me.serializing = true
-		End Sub
-		
-		<Global.System.Runtime.Serialization.OnSerializedAttribute(),  _
-		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
-		Public Sub OnSerialized(ByVal context As StreamingContext)
-			Me.serializing = false
 		End Sub
 	End Class
 	
@@ -7063,12 +6458,6 @@ Namespace Data.Entity
 		
 		Private _TotalAlbaran As System.Nullable(Of Double)
 		
-		Private _idModo As Short
-		
-		Private _ModoPagoChn As String
-		
-		Private _ModoPagoEsp As String
-		
 		Private _FCreacion As Date
 		
 		Private _Usuario As String
@@ -7135,18 +6524,6 @@ Namespace Data.Entity
     Partial Private Sub OnTotalAlbaranChanging(value As System.Nullable(Of Double))
     End Sub
     Partial Private Sub OnTotalAlbaranChanged()
-    End Sub
-    Partial Private Sub OnidModoChanging(value As Short)
-    End Sub
-    Partial Private Sub OnidModoChanged()
-    End Sub
-    Partial Private Sub OnModoPagoChnChanging(value As String)
-    End Sub
-    Partial Private Sub OnModoPagoChnChanged()
-    End Sub
-    Partial Private Sub OnModoPagoEspChanging(value As String)
-    End Sub
-    Partial Private Sub OnModoPagoEspChanged()
     End Sub
     Partial Private Sub OnFCreacionChanging(value As Date)
     End Sub
@@ -7360,60 +6737,8 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idModo", DbType:="SmallInt NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=10)>  _
-		Public Property idModo() As Short
-			Get
-				Return Me._idModo
-			End Get
-			Set
-				If ((Me._idModo = value)  _
-							= false) Then
-					Me.OnidModoChanging(value)
-					Me.SendPropertyChanging
-					Me._idModo = value
-					Me.SendPropertyChanged("idModo")
-					Me.OnidModoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ModoPagoChn", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=11)>  _
-		Public Property ModoPagoChn() As String
-			Get
-				Return Me._ModoPagoChn
-			End Get
-			Set
-				If (String.Equals(Me._ModoPagoChn, value) = false) Then
-					Me.OnModoPagoChnChanging(value)
-					Me.SendPropertyChanging
-					Me._ModoPagoChn = value
-					Me.SendPropertyChanged("ModoPagoChn")
-					Me.OnModoPagoChnChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ModoPagoEsp", DbType:="VarChar(50) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=12)>  _
-		Public Property ModoPagoEsp() As String
-			Get
-				Return Me._ModoPagoEsp
-			End Get
-			Set
-				If (String.Equals(Me._ModoPagoEsp, value) = false) Then
-					Me.OnModoPagoEspChanging(value)
-					Me.SendPropertyChanging
-					Me._ModoPagoEsp = value
-					Me.SendPropertyChanged("ModoPagoEsp")
-					Me.OnModoPagoEspChanged
-				End If
-			End Set
-		End Property
-		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FCreacion", DbType:="SmallDateTime NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=13)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=10)>  _
 		Public Property FCreacion() As Date
 			Get
 				Return Me._FCreacion
@@ -7431,7 +6756,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Usuario", DbType:="NVarChar(100)", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=14)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=11)>  _
 		Public Property Usuario() As String
 			Get
 				Return Me._Usuario
@@ -7448,7 +6773,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Puesto", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=15)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=12)>  _
 		Public Property Puesto() As String
 			Get
 				Return Me._Puesto
@@ -7465,7 +6790,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUsuarioEmitido", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=16)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=13)>  _
 		Public Property idUsuarioEmitido() As System.Nullable(Of Long)
 			Get
 				Return Me._idUsuarioEmitido
@@ -7482,7 +6807,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPuestoEmitido", DbType:="BigInt NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=17)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=14)>  _
 		Public Property idPuestoEmitido() As Long
 			Get
 				Return Me._idPuestoEmitido
@@ -7500,7 +6825,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SerieAlbaran", DbType:="VarChar(5) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=18)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=15)>  _
 		Public Property SerieAlbaran() As String
 			Get
 				Return Me._SerieAlbaran
@@ -7517,7 +6842,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NumeracionAlbaran", DbType:="BigInt NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=19)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=16)>  _
 		Public Property NumeracionAlbaran() As Long
 			Get
 				Return Me._NumeracionAlbaran
@@ -7535,7 +6860,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idEmpresa", DbType:="BigInt NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=20)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=17)>  _
 		Public Property idEmpresa() As Long
 			Get
 				Return Me._idEmpresa
@@ -7553,7 +6878,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Contable", DbType:="Bit NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=21)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=18)>  _
 		Public Property Contable() As Boolean
 			Get
 				Return Me._Contable
@@ -7571,7 +6896,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idFactura", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=22)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=19)>  _
 		Public Property idFactura() As System.Nullable(Of Long)
 			Get
 				Return Me._idFactura
@@ -7588,7 +6913,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NumFactura", DbType:="VarChar(50)", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=23)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=20)>  _
 		Public Property NumFactura() As String
 			Get
 				Return Me._NumFactura
@@ -7605,7 +6930,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FFactura", DbType:="DateTime", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=24)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=21)>  _
 		Public Property FFactura() As System.Nullable(Of Date)
 			Get
 				Return Me._FFactura
@@ -7666,8 +6991,6 @@ Namespace Data.Entity
 		
 		Private _idPuestoEmitido As Long
 		
-		Private _idModo As Short
-		
 		Private _idEmpresa As Long
 		
 		Private _idFactura As System.Nullable(Of Long)
@@ -7691,6 +7014,8 @@ Namespace Data.Entity
 		Private _LineasImpuestoAlbaran As EntitySet(Of LineasImpuestoAlbaran)
 		
 		Private _LineasAlbaran As EntitySet(Of LineasAlbaran)
+		
+		Private _MediosPagosAlbaranPedido As EntitySet(Of MediosPagosAlbaranPedido)
 		
 		Private serializing As Boolean
 		
@@ -7716,10 +7041,6 @@ Namespace Data.Entity
     Partial Private Sub OnidPuestoEmitidoChanging(value As Long)
     End Sub
     Partial Private Sub OnidPuestoEmitidoChanged()
-    End Sub
-    Partial Private Sub OnidModoChanging(value As Short)
-    End Sub
-    Partial Private Sub OnidModoChanged()
     End Sub
     Partial Private Sub OnidEmpresaChanging(value As Long)
     End Sub
@@ -7838,26 +7159,8 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idModo", DbType:="SmallInt NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=5)>  _
-		Public Property idModo() As Short
-			Get
-				Return Me._idModo
-			End Get
-			Set
-				If ((Me._idModo = value)  _
-							= false) Then
-					Me.OnidModoChanging(value)
-					Me.SendPropertyChanging
-					Me._idModo = value
-					Me.SendPropertyChanged("idModo")
-					Me.OnidModoChanged
-				End If
-			End Set
-		End Property
-		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idEmpresa", DbType:="BigInt NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=6)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=5)>  _
 		Public Property idEmpresa() As Long
 			Get
 				Return Me._idEmpresa
@@ -7875,7 +7178,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idFactura", DbType:="BigInt"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=7)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=6)>  _
 		Public Property idFactura() As System.Nullable(Of Long)
 			Get
 				Return Me._idFactura
@@ -7892,7 +7195,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NumAlbaran", AutoSync:=AutoSync.OnInsert, DbType:="VarChar(50) NOT NULL", CanBeNull:=false),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=8)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=7)>  _
 		Public Property NumAlbaran() As String
 			Get
 				Return Me._NumAlbaran
@@ -7909,7 +7212,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FAlbaran", DbType:="DateTime NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=9)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=8)>  _
 		Public Property FAlbaran() As Date
 			Get
 				Return Me._FAlbaran
@@ -7927,7 +7230,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Pendiente", DbType:="Real NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=10)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=9)>  _
 		Public Property Pendiente() As Single
 			Get
 				Return Me._Pendiente
@@ -7945,7 +7248,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Cobrado", DbType:="Bit NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=11)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=10)>  _
 		Public Property Cobrado() As Boolean
 			Get
 				Return Me._Cobrado
@@ -7963,7 +7266,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SerieAlbaran", DbType:="VarChar(5) NOT NULL", CanBeNull:=false),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=12)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=11)>  _
 		Public Property SerieAlbaran() As String
 			Get
 				Return Me._SerieAlbaran
@@ -7997,7 +7300,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FCreacion", AutoSync:=AutoSync.OnInsert, DbType:="SmallDateTime NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=13)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=12)>  _
 		Public Property FCreacion() As Date
 			Get
 				Return Me._FCreacion
@@ -8015,7 +7318,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Contable", DbType:="Bit NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=14)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=13)>  _
 		Public Property Contable() As Boolean
 			Get
 				Return Me._Contable
@@ -8033,7 +7336,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Albaranes_LineasImpuestoAlbaran", Storage:="_LineasImpuestoAlbaran", ThisKey:="idAlbaran", OtherKey:="idAlbaran"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=15, EmitDefaultValue:=false)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=14, EmitDefaultValue:=false)>  _
 		Public Property LineasImpuestoAlbaran() As EntitySet(Of LineasImpuestoAlbaran)
 			Get
 				If (Me.serializing  _
@@ -8048,7 +7351,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Albaranes_LineasAlbaran", Storage:="_LineasAlbaran", ThisKey:="idAlbaran", OtherKey:="idAlbaran"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=16, EmitDefaultValue:=false)>  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=15, EmitDefaultValue:=false)>  _
 		Public Property LineasAlbaran() As EntitySet(Of LineasAlbaran)
 			Get
 				If (Me.serializing  _
@@ -8059,6 +7362,21 @@ Namespace Data.Entity
 			End Get
 			Set
 				Me._LineasAlbaran.Assign(value)
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Albaranes_MediosPagosAlbaranPedido", Storage:="_MediosPagosAlbaranPedido", ThisKey:="idAlbaran", OtherKey:="idAlbaran"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=16, EmitDefaultValue:=false)>  _
+		Public Property MediosPagosAlbaranPedido() As EntitySet(Of MediosPagosAlbaranPedido)
+			Get
+				If (Me.serializing  _
+							AndAlso (Me._MediosPagosAlbaranPedido.HasLoadedOrAssignedValues = false)) Then
+					Return Nothing
+				End If
+				Return Me._MediosPagosAlbaranPedido
+			End Get
+			Set
+				Me._MediosPagosAlbaranPedido.Assign(value)
 			End Set
 		End Property
 		
@@ -8100,9 +7418,20 @@ Namespace Data.Entity
 			entity.Albaran = Nothing
 		End Sub
 		
+		Private Sub attach_MediosPagosAlbaranPedido(ByVal entity As MediosPagosAlbaranPedido)
+			Me.SendPropertyChanging
+			entity.Albaranes = Me
+		End Sub
+		
+		Private Sub detach_MediosPagosAlbaranPedido(ByVal entity As MediosPagosAlbaranPedido)
+			Me.SendPropertyChanging
+			entity.Albaranes = Nothing
+		End Sub
+		
 		Private Sub Initialize()
 			Me._LineasImpuestoAlbaran = New EntitySet(Of LineasImpuestoAlbaran)(AddressOf Me.attach_LineasImpuestoAlbaran, AddressOf Me.detach_LineasImpuestoAlbaran)
 			Me._LineasAlbaran = New EntitySet(Of LineasAlbaran)(AddressOf Me.attach_LineasAlbaran, AddressOf Me.detach_LineasAlbaran)
+			Me._MediosPagosAlbaranPedido = New EntitySet(Of MediosPagosAlbaranPedido)(AddressOf Me.attach_MediosPagosAlbaranPedido, AddressOf Me.detach_MediosPagosAlbaranPedido)
 			OnCreated
 		End Sub
 		
@@ -8142,6 +7471,8 @@ Namespace Data.Entity
 		Private _Valor As String
 		
 		Private _Tipo As Short
+		
+		Private _Productos As EntityRef(Of Productos)
 		
     #Region "Definiciones de métodos de extensibilidad"
     Partial Private Sub OnLoaded()
@@ -8204,6 +7535,9 @@ Namespace Data.Entity
 			Set
 				If ((Me._idProducto = value)  _
 							= false) Then
+					If Me._Productos.HasLoadedOrAssignedValue Then
+						Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+					End If
 					Me.OnidProductoChanging(value)
 					Me.SendPropertyChanging
 					Me._idProducto = value
@@ -8265,6 +7599,34 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Productos_CaracteristicasProducto", Storage:="_Productos", ThisKey:="idProducto", OtherKey:="idProducto", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
+		Public Property Productos() As Productos
+			Get
+				Return Me._Productos.Entity
+			End Get
+			Set
+				Dim previousValue As Productos = Me._Productos.Entity
+				If ((Object.Equals(previousValue, value) = false)  _
+							OrElse (Me._Productos.HasLoadedOrAssignedValue = false)) Then
+					Me.SendPropertyChanging
+					If ((previousValue Is Nothing)  _
+								= false) Then
+						Me._Productos.Entity = Nothing
+						previousValue.CaracteristicasProducto.Remove(Me)
+					End If
+					Me._Productos.Entity = value
+					If ((value Is Nothing)  _
+								= false) Then
+						value.CaracteristicasProducto.Add(Me)
+						Me._idProducto = value.idProducto
+					Else
+						Me._idProducto = CType(Nothing, Long)
+					End If
+					Me.SendPropertyChanged("Productos")
+				End If
+			End Set
+		End Property
+		
 		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
 		
 		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
@@ -8284,6 +7646,7 @@ Namespace Data.Entity
 		End Sub
 		
 		Private Sub Initialize()
+			Me._Productos = CType(Nothing, EntityRef(Of Productos))
 			OnCreated
 		End Sub
 		
@@ -8431,918 +7794,6 @@ Namespace Data.Entity
 					Me._Descripcion = value
 					Me.SendPropertyChanged("Descripcion")
 					Me.OnDescripcionChanged
-				End If
-			End Set
-		End Property
-		
-		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-		
-		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-		
-		Protected Overridable Sub SendPropertyChanging()
-			If ((Me.PropertyChangingEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-			End If
-		End Sub
-		
-		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-			If ((Me.PropertyChangedEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-			End If
-		End Sub
-		
-		Private Sub Initialize()
-			OnCreated
-		End Sub
-		
-		<Global.System.Runtime.Serialization.OnDeserializingAttribute(),  _
-		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
-		Public Sub OnDeserializing(ByVal context As StreamingContext)
-			Me.Initialize
-		End Sub
-	End Class
-	
-	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWProductos"),  _
-	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
-	Partial Public Class VWProductos
-		Inherits Data.Entity.LinqEntityBase
-		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-		
-		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-		
-		Private _idProducto As Long
-		
-		Private _Referencia As String
-		
-		Private _Descripcion As String
-		
-		Private _DescripcionLarga As String
-		
-		Private _PrecioVenta As Single
-		
-		Private _UnidadVenta As Single
-		
-		Private _UltimoPrecioEntrada As System.Nullable(Of Single)
-		
-		Private _UltimoProveedor As String
-		
-		Private _Coste As Single
-		
-		Private _Descuento As System.Nullable(Of Single)
-		
-		Private _UnidadXCaja As System.Nullable(Of Single)
-		
-		Private _StockSuelto As System.Nullable(Of Single)
-		
-		Private _StockCaja As System.Nullable(Of Single)
-		
-		Private _Activo As Boolean
-		
-		Private _ControlStock As Boolean
-		
-		Private _PrecioVariable As Boolean
-		
-		Private _Familia As String
-		
-		Private _Ubicacion As String
-		
-		Private _Marca As String
-		
-		Private _Observacion As String
-		
-		Private _idUnidadMedida As System.Nullable(Of Long)
-		
-		Private _idFamilia As System.Nullable(Of Long)
-		
-		Private _idMarca As System.Nullable(Of Long)
-		
-		Private _idUbicacion As System.Nullable(Of Long)
-		
-		Private _FModificacion As System.Nullable(Of Date)
-		
-		Private _FCreacion As Date
-		
-		Private _Medida As String
-		
-		Private _Abreviatura As String
-		
-		Private _FormaOferta As System.Nullable(Of Integer)
-		
-		Private _OfertaVigente As System.Nullable(Of Boolean)
-		
-		Private _idOferta As System.Nullable(Of Long)
-		
-		Private _OfertaFormula1 As System.Nullable(Of Double)
-		
-		Private _OfertaFormula2 As System.Nullable(Of Double)
-		
-		Private _Impuesto As System.Nullable(Of Short)
-		
-		Private _RE As System.Nullable(Of Double)
-		
-		Private _PrecioImpInc As Boolean
-		
-		Private _Fidelizable As Boolean
-		
-    #Region "Definiciones de métodos de extensibilidad"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidProductoChanging(value As Long)
-    End Sub
-    Partial Private Sub OnidProductoChanged()
-    End Sub
-    Partial Private Sub OnReferenciaChanging(value As String)
-    End Sub
-    Partial Private Sub OnReferenciaChanged()
-    End Sub
-    Partial Private Sub OnDescripcionChanging(value As String)
-    End Sub
-    Partial Private Sub OnDescripcionChanged()
-    End Sub
-    Partial Private Sub OnDescripcionLargaChanging(value As String)
-    End Sub
-    Partial Private Sub OnDescripcionLargaChanged()
-    End Sub
-    Partial Private Sub OnPrecioVentaChanging(value As Single)
-    End Sub
-    Partial Private Sub OnPrecioVentaChanged()
-    End Sub
-    Partial Private Sub OnUnidadVentaChanging(value As Single)
-    End Sub
-    Partial Private Sub OnUnidadVentaChanged()
-    End Sub
-    Partial Private Sub OnUltimoPrecioEntradaChanging(value As System.Nullable(Of Single))
-    End Sub
-    Partial Private Sub OnUltimoPrecioEntradaChanged()
-    End Sub
-    Partial Private Sub OnUltimoProveedorChanging(value As String)
-    End Sub
-    Partial Private Sub OnUltimoProveedorChanged()
-    End Sub
-    Partial Private Sub OnCosteChanging(value As Single)
-    End Sub
-    Partial Private Sub OnCosteChanged()
-    End Sub
-    Partial Private Sub OnDescuentoChanging(value As System.Nullable(Of Single))
-    End Sub
-    Partial Private Sub OnDescuentoChanged()
-    End Sub
-    Partial Private Sub OnUnidadXCajaChanging(value As System.Nullable(Of Single))
-    End Sub
-    Partial Private Sub OnUnidadXCajaChanged()
-    End Sub
-    Partial Private Sub OnStockSueltoChanging(value As System.Nullable(Of Single))
-    End Sub
-    Partial Private Sub OnStockSueltoChanged()
-    End Sub
-    Partial Private Sub OnStockCajaChanging(value As System.Nullable(Of Single))
-    End Sub
-    Partial Private Sub OnStockCajaChanged()
-    End Sub
-    Partial Private Sub OnActivoChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnActivoChanged()
-    End Sub
-    Partial Private Sub OnControlStockChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnControlStockChanged()
-    End Sub
-    Partial Private Sub OnPrecioVariableChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnPrecioVariableChanged()
-    End Sub
-    Partial Private Sub OnFamiliaChanging(value As String)
-    End Sub
-    Partial Private Sub OnFamiliaChanged()
-    End Sub
-    Partial Private Sub OnUbicacionChanging(value As String)
-    End Sub
-    Partial Private Sub OnUbicacionChanged()
-    End Sub
-    Partial Private Sub OnMarcaChanging(value As String)
-    End Sub
-    Partial Private Sub OnMarcaChanged()
-    End Sub
-    Partial Private Sub OnObservacionChanging(value As String)
-    End Sub
-    Partial Private Sub OnObservacionChanged()
-    End Sub
-    Partial Private Sub OnidUnidadMedidaChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidUnidadMedidaChanged()
-    End Sub
-    Partial Private Sub OnidFamiliaChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidFamiliaChanged()
-    End Sub
-    Partial Private Sub OnidMarcaChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidMarcaChanged()
-    End Sub
-    Partial Private Sub OnidUbicacionChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidUbicacionChanged()
-    End Sub
-    Partial Private Sub OnFModificacionChanging(value As System.Nullable(Of Date))
-    End Sub
-    Partial Private Sub OnFModificacionChanged()
-    End Sub
-    Partial Private Sub OnFCreacionChanging(value As Date)
-    End Sub
-    Partial Private Sub OnFCreacionChanged()
-    End Sub
-    Partial Private Sub OnMedidaChanging(value As String)
-    End Sub
-    Partial Private Sub OnMedidaChanged()
-    End Sub
-    Partial Private Sub OnAbreviaturaChanging(value As String)
-    End Sub
-    Partial Private Sub OnAbreviaturaChanged()
-    End Sub
-    Partial Private Sub OnFormaOfertaChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnFormaOfertaChanged()
-    End Sub
-    Partial Private Sub OnOfertaVigenteChanging(value As System.Nullable(Of Boolean))
-    End Sub
-    Partial Private Sub OnOfertaVigenteChanged()
-    End Sub
-    Partial Private Sub OnidOfertaChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidOfertaChanged()
-    End Sub
-    Partial Private Sub OnOfertaFormula1Changing(value As System.Nullable(Of Double))
-    End Sub
-    Partial Private Sub OnOfertaFormula1Changed()
-    End Sub
-    Partial Private Sub OnOfertaFormula2Changing(value As System.Nullable(Of Double))
-    End Sub
-    Partial Private Sub OnOfertaFormula2Changed()
-    End Sub
-    Partial Private Sub OnImpuestoChanging(value As System.Nullable(Of Short))
-    End Sub
-    Partial Private Sub OnImpuestoChanged()
-    End Sub
-    Partial Private Sub OnREChanging(value As System.Nullable(Of Double))
-    End Sub
-    Partial Private Sub OnREChanged()
-    End Sub
-    Partial Private Sub OnPrecioImpIncChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnPrecioImpIncChanged()
-    End Sub
-    Partial Private Sub OnFidelizableChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnFidelizableChanged()
-    End Sub
-    #End Region
-		
-		Public Sub New()
-			MyBase.New
-			Me.Initialize
-		End Sub
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idProducto", DbType:="BigInt NOT NULL", IsPrimaryKey:=true, UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
-		Public Property idProducto() As Long
-			Get
-				Return Me._idProducto
-			End Get
-			Set
-				If ((Me._idProducto = value)  _
-							= false) Then
-					Me.OnidProductoChanging(value)
-					Me.SendPropertyChanging
-					Me._idProducto = value
-					Me.SendPropertyChanged("idProducto")
-					Me.OnidProductoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Referencia", DbType:="VarChar(50) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=2)>  _
-		Public Property Referencia() As String
-			Get
-				Return Me._Referencia
-			End Get
-			Set
-				If (String.Equals(Me._Referencia, value) = false) Then
-					Me.OnReferenciaChanging(value)
-					Me.SendPropertyChanging
-					Me._Referencia = value
-					Me.SendPropertyChanged("Referencia")
-					Me.OnReferenciaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Descripcion", DbType:="NVarChar(200) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=3)>  _
-		Public Property Descripcion() As String
-			Get
-				Return Me._Descripcion
-			End Get
-			Set
-				If (String.Equals(Me._Descripcion, value) = false) Then
-					Me.OnDescripcionChanging(value)
-					Me.SendPropertyChanging
-					Me._Descripcion = value
-					Me.SendPropertyChanged("Descripcion")
-					Me.OnDescripcionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DescripcionLarga", DbType:="NVarChar(1000)", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=4)>  _
-		Public Property DescripcionLarga() As String
-			Get
-				Return Me._DescripcionLarga
-			End Get
-			Set
-				If (String.Equals(Me._DescripcionLarga, value) = false) Then
-					Me.OnDescripcionLargaChanging(value)
-					Me.SendPropertyChanging
-					Me._DescripcionLarga = value
-					Me.SendPropertyChanged("DescripcionLarga")
-					Me.OnDescripcionLargaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioVenta", DbType:="Real NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=5)>  _
-		Public Property PrecioVenta() As Single
-			Get
-				Return Me._PrecioVenta
-			End Get
-			Set
-				If ((Me._PrecioVenta = value)  _
-							= false) Then
-					Me.OnPrecioVentaChanging(value)
-					Me.SendPropertyChanging
-					Me._PrecioVenta = value
-					Me.SendPropertyChanged("PrecioVenta")
-					Me.OnPrecioVentaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UnidadVenta", DbType:="Real NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=6)>  _
-		Public Property UnidadVenta() As Single
-			Get
-				Return Me._UnidadVenta
-			End Get
-			Set
-				If ((Me._UnidadVenta = value)  _
-							= false) Then
-					Me.OnUnidadVentaChanging(value)
-					Me.SendPropertyChanging
-					Me._UnidadVenta = value
-					Me.SendPropertyChanged("UnidadVenta")
-					Me.OnUnidadVentaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UltimoPrecioEntrada", DbType:="Real", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=7)>  _
-		Public Property UltimoPrecioEntrada() As System.Nullable(Of Single)
-			Get
-				Return Me._UltimoPrecioEntrada
-			End Get
-			Set
-				If (Me._UltimoPrecioEntrada.Equals(value) = false) Then
-					Me.OnUltimoPrecioEntradaChanging(value)
-					Me.SendPropertyChanging
-					Me._UltimoPrecioEntrada = value
-					Me.SendPropertyChanged("UltimoPrecioEntrada")
-					Me.OnUltimoPrecioEntradaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UltimoProveedor", DbType:="NVarChar(200)", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=8)>  _
-		Public Property UltimoProveedor() As String
-			Get
-				Return Me._UltimoProveedor
-			End Get
-			Set
-				If (String.Equals(Me._UltimoProveedor, value) = false) Then
-					Me.OnUltimoProveedorChanging(value)
-					Me.SendPropertyChanging
-					Me._UltimoProveedor = value
-					Me.SendPropertyChanged("UltimoProveedor")
-					Me.OnUltimoProveedorChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Coste", DbType:="Real NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=9)>  _
-		Public Property Coste() As Single
-			Get
-				Return Me._Coste
-			End Get
-			Set
-				If ((Me._Coste = value)  _
-							= false) Then
-					Me.OnCosteChanging(value)
-					Me.SendPropertyChanging
-					Me._Coste = value
-					Me.SendPropertyChanged("Coste")
-					Me.OnCosteChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Descuento", DbType:="Real", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=10)>  _
-		Public Property Descuento() As System.Nullable(Of Single)
-			Get
-				Return Me._Descuento
-			End Get
-			Set
-				If (Me._Descuento.Equals(value) = false) Then
-					Me.OnDescuentoChanging(value)
-					Me.SendPropertyChanging
-					Me._Descuento = value
-					Me.SendPropertyChanged("Descuento")
-					Me.OnDescuentoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UnidadXCaja", DbType:="Real", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=11)>  _
-		Public Property UnidadXCaja() As System.Nullable(Of Single)
-			Get
-				Return Me._UnidadXCaja
-			End Get
-			Set
-				If (Me._UnidadXCaja.Equals(value) = false) Then
-					Me.OnUnidadXCajaChanging(value)
-					Me.SendPropertyChanging
-					Me._UnidadXCaja = value
-					Me.SendPropertyChanged("UnidadXCaja")
-					Me.OnUnidadXCajaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_StockSuelto", DbType:="Real", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=12)>  _
-		Public Property StockSuelto() As System.Nullable(Of Single)
-			Get
-				Return Me._StockSuelto
-			End Get
-			Set
-				If (Me._StockSuelto.Equals(value) = false) Then
-					Me.OnStockSueltoChanging(value)
-					Me.SendPropertyChanging
-					Me._StockSuelto = value
-					Me.SendPropertyChanged("StockSuelto")
-					Me.OnStockSueltoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_StockCaja", DbType:="Real", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=13)>  _
-		Public Property StockCaja() As System.Nullable(Of Single)
-			Get
-				Return Me._StockCaja
-			End Get
-			Set
-				If (Me._StockCaja.Equals(value) = false) Then
-					Me.OnStockCajaChanging(value)
-					Me.SendPropertyChanging
-					Me._StockCaja = value
-					Me.SendPropertyChanged("StockCaja")
-					Me.OnStockCajaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Activo", DbType:="Bit NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=14)>  _
-		Public Property Activo() As Boolean
-			Get
-				Return Me._Activo
-			End Get
-			Set
-				If ((Me._Activo = value)  _
-							= false) Then
-					Me.OnActivoChanging(value)
-					Me.SendPropertyChanging
-					Me._Activo = value
-					Me.SendPropertyChanged("Activo")
-					Me.OnActivoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ControlStock", DbType:="Bit NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=15)>  _
-		Public Property ControlStock() As Boolean
-			Get
-				Return Me._ControlStock
-			End Get
-			Set
-				If ((Me._ControlStock = value)  _
-							= false) Then
-					Me.OnControlStockChanging(value)
-					Me.SendPropertyChanging
-					Me._ControlStock = value
-					Me.SendPropertyChanged("ControlStock")
-					Me.OnControlStockChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioVariable", DbType:="Bit NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=16)>  _
-		Public Property PrecioVariable() As Boolean
-			Get
-				Return Me._PrecioVariable
-			End Get
-			Set
-				If ((Me._PrecioVariable = value)  _
-							= false) Then
-					Me.OnPrecioVariableChanging(value)
-					Me.SendPropertyChanging
-					Me._PrecioVariable = value
-					Me.SendPropertyChanged("PrecioVariable")
-					Me.OnPrecioVariableChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Familia", DbType:="NVarChar(100)", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=17)>  _
-		Public Property Familia() As String
-			Get
-				Return Me._Familia
-			End Get
-			Set
-				If (String.Equals(Me._Familia, value) = false) Then
-					Me.OnFamiliaChanging(value)
-					Me.SendPropertyChanging
-					Me._Familia = value
-					Me.SendPropertyChanged("Familia")
-					Me.OnFamiliaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Ubicacion", DbType:="VarChar(50)", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=18)>  _
-		Public Property Ubicacion() As String
-			Get
-				Return Me._Ubicacion
-			End Get
-			Set
-				If (String.Equals(Me._Ubicacion, value) = false) Then
-					Me.OnUbicacionChanging(value)
-					Me.SendPropertyChanging
-					Me._Ubicacion = value
-					Me.SendPropertyChanged("Ubicacion")
-					Me.OnUbicacionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Marca", DbType:="NVarChar(100)", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=19)>  _
-		Public Property Marca() As String
-			Get
-				Return Me._Marca
-			End Get
-			Set
-				If (String.Equals(Me._Marca, value) = false) Then
-					Me.OnMarcaChanging(value)
-					Me.SendPropertyChanging
-					Me._Marca = value
-					Me.SendPropertyChanged("Marca")
-					Me.OnMarcaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Observacion", DbType:="NVarChar(1000)", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=20)>  _
-		Public Property Observacion() As String
-			Get
-				Return Me._Observacion
-			End Get
-			Set
-				If (String.Equals(Me._Observacion, value) = false) Then
-					Me.OnObservacionChanging(value)
-					Me.SendPropertyChanging
-					Me._Observacion = value
-					Me.SendPropertyChanged("Observacion")
-					Me.OnObservacionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUnidadMedida", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=21)>  _
-		Public Property idUnidadMedida() As System.Nullable(Of Long)
-			Get
-				Return Me._idUnidadMedida
-			End Get
-			Set
-				If (Me._idUnidadMedida.Equals(value) = false) Then
-					Me.OnidUnidadMedidaChanging(value)
-					Me.SendPropertyChanging
-					Me._idUnidadMedida = value
-					Me.SendPropertyChanged("idUnidadMedida")
-					Me.OnidUnidadMedidaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idFamilia", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=22)>  _
-		Public Property idFamilia() As System.Nullable(Of Long)
-			Get
-				Return Me._idFamilia
-			End Get
-			Set
-				If (Me._idFamilia.Equals(value) = false) Then
-					Me.OnidFamiliaChanging(value)
-					Me.SendPropertyChanging
-					Me._idFamilia = value
-					Me.SendPropertyChanged("idFamilia")
-					Me.OnidFamiliaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idMarca", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=23)>  _
-		Public Property idMarca() As System.Nullable(Of Long)
-			Get
-				Return Me._idMarca
-			End Get
-			Set
-				If (Me._idMarca.Equals(value) = false) Then
-					Me.OnidMarcaChanging(value)
-					Me.SendPropertyChanging
-					Me._idMarca = value
-					Me.SendPropertyChanged("idMarca")
-					Me.OnidMarcaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUbicacion", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=24)>  _
-		Public Property idUbicacion() As System.Nullable(Of Long)
-			Get
-				Return Me._idUbicacion
-			End Get
-			Set
-				If (Me._idUbicacion.Equals(value) = false) Then
-					Me.OnidUbicacionChanging(value)
-					Me.SendPropertyChanging
-					Me._idUbicacion = value
-					Me.SendPropertyChanged("idUbicacion")
-					Me.OnidUbicacionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FModificacion", DbType:="SmallDateTime", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=25)>  _
-		Public Property FModificacion() As System.Nullable(Of Date)
-			Get
-				Return Me._FModificacion
-			End Get
-			Set
-				If (Me._FModificacion.Equals(value) = false) Then
-					Me.OnFModificacionChanging(value)
-					Me.SendPropertyChanging
-					Me._FModificacion = value
-					Me.SendPropertyChanged("FModificacion")
-					Me.OnFModificacionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FCreacion", DbType:="SmallDateTime NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=26)>  _
-		Public Property FCreacion() As Date
-			Get
-				Return Me._FCreacion
-			End Get
-			Set
-				If ((Me._FCreacion = value)  _
-							= false) Then
-					Me.OnFCreacionChanging(value)
-					Me.SendPropertyChanging
-					Me._FCreacion = value
-					Me.SendPropertyChanged("FCreacion")
-					Me.OnFCreacionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Medida", DbType:="NVarChar(100)", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=27)>  _
-		Public Property Medida() As String
-			Get
-				Return Me._Medida
-			End Get
-			Set
-				If (String.Equals(Me._Medida, value) = false) Then
-					Me.OnMedidaChanging(value)
-					Me.SendPropertyChanging
-					Me._Medida = value
-					Me.SendPropertyChanged("Medida")
-					Me.OnMedidaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Abreviatura", DbType:="NVarChar(10)", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=28)>  _
-		Public Property Abreviatura() As String
-			Get
-				Return Me._Abreviatura
-			End Get
-			Set
-				If (String.Equals(Me._Abreviatura, value) = false) Then
-					Me.OnAbreviaturaChanging(value)
-					Me.SendPropertyChanging
-					Me._Abreviatura = value
-					Me.SendPropertyChanged("Abreviatura")
-					Me.OnAbreviaturaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FormaOferta", DbType:="Int", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=29)>  _
-		Public Property FormaOferta() As System.Nullable(Of Integer)
-			Get
-				Return Me._FormaOferta
-			End Get
-			Set
-				If (Me._FormaOferta.Equals(value) = false) Then
-					Me.OnFormaOfertaChanging(value)
-					Me.SendPropertyChanging
-					Me._FormaOferta = value
-					Me.SendPropertyChanged("FormaOferta")
-					Me.OnFormaOfertaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_OfertaVigente", DbType:="Bit", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=30)>  _
-		Public Property OfertaVigente() As System.Nullable(Of Boolean)
-			Get
-				Return Me._OfertaVigente
-			End Get
-			Set
-				If (Me._OfertaVigente.Equals(value) = false) Then
-					Me.OnOfertaVigenteChanging(value)
-					Me.SendPropertyChanging
-					Me._OfertaVigente = value
-					Me.SendPropertyChanged("OfertaVigente")
-					Me.OnOfertaVigenteChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idOferta", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=31)>  _
-		Public Property idOferta() As System.Nullable(Of Long)
-			Get
-				Return Me._idOferta
-			End Get
-			Set
-				If (Me._idOferta.Equals(value) = false) Then
-					Me.OnidOfertaChanging(value)
-					Me.SendPropertyChanging
-					Me._idOferta = value
-					Me.SendPropertyChanged("idOferta")
-					Me.OnidOfertaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_OfertaFormula1", DbType:="Float", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=32)>  _
-		Public Property OfertaFormula1() As System.Nullable(Of Double)
-			Get
-				Return Me._OfertaFormula1
-			End Get
-			Set
-				If (Me._OfertaFormula1.Equals(value) = false) Then
-					Me.OnOfertaFormula1Changing(value)
-					Me.SendPropertyChanging
-					Me._OfertaFormula1 = value
-					Me.SendPropertyChanged("OfertaFormula1")
-					Me.OnOfertaFormula1Changed
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_OfertaFormula2", DbType:="Float", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=33)>  _
-		Public Property OfertaFormula2() As System.Nullable(Of Double)
-			Get
-				Return Me._OfertaFormula2
-			End Get
-			Set
-				If (Me._OfertaFormula2.Equals(value) = false) Then
-					Me.OnOfertaFormula2Changing(value)
-					Me.SendPropertyChanging
-					Me._OfertaFormula2 = value
-					Me.SendPropertyChanged("OfertaFormula2")
-					Me.OnOfertaFormula2Changed
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Impuesto", DbType:="SmallInt", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=34)>  _
-		Public Property Impuesto() As System.Nullable(Of Short)
-			Get
-				Return Me._Impuesto
-			End Get
-			Set
-				If (Me._Impuesto.Equals(value) = false) Then
-					Me.OnImpuestoChanging(value)
-					Me.SendPropertyChanging
-					Me._Impuesto = value
-					Me.SendPropertyChanged("Impuesto")
-					Me.OnImpuestoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_RE", DbType:="Float", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=35)>  _
-		Public Property RE() As System.Nullable(Of Double)
-			Get
-				Return Me._RE
-			End Get
-			Set
-				If (Me._RE.Equals(value) = false) Then
-					Me.OnREChanging(value)
-					Me.SendPropertyChanging
-					Me._RE = value
-					Me.SendPropertyChanged("RE")
-					Me.OnREChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioImpInc", DbType:="Bit NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=36)>  _
-		Public Property PrecioImpInc() As Boolean
-			Get
-				Return Me._PrecioImpInc
-			End Get
-			Set
-				If ((Me._PrecioImpInc = value)  _
-							= false) Then
-					Me.OnPrecioImpIncChanging(value)
-					Me.SendPropertyChanging
-					Me._PrecioImpInc = value
-					Me.SendPropertyChanged("PrecioImpInc")
-					Me.OnPrecioImpIncChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Fidelizable", DbType:="Bit NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=37)>  _
-		Public Property Fidelizable() As Boolean
-			Get
-				Return Me._Fidelizable
-			End Get
-			Set
-				If ((Me._Fidelizable = value)  _
-							= false) Then
-					Me.OnFidelizableChanging(value)
-					Me.SendPropertyChanging
-					Me._Fidelizable = value
-					Me.SendPropertyChanged("Fidelizable")
-					Me.OnFidelizableChanged
 				End If
 			End Set
 		End Property
@@ -11249,486 +9700,6 @@ Namespace Data.Entity
 					Me._idUsuario = value
 					Me.SendPropertyChanged("idUsuario")
 					Me.OnidUsuarioChanged
-				End If
-			End Set
-		End Property
-		
-		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-		
-		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-		
-		Protected Overridable Sub SendPropertyChanging()
-			If ((Me.PropertyChangingEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-			End If
-		End Sub
-		
-		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-			If ((Me.PropertyChangedEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-			End If
-		End Sub
-		
-		Private Sub Initialize()
-			OnCreated
-		End Sub
-		
-		<Global.System.Runtime.Serialization.OnDeserializingAttribute(),  _
-		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
-		Public Sub OnDeserializing(ByVal context As StreamingContext)
-			Me.Initialize
-		End Sub
-	End Class
-	
-	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWApuntesDiario"),  _
-	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
-	Partial Public Class VWApuntesDiario
-		Inherits Data.Entity.LinqEntityBase
-		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-		
-		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-		
-		Private _idApunte As Long
-		
-		Private _idDiario As Long
-		
-		Private _Concepto As String
-		
-		Private _Importe As Single
-		
-		Private _Apertura As Date
-		
-		Private _Cierre As System.Nullable(Of Date)
-		
-		Private _idPuesto As Long
-		
-		Private _idUsuario As System.Nullable(Of Long)
-		
-		Private _Nombre As String
-		
-		Private _Puesto As String
-		
-		Private _FApunte As Date
-		
-    #Region "Definiciones de métodos de extensibilidad"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidApunteChanging(value As Long)
-    End Sub
-    Partial Private Sub OnidApunteChanged()
-    End Sub
-    Partial Private Sub OnidDiarioChanging(value As Long)
-    End Sub
-    Partial Private Sub OnidDiarioChanged()
-    End Sub
-    Partial Private Sub OnConceptoChanging(value As String)
-    End Sub
-    Partial Private Sub OnConceptoChanged()
-    End Sub
-    Partial Private Sub OnImporteChanging(value As Single)
-    End Sub
-    Partial Private Sub OnImporteChanged()
-    End Sub
-    Partial Private Sub OnAperturaChanging(value As Date)
-    End Sub
-    Partial Private Sub OnAperturaChanged()
-    End Sub
-    Partial Private Sub OnCierreChanging(value As System.Nullable(Of Date))
-    End Sub
-    Partial Private Sub OnCierreChanged()
-    End Sub
-    Partial Private Sub OnidPuestoChanging(value As Long)
-    End Sub
-    Partial Private Sub OnidPuestoChanged()
-    End Sub
-    Partial Private Sub OnidUsuarioChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidUsuarioChanged()
-    End Sub
-    Partial Private Sub OnNombreChanging(value As String)
-    End Sub
-    Partial Private Sub OnNombreChanged()
-    End Sub
-    Partial Private Sub OnPuestoChanging(value As String)
-    End Sub
-    Partial Private Sub OnPuestoChanged()
-    End Sub
-    Partial Private Sub OnFApunteChanging(value As Date)
-    End Sub
-    Partial Private Sub OnFApunteChanged()
-    End Sub
-    #End Region
-		
-		Public Sub New()
-			MyBase.New
-			Me.Initialize
-		End Sub
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idApunte", DbType:="BigInt NOT NULL", IsPrimaryKey:=true, UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
-		Public Property idApunte() As Long
-			Get
-				Return Me._idApunte
-			End Get
-			Set
-				If ((Me._idApunte = value)  _
-							= false) Then
-					Me.OnidApunteChanging(value)
-					Me.SendPropertyChanging
-					Me._idApunte = value
-					Me.SendPropertyChanged("idApunte")
-					Me.OnidApunteChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idDiario", DbType:="BigInt NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=2)>  _
-		Public Property idDiario() As Long
-			Get
-				Return Me._idDiario
-			End Get
-			Set
-				If ((Me._idDiario = value)  _
-							= false) Then
-					Me.OnidDiarioChanging(value)
-					Me.SendPropertyChanging
-					Me._idDiario = value
-					Me.SendPropertyChanged("idDiario")
-					Me.OnidDiarioChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Concepto", DbType:="NVarChar(200) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=3)>  _
-		Public Property Concepto() As String
-			Get
-				Return Me._Concepto
-			End Get
-			Set
-				If (String.Equals(Me._Concepto, value) = false) Then
-					Me.OnConceptoChanging(value)
-					Me.SendPropertyChanging
-					Me._Concepto = value
-					Me.SendPropertyChanged("Concepto")
-					Me.OnConceptoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Importe", DbType:="Real NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=4)>  _
-		Public Property Importe() As Single
-			Get
-				Return Me._Importe
-			End Get
-			Set
-				If ((Me._Importe = value)  _
-							= false) Then
-					Me.OnImporteChanging(value)
-					Me.SendPropertyChanging
-					Me._Importe = value
-					Me.SendPropertyChanged("Importe")
-					Me.OnImporteChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Apertura", DbType:="DateTime NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=5)>  _
-		Public Property Apertura() As Date
-			Get
-				Return Me._Apertura
-			End Get
-			Set
-				If ((Me._Apertura = value)  _
-							= false) Then
-					Me.OnAperturaChanging(value)
-					Me.SendPropertyChanging
-					Me._Apertura = value
-					Me.SendPropertyChanged("Apertura")
-					Me.OnAperturaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Cierre", DbType:="DateTime", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=6)>  _
-		Public Property Cierre() As System.Nullable(Of Date)
-			Get
-				Return Me._Cierre
-			End Get
-			Set
-				If (Me._Cierre.Equals(value) = false) Then
-					Me.OnCierreChanging(value)
-					Me.SendPropertyChanging
-					Me._Cierre = value
-					Me.SendPropertyChanged("Cierre")
-					Me.OnCierreChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPuesto", DbType:="BigInt NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=7)>  _
-		Public Property idPuesto() As Long
-			Get
-				Return Me._idPuesto
-			End Get
-			Set
-				If ((Me._idPuesto = value)  _
-							= false) Then
-					Me.OnidPuestoChanging(value)
-					Me.SendPropertyChanging
-					Me._idPuesto = value
-					Me.SendPropertyChanged("idPuesto")
-					Me.OnidPuestoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUsuario", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=8)>  _
-		Public Property idUsuario() As System.Nullable(Of Long)
-			Get
-				Return Me._idUsuario
-			End Get
-			Set
-				If (Me._idUsuario.Equals(value) = false) Then
-					Me.OnidUsuarioChanging(value)
-					Me.SendPropertyChanging
-					Me._idUsuario = value
-					Me.SendPropertyChanged("idUsuario")
-					Me.OnidUsuarioChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Nombre", DbType:="NVarChar(100)", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=9)>  _
-		Public Property Nombre() As String
-			Get
-				Return Me._Nombre
-			End Get
-			Set
-				If (String.Equals(Me._Nombre, value) = false) Then
-					Me.OnNombreChanging(value)
-					Me.SendPropertyChanging
-					Me._Nombre = value
-					Me.SendPropertyChanged("Nombre")
-					Me.OnNombreChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Puesto", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=10)>  _
-		Public Property Puesto() As String
-			Get
-				Return Me._Puesto
-			End Get
-			Set
-				If (String.Equals(Me._Puesto, value) = false) Then
-					Me.OnPuestoChanging(value)
-					Me.SendPropertyChanging
-					Me._Puesto = value
-					Me.SendPropertyChanged("Puesto")
-					Me.OnPuestoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FApunte", DbType:="DateTime NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=11)>  _
-		Public Property FApunte() As Date
-			Get
-				Return Me._FApunte
-			End Get
-			Set
-				If ((Me._FApunte = value)  _
-							= false) Then
-					Me.OnFApunteChanging(value)
-					Me.SendPropertyChanging
-					Me._FApunte = value
-					Me.SendPropertyChanged("FApunte")
-					Me.OnFApunteChanged
-				End If
-			End Set
-		End Property
-		
-		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-		
-		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-		
-		Protected Overridable Sub SendPropertyChanging()
-			If ((Me.PropertyChangingEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-			End If
-		End Sub
-		
-		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-			If ((Me.PropertyChangedEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-			End If
-		End Sub
-		
-		Private Sub Initialize()
-			OnCreated
-		End Sub
-		
-		<Global.System.Runtime.Serialization.OnDeserializingAttribute(),  _
-		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
-		Public Sub OnDeserializing(ByVal context As StreamingContext)
-			Me.Initialize
-		End Sub
-	End Class
-	
-	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.ApuntesDiario"),  _
-	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
-	Partial Public Class ApuntesDiario
-		Inherits Data.Entity.LinqEntityBase
-		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-		
-		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-		
-		Private _idApunte As Long
-		
-		Private _idDiario As Long
-		
-		Private _Concepto As String
-		
-		Private _Importe As Single
-		
-		Private _FApunte As Date
-		
-    #Region "Definiciones de métodos de extensibilidad"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidApunteChanging(value As Long)
-    End Sub
-    Partial Private Sub OnidApunteChanged()
-    End Sub
-    Partial Private Sub OnidDiarioChanging(value As Long)
-    End Sub
-    Partial Private Sub OnidDiarioChanged()
-    End Sub
-    Partial Private Sub OnConceptoChanging(value As String)
-    End Sub
-    Partial Private Sub OnConceptoChanged()
-    End Sub
-    Partial Private Sub OnImporteChanging(value As Single)
-    End Sub
-    Partial Private Sub OnImporteChanged()
-    End Sub
-    Partial Private Sub OnFApunteChanging(value As Date)
-    End Sub
-    Partial Private Sub OnFApunteChanged()
-    End Sub
-    #End Region
-		
-		Public Sub New()
-			MyBase.New
-			Me.Initialize
-		End Sub
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idApunte", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
-		Public Property idApunte() As Long
-			Get
-				Return Me._idApunte
-			End Get
-			Set
-				If ((Me._idApunte = value)  _
-							= false) Then
-					Me.OnidApunteChanging(value)
-					Me.SendPropertyChanging
-					Me._idApunte = value
-					Me.SendPropertyChanged("idApunte")
-					Me.OnidApunteChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idDiario", DbType:="BigInt NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=2)>  _
-		Public Property idDiario() As Long
-			Get
-				Return Me._idDiario
-			End Get
-			Set
-				If ((Me._idDiario = value)  _
-							= false) Then
-					Me.OnidDiarioChanging(value)
-					Me.SendPropertyChanging
-					Me._idDiario = value
-					Me.SendPropertyChanged("idDiario")
-					Me.OnidDiarioChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Concepto", DbType:="NVarChar(200) NOT NULL", CanBeNull:=false),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=3)>  _
-		Public Property Concepto() As String
-			Get
-				Return Me._Concepto
-			End Get
-			Set
-				If (String.Equals(Me._Concepto, value) = false) Then
-					Me.OnConceptoChanging(value)
-					Me.SendPropertyChanging
-					Me._Concepto = value
-					Me.SendPropertyChanged("Concepto")
-					Me.OnConceptoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Importe", DbType:="Real NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=4)>  _
-		Public Property Importe() As Single
-			Get
-				Return Me._Importe
-			End Get
-			Set
-				If ((Me._Importe = value)  _
-							= false) Then
-					Me.OnImporteChanging(value)
-					Me.SendPropertyChanging
-					Me._Importe = value
-					Me.SendPropertyChanged("Importe")
-					Me.OnImporteChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FApunte", DbType:="DateTime NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=5)>  _
-		Public Property FApunte() As Date
-			Get
-				Return Me._FApunte
-			End Get
-			Set
-				If ((Me._FApunte = value)  _
-							= false) Then
-					Me.OnFApunteChanging(value)
-					Me.SendPropertyChanging
-					Me._FApunte = value
-					Me.SendPropertyChanged("FApunte")
-					Me.OnFApunteChanged
 				End If
 			End Set
 		End Property
@@ -17267,6 +15238,8 @@ Namespace Data.Entity
 		
 		Private _PrecioFinal As Single
 		
+		Private _Productos As EntityRef(Of Productos)
+		
     #Region "Definiciones de métodos de extensibilidad"
     Partial Private Sub OnLoaded()
     End Sub
@@ -17328,6 +15301,9 @@ Namespace Data.Entity
 			Set
 				If ((Me._idProducto = value)  _
 							= false) Then
+					If Me._Productos.HasLoadedOrAssignedValue Then
+						Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+					End If
 					Me.OnidProductoChanging(value)
 					Me.SendPropertyChanging
 					Me._idProducto = value
@@ -17390,6 +15366,34 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Productos_RevolucionPreciosCompra", Storage:="_Productos", ThisKey:="idProducto", OtherKey:="idProducto", IsForeignKey:=true, DeleteOnNull:=true, DeleteRule:="CASCADE")>  _
+		Public Property Productos() As Productos
+			Get
+				Return Me._Productos.Entity
+			End Get
+			Set
+				Dim previousValue As Productos = Me._Productos.Entity
+				If ((Object.Equals(previousValue, value) = false)  _
+							OrElse (Me._Productos.HasLoadedOrAssignedValue = false)) Then
+					Me.SendPropertyChanging
+					If ((previousValue Is Nothing)  _
+								= false) Then
+						Me._Productos.Entity = Nothing
+						previousValue.RevolucionPreciosCompra.Remove(Me)
+					End If
+					Me._Productos.Entity = value
+					If ((value Is Nothing)  _
+								= false) Then
+						value.RevolucionPreciosCompra.Add(Me)
+						Me._idProducto = value.idProducto
+					Else
+						Me._idProducto = CType(Nothing, Long)
+					End If
+					Me.SendPropertyChanged("Productos")
+				End If
+			End Set
+		End Property
+		
 		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
 		
 		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
@@ -17409,6 +15413,7 @@ Namespace Data.Entity
 		End Sub
 		
 		Private Sub Initialize()
+			Me._Productos = CType(Nothing, EntityRef(Of Productos))
 			OnCreated
 		End Sub
 		
@@ -18538,6 +16543,8 @@ Namespace Data.Entity
 		
 		Private _Facturas As EntityRef(Of Facturas)
 		
+		Private _Productos As EntityRef(Of Productos)
+		
     #Region "Definiciones de métodos de extensibilidad"
     Partial Private Sub OnLoaded()
     End Sub
@@ -18643,6 +16650,9 @@ Namespace Data.Entity
 			End Get
 			Set
 				If (Me._idProducto.Equals(value) = false) Then
+					If Me._Productos.HasLoadedOrAssignedValue Then
+						Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+					End If
 					Me.OnidProductoChanging(value)
 					Me.SendPropertyChanging
 					Me._idProducto = value
@@ -18820,6 +16830,34 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Productos_LineasFactura", Storage:="_Productos", ThisKey:="idProducto", OtherKey:="idProducto", IsForeignKey:=true, DeleteRule:="SET NULL")>  _
+		Public Property Productos() As Productos
+			Get
+				Return Me._Productos.Entity
+			End Get
+			Set
+				Dim previousValue As Productos = Me._Productos.Entity
+				If ((Object.Equals(previousValue, value) = false)  _
+							OrElse (Me._Productos.HasLoadedOrAssignedValue = false)) Then
+					Me.SendPropertyChanging
+					If ((previousValue Is Nothing)  _
+								= false) Then
+						Me._Productos.Entity = Nothing
+						previousValue.LineasFactura.Remove(Me)
+					End If
+					Me._Productos.Entity = value
+					If ((value Is Nothing)  _
+								= false) Then
+						value.LineasFactura.Add(Me)
+						Me._idProducto = value.idProducto
+					Else
+						Me._idProducto = CType(Nothing, Nullable(Of Long))
+					End If
+					Me.SendPropertyChanged("Productos")
+				End If
+			End Set
+		End Property
+		
 		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
 		
 		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
@@ -18840,6 +16878,7 @@ Namespace Data.Entity
 		
 		Private Sub Initialize()
 			Me._Facturas = CType(Nothing, EntityRef(Of Facturas))
+			Me._Productos = CType(Nothing, EntityRef(Of Productos))
 			OnCreated
 		End Sub
 		
@@ -18909,9 +16948,9 @@ Namespace Data.Entity
     End Sub
     Partial Private Sub OnDescripcionProductoChanged()
     End Sub
-    Partial Private Sub OnPrecioNetoChanging(value As Single)
+    Partial Private Sub OnPrecioChanging(value As Single)
     End Sub
-    Partial Private Sub OnPrecioNetoChanged()
+    Partial Private Sub OnPrecioChanged()
     End Sub
     Partial Private Sub OnCantidadChanging(value As Single)
     End Sub
@@ -19030,20 +17069,20 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Name:="Precio", Storage:="_Precio", DbType:="Real NOT NULL"),  _
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Precio", DbType:="Real NOT NULL"),  _
 		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=6)>  _
-		Public Property PrecioNeto() As Single
+		Public Property Precio() As Single
 			Get
 				Return Me._Precio
 			End Get
 			Set
 				If ((Me._Precio = value)  _
 							= false) Then
-					Me.OnPrecioNetoChanging(value)
+					Me.OnPrecioChanging(value)
 					Me.SendPropertyChanging
 					Me._Precio = value
-					Me.SendPropertyChanged("PrecioNeto")
-					Me.OnPrecioNetoChanged
+					Me.SendPropertyChanged("Precio")
+					Me.OnPrecioChanged
 				End If
 			End Set
 		End Property
@@ -19224,6 +17263,8 @@ Namespace Data.Entity
 		
 		Private _Pedidos As EntityRef(Of Pedidos)
 		
+		Private _Productos As EntityRef(Of Productos)
+		
     #Region "Definiciones de métodos de extensibilidad"
     Partial Private Sub OnLoaded()
     End Sub
@@ -19325,6 +17366,9 @@ Namespace Data.Entity
 			End Get
 			Set
 				If (Me._idProducto.Equals(value) = false) Then
+					If Me._Productos.HasLoadedOrAssignedValue Then
+						Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+					End If
 					Me.OnidProductoChanging(value)
 					Me.SendPropertyChanging
 					Me._idProducto = value
@@ -19485,6 +17529,34 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Productos_LineasPedido", Storage:="_Productos", ThisKey:="idProducto", OtherKey:="idProducto", IsForeignKey:=true)>  _
+		Public Property Productos() As Productos
+			Get
+				Return Me._Productos.Entity
+			End Get
+			Set
+				Dim previousValue As Productos = Me._Productos.Entity
+				If ((Object.Equals(previousValue, value) = false)  _
+							OrElse (Me._Productos.HasLoadedOrAssignedValue = false)) Then
+					Me.SendPropertyChanging
+					If ((previousValue Is Nothing)  _
+								= false) Then
+						Me._Productos.Entity = Nothing
+						previousValue.LineasPedido.Remove(Me)
+					End If
+					Me._Productos.Entity = value
+					If ((value Is Nothing)  _
+								= false) Then
+						value.LineasPedido.Add(Me)
+						Me._idProducto = value.idProducto
+					Else
+						Me._idProducto = CType(Nothing, Nullable(Of Long))
+					End If
+					Me.SendPropertyChanged("Productos")
+				End If
+			End Set
+		End Property
+		
 		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
 		
 		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
@@ -19505,666 +17577,7 @@ Namespace Data.Entity
 		
 		Private Sub Initialize()
 			Me._Pedidos = CType(Nothing, EntityRef(Of Pedidos))
-			OnCreated
-		End Sub
-		
-		<Global.System.Runtime.Serialization.OnDeserializingAttribute(),  _
-		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
-		Public Sub OnDeserializing(ByVal context As StreamingContext)
-			Me.Initialize
-		End Sub
-	End Class
-	
-	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Productos"),  _
-	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
-	Partial Public Class Productos
-		Inherits Data.Entity.LinqEntityBase
-		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-		
-		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-		
-		Private _idProducto As Long
-		
-		Private _idUnidadMedida As System.Nullable(Of Long)
-		
-		Private _idFamilia As System.Nullable(Of Long)
-		
-		Private _idMarca As System.Nullable(Of Long)
-		
-		Private _idUbicacion As System.Nullable(Of Long)
-		
-		Private _idOferta As System.Nullable(Of Long)
-		
-		Private _idImpuesto As System.Nullable(Of Short)
-		
-		Private _Referencia As String
-		
-		Private _Descripcion As String
-		
-		Private _DescripcionLarga As String
-		
-		Private _Coste As Single
-		
-		Private _PrecioVenta As Single
-		
-		Private _Descuento As System.Nullable(Of Single)
-		
-		Private _UnidadXCaja As System.Nullable(Of Single)
-		
-		Private _StockSuelto As System.Nullable(Of Single)
-		
-		Private _StockCaja As System.Nullable(Of Single)
-		
-		Private _UnidadVenta As Single
-		
-		Private _ControlStock As Boolean
-		
-		Private _PrecioVariable As Boolean
-		
-		Private _Observacion As String
-		
-		Private _FCreacion As Date
-		
-		Private _FModificacion As System.Nullable(Of Date)
-		
-		Private _Activo As Boolean
-		
-		Private _PrecioImpInc As Boolean
-		
-		Private _Fidelizable As Boolean
-		
-		Private _PorcentajeFacturacion As Double
-		
-    #Region "Definiciones de métodos de extensibilidad"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnidProductoChanging(value As Long)
-    End Sub
-    Partial Private Sub OnidProductoChanged()
-    End Sub
-    Partial Private Sub OnidUnidadMedidaChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidUnidadMedidaChanged()
-    End Sub
-    Partial Private Sub OnidFamiliaChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidFamiliaChanged()
-    End Sub
-    Partial Private Sub OnidMarcaChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidMarcaChanged()
-    End Sub
-    Partial Private Sub OnidUbicacionChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidUbicacionChanged()
-    End Sub
-    Partial Private Sub OnidOfertaChanging(value As System.Nullable(Of Long))
-    End Sub
-    Partial Private Sub OnidOfertaChanged()
-    End Sub
-    Partial Private Sub OnidImpuestoChanging(value As System.Nullable(Of Short))
-    End Sub
-    Partial Private Sub OnidImpuestoChanged()
-    End Sub
-    Partial Private Sub OnReferenciaChanging(value As String)
-    End Sub
-    Partial Private Sub OnReferenciaChanged()
-    End Sub
-    Partial Private Sub OnDescripcionChanging(value As String)
-    End Sub
-    Partial Private Sub OnDescripcionChanged()
-    End Sub
-    Partial Private Sub OnDescripcionLargaChanging(value As String)
-    End Sub
-    Partial Private Sub OnDescripcionLargaChanged()
-    End Sub
-    Partial Private Sub OnCosteChanging(value As Single)
-    End Sub
-    Partial Private Sub OnCosteChanged()
-    End Sub
-    Partial Private Sub OnPrecioVentaChanging(value As Single)
-    End Sub
-    Partial Private Sub OnPrecioVentaChanged()
-    End Sub
-    Partial Private Sub OnDescuentoChanging(value As System.Nullable(Of Single))
-    End Sub
-    Partial Private Sub OnDescuentoChanged()
-    End Sub
-    Partial Private Sub OnUnidadXCajaChanging(value As System.Nullable(Of Single))
-    End Sub
-    Partial Private Sub OnUnidadXCajaChanged()
-    End Sub
-    Partial Private Sub OnStockSueltoChanging(value As System.Nullable(Of Single))
-    End Sub
-    Partial Private Sub OnStockSueltoChanged()
-    End Sub
-    Partial Private Sub OnStockCajaChanging(value As System.Nullable(Of Single))
-    End Sub
-    Partial Private Sub OnStockCajaChanged()
-    End Sub
-    Partial Private Sub OnUnidadVentaChanging(value As Single)
-    End Sub
-    Partial Private Sub OnUnidadVentaChanged()
-    End Sub
-    Partial Private Sub OnControlStockChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnControlStockChanged()
-    End Sub
-    Partial Private Sub OnPrecioVariableChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnPrecioVariableChanged()
-    End Sub
-    Partial Private Sub OnObservacionChanging(value As String)
-    End Sub
-    Partial Private Sub OnObservacionChanged()
-    End Sub
-    Partial Private Sub OnFCreacionChanging(value As Date)
-    End Sub
-    Partial Private Sub OnFCreacionChanged()
-    End Sub
-    Partial Private Sub OnFModificacionChanging(value As System.Nullable(Of Date))
-    End Sub
-    Partial Private Sub OnFModificacionChanged()
-    End Sub
-    Partial Private Sub OnActivoChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnActivoChanged()
-    End Sub
-    Partial Private Sub OnPrecioImpIncChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnPrecioImpIncChanged()
-    End Sub
-    Partial Private Sub OnFidelizableChanging(value As Boolean)
-    End Sub
-    Partial Private Sub OnFidelizableChanged()
-    End Sub
-    Partial Private Sub OnPorcentajeFacturacionChanging(value As Double)
-    End Sub
-    Partial Private Sub OnPorcentajeFacturacionChanged()
-    End Sub
-    #End Region
-		
-		Public Sub New()
-			MyBase.New
-			Me.Initialize
-		End Sub
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idProducto", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
-		Public Property idProducto() As Long
-			Get
-				Return Me._idProducto
-			End Get
-			Set
-				If ((Me._idProducto = value)  _
-							= false) Then
-					Me.OnidProductoChanging(value)
-					Me.SendPropertyChanging
-					Me._idProducto = value
-					Me.SendPropertyChanged("idProducto")
-					Me.OnidProductoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUnidadMedida", DbType:="BigInt"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=2)>  _
-		Public Property idUnidadMedida() As System.Nullable(Of Long)
-			Get
-				Return Me._idUnidadMedida
-			End Get
-			Set
-				If (Me._idUnidadMedida.Equals(value) = false) Then
-					Me.OnidUnidadMedidaChanging(value)
-					Me.SendPropertyChanging
-					Me._idUnidadMedida = value
-					Me.SendPropertyChanged("idUnidadMedida")
-					Me.OnidUnidadMedidaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idFamilia", DbType:="BigInt"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=3)>  _
-		Public Property idFamilia() As System.Nullable(Of Long)
-			Get
-				Return Me._idFamilia
-			End Get
-			Set
-				If (Me._idFamilia.Equals(value) = false) Then
-					Me.OnidFamiliaChanging(value)
-					Me.SendPropertyChanging
-					Me._idFamilia = value
-					Me.SendPropertyChanged("idFamilia")
-					Me.OnidFamiliaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idMarca", DbType:="BigInt"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=4)>  _
-		Public Property idMarca() As System.Nullable(Of Long)
-			Get
-				Return Me._idMarca
-			End Get
-			Set
-				If (Me._idMarca.Equals(value) = false) Then
-					Me.OnidMarcaChanging(value)
-					Me.SendPropertyChanging
-					Me._idMarca = value
-					Me.SendPropertyChanged("idMarca")
-					Me.OnidMarcaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUbicacion", DbType:="BigInt"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=5)>  _
-		Public Property idUbicacion() As System.Nullable(Of Long)
-			Get
-				Return Me._idUbicacion
-			End Get
-			Set
-				If (Me._idUbicacion.Equals(value) = false) Then
-					Me.OnidUbicacionChanging(value)
-					Me.SendPropertyChanging
-					Me._idUbicacion = value
-					Me.SendPropertyChanged("idUbicacion")
-					Me.OnidUbicacionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idOferta", DbType:="BigInt"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=6)>  _
-		Public Property idOferta() As System.Nullable(Of Long)
-			Get
-				Return Me._idOferta
-			End Get
-			Set
-				If (Me._idOferta.Equals(value) = false) Then
-					Me.OnidOfertaChanging(value)
-					Me.SendPropertyChanging
-					Me._idOferta = value
-					Me.SendPropertyChanged("idOferta")
-					Me.OnidOfertaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idImpuesto", DbType:="SmallInt"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=7)>  _
-		Public Property idImpuesto() As System.Nullable(Of Short)
-			Get
-				Return Me._idImpuesto
-			End Get
-			Set
-				If (Me._idImpuesto.Equals(value) = false) Then
-					Me.OnidImpuestoChanging(value)
-					Me.SendPropertyChanging
-					Me._idImpuesto = value
-					Me.SendPropertyChanged("idImpuesto")
-					Me.OnidImpuestoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Referencia", DbType:="VarChar(50) NOT NULL", CanBeNull:=false),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=8)>  _
-		Public Property Referencia() As String
-			Get
-				Return Me._Referencia
-			End Get
-			Set
-				If (String.Equals(Me._Referencia, value) = false) Then
-					Me.OnReferenciaChanging(value)
-					Me.SendPropertyChanging
-					Me._Referencia = value
-					Me.SendPropertyChanged("Referencia")
-					Me.OnReferenciaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Descripcion", DbType:="NVarChar(200) NOT NULL", CanBeNull:=false),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=9)>  _
-		Public Property Descripcion() As String
-			Get
-				Return Me._Descripcion
-			End Get
-			Set
-				If (String.Equals(Me._Descripcion, value) = false) Then
-					Me.OnDescripcionChanging(value)
-					Me.SendPropertyChanging
-					Me._Descripcion = value
-					Me.SendPropertyChanged("Descripcion")
-					Me.OnDescripcionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DescripcionLarga", DbType:="NVarChar(1000)"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=10)>  _
-		Public Property DescripcionLarga() As String
-			Get
-				Return Me._DescripcionLarga
-			End Get
-			Set
-				If (String.Equals(Me._DescripcionLarga, value) = false) Then
-					Me.OnDescripcionLargaChanging(value)
-					Me.SendPropertyChanging
-					Me._DescripcionLarga = value
-					Me.SendPropertyChanged("DescripcionLarga")
-					Me.OnDescripcionLargaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Coste", DbType:="Real NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=11)>  _
-		Public Property Coste() As Single
-			Get
-				Return Me._Coste
-			End Get
-			Set
-				If ((Me._Coste = value)  _
-							= false) Then
-					Me.OnCosteChanging(value)
-					Me.SendPropertyChanging
-					Me._Coste = value
-					Me.SendPropertyChanged("Coste")
-					Me.OnCosteChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioVenta", DbType:="Real NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=12)>  _
-		Public Property PrecioVenta() As Single
-			Get
-				Return Me._PrecioVenta
-			End Get
-			Set
-				If ((Me._PrecioVenta = value)  _
-							= false) Then
-					Me.OnPrecioVentaChanging(value)
-					Me.SendPropertyChanging
-					Me._PrecioVenta = value
-					Me.SendPropertyChanged("PrecioVenta")
-					Me.OnPrecioVentaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Descuento", DbType:="Real"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=13)>  _
-		Public Property Descuento() As System.Nullable(Of Single)
-			Get
-				Return Me._Descuento
-			End Get
-			Set
-				If (Me._Descuento.Equals(value) = false) Then
-					Me.OnDescuentoChanging(value)
-					Me.SendPropertyChanging
-					Me._Descuento = value
-					Me.SendPropertyChanged("Descuento")
-					Me.OnDescuentoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UnidadXCaja", DbType:="Real"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=14)>  _
-		Public Property UnidadXCaja() As System.Nullable(Of Single)
-			Get
-				Return Me._UnidadXCaja
-			End Get
-			Set
-				If (Me._UnidadXCaja.Equals(value) = false) Then
-					Me.OnUnidadXCajaChanging(value)
-					Me.SendPropertyChanging
-					Me._UnidadXCaja = value
-					Me.SendPropertyChanged("UnidadXCaja")
-					Me.OnUnidadXCajaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_StockSuelto", DbType:="Real"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=15)>  _
-		Public Property StockSuelto() As System.Nullable(Of Single)
-			Get
-				Return Me._StockSuelto
-			End Get
-			Set
-				If (Me._StockSuelto.Equals(value) = false) Then
-					Me.OnStockSueltoChanging(value)
-					Me.SendPropertyChanging
-					Me._StockSuelto = value
-					Me.SendPropertyChanged("StockSuelto")
-					Me.OnStockSueltoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_StockCaja", DbType:="Real"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=16)>  _
-		Public Property StockCaja() As System.Nullable(Of Single)
-			Get
-				Return Me._StockCaja
-			End Get
-			Set
-				If (Me._StockCaja.Equals(value) = false) Then
-					Me.OnStockCajaChanging(value)
-					Me.SendPropertyChanging
-					Me._StockCaja = value
-					Me.SendPropertyChanged("StockCaja")
-					Me.OnStockCajaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UnidadVenta", DbType:="Real NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=17)>  _
-		Public Property UnidadVenta() As Single
-			Get
-				Return Me._UnidadVenta
-			End Get
-			Set
-				If ((Me._UnidadVenta = value)  _
-							= false) Then
-					Me.OnUnidadVentaChanging(value)
-					Me.SendPropertyChanging
-					Me._UnidadVenta = value
-					Me.SendPropertyChanged("UnidadVenta")
-					Me.OnUnidadVentaChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ControlStock", DbType:="Bit NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=18)>  _
-		Public Property ControlStock() As Boolean
-			Get
-				Return Me._ControlStock
-			End Get
-			Set
-				If ((Me._ControlStock = value)  _
-							= false) Then
-					Me.OnControlStockChanging(value)
-					Me.SendPropertyChanging
-					Me._ControlStock = value
-					Me.SendPropertyChanged("ControlStock")
-					Me.OnControlStockChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioVariable", DbType:="Bit NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=19)>  _
-		Public Property PrecioVariable() As Boolean
-			Get
-				Return Me._PrecioVariable
-			End Get
-			Set
-				If ((Me._PrecioVariable = value)  _
-							= false) Then
-					Me.OnPrecioVariableChanging(value)
-					Me.SendPropertyChanging
-					Me._PrecioVariable = value
-					Me.SendPropertyChanged("PrecioVariable")
-					Me.OnPrecioVariableChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Observacion", DbType:="NVarChar(1000)"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=20)>  _
-		Public Property Observacion() As String
-			Get
-				Return Me._Observacion
-			End Get
-			Set
-				If (String.Equals(Me._Observacion, value) = false) Then
-					Me.OnObservacionChanging(value)
-					Me.SendPropertyChanging
-					Me._Observacion = value
-					Me.SendPropertyChanged("Observacion")
-					Me.OnObservacionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FCreacion", DbType:="SmallDateTime NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=21)>  _
-		Public Property FCreacion() As Date
-			Get
-				Return Me._FCreacion
-			End Get
-			Set
-				If ((Me._FCreacion = value)  _
-							= false) Then
-					Me.OnFCreacionChanging(value)
-					Me.SendPropertyChanging
-					Me._FCreacion = value
-					Me.SendPropertyChanged("FCreacion")
-					Me.OnFCreacionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FModificacion", DbType:="SmallDateTime"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=22)>  _
-		Public Property FModificacion() As System.Nullable(Of Date)
-			Get
-				Return Me._FModificacion
-			End Get
-			Set
-				If (Me._FModificacion.Equals(value) = false) Then
-					Me.OnFModificacionChanging(value)
-					Me.SendPropertyChanging
-					Me._FModificacion = value
-					Me.SendPropertyChanged("FModificacion")
-					Me.OnFModificacionChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Activo", DbType:="Bit NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=23)>  _
-		Public Property Activo() As Boolean
-			Get
-				Return Me._Activo
-			End Get
-			Set
-				If ((Me._Activo = value)  _
-							= false) Then
-					Me.OnActivoChanging(value)
-					Me.SendPropertyChanging
-					Me._Activo = value
-					Me.SendPropertyChanged("Activo")
-					Me.OnActivoChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioImpInc", DbType:="Bit NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=24)>  _
-		Public Property PrecioImpInc() As Boolean
-			Get
-				Return Me._PrecioImpInc
-			End Get
-			Set
-				If ((Me._PrecioImpInc = value)  _
-							= false) Then
-					Me.OnPrecioImpIncChanging(value)
-					Me.SendPropertyChanging
-					Me._PrecioImpInc = value
-					Me.SendPropertyChanged("PrecioImpInc")
-					Me.OnPrecioImpIncChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Fidelizable", DbType:="Bit NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=25)>  _
-		Public Property Fidelizable() As Boolean
-			Get
-				Return Me._Fidelizable
-			End Get
-			Set
-				If ((Me._Fidelizable = value)  _
-							= false) Then
-					Me.OnFidelizableChanging(value)
-					Me.SendPropertyChanging
-					Me._Fidelizable = value
-					Me.SendPropertyChanged("Fidelizable")
-					Me.OnFidelizableChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PorcentajeFacturacion", DbType:="Float NOT NULL"),  _
-		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=26)>  _
-		Public Property PorcentajeFacturacion() As Double
-			Get
-				Return Me._PorcentajeFacturacion
-			End Get
-			Set
-				If ((Me._PorcentajeFacturacion = value)  _
-							= false) Then
-					Me.OnPorcentajeFacturacionChanging(value)
-					Me.SendPropertyChanging
-					Me._PorcentajeFacturacion = value
-					Me.SendPropertyChanged("PorcentajeFacturacion")
-					Me.OnPorcentajeFacturacionChanged
-				End If
-			End Set
-		End Property
-		
-		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-		
-		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-		
-		Protected Overridable Sub SendPropertyChanging()
-			If ((Me.PropertyChangingEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-			End If
-		End Sub
-		
-		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-			If ((Me.PropertyChangedEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-			End If
-		End Sub
-		
-		Private Sub Initialize()
+			Me._Productos = CType(Nothing, EntityRef(Of Productos))
 			OnCreated
 		End Sub
 		
@@ -20204,6 +17617,8 @@ Namespace Data.Entity
 		Private _ImpIndIncluido As Boolean
 		
 		Private _LineasPedido As EntitySet(Of LineasPedido)
+		
+		Private _MediosPagosAlbaranPedido As EntitySet(Of MediosPagosAlbaranPedido)
 		
 		Private serializing As Boolean
 		
@@ -20453,6 +17868,21 @@ Namespace Data.Entity
 			End Set
 		End Property
 		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Pedidos_MediosPagosAlbaranPedido", Storage:="_MediosPagosAlbaranPedido", ThisKey:="idPedido", OtherKey:="idPedido"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=12, EmitDefaultValue:=false)>  _
+		Public Property MediosPagosAlbaranPedido() As EntitySet(Of MediosPagosAlbaranPedido)
+			Get
+				If (Me.serializing  _
+							AndAlso (Me._MediosPagosAlbaranPedido.HasLoadedOrAssignedValues = false)) Then
+					Return Nothing
+				End If
+				Return Me._MediosPagosAlbaranPedido
+			End Get
+			Set
+				Me._MediosPagosAlbaranPedido.Assign(value)
+			End Set
+		End Property
+		
 		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
 		
 		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
@@ -20481,8 +17911,19 @@ Namespace Data.Entity
 			entity.Pedidos = Nothing
 		End Sub
 		
+		Private Sub attach_MediosPagosAlbaranPedido(ByVal entity As MediosPagosAlbaranPedido)
+			Me.SendPropertyChanging
+			entity.Pedidos = Me
+		End Sub
+		
+		Private Sub detach_MediosPagosAlbaranPedido(ByVal entity As MediosPagosAlbaranPedido)
+			Me.SendPropertyChanging
+			entity.Pedidos = Nothing
+		End Sub
+		
 		Private Sub Initialize()
 			Me._LineasPedido = New EntitySet(Of LineasPedido)(AddressOf Me.attach_LineasPedido, AddressOf Me.detach_LineasPedido)
+			Me._MediosPagosAlbaranPedido = New EntitySet(Of MediosPagosAlbaranPedido)(AddressOf Me.attach_MediosPagosAlbaranPedido, AddressOf Me.detach_MediosPagosAlbaranPedido)
 			OnCreated
 		End Sub
 		
@@ -20627,7 +18068,7 @@ Namespace Data.Entity
 		End Property
 		
 		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Empresas_Configuraciones", Storage:="_Empresas", ThisKey:="idEmpresa", OtherKey:="idEmpresa", IsForeignKey:=true)>  _
-		Public Property Empresa() As Empresas
+		Public Property Empresas() As Empresas
 			Get
 				Return Me._Empresas.Entity
 			End Get
@@ -20649,7 +18090,7 @@ Namespace Data.Entity
 					Else
 						Me._idEmpresa = CType(Nothing, Long)
 					End If
-					Me.SendPropertyChanged("Empresa")
+					Me.SendPropertyChanged("Empresas")
 				End If
 			End Set
 		End Property
@@ -21567,6 +19008,3415 @@ Namespace Data.Entity
 					Me._EsCajaCentral = value
 					Me.SendPropertyChanged("EsCajaCentral")
 					Me.OnEsCajaCentralChanged
+				End If
+			End Set
+		End Property
+		
+		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+		
+		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+		
+		Protected Overridable Sub SendPropertyChanging()
+			If ((Me.PropertyChangingEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+			End If
+		End Sub
+		
+		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+			If ((Me.PropertyChangedEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+			End If
+		End Sub
+		
+		Private Sub Initialize()
+			OnCreated
+		End Sub
+		
+		<Global.System.Runtime.Serialization.OnDeserializingAttribute(),  _
+		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
+		Public Sub OnDeserializing(ByVal context As StreamingContext)
+			Me.Initialize
+		End Sub
+	End Class
+	
+	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.ApuntesDiario"),  _
+	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
+	Partial Public Class ApuntesDiario
+		Inherits Data.Entity.LinqEntityBase
+		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+		
+		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+		
+		Private _idApunte As Long
+		
+		Private _idDiario As Long
+		
+		Private _idModoPago As System.Nullable(Of Short)
+		
+		Private _Concepto As String
+		
+		Private _Importe As Single
+		
+		Private _FApunte As Date
+		
+		Private _Entrada As Boolean
+		
+    #Region "Definiciones de métodos de extensibilidad"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidApunteChanging(value As Long)
+    End Sub
+    Partial Private Sub OnidApunteChanged()
+    End Sub
+    Partial Private Sub OnidDiarioChanging(value As Long)
+    End Sub
+    Partial Private Sub OnidDiarioChanged()
+    End Sub
+    Partial Private Sub OnidModoPagoChanging(value As System.Nullable(Of Short))
+    End Sub
+    Partial Private Sub OnidModoPagoChanged()
+    End Sub
+    Partial Private Sub OnConceptoChanging(value As String)
+    End Sub
+    Partial Private Sub OnConceptoChanged()
+    End Sub
+    Partial Private Sub OnImporteChanging(value As Single)
+    End Sub
+    Partial Private Sub OnImporteChanged()
+    End Sub
+    Partial Private Sub OnFApunteChanging(value As Date)
+    End Sub
+    Partial Private Sub OnFApunteChanged()
+    End Sub
+    Partial Private Sub OnEntradaChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnEntradaChanged()
+    End Sub
+    #End Region
+		
+		Public Sub New()
+			MyBase.New
+			Me.Initialize
+		End Sub
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idApunte", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
+		Public Property idApunte() As Long
+			Get
+				Return Me._idApunte
+			End Get
+			Set
+				If ((Me._idApunte = value)  _
+							= false) Then
+					Me.OnidApunteChanging(value)
+					Me.SendPropertyChanging
+					Me._idApunte = value
+					Me.SendPropertyChanged("idApunte")
+					Me.OnidApunteChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idDiario", DbType:="BigInt NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=2)>  _
+		Public Property idDiario() As Long
+			Get
+				Return Me._idDiario
+			End Get
+			Set
+				If ((Me._idDiario = value)  _
+							= false) Then
+					Me.OnidDiarioChanging(value)
+					Me.SendPropertyChanging
+					Me._idDiario = value
+					Me.SendPropertyChanged("idDiario")
+					Me.OnidDiarioChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idModoPago", DbType:="SmallInt"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=3)>  _
+		Public Property idModoPago() As System.Nullable(Of Short)
+			Get
+				Return Me._idModoPago
+			End Get
+			Set
+				If (Me._idModoPago.Equals(value) = false) Then
+					Me.OnidModoPagoChanging(value)
+					Me.SendPropertyChanging
+					Me._idModoPago = value
+					Me.SendPropertyChanged("idModoPago")
+					Me.OnidModoPagoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Concepto", DbType:="NVarChar(200) NOT NULL", CanBeNull:=false),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=4)>  _
+		Public Property Concepto() As String
+			Get
+				Return Me._Concepto
+			End Get
+			Set
+				If (String.Equals(Me._Concepto, value) = false) Then
+					Me.OnConceptoChanging(value)
+					Me.SendPropertyChanging
+					Me._Concepto = value
+					Me.SendPropertyChanged("Concepto")
+					Me.OnConceptoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Importe", DbType:="Real NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=5)>  _
+		Public Property Importe() As Single
+			Get
+				Return Me._Importe
+			End Get
+			Set
+				If ((Me._Importe = value)  _
+							= false) Then
+					Me.OnImporteChanging(value)
+					Me.SendPropertyChanging
+					Me._Importe = value
+					Me.SendPropertyChanged("Importe")
+					Me.OnImporteChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FApunte", DbType:="DateTime NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=6)>  _
+		Public Property FApunte() As Date
+			Get
+				Return Me._FApunte
+			End Get
+			Set
+				If ((Me._FApunte = value)  _
+							= false) Then
+					Me.OnFApunteChanging(value)
+					Me.SendPropertyChanging
+					Me._FApunte = value
+					Me.SendPropertyChanged("FApunte")
+					Me.OnFApunteChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Entrada", DbType:="Bit NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=7)>  _
+		Public Property Entrada() As Boolean
+			Get
+				Return Me._Entrada
+			End Get
+			Set
+				If ((Me._Entrada = value)  _
+							= false) Then
+					Me.OnEntradaChanging(value)
+					Me.SendPropertyChanging
+					Me._Entrada = value
+					Me.SendPropertyChanged("Entrada")
+					Me.OnEntradaChanged
+				End If
+			End Set
+		End Property
+		
+		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+		
+		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+		
+		Protected Overridable Sub SendPropertyChanging()
+			If ((Me.PropertyChangingEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+			End If
+		End Sub
+		
+		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+			If ((Me.PropertyChangedEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+			End If
+		End Sub
+		
+		Private Sub Initialize()
+			OnCreated
+		End Sub
+		
+		<Global.System.Runtime.Serialization.OnDeserializingAttribute(),  _
+		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
+		Public Sub OnDeserializing(ByVal context As StreamingContext)
+			Me.Initialize
+		End Sub
+	End Class
+	
+	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.MediosPagosAlbaranPedido"),  _
+	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
+	Partial Public Class MediosPagosAlbaranPedido
+		Inherits Data.Entity.LinqEntityBase
+		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+		
+		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+		
+		Private _idMediospagos As Long
+		
+		Private _idAlbaran As System.Nullable(Of Long)
+		
+		Private _idPedido As System.Nullable(Of Long)
+		
+		Private _idModo As Short
+		
+		Private _Importe As Single
+		
+		Private _Albaranes As EntityRef(Of Albaranes)
+		
+		Private _Pedidos As EntityRef(Of Pedidos)
+		
+    #Region "Definiciones de métodos de extensibilidad"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidMediospagosChanging(value As Long)
+    End Sub
+    Partial Private Sub OnidMediospagosChanged()
+    End Sub
+    Partial Private Sub OnidAlbaranChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidAlbaranChanged()
+    End Sub
+    Partial Private Sub OnidPedidoChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidPedidoChanged()
+    End Sub
+    Partial Private Sub OnidModoChanging(value As Short)
+    End Sub
+    Partial Private Sub OnidModoChanged()
+    End Sub
+    Partial Private Sub OnImporteChanging(value As Single)
+    End Sub
+    Partial Private Sub OnImporteChanged()
+    End Sub
+    #End Region
+		
+		Public Sub New()
+			MyBase.New
+			Me.Initialize
+		End Sub
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idMediospagos", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
+		Public Property idMediospagos() As Long
+			Get
+				Return Me._idMediospagos
+			End Get
+			Set
+				If ((Me._idMediospagos = value)  _
+							= false) Then
+					Me.OnidMediospagosChanging(value)
+					Me.SendPropertyChanging
+					Me._idMediospagos = value
+					Me.SendPropertyChanged("idMediospagos")
+					Me.OnidMediospagosChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idAlbaran", DbType:="BigInt"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=2)>  _
+		Public Property idAlbaran() As System.Nullable(Of Long)
+			Get
+				Return Me._idAlbaran
+			End Get
+			Set
+				If (Me._idAlbaran.Equals(value) = false) Then
+					If Me._Albaranes.HasLoadedOrAssignedValue Then
+						Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+					End If
+					Me.OnidAlbaranChanging(value)
+					Me.SendPropertyChanging
+					Me._idAlbaran = value
+					Me.SendPropertyChanged("idAlbaran")
+					Me.OnidAlbaranChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPedido", DbType:="BigInt"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=3)>  _
+		Public Property idPedido() As System.Nullable(Of Long)
+			Get
+				Return Me._idPedido
+			End Get
+			Set
+				If (Me._idPedido.Equals(value) = false) Then
+					If Me._Pedidos.HasLoadedOrAssignedValue Then
+						Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+					End If
+					Me.OnidPedidoChanging(value)
+					Me.SendPropertyChanging
+					Me._idPedido = value
+					Me.SendPropertyChanged("idPedido")
+					Me.OnidPedidoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idModo", DbType:="SmallInt NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=4)>  _
+		Public Property idModo() As Short
+			Get
+				Return Me._idModo
+			End Get
+			Set
+				If ((Me._idModo = value)  _
+							= false) Then
+					Me.OnidModoChanging(value)
+					Me.SendPropertyChanging
+					Me._idModo = value
+					Me.SendPropertyChanged("idModo")
+					Me.OnidModoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Importe", DbType:="Real NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=5)>  _
+		Public Property Importe() As Single
+			Get
+				Return Me._Importe
+			End Get
+			Set
+				If ((Me._Importe = value)  _
+							= false) Then
+					Me.OnImporteChanging(value)
+					Me.SendPropertyChanging
+					Me._Importe = value
+					Me.SendPropertyChanged("Importe")
+					Me.OnImporteChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Albaranes_MediosPagosAlbaranPedido", Storage:="_Albaranes", ThisKey:="idAlbaran", OtherKey:="idAlbaran", IsForeignKey:=true, DeleteRule:="CASCADE")>  _
+		Public Property Albaranes() As Albaranes
+			Get
+				Return Me._Albaranes.Entity
+			End Get
+			Set
+				Dim previousValue As Albaranes = Me._Albaranes.Entity
+				If ((Object.Equals(previousValue, value) = false)  _
+							OrElse (Me._Albaranes.HasLoadedOrAssignedValue = false)) Then
+					Me.SendPropertyChanging
+					If ((previousValue Is Nothing)  _
+								= false) Then
+						Me._Albaranes.Entity = Nothing
+						previousValue.MediosPagosAlbaranPedido.Remove(Me)
+					End If
+					Me._Albaranes.Entity = value
+					If ((value Is Nothing)  _
+								= false) Then
+						value.MediosPagosAlbaranPedido.Add(Me)
+						Me._idAlbaran = value.idAlbaran
+					Else
+						Me._idAlbaran = CType(Nothing, Nullable(Of Long))
+					End If
+					Me.SendPropertyChanged("Albaranes")
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Pedidos_MediosPagosAlbaranPedido", Storage:="_Pedidos", ThisKey:="idPedido", OtherKey:="idPedido", IsForeignKey:=true, DeleteRule:="CASCADE")>  _
+		Public Property Pedidos() As Pedidos
+			Get
+				Return Me._Pedidos.Entity
+			End Get
+			Set
+				Dim previousValue As Pedidos = Me._Pedidos.Entity
+				If ((Object.Equals(previousValue, value) = false)  _
+							OrElse (Me._Pedidos.HasLoadedOrAssignedValue = false)) Then
+					Me.SendPropertyChanging
+					If ((previousValue Is Nothing)  _
+								= false) Then
+						Me._Pedidos.Entity = Nothing
+						previousValue.MediosPagosAlbaranPedido.Remove(Me)
+					End If
+					Me._Pedidos.Entity = value
+					If ((value Is Nothing)  _
+								= false) Then
+						value.MediosPagosAlbaranPedido.Add(Me)
+						Me._idPedido = value.idPedido
+					Else
+						Me._idPedido = CType(Nothing, Nullable(Of Long))
+					End If
+					Me.SendPropertyChanged("Pedidos")
+				End If
+			End Set
+		End Property
+		
+		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+		
+		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+		
+		Protected Overridable Sub SendPropertyChanging()
+			If ((Me.PropertyChangingEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+			End If
+		End Sub
+		
+		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+			If ((Me.PropertyChangedEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+			End If
+		End Sub
+		
+		Private Sub Initialize()
+			Me._Albaranes = CType(Nothing, EntityRef(Of Albaranes))
+			Me._Pedidos = CType(Nothing, EntityRef(Of Pedidos))
+			OnCreated
+		End Sub
+		
+		<Global.System.Runtime.Serialization.OnDeserializingAttribute(),  _
+		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
+		Public Sub OnDeserializing(ByVal context As StreamingContext)
+			Me.Initialize
+		End Sub
+	End Class
+	
+	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWApuntesDiario"),  _
+	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
+	Partial Public Class VWApuntesDiario
+		Inherits Data.Entity.LinqEntityBase
+		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+		
+		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+		
+		Private _idApunte As Long
+		
+		Private _idDiario As Long
+		
+		Private _Concepto As String
+		
+		Private _Importe As Single
+		
+		Private _Apertura As Date
+		
+		Private _Cierre As System.Nullable(Of Date)
+		
+		Private _idPuesto As Long
+		
+		Private _idUsuario As System.Nullable(Of Long)
+		
+		Private _Nombre As String
+		
+		Private _Puesto As String
+		
+		Private _FApunte As Date
+		
+		Private _Entrada As Boolean
+		
+		Private _idModoPago As System.Nullable(Of Short)
+		
+		Private _ModoPagoChn As String
+		
+		Private _ModoPagoEsp As String
+		
+    #Region "Definiciones de métodos de extensibilidad"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidApunteChanging(value As Long)
+    End Sub
+    Partial Private Sub OnidApunteChanged()
+    End Sub
+    Partial Private Sub OnidDiarioChanging(value As Long)
+    End Sub
+    Partial Private Sub OnidDiarioChanged()
+    End Sub
+    Partial Private Sub OnConceptoChanging(value As String)
+    End Sub
+    Partial Private Sub OnConceptoChanged()
+    End Sub
+    Partial Private Sub OnImporteChanging(value As Single)
+    End Sub
+    Partial Private Sub OnImporteChanged()
+    End Sub
+    Partial Private Sub OnAperturaChanging(value As Date)
+    End Sub
+    Partial Private Sub OnAperturaChanged()
+    End Sub
+    Partial Private Sub OnCierreChanging(value As System.Nullable(Of Date))
+    End Sub
+    Partial Private Sub OnCierreChanged()
+    End Sub
+    Partial Private Sub OnidPuestoChanging(value As Long)
+    End Sub
+    Partial Private Sub OnidPuestoChanged()
+    End Sub
+    Partial Private Sub OnidUsuarioChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidUsuarioChanged()
+    End Sub
+    Partial Private Sub OnNombreChanging(value As String)
+    End Sub
+    Partial Private Sub OnNombreChanged()
+    End Sub
+    Partial Private Sub OnPuestoChanging(value As String)
+    End Sub
+    Partial Private Sub OnPuestoChanged()
+    End Sub
+    Partial Private Sub OnFApunteChanging(value As Date)
+    End Sub
+    Partial Private Sub OnFApunteChanged()
+    End Sub
+    Partial Private Sub OnEntradaChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnEntradaChanged()
+    End Sub
+    Partial Private Sub OnidModoPagoChanging(value As System.Nullable(Of Short))
+    End Sub
+    Partial Private Sub OnidModoPagoChanged()
+    End Sub
+    Partial Private Sub OnModoPagoChnChanging(value As String)
+    End Sub
+    Partial Private Sub OnModoPagoChnChanged()
+    End Sub
+    Partial Private Sub OnModoPagoEspChanging(value As String)
+    End Sub
+    Partial Private Sub OnModoPagoEspChanged()
+    End Sub
+    #End Region
+		
+		Public Sub New()
+			MyBase.New
+			Me.Initialize
+		End Sub
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idApunte", DbType:="BigInt NOT NULL", IsPrimaryKey:=true, UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
+		Public Property idApunte() As Long
+			Get
+				Return Me._idApunte
+			End Get
+			Set
+				If ((Me._idApunte = value)  _
+							= false) Then
+					Me.OnidApunteChanging(value)
+					Me.SendPropertyChanging
+					Me._idApunte = value
+					Me.SendPropertyChanged("idApunte")
+					Me.OnidApunteChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idDiario", DbType:="BigInt NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=2)>  _
+		Public Property idDiario() As Long
+			Get
+				Return Me._idDiario
+			End Get
+			Set
+				If ((Me._idDiario = value)  _
+							= false) Then
+					Me.OnidDiarioChanging(value)
+					Me.SendPropertyChanging
+					Me._idDiario = value
+					Me.SendPropertyChanged("idDiario")
+					Me.OnidDiarioChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Concepto", DbType:="NVarChar(200) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=3)>  _
+		Public Property Concepto() As String
+			Get
+				Return Me._Concepto
+			End Get
+			Set
+				If (String.Equals(Me._Concepto, value) = false) Then
+					Me.OnConceptoChanging(value)
+					Me.SendPropertyChanging
+					Me._Concepto = value
+					Me.SendPropertyChanged("Concepto")
+					Me.OnConceptoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Importe", DbType:="Real NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=4)>  _
+		Public Property Importe() As Single
+			Get
+				Return Me._Importe
+			End Get
+			Set
+				If ((Me._Importe = value)  _
+							= false) Then
+					Me.OnImporteChanging(value)
+					Me.SendPropertyChanging
+					Me._Importe = value
+					Me.SendPropertyChanged("Importe")
+					Me.OnImporteChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Apertura", DbType:="DateTime NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=5)>  _
+		Public Property Apertura() As Date
+			Get
+				Return Me._Apertura
+			End Get
+			Set
+				If ((Me._Apertura = value)  _
+							= false) Then
+					Me.OnAperturaChanging(value)
+					Me.SendPropertyChanging
+					Me._Apertura = value
+					Me.SendPropertyChanged("Apertura")
+					Me.OnAperturaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Cierre", DbType:="DateTime", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=6)>  _
+		Public Property Cierre() As System.Nullable(Of Date)
+			Get
+				Return Me._Cierre
+			End Get
+			Set
+				If (Me._Cierre.Equals(value) = false) Then
+					Me.OnCierreChanging(value)
+					Me.SendPropertyChanging
+					Me._Cierre = value
+					Me.SendPropertyChanged("Cierre")
+					Me.OnCierreChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idPuesto", DbType:="BigInt NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=7)>  _
+		Public Property idPuesto() As Long
+			Get
+				Return Me._idPuesto
+			End Get
+			Set
+				If ((Me._idPuesto = value)  _
+							= false) Then
+					Me.OnidPuestoChanging(value)
+					Me.SendPropertyChanging
+					Me._idPuesto = value
+					Me.SendPropertyChanged("idPuesto")
+					Me.OnidPuestoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUsuario", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=8)>  _
+		Public Property idUsuario() As System.Nullable(Of Long)
+			Get
+				Return Me._idUsuario
+			End Get
+			Set
+				If (Me._idUsuario.Equals(value) = false) Then
+					Me.OnidUsuarioChanging(value)
+					Me.SendPropertyChanging
+					Me._idUsuario = value
+					Me.SendPropertyChanged("idUsuario")
+					Me.OnidUsuarioChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Nombre", DbType:="NVarChar(100)", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=9)>  _
+		Public Property Nombre() As String
+			Get
+				Return Me._Nombre
+			End Get
+			Set
+				If (String.Equals(Me._Nombre, value) = false) Then
+					Me.OnNombreChanging(value)
+					Me.SendPropertyChanging
+					Me._Nombre = value
+					Me.SendPropertyChanged("Nombre")
+					Me.OnNombreChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Puesto", DbType:="NVarChar(50) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=10)>  _
+		Public Property Puesto() As String
+			Get
+				Return Me._Puesto
+			End Get
+			Set
+				If (String.Equals(Me._Puesto, value) = false) Then
+					Me.OnPuestoChanging(value)
+					Me.SendPropertyChanging
+					Me._Puesto = value
+					Me.SendPropertyChanged("Puesto")
+					Me.OnPuestoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FApunte", DbType:="DateTime NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=11)>  _
+		Public Property FApunte() As Date
+			Get
+				Return Me._FApunte
+			End Get
+			Set
+				If ((Me._FApunte = value)  _
+							= false) Then
+					Me.OnFApunteChanging(value)
+					Me.SendPropertyChanging
+					Me._FApunte = value
+					Me.SendPropertyChanged("FApunte")
+					Me.OnFApunteChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Entrada", DbType:="Bit NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=12)>  _
+		Public Property Entrada() As Boolean
+			Get
+				Return Me._Entrada
+			End Get
+			Set
+				If ((Me._Entrada = value)  _
+							= false) Then
+					Me.OnEntradaChanging(value)
+					Me.SendPropertyChanging
+					Me._Entrada = value
+					Me.SendPropertyChanged("Entrada")
+					Me.OnEntradaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idModoPago", DbType:="SmallInt", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=13)>  _
+		Public Property idModoPago() As System.Nullable(Of Short)
+			Get
+				Return Me._idModoPago
+			End Get
+			Set
+				If (Me._idModoPago.Equals(value) = false) Then
+					Me.OnidModoPagoChanging(value)
+					Me.SendPropertyChanging
+					Me._idModoPago = value
+					Me.SendPropertyChanged("idModoPago")
+					Me.OnidModoPagoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ModoPagoChn", DbType:="NVarChar(50)", UpdateCheck:=UpdateCheck.Never)>  _
+		Private Property ModoPagoChn() As String
+			Get
+				Return Me._ModoPagoChn
+			End Get
+			Set
+				If (String.Equals(Me._ModoPagoChn, value) = false) Then
+					Me.OnModoPagoChnChanging(value)
+					Me.SendPropertyChanging
+					Me._ModoPagoChn = value
+					Me.SendPropertyChanged("ModoPagoChn")
+					Me.OnModoPagoChnChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ModoPagoEsp", DbType:="VarChar(50)", UpdateCheck:=UpdateCheck.Never)>  _
+		Private Property ModoPagoEsp() As String
+			Get
+				Return Me._ModoPagoEsp
+			End Get
+			Set
+				If (String.Equals(Me._ModoPagoEsp, value) = false) Then
+					Me.OnModoPagoEspChanging(value)
+					Me.SendPropertyChanging
+					Me._ModoPagoEsp = value
+					Me.SendPropertyChanged("ModoPagoEsp")
+					Me.OnModoPagoEspChanged
+				End If
+			End Set
+		End Property
+		
+		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+		
+		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+		
+		Protected Overridable Sub SendPropertyChanging()
+			If ((Me.PropertyChangingEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+			End If
+		End Sub
+		
+		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+			If ((Me.PropertyChangedEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+			End If
+		End Sub
+		
+		Private Sub Initialize()
+			OnCreated
+		End Sub
+		
+		<Global.System.Runtime.Serialization.OnDeserializingAttribute(),  _
+		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
+		Public Sub OnDeserializing(ByVal context As StreamingContext)
+			Me.Initialize
+		End Sub
+	End Class
+	
+	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Impuestos"),  _
+	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
+	Partial Public Class Impuestos
+		Inherits Data.Entity.LinqEntityBase
+		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+		
+		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+		
+		Private _idImpuesto As Short
+		
+		Private _Impuesto As Single
+		
+		Private _RE As Single
+		
+		Private _PorDefecto As Boolean
+		
+		Private _Productos As EntitySet(Of Productos)
+		
+		Private serializing As Boolean
+		
+    #Region "Definiciones de métodos de extensibilidad"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidImpuestoChanging(value As Short)
+    End Sub
+    Partial Private Sub OnidImpuestoChanged()
+    End Sub
+    Partial Private Sub OnImpuestoChanging(value As Single)
+    End Sub
+    Partial Private Sub OnImpuestoChanged()
+    End Sub
+    Partial Private Sub OnREChanging(value As Single)
+    End Sub
+    Partial Private Sub OnREChanged()
+    End Sub
+    Partial Private Sub OnPorDefectoChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnPorDefectoChanged()
+    End Sub
+    #End Region
+		
+		Public Sub New()
+			MyBase.New
+			Me.Initialize
+		End Sub
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idImpuesto", AutoSync:=AutoSync.OnInsert, DbType:="SmallInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
+		Public Property idImpuesto() As Short
+			Get
+				Return Me._idImpuesto
+			End Get
+			Set
+				If ((Me._idImpuesto = value)  _
+							= false) Then
+					Me.OnidImpuestoChanging(value)
+					Me.SendPropertyChanging
+					Me._idImpuesto = value
+					Me.SendPropertyChanged("idImpuesto")
+					Me.OnidImpuestoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Impuesto", DbType:="Real NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=2)>  _
+		Public Property Impuesto() As Single
+			Get
+				Return Me._Impuesto
+			End Get
+			Set
+				If ((Me._Impuesto = value)  _
+							= false) Then
+					Me.OnImpuestoChanging(value)
+					Me.SendPropertyChanging
+					Me._Impuesto = value
+					Me.SendPropertyChanged("Impuesto")
+					Me.OnImpuestoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_RE", DbType:="Real NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=3)>  _
+		Public Property RE() As Single
+			Get
+				Return Me._RE
+			End Get
+			Set
+				If ((Me._RE = value)  _
+							= false) Then
+					Me.OnREChanging(value)
+					Me.SendPropertyChanging
+					Me._RE = value
+					Me.SendPropertyChanged("RE")
+					Me.OnREChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PorDefecto", DbType:="Bit NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=4)>  _
+		Public Property PorDefecto() As Boolean
+			Get
+				Return Me._PorDefecto
+			End Get
+			Set
+				If ((Me._PorDefecto = value)  _
+							= false) Then
+					Me.OnPorDefectoChanging(value)
+					Me.SendPropertyChanging
+					Me._PorDefecto = value
+					Me.SendPropertyChanged("PorDefecto")
+					Me.OnPorDefectoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Impuestos_Productos", Storage:="_Productos", ThisKey:="idImpuesto", OtherKey:="idImpuesto"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=5, EmitDefaultValue:=false)>  _
+		Public Property Productos() As EntitySet(Of Productos)
+			Get
+				If (Me.serializing  _
+							AndAlso (Me._Productos.HasLoadedOrAssignedValues = false)) Then
+					Return Nothing
+				End If
+				Return Me._Productos
+			End Get
+			Set
+				Me._Productos.Assign(value)
+			End Set
+		End Property
+		
+		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+		
+		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+		
+		Protected Overridable Sub SendPropertyChanging()
+			If ((Me.PropertyChangingEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+			End If
+		End Sub
+		
+		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+			If ((Me.PropertyChangedEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+			End If
+		End Sub
+		
+		Private Sub attach_Productos(ByVal entity As Productos)
+			Me.SendPropertyChanging
+			entity.Impuestos = Me
+		End Sub
+		
+		Private Sub detach_Productos(ByVal entity As Productos)
+			Me.SendPropertyChanging
+			entity.Impuestos = Nothing
+		End Sub
+		
+		Private Sub Initialize()
+			Me._Productos = New EntitySet(Of Productos)(AddressOf Me.attach_Productos, AddressOf Me.detach_Productos)
+			OnCreated
+		End Sub
+		
+		<Global.System.Runtime.Serialization.OnDeserializingAttribute(),  _
+		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
+		Public Sub OnDeserializing(ByVal context As StreamingContext)
+			Me.Initialize
+		End Sub
+		
+		<Global.System.Runtime.Serialization.OnSerializingAttribute(),  _
+		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
+		Public Sub OnSerializing(ByVal context As StreamingContext)
+			Me.serializing = true
+		End Sub
+		
+		<Global.System.Runtime.Serialization.OnSerializedAttribute(),  _
+		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
+		Public Sub OnSerialized(ByVal context As StreamingContext)
+			Me.serializing = false
+		End Sub
+	End Class
+	
+	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Productos"),  _
+	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
+	Partial Public Class Productos
+		Inherits Data.Entity.LinqEntityBase
+		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+		
+		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+		
+		Private _idProducto As Long
+		
+		Private _idUnidadMedida As System.Nullable(Of Long)
+		
+		Private _idFamilia As System.Nullable(Of Long)
+		
+		Private _idMarca As System.Nullable(Of Long)
+		
+		Private _idUbicacion As System.Nullable(Of Long)
+		
+		Private _idOferta As System.Nullable(Of Long)
+		
+		Private _idImpuesto As System.Nullable(Of Short)
+		
+		Private _Referencia As String
+		
+		Private _Descripcion As String
+		
+		Private _DescripcionLarga As String
+		
+		Private _Coste As Single
+		
+		Private _PrecioVenta As Single
+		
+		Private _PrecioAlmayor As Single
+		
+		Private _Descuento As System.Nullable(Of Single)
+		
+		Private _UnidadXCaja As System.Nullable(Of Single)
+		
+		Private _StockSuelto As System.Nullable(Of Single)
+		
+		Private _StockCaja As System.Nullable(Of Single)
+		
+		Private _UnidadVenta As Single
+		
+		Private _ControlStock As Boolean
+		
+		Private _PrecioVariable As Boolean
+		
+		Private _Observacion As String
+		
+		Private _FCreacion As Date
+		
+		Private _FModificacion As System.Nullable(Of Date)
+		
+		Private _Activo As Boolean
+		
+		Private _PrecioImpInc As Boolean
+		
+		Private _Fidelizable As Boolean
+		
+		Private _PorcentajeFacturacion As Double
+		
+		Private _Galerias As EntitySet(Of Galerias)
+		
+		Private _CaracteristicasProducto As EntitySet(Of CaracteristicasProducto)
+		
+		Private _RevolucionPreciosCompra As EntitySet(Of RevolucionPreciosCompra)
+		
+		Private _LineasFactura As EntitySet(Of LineasFactura)
+		
+		Private _LineasPedido As EntitySet(Of LineasPedido)
+		
+		Private _Impuestos As EntityRef(Of Impuestos)
+		
+		Private serializing As Boolean
+		
+    #Region "Definiciones de métodos de extensibilidad"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidProductoChanging(value As Long)
+    End Sub
+    Partial Private Sub OnidProductoChanged()
+    End Sub
+    Partial Private Sub OnidUnidadMedidaChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidUnidadMedidaChanged()
+    End Sub
+    Partial Private Sub OnidFamiliaChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidFamiliaChanged()
+    End Sub
+    Partial Private Sub OnidMarcaChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidMarcaChanged()
+    End Sub
+    Partial Private Sub OnidUbicacionChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidUbicacionChanged()
+    End Sub
+    Partial Private Sub OnidOfertaChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidOfertaChanged()
+    End Sub
+    Partial Private Sub OnidImpuestoChanging(value As System.Nullable(Of Short))
+    End Sub
+    Partial Private Sub OnidImpuestoChanged()
+    End Sub
+    Partial Private Sub OnReferenciaChanging(value As String)
+    End Sub
+    Partial Private Sub OnReferenciaChanged()
+    End Sub
+    Partial Private Sub OnDescripcionChanging(value As String)
+    End Sub
+    Partial Private Sub OnDescripcionChanged()
+    End Sub
+    Partial Private Sub OnDescripcionLargaChanging(value As String)
+    End Sub
+    Partial Private Sub OnDescripcionLargaChanged()
+    End Sub
+    Partial Private Sub OnCosteChanging(value As Single)
+    End Sub
+    Partial Private Sub OnCosteChanged()
+    End Sub
+    Partial Private Sub OnPrecioVentaChanging(value As Single)
+    End Sub
+    Partial Private Sub OnPrecioVentaChanged()
+    End Sub
+    Partial Private Sub OnPrecioAlmayorChanging(value As Single)
+    End Sub
+    Partial Private Sub OnPrecioAlmayorChanged()
+    End Sub
+    Partial Private Sub OnDescuentoChanging(value As System.Nullable(Of Single))
+    End Sub
+    Partial Private Sub OnDescuentoChanged()
+    End Sub
+    Partial Private Sub OnUnidadXCajaChanging(value As System.Nullable(Of Single))
+    End Sub
+    Partial Private Sub OnUnidadXCajaChanged()
+    End Sub
+    Partial Private Sub OnStockSueltoChanging(value As System.Nullable(Of Single))
+    End Sub
+    Partial Private Sub OnStockSueltoChanged()
+    End Sub
+    Partial Private Sub OnStockCajaChanging(value As System.Nullable(Of Single))
+    End Sub
+    Partial Private Sub OnStockCajaChanged()
+    End Sub
+    Partial Private Sub OnUnidadVentaChanging(value As Single)
+    End Sub
+    Partial Private Sub OnUnidadVentaChanged()
+    End Sub
+    Partial Private Sub OnControlStockChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnControlStockChanged()
+    End Sub
+    Partial Private Sub OnPrecioVariableChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnPrecioVariableChanged()
+    End Sub
+    Partial Private Sub OnObservacionChanging(value As String)
+    End Sub
+    Partial Private Sub OnObservacionChanged()
+    End Sub
+    Partial Private Sub OnFCreacionChanging(value As Date)
+    End Sub
+    Partial Private Sub OnFCreacionChanged()
+    End Sub
+    Partial Private Sub OnFModificacionChanging(value As System.Nullable(Of Date))
+    End Sub
+    Partial Private Sub OnFModificacionChanged()
+    End Sub
+    Partial Private Sub OnActivoChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnActivoChanged()
+    End Sub
+    Partial Private Sub OnPrecioImpIncChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnPrecioImpIncChanged()
+    End Sub
+    Partial Private Sub OnFidelizableChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnFidelizableChanged()
+    End Sub
+    Partial Private Sub OnPorcentajeFacturacionChanging(value As Double)
+    End Sub
+    Partial Private Sub OnPorcentajeFacturacionChanged()
+    End Sub
+    #End Region
+		
+		Public Sub New()
+			MyBase.New
+			Me.Initialize
+		End Sub
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idProducto", AutoSync:=AutoSync.OnInsert, DbType:="BigInt NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
+		Public Property idProducto() As Long
+			Get
+				Return Me._idProducto
+			End Get
+			Set
+				If ((Me._idProducto = value)  _
+							= false) Then
+					Me.OnidProductoChanging(value)
+					Me.SendPropertyChanging
+					Me._idProducto = value
+					Me.SendPropertyChanged("idProducto")
+					Me.OnidProductoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUnidadMedida", DbType:="BigInt"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=2)>  _
+		Public Property idUnidadMedida() As System.Nullable(Of Long)
+			Get
+				Return Me._idUnidadMedida
+			End Get
+			Set
+				If (Me._idUnidadMedida.Equals(value) = false) Then
+					Me.OnidUnidadMedidaChanging(value)
+					Me.SendPropertyChanging
+					Me._idUnidadMedida = value
+					Me.SendPropertyChanged("idUnidadMedida")
+					Me.OnidUnidadMedidaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idFamilia", DbType:="BigInt"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=3)>  _
+		Public Property idFamilia() As System.Nullable(Of Long)
+			Get
+				Return Me._idFamilia
+			End Get
+			Set
+				If (Me._idFamilia.Equals(value) = false) Then
+					Me.OnidFamiliaChanging(value)
+					Me.SendPropertyChanging
+					Me._idFamilia = value
+					Me.SendPropertyChanged("idFamilia")
+					Me.OnidFamiliaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idMarca", DbType:="BigInt"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=4)>  _
+		Public Property idMarca() As System.Nullable(Of Long)
+			Get
+				Return Me._idMarca
+			End Get
+			Set
+				If (Me._idMarca.Equals(value) = false) Then
+					Me.OnidMarcaChanging(value)
+					Me.SendPropertyChanging
+					Me._idMarca = value
+					Me.SendPropertyChanged("idMarca")
+					Me.OnidMarcaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUbicacion", DbType:="BigInt"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=5)>  _
+		Public Property idUbicacion() As System.Nullable(Of Long)
+			Get
+				Return Me._idUbicacion
+			End Get
+			Set
+				If (Me._idUbicacion.Equals(value) = false) Then
+					Me.OnidUbicacionChanging(value)
+					Me.SendPropertyChanging
+					Me._idUbicacion = value
+					Me.SendPropertyChanged("idUbicacion")
+					Me.OnidUbicacionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idOferta", DbType:="BigInt"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=6)>  _
+		Public Property idOferta() As System.Nullable(Of Long)
+			Get
+				Return Me._idOferta
+			End Get
+			Set
+				If (Me._idOferta.Equals(value) = false) Then
+					Me.OnidOfertaChanging(value)
+					Me.SendPropertyChanging
+					Me._idOferta = value
+					Me.SendPropertyChanged("idOferta")
+					Me.OnidOfertaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idImpuesto", DbType:="SmallInt"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=7)>  _
+		Public Property idImpuesto() As System.Nullable(Of Short)
+			Get
+				Return Me._idImpuesto
+			End Get
+			Set
+				If (Me._idImpuesto.Equals(value) = false) Then
+					If Me._Impuestos.HasLoadedOrAssignedValue Then
+						Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
+					End If
+					Me.OnidImpuestoChanging(value)
+					Me.SendPropertyChanging
+					Me._idImpuesto = value
+					Me.SendPropertyChanged("idImpuesto")
+					Me.OnidImpuestoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Referencia", DbType:="VarChar(50) NOT NULL", CanBeNull:=false),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=8)>  _
+		Public Property Referencia() As String
+			Get
+				Return Me._Referencia
+			End Get
+			Set
+				If (String.Equals(Me._Referencia, value) = false) Then
+					Me.OnReferenciaChanging(value)
+					Me.SendPropertyChanging
+					Me._Referencia = value
+					Me.SendPropertyChanged("Referencia")
+					Me.OnReferenciaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Descripcion", DbType:="NVarChar(200) NOT NULL", CanBeNull:=false),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=9)>  _
+		Public Property Descripcion() As String
+			Get
+				Return Me._Descripcion
+			End Get
+			Set
+				If (String.Equals(Me._Descripcion, value) = false) Then
+					Me.OnDescripcionChanging(value)
+					Me.SendPropertyChanging
+					Me._Descripcion = value
+					Me.SendPropertyChanged("Descripcion")
+					Me.OnDescripcionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DescripcionLarga", DbType:="NVarChar(1000)"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=10)>  _
+		Public Property DescripcionLarga() As String
+			Get
+				Return Me._DescripcionLarga
+			End Get
+			Set
+				If (String.Equals(Me._DescripcionLarga, value) = false) Then
+					Me.OnDescripcionLargaChanging(value)
+					Me.SendPropertyChanging
+					Me._DescripcionLarga = value
+					Me.SendPropertyChanged("DescripcionLarga")
+					Me.OnDescripcionLargaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Coste", DbType:="Real NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=11)>  _
+		Public Property Coste() As Single
+			Get
+				Return Me._Coste
+			End Get
+			Set
+				If ((Me._Coste = value)  _
+							= false) Then
+					Me.OnCosteChanging(value)
+					Me.SendPropertyChanging
+					Me._Coste = value
+					Me.SendPropertyChanged("Coste")
+					Me.OnCosteChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioVenta", DbType:="Real NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=12)>  _
+		Public Property PrecioVenta() As Single
+			Get
+				Return Me._PrecioVenta
+			End Get
+			Set
+				If ((Me._PrecioVenta = value)  _
+							= false) Then
+					Me.OnPrecioVentaChanging(value)
+					Me.SendPropertyChanging
+					Me._PrecioVenta = value
+					Me.SendPropertyChanged("PrecioVenta")
+					Me.OnPrecioVentaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioAlmayor", DbType:="Real NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=13)>  _
+		Public Property PrecioAlmayor() As Single
+			Get
+				Return Me._PrecioAlmayor
+			End Get
+			Set
+				If ((Me._PrecioAlmayor = value)  _
+							= false) Then
+					Me.OnPrecioAlmayorChanging(value)
+					Me.SendPropertyChanging
+					Me._PrecioAlmayor = value
+					Me.SendPropertyChanged("PrecioAlmayor")
+					Me.OnPrecioAlmayorChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Descuento", DbType:="Real"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=14)>  _
+		Public Property Descuento() As System.Nullable(Of Single)
+			Get
+				Return Me._Descuento
+			End Get
+			Set
+				If (Me._Descuento.Equals(value) = false) Then
+					Me.OnDescuentoChanging(value)
+					Me.SendPropertyChanging
+					Me._Descuento = value
+					Me.SendPropertyChanged("Descuento")
+					Me.OnDescuentoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UnidadXCaja", DbType:="Real"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=15)>  _
+		Public Property UnidadXCaja() As System.Nullable(Of Single)
+			Get
+				Return Me._UnidadXCaja
+			End Get
+			Set
+				If (Me._UnidadXCaja.Equals(value) = false) Then
+					Me.OnUnidadXCajaChanging(value)
+					Me.SendPropertyChanging
+					Me._UnidadXCaja = value
+					Me.SendPropertyChanged("UnidadXCaja")
+					Me.OnUnidadXCajaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_StockSuelto", DbType:="Real"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=16)>  _
+		Public Property StockSuelto() As System.Nullable(Of Single)
+			Get
+				Return Me._StockSuelto
+			End Get
+			Set
+				If (Me._StockSuelto.Equals(value) = false) Then
+					Me.OnStockSueltoChanging(value)
+					Me.SendPropertyChanging
+					Me._StockSuelto = value
+					Me.SendPropertyChanged("StockSuelto")
+					Me.OnStockSueltoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_StockCaja", DbType:="Real"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=17)>  _
+		Public Property StockCaja() As System.Nullable(Of Single)
+			Get
+				Return Me._StockCaja
+			End Get
+			Set
+				If (Me._StockCaja.Equals(value) = false) Then
+					Me.OnStockCajaChanging(value)
+					Me.SendPropertyChanging
+					Me._StockCaja = value
+					Me.SendPropertyChanged("StockCaja")
+					Me.OnStockCajaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UnidadVenta", DbType:="Real NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=18)>  _
+		Public Property UnidadVenta() As Single
+			Get
+				Return Me._UnidadVenta
+			End Get
+			Set
+				If ((Me._UnidadVenta = value)  _
+							= false) Then
+					Me.OnUnidadVentaChanging(value)
+					Me.SendPropertyChanging
+					Me._UnidadVenta = value
+					Me.SendPropertyChanged("UnidadVenta")
+					Me.OnUnidadVentaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ControlStock", DbType:="Bit NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=19)>  _
+		Public Property ControlStock() As Boolean
+			Get
+				Return Me._ControlStock
+			End Get
+			Set
+				If ((Me._ControlStock = value)  _
+							= false) Then
+					Me.OnControlStockChanging(value)
+					Me.SendPropertyChanging
+					Me._ControlStock = value
+					Me.SendPropertyChanged("ControlStock")
+					Me.OnControlStockChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioVariable", DbType:="Bit NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=20)>  _
+		Public Property PrecioVariable() As Boolean
+			Get
+				Return Me._PrecioVariable
+			End Get
+			Set
+				If ((Me._PrecioVariable = value)  _
+							= false) Then
+					Me.OnPrecioVariableChanging(value)
+					Me.SendPropertyChanging
+					Me._PrecioVariable = value
+					Me.SendPropertyChanged("PrecioVariable")
+					Me.OnPrecioVariableChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Observacion", DbType:="NVarChar(1000)"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=21)>  _
+		Public Property Observacion() As String
+			Get
+				Return Me._Observacion
+			End Get
+			Set
+				If (String.Equals(Me._Observacion, value) = false) Then
+					Me.OnObservacionChanging(value)
+					Me.SendPropertyChanging
+					Me._Observacion = value
+					Me.SendPropertyChanged("Observacion")
+					Me.OnObservacionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FCreacion", DbType:="SmallDateTime NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=22)>  _
+		Public Property FCreacion() As Date
+			Get
+				Return Me._FCreacion
+			End Get
+			Set
+				If ((Me._FCreacion = value)  _
+							= false) Then
+					Me.OnFCreacionChanging(value)
+					Me.SendPropertyChanging
+					Me._FCreacion = value
+					Me.SendPropertyChanged("FCreacion")
+					Me.OnFCreacionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FModificacion", DbType:="SmallDateTime"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=23)>  _
+		Public Property FModificacion() As System.Nullable(Of Date)
+			Get
+				Return Me._FModificacion
+			End Get
+			Set
+				If (Me._FModificacion.Equals(value) = false) Then
+					Me.OnFModificacionChanging(value)
+					Me.SendPropertyChanging
+					Me._FModificacion = value
+					Me.SendPropertyChanged("FModificacion")
+					Me.OnFModificacionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Activo", DbType:="Bit NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=24)>  _
+		Public Property Activo() As Boolean
+			Get
+				Return Me._Activo
+			End Get
+			Set
+				If ((Me._Activo = value)  _
+							= false) Then
+					Me.OnActivoChanging(value)
+					Me.SendPropertyChanging
+					Me._Activo = value
+					Me.SendPropertyChanged("Activo")
+					Me.OnActivoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioImpInc", DbType:="Bit NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=25)>  _
+		Public Property PrecioImpInc() As Boolean
+			Get
+				Return Me._PrecioImpInc
+			End Get
+			Set
+				If ((Me._PrecioImpInc = value)  _
+							= false) Then
+					Me.OnPrecioImpIncChanging(value)
+					Me.SendPropertyChanging
+					Me._PrecioImpInc = value
+					Me.SendPropertyChanged("PrecioImpInc")
+					Me.OnPrecioImpIncChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Fidelizable", DbType:="Bit NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=26)>  _
+		Public Property Fidelizable() As Boolean
+			Get
+				Return Me._Fidelizable
+			End Get
+			Set
+				If ((Me._Fidelizable = value)  _
+							= false) Then
+					Me.OnFidelizableChanging(value)
+					Me.SendPropertyChanging
+					Me._Fidelizable = value
+					Me.SendPropertyChanged("Fidelizable")
+					Me.OnFidelizableChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PorcentajeFacturacion", DbType:="Float NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=27)>  _
+		Public Property PorcentajeFacturacion() As Double
+			Get
+				Return Me._PorcentajeFacturacion
+			End Get
+			Set
+				If ((Me._PorcentajeFacturacion = value)  _
+							= false) Then
+					Me.OnPorcentajeFacturacionChanging(value)
+					Me.SendPropertyChanging
+					Me._PorcentajeFacturacion = value
+					Me.SendPropertyChanged("PorcentajeFacturacion")
+					Me.OnPorcentajeFacturacionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Productos_Galerias", Storage:="_Galerias", ThisKey:="idProducto", OtherKey:="idProducto"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=28, EmitDefaultValue:=false)>  _
+		Public Property Galerias() As EntitySet(Of Galerias)
+			Get
+				If (Me.serializing  _
+							AndAlso (Me._Galerias.HasLoadedOrAssignedValues = false)) Then
+					Return Nothing
+				End If
+				Return Me._Galerias
+			End Get
+			Set
+				Me._Galerias.Assign(value)
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Productos_CaracteristicasProducto", Storage:="_CaracteristicasProducto", ThisKey:="idProducto", OtherKey:="idProducto"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=29, EmitDefaultValue:=false)>  _
+		Public Property CaracteristicasProducto() As EntitySet(Of CaracteristicasProducto)
+			Get
+				If (Me.serializing  _
+							AndAlso (Me._CaracteristicasProducto.HasLoadedOrAssignedValues = false)) Then
+					Return Nothing
+				End If
+				Return Me._CaracteristicasProducto
+			End Get
+			Set
+				Me._CaracteristicasProducto.Assign(value)
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Productos_RevolucionPreciosCompra", Storage:="_RevolucionPreciosCompra", ThisKey:="idProducto", OtherKey:="idProducto"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=30, EmitDefaultValue:=false)>  _
+		Public Property RevolucionPreciosCompra() As EntitySet(Of RevolucionPreciosCompra)
+			Get
+				If (Me.serializing  _
+							AndAlso (Me._RevolucionPreciosCompra.HasLoadedOrAssignedValues = false)) Then
+					Return Nothing
+				End If
+				Return Me._RevolucionPreciosCompra
+			End Get
+			Set
+				Me._RevolucionPreciosCompra.Assign(value)
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Productos_LineasFactura", Storage:="_LineasFactura", ThisKey:="idProducto", OtherKey:="idProducto"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=31, EmitDefaultValue:=false)>  _
+		Public Property LineasFactura() As EntitySet(Of LineasFactura)
+			Get
+				If (Me.serializing  _
+							AndAlso (Me._LineasFactura.HasLoadedOrAssignedValues = false)) Then
+					Return Nothing
+				End If
+				Return Me._LineasFactura
+			End Get
+			Set
+				Me._LineasFactura.Assign(value)
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Productos_LineasPedido", Storage:="_LineasPedido", ThisKey:="idProducto", OtherKey:="idProducto"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=32, EmitDefaultValue:=false)>  _
+		Public Property LineasPedido() As EntitySet(Of LineasPedido)
+			Get
+				If (Me.serializing  _
+							AndAlso (Me._LineasPedido.HasLoadedOrAssignedValues = false)) Then
+					Return Nothing
+				End If
+				Return Me._LineasPedido
+			End Get
+			Set
+				Me._LineasPedido.Assign(value)
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Impuestos_Productos", Storage:="_Impuestos", ThisKey:="idImpuesto", OtherKey:="idImpuesto", IsForeignKey:=true, DeleteRule:="SET NULL")>  _
+		Public Property Impuestos() As Impuestos
+			Get
+				Return Me._Impuestos.Entity
+			End Get
+			Set
+				Dim previousValue As Impuestos = Me._Impuestos.Entity
+				If ((Object.Equals(previousValue, value) = false)  _
+							OrElse (Me._Impuestos.HasLoadedOrAssignedValue = false)) Then
+					Me.SendPropertyChanging
+					If ((previousValue Is Nothing)  _
+								= false) Then
+						Me._Impuestos.Entity = Nothing
+						previousValue.Productos.Remove(Me)
+					End If
+					Me._Impuestos.Entity = value
+					If ((value Is Nothing)  _
+								= false) Then
+						value.Productos.Add(Me)
+						Me._idImpuesto = value.idImpuesto
+					Else
+						Me._idImpuesto = CType(Nothing, Nullable(Of Short))
+					End If
+					Me.SendPropertyChanged("Impuestos")
+				End If
+			End Set
+		End Property
+		
+		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+		
+		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+		
+		Protected Overridable Sub SendPropertyChanging()
+			If ((Me.PropertyChangingEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+			End If
+		End Sub
+		
+		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+			If ((Me.PropertyChangedEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+			End If
+		End Sub
+		
+		Private Sub attach_Galerias(ByVal entity As Galerias)
+			Me.SendPropertyChanging
+			entity.Productos = Me
+		End Sub
+		
+		Private Sub detach_Galerias(ByVal entity As Galerias)
+			Me.SendPropertyChanging
+			entity.Productos = Nothing
+		End Sub
+		
+		Private Sub attach_CaracteristicasProducto(ByVal entity As CaracteristicasProducto)
+			Me.SendPropertyChanging
+			entity.Productos = Me
+		End Sub
+		
+		Private Sub detach_CaracteristicasProducto(ByVal entity As CaracteristicasProducto)
+			Me.SendPropertyChanging
+			entity.Productos = Nothing
+		End Sub
+		
+		Private Sub attach_RevolucionPreciosCompra(ByVal entity As RevolucionPreciosCompra)
+			Me.SendPropertyChanging
+			entity.Productos = Me
+		End Sub
+		
+		Private Sub detach_RevolucionPreciosCompra(ByVal entity As RevolucionPreciosCompra)
+			Me.SendPropertyChanging
+			entity.Productos = Nothing
+		End Sub
+		
+		Private Sub attach_LineasFactura(ByVal entity As LineasFactura)
+			Me.SendPropertyChanging
+			entity.Productos = Me
+		End Sub
+		
+		Private Sub detach_LineasFactura(ByVal entity As LineasFactura)
+			Me.SendPropertyChanging
+			entity.Productos = Nothing
+		End Sub
+		
+		Private Sub attach_LineasPedido(ByVal entity As LineasPedido)
+			Me.SendPropertyChanging
+			entity.Productos = Me
+		End Sub
+		
+		Private Sub detach_LineasPedido(ByVal entity As LineasPedido)
+			Me.SendPropertyChanging
+			entity.Productos = Nothing
+		End Sub
+		
+		Private Sub Initialize()
+			Me._Galerias = New EntitySet(Of Galerias)(AddressOf Me.attach_Galerias, AddressOf Me.detach_Galerias)
+			Me._CaracteristicasProducto = New EntitySet(Of CaracteristicasProducto)(AddressOf Me.attach_CaracteristicasProducto, AddressOf Me.detach_CaracteristicasProducto)
+			Me._RevolucionPreciosCompra = New EntitySet(Of RevolucionPreciosCompra)(AddressOf Me.attach_RevolucionPreciosCompra, AddressOf Me.detach_RevolucionPreciosCompra)
+			Me._LineasFactura = New EntitySet(Of LineasFactura)(AddressOf Me.attach_LineasFactura, AddressOf Me.detach_LineasFactura)
+			Me._LineasPedido = New EntitySet(Of LineasPedido)(AddressOf Me.attach_LineasPedido, AddressOf Me.detach_LineasPedido)
+			Me._Impuestos = CType(Nothing, EntityRef(Of Impuestos))
+			OnCreated
+		End Sub
+		
+		<Global.System.Runtime.Serialization.OnDeserializingAttribute(),  _
+		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
+		Public Sub OnDeserializing(ByVal context As StreamingContext)
+			Me.Initialize
+		End Sub
+		
+		<Global.System.Runtime.Serialization.OnSerializingAttribute(),  _
+		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
+		Public Sub OnSerializing(ByVal context As StreamingContext)
+			Me.serializing = true
+		End Sub
+		
+		<Global.System.Runtime.Serialization.OnSerializedAttribute(),  _
+		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
+		Public Sub OnSerialized(ByVal context As StreamingContext)
+			Me.serializing = false
+		End Sub
+	End Class
+	
+	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Empresas"),  _
+	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
+	Partial Public Class Empresas
+		Inherits Data.Entity.LinqEntityBase
+		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+		
+		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+		
+		Private _idEmpresa As Long
+		
+		Private _Empresa As String
+		
+		Private _NIF As String
+		
+		Private _Direccion As String
+		
+		Private _Localidad As String
+		
+		Private _Provincia As String
+		
+		Private _CodigoPostal As String
+		
+		Private _Telefono As String
+		
+		Private _Movil As String
+		
+		Private _Fax As String
+		
+		Private _Email As String
+		
+		Private _Web As String
+		
+		Private _Logo As System.Data.Linq.Binary
+		
+		Private _NombreComercial As String
+		
+		Private _CuentaBanco As String
+		
+		Private _Series As String
+		
+		Private _Activo As Boolean
+		
+		Private _FormatoNumeracion As String
+		
+		Private _VentaDetalle As Boolean
+		
+		Private _VentaAlmayor As Boolean
+		
+		Private _Configuraciones As EntitySet(Of Configuraciones)
+		
+		Private serializing As Boolean
+		
+    #Region "Definiciones de métodos de extensibilidad"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidEmpresaChanging(value As Long)
+    End Sub
+    Partial Private Sub OnidEmpresaChanged()
+    End Sub
+    Partial Private Sub OnEmpresaChanging(value As String)
+    End Sub
+    Partial Private Sub OnEmpresaChanged()
+    End Sub
+    Partial Private Sub OnNIFChanging(value As String)
+    End Sub
+    Partial Private Sub OnNIFChanged()
+    End Sub
+    Partial Private Sub OnDireccionChanging(value As String)
+    End Sub
+    Partial Private Sub OnDireccionChanged()
+    End Sub
+    Partial Private Sub OnLocalidadChanging(value As String)
+    End Sub
+    Partial Private Sub OnLocalidadChanged()
+    End Sub
+    Partial Private Sub OnProvinciaChanging(value As String)
+    End Sub
+    Partial Private Sub OnProvinciaChanged()
+    End Sub
+    Partial Private Sub OnCodigoPostalChanging(value As String)
+    End Sub
+    Partial Private Sub OnCodigoPostalChanged()
+    End Sub
+    Partial Private Sub OnTelefonoChanging(value As String)
+    End Sub
+    Partial Private Sub OnTelefonoChanged()
+    End Sub
+    Partial Private Sub OnMovilChanging(value As String)
+    End Sub
+    Partial Private Sub OnMovilChanged()
+    End Sub
+    Partial Private Sub OnFaxChanging(value As String)
+    End Sub
+    Partial Private Sub OnFaxChanged()
+    End Sub
+    Partial Private Sub OnEmailChanging(value As String)
+    End Sub
+    Partial Private Sub OnEmailChanged()
+    End Sub
+    Partial Private Sub OnWebChanging(value As String)
+    End Sub
+    Partial Private Sub OnWebChanged()
+    End Sub
+    Partial Private Sub OnLogoChanging(value As System.Data.Linq.Binary)
+    End Sub
+    Partial Private Sub OnLogoChanged()
+    End Sub
+    Partial Private Sub OnNombreComercialChanging(value As String)
+    End Sub
+    Partial Private Sub OnNombreComercialChanged()
+    End Sub
+    Partial Private Sub OnCuentaBancoChanging(value As String)
+    End Sub
+    Partial Private Sub OnCuentaBancoChanged()
+    End Sub
+    Partial Private Sub OnSeriesChanging(value As String)
+    End Sub
+    Partial Private Sub OnSeriesChanged()
+    End Sub
+    Partial Private Sub OnActivoChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnActivoChanged()
+    End Sub
+    Partial Private Sub OnFormatoNumeracionChanging(value As String)
+    End Sub
+    Partial Private Sub OnFormatoNumeracionChanged()
+    End Sub
+    Partial Private Sub OnVentaDetalleChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnVentaDetalleChanged()
+    End Sub
+    Partial Private Sub OnVentaAlmayorChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnVentaAlmayorChanged()
+    End Sub
+    #End Region
+		
+		Public Sub New()
+			MyBase.New
+			Me.Initialize
+		End Sub
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idEmpresa", DbType:="BigInt NOT NULL", IsPrimaryKey:=true),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
+		Public Property idEmpresa() As Long
+			Get
+				Return Me._idEmpresa
+			End Get
+			Set
+				If ((Me._idEmpresa = value)  _
+							= false) Then
+					Me.OnidEmpresaChanging(value)
+					Me.SendPropertyChanging
+					Me._idEmpresa = value
+					Me.SendPropertyChanged("idEmpresa")
+					Me.OnidEmpresaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Empresa", DbType:="NVarChar(100) NOT NULL", CanBeNull:=false),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=2)>  _
+		Public Property Empresa() As String
+			Get
+				Return Me._Empresa
+			End Get
+			Set
+				If (String.Equals(Me._Empresa, value) = false) Then
+					Me.OnEmpresaChanging(value)
+					Me.SendPropertyChanging
+					Me._Empresa = value
+					Me.SendPropertyChanged("Empresa")
+					Me.OnEmpresaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NIF", DbType:="VarChar(20) NOT NULL", CanBeNull:=false),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=3)>  _
+		Public Property NIF() As String
+			Get
+				Return Me._NIF
+			End Get
+			Set
+				If (String.Equals(Me._NIF, value) = false) Then
+					Me.OnNIFChanging(value)
+					Me.SendPropertyChanging
+					Me._NIF = value
+					Me.SendPropertyChanged("NIF")
+					Me.OnNIFChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Direccion", DbType:="NVarChar(200)"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=4)>  _
+		Public Property Direccion() As String
+			Get
+				Return Me._Direccion
+			End Get
+			Set
+				If (String.Equals(Me._Direccion, value) = false) Then
+					Me.OnDireccionChanging(value)
+					Me.SendPropertyChanging
+					Me._Direccion = value
+					Me.SendPropertyChanged("Direccion")
+					Me.OnDireccionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Localidad", DbType:="NVarChar(100)"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=5)>  _
+		Public Property Localidad() As String
+			Get
+				Return Me._Localidad
+			End Get
+			Set
+				If (String.Equals(Me._Localidad, value) = false) Then
+					Me.OnLocalidadChanging(value)
+					Me.SendPropertyChanging
+					Me._Localidad = value
+					Me.SendPropertyChanged("Localidad")
+					Me.OnLocalidadChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Provincia", DbType:="NVarChar(50)"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=6)>  _
+		Public Property Provincia() As String
+			Get
+				Return Me._Provincia
+			End Get
+			Set
+				If (String.Equals(Me._Provincia, value) = false) Then
+					Me.OnProvinciaChanging(value)
+					Me.SendPropertyChanging
+					Me._Provincia = value
+					Me.SendPropertyChanged("Provincia")
+					Me.OnProvinciaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CodigoPostal", DbType:="VarChar(10)"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=7)>  _
+		Public Property CodigoPostal() As String
+			Get
+				Return Me._CodigoPostal
+			End Get
+			Set
+				If (String.Equals(Me._CodigoPostal, value) = false) Then
+					Me.OnCodigoPostalChanging(value)
+					Me.SendPropertyChanging
+					Me._CodigoPostal = value
+					Me.SendPropertyChanged("CodigoPostal")
+					Me.OnCodigoPostalChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Telefono", DbType:="VarChar(20)"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=8)>  _
+		Public Property Telefono() As String
+			Get
+				Return Me._Telefono
+			End Get
+			Set
+				If (String.Equals(Me._Telefono, value) = false) Then
+					Me.OnTelefonoChanging(value)
+					Me.SendPropertyChanging
+					Me._Telefono = value
+					Me.SendPropertyChanged("Telefono")
+					Me.OnTelefonoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Movil", DbType:="VarChar(20)"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=9)>  _
+		Public Property Movil() As String
+			Get
+				Return Me._Movil
+			End Get
+			Set
+				If (String.Equals(Me._Movil, value) = false) Then
+					Me.OnMovilChanging(value)
+					Me.SendPropertyChanging
+					Me._Movil = value
+					Me.SendPropertyChanged("Movil")
+					Me.OnMovilChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Fax", DbType:="VarChar(20)"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=10)>  _
+		Public Property Fax() As String
+			Get
+				Return Me._Fax
+			End Get
+			Set
+				If (String.Equals(Me._Fax, value) = false) Then
+					Me.OnFaxChanging(value)
+					Me.SendPropertyChanging
+					Me._Fax = value
+					Me.SendPropertyChanged("Fax")
+					Me.OnFaxChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Email", DbType:="VarChar(100)"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=11)>  _
+		Public Property Email() As String
+			Get
+				Return Me._Email
+			End Get
+			Set
+				If (String.Equals(Me._Email, value) = false) Then
+					Me.OnEmailChanging(value)
+					Me.SendPropertyChanging
+					Me._Email = value
+					Me.SendPropertyChanged("Email")
+					Me.OnEmailChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Web", DbType:="VarChar(100)"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=12)>  _
+		Public Property Web() As String
+			Get
+				Return Me._Web
+			End Get
+			Set
+				If (String.Equals(Me._Web, value) = false) Then
+					Me.OnWebChanging(value)
+					Me.SendPropertyChanging
+					Me._Web = value
+					Me.SendPropertyChanged("Web")
+					Me.OnWebChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Logo", DbType:="Image", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=13)>  _
+		Public Property Logo() As System.Data.Linq.Binary
+			Get
+				Return Me._Logo
+			End Get
+			Set
+				If (Object.Equals(Me._Logo, value) = false) Then
+					Me.OnLogoChanging(value)
+					Me.SendPropertyChanging
+					Me._Logo = value
+					Me.SendPropertyChanged("Logo")
+					Me.OnLogoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NombreComercial", DbType:="NVarChar(100)"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=14)>  _
+		Public Property NombreComercial() As String
+			Get
+				Return Me._NombreComercial
+			End Get
+			Set
+				If (String.Equals(Me._NombreComercial, value) = false) Then
+					Me.OnNombreComercialChanging(value)
+					Me.SendPropertyChanging
+					Me._NombreComercial = value
+					Me.SendPropertyChanged("NombreComercial")
+					Me.OnNombreComercialChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CuentaBanco", DbType:="VarChar(50)"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=15)>  _
+		Public Property CuentaBanco() As String
+			Get
+				Return Me._CuentaBanco
+			End Get
+			Set
+				If (String.Equals(Me._CuentaBanco, value) = false) Then
+					Me.OnCuentaBancoChanging(value)
+					Me.SendPropertyChanging
+					Me._CuentaBanco = value
+					Me.SendPropertyChanged("CuentaBanco")
+					Me.OnCuentaBancoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Series", DbType:="VarChar(50)"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=16)>  _
+		Public Property Series() As String
+			Get
+				Return Me._Series
+			End Get
+			Set
+				If (String.Equals(Me._Series, value) = false) Then
+					Me.OnSeriesChanging(value)
+					Me.SendPropertyChanging
+					Me._Series = value
+					Me.SendPropertyChanged("Series")
+					Me.OnSeriesChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Activo", DbType:="Bit NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=17)>  _
+		Public Property Activo() As Boolean
+			Get
+				Return Me._Activo
+			End Get
+			Set
+				If ((Me._Activo = value)  _
+							= false) Then
+					Me.OnActivoChanging(value)
+					Me.SendPropertyChanging
+					Me._Activo = value
+					Me.SendPropertyChanged("Activo")
+					Me.OnActivoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FormatoNumeracion", DbType:="VarChar(50)"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=18)>  _
+		Public Property FormatoNumeracion() As String
+			Get
+				Return Me._FormatoNumeracion
+			End Get
+			Set
+				If (String.Equals(Me._FormatoNumeracion, value) = false) Then
+					Me.OnFormatoNumeracionChanging(value)
+					Me.SendPropertyChanging
+					Me._FormatoNumeracion = value
+					Me.SendPropertyChanged("FormatoNumeracion")
+					Me.OnFormatoNumeracionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VentaDetalle", DbType:="Bit NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=19)>  _
+		Public Property VentaDetalle() As Boolean
+			Get
+				Return Me._VentaDetalle
+			End Get
+			Set
+				If ((Me._VentaDetalle = value)  _
+							= false) Then
+					Me.OnVentaDetalleChanging(value)
+					Me.SendPropertyChanging
+					Me._VentaDetalle = value
+					Me.SendPropertyChanged("VentaDetalle")
+					Me.OnVentaDetalleChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_VentaAlmayor", DbType:="Bit NOT NULL"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=20)>  _
+		Public Property VentaAlmayor() As Boolean
+			Get
+				Return Me._VentaAlmayor
+			End Get
+			Set
+				If ((Me._VentaAlmayor = value)  _
+							= false) Then
+					Me.OnVentaAlmayorChanging(value)
+					Me.SendPropertyChanging
+					Me._VentaAlmayor = value
+					Me.SendPropertyChanged("VentaAlmayor")
+					Me.OnVentaAlmayorChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="Empresas_Configuraciones", Storage:="_Configuraciones", ThisKey:="idEmpresa", OtherKey:="idEmpresa"),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=21, EmitDefaultValue:=false)>  _
+		Public Property Configuraciones() As EntitySet(Of Configuraciones)
+			Get
+				If (Me.serializing  _
+							AndAlso (Me._Configuraciones.HasLoadedOrAssignedValues = false)) Then
+					Return Nothing
+				End If
+				Return Me._Configuraciones
+			End Get
+			Set
+				Me._Configuraciones.Assign(value)
+			End Set
+		End Property
+		
+		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+		
+		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+		
+		Protected Overridable Sub SendPropertyChanging()
+			If ((Me.PropertyChangingEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+			End If
+		End Sub
+		
+		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+			If ((Me.PropertyChangedEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+			End If
+		End Sub
+		
+		Private Sub attach_Configuraciones(ByVal entity As Configuraciones)
+			Me.SendPropertyChanging
+			entity.Empresas = Me
+		End Sub
+		
+		Private Sub detach_Configuraciones(ByVal entity As Configuraciones)
+			Me.SendPropertyChanging
+			entity.Empresas = Nothing
+		End Sub
+		
+		Private Sub Initialize()
+			Me._Configuraciones = New EntitySet(Of Configuraciones)(AddressOf Me.attach_Configuraciones, AddressOf Me.detach_Configuraciones)
+			OnCreated
+		End Sub
+		
+		<Global.System.Runtime.Serialization.OnDeserializingAttribute(),  _
+		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
+		Public Sub OnDeserializing(ByVal context As StreamingContext)
+			Me.Initialize
+		End Sub
+		
+		<Global.System.Runtime.Serialization.OnSerializingAttribute(),  _
+		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
+		Public Sub OnSerializing(ByVal context As StreamingContext)
+			Me.serializing = true
+		End Sub
+		
+		<Global.System.Runtime.Serialization.OnSerializedAttribute(),  _
+		 Global.System.ComponentModel.EditorBrowsableAttribute(EditorBrowsableState.Never)>  _
+		Public Sub OnSerialized(ByVal context As StreamingContext)
+			Me.serializing = false
+		End Sub
+	End Class
+	
+	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.VWProductos"),  _
+	 Global.System.Runtime.Serialization.DataContractAttribute()>  _
+	Partial Public Class VWProductos
+		Inherits Data.Entity.LinqEntityBase
+		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+		
+		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+		
+		Private _idProducto As Long
+		
+		Private _Referencia As String
+		
+		Private _Descripcion As String
+		
+		Private _DescripcionLarga As String
+		
+		Private _PrecioVenta As Single
+		
+		Private _PrecioAlmayor As Single
+		
+		Private _UnidadVenta As Single
+		
+		Private _UltimoPrecioEntrada As System.Nullable(Of Single)
+		
+		Private _UltimoProveedor As String
+		
+		Private _Coste As Single
+		
+		Private _Descuento As System.Nullable(Of Single)
+		
+		Private _UnidadXCaja As System.Nullable(Of Single)
+		
+		Private _StockSuelto As System.Nullable(Of Single)
+		
+		Private _StockCaja As System.Nullable(Of Single)
+		
+		Private _Activo As Boolean
+		
+		Private _ControlStock As Boolean
+		
+		Private _PrecioVariable As Boolean
+		
+		Private _Familia As String
+		
+		Private _Ubicacion As String
+		
+		Private _Marca As String
+		
+		Private _Observacion As String
+		
+		Private _idUnidadMedida As System.Nullable(Of Long)
+		
+		Private _idFamilia As System.Nullable(Of Long)
+		
+		Private _idMarca As System.Nullable(Of Long)
+		
+		Private _idUbicacion As System.Nullable(Of Long)
+		
+		Private _FModificacion As System.Nullable(Of Date)
+		
+		Private _FCreacion As Date
+		
+		Private _Medida As String
+		
+		Private _Abreviatura As String
+		
+		Private _FormaOferta As System.Nullable(Of Integer)
+		
+		Private _OfertaVigente As System.Nullable(Of Boolean)
+		
+		Private _idOferta As System.Nullable(Of Long)
+		
+		Private _OfertaFormula1 As System.Nullable(Of Double)
+		
+		Private _OfertaFormula2 As System.Nullable(Of Double)
+		
+		Private _Impuesto As System.Nullable(Of Single)
+		
+		Private _RE As System.Nullable(Of Single)
+		
+		Private _PrecioImpInc As Boolean
+		
+		Private _Fidelizable As Boolean
+		
+    #Region "Definiciones de métodos de extensibilidad"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnidProductoChanging(value As Long)
+    End Sub
+    Partial Private Sub OnidProductoChanged()
+    End Sub
+    Partial Private Sub OnReferenciaChanging(value As String)
+    End Sub
+    Partial Private Sub OnReferenciaChanged()
+    End Sub
+    Partial Private Sub OnDescripcionChanging(value As String)
+    End Sub
+    Partial Private Sub OnDescripcionChanged()
+    End Sub
+    Partial Private Sub OnDescripcionLargaChanging(value As String)
+    End Sub
+    Partial Private Sub OnDescripcionLargaChanged()
+    End Sub
+    Partial Private Sub OnPrecioVentaChanging(value As Single)
+    End Sub
+    Partial Private Sub OnPrecioVentaChanged()
+    End Sub
+    Partial Private Sub OnPrecioAlmayorChanging(value As Single)
+    End Sub
+    Partial Private Sub OnPrecioAlmayorChanged()
+    End Sub
+    Partial Private Sub OnUnidadVentaChanging(value As Single)
+    End Sub
+    Partial Private Sub OnUnidadVentaChanged()
+    End Sub
+    Partial Private Sub OnUltimoPrecioEntradaChanging(value As System.Nullable(Of Single))
+    End Sub
+    Partial Private Sub OnUltimoPrecioEntradaChanged()
+    End Sub
+    Partial Private Sub OnUltimoProveedorChanging(value As String)
+    End Sub
+    Partial Private Sub OnUltimoProveedorChanged()
+    End Sub
+    Partial Private Sub OnCosteChanging(value As Single)
+    End Sub
+    Partial Private Sub OnCosteChanged()
+    End Sub
+    Partial Private Sub OnDescuentoChanging(value As System.Nullable(Of Single))
+    End Sub
+    Partial Private Sub OnDescuentoChanged()
+    End Sub
+    Partial Private Sub OnUnidadXCajaChanging(value As System.Nullable(Of Single))
+    End Sub
+    Partial Private Sub OnUnidadXCajaChanged()
+    End Sub
+    Partial Private Sub OnStockSueltoChanging(value As System.Nullable(Of Single))
+    End Sub
+    Partial Private Sub OnStockSueltoChanged()
+    End Sub
+    Partial Private Sub OnStockCajaChanging(value As System.Nullable(Of Single))
+    End Sub
+    Partial Private Sub OnStockCajaChanged()
+    End Sub
+    Partial Private Sub OnActivoChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnActivoChanged()
+    End Sub
+    Partial Private Sub OnControlStockChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnControlStockChanged()
+    End Sub
+    Partial Private Sub OnPrecioVariableChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnPrecioVariableChanged()
+    End Sub
+    Partial Private Sub OnFamiliaChanging(value As String)
+    End Sub
+    Partial Private Sub OnFamiliaChanged()
+    End Sub
+    Partial Private Sub OnUbicacionChanging(value As String)
+    End Sub
+    Partial Private Sub OnUbicacionChanged()
+    End Sub
+    Partial Private Sub OnMarcaChanging(value As String)
+    End Sub
+    Partial Private Sub OnMarcaChanged()
+    End Sub
+    Partial Private Sub OnObservacionChanging(value As String)
+    End Sub
+    Partial Private Sub OnObservacionChanged()
+    End Sub
+    Partial Private Sub OnidUnidadMedidaChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidUnidadMedidaChanged()
+    End Sub
+    Partial Private Sub OnidFamiliaChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidFamiliaChanged()
+    End Sub
+    Partial Private Sub OnidMarcaChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidMarcaChanged()
+    End Sub
+    Partial Private Sub OnidUbicacionChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidUbicacionChanged()
+    End Sub
+    Partial Private Sub OnFModificacionChanging(value As System.Nullable(Of Date))
+    End Sub
+    Partial Private Sub OnFModificacionChanged()
+    End Sub
+    Partial Private Sub OnFCreacionChanging(value As Date)
+    End Sub
+    Partial Private Sub OnFCreacionChanged()
+    End Sub
+    Partial Private Sub OnMedidaChanging(value As String)
+    End Sub
+    Partial Private Sub OnMedidaChanged()
+    End Sub
+    Partial Private Sub OnAbreviaturaChanging(value As String)
+    End Sub
+    Partial Private Sub OnAbreviaturaChanged()
+    End Sub
+    Partial Private Sub OnFormaOfertaChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnFormaOfertaChanged()
+    End Sub
+    Partial Private Sub OnOfertaVigenteChanging(value As System.Nullable(Of Boolean))
+    End Sub
+    Partial Private Sub OnOfertaVigenteChanged()
+    End Sub
+    Partial Private Sub OnidOfertaChanging(value As System.Nullable(Of Long))
+    End Sub
+    Partial Private Sub OnidOfertaChanged()
+    End Sub
+    Partial Private Sub OnOfertaFormula1Changing(value As System.Nullable(Of Double))
+    End Sub
+    Partial Private Sub OnOfertaFormula1Changed()
+    End Sub
+    Partial Private Sub OnOfertaFormula2Changing(value As System.Nullable(Of Double))
+    End Sub
+    Partial Private Sub OnOfertaFormula2Changed()
+    End Sub
+    Partial Private Sub OnImpuestoChanging(value As System.Nullable(Of Single))
+    End Sub
+    Partial Private Sub OnImpuestoChanged()
+    End Sub
+    Partial Private Sub OnREChanging(value As System.Nullable(Of Single))
+    End Sub
+    Partial Private Sub OnREChanged()
+    End Sub
+    Partial Private Sub OnPrecioImpIncChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnPrecioImpIncChanged()
+    End Sub
+    Partial Private Sub OnFidelizableChanging(value As Boolean)
+    End Sub
+    Partial Private Sub OnFidelizableChanged()
+    End Sub
+    #End Region
+		
+		Public Sub New()
+			MyBase.New
+			Me.Initialize
+		End Sub
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idProducto", DbType:="BigInt NOT NULL", IsPrimaryKey:=true, UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
+		Public Property idProducto() As Long
+			Get
+				Return Me._idProducto
+			End Get
+			Set
+				If ((Me._idProducto = value)  _
+							= false) Then
+					Me.OnidProductoChanging(value)
+					Me.SendPropertyChanging
+					Me._idProducto = value
+					Me.SendPropertyChanged("idProducto")
+					Me.OnidProductoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Referencia", DbType:="VarChar(50) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=2)>  _
+		Public Property Referencia() As String
+			Get
+				Return Me._Referencia
+			End Get
+			Set
+				If (String.Equals(Me._Referencia, value) = false) Then
+					Me.OnReferenciaChanging(value)
+					Me.SendPropertyChanging
+					Me._Referencia = value
+					Me.SendPropertyChanged("Referencia")
+					Me.OnReferenciaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Descripcion", DbType:="NVarChar(200) NOT NULL", CanBeNull:=false, UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=3)>  _
+		Public Property Descripcion() As String
+			Get
+				Return Me._Descripcion
+			End Get
+			Set
+				If (String.Equals(Me._Descripcion, value) = false) Then
+					Me.OnDescripcionChanging(value)
+					Me.SendPropertyChanging
+					Me._Descripcion = value
+					Me.SendPropertyChanged("Descripcion")
+					Me.OnDescripcionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DescripcionLarga", DbType:="NVarChar(1000)", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=4)>  _
+		Public Property DescripcionLarga() As String
+			Get
+				Return Me._DescripcionLarga
+			End Get
+			Set
+				If (String.Equals(Me._DescripcionLarga, value) = false) Then
+					Me.OnDescripcionLargaChanging(value)
+					Me.SendPropertyChanging
+					Me._DescripcionLarga = value
+					Me.SendPropertyChanged("DescripcionLarga")
+					Me.OnDescripcionLargaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioVenta", DbType:="Real NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=5)>  _
+		Public Property PrecioVenta() As Single
+			Get
+				Return Me._PrecioVenta
+			End Get
+			Set
+				If ((Me._PrecioVenta = value)  _
+							= false) Then
+					Me.OnPrecioVentaChanging(value)
+					Me.SendPropertyChanging
+					Me._PrecioVenta = value
+					Me.SendPropertyChanged("PrecioVenta")
+					Me.OnPrecioVentaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioAlmayor", DbType:="Real NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=6)>  _
+		Public Property PrecioAlmayor() As Single
+			Get
+				Return Me._PrecioAlmayor
+			End Get
+			Set
+				If ((Me._PrecioAlmayor = value)  _
+							= false) Then
+					Me.OnPrecioAlmayorChanging(value)
+					Me.SendPropertyChanging
+					Me._PrecioAlmayor = value
+					Me.SendPropertyChanged("PrecioAlmayor")
+					Me.OnPrecioAlmayorChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UnidadVenta", DbType:="Real NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=7)>  _
+		Public Property UnidadVenta() As Single
+			Get
+				Return Me._UnidadVenta
+			End Get
+			Set
+				If ((Me._UnidadVenta = value)  _
+							= false) Then
+					Me.OnUnidadVentaChanging(value)
+					Me.SendPropertyChanging
+					Me._UnidadVenta = value
+					Me.SendPropertyChanged("UnidadVenta")
+					Me.OnUnidadVentaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UltimoPrecioEntrada", DbType:="Real", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=8)>  _
+		Public Property UltimoPrecioEntrada() As System.Nullable(Of Single)
+			Get
+				Return Me._UltimoPrecioEntrada
+			End Get
+			Set
+				If (Me._UltimoPrecioEntrada.Equals(value) = false) Then
+					Me.OnUltimoPrecioEntradaChanging(value)
+					Me.SendPropertyChanging
+					Me._UltimoPrecioEntrada = value
+					Me.SendPropertyChanged("UltimoPrecioEntrada")
+					Me.OnUltimoPrecioEntradaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UltimoProveedor", DbType:="NVarChar(200)", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=9)>  _
+		Public Property UltimoProveedor() As String
+			Get
+				Return Me._UltimoProveedor
+			End Get
+			Set
+				If (String.Equals(Me._UltimoProveedor, value) = false) Then
+					Me.OnUltimoProveedorChanging(value)
+					Me.SendPropertyChanging
+					Me._UltimoProveedor = value
+					Me.SendPropertyChanged("UltimoProveedor")
+					Me.OnUltimoProveedorChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Coste", DbType:="Real NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=10)>  _
+		Public Property Coste() As Single
+			Get
+				Return Me._Coste
+			End Get
+			Set
+				If ((Me._Coste = value)  _
+							= false) Then
+					Me.OnCosteChanging(value)
+					Me.SendPropertyChanging
+					Me._Coste = value
+					Me.SendPropertyChanged("Coste")
+					Me.OnCosteChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Descuento", DbType:="Real", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=11)>  _
+		Public Property Descuento() As System.Nullable(Of Single)
+			Get
+				Return Me._Descuento
+			End Get
+			Set
+				If (Me._Descuento.Equals(value) = false) Then
+					Me.OnDescuentoChanging(value)
+					Me.SendPropertyChanging
+					Me._Descuento = value
+					Me.SendPropertyChanged("Descuento")
+					Me.OnDescuentoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_UnidadXCaja", DbType:="Real", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=12)>  _
+		Public Property UnidadXCaja() As System.Nullable(Of Single)
+			Get
+				Return Me._UnidadXCaja
+			End Get
+			Set
+				If (Me._UnidadXCaja.Equals(value) = false) Then
+					Me.OnUnidadXCajaChanging(value)
+					Me.SendPropertyChanging
+					Me._UnidadXCaja = value
+					Me.SendPropertyChanged("UnidadXCaja")
+					Me.OnUnidadXCajaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_StockSuelto", DbType:="Real", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=13)>  _
+		Public Property StockSuelto() As System.Nullable(Of Single)
+			Get
+				Return Me._StockSuelto
+			End Get
+			Set
+				If (Me._StockSuelto.Equals(value) = false) Then
+					Me.OnStockSueltoChanging(value)
+					Me.SendPropertyChanging
+					Me._StockSuelto = value
+					Me.SendPropertyChanged("StockSuelto")
+					Me.OnStockSueltoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_StockCaja", DbType:="Real", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=14)>  _
+		Public Property StockCaja() As System.Nullable(Of Single)
+			Get
+				Return Me._StockCaja
+			End Get
+			Set
+				If (Me._StockCaja.Equals(value) = false) Then
+					Me.OnStockCajaChanging(value)
+					Me.SendPropertyChanging
+					Me._StockCaja = value
+					Me.SendPropertyChanged("StockCaja")
+					Me.OnStockCajaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Activo", DbType:="Bit NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=15)>  _
+		Public Property Activo() As Boolean
+			Get
+				Return Me._Activo
+			End Get
+			Set
+				If ((Me._Activo = value)  _
+							= false) Then
+					Me.OnActivoChanging(value)
+					Me.SendPropertyChanging
+					Me._Activo = value
+					Me.SendPropertyChanged("Activo")
+					Me.OnActivoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ControlStock", DbType:="Bit NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=16)>  _
+		Public Property ControlStock() As Boolean
+			Get
+				Return Me._ControlStock
+			End Get
+			Set
+				If ((Me._ControlStock = value)  _
+							= false) Then
+					Me.OnControlStockChanging(value)
+					Me.SendPropertyChanging
+					Me._ControlStock = value
+					Me.SendPropertyChanged("ControlStock")
+					Me.OnControlStockChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioVariable", DbType:="Bit NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=17)>  _
+		Public Property PrecioVariable() As Boolean
+			Get
+				Return Me._PrecioVariable
+			End Get
+			Set
+				If ((Me._PrecioVariable = value)  _
+							= false) Then
+					Me.OnPrecioVariableChanging(value)
+					Me.SendPropertyChanging
+					Me._PrecioVariable = value
+					Me.SendPropertyChanged("PrecioVariable")
+					Me.OnPrecioVariableChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Familia", DbType:="NVarChar(100)", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=18)>  _
+		Public Property Familia() As String
+			Get
+				Return Me._Familia
+			End Get
+			Set
+				If (String.Equals(Me._Familia, value) = false) Then
+					Me.OnFamiliaChanging(value)
+					Me.SendPropertyChanging
+					Me._Familia = value
+					Me.SendPropertyChanged("Familia")
+					Me.OnFamiliaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Ubicacion", DbType:="VarChar(50)", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=19)>  _
+		Public Property Ubicacion() As String
+			Get
+				Return Me._Ubicacion
+			End Get
+			Set
+				If (String.Equals(Me._Ubicacion, value) = false) Then
+					Me.OnUbicacionChanging(value)
+					Me.SendPropertyChanging
+					Me._Ubicacion = value
+					Me.SendPropertyChanged("Ubicacion")
+					Me.OnUbicacionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Marca", DbType:="NVarChar(100)", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=20)>  _
+		Public Property Marca() As String
+			Get
+				Return Me._Marca
+			End Get
+			Set
+				If (String.Equals(Me._Marca, value) = false) Then
+					Me.OnMarcaChanging(value)
+					Me.SendPropertyChanging
+					Me._Marca = value
+					Me.SendPropertyChanged("Marca")
+					Me.OnMarcaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Observacion", DbType:="NVarChar(1000)", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=21)>  _
+		Public Property Observacion() As String
+			Get
+				Return Me._Observacion
+			End Get
+			Set
+				If (String.Equals(Me._Observacion, value) = false) Then
+					Me.OnObservacionChanging(value)
+					Me.SendPropertyChanging
+					Me._Observacion = value
+					Me.SendPropertyChanged("Observacion")
+					Me.OnObservacionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUnidadMedida", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=22)>  _
+		Public Property idUnidadMedida() As System.Nullable(Of Long)
+			Get
+				Return Me._idUnidadMedida
+			End Get
+			Set
+				If (Me._idUnidadMedida.Equals(value) = false) Then
+					Me.OnidUnidadMedidaChanging(value)
+					Me.SendPropertyChanging
+					Me._idUnidadMedida = value
+					Me.SendPropertyChanged("idUnidadMedida")
+					Me.OnidUnidadMedidaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idFamilia", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=23)>  _
+		Public Property idFamilia() As System.Nullable(Of Long)
+			Get
+				Return Me._idFamilia
+			End Get
+			Set
+				If (Me._idFamilia.Equals(value) = false) Then
+					Me.OnidFamiliaChanging(value)
+					Me.SendPropertyChanging
+					Me._idFamilia = value
+					Me.SendPropertyChanged("idFamilia")
+					Me.OnidFamiliaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idMarca", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=24)>  _
+		Public Property idMarca() As System.Nullable(Of Long)
+			Get
+				Return Me._idMarca
+			End Get
+			Set
+				If (Me._idMarca.Equals(value) = false) Then
+					Me.OnidMarcaChanging(value)
+					Me.SendPropertyChanging
+					Me._idMarca = value
+					Me.SendPropertyChanged("idMarca")
+					Me.OnidMarcaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idUbicacion", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=25)>  _
+		Public Property idUbicacion() As System.Nullable(Of Long)
+			Get
+				Return Me._idUbicacion
+			End Get
+			Set
+				If (Me._idUbicacion.Equals(value) = false) Then
+					Me.OnidUbicacionChanging(value)
+					Me.SendPropertyChanging
+					Me._idUbicacion = value
+					Me.SendPropertyChanged("idUbicacion")
+					Me.OnidUbicacionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FModificacion", DbType:="SmallDateTime", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=26)>  _
+		Public Property FModificacion() As System.Nullable(Of Date)
+			Get
+				Return Me._FModificacion
+			End Get
+			Set
+				If (Me._FModificacion.Equals(value) = false) Then
+					Me.OnFModificacionChanging(value)
+					Me.SendPropertyChanging
+					Me._FModificacion = value
+					Me.SendPropertyChanged("FModificacion")
+					Me.OnFModificacionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FCreacion", DbType:="SmallDateTime NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=27)>  _
+		Public Property FCreacion() As Date
+			Get
+				Return Me._FCreacion
+			End Get
+			Set
+				If ((Me._FCreacion = value)  _
+							= false) Then
+					Me.OnFCreacionChanging(value)
+					Me.SendPropertyChanging
+					Me._FCreacion = value
+					Me.SendPropertyChanged("FCreacion")
+					Me.OnFCreacionChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Medida", DbType:="NVarChar(100)", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=28)>  _
+		Public Property Medida() As String
+			Get
+				Return Me._Medida
+			End Get
+			Set
+				If (String.Equals(Me._Medida, value) = false) Then
+					Me.OnMedidaChanging(value)
+					Me.SendPropertyChanging
+					Me._Medida = value
+					Me.SendPropertyChanged("Medida")
+					Me.OnMedidaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Abreviatura", DbType:="NVarChar(10)", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=29)>  _
+		Public Property Abreviatura() As String
+			Get
+				Return Me._Abreviatura
+			End Get
+			Set
+				If (String.Equals(Me._Abreviatura, value) = false) Then
+					Me.OnAbreviaturaChanging(value)
+					Me.SendPropertyChanging
+					Me._Abreviatura = value
+					Me.SendPropertyChanged("Abreviatura")
+					Me.OnAbreviaturaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FormaOferta", DbType:="Int", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=30)>  _
+		Public Property FormaOferta() As System.Nullable(Of Integer)
+			Get
+				Return Me._FormaOferta
+			End Get
+			Set
+				If (Me._FormaOferta.Equals(value) = false) Then
+					Me.OnFormaOfertaChanging(value)
+					Me.SendPropertyChanging
+					Me._FormaOferta = value
+					Me.SendPropertyChanged("FormaOferta")
+					Me.OnFormaOfertaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_OfertaVigente", DbType:="Bit", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=31)>  _
+		Public Property OfertaVigente() As System.Nullable(Of Boolean)
+			Get
+				Return Me._OfertaVigente
+			End Get
+			Set
+				If (Me._OfertaVigente.Equals(value) = false) Then
+					Me.OnOfertaVigenteChanging(value)
+					Me.SendPropertyChanging
+					Me._OfertaVigente = value
+					Me.SendPropertyChanged("OfertaVigente")
+					Me.OnOfertaVigenteChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_idOferta", DbType:="BigInt", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=32)>  _
+		Public Property idOferta() As System.Nullable(Of Long)
+			Get
+				Return Me._idOferta
+			End Get
+			Set
+				If (Me._idOferta.Equals(value) = false) Then
+					Me.OnidOfertaChanging(value)
+					Me.SendPropertyChanging
+					Me._idOferta = value
+					Me.SendPropertyChanged("idOferta")
+					Me.OnidOfertaChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_OfertaFormula1", DbType:="Float", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=33)>  _
+		Public Property OfertaFormula1() As System.Nullable(Of Double)
+			Get
+				Return Me._OfertaFormula1
+			End Get
+			Set
+				If (Me._OfertaFormula1.Equals(value) = false) Then
+					Me.OnOfertaFormula1Changing(value)
+					Me.SendPropertyChanging
+					Me._OfertaFormula1 = value
+					Me.SendPropertyChanged("OfertaFormula1")
+					Me.OnOfertaFormula1Changed
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_OfertaFormula2", DbType:="Float", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=34)>  _
+		Public Property OfertaFormula2() As System.Nullable(Of Double)
+			Get
+				Return Me._OfertaFormula2
+			End Get
+			Set
+				If (Me._OfertaFormula2.Equals(value) = false) Then
+					Me.OnOfertaFormula2Changing(value)
+					Me.SendPropertyChanging
+					Me._OfertaFormula2 = value
+					Me.SendPropertyChanged("OfertaFormula2")
+					Me.OnOfertaFormula2Changed
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Impuesto", DbType:="Real", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=35)>  _
+		Public Property Impuesto() As System.Nullable(Of Single)
+			Get
+				Return Me._Impuesto
+			End Get
+			Set
+				If (Me._Impuesto.Equals(value) = false) Then
+					Me.OnImpuestoChanging(value)
+					Me.SendPropertyChanging
+					Me._Impuesto = value
+					Me.SendPropertyChanged("Impuesto")
+					Me.OnImpuestoChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_RE", DbType:="Real", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=36)>  _
+		Public Property RE() As System.Nullable(Of Single)
+			Get
+				Return Me._RE
+			End Get
+			Set
+				If (Me._RE.Equals(value) = false) Then
+					Me.OnREChanging(value)
+					Me.SendPropertyChanging
+					Me._RE = value
+					Me.SendPropertyChanged("RE")
+					Me.OnREChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PrecioImpInc", DbType:="Bit NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=37)>  _
+		Public Property PrecioImpInc() As Boolean
+			Get
+				Return Me._PrecioImpInc
+			End Get
+			Set
+				If ((Me._PrecioImpInc = value)  _
+							= false) Then
+					Me.OnPrecioImpIncChanging(value)
+					Me.SendPropertyChanging
+					Me._PrecioImpInc = value
+					Me.SendPropertyChanged("PrecioImpInc")
+					Me.OnPrecioImpIncChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Fidelizable", DbType:="Bit NOT NULL", UpdateCheck:=UpdateCheck.Never),  _
+		 Global.System.Runtime.Serialization.DataMemberAttribute(Order:=38)>  _
+		Public Property Fidelizable() As Boolean
+			Get
+				Return Me._Fidelizable
+			End Get
+			Set
+				If ((Me._Fidelizable = value)  _
+							= false) Then
+					Me.OnFidelizableChanging(value)
+					Me.SendPropertyChanging
+					Me._Fidelizable = value
+					Me.SendPropertyChanged("Fidelizable")
+					Me.OnFidelizableChanged
 				End If
 			End Set
 		End Property

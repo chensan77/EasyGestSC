@@ -590,7 +590,7 @@
             Me.alertTarea.AutoCloseDelay = 8
             Me.alertTarea.AutoSize = True
             Me.alertTarea.CaptionText = "提醒 - Aviso"
-            Me.alertTarea.ContentImage = Global.EasyGest.My.Resources.Resources.AQUA_ICONS_SYSTEM_ALERT_NOTE_ICON
+            Me.alertTarea.ContentImage = Global.EasyGest.My.Resources.Resources.AquaAlert
             Me.alertTarea.Opacity = 1.0!
             Me.alertTarea.PopupAnimationDirection = Telerik.WinControls.UI.RadDirection.Up
             Me.alertTarea.ShowOptionsButton = False

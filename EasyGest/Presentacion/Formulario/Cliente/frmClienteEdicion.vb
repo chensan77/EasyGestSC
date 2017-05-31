@@ -36,10 +36,15 @@ Namespace Presentacion.Formulario.Cliente
 
         End Sub
 
+        Private Sub frmClienteEdicion_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+            txtNombre.Select()
+        End Sub
+
         Private Sub frmClienteEdicion_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
             Try
                 PrepararControles(Me.Controls)
+                btnAceptar.ButtonElement.Shortcuts.Add(New Telerik.WinControls.RadShortcut(Keys.Control, Keys.Enter))
                 AddHandler chkAplicarRE.KeyPress, AddressOf checkbox_KeyPress
                 ' cargar los comboboxs
                 Using control As New ProvinciasEspañolasController
@@ -57,7 +62,6 @@ Namespace Presentacion.Formulario.Cliente
                 lblAplicarImpIndirecto.Text = String.Format(lblAplicarImpIndirecto.Text, gConfGlobal.NombreImpuesto)
                 btnAceptar.Enabled = False
                 timValidar.Enabled = True
-                btnAceptar.ButtonElement.Shortcuts.Add(New Telerik.WinControls.RadShortcut(Keys.Control, Keys.Enter))
             Catch ex As Exception
                 MostrarMensaje(Me.Text, My.Resources.Application.ErrorCargarDatos, ex, Telerik.WinControls.RadMessageIcon.Exclamation)
                 btnAceptar.Enabled = False
@@ -106,6 +110,7 @@ Namespace Presentacion.Formulario.Cliente
         Private Sub txtNombreChino_Leave(sender As Object, e As EventArgs) Handles txtNombreChino.Leave
             InputLanguage.CurrentInputLanguage = InputLanguage.DefaultInputLanguage
         End Sub
+
 
     End Class
 

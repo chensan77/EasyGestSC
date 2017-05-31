@@ -430,7 +430,7 @@
     <value>商品</value>
   </data>
   <data name="GridHeaderTextBuscarCliente" xml:space="preserve">
-    <value>货商号;名称;证件类型;证件号码;地址;邮编;城镇;省份;建立日期</value>
+    <value>客户号;名称;证件类型;证件号码;地址;邮编;城镇;省份;建立日期</value>
   </data>
   <data name="GridHeaderTextBuscarProducto" xml:space="preserve">
     <value>编号;商品;售价;最新货商;品种;位置;品牌;建立日期</value>
@@ -443,5 +443,13 @@
   </data>
   <data name="GridHeaderTextTareaInicio" xml:space="preserve">
     <value>;事件;日期;时间</value>
+  </data>
+  <data name="ConfirmacionCancelarVale" xml:space="preserve">
+    <value>确定取消所选的购物卷
+Nº: {0} Importe: {1}</value>
+  </data>
+  <data name="ConfirmacionReactivarVale" xml:space="preserve">
+    <value>确定激活所选的购物卷
+Nº: {0} Importe: {1}</value>
   </data>
 </root>

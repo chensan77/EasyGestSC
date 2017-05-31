@@ -190,77 +190,109 @@
   <data name="popupcParamInicio.Size" type="System.Drawing.Size, System.Drawing">
     <value>244, 227</value>
   </data>
-  <data name="RadLabel3.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="popupcmbParamInicio.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
   </data>
-  <data name="RadLabel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 85</value>
+  <data name="popupcmbParamInicio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>190, 348</value>
   </data>
-  <data name="RadLabel3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="popupcmbParamInicio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 20</value>
+  </data>
+  <data name="popupcmbParamInicio.Text" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="chkUsarCajon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 27</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chkUsarCajon.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="chkUsarCuchilloCorte.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 226</value>
+  </data>
+  <data name="chkUsarCuchilloCorte.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 18</value>
+  </data>
+  <data name="chkUsarCuchilloCorte.Text" xml:space="preserve">
+    <value>          </value>
+  </data>
+  <data name="RadLabel46.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel46.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 226</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="RadLabel46.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="RadLabel46.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 18</value>
+  </data>
+  <data name="RadLabel46.Text" xml:space="preserve">
+    <value>使用打印机的切纸刀</value>
+  </data>
+  <data name="RadLabel46.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="RadLabel46.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ddlTeclado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 109</value>
+  </data>
+  <data name="ddlTeclado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 24</value>
+  </data>
+  <data name="ddlMomentoApertura.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 51</value>
+  </data>
+  <data name="ddlMomentoApertura.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 24</value>
+  </data>
+  <data name="RadLabel15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 56</value>
+  </data>
+  <data name="RadLabel15.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 18</value>
   </data>
-  <data name="RadLabel3.Text" xml:space="preserve">
-    <value>打开抽屉的序列</value>
+  <data name="RadLabel15.Text" xml:space="preserve">
+    <value>打开抽屉的时候</value>
   </data>
-  <data name="RadLabel5.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtConexionAuxialiar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 311</value>
+  </data>
+  <data name="txtConexionAuxialiar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 24</value>
+  </data>
+  <data name="spinNumCaracteres.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 250</value>
+  </data>
+  <data name="spinNumCaracteres.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 24</value>
+  </data>
+  <data name="spinNumeroRegistro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 279</value>
+  </data>
+  <data name="spinNumeroRegistro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 24</value>
+  </data>
+  <data name="RadLabel29.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
   </data>
-  <data name="RadLabel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 113</value>
+  <data name="RadLabel29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 256</value>
   </data>
-  <data name="RadLabel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 18</value>
+  <data name="RadLabel29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 18</value>
   </data>
-  <data name="RadLabel5.Text" xml:space="preserve">
-    <value>打开抽屉的快捷键</value>
-  </data>
-  <data name="RadLabel6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 27</value>
-  </data>
-  <data name="RadLabel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 18</value>
-  </data>
-  <data name="RadLabel6.Text" xml:space="preserve">
-    <value>使用储钱抽屉</value>
-  </data>
-  <data name="RadLabel7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 171</value>
-  </data>
-  <data name="RadLabel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 18</value>
-  </data>
-  <data name="RadLabel7.Text" xml:space="preserve">
-    <value>默认打印机</value>
-  </data>
-  <data name="RadLabel8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 199</value>
-  </data>
-  <data name="RadLabel8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 18</value>
-  </data>
-  <data name="RadLabel8.Text" xml:space="preserve">
-    <value>购物劵打印机</value>
-  </data>
-  <data name="RadLabel9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 142</value>
-  </data>
-  <data name="RadLabel9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 18</value>
-  </data>
-  <data name="RadLabel9.Text" xml:space="preserve">
-    <value>钱柜底金额</value>
+  <data name="RadLabel29.Text" xml:space="preserve">
+    <value>购物劵宽度中的字母数</value>
   </data>
   <data name="RadLabel10.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
@@ -274,17 +306,149 @@
   <data name="RadLabel10.Text" xml:space="preserve">
     <value>每页中将显示的数据行数</value>
   </data>
-  <data name="RadLabel11.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="spinDepositoInicial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 136</value>
+  </data>
+  <data name="spinDepositoInicial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 24</value>
+  </data>
+  <data name="RadLabel9.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
   </data>
-  <data name="RadLabel11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 142</value>
+  <data name="RadLabel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 142</value>
   </data>
-  <data name="RadLabel11.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="RadLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 18</value>
+  </data>
+  <data name="RadLabel9.Text" xml:space="preserve">
+    <value>钱柜底金额</value>
+  </data>
+  <data name="ddlImpresoraXDefecto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 165</value>
+  </data>
+  <data name="ddlImpresoraXDefecto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 24</value>
+  </data>
+  <data name="ddlImpresoraTicket.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 193</value>
+  </data>
+  <data name="ddlImpresoraTicket.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 24</value>
+  </data>
+  <data name="chkAtajoAlt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 113</value>
+  </data>
+  <data name="chkAtajoCtrl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 113</value>
+  </data>
+  <data name="chkAtajoShift.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 113</value>
+  </data>
+  <data name="chkMostrarInicio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 349</value>
+  </data>
+  <data name="RadLabel8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 199</value>
+  </data>
+  <data name="RadLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 18</value>
+  </data>
+  <data name="RadLabel8.Text" xml:space="preserve">
+    <value>购物劵打印机</value>
+  </data>
+  <data name="RadLabel7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 171</value>
+  </data>
+  <data name="RadLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 18</value>
+  </data>
+  <data name="RadLabel7.Text" xml:space="preserve">
+    <value>默认打印机</value>
+  </data>
+  <data name="RadLabel5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 113</value>
+  </data>
+  <data name="RadLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 18</value>
+  </data>
+  <data name="RadLabel5.Text" xml:space="preserve">
+    <value>打开抽屉的快捷键</value>
+  </data>
+  <data name="txtSecuenciaApertura.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 79</value>
+  </data>
+  <data name="txtSecuenciaApertura.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 24</value>
+  </data>
+  <data name="txtSecuenciaApertura.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.Text1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 85</value>
+  </data>
+  <data name="RadLabel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 18</value>
   </data>
-  <data name="RadLabel11.Text" xml:space="preserve">
-    <value>价格里包括税率</value>
+  <data name="RadLabel3.Text" xml:space="preserve">
+    <value>打开抽屉的序列</value>
+  </data>
+  <data name="RadLabel44.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel44.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 349</value>
+  </data>
+  <data name="RadLabel44.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 18</value>
+  </data>
+  <data name="RadLabel44.Text" xml:space="preserve">
+    <value>程序开启后显示头页</value>
+  </data>
+  <data name="RadLabel6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 27</value>
+  </data>
+  <data name="RadLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 18</value>
+  </data>
+  <data name="RadLabel6.Text" xml:space="preserve">
+    <value>使用储钱抽屉</value>
+  </data>
+  <data name="RadLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9pt</value>
+  </data>
+  <data name="RadLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>319, 18</value>
+  </data>
+  <data name="RadLabel1.Text" xml:space="preserve">
+    <value>这些参数会影响程序的本机的操作使用。</value>
+  </data>
+  <data name="pvpParametroLocal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 41</value>
+  </data>
+  <data name="pvpParametroLocal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>368, 522</value>
+  </data>
+  <data name="pvpParametroLocal.Text" xml:space="preserve">
+    <value>本机</value>
   </data>
   <data name="RadLabel12.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
@@ -478,169 +642,12 @@
   <data name="RadLabel30.Text" xml:space="preserve">
     <value>使用客户卡</value>
   </data>
-  <data name="RadLabel28.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="RadLabel28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 18</value>
-  </data>
-  <data name="RadLabel28.Text" xml:space="preserve">
-    <value>客户卡里将得到的优惠方式</value>
-  </data>
-  <data name="RadLabel37.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel37.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 56</value>
-  </data>
-  <data name="RadLabel37.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 18</value>
-  </data>
-  <data name="RadLabel37.Text" xml:space="preserve">
-    <value>点相等于</value>
-  </data>
-  <data name="RadLabel34.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel34.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 30</value>
-  </data>
-  <data name="RadLabel34.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 18</value>
-  </data>
-  <data name="RadLabel34.Text" xml:space="preserve">
-    <value>欧元, 得到</value>
-  </data>
-  <data name="RadLabel38.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel38.Location" type="System.Drawing.Point, System.Drawing">
-    <value>278, 56</value>
-  </data>
-  <data name="RadLabel38.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 18</value>
-  </data>
-  <data name="RadLabel38.Text" xml:space="preserve">
-    <value>欧元。</value>
-  </data>
-  <data name="RadLabel35.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 30</value>
-  </data>
-  <data name="RadLabel35.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 18</value>
-  </data>
-  <data name="RadLabel35.Text" xml:space="preserve">
-    <value>金额或点数.</value>
-  </data>
-  <data name="RadLabel36.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 56</value>
-  </data>
-  <data name="RadLabel36.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 18</value>
-  </data>
-  <data name="RadLabel36.Text" xml:space="preserve">
-    <value>如是点数的话，每</value>
-  </data>
-  <data name="RadLabel33.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 29</value>
-  </data>
-  <data name="RadLabel33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 18</value>
-  </data>
-  <data name="RadLabel33.Text" xml:space="preserve">
-    <value>每购买</value>
-  </data>
-  <data name="RadLabel32.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 69</value>
-  </data>
-  <data name="RadLabel32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 18</value>
-  </data>
-  <data name="RadLabel32.Text" xml:space="preserve">
-    <value>所有客户都使用相同的优惠计算方式</value>
-  </data>
-  <data name="RadLabel31.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 40</value>
-  </data>
-  <data name="RadLabel31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 18</value>
-  </data>
-  <data name="RadLabel31.Text" xml:space="preserve">
-    <value>允许部分地使用所得到的优惠</value>
-  </data>
-  <data name="RadLabel40.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel40.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 126</value>
-  </data>
-  <data name="RadLabel40.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 18</value>
-  </data>
-  <data name="RadLabel40.Text" xml:space="preserve">
-    <value>发放优惠券的最低金额（欧元）</value>
-  </data>
-  <data name="RadLabel39.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel39.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 98</value>
-  </data>
-  <data name="RadLabel39.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 18</value>
-  </data>
-  <data name="RadLabel39.Text" xml:space="preserve">
-    <value>发放优惠券的时间周期 (周数)</value>
-  </data>
-  <data name="RadLabel15.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 56</value>
-  </data>
-  <data name="RadLabel15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 18</value>
-  </data>
-  <data name="RadLabel15.Text" xml:space="preserve">
-    <value>打开抽屉的时候</value>
-  </data>
-  <data name="RadLabel29.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 256</value>
-  </data>
-  <data name="RadLabel29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 18</value>
-  </data>
-  <data name="RadLabel29.Text" xml:space="preserve">
-    <value>购物劵宽度中的字母数</value>
-  </data>
   <data name="RadLabel41.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel41.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 170</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="RadLabel41.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
@@ -653,57 +660,8 @@
   <data name="RadLabel41.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="RadLabel41.TextWrap" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="RadLabel42.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel42.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 155</value>
-  </data>
-  <data name="RadLabel42.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="RadLabel42.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 32</value>
-  </data>
-  <data name="RadLabel42.Text" xml:space="preserve">
-    <value>&lt;html&gt;&lt;span&gt;优惠券的有效期限 (周数)&lt;span&gt;&lt;br /&gt;&lt;span style="color: #12aa23; font-size: 8.25pt"&gt;零值表示无期限&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/html&gt;</value>
-  </data>
-  <data name="RadLabel42.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="RadLabel42.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="txtBasePunto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>122, 51</value>
-  </data>
-  <data name="txtEquivalenteEuroBeneficio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>182, 24</value>
-  </data>
-  <data name="txtBaseEuro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 24</value>
-  </data>
-  <data name="txtEquivalenciaPuntoEuro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 51</value>
-  </data>
-  <data name="RadGroupBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadGroupBox1.HeaderText" xml:space="preserve">
-    <value>优惠计算方式</value>
-  </data>
-  <data name="RadGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 191</value>
-  </data>
-  <data name="RadGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>334, 85</value>
-  </data>
-  <data name="RadGroupBox1.Text" xml:space="preserve">
-    <value>优惠计算方式</value>
   </data>
   <data name="RadLabel43.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
@@ -719,147 +677,6 @@
   </data>
   <data name="RadLabel43.Text" xml:space="preserve">
     <value>商品中启用库存控制</value>
-  </data>
-  <data name="RadLabel44.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel44.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 349</value>
-  </data>
-  <data name="RadLabel44.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 18</value>
-  </data>
-  <data name="RadLabel44.Text" xml:space="preserve">
-    <value>程序开启后显示头页</value>
-  </data>
-  <data name="RadLabel46.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="RadLabel46.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 226</value>
-  </data>
-  <data name="RadLabel46.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="RadLabel46.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 18</value>
-  </data>
-  <data name="RadLabel46.Text" xml:space="preserve">
-    <value>使用打印机的切纸刀</value>
-  </data>
-  <data name="RadLabel46.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="RadLabel46.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="popupcmbParamInicio.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9.75pt</value>
-  </data>
-  <data name="popupcmbParamInicio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>190, 348</value>
-  </data>
-  <data name="popupcmbParamInicio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 20</value>
-  </data>
-  <data name="popupcmbParamInicio.Text" xml:space="preserve">
-    <value>设置</value>
-  </data>
-  <data name="chkUsarCuchilloCorte.Location" type="System.Drawing.Point, System.Drawing">
-    <value>178, 226</value>
-  </data>
-  <data name="chkUsarCuchilloCorte.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 18</value>
-  </data>
-  <data name="chkUsarCuchilloCorte.Text" xml:space="preserve">
-    <value>          </value>
-  </data>
-  <data name="ddlTeclado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 109</value>
-  </data>
-  <data name="ddlTeclado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 24</value>
-  </data>
-  <data name="ddlMomentoApertura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 51</value>
-  </data>
-  <data name="ddlMomentoApertura.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 24</value>
-  </data>
-  <data name="txtConexionAuxialiar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 311</value>
-  </data>
-  <data name="txtConexionAuxialiar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 24</value>
-  </data>
-  <data name="spinNumCaracteres.Location" type="System.Drawing.Point, System.Drawing">
-    <value>178, 250</value>
-  </data>
-  <data name="spinNumCaracteres.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 24</value>
-  </data>
-  <data name="spinNumeroRegistro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>178, 279</value>
-  </data>
-  <data name="spinNumeroRegistro.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 24</value>
-  </data>
-  <data name="spinDepositoInicial.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 136</value>
-  </data>
-  <data name="spinDepositoInicial.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 24</value>
-  </data>
-  <data name="ddlImpresoraXDefecto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 165</value>
-  </data>
-  <data name="ddlImpresoraXDefecto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 24</value>
-  </data>
-  <data name="ddlImpresoraTicket.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 193</value>
-  </data>
-  <data name="ddlImpresoraTicket.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 24</value>
-  </data>
-  <data name="chkAtajoAlt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 113</value>
-  </data>
-  <data name="chkAtajoCtrl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>184, 113</value>
-  </data>
-  <data name="chkAtajoShift.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 113</value>
-  </data>
-  <data name="chkMostrarInicio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 349</value>
-  </data>
-  <data name="chkUsarCajon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 27</value>
-  </data>
-  <data name="txtSecuenciaApertura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 79</value>
-  </data>
-  <data name="txtSecuenciaApertura.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 24</value>
-  </data>
-  <data name="RadLabel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>楷体, 9pt</value>
-  </data>
-  <data name="RadLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 18</value>
-  </data>
-  <data name="RadLabel1.Text" xml:space="preserve">
-    <value>这些参数会影响程序的本机的操作使用。</value>
-  </data>
-  <data name="pvpParametroLocal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 10</value>
-  </data>
-  <data name="pvpParametroLocal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 555</value>
-  </data>
-  <data name="pvpParametroLocal.Text" xml:space="preserve">
-    <value>本机</value>
   </data>
   <data name="chkControlStock.Location" type="System.Drawing.Point, System.Drawing">
     <value>197, 198</value>
@@ -984,6 +801,18 @@
   <data name="chkSiempreImprimir.Location" type="System.Drawing.Point, System.Drawing">
     <value>197, 58</value>
   </data>
+  <data name="RadLabel11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 142</value>
+  </data>
+  <data name="RadLabel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 18</value>
+  </data>
+  <data name="RadLabel11.Text" xml:space="preserve">
+    <value>价格里包括税率</value>
+  </data>
   <data name="RadLabel2.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9pt</value>
   </data>
@@ -994,16 +823,115 @@
     <value>这些参数会影响程序的全程的操作使用。</value>
   </data>
   <data name="pvpParametroGlobal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 10</value>
+    <value>10, 41</value>
   </data>
   <data name="pvpParametroGlobal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 555</value>
+    <value>368, 522</value>
   </data>
   <data name="pvpParametroGlobal.Text" xml:space="preserve">
     <value>全程</value>
   </data>
   <data name="chkUsoParcial.Location" type="System.Drawing.Point, System.Drawing">
     <value>238, 40</value>
+  </data>
+  <data name="RadLabel34.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 30</value>
+  </data>
+  <data name="RadLabel34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 18</value>
+  </data>
+  <data name="RadLabel34.Text" xml:space="preserve">
+    <value>欧元, 得到</value>
+  </data>
+  <data name="RadLabel38.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>278, 56</value>
+  </data>
+  <data name="RadLabel38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 18</value>
+  </data>
+  <data name="RadLabel38.Text" xml:space="preserve">
+    <value>欧元。</value>
+  </data>
+  <data name="RadLabel35.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 30</value>
+  </data>
+  <data name="RadLabel35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 18</value>
+  </data>
+  <data name="RadLabel35.Text" xml:space="preserve">
+    <value>金额或点数.</value>
+  </data>
+  <data name="RadLabel36.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 56</value>
+  </data>
+  <data name="RadLabel36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 18</value>
+  </data>
+  <data name="RadLabel36.Text" xml:space="preserve">
+    <value>如是点数的话，每</value>
+  </data>
+  <data name="RadLabel33.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 29</value>
+  </data>
+  <data name="RadLabel33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 18</value>
+  </data>
+  <data name="RadLabel33.Text" xml:space="preserve">
+    <value>每购买</value>
+  </data>
+  <data name="txtBasePunto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 51</value>
+  </data>
+  <data name="txtEquivalenteEuroBeneficio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 24</value>
+  </data>
+  <data name="RadLabel37.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 56</value>
+  </data>
+  <data name="RadLabel37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 18</value>
+  </data>
+  <data name="RadLabel37.Text" xml:space="preserve">
+    <value>点相等于</value>
+  </data>
+  <data name="txtBaseEuro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 24</value>
+  </data>
+  <data name="txtEquivalenciaPuntoEuro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 51</value>
+  </data>
+  <data name="RadGroupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadGroupBox1.HeaderText" xml:space="preserve">
+    <value>优惠计算方式</value>
+  </data>
+  <data name="RadGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 191</value>
+  </data>
+  <data name="RadGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 85</value>
+  </data>
+  <data name="RadGroupBox1.Text" xml:space="preserve">
+    <value>优惠计算方式</value>
   </data>
   <data name="spinValidezBeneficio.Location" type="System.Drawing.Point, System.Drawing">
     <value>238, 155</value>
@@ -1017,6 +945,30 @@
   <data name="spinPeriodoEmision.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 24</value>
   </data>
+  <data name="RadLabel28.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="RadLabel28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 18</value>
+  </data>
+  <data name="RadLabel28.Text" xml:space="preserve">
+    <value>客户卡里将得到的优惠方式</value>
+  </data>
+  <data name="RadLabel31.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 40</value>
+  </data>
+  <data name="RadLabel31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 18</value>
+  </data>
+  <data name="RadLabel31.Text" xml:space="preserve">
+    <value>允许部分地使用所得到的优惠</value>
+  </data>
   <data name="ddlTipoBeneficio.Location" type="System.Drawing.Point, System.Drawing">
     <value>238, 12</value>
   </data>
@@ -1026,17 +978,74 @@
   <data name="chkFormulaComun.Location" type="System.Drawing.Point, System.Drawing">
     <value>238, 69</value>
   </data>
+  <data name="RadLabel32.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 69</value>
+  </data>
+  <data name="RadLabel32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 18</value>
+  </data>
+  <data name="RadLabel32.Text" xml:space="preserve">
+    <value>所有客户都使用相同的优惠计算方式</value>
+  </data>
+  <data name="RadLabel39.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 98</value>
+  </data>
+  <data name="RadLabel39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 18</value>
+  </data>
+  <data name="RadLabel39.Text" xml:space="preserve">
+    <value>发放优惠券的时间周期 (周数)</value>
+  </data>
+  <data name="RadLabel42.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel42.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 155</value>
+  </data>
+  <data name="RadLabel42.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="RadLabel42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 32</value>
+  </data>
+  <data name="RadLabel42.Text" xml:space="preserve">
+    <value>&lt;html&gt;&lt;span&gt;优惠券的有效期限 (周数)&lt;span&gt;&lt;br /&gt;&lt;span style="color: #12aa23; font-size: 8.25pt"&gt;零值表示无期限&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="RadLabel42.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="RadLabel42.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="spinCantidadMinEmision.Location" type="System.Drawing.Point, System.Drawing">
     <value>238, 126</value>
   </data>
   <data name="spinCantidadMinEmision.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 24</value>
   </data>
+  <data name="RadLabel40.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel40.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 126</value>
+  </data>
+  <data name="RadLabel40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 18</value>
+  </data>
+  <data name="RadLabel40.Text" xml:space="preserve">
+    <value>发放优惠券的最低金额（欧元）</value>
+  </data>
   <data name="pvpParametroFidelizacion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 10</value>
+    <value>10, 41</value>
   </data>
   <data name="pvpParametroFidelizacion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 555</value>
+    <value>368, 522</value>
   </data>
   <data name="pvpParametroFidelizacion.Text" xml:space="preserve">
     <value>客户卡</value>
@@ -1045,31 +1054,43 @@
     <value>楷体, 12pt</value>
   </data>
   <data name="pvParametro.Size" type="System.Drawing.Size, System.Drawing">
-    <value>397, 576</value>
+    <value>389, 574</value>
   </data>
   <data name="pvParametro.Text" xml:space="preserve">
     <value>参数</value>
+  </data>
+  <data name="RadScrollablePanel1.PanelContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>389, 574</value>
+  </data>
+  <data name="RadScrollablePanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 576</value>
   </data>
   <data name="btnCancelar.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
   </data>
   <data name="btnCancelar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 64</value>
+    <value>401, 66</value>
   </data>
   <data name="btnCancelar.Text" xml:space="preserve">
-    <value>确定</value>
+    <value>取消</value>
   </data>
-  <data name="resource.Text8" xml:space="preserve">
-    <value>确定</value>
+  <data name="resource.Text7" xml:space="preserve">
+    <value>取消</value>
   </data>
   <data name="btnAceptar.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
   </data>
   <data name="btnAceptar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 9</value>
+    <value>401, 11</value>
+  </data>
+  <data name="btnAceptar.Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="resource.Text8" xml:space="preserve">
+    <value>确定</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>489, 576</value>
+    <value>492, 576</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>

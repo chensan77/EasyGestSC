@@ -26,13 +26,15 @@ namespace EasyGest.Print.Printing
         public int LabelGapLength { get; set; }
         public string MeasurementUnit { get; set; }
         public char RamDrive { get; set; }
-
+        public bool SupportCutter { get; set; }
+        public int CharacterNumberPerLine { get; set; }
         public PrinterSettings()
         {
             RamDrive = 'R';
             AdjustLabelSize = false;
             PrinterCodePage = Codepage8.Windows_1250;
             MeasurementUnit = string.Empty;
+            SupportCutter = false;
         }
     }
 }
