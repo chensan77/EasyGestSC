@@ -141,7 +141,7 @@
     <value>RadLabel1</value>
   </data>
   <data name="&gt;&gt;RadLabel1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;RadLabel1.Parent" xml:space="preserve">
     <value>ToolWindow3</value>
@@ -181,7 +181,7 @@
     <value>gridProveedor</value>
   </data>
   <data name="&gt;&gt;gridProveedor.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;gridProveedor.Parent" xml:space="preserve">
     <value>docwGridProveedor</value>
@@ -205,7 +205,7 @@
     <value>docwGridProveedor</value>
   </data>
   <data name="&gt;&gt;docwGridProveedor.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.DocumentWindow, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.DocumentWindow, Telerik.WinControls.RadDock, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;docwGridProveedor.Parent" xml:space="preserve">
     <value>DocumentTabStrip1</value>
@@ -220,7 +220,7 @@
     <value>MiddleRight</value>
   </data>
   <data name="btnAplicar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>321, 355</value>
+    <value>321, 359</value>
   </data>
   <data name="btnAplicar.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 30</value>
@@ -241,7 +241,7 @@
     <value>btnAplicar</value>
   </data>
   <data name="&gt;&gt;btnAplicar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;btnAplicar.Parent" xml:space="preserve">
     <value>toolBusquedaAvanzada</value>
@@ -268,7 +268,7 @@
     <value>datafilterBusquadaAvanzada</value>
   </data>
   <data name="&gt;&gt;datafilterBusquadaAvanzada.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadDataFilter, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadDataFilter, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;datafilterBusquadaAvanzada.Parent" xml:space="preserve">
     <value>toolBusquedaAvanzada</value>
@@ -292,7 +292,7 @@
     <value>toolBusquedaAvanzada</value>
   </data>
   <data name="&gt;&gt;toolBusquedaAvanzada.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.ToolWindow, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.ToolWindow, Telerik.WinControls.RadDock, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;toolBusquedaAvanzada.Parent" xml:space="preserve">
     <value>ToolTabStrip2</value>
@@ -313,7 +313,7 @@
     <value>ToolTabStrip2</value>
   </data>
   <data name="&gt;&gt;ToolTabStrip2.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.ToolTabStrip, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.ToolTabStrip, Telerik.WinControls.RadDock, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;ToolTabStrip2.Parent" xml:space="preserve">
     <value>RadDock1</value>
@@ -337,7 +337,7 @@
     <value>txtValor</value>
   </data>
   <data name="&gt;&gt;txtValor.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;txtValor.Parent" xml:space="preserve">
     <value>ToolWindow3</value>
@@ -361,7 +361,7 @@
     <value>ToolWindow3</value>
   </data>
   <data name="&gt;&gt;ToolWindow3.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.ToolWindow, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.ToolWindow, Telerik.WinControls.RadDock, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;ToolWindow3.Parent" xml:space="preserve">
     <value>ToolTabStrip4</value>
@@ -382,7 +382,7 @@
     <value>ToolTabStrip4</value>
   </data>
   <data name="&gt;&gt;ToolTabStrip4.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.ToolTabStrip, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.ToolTabStrip, Telerik.WinControls.RadDock, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;ToolTabStrip4.Parent" xml:space="preserve">
     <value>RadSplitContainer1</value>
@@ -421,7 +421,7 @@
     <value>gridProducto</value>
   </data>
   <data name="&gt;&gt;gridProducto.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;gridProducto.Parent" xml:space="preserve">
     <value>docwGridProducto</value>
@@ -445,7 +445,7 @@
     <value>docwGridProducto</value>
   </data>
   <data name="&gt;&gt;docwGridProducto.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.DocumentWindow, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.DocumentWindow, Telerik.WinControls.RadDock, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;docwGridProducto.Parent" xml:space="preserve">
     <value>DocumentTabStrip1</value>
@@ -484,7 +484,7 @@
     <value>gridCliente</value>
   </data>
   <data name="&gt;&gt;gridCliente.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;gridCliente.Parent" xml:space="preserve">
     <value>docwGridCliente</value>
@@ -508,7 +508,7 @@
     <value>docwGridCliente</value>
   </data>
   <data name="&gt;&gt;docwGridCliente.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.DocumentWindow, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.DocumentWindow, Telerik.WinControls.RadDock, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;docwGridCliente.Parent" xml:space="preserve">
     <value>DocumentTabStrip1</value>
@@ -529,7 +529,7 @@
     <value>DocumentTabStrip1</value>
   </data>
   <data name="&gt;&gt;DocumentTabStrip1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.DocumentTabStrip, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.DocumentTabStrip, Telerik.WinControls.RadDock, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;DocumentTabStrip1.Parent" xml:space="preserve">
     <value>DocumentContainer1</value>
@@ -544,7 +544,7 @@
     <value>DocumentContainer1</value>
   </data>
   <data name="&gt;&gt;DocumentContainer1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.DocumentContainer, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.DocumentContainer, Telerik.WinControls.RadDock, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;DocumentContainer1.Parent" xml:space="preserve">
     <value>RadSplitContainer1</value>
@@ -571,7 +571,7 @@
     <value>RadSplitContainer1</value>
   </data>
   <data name="&gt;&gt;RadSplitContainer1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadSplitContainer, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadSplitContainer, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;RadSplitContainer1.Parent" xml:space="preserve">
     <value>RadDock1</value>
@@ -598,7 +598,7 @@
     <value>RadDock1</value>
   </data>
   <data name="&gt;&gt;RadDock1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Docking.RadDock, Telerik.WinControls.RadDock, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Docking.RadDock, Telerik.WinControls.RadDock, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;RadDock1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -637,7 +637,7 @@
     <value>btnCancelar</value>
   </data>
   <data name="&gt;&gt;btnCancelar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;btnCancelar.Parent" xml:space="preserve">
     <value>$this</value>
@@ -679,7 +679,7 @@
     <value>btnAceptar</value>
   </data>
   <data name="&gt;&gt;btnAceptar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;btnAceptar.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1012,13 +1012,13 @@
     <value>EnumBinder1</value>
   </data>
   <data name="&gt;&gt;EnumBinder1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Data.EnumBinder, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Data.EnumBinder, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;EnumBinder2.Name" xml:space="preserve">
     <value>EnumBinder2</value>
   </data>
   <data name="&gt;&gt;EnumBinder2.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.Data.EnumBinder, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.Data.EnumBinder, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;VWProveedoresBindingSource.Name" xml:space="preserve">
     <value>VWProveedoresBindingSource</value>
@@ -1048,6 +1048,6 @@
     <value>frmBuscador</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
 </root>

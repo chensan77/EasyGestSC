@@ -160,7 +160,7 @@
   <data name="TextBox5.Value" xml:space="preserve">
     <value>Tarjetas Poseidas</value>
   </data>
-  <assembly alias="Telerik.Reporting" name="Telerik.Reporting, Version=11.0.17.118, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
+  <assembly alias="Telerik.Reporting" name="Telerik.Reporting, Version=11.1.17.503, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
   <data name="$this.SnapGridSize" type="Telerik.Reporting.Drawing.Unit, Telerik.Reporting">
     <value>0.1cm</value>
   </data>

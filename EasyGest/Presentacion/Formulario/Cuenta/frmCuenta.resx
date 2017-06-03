@@ -148,7 +148,7 @@
     <value>gridDatos</value>
   </data>
   <data name="&gt;&gt;gridDatos.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;gridDatos.Parent" xml:space="preserve">
     <value>SplitPanel1</value>
@@ -229,7 +229,7 @@
     <value>RadStatusStrip1</value>
   </data>
   <data name="&gt;&gt;RadStatusStrip1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadStatusStrip, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadStatusStrip, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;RadStatusStrip1.Parent" xml:space="preserve">
     <value>SplitPanel1</value>
@@ -259,7 +259,7 @@
     <value>SplitPanel1</value>
   </data>
   <data name="&gt;&gt;SplitPanel1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.SplitPanel, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.SplitPanel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;SplitPanel1.Parent" xml:space="preserve">
     <value>RadSplitContainer1</value>
@@ -286,7 +286,7 @@
     <value>RadSplitContainer1</value>
   </data>
   <data name="&gt;&gt;RadSplitContainer1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadSplitContainer, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadSplitContainer, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;RadSplitContainer1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -688,7 +688,7 @@
     <value>cbComandos</value>
   </data>
   <data name="&gt;&gt;cbComandos.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadCommandBar, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadCommandBar, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;cbComandos.Parent" xml:space="preserve">
     <value>$this</value>
@@ -3426,25 +3426,25 @@
     <value>mitemAgregarTarjeta</value>
   </data>
   <data name="&gt;&gt;mitemAgregarTarjeta.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;mitemAgregarContacto.Name" xml:space="preserve">
     <value>mitemAgregarContacto</value>
   </data>
   <data name="&gt;&gt;mitemAgregarContacto.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;mitemAgregarCuenta.Name" xml:space="preserve">
     <value>mitemAgregarCuenta</value>
   </data>
   <data name="&gt;&gt;mitemAgregarCuenta.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;lbleDiagnostico.Name" xml:space="preserve">
     <value>lbleDiagnostico</value>
   </data>
   <data name="&gt;&gt;lbleDiagnostico.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabelElement, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabelElement, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;bgwCarga.Name" xml:space="preserve">
     <value>bgwCarga</value>
@@ -3456,42 +3456,42 @@
     <value>CommandBarRowElement1</value>
   </data>
   <data name="&gt;&gt;CommandBarRowElement1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarRowElement, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.CommandBarRowElement, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;cbstripeAccion.Name" xml:space="preserve">
     <value>cbstripeAccion</value>
   </data>
   <data name="&gt;&gt;cbstripeAccion.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarStripElement, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.CommandBarStripElement, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;cbbtnAgregar.Name" xml:space="preserve">
     <value>cbbtnAgregar</value>
   </data>
   <data name="&gt;&gt;cbbtnAgregar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;cbbtnEliminar.Name" xml:space="preserve">
     <value>cbbtnEliminar</value>
   </data>
   <data name="&gt;&gt;cbbtnEliminar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;cbbtnModificar.Name" xml:space="preserve">
     <value>cbbtnModificar</value>
   </data>
   <data name="&gt;&gt;cbbtnModificar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;cbstripeOrden.Name" xml:space="preserve">
     <value>cbstripeOrden</value>
   </data>
   <data name="&gt;&gt;cbstripeOrden.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarStripElement, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.CommandBarStripElement, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmCuenta</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2017.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
 </root>

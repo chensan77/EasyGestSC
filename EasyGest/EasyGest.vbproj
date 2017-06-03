@@ -137,14 +137,6 @@
       <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.Documents.SpreadsheetStreaming.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Telerik.Reporting, Version=11.0.17.118, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
-      <Private>True</Private>
-      <SpecificVersion>True</SpecificVersion>
-    </Reference>
-    <Reference Include="Telerik.ReportViewer.WinForms, Version=11.0.17.118, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
-      <Private>True</Private>
-      <SpecificVersion>True</SpecificVersion>
-    </Reference>
     <Reference Include="Telerik.WinControls, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
       <HintPath>..\lib\RCWF\2017.2.502.40\Telerik.WinControls.dll</HintPath>
       <Private>True</Private>
@@ -292,6 +284,14 @@
     <Reference Include="TelerikExport, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
       <HintPath>..\lib\RCWF\2017.2.502.40\TelerikExport.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Reporting, Version=11.1.17.503, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <Private>True</Private>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=11.1.17.503, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <Private>True</Private>
+      <SpecificVersion>True</SpecificVersion>
     </Reference>
   </ItemGroup>
   <ItemGroup>
