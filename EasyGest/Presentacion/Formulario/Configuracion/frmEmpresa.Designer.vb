@@ -43,6 +43,7 @@
             Dim RadLabel6 As Telerik.WinControls.UI.RadLabel
             Dim RadLabel7 As Telerik.WinControls.UI.RadLabel
             Dim RadLabel14 As Telerik.WinControls.UI.RadLabel
+            Dim RadLabel18 As Telerik.WinControls.UI.RadLabel
             Dim GridViewCheckBoxColumn1 As Telerik.WinControls.UI.GridViewCheckBoxColumn = New Telerik.WinControls.UI.GridViewCheckBoxColumn()
             Dim GridViewImageColumn1 As Telerik.WinControls.UI.GridViewImageColumn = New Telerik.WinControls.UI.GridViewImageColumn()
             Dim GridViewTextBoxColumn1 As Telerik.WinControls.UI.GridViewTextBoxColumn = New Telerik.WinControls.UI.GridViewTextBoxColumn()
@@ -52,7 +53,6 @@
             Dim RadListDataItem1 As Telerik.WinControls.UI.RadListDataItem = New Telerik.WinControls.UI.RadListDataItem()
             Dim RadListDataItem2 As Telerik.WinControls.UI.RadListDataItem = New Telerik.WinControls.UI.RadListDataItem()
             Dim RadListDataItem3 As Telerik.WinControls.UI.RadListDataItem = New Telerik.WinControls.UI.RadListDataItem()
-            Dim RadLabel18 As Telerik.WinControls.UI.RadLabel
             Dim InputBinding1 As Telerik.WinControls.Keyboard.InputBinding = New Telerik.WinControls.Keyboard.InputBinding()
             Dim Chord1 As Telerik.WinControls.Keyboard.Chord = New Telerik.WinControls.Keyboard.Chord()
             Dim ChordModifier1 As Telerik.WinControls.Keyboard.ChordModifier = New Telerik.WinControls.Keyboard.ChordModifier()
@@ -61,8 +61,10 @@
             Me.RadSplitContainer1 = New Telerik.WinControls.UI.RadSplitContainer()
             Me.SplitPanel1 = New Telerik.WinControls.UI.SplitPanel()
             Me.SplitPanel2 = New Telerik.WinControls.UI.SplitPanel()
-            Me.ddlFormato = New Telerik.WinControls.UI.RadDropDownList()
+            Me.chkVentaAlmayor = New Telerik.WinControls.UI.RadCheckBox()
             Me.EmpresaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+            Me.chkVentaDetalle = New Telerik.WinControls.UI.RadCheckBox()
+            Me.ddlFormato = New Telerik.WinControls.UI.RadDropDownList()
             Me.btnCancelar = New Telerik.WinControls.UI.RadButton()
             Me.btnQuitarImagen = New Telerik.WinControls.UI.RadButton()
             Me.btnExaminarImagen = New Telerik.WinControls.UI.RadButton()
@@ -97,8 +99,6 @@
             Me.cbComandos = New Telerik.WinControls.UI.RadCommandBar()
             Me.timValidar = New System.Windows.Forms.Timer(Me.components)
             Me.dlgImagen = New System.Windows.Forms.OpenFileDialog()
-            Me.chkVentaDetalle = New Telerik.WinControls.UI.RadCheckBox()
-            Me.chkVentaAlmayor = New Telerik.WinControls.UI.RadCheckBox()
             RadLabel16 = New Telerik.WinControls.UI.RadLabel()
             RadLabel2 = New Telerik.WinControls.UI.RadLabel()
             RadLabel17 = New Telerik.WinControls.UI.RadLabel()
@@ -134,6 +134,7 @@
             CType(RadLabel6, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(RadLabel7, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(RadLabel14, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(RadLabel18, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.gridDatos, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.gridDatos.MasterTemplate, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.EmpresasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -143,8 +144,10 @@
             Me.SplitPanel1.SuspendLayout()
             CType(Me.SplitPanel2, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SplitPanel2.SuspendLayout()
-            CType(Me.ddlFormato, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.chkVentaAlmayor, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.EmpresaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.chkVentaDetalle, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.ddlFormato, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.btnCancelar, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.btnQuitarImagen, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.btnExaminarImagen, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -171,9 +174,6 @@
             CType(Me.txtNumeroIdentificacion, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.txtNombre, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.cbComandos, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.chkVentaDetalle, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.chkVentaAlmayor, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(RadLabel18, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
@@ -183,21 +183,11 @@
             RadLabel16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel16.Name = "RadLabel16"
             '
-            '
-            '
-            RadLabel16.RootElement.AccessibleDescription = Nothing
-            RadLabel16.RootElement.AccessibleName = Nothing
-            '
             'RadLabel2
             '
             resources.ApplyResources(RadLabel2, "RadLabel2")
             RadLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel2.Name = "RadLabel2"
-            '
-            '
-            '
-            RadLabel2.RootElement.AccessibleDescription = Nothing
-            RadLabel2.RootElement.AccessibleName = Nothing
             '
             'RadLabel17
             '
@@ -205,21 +195,11 @@
             RadLabel17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel17.Name = "RadLabel17"
             '
-            '
-            '
-            RadLabel17.RootElement.AccessibleDescription = Nothing
-            RadLabel17.RootElement.AccessibleName = Nothing
-            '
             'RadLabel12
             '
             resources.ApplyResources(RadLabel12, "RadLabel12")
             RadLabel12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel12.Name = "RadLabel12"
-            '
-            '
-            '
-            RadLabel12.RootElement.AccessibleDescription = Nothing
-            RadLabel12.RootElement.AccessibleName = Nothing
             '
             'RadLabel13
             '
@@ -227,21 +207,11 @@
             RadLabel13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel13.Name = "RadLabel13"
             '
-            '
-            '
-            RadLabel13.RootElement.AccessibleDescription = Nothing
-            RadLabel13.RootElement.AccessibleName = Nothing
-            '
             'RadLabel15
             '
             resources.ApplyResources(RadLabel15, "RadLabel15")
             RadLabel15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel15.Name = "RadLabel15"
-            '
-            '
-            '
-            RadLabel15.RootElement.AccessibleDescription = Nothing
-            RadLabel15.RootElement.AccessibleName = Nothing
             '
             'RadLabel11
             '
@@ -249,21 +219,11 @@
             RadLabel11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel11.Name = "RadLabel11"
             '
-            '
-            '
-            RadLabel11.RootElement.AccessibleDescription = Nothing
-            RadLabel11.RootElement.AccessibleName = Nothing
-            '
             'RadLabel10
             '
             resources.ApplyResources(RadLabel10, "RadLabel10")
             RadLabel10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel10.Name = "RadLabel10"
-            '
-            '
-            '
-            RadLabel10.RootElement.AccessibleDescription = Nothing
-            RadLabel10.RootElement.AccessibleName = Nothing
             '
             'RadLabel9
             '
@@ -271,21 +231,11 @@
             RadLabel9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel9.Name = "RadLabel9"
             '
-            '
-            '
-            RadLabel9.RootElement.AccessibleDescription = Nothing
-            RadLabel9.RootElement.AccessibleName = Nothing
-            '
             'RadLabel8
             '
             resources.ApplyResources(RadLabel8, "RadLabel8")
             RadLabel8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel8.Name = "RadLabel8"
-            '
-            '
-            '
-            RadLabel8.RootElement.AccessibleDescription = Nothing
-            RadLabel8.RootElement.AccessibleName = Nothing
             '
             'RadLabel3
             '
@@ -293,21 +243,11 @@
             RadLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel3.Name = "RadLabel3"
             '
-            '
-            '
-            RadLabel3.RootElement.AccessibleDescription = Nothing
-            RadLabel3.RootElement.AccessibleName = Nothing
-            '
             'RadLabel5
             '
             resources.ApplyResources(RadLabel5, "RadLabel5")
             RadLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel5.Name = "RadLabel5"
-            '
-            '
-            '
-            RadLabel5.RootElement.AccessibleDescription = Nothing
-            RadLabel5.RootElement.AccessibleName = Nothing
             '
             'RadLabel1
             '
@@ -315,21 +255,11 @@
             RadLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel1.Name = "RadLabel1"
             '
-            '
-            '
-            RadLabel1.RootElement.AccessibleDescription = Nothing
-            RadLabel1.RootElement.AccessibleName = Nothing
-            '
             'RadLabel4
             '
             resources.ApplyResources(RadLabel4, "RadLabel4")
             RadLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel4.Name = "RadLabel4"
-            '
-            '
-            '
-            RadLabel4.RootElement.AccessibleDescription = Nothing
-            RadLabel4.RootElement.AccessibleName = Nothing
             '
             'RadLabel6
             '
@@ -337,21 +267,11 @@
             RadLabel6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel6.Name = "RadLabel6"
             '
-            '
-            '
-            RadLabel6.RootElement.AccessibleDescription = Nothing
-            RadLabel6.RootElement.AccessibleName = Nothing
-            '
             'RadLabel7
             '
             resources.ApplyResources(RadLabel7, "RadLabel7")
             RadLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel7.Name = "RadLabel7"
-            '
-            '
-            '
-            RadLabel7.RootElement.AccessibleDescription = Nothing
-            RadLabel7.RootElement.AccessibleName = Nothing
             '
             'RadLabel14
             '
@@ -359,16 +279,17 @@
             RadLabel14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             RadLabel14.Name = "RadLabel14"
             '
+            'RadLabel18
             '
-            '
-            RadLabel14.RootElement.AccessibleDescription = Nothing
-            RadLabel14.RootElement.AccessibleName = Nothing
+            resources.ApplyResources(RadLabel18, "RadLabel18")
+            RadLabel18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
+            RadLabel18.Name = "RadLabel18"
             '
             'gridDatos
             '
+            resources.ApplyResources(Me.gridDatos, "gridDatos")
             Me.gridDatos.BackColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(255, Byte), Integer))
             Me.gridDatos.Cursor = System.Windows.Forms.Cursors.Default
-            resources.ApplyResources(Me.gridDatos, "gridDatos")
             Me.gridDatos.ForeColor = System.Drawing.Color.Black
             '
             '
@@ -376,13 +297,14 @@
             Me.gridDatos.MasterTemplate.AllowAddNewRow = False
             Me.gridDatos.MasterTemplate.AllowRowResize = False
             Me.gridDatos.MasterTemplate.AutoGenerateColumns = False
+            Me.gridDatos.MasterTemplate.Caption = resources.GetString("gridDatos.MasterTemplate.Caption")
             GridViewCheckBoxColumn1.AllowFiltering = False
             GridViewCheckBoxColumn1.AllowGroup = False
             GridViewCheckBoxColumn1.AllowResize = False
             GridViewCheckBoxColumn1.AllowSort = False
             GridViewCheckBoxColumn1.EnableExpressionEditor = False
-            GridViewCheckBoxColumn1.FieldName = "Activo"
             resources.ApplyResources(GridViewCheckBoxColumn1, "GridViewCheckBoxColumn1")
+            GridViewCheckBoxColumn1.FieldName = "Activo"
             GridViewCheckBoxColumn1.MinWidth = 20
             GridViewCheckBoxColumn1.Name = "Activo"
             GridViewCheckBoxColumn1.ReadOnly = True
@@ -390,32 +312,32 @@
             GridViewImageColumn1.AllowFiltering = False
             GridViewImageColumn1.AllowSort = False
             GridViewImageColumn1.EnableExpressionEditor = False
-            GridViewImageColumn1.FieldName = "LogoImagen"
             resources.ApplyResources(GridViewImageColumn1, "GridViewImageColumn1")
+            GridViewImageColumn1.FieldName = "LogoImagen"
             GridViewImageColumn1.ImageLayout = System.Windows.Forms.ImageLayout.Center
             GridViewImageColumn1.IsVisible = False
             GridViewImageColumn1.Name = "LogoImagen"
             GridViewImageColumn1.Width = 94
             GridViewTextBoxColumn1.AllowGroup = False
             GridViewTextBoxColumn1.EnableExpressionEditor = False
-            GridViewTextBoxColumn1.FieldName = "Empresa"
             resources.ApplyResources(GridViewTextBoxColumn1, "GridViewTextBoxColumn1")
+            GridViewTextBoxColumn1.FieldName = "Empresa"
             GridViewTextBoxColumn1.IsAutoGenerated = True
             GridViewTextBoxColumn1.Name = "Empresa"
             GridViewTextBoxColumn1.ReadOnly = True
             GridViewTextBoxColumn1.Width = 246
             GridViewTextBoxColumn2.AllowGroup = False
             GridViewTextBoxColumn2.EnableExpressionEditor = False
-            GridViewTextBoxColumn2.FieldName = "NIF"
             resources.ApplyResources(GridViewTextBoxColumn2, "GridViewTextBoxColumn2")
+            GridViewTextBoxColumn2.FieldName = "NIF"
             GridViewTextBoxColumn2.IsAutoGenerated = True
             GridViewTextBoxColumn2.Name = "NIF"
             GridViewTextBoxColumn2.ReadOnly = True
             GridViewTextBoxColumn2.Width = 149
             GridViewTextBoxColumn3.AllowGroup = False
             GridViewTextBoxColumn3.EnableExpressionEditor = False
-            GridViewTextBoxColumn3.FieldName = "NombreComercial"
             resources.ApplyResources(GridViewTextBoxColumn3, "GridViewTextBoxColumn3")
+            GridViewTextBoxColumn3.FieldName = "NombreComercial"
             GridViewTextBoxColumn3.IsAutoGenerated = True
             GridViewTextBoxColumn3.Name = "NombreComercial"
             GridViewTextBoxColumn3.ReadOnly = True
@@ -428,11 +350,6 @@
             Me.gridDatos.MasterTemplate.ViewDefinition = TableViewDefinition1
             Me.gridDatos.Name = "gridDatos"
             Me.gridDatos.ReadOnly = True
-            '
-            '
-            '
-            Me.gridDatos.RootElement.AccessibleDescription = Nothing
-            Me.gridDatos.RootElement.AccessibleName = Nothing
             Me.gridDatos.ShowGroupPanel = False
             Me.gridDatos.TabStop = False
             '
@@ -442,28 +359,24 @@
             '
             'RadSplitContainer1
             '
+            resources.ApplyResources(Me.RadSplitContainer1, "RadSplitContainer1")
             Me.RadSplitContainer1.Controls.Add(Me.SplitPanel1)
             Me.RadSplitContainer1.Controls.Add(Me.SplitPanel2)
-            resources.ApplyResources(Me.RadSplitContainer1, "RadSplitContainer1")
             Me.RadSplitContainer1.Name = "RadSplitContainer1"
             '
             '
             '
-            Me.RadSplitContainer1.RootElement.AccessibleDescription = Nothing
-            Me.RadSplitContainer1.RootElement.AccessibleName = Nothing
             Me.RadSplitContainer1.RootElement.MinSize = New System.Drawing.Size(25, 23)
             Me.RadSplitContainer1.TabStop = False
             '
             'SplitPanel1
             '
-            Me.SplitPanel1.Controls.Add(Me.gridDatos)
             resources.ApplyResources(Me.SplitPanel1, "SplitPanel1")
+            Me.SplitPanel1.Controls.Add(Me.gridDatos)
             Me.SplitPanel1.Name = "SplitPanel1"
             '
             '
             '
-            Me.SplitPanel1.RootElement.AccessibleDescription = Nothing
-            Me.SplitPanel1.RootElement.AccessibleName = Nothing
             Me.SplitPanel1.RootElement.MinSize = New System.Drawing.Size(25, 23)
             Me.SplitPanel1.SizeInfo.AutoSizeScale = New System.Drawing.SizeF(0.1980109!, -0.3442478!)
             Me.SplitPanel1.SizeInfo.SplitterCorrection = New System.Drawing.Size(189, -194)
@@ -471,6 +384,7 @@
             '
             'SplitPanel2
             '
+            resources.ApplyResources(Me.SplitPanel2, "SplitPanel2")
             Me.SplitPanel2.Controls.Add(Me.chkVentaAlmayor)
             Me.SplitPanel2.Controls.Add(Me.chkVentaDetalle)
             Me.SplitPanel2.Controls.Add(RadLabel7)
@@ -495,20 +409,36 @@
             Me.SplitPanel2.Controls.Add(Me.txtNombre)
             Me.SplitPanel2.Controls.Add(RadLabel6)
             Me.SplitPanel2.Controls.Add(RadLabel1)
-            resources.ApplyResources(Me.SplitPanel2, "SplitPanel2")
             Me.SplitPanel2.Name = "SplitPanel2"
             '
             '
             '
-            Me.SplitPanel2.RootElement.AccessibleDescription = Nothing
-            Me.SplitPanel2.RootElement.AccessibleName = Nothing
             Me.SplitPanel2.RootElement.MinSize = New System.Drawing.Size(25, 23)
             Me.SplitPanel2.SizeInfo.AutoSizeScale = New System.Drawing.SizeF(0!, 0.3442478!)
             Me.SplitPanel2.SizeInfo.SplitterCorrection = New System.Drawing.Size(0, 194)
             Me.SplitPanel2.TabStop = False
             '
+            'chkVentaAlmayor
+            '
+            resources.ApplyResources(Me.chkVentaAlmayor, "chkVentaAlmayor")
+            Me.chkVentaAlmayor.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.EmpresaBindingSource, "VentaAlmayor", True))
+            Me.chkVentaAlmayor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
+            Me.chkVentaAlmayor.Name = "chkVentaAlmayor"
+            '
+            'EmpresaBindingSource
+            '
+            Me.EmpresaBindingSource.DataSource = GetType(EasyGestControllers.Data.Entity.Empresas)
+            '
+            'chkVentaDetalle
+            '
+            resources.ApplyResources(Me.chkVentaDetalle, "chkVentaDetalle")
+            Me.chkVentaDetalle.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.EmpresaBindingSource, "VentaDetalle", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+            Me.chkVentaDetalle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
+            Me.chkVentaDetalle.Name = "chkVentaDetalle"
+            '
             'ddlFormato
             '
+            resources.ApplyResources(Me.ddlFormato, "ddlFormato")
             Me.ddlFormato.AllowShowFocusCues = True
             Me.ddlFormato.AutoCompleteDisplayMember = "Municipio"
             Me.ddlFormato.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
@@ -518,42 +448,30 @@
             Me.ddlFormato.DropDownAnimationEasing = Telerik.WinControls.RadEasingType.InBounce
             Me.ddlFormato.DropDownSizingMode = Telerik.WinControls.UI.SizingMode.UpDown
             Me.ddlFormato.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
-            resources.ApplyResources(Me.ddlFormato, "ddlFormato")
             Me.ddlFormato.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             RadListDataItem1.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             RadListDataItem1.Selected = True
             RadListDataItem1.Text = "Núm./Año"
+            resources.ApplyResources(RadListDataItem1, "RadListDataItem1")
             RadListDataItem2.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.0!)
             RadListDataItem2.Text = "Núm./Serie"
+            resources.ApplyResources(RadListDataItem2, "RadListDataItem2")
             RadListDataItem3.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.0!)
             RadListDataItem3.Text = "Núm./Año/Serie"
+            resources.ApplyResources(RadListDataItem3, "RadListDataItem3")
             Me.ddlFormato.Items.Add(RadListDataItem1)
             Me.ddlFormato.Items.Add(RadListDataItem2)
             Me.ddlFormato.Items.Add(RadListDataItem3)
             Me.ddlFormato.Name = "ddlFormato"
-            '
-            '
-            '
-            Me.ddlFormato.RootElement.AccessibleDescription = Nothing
-            Me.ddlFormato.RootElement.AccessibleName = Nothing
             Me.ddlFormato.SelectNextOnDoubleClick = True
             Me.ddlFormato.ValueMember = "CodMunicipio"
             CType(Me.ddlFormato.GetChildAt(0), Telerik.WinControls.UI.RadDropDownListElement).DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
-            '
-            'EmpresaBindingSource
-            '
-            Me.EmpresaBindingSource.DataSource = GetType(EasyGestControllers.Data.Entity.Empresas)
             '
             'btnCancelar
             '
             resources.ApplyResources(Me.btnCancelar, "btnCancelar")
             Me.btnCancelar.Image = Global.EasyGest.My.Resources.Resources.cancel
             Me.btnCancelar.Name = "btnCancelar"
-            '
-            '
-            '
-            Me.btnCancelar.RootElement.AccessibleDescription = Nothing
-            Me.btnCancelar.RootElement.AccessibleName = Nothing
             CType(Me.btnCancelar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).Image = Global.EasyGest.My.Resources.Resources.cancel
             CType(Me.btnCancelar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
             CType(Me.btnCancelar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
@@ -566,21 +484,11 @@
             Me.btnQuitarImagen.Image = Global.EasyGest.My.Resources.Resources.image_delete
             Me.btnQuitarImagen.Name = "btnQuitarImagen"
             '
-            '
-            '
-            Me.btnQuitarImagen.RootElement.AccessibleDescription = Nothing
-            Me.btnQuitarImagen.RootElement.AccessibleName = Nothing
-            '
             'btnExaminarImagen
             '
             resources.ApplyResources(Me.btnExaminarImagen, "btnExaminarImagen")
             Me.btnExaminarImagen.Image = Global.EasyGest.My.Resources.Resources.folder
             Me.btnExaminarImagen.Name = "btnExaminarImagen"
-            '
-            '
-            '
-            Me.btnExaminarImagen.RootElement.AccessibleDescription = Nothing
-            Me.btnExaminarImagen.RootElement.AccessibleName = Nothing
             '
             'picLogo
             '
@@ -592,15 +500,10 @@
             '
             'txtNumeroCuenta
             '
-            Me.txtNumeroCuenta.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "CuentaBanco", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             resources.ApplyResources(Me.txtNumeroCuenta, "txtNumeroCuenta")
+            Me.txtNumeroCuenta.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "CuentaBanco", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             Me.txtNumeroCuenta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtNumeroCuenta.Name = "txtNumeroCuenta"
-            '
-            '
-            '
-            Me.txtNumeroCuenta.RootElement.AccessibleDescription = Nothing
-            Me.txtNumeroCuenta.RootElement.AccessibleName = Nothing
             Me.txtNumeroCuenta.TabStop = False
             Me.txtNumeroCuenta.Tag = ""
             CType(Me.txtNumeroCuenta.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).Text = resources.GetString("resource.Text1")
@@ -612,16 +515,14 @@
             '
             'txtNombreComercial
             '
+            resources.ApplyResources(Me.txtNombreComercial, "txtNombreComercial")
             Me.txtNombreComercial.AllowShowFocusCues = True
             Me.txtNombreComercial.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "NombreComercial", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-            resources.ApplyResources(Me.txtNombreComercial, "txtNombreComercial")
             Me.txtNombreComercial.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtNombreComercial.Name = "txtNombreComercial"
             '
             '
             '
-            Me.txtNombreComercial.RootElement.AccessibleDescription = Nothing
-            Me.txtNombreComercial.RootElement.AccessibleName = Nothing
             Me.txtNombreComercial.RootElement.ApplyShapeToControl = False
             Me.txtNombreComercial.TabStop = False
             Me.txtNombreComercial.Tag = ""
@@ -634,16 +535,14 @@
             '
             'txtSerie
             '
+            resources.ApplyResources(Me.txtSerie, "txtSerie")
             Me.txtSerie.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
             Me.txtSerie.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "Series", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-            resources.ApplyResources(Me.txtSerie, "txtSerie")
             Me.txtSerie.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtSerie.Name = "txtSerie"
             '
             '
             '
-            Me.txtSerie.RootElement.AccessibleDescription = Nothing
-            Me.txtSerie.RootElement.AccessibleName = Nothing
             Me.txtSerie.RootElement.ApplyShapeToControl = False
             Me.txtSerie.TabStop = False
             Me.txtSerie.Tag = ""
@@ -659,11 +558,6 @@
             resources.ApplyResources(Me.btnAceptar, "btnAceptar")
             Me.btnAceptar.Image = Global.EasyGest.My.Resources.Resources.accept
             Me.btnAceptar.Name = "btnAceptar"
-            '
-            '
-            '
-            Me.btnAceptar.RootElement.AccessibleDescription = Nothing
-            Me.btnAceptar.RootElement.AccessibleName = Nothing
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).Image = Global.EasyGest.My.Resources.Resources.accept
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
             CType(Me.btnAceptar.GetChildAt(0), Telerik.WinControls.UI.RadButtonElement).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
@@ -672,6 +566,7 @@
             '
             'grpbDireccion
             '
+            resources.ApplyResources(Me.grpbDireccion, "grpbDireccion")
             Me.grpbDireccion.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
             Me.grpbDireccion.Controls.Add(Me.txtCodigoPostal)
             Me.grpbDireccion.Controls.Add(Me.ddlLocalidad)
@@ -681,17 +576,11 @@
             Me.grpbDireccion.Controls.Add(RadLabel13)
             Me.grpbDireccion.Controls.Add(Me.txtDireccion)
             Me.grpbDireccion.Controls.Add(RadLabel15)
-            resources.ApplyResources(Me.grpbDireccion, "grpbDireccion")
             Me.grpbDireccion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             Me.grpbDireccion.GroupBoxStyle = Telerik.WinControls.UI.RadGroupBoxStyle.Office
             Me.grpbDireccion.HeaderAlignment = Telerik.WinControls.UI.HeaderAlignment.Far
             Me.grpbDireccion.HeaderTextAlignment = System.Drawing.ContentAlignment.BottomCenter
             Me.grpbDireccion.Name = "grpbDireccion"
-            '
-            '
-            '
-            Me.grpbDireccion.RootElement.AccessibleDescription = Nothing
-            Me.grpbDireccion.RootElement.AccessibleName = Nothing
             Me.grpbDireccion.TabStop = False
             CType(Me.grpbDireccion.GetChildAt(0), Telerik.WinControls.UI.RadGroupBoxElement).HeaderAlignment = Telerik.WinControls.UI.HeaderAlignment.Far
             CType(Me.grpbDireccion.GetChildAt(0), Telerik.WinControls.UI.RadGroupBoxElement).Padding = CType(resources.GetObject("resource.Padding"), System.Windows.Forms.Padding)
@@ -700,15 +589,10 @@
             '
             'txtCodigoPostal
             '
-            Me.txtCodigoPostal.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "CodigoPostal", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             resources.ApplyResources(Me.txtCodigoPostal, "txtCodigoPostal")
+            Me.txtCodigoPostal.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "CodigoPostal", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             Me.txtCodigoPostal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtCodigoPostal.Name = "txtCodigoPostal"
-            '
-            '
-            '
-            Me.txtCodigoPostal.RootElement.AccessibleDescription = Nothing
-            Me.txtCodigoPostal.RootElement.AccessibleName = Nothing
             Me.txtCodigoPostal.TabStop = False
             Me.txtCodigoPostal.Tag = ""
             CType(Me.txtCodigoPostal.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).Text = resources.GetString("resource.Text5")
@@ -717,6 +601,7 @@
             '
             'ddlLocalidad
             '
+            resources.ApplyResources(Me.ddlLocalidad, "ddlLocalidad")
             Me.ddlLocalidad.AllowShowFocusCues = True
             Me.ddlLocalidad.AutoCompleteDisplayMember = "Municipio"
             Me.ddlLocalidad.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
@@ -727,14 +612,8 @@
             Me.ddlLocalidad.DisplayMember = "Municipio"
             Me.ddlLocalidad.DropDownAnimationEasing = Telerik.WinControls.RadEasingType.InBounce
             Me.ddlLocalidad.DropDownSizingMode = Telerik.WinControls.UI.SizingMode.UpDown
-            resources.ApplyResources(Me.ddlLocalidad, "ddlLocalidad")
             Me.ddlLocalidad.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.ddlLocalidad.Name = "ddlLocalidad"
-            '
-            '
-            '
-            Me.ddlLocalidad.RootElement.AccessibleDescription = Nothing
-            Me.ddlLocalidad.RootElement.AccessibleName = Nothing
             Me.ddlLocalidad.SelectNextOnDoubleClick = True
             Me.ddlLocalidad.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending
             Me.ddlLocalidad.ValueMember = "CodMunicipio"
@@ -747,6 +626,7 @@
             '
             'ddlProvincia
             '
+            resources.ApplyResources(Me.ddlProvincia, "ddlProvincia")
             Me.ddlProvincia.AllowShowFocusCues = True
             Me.ddlProvincia.AutoCompleteDisplayMember = "Provincia"
             Me.ddlProvincia.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
@@ -756,14 +636,8 @@
             Me.ddlProvincia.DisplayMember = "Provincia"
             Me.ddlProvincia.DropDownAnimationEasing = Telerik.WinControls.RadEasingType.InBounce
             Me.ddlProvincia.DropDownSizingMode = Telerik.WinControls.UI.SizingMode.UpDown
-            resources.ApplyResources(Me.ddlProvincia, "ddlProvincia")
             Me.ddlProvincia.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.ddlProvincia.Name = "ddlProvincia"
-            '
-            '
-            '
-            Me.ddlProvincia.RootElement.AccessibleDescription = Nothing
-            Me.ddlProvincia.RootElement.AccessibleName = Nothing
             Me.ddlProvincia.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending
             Me.ddlProvincia.ValueMember = "CodProvincia"
             CType(Me.ddlProvincia.GetChildAt(0), Telerik.WinControls.UI.RadDropDownListElement).DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDown
@@ -774,15 +648,13 @@
             '
             'txtDireccion
             '
-            Me.txtDireccion.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "Direccion", True))
             resources.ApplyResources(Me.txtDireccion, "txtDireccion")
+            Me.txtDireccion.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "Direccion", True))
             Me.txtDireccion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtDireccion.Name = "txtDireccion"
             '
             '
             '
-            Me.txtDireccion.RootElement.AccessibleDescription = Nothing
-            Me.txtDireccion.RootElement.AccessibleName = Nothing
             Me.txtDireccion.RootElement.ApplyShapeToControl = False
             Me.txtDireccion.TabStop = False
             Me.txtDireccion.Tag = ""
@@ -795,6 +667,7 @@
             '
             'grpbContacto
             '
+            resources.ApplyResources(Me.grpbContacto, "grpbContacto")
             Me.grpbContacto.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
             Me.grpbContacto.Controls.Add(Me.txtWeb)
             Me.grpbContacto.Controls.Add(Me.txtEmail)
@@ -806,17 +679,11 @@
             Me.grpbContacto.Controls.Add(RadLabel10)
             Me.grpbContacto.Controls.Add(RadLabel9)
             Me.grpbContacto.Controls.Add(RadLabel8)
-            resources.ApplyResources(Me.grpbContacto, "grpbContacto")
             Me.grpbContacto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
             Me.grpbContacto.GroupBoxStyle = Telerik.WinControls.UI.RadGroupBoxStyle.Office
             Me.grpbContacto.HeaderAlignment = Telerik.WinControls.UI.HeaderAlignment.Far
             Me.grpbContacto.HeaderTextAlignment = System.Drawing.ContentAlignment.BottomCenter
             Me.grpbContacto.Name = "grpbContacto"
-            '
-            '
-            '
-            Me.grpbContacto.RootElement.AccessibleDescription = Nothing
-            Me.grpbContacto.RootElement.AccessibleName = Nothing
             Me.grpbContacto.TabStop = False
             CType(Me.grpbContacto.GetChildAt(0), Telerik.WinControls.UI.RadGroupBoxElement).HeaderAlignment = Telerik.WinControls.UI.HeaderAlignment.Far
             CType(Me.grpbContacto.GetChildAt(0), Telerik.WinControls.UI.RadGroupBoxElement).Padding = CType(resources.GetObject("resource.Padding1"), System.Windows.Forms.Padding)
@@ -825,15 +692,10 @@
             '
             'txtWeb
             '
-            Me.txtWeb.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "Web", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             resources.ApplyResources(Me.txtWeb, "txtWeb")
+            Me.txtWeb.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "Web", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             Me.txtWeb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtWeb.Name = "txtWeb"
-            '
-            '
-            '
-            Me.txtWeb.RootElement.AccessibleDescription = Nothing
-            Me.txtWeb.RootElement.AccessibleName = Nothing
             Me.txtWeb.TabStop = False
             CType(Me.txtWeb.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).Text = resources.GetString("resource.Text7")
             CType(Me.txtWeb.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
@@ -841,15 +703,10 @@
             '
             'txtEmail
             '
-            Me.txtEmail.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "Email", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             resources.ApplyResources(Me.txtEmail, "txtEmail")
+            Me.txtEmail.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "Email", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             Me.txtEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtEmail.Name = "txtEmail"
-            '
-            '
-            '
-            Me.txtEmail.RootElement.AccessibleDescription = Nothing
-            Me.txtEmail.RootElement.AccessibleName = Nothing
             Me.txtEmail.TabStop = False
             CType(Me.txtEmail.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).Text = resources.GetString("resource.Text8")
             CType(Me.txtEmail.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
@@ -857,15 +714,10 @@
             '
             'txtFax
             '
-            Me.txtFax.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "Fax", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             resources.ApplyResources(Me.txtFax, "txtFax")
+            Me.txtFax.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "Fax", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             Me.txtFax.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtFax.Name = "txtFax"
-            '
-            '
-            '
-            Me.txtFax.RootElement.AccessibleDescription = Nothing
-            Me.txtFax.RootElement.AccessibleName = Nothing
             Me.txtFax.TabStop = False
             CType(Me.txtFax.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).Text = resources.GetString("resource.Text9")
             CType(Me.txtFax.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
@@ -873,15 +725,10 @@
             '
             'txtMovil
             '
-            Me.txtMovil.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "Movil", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             resources.ApplyResources(Me.txtMovil, "txtMovil")
+            Me.txtMovil.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "Movil", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             Me.txtMovil.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtMovil.Name = "txtMovil"
-            '
-            '
-            '
-            Me.txtMovil.RootElement.AccessibleDescription = Nothing
-            Me.txtMovil.RootElement.AccessibleName = Nothing
             Me.txtMovil.TabStop = False
             CType(Me.txtMovil.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).Text = resources.GetString("resource.Text10")
             CType(Me.txtMovil.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
@@ -889,15 +736,10 @@
             '
             'txtTelefono
             '
-            Me.txtTelefono.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "Telefono", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             resources.ApplyResources(Me.txtTelefono, "txtTelefono")
+            Me.txtTelefono.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "Telefono", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
             Me.txtTelefono.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtTelefono.Name = "txtTelefono"
-            '
-            '
-            '
-            Me.txtTelefono.RootElement.AccessibleDescription = Nothing
-            Me.txtTelefono.RootElement.AccessibleName = Nothing
             Me.txtTelefono.TabStop = False
             CType(Me.txtTelefono.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).Text = resources.GetString("resource.Text11")
             CType(Me.txtTelefono.GetChildAt(0), Telerik.WinControls.UI.RadMaskedEditBoxElement).ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
@@ -905,17 +747,15 @@
             '
             'txtNumeroIdentificacion
             '
+            resources.ApplyResources(Me.txtNumeroIdentificacion, "txtNumeroIdentificacion")
             Me.txtNumeroIdentificacion.AllowShowFocusCues = True
             Me.txtNumeroIdentificacion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
             Me.txtNumeroIdentificacion.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "NIF", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-            resources.ApplyResources(Me.txtNumeroIdentificacion, "txtNumeroIdentificacion")
             Me.txtNumeroIdentificacion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtNumeroIdentificacion.Name = "txtNumeroIdentificacion"
             '
             '
             '
-            Me.txtNumeroIdentificacion.RootElement.AccessibleDescription = Nothing
-            Me.txtNumeroIdentificacion.RootElement.AccessibleName = Nothing
             Me.txtNumeroIdentificacion.RootElement.ApplyShapeToControl = False
             Me.txtNumeroIdentificacion.TabStop = False
             Me.txtNumeroIdentificacion.Tag = ""
@@ -928,16 +768,11 @@
             '
             'txtNombre
             '
+            resources.ApplyResources(Me.txtNombre, "txtNombre")
             Me.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
             Me.txtNombre.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpresaBindingSource, "Empresa", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-            resources.ApplyResources(Me.txtNombre, "txtNombre")
             Me.txtNombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(104, Byte), Integer))
             Me.txtNombre.Name = "txtNombre"
-            '
-            '
-            '
-            Me.txtNombre.RootElement.AccessibleDescription = Nothing
-            Me.txtNombre.RootElement.AccessibleName = Nothing
             Me.txtNombre.TabStop = False
             Me.txtNombre.Tag = ""
             CType(Me.txtNombre.GetChildAt(0), Telerik.WinControls.UI.RadTextBoxElement).Text = resources.GetString("resource.Text13")
@@ -964,8 +799,38 @@
             resources.ApplyResources(Me.cbstripeAccion, "cbstripeAccion")
             Me.cbstripeAccion.BorderDrawMode = Telerik.WinControls.BorderDrawModes.HorizontalOverVertical
             Me.cbstripeAccion.BorderLeftShadowColor = System.Drawing.Color.Empty
+            '
+            '
+            '
+            Me.cbstripeAccion.Grip.Alignment = CType(resources.GetObject("resource.Alignment"), System.Drawing.ContentAlignment)
+            Me.cbstripeAccion.Grip.AngleTransform = CType(resources.GetObject("resource.AngleTransform"), Single)
+            Me.cbstripeAccion.Grip.DisplayName = resources.GetString("resource.DisplayName")
+            Me.cbstripeAccion.Grip.FlipText = CType(resources.GetObject("resource.FlipText"), Boolean)
+            Me.cbstripeAccion.Grip.KeyTip = resources.GetString("resource.KeyTip")
+            Me.cbstripeAccion.Grip.Margin = CType(resources.GetObject("resource.Margin"), System.Windows.Forms.Padding)
+            Me.cbstripeAccion.Grip.Padding = CType(resources.GetObject("resource.Padding2"), System.Windows.Forms.Padding)
+            Me.cbstripeAccion.Grip.RightToLeft = CType(resources.GetObject("resource.RightToLeft"), Boolean)
+            Me.cbstripeAccion.Grip.Text = resources.GetString("resource.Text14")
+            Me.cbstripeAccion.Grip.TextOrientation = CType(resources.GetObject("resource.TextOrientation"), System.Windows.Forms.Orientation)
+            Me.cbstripeAccion.Grip.TextWrap = CType(resources.GetObject("resource.TextWrap"), Boolean)
+            Me.cbstripeAccion.Grip.ToolTipText = resources.GetString("resource.ToolTipText")
             Me.cbstripeAccion.Items.AddRange(New Telerik.WinControls.UI.RadCommandBarBaseItem() {Me.cbbtnAgregar, Me.cbbtnModificar, Me.CommandBarSeparator1, Me.cbbtnFijarActivo})
             Me.cbstripeAccion.Name = "CommandBarStripElement1"
+            '
+            '
+            '
+            Me.cbstripeAccion.OverflowButton.Alignment = CType(resources.GetObject("resource.Alignment1"), System.Drawing.ContentAlignment)
+            Me.cbstripeAccion.OverflowButton.AngleTransform = CType(resources.GetObject("resource.AngleTransform1"), Single)
+            Me.cbstripeAccion.OverflowButton.DisplayName = resources.GetString("resource.DisplayName1")
+            Me.cbstripeAccion.OverflowButton.FlipText = CType(resources.GetObject("resource.FlipText1"), Boolean)
+            Me.cbstripeAccion.OverflowButton.KeyTip = resources.GetString("resource.KeyTip1")
+            Me.cbstripeAccion.OverflowButton.Margin = CType(resources.GetObject("resource.Margin1"), System.Windows.Forms.Padding)
+            Me.cbstripeAccion.OverflowButton.Padding = CType(resources.GetObject("resource.Padding3"), System.Windows.Forms.Padding)
+            Me.cbstripeAccion.OverflowButton.RightToLeft = CType(resources.GetObject("resource.RightToLeft1"), Boolean)
+            Me.cbstripeAccion.OverflowButton.Text = resources.GetString("resource.Text15")
+            Me.cbstripeAccion.OverflowButton.TextOrientation = CType(resources.GetObject("resource.TextOrientation1"), System.Windows.Forms.Orientation)
+            Me.cbstripeAccion.OverflowButton.TextWrap = CType(resources.GetObject("resource.TextWrap1"), Boolean)
+            Me.cbstripeAccion.OverflowButton.ToolTipText = resources.GetString("resource.ToolTipText1")
             '
             'cbbtnAgregar
             '
@@ -1004,6 +869,8 @@
             '
             'cbbtnFijarActivo
             '
+            Me.cbbtnFijarActivo.AccessibleDescription = "CommandBarButton1"
+            Me.cbbtnFijarActivo.AccessibleName = "CommandBarButton1"
             resources.ApplyResources(Me.cbbtnFijarActivo, "cbbtnFijarActivo")
             Me.cbbtnFijarActivo.BorderDrawMode = Telerik.WinControls.BorderDrawModes.HorizontalOverVertical
             Me.cbbtnFijarActivo.BorderLeftShadowColor = System.Drawing.Color.Empty
@@ -1016,17 +883,42 @@
             'cbstripeOrden
             '
             resources.ApplyResources(Me.cbstripeOrden, "cbstripeOrden")
+            '
+            '
+            '
+            Me.cbstripeOrden.Grip.Alignment = CType(resources.GetObject("resource.Alignment2"), System.Drawing.ContentAlignment)
+            Me.cbstripeOrden.Grip.AngleTransform = CType(resources.GetObject("resource.AngleTransform2"), Single)
+            Me.cbstripeOrden.Grip.DisplayName = resources.GetString("resource.DisplayName2")
+            Me.cbstripeOrden.Grip.FlipText = CType(resources.GetObject("resource.FlipText2"), Boolean)
+            Me.cbstripeOrden.Grip.KeyTip = resources.GetString("resource.KeyTip2")
+            Me.cbstripeOrden.Grip.Margin = CType(resources.GetObject("resource.Margin2"), System.Windows.Forms.Padding)
+            Me.cbstripeOrden.Grip.Padding = CType(resources.GetObject("resource.Padding4"), System.Windows.Forms.Padding)
+            Me.cbstripeOrden.Grip.RightToLeft = CType(resources.GetObject("resource.RightToLeft2"), Boolean)
+            Me.cbstripeOrden.Grip.Text = resources.GetString("resource.Text16")
+            Me.cbstripeOrden.Grip.TextOrientation = CType(resources.GetObject("resource.TextOrientation2"), System.Windows.Forms.Orientation)
+            Me.cbstripeOrden.Grip.TextWrap = CType(resources.GetObject("resource.TextWrap2"), Boolean)
+            Me.cbstripeOrden.Grip.ToolTipText = resources.GetString("resource.ToolTipText2")
             Me.cbstripeOrden.Name = "CommandBarStripElement1"
+            '
+            '
+            '
+            Me.cbstripeOrden.OverflowButton.Alignment = CType(resources.GetObject("resource.Alignment3"), System.Drawing.ContentAlignment)
+            Me.cbstripeOrden.OverflowButton.AngleTransform = CType(resources.GetObject("resource.AngleTransform3"), Single)
+            Me.cbstripeOrden.OverflowButton.DisplayName = resources.GetString("resource.DisplayName3")
+            Me.cbstripeOrden.OverflowButton.FlipText = CType(resources.GetObject("resource.FlipText3"), Boolean)
+            Me.cbstripeOrden.OverflowButton.KeyTip = resources.GetString("resource.KeyTip3")
+            Me.cbstripeOrden.OverflowButton.Margin = CType(resources.GetObject("resource.Margin3"), System.Windows.Forms.Padding)
+            Me.cbstripeOrden.OverflowButton.Padding = CType(resources.GetObject("resource.Padding5"), System.Windows.Forms.Padding)
+            Me.cbstripeOrden.OverflowButton.RightToLeft = CType(resources.GetObject("resource.RightToLeft3"), Boolean)
+            Me.cbstripeOrden.OverflowButton.Text = resources.GetString("resource.Text17")
+            Me.cbstripeOrden.OverflowButton.TextOrientation = CType(resources.GetObject("resource.TextOrientation3"), System.Windows.Forms.Orientation)
+            Me.cbstripeOrden.OverflowButton.TextWrap = CType(resources.GetObject("resource.TextWrap3"), Boolean)
+            Me.cbstripeOrden.OverflowButton.ToolTipText = resources.GetString("resource.ToolTipText3")
             '
             'cbComandos
             '
             resources.ApplyResources(Me.cbComandos, "cbComandos")
             Me.cbComandos.Name = "cbComandos"
-            '
-            '
-            '
-            Me.cbComandos.RootElement.AccessibleDescription = Nothing
-            Me.cbComandos.RootElement.AccessibleName = Nothing
             Me.cbComandos.Rows.AddRange(New Telerik.WinControls.UI.CommandBarRowElement() {Me.CommandBarRowElement1})
             '
             'timValidar
@@ -1036,26 +928,6 @@
             '
             Me.dlgImagen.DefaultExt = "*.jpg"
             resources.ApplyResources(Me.dlgImagen, "dlgImagen")
-            '
-            'chkVentaDetalle
-            '
-            Me.chkVentaDetalle.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.EmpresaBindingSource, "VentaDetalle", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-            resources.ApplyResources(Me.chkVentaDetalle, "chkVentaDetalle")
-            Me.chkVentaDetalle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
-            Me.chkVentaDetalle.Name = "chkVentaDetalle"
-            '
-            'chkVentaAlmayor
-            '
-            Me.chkVentaAlmayor.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.EmpresaBindingSource, "VentaAlmayor", True))
-            resources.ApplyResources(Me.chkVentaAlmayor, "chkVentaAlmayor")
-            Me.chkVentaAlmayor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
-            Me.chkVentaAlmayor.Name = "chkVentaAlmayor"
-            '
-            'RadLabel18
-            '
-            resources.ApplyResources(RadLabel18, "RadLabel18")
-            RadLabel18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(117, Byte), Integer))
-            RadLabel18.Name = "RadLabel18"
             '
             'frmEmpresa
             '
@@ -1079,8 +951,6 @@
             '
             '
             '
-            Me.RootElement.AccessibleDescription = Nothing
-            Me.RootElement.AccessibleName = Nothing
             Me.RootElement.ApplyShapeToControl = True
             CType(RadLabel16, System.ComponentModel.ISupportInitialize).EndInit()
             CType(RadLabel2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1099,6 +969,7 @@
             CType(RadLabel6, System.ComponentModel.ISupportInitialize).EndInit()
             CType(RadLabel7, System.ComponentModel.ISupportInitialize).EndInit()
             CType(RadLabel14, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(RadLabel18, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.gridDatos.MasterTemplate, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.gridDatos, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.EmpresasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1109,8 +980,10 @@
             CType(Me.SplitPanel2, System.ComponentModel.ISupportInitialize).EndInit()
             Me.SplitPanel2.ResumeLayout(False)
             Me.SplitPanel2.PerformLayout()
-            CType(Me.ddlFormato, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.chkVentaAlmayor, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.EmpresaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.chkVentaDetalle, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.ddlFormato, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.btnCancelar, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.btnQuitarImagen, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.btnExaminarImagen, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1139,9 +1012,6 @@
             CType(Me.txtNumeroIdentificacion, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.txtNombre, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.cbComandos, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.chkVentaDetalle, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.chkVentaAlmayor, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(RadLabel18, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()

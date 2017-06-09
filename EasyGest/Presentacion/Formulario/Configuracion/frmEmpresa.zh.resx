@@ -122,35 +122,13 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 68</value>
+    <value>24, 38</value>
   </data>
   <data name="RadLabel16.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 18</value>
   </data>
   <data name="RadLabel16.Text" xml:space="preserve">
     <value>商业名称</value>
-  </data>
-  <data name="GridViewCheckBoxColumn1.HeaderText" xml:space="preserve">
-    <value>活跃</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="GridViewImageColumn1.FormatString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="GridViewImageColumn1.HeaderText" xml:space="preserve">
-    <value>商标</value>
-  </data>
-  <data name="GridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>企业</value>
-  </data>
-  <data name="GridViewTextBoxColumn2.HeaderText" xml:space="preserve">
-    <value>证件号码</value>
-  </data>
-  <data name="GridViewTextBoxColumn3.HeaderText" xml:space="preserve">
-    <value>商业名称</value>
-  </data>
-  <data name="gridDatos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>807, 53</value>
   </data>
   <data name="RadLabel2.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
@@ -273,7 +251,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 8</value>
+    <value>24, 11</value>
   </data>
   <data name="RadLabel5.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 18</value>
@@ -285,7 +263,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 38</value>
+    <value>319, 11</value>
   </data>
   <data name="RadLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 18</value>
@@ -341,11 +319,69 @@
   <data name="RadLabel14.Text" xml:space="preserve">
     <value>票据号格式</value>
   </data>
+  <data name="RadLabel18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="RadLabel18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 70</value>
+  </data>
+  <data name="RadLabel18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 18</value>
+  </data>
+  <data name="RadLabel18.Text" xml:space="preserve">
+    <value>销售模式</value>
+  </data>
+  <data name="gridDatos.MasterTemplate.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridViewCheckBoxColumn1.HeaderText" xml:space="preserve">
+    <value>活跃</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GridViewImageColumn1.FormatString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="GridViewImageColumn1.HeaderText" xml:space="preserve">
+    <value>商标</value>
+  </data>
+  <data name="GridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>企业</value>
+  </data>
+  <data name="GridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>证件号码</value>
+  </data>
+  <data name="GridViewTextBoxColumn3.HeaderText" xml:space="preserve">
+    <value>商业名称</value>
+  </data>
+  <data name="gridDatos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>807, 53</value>
+  </data>
   <data name="SplitPanel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>817, 63</value>
   </data>
-  <data name="ddlFormato.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
+  <data name="chkVentaAlmayor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="chkVentaAlmayor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 69</value>
+  </data>
+  <data name="chkVentaAlmayor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 18</value>
+  </data>
+  <data name="chkVentaAlmayor.Text" xml:space="preserve">
+    <value>批发</value>
+  </data>
+  <data name="chkVentaDetalle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>楷体, 9.75pt</value>
+  </data>
+  <data name="chkVentaDetalle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 69</value>
+  </data>
+  <data name="chkVentaDetalle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 18</value>
+  </data>
+  <data name="chkVentaDetalle.Text" xml:space="preserve">
+    <value>零售</value>
   </data>
   <data name="ddlFormato.Location" type="System.Drawing.Point, System.Drawing">
     <value>89, 98</value>
@@ -357,7 +393,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="btnCancelar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>718, 297</value>
+    <value>718, 296</value>
   </data>
   <data name="btnCancelar.Text" xml:space="preserve">
     <value>取消</value>
@@ -365,7 +401,7 @@
   <data name="resource.Text" xml:space="preserve">
     <value>取消</value>
   </data>
-  <assembly alias="Telerik.WinControls" name="Telerik.WinControls, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  <assembly alias="Telerik.WinControls" name="Telerik.WinControls, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
   <data name="btnQuitarImagen.DisplayStyle" type="Telerik.WinControls.DisplayStyle, Telerik.WinControls">
     <value>ImageAndText</value>
   </data>
@@ -384,7 +420,7 @@
   <data name="txtNumeroCuenta.Location" type="System.Drawing.Point, System.Drawing">
     <value>88, 175</value>
   </data>
-  <assembly alias="Telerik.WinControls.UI" name="Telerik.WinControls.UI, Version=2012.2.912.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  <assembly alias="Telerik.WinControls.UI" name="Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
   <data name="txtNumeroCuenta.MaskType" type="Telerik.WinControls.UI.MaskType, Telerik.WinControls.UI">
     <value>None</value>
   </data>
@@ -392,10 +428,10 @@
     <value>214, 24</value>
   </data>
   <data name="txtNombreComercial.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 68</value>
+    <value>88, 38</value>
   </data>
   <data name="txtNombreComercial.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 24</value>
+    <value>291, 24</value>
   </data>
   <data name="txtSerie.Location" type="System.Drawing.Point, System.Drawing">
     <value>88, 129</value>
@@ -407,7 +443,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="btnAceptar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>626, 297</value>
+    <value>626, 296</value>
   </data>
   <data name="btnAceptar.Text" xml:space="preserve">
     <value>确认</value>
@@ -494,25 +530,59 @@
     <value>214, 24</value>
   </data>
   <data name="txtNombre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 38</value>
+    <value>383, 8</value>
   </data>
   <data name="txtNombre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 24</value>
+    <value>408, 24</value>
   </data>
   <data name="SplitPanel2.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
   </data>
   <data name="SplitPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 66</value>
+    <value>0, 67</value>
   </data>
   <data name="SplitPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 342</value>
-  </data>
-  <data name="RadSplitContainer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 48</value>
+    <value>817, 341</value>
   </data>
   <data name="RadSplitContainer1.Size" type="System.Drawing.Size, System.Drawing">
     <value>817, 408</value>
+  </data>
+  <data name="resource.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="resource.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.DisplayName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.KeyTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Padding2" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text14" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.ToolTipText" xml:space="preserve">
+    <value />
   </data>
   <data name="cbbtnAgregar.Text" xml:space="preserve">
     <value>添加</value>
@@ -520,26 +590,122 @@
   <data name="cbbtnModificar.Text" xml:space="preserve">
     <value>更改</value>
   </data>
-  <data name="cbbtnFijarActivo.AccessibleDescription" xml:space="preserve">
-    <value>CommandBarButton1</value>
-  </data>
-  <data name="cbbtnFijarActivo.AccessibleName" xml:space="preserve">
-    <value>CommandBarButton1</value>
-  </data>
   <data name="cbbtnFijarActivo.Text" xml:space="preserve">
     <value>设为活跃</value>
   </data>
-  <data name="cbComandos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 48</value>
+  <data name="resource.Alignment1" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.AngleTransform1" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.DisplayName1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.FlipText1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.KeyTip1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.Margin1" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Padding3" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.RightToLeft1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text15" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.TextOrientation1" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.TextWrap1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.ToolTipText1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.Alignment2" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.AngleTransform2" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.DisplayName2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.FlipText2" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.KeyTip2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.Margin2" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Padding4" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.RightToLeft2" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text16" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.TextOrientation2" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.TextWrap2" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.ToolTipText2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.Alignment3" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.AngleTransform3" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.DisplayName3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.FlipText3" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.KeyTip3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resource.Margin3" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Padding5" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.RightToLeft3" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text17" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.TextOrientation3" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.TextWrap3" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.ToolTipText3" xml:space="preserve">
+    <value />
   </data>
   <data name="dlgImagen.Filter" xml:space="preserve">
     <value>图像|*.jpg;*.png;*.gif;*.tiff</value>
   </data>
   <data name="dlgImagen.Title" xml:space="preserve">
     <value>选择商标</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>817, 456</value>
