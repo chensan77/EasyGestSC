@@ -206,7 +206,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 30</value>
+    <value>329, 28</value>
   </data>
   <data name="RadLabel10.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 18</value>
@@ -218,7 +218,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>327, 30</value>
+    <value>170, 28</value>
   </data>
   <data name="RadLabel9.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 18</value>
@@ -330,9 +330,6 @@
   </data>
   <data name="RadLabel18.Text" xml:space="preserve">
     <value>销售模式</value>
-  </data>
-  <data name="gridDatos.MasterTemplate.Caption" xml:space="preserve">
-    <value />
   </data>
   <data name="GridViewCheckBoxColumn1.HeaderText" xml:space="preserve">
     <value>活跃</value>
@@ -497,16 +494,23 @@
     <value>None</value>
   </data>
   <data name="txtFax.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 24</value>
+    <value>368, 24</value>
   </data>
   <data name="txtFax.MaskType" type="Telerik.WinControls.UI.MaskType, Telerik.WinControls.UI">
     <value>None</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtFax.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
   <data name="txtMovil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 24</value>
+    <value>209, 24</value>
   </data>
   <data name="txtMovil.MaskType" type="Telerik.WinControls.UI.MaskType, Telerik.WinControls.UI">
     <value>None</value>
+  </data>
+  <data name="txtMovil.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="txtTelefono.Location" type="System.Drawing.Point, System.Drawing">
     <value>51, 24</value>
@@ -547,43 +551,6 @@
   <data name="RadSplitContainer1.Size" type="System.Drawing.Size, System.Drawing">
     <value>817, 408</value>
   </data>
-  <data name="resource.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="resource.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="resource.DisplayName" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.Padding2" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.Text14" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="resource.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="resource.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
   <data name="cbbtnAgregar.Text" xml:space="preserve">
     <value>添加</value>
   </data>
@@ -592,114 +559,6 @@
   </data>
   <data name="cbbtnFijarActivo.Text" xml:space="preserve">
     <value>设为活跃</value>
-  </data>
-  <data name="resource.Alignment1" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="resource.AngleTransform1" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="resource.DisplayName1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.FlipText1" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.KeyTip1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.Margin1" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.Padding3" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.RightToLeft1" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.Text15" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="resource.TextOrientation1" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="resource.TextWrap1" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.ToolTipText1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.Alignment2" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="resource.AngleTransform2" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="resource.DisplayName2" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.FlipText2" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.KeyTip2" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.Margin2" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.Padding4" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.RightToLeft2" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.Text16" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="resource.TextOrientation2" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="resource.TextWrap2" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.ToolTipText2" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.Alignment3" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="resource.AngleTransform3" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="resource.DisplayName3" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.FlipText3" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.KeyTip3" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.Margin3" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.Padding5" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.RightToLeft3" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.Text17" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="resource.TextOrientation3" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="resource.TextWrap3" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.ToolTipText3" xml:space="preserve">
-    <value />
   </data>
   <data name="dlgImagen.Filter" xml:space="preserve">
     <value>图像|*.jpg;*.png;*.gif;*.tiff</value>

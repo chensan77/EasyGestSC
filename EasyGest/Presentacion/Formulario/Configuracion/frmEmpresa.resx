@@ -117,991 +117,1822 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;timValidar.Name" xml:space="preserve">
-    <value>timValidar</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="txtDireccion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>392, 24</value>
-  </data>
-  <data name="grpbDireccion.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="txtMovil.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="&gt;&gt;txtTelefono.Parent" xml:space="preserve">
-    <value>grpbContacto</value>
-  </data>
-  <data name="txtMovil.Text" xml:space="preserve">
-    <value>_________</value>
-  </data>
-  <data name="RadLabel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 22</value>
-  </data>
-  <data name="&gt;&gt;btnExaminarImagen.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
-  </data>
-  <data name="&gt;&gt;txtDireccion.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;ddlLocalidad.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="cbbtnFijarActivo.FlipText" type="System.Boolean, mscorlib">
+  <metadata name="RadLabel16.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
-  </data>
-  <data name="RadLabel2.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;txtMovil.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="txtDireccion.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;RadLabel12.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="CommandBarRowElement1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="RadLabel16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
   </data>
   <data name="RadLabel16.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 33</value>
   </data>
-  <data name="txtSerie.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 24</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="RadLabel16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
-  <data name="ddlLocalidad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 24</value>
+  <data name="RadLabel16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 22</value>
   </data>
-  <assembly alias="Telerik.WinControls.UI" name="Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
-  <data name="txtEmail.MaskType" type="Telerik.WinControls.UI.MaskType, Telerik.WinControls.UI">
-    <value>EMail</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="RadLabel16.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
   </data>
-  <data name="RadLabel1.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="RadLabel16.Text" xml:space="preserve">
+    <value>N. Comercial</value>
+  </data>
+  <data name="RadLabel16.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
+  </data>
+  <data name="RadLabel16.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RadLabel16.Name" xml:space="preserve">
+    <value>RadLabel16</value>
+  </data>
+  <data name="&gt;&gt;RadLabel16.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel16.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;RadLabel16.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <metadata name="RadLabel2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="RadLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="RadLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 165</value>
+  </data>
+  <data name="RadLabel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="RadLabel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 22</value>
   </data>
-  <data name="resource.FlipText3" type="System.Boolean, mscorlib">
+  <data name="RadLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="RadLabel2.Text" xml:space="preserve">
+    <value>C. Bancaria</value>
+  </data>
+  <data name="RadLabel2.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="RadLabel2.TextWrap" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;gridDatos.Name" xml:space="preserve">
-    <value>gridDatos</value>
+  <data name="&gt;&gt;RadLabel2.Name" xml:space="preserve">
+    <value>RadLabel2</value>
   </data>
-  <data name="&gt;&gt;txtFax.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;RadLabel2.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="RadLabel9.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="&gt;&gt;RadLabel2.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
   </data>
-  <data name="btnAceptar.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="&gt;&gt;RadLabel2.ZOrder" xml:space="preserve">
+    <value>14</value>
   </data>
-  <data name="&gt;&gt;cbstripeOrden.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarStripElement, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <metadata name="RadLabel17.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="RadLabel17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
   </data>
-  <data name="resource.Text" xml:space="preserve">
-    <value>Cancelar</value>
+  <data name="RadLabel17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 86</value>
   </data>
-  <data name="RadLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 22</value>
+  <data name="RadLabel17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
-  <data name="&gt;&gt;bgwCarga.Name" xml:space="preserve">
-    <value>bgwCarga</value>
+  <data name="RadLabel17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 22</value>
   </data>
-  <data name="resource.Text1" xml:space="preserve">
-    <value>____ ____ __ __________</value>
+  <data name="RadLabel17.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
-  <data name="&gt;&gt;RadLabel8.Parent" xml:space="preserve">
-    <value>grpbContacto</value>
+  <data name="RadLabel17.Text" xml:space="preserve">
+    <value>Localidad</value>
   </data>
-  <data name="resource.Text14" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="RadLabel17.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
-  <data name="RadSplitContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 383</value>
+  <data name="RadLabel17.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RadLabel17.Name" xml:space="preserve">
+    <value>RadLabel17</value>
+  </data>
+  <data name="&gt;&gt;RadLabel17.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel17.Parent" xml:space="preserve">
+    <value>grpbDireccion</value>
+  </data>
+  <data name="&gt;&gt;RadLabel17.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="RadLabel12.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="RadLabel12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="RadLabel12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 57</value>
+  </data>
+  <data name="RadLabel12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="RadLabel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 22</value>
+  </data>
+  <data name="RadLabel12.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="RadLabel12.Text" xml:space="preserve">
+    <value>Provincia</value>
+  </data>
+  <data name="RadLabel12.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="RadLabel12.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RadLabel12.Name" xml:space="preserve">
+    <value>RadLabel12</value>
+  </data>
+  <data name="&gt;&gt;RadLabel12.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel12.Parent" xml:space="preserve">
+    <value>grpbDireccion</value>
+  </data>
+  <data name="&gt;&gt;RadLabel12.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="RadLabel13.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="RadLabel13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="RadLabel13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>358, 57</value>
+  </data>
+  <data name="RadLabel13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="RadLabel13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 22</value>
+  </data>
+  <data name="RadLabel13.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
   </data>
   <data name="RadLabel13.Text" xml:space="preserve">
     <value>C.P.</value>
   </data>
-  <data name="txtNombreComercial.Size" type="System.Drawing.Size, System.Drawing">
-    <value>689, 24</value>
+  <data name="RadLabel13.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
-  <data name="resource.Text12" xml:space="preserve">
-    <value />
+  <data name="RadLabel13.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;RadLabel3.Type" xml:space="preserve">
+  <data name="&gt;&gt;RadLabel13.Name" xml:space="preserve">
+    <value>RadLabel13</value>
+  </data>
+  <data name="&gt;&gt;RadLabel13.Type" xml:space="preserve">
     <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="ddlProvincia.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="&gt;&gt;RadLabel13.Parent" xml:space="preserve">
+    <value>grpbDireccion</value>
+  </data>
+  <data name="&gt;&gt;RadLabel13.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="RadLabel15.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="RadLabel15.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="RadLabel15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 29</value>
+  </data>
+  <data name="RadLabel15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="RadLabel15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 22</value>
+  </data>
+  <data name="RadLabel15.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="RadLabel15.Text" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="RadLabel15.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="RadLabel15.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RadLabel15.Name" xml:space="preserve">
+    <value>RadLabel15</value>
+  </data>
+  <data name="&gt;&gt;RadLabel15.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel15.Parent" xml:space="preserve">
+    <value>grpbDireccion</value>
+  </data>
+  <data name="&gt;&gt;RadLabel15.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="RadLabel11.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="RadLabel11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="RadLabel11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 54</value>
+  </data>
+  <data name="RadLabel11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="RadLabel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 22</value>
+  </data>
+  <data name="RadLabel11.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="RadLabel11.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="RadLabel11.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="RadLabel11.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RadLabel11.Name" xml:space="preserve">
+    <value>RadLabel11</value>
+  </data>
+  <data name="&gt;&gt;RadLabel11.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel11.Parent" xml:space="preserve">
+    <value>grpbContacto</value>
+  </data>
+  <data name="&gt;&gt;RadLabel11.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="RadLabel10.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="RadLabel10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="RadLabel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 28</value>
+  </data>
+  <data name="RadLabel10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="RadLabel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 22</value>
+  </data>
+  <data name="RadLabel10.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="RadLabel10.Text" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="RadLabel10.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="RadLabel10.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RadLabel10.Name" xml:space="preserve">
+    <value>RadLabel10</value>
+  </data>
+  <data name="&gt;&gt;RadLabel10.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel10.Parent" xml:space="preserve">
+    <value>grpbContacto</value>
+  </data>
+  <data name="&gt;&gt;RadLabel10.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="RadLabel9.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="RadLabel9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="RadLabel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 28</value>
   </data>
   <data name="RadLabel9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="&gt;&gt;btnCancelar.Name" xml:space="preserve">
-    <value>btnCancelar</value>
+  <data name="RadLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 22</value>
   </data>
-  <data name="resource.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+  <data name="RadLabel9.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
-  <data name="cbbtnAgregar.TextWrap" type="System.Boolean, mscorlib">
+  <data name="RadLabel9.Text" xml:space="preserve">
+    <value>Móvil</value>
+  </data>
+  <data name="RadLabel9.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="RadLabel9.TextWrap" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="btnQuitarImagen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 22</value>
+  <data name="&gt;&gt;RadLabel9.Name" xml:space="preserve">
+    <value>RadLabel9</value>
   </data>
-  <data name="&gt;&gt;RadLabel4.Name" xml:space="preserve">
-    <value>RadLabel4</value>
+  <data name="&gt;&gt;RadLabel9.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="RadLabel7.Text" xml:space="preserve">
-    <value>*Series para numeración de albarán, separe con coma.</value>
+  <data name="&gt;&gt;RadLabel9.Parent" xml:space="preserve">
+    <value>grpbContacto</value>
   </data>
-  <data name="&gt;&gt;chkVentaAlmayor.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
+  <data name="&gt;&gt;RadLabel9.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;RadLabel18.Parent" xml:space="preserve">
+  <metadata name="RadLabel8.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="RadLabel8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="RadLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 28</value>
+  </data>
+  <data name="RadLabel8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="RadLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 22</value>
+  </data>
+  <data name="RadLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="RadLabel8.Text" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="RadLabel8.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="RadLabel8.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RadLabel8.Name" xml:space="preserve">
+    <value>RadLabel8</value>
+  </data>
+  <data name="&gt;&gt;RadLabel8.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel8.Parent" xml:space="preserve">
+    <value>grpbContacto</value>
+  </data>
+  <data name="&gt;&gt;RadLabel8.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <metadata name="RadLabel3.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="RadLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="RadLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 118</value>
+  </data>
+  <data name="RadLabel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="RadLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 22</value>
+  </data>
+  <data name="RadLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="RadLabel3.Text" xml:space="preserve">
+    <value>*Serie Alb/Fact</value>
+  </data>
+  <data name="RadLabel3.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="RadLabel3.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RadLabel3.Name" xml:space="preserve">
+    <value>RadLabel3</value>
+  </data>
+  <data name="&gt;&gt;RadLabel3.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel3.Parent" xml:space="preserve">
     <value>SplitPanel2</value>
   </data>
   <data name="&gt;&gt;RadLabel3.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
-  <data name="resource.AngleTransform1" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="grpbContacto.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 17, 2, 2</value>
-  </data>
-  <data name="RadLabel7.AutoSize" type="System.Boolean, mscorlib">
+  <metadata name="RadLabel5.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
-  </data>
-  <data name="RadLabel10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>181, 28</value>
-  </data>
-  <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>316, 53</value>
-  </data>
-  <data name="RadLabel16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 22</value>
-  </data>
-  <data name="RadLabel9.Text" xml:space="preserve">
-    <value>Móvil</value>
-  </data>
-  <data name="txtFax.Text" xml:space="preserve">
-    <value>_________</value>
-  </data>
-  <data name="txtMovil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 26</value>
-  </data>
-  <data name="&gt;&gt;MunicipiosEspañolasBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="RadLabel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 19</value>
-  </data>
-  <data name="RadLabel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 54</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+  </metadata>
+  <data name="RadLabel5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
   </data>
-  <data name="&gt;&gt;RadLabel14.Name" xml:space="preserve">
-    <value>RadLabel14</value>
+  <data name="RadLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 7</value>
   </data>
-  <data name="&gt;&gt;txtFax.Name" xml:space="preserve">
-    <value>txtFax</value>
-  </data>
-  <assembly alias="Telerik.WinControls" name="Telerik.WinControls, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
-  <data name="btnExaminarImagen.DisplayStyle" type="Telerik.WinControls.DisplayStyle, Telerik.WinControls">
-    <value>Image</value>
-  </data>
-  <data name="cbbtnFijarActivo.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;RadLabel14.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="txtNombreComercial.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="RadLabel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
-  </data>
-  <data name="ddlProvincia.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="resource.FlipText2" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RadLabel17.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="GridViewCheckBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Activo</value>
-  </data>
-  <data name="RadLabel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 22</value>
-  </data>
-  <data name="RadSplitContainer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 48</value>
-  </data>
-  <data name="RadLabel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>78, 196</value>
-  </data>
-  <data name="cbbtnFijarActivo.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="RadLabel8.Text" xml:space="preserve">
-    <value>Teléfono</value>
-  </data>
-  <data name="btnQuitarImagen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 223</value>
-  </data>
-  <data name="&gt;&gt;ddlLocalidad.Name" xml:space="preserve">
-    <value>ddlLocalidad</value>
-  </data>
-  <data name="cbComandos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="RadLabel18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 22</value>
-  </data>
-  <data name="txtNumeroIdentificacion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 7</value>
-  </data>
-  <data name="gridDatos.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="resource.DisplayName" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnCancelar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 32</value>
   </data>
   <data name="RadLabel5.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 22</value>
   </data>
-  <data name="cbbtnAgregar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="txtTelefono.Text" xml:space="preserve">
-    <value>_________</value>
-  </data>
-  <data name="cbbtnModificar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;RadLabel17.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;RadLabel7.Name" xml:space="preserve">
-    <value>RadLabel7</value>
-  </data>
-  <data name="RadLabel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 22</value>
-  </data>
-  <data name="RadLabel16.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="&gt;&gt;txtEmail.Parent" xml:space="preserve">
-    <value>grpbContacto</value>
-  </data>
-  <data name="RadLabel4.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;RadLabel3.Name" xml:space="preserve">
-    <value>RadLabel3</value>
-  </data>
-  <data name="txtFax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="txtFax.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 24</value>
-  </data>
-  <data name="RadLabel3.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmEmpresa</value>
-  </data>
-  <data name="SplitPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="cbbtnModificar.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="resource.Margin2" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadLabel17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 86</value>
-  </data>
-  <data name="RadLabel12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 22</value>
-  </data>
-  <data name="ddlFormato.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 90</value>
-  </data>
-  <data name="grpbContacto.HeaderText" xml:space="preserve">
-    <value>Contacto</value>
-  </data>
-  <data name="RadLabel8.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="cbbtnModificar.DisplayName" xml:space="preserve">
-    <value>Modificar</value>
-  </data>
-  <data name="&gt;&gt;bgwCarga.Type" xml:space="preserve">
-    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadLabel10.Parent" xml:space="preserve">
-    <value>grpbContacto</value>
-  </data>
-  <data name="resource.FlipText1" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="txtWeb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>78, 53</value>
-  </data>
-  <data name="&gt;&gt;RadLabel11.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="cbbtnAgregar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="GridViewImageColumn1.HeaderText" xml:space="preserve">
-    <value>Logo</value>
-  </data>
-  <data name="&gt;&gt;RadLabel8.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;CommandBarSeparator1.Name" xml:space="preserve">
-    <value>CommandBarSeparator1</value>
-  </data>
-  <data name="RadLabel13.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="RadLabel12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 57</value>
-  </data>
-  <data name="RadLabel2.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="txtNumeroIdentificacion.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="resource.Text2" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;CommandBarRowElement1.Name" xml:space="preserve">
-    <value>CommandBarRowElement1</value>
-  </data>
-  <data name="RadLabel1.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="RadLabel16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;CommandBarSeparator1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarSeparator, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="RadLabel3.Text" xml:space="preserve">
-    <value>*Serie Alb/Fact</value>
-  </data>
-  <data name="&gt;&gt;RadLabel9.Parent" xml:space="preserve">
-    <value>grpbContacto</value>
-  </data>
-  <data name="RadLabel14.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="RadLabel14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 22</value>
-  </data>
-  <data name="resource.Text13" xml:space="preserve">
-    <value />
-  </data>
-  <data name="cbbtnModificar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="resource.Padding2" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;btnExaminarImagen.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;RadLabel6.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
-  </data>
-  <data name="resource.KeyTip2" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;RadLabel15.Parent" xml:space="preserve">
-    <value>grpbDireccion</value>
-  </data>
-  <data name="txtNumeroCuenta.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;chkVentaAlmayor.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadCheckBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="resource.Text10" xml:space="preserve">
-    <value>_________</value>
-  </data>
-  <data name="CommandBarRowElement1.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel16.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="btnCancelar.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="RadLabel2.Text" xml:space="preserve">
-    <value>C. Bancaria</value>
-  </data>
-  <data name="RadSplitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="txtTelefono.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 24</value>
-  </data>
-  <data name="gridDatos.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="&gt;&gt;RadLabel13.Name" xml:space="preserve">
-    <value>RadLabel13</value>
-  </data>
-  <data name="cbstripeOrden.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadLabel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 118</value>
-  </data>
-  <data name="&gt;&gt;RadLabel17.Name" xml:space="preserve">
-    <value>RadLabel17</value>
-  </data>
-  <data name="&gt;&gt;RadLabel16.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
-  </data>
-  <data name="RadLabel1.Text" xml:space="preserve">
-    <value>Nombre</value>
-  </data>
-  <data name="RadLabel11.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="ddlFormato.Text" xml:space="preserve">
-    <value>Núm./Año</value>
-  </data>
-  <data name="CommandBarRowElement1.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="btnAceptar.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="cbbtnModificar.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;ddlFormato.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="RadLabel18.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="&gt;&gt;RadLabel18.Name" xml:space="preserve">
-    <value>RadLabel18</value>
-  </data>
-  <data name="cbbtnModificar.Text" xml:space="preserve">
-    <value>Modificar</value>
-  </data>
-  <data name="cbbtnModificar.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;RadLabel5.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
-  </data>
-  <data name="&gt;&gt;txtEmail.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="RadLabel10.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="resource.Text6" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;cbstripeOrden.Name" xml:space="preserve">
-    <value>cbstripeOrden</value>
-  </data>
-  <data name="cbbtnFijarActivo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="btnCancelar.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="txtTelefono.MaskType" type="Telerik.WinControls.UI.MaskType, Telerik.WinControls.UI">
-    <value>Standard</value>
-  </data>
-  <data name="CommandBarRowElement1.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;RadLabel10.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="btnAceptar.Text" xml:space="preserve">
-    <value>Confirmar</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="txtNumeroCuenta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 24</value>
-  </data>
-  <data name="CommandBarSeparator1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 0, 0</value>
-  </data>
-  <data name="resource.KeyTip3" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.DisplayName2" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.DisplayName3" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 22</value>
-  </data>
-  <data name="gridDatos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 5</value>
-  </data>
-  <data name="txtNumeroCuenta.MaskType" type="Telerik.WinControls.UI.MaskType, Telerik.WinControls.UI">
-    <value>Standard</value>
-  </data>
-  <data name="txtCodigoPostal.MaskType" type="Telerik.WinControls.UI.MaskType, Telerik.WinControls.UI">
-    <value>Standard</value>
-  </data>
-  <data name="&gt;&gt;grpbDireccion.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
-  </data>
-  <data name="&gt;&gt;RadLabel4.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;EmpresasBindingSource.Name" xml:space="preserve">
-    <value>EmpresasBindingSource</value>
-  </data>
-  <data name="&gt;&gt;RadLabel2.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="RadLabel6.Text" xml:space="preserve">
-    <value>Logo</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="ddlLocalidad.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="RadLabel18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;txtNombre.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;grpbDireccion.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="RadLabel10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 22</value>
-  </data>
-  <data name="RadLabel4.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="cbComandos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 48</value>
-  </data>
-  <data name="&gt;&gt;RadLabel15.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;btnAceptar.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
-  </data>
-  <data name="&gt;&gt;RadLabel4.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="RadLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
   </data>
   <data name="RadLabel5.Text" xml:space="preserve">
     <value>Ident. Fiscal</value>
   </data>
-  <data name="resource.TextWrap2" type="System.Boolean, mscorlib">
+  <data name="RadLabel5.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="RadLabel5.TextWrap" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="SplitPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+  <data name="&gt;&gt;RadLabel5.Name" xml:space="preserve">
+    <value>RadLabel5</value>
   </data>
-  <data name="RadLabel6.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
+  <data name="&gt;&gt;RadLabel5.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="RadLabel18.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RadLabel13.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.Margin3" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.RightToLeft3" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.RightToLeft2" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.RightToLeft1" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;txtNombre.Parent" xml:space="preserve">
+  <data name="&gt;&gt;RadLabel5.Parent" xml:space="preserve">
     <value>SplitPanel2</value>
   </data>
-  <data name="chkVentaDetalle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 63</value>
+  <data name="&gt;&gt;RadLabel5.ZOrder" xml:space="preserve">
+    <value>20</value>
   </data>
-  <data name="resource.Text15" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="RadLabel4.Text" xml:space="preserve">
-    <value>Pag. Web</value>
-  </data>
-  <data name="&gt;&gt;txtNumeroIdentificacion.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;RadLabel16.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="RadLabel17.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="RadSplitContainer1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;RadLabel6.Name" xml:space="preserve">
-    <value>RadLabel6</value>
-  </data>
-  <data name="&gt;&gt;txtCodigoPostal.Parent" xml:space="preserve">
-    <value>grpbDireccion</value>
-  </data>
-  <data name="&gt;&gt;SplitPanel2.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.SplitPanel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;txtWeb.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="RadLabel15.TextWrap" type="System.Boolean, mscorlib">
+  <metadata name="RadLabel1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
-  </data>
-  <data name="cbbtnAgregar.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RadLabel18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 63</value>
-  </data>
-  <data name="cbstripeOrden.DisplayName" xml:space="preserve">
-    <value>CommandBarStripElement1</value>
-  </data>
-  <data name="&gt;&gt;txtFax.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;MunicipiosEspañolasBindingSource.Name" xml:space="preserve">
-    <value>MunicipiosEspañolasBindingSource</value>
-  </data>
-  <data name="&gt;&gt;txtNumeroCuenta.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;RadLabel13.Parent" xml:space="preserve">
-    <value>grpbDireccion</value>
-  </data>
-  <data name="&gt;&gt;RadSplitContainer1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadSplitContainer, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="GridViewTextBoxColumn3.HeaderText" xml:space="preserve">
-    <value>Nombre Comercial</value>
-  </data>
-  <data name="&gt;&gt;grpbDireccion.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="btnCancelar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>719, 281</value>
-  </data>
-  <data name="&gt;&gt;txtDireccion.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="resource.KeyTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;txtSerie.Name" xml:space="preserve">
-    <value>txtSerie</value>
-  </data>
-  <data name="&gt;&gt;chkVentaDetalle.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="txtTelefono.Font" type="System.Drawing.Font, System.Drawing">
+  </metadata>
+  <data name="RadLabel1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
   </data>
   <data name="RadLabel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>319, 9</value>
   </data>
-  <data name="cbbtnAgregar.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;RadLabel7.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;cbComandos.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txtMovil.Name" xml:space="preserve">
-    <value>txtMovil</value>
-  </data>
-  <data name="txtWeb.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;txtSerie.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;btnCancelar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="btnExaminarImagen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 196</value>
-  </data>
-  <data name="resource.AngleTransform3" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="CommandBarSeparator1.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="&gt;&gt;RadLabel3.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
-  </data>
-  <data name="txtNumeroCuenta.Text" xml:space="preserve">
-    <value>____ ____ __ __________</value>
-  </data>
-  <data name="&gt;&gt;txtCodigoPostal.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="cbstripeOrden.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="resource.Text4" xml:space="preserve">
-    <value>Confirmar</value>
-  </data>
-  <data name="RadLabel12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="RadLabel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="&gt;&gt;txtMovil.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="RadLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 22</value>
   </data>
-  <data name="cbbtnAgregar.Text" xml:space="preserve">
-    <value>Agregar</value>
+  <data name="RadLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
   </data>
-  <data name="&gt;&gt;btnExaminarImagen.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="RadLabel1.Text" xml:space="preserve">
+    <value>Nombre</value>
   </data>
-  <data name="RadLabel9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
+  <data name="RadLabel1.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;RadLabel16.Name" xml:space="preserve">
-    <value>RadLabel16</value>
-  </data>
-  <data name="resource.Alignment2" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="&gt;&gt;RadSplitContainer1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="RadLabel9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>323, 28</value>
-  </data>
-  <data name="RadLabel16.TextWrap" type="System.Boolean, mscorlib">
+  <data name="RadLabel1.TextWrap" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;ProvinciasEspañolasBindingSource.Name" xml:space="preserve">
-    <value>ProvinciasEspañolasBindingSource</value>
+  <data name="&gt;&gt;RadLabel1.Name" xml:space="preserve">
+    <value>RadLabel1</value>
   </data>
-  <data name="RadLabel15.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
+  <data name="&gt;&gt;RadLabel1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="RadLabel11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 22</value>
-  </data>
-  <data name="RadLabel8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="SplitPanel2.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="chkVentaAlmayor.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="picLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 79</value>
-  </data>
-  <data name="gridDatos.MasterTemplate.Caption" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;chkVentaDetalle.Parent" xml:space="preserve">
+  <data name="&gt;&gt;RadLabel1.Parent" xml:space="preserve">
     <value>SplitPanel2</value>
   </data>
-  <data name="cbComandos.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;RadLabel1.ZOrder" xml:space="preserve">
+    <value>23</value>
   </data>
-  <data name="GridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Empresa</value>
-  </data>
-  <data name="RadLabel5.TextWrap" type="System.Boolean, mscorlib">
+  <metadata name="RadLabel4.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
-  </data>
-  <data name="&gt;&gt;txtTelefono.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;txtDireccion.Parent" xml:space="preserve">
-    <value>grpbDireccion</value>
-  </data>
-  <data name="ddlFormato.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 24</value>
-  </data>
-  <data name="btnCancelar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="ddlFormato.Font" type="System.Drawing.Font, System.Drawing">
+  </metadata>
+  <data name="RadLabel4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
   </data>
-  <data name="&gt;&gt;SplitPanel1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.SplitPanel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="RadLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 54</value>
   </data>
-  <data name="&gt;&gt;RadLabel13.ZOrder" xml:space="preserve">
+  <data name="RadLabel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="RadLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 22</value>
+  </data>
+  <data name="RadLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="RadLabel4.Text" xml:space="preserve">
+    <value>Pag. Web</value>
+  </data>
+  <data name="RadLabel4.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="RadLabel4.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RadLabel4.Name" xml:space="preserve">
+    <value>RadLabel4</value>
+  </data>
+  <data name="&gt;&gt;RadLabel4.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel4.Parent" xml:space="preserve">
+    <value>grpbContacto</value>
+  </data>
+  <data name="&gt;&gt;RadLabel4.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;chkVentaAlmayor.Name" xml:space="preserve">
-    <value>chkVentaAlmayor</value>
-  </data>
-  <data name="RadLabel14.TextWrap" type="System.Boolean, mscorlib">
+  <metadata name="RadLabel6.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
-  </data>
-  <data name="&gt;&gt;picLogo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="RadLabel15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 29</value>
-  </data>
-  <data name="RadLabel11.Font" type="System.Drawing.Font, System.Drawing">
+  </metadata>
+  <data name="RadLabel6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt</value>
   </data>
-  <data name="gridDatos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="RadLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 196</value>
   </data>
-  <data name="dlgImagen.Filter" xml:space="preserve">
-    <value>Imagen|*.jpg;*.png;*.gif;*.tiff</value>
+  <data name="RadLabel6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
-  <data name="txtNombreComercial.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="RadLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 22</value>
   </data>
-  <data name="txtFax.Mask" xml:space="preserve">
-    <value>#########</value>
+  <data name="RadLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
   </data>
-  <data name="SplitPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 320</value>
+  <data name="RadLabel6.Text" xml:space="preserve">
+    <value>Logo</value>
   </data>
-  <data name="CommandBarRowElement1.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+  <data name="RadLabel6.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="RadLabel6.TextWrap" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;cbstripeAccion.Name" xml:space="preserve">
-    <value>cbstripeAccion</value>
+  <data name="&gt;&gt;RadLabel6.Name" xml:space="preserve">
+    <value>RadLabel6</value>
   </data>
-  <data name="btnAceptar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 32</value>
+  <data name="&gt;&gt;RadLabel6.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="RadLabel3.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;RadLabel6.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;RadLabel6.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <metadata name="RadLabel7.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="RadLabel7.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RadLabel7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 8.25pt</value>
+  </data>
+  <data name="RadLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 144</value>
+  </data>
+  <data name="RadLabel7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="RadLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>307, 19</value>
+  </data>
+  <data name="RadLabel7.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
   </data>
-  <data name="resource.Text11" xml:space="preserve">
-    <value>_________</value>
+  <data name="RadLabel7.Text" xml:space="preserve">
+    <value>*Series para numeración de albarán, separe con coma.</value>
+  </data>
+  <data name="RadLabel7.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;RadLabel7.Name" xml:space="preserve">
+    <value>RadLabel7</value>
+  </data>
+  <data name="&gt;&gt;RadLabel7.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel7.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;RadLabel7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="RadLabel14.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="RadLabel14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="RadLabel14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 90</value>
+  </data>
+  <data name="RadLabel14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="RadLabel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 22</value>
+  </data>
+  <data name="RadLabel14.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="RadLabel14.Text" xml:space="preserve">
+    <value>F. Num. Alb/Fact</value>
+  </data>
+  <data name="RadLabel14.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="RadLabel14.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RadLabel14.Name" xml:space="preserve">
+    <value>RadLabel14</value>
+  </data>
+  <data name="&gt;&gt;RadLabel14.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel14.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;RadLabel14.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="RadLabel18.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="RadLabel18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="RadLabel18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 63</value>
+  </data>
+  <data name="RadLabel18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="RadLabel18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 22</value>
+  </data>
+  <data name="RadLabel18.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="RadLabel18.Text" xml:space="preserve">
+    <value>Tipo venta</value>
+  </data>
+  <data name="RadLabel18.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="RadLabel18.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RadLabel18.Name" xml:space="preserve">
+    <value>RadLabel18</value>
+  </data>
+  <data name="&gt;&gt;RadLabel18.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadLabel18.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;RadLabel18.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="gridDatos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gridDatos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="gridDatos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="gridDatos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 5</value>
+  </data>
+  <data name="GridViewCheckBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Activo</value>
+  </data>
+  <data name="GridViewImageColumn1.HeaderText" xml:space="preserve">
+    <value>Logo</value>
+  </data>
+  <data name="GridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="GridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Ident. Fiscal</value>
+  </data>
+  <data name="GridViewTextBoxColumn3.HeaderText" xml:space="preserve">
+    <value>Nombre Comercial</value>
+  </data>
+  <metadata name="EmpresasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>129, 17</value>
+  </metadata>
+  <data name="gridDatos.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="gridDatos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>807, 49</value>
+  </data>
+  <data name="gridDatos.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gridDatos.Name" xml:space="preserve">
+    <value>gridDatos</value>
+  </data>
+  <data name="&gt;&gt;gridDatos.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;gridDatos.Parent" xml:space="preserve">
+    <value>SplitPanel1</value>
+  </data>
+  <data name="&gt;&gt;gridDatos.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="SplitPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="SplitPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="SplitPanel1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="SplitPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>817, 59</value>
+  </data>
+  <data name="SplitPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;SplitPanel1.Name" xml:space="preserve">
+    <value>SplitPanel1</value>
+  </data>
+  <data name="&gt;&gt;SplitPanel1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.SplitPanel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;SplitPanel1.Parent" xml:space="preserve">
+    <value>RadSplitContainer1</value>
+  </data>
+  <data name="&gt;&gt;SplitPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="EmpresaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>311, 17</value>
+  </metadata>
+  <data name="chkVentaAlmayor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="chkVentaAlmayor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 63</value>
+  </data>
+  <data name="chkVentaAlmayor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 22</value>
+  </data>
+  <data name="chkVentaAlmayor.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="chkVentaAlmayor.Text" xml:space="preserve">
+    <value>Mayorista</value>
+  </data>
+  <data name="&gt;&gt;chkVentaAlmayor.Name" xml:space="preserve">
+    <value>chkVentaAlmayor</value>
+  </data>
+  <data name="&gt;&gt;chkVentaAlmayor.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadCheckBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;chkVentaAlmayor.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;chkVentaAlmayor.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chkVentaDetalle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="chkVentaDetalle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 63</value>
+  </data>
+  <data name="chkVentaDetalle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 22</value>
+  </data>
+  <data name="chkVentaDetalle.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="chkVentaDetalle.Text" xml:space="preserve">
+    <value>Minorista</value>
+  </data>
+  <data name="&gt;&gt;chkVentaDetalle.Name" xml:space="preserve">
+    <value>chkVentaDetalle</value>
+  </data>
+  <data name="&gt;&gt;chkVentaDetalle.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadCheckBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;chkVentaDetalle.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;chkVentaDetalle.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ddlFormato.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="ddlFormato.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 90</value>
+  </data>
+  <data name="ddlFormato.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 24</value>
+  </data>
+  <data name="ddlFormato.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="ddlFormato.Text" xml:space="preserve">
+    <value>Núm./Año</value>
+  </data>
+  <data name="&gt;&gt;ddlFormato.Name" xml:space="preserve">
+    <value>ddlFormato</value>
   </data>
   <data name="&gt;&gt;ddlFormato.Type" xml:space="preserve">
     <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="RadLabel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 7</value>
-  </data>
-  <data name="txtWeb.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="&gt;&gt;txtSerie.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ddlFormato.Parent" xml:space="preserve">
     <value>SplitPanel2</value>
   </data>
-  <data name="btnAceptar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="&gt;&gt;ddlFormato.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnCancelar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="btnCancelar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="btnCancelar.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btnCancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>719, 281</value>
+  </data>
+  <data name="btnCancelar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="CommandBarRowElement1.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="btnCancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 32</value>
   </data>
-  <data name="&gt;&gt;btnExaminarImagen.Name" xml:space="preserve">
-    <value>btnExaminarImagen</value>
+  <data name="btnCancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
-  <data name="txtMovil.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="btnCancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnCancelar.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.Name" xml:space="preserve">
+    <value>btnCancelar</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;btnCancelar.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="resource.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <assembly alias="Telerik.WinControls" name="Telerik.WinControls, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  <data name="btnQuitarImagen.DisplayStyle" type="Telerik.WinControls.DisplayStyle, Telerik.WinControls">
+    <value>Image</value>
+  </data>
+  <data name="btnQuitarImagen.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btnQuitarImagen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 223</value>
+  </data>
+  <data name="btnQuitarImagen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 22</value>
   </data>
   <data name="btnQuitarImagen.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
   </data>
+  <data name="&gt;&gt;btnQuitarImagen.Name" xml:space="preserve">
+    <value>btnQuitarImagen</value>
+  </data>
+  <data name="&gt;&gt;btnQuitarImagen.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnQuitarImagen.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;btnQuitarImagen.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnExaminarImagen.DisplayStyle" type="Telerik.WinControls.DisplayStyle, Telerik.WinControls">
+    <value>Image</value>
+  </data>
+  <data name="btnExaminarImagen.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btnExaminarImagen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 196</value>
+  </data>
+  <data name="btnExaminarImagen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 22</value>
+  </data>
+  <data name="btnExaminarImagen.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;btnExaminarImagen.Name" xml:space="preserve">
+    <value>btnExaminarImagen</value>
+  </data>
+  <data name="&gt;&gt;btnExaminarImagen.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnExaminarImagen.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;btnExaminarImagen.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="picLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="picLogo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="picLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 196</value>
+  </data>
+  <data name="picLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 79</value>
+  </data>
+  <data name="picLogo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="picLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;picLogo.Name" xml:space="preserve">
+    <value>picLogo</value>
+  </data>
+  <data name="&gt;&gt;picLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;picLogo.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;picLogo.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txtNumeroCuenta.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtNumeroCuenta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 165</value>
+  </data>
+  <data name="txtNumeroCuenta.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="txtNumeroCuenta.Mask" xml:space="preserve">
+    <value>#### #### ## ##########</value>
+  </data>
+  <assembly alias="Telerik.WinControls.UI" name="Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  <data name="txtNumeroCuenta.MaskType" type="Telerik.WinControls.UI.MaskType, Telerik.WinControls.UI">
+    <value>Standard</value>
+  </data>
+  <data name="txtNumeroCuenta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 24</value>
+  </data>
+  <data name="txtNumeroCuenta.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="txtNumeroCuenta.Text" xml:space="preserve">
+    <value>____ ____ __ __________</value>
+  </data>
+  <data name="&gt;&gt;txtNumeroCuenta.Name" xml:space="preserve">
+    <value>txtNumeroCuenta</value>
+  </data>
+  <data name="&gt;&gt;txtNumeroCuenta.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtNumeroCuenta.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;txtNumeroCuenta.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="resource.Text1" xml:space="preserve">
+    <value>____ ____ __ __________</value>
+  </data>
+  <data name="txtNombreComercial.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtNombreComercial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 33</value>
+  </data>
+  <data name="txtNombreComercial.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="txtNombreComercial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>689, 24</value>
+  </data>
+  <data name="txtNombreComercial.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtNombreComercial.Name" xml:space="preserve">
+    <value>txtNombreComercial</value>
+  </data>
+  <data name="&gt;&gt;txtNombreComercial.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtNombreComercial.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;txtNombreComercial.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="resource.Text2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSerie.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtSerie.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 119</value>
+  </data>
+  <data name="txtSerie.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="txtSerie.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 24</value>
+  </data>
+  <data name="txtSerie.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtSerie.Name" xml:space="preserve">
+    <value>txtSerie</value>
+  </data>
+  <data name="&gt;&gt;txtSerie.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtSerie.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;txtSerie.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="resource.Text3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnAceptar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="btnAceptar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="btnAceptar.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btnAceptar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 281</value>
+  </data>
+  <data name="btnAceptar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btnAceptar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 32</value>
+  </data>
+  <data name="btnAceptar.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="btnAceptar.Text" xml:space="preserve">
+    <value>Confirmar</value>
+  </data>
+  <data name="btnAceptar.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btnAceptar.Name" xml:space="preserve">
+    <value>btnAceptar</value>
+  </data>
+  <data name="&gt;&gt;btnAceptar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnAceptar.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;btnAceptar.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="resource.Text4" xml:space="preserve">
+    <value>Confirmar</value>
+  </data>
+  <data name="txtCodigoPostal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtCodigoPostal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>393, 55</value>
+  </data>
+  <data name="txtCodigoPostal.Mask" xml:space="preserve">
+    <value>#####</value>
+  </data>
+  <data name="txtCodigoPostal.MaskType" type="Telerik.WinControls.UI.MaskType, Telerik.WinControls.UI">
+    <value>Standard</value>
+  </data>
+  <data name="txtCodigoPostal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 24</value>
+  </data>
+  <data name="txtCodigoPostal.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="txtCodigoPostal.Text" xml:space="preserve">
+    <value>_____</value>
+  </data>
+  <data name="&gt;&gt;txtCodigoPostal.Name" xml:space="preserve">
+    <value>txtCodigoPostal</value>
+  </data>
+  <data name="&gt;&gt;txtCodigoPostal.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtCodigoPostal.Parent" xml:space="preserve">
+    <value>grpbDireccion</value>
+  </data>
+  <data name="&gt;&gt;txtCodigoPostal.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="resource.Text5" xml:space="preserve">
+    <value>_____</value>
+  </data>
+  <metadata name="MunicipiosEspañolasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <data name="ddlLocalidad.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="ddlLocalidad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 84</value>
+  </data>
+  <data name="ddlLocalidad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 24</value>
+  </data>
+  <data name="ddlLocalidad.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;ddlLocalidad.Name" xml:space="preserve">
+    <value>ddlLocalidad</value>
+  </data>
+  <data name="&gt;&gt;ddlLocalidad.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;ddlLocalidad.Parent" xml:space="preserve">
+    <value>grpbDireccion</value>
+  </data>
+  <data name="&gt;&gt;ddlLocalidad.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="ProvinciasEspañolasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>488, 17</value>
+  </metadata>
+  <data name="ddlProvincia.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="ddlProvincia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 56</value>
+  </data>
+  <data name="ddlProvincia.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 24</value>
+  </data>
+  <data name="ddlProvincia.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;ddlProvincia.Name" xml:space="preserve">
+    <value>ddlProvincia</value>
+  </data>
+  <data name="&gt;&gt;ddlProvincia.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;ddlProvincia.Parent" xml:space="preserve">
+    <value>grpbDireccion</value>
+  </data>
+  <data name="&gt;&gt;ddlProvincia.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtDireccion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtDireccion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 27</value>
+  </data>
+  <data name="txtDireccion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="txtDireccion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>392, 24</value>
+  </data>
+  <data name="txtDireccion.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txtDireccion.Name" xml:space="preserve">
+    <value>txtDireccion</value>
+  </data>
+  <data name="&gt;&gt;txtDireccion.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtDireccion.Parent" xml:space="preserve">
+    <value>grpbDireccion</value>
+  </data>
+  <data name="&gt;&gt;txtDireccion.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="resource.Text6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="grpbDireccion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="grpbDireccion.HeaderText" xml:space="preserve">
+    <value>Dirección Postal</value>
+  </data>
+  <data name="grpbDireccion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 66</value>
+  </data>
+  <data name="grpbDireccion.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 17, 2, 2</value>
+  </data>
+  <data name="grpbDireccion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 116</value>
+  </data>
+  <data name="grpbDireccion.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="grpbDireccion.Text" xml:space="preserve">
+    <value>Dirección Postal</value>
+  </data>
+  <data name="&gt;&gt;grpbDireccion.Name" xml:space="preserve">
+    <value>grpbDireccion</value>
+  </data>
+  <data name="&gt;&gt;grpbDireccion.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;grpbDireccion.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;grpbDireccion.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="resource.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 17, 2, 2</value>
+  </data>
+  <data name="txtWeb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtWeb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 53</value>
+  </data>
+  <data name="txtWeb.Mask" xml:space="preserve">
+    <value>(((ht|f)tp(s?):\/\/)|(www\.[^ \[\]\(\)\n\r\t]+)|(([012]?[0-9]{1,2}\.){3}[012]?[0-9]{1,2})\/)([^ \[\]\(\),;&amp;quot;'&amp;lt;&amp;gt;\n\r\t]+)([^\. \[\]\(\),;&amp;quot;'&amp;lt;&amp;gt;\n\r\t])|(([012]?[0-9]{1,2}\.){3}[012]?[0-9]{1,2})</value>
+  </data>
+  <data name="txtWeb.MaskType" type="Telerik.WinControls.UI.MaskType, Telerik.WinControls.UI">
+    <value>Regex</value>
+  </data>
+  <data name="txtWeb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 24</value>
+  </data>
+  <data name="txtWeb.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;txtWeb.Name" xml:space="preserve">
+    <value>txtWeb</value>
+  </data>
+  <data name="&gt;&gt;txtWeb.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtWeb.Parent" xml:space="preserve">
+    <value>grpbContacto</value>
+  </data>
+  <data name="&gt;&gt;txtWeb.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="resource.Text7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 53</value>
+  </data>
+  <data name="txtEmail.MaskType" type="Telerik.WinControls.UI.MaskType, Telerik.WinControls.UI">
+    <value>EMail</value>
+  </data>
+  <data name="txtEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 24</value>
+  </data>
+  <data name="txtEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;txtEmail.Name" xml:space="preserve">
+    <value>txtEmail</value>
+  </data>
+  <data name="&gt;&gt;txtEmail.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtEmail.Parent" xml:space="preserve">
+    <value>grpbContacto</value>
+  </data>
+  <data name="&gt;&gt;txtEmail.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="resource.Text8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtFax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 26</value>
+  </data>
+  <data name="txtFax.Mask" xml:space="preserve">
+    <value>#########</value>
+  </data>
+  <data name="txtFax.MaskType" type="Telerik.WinControls.UI.MaskType, Telerik.WinControls.UI">
+    <value>Standard</value>
+  </data>
+  <data name="txtFax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 24</value>
+  </data>
+  <data name="txtFax.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="txtFax.Text" xml:space="preserve">
+    <value>_________</value>
+  </data>
+  <data name="&gt;&gt;txtFax.Name" xml:space="preserve">
+    <value>txtFax</value>
+  </data>
+  <data name="&gt;&gt;txtFax.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtFax.Parent" xml:space="preserve">
+    <value>grpbContacto</value>
+  </data>
+  <data name="&gt;&gt;txtFax.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="resource.Text9" xml:space="preserve">
+    <value>_________</value>
+  </data>
+  <data name="txtMovil.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtMovil.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 26</value>
+  </data>
+  <data name="txtMovil.Mask" xml:space="preserve">
+    <value>#########</value>
+  </data>
+  <data name="txtMovil.MaskType" type="Telerik.WinControls.UI.MaskType, Telerik.WinControls.UI">
+    <value>Standard</value>
+  </data>
+  <data name="txtMovil.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 24</value>
+  </data>
+  <data name="txtMovil.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="txtMovil.Text" xml:space="preserve">
+    <value>_________</value>
+  </data>
+  <data name="&gt;&gt;txtMovil.Name" xml:space="preserve">
+    <value>txtMovil</value>
+  </data>
+  <data name="&gt;&gt;txtMovil.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
   <data name="&gt;&gt;txtMovil.Parent" xml:space="preserve">
     <value>grpbContacto</value>
   </data>
-  <data name="&gt;&gt;RadLabel15.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="&gt;&gt;txtMovil.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="CommandBarSeparator1.FlipText" type="System.Boolean, mscorlib">
+  <data name="resource.Text10" xml:space="preserve">
+    <value>_________</value>
+  </data>
+  <data name="txtTelefono.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtTelefono.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 26</value>
+  </data>
+  <data name="txtTelefono.Mask" xml:space="preserve">
+    <value>#########</value>
+  </data>
+  <data name="txtTelefono.MaskType" type="Telerik.WinControls.UI.MaskType, Telerik.WinControls.UI">
+    <value>Standard</value>
+  </data>
+  <data name="txtTelefono.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 24</value>
+  </data>
+  <data name="txtTelefono.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="txtTelefono.Text" xml:space="preserve">
+    <value>_________</value>
+  </data>
+  <data name="&gt;&gt;txtTelefono.Name" xml:space="preserve">
+    <value>txtTelefono</value>
+  </data>
+  <data name="&gt;&gt;txtTelefono.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtTelefono.Parent" xml:space="preserve">
+    <value>grpbContacto</value>
+  </data>
+  <data name="&gt;&gt;txtTelefono.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="resource.Text11" xml:space="preserve">
+    <value>_________</value>
+  </data>
+  <data name="grpbContacto.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="grpbContacto.HeaderText" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+  <data name="grpbContacto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 186</value>
+  </data>
+  <data name="grpbContacto.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 17, 2, 2</value>
+  </data>
+  <data name="grpbContacto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 84</value>
+  </data>
+  <data name="grpbContacto.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="grpbContacto.Text" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+  <data name="&gt;&gt;grpbContacto.Name" xml:space="preserve">
+    <value>grpbContacto</value>
+  </data>
+  <data name="&gt;&gt;grpbContacto.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;grpbContacto.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;grpbContacto.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="resource.Padding1" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 17, 2, 2</value>
+  </data>
+  <data name="txtNumeroIdentificacion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtNumeroIdentificacion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 7</value>
+  </data>
+  <data name="txtNumeroIdentificacion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="txtNumeroIdentificacion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 24</value>
+  </data>
+  <data name="txtNumeroIdentificacion.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtNumeroIdentificacion.Name" xml:space="preserve">
+    <value>txtNumeroIdentificacion</value>
+  </data>
+  <data name="&gt;&gt;txtNumeroIdentificacion.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtNumeroIdentificacion.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;txtNumeroIdentificacion.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="resource.Text12" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNombre.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtNombre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>377, 7</value>
+  </data>
+  <data name="txtNombre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="txtNombre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 24</value>
+  </data>
+  <data name="txtNombre.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtNombre.Name" xml:space="preserve">
+    <value>txtNombre</value>
+  </data>
+  <data name="&gt;&gt;txtNombre.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;txtNombre.Parent" xml:space="preserve">
+    <value>SplitPanel2</value>
+  </data>
+  <data name="&gt;&gt;txtNombre.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="resource.Text13" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SplitPanel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="SplitPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 63</value>
+  </data>
+  <data name="SplitPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>817, 320</value>
+  </data>
+  <data name="SplitPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="SplitPanel2.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="&gt;&gt;SplitPanel2.Name" xml:space="preserve">
     <value>SplitPanel2</value>
   </data>
-  <data name="resource.DisplayName1" xml:space="preserve">
+  <data name="&gt;&gt;SplitPanel2.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.SplitPanel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;SplitPanel2.Parent" xml:space="preserve">
+    <value>RadSplitContainer1</value>
+  </data>
+  <data name="&gt;&gt;SplitPanel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadSplitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="RadSplitContainer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 48</value>
+  </data>
+  <data name="RadSplitContainer1.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="RadSplitContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>817, 383</value>
+  </data>
+  <data name="RadSplitContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;RadSplitContainer1.Name" xml:space="preserve">
+    <value>RadSplitContainer1</value>
+  </data>
+  <data name="&gt;&gt;RadSplitContainer1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadSplitContainer, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;RadSplitContainer1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RadSplitContainer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="bgwCarga.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="CommandBarRowElement1.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="CommandBarRowElement1.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="CommandBarRowElement1.DisplayName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;cbbtnModificar.Name" xml:space="preserve">
-    <value>cbbtnModificar</value>
+  <data name="CommandBarRowElement1.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="txtMovil.MaskType" type="Telerik.WinControls.UI.MaskType, Telerik.WinControls.UI">
-    <value>Standard</value>
+  <data name="CommandBarRowElement1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
-  <data name="RadLabel5.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="CommandBarRowElement1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="CommandBarRowElement1.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeAccion.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="cbstripeAccion.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbstripeAccion.DisplayName" xml:space="preserve">
+    <value>Strip Acción</value>
+  </data>
+  <data name="cbstripeAccion.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Padding2" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text14" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnAgregar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="cbbtnAgregar.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbbtnAgregar.DisplayName" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="cbbtnAgregar.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnAgregar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnAgregar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnAgregar.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnAgregar.Text" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="cbbtnAgregar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="cbbtnAgregar.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnModificar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="cbbtnModificar.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbbtnModificar.DisplayName" xml:space="preserve">
+    <value>Modificar</value>
+  </data>
+  <data name="cbbtnModificar.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnModificar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="cbbtnModificar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="RadLabel14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="cbbtnModificar.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="txtDireccion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="cbbtnModificar.Text" xml:space="preserve">
+    <value>Modificar</value>
   </data>
-  <data name="RadLabel9.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="chkVentaDetalle.Text" xml:space="preserve">
-    <value>Minorista</value>
-  </data>
-  <data name="RadLabel9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 22</value>
-  </data>
-  <data name="resource.TextOrientation3" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+  <data name="cbbtnModificar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="resource.TextOrientation2" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+  <data name="cbbtnModificar.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CommandBarSeparator1.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="CommandBarSeparator1.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="CommandBarSeparator1.DisplayName" xml:space="preserve">
+    <value>CommandBarSeparator1</value>
+  </data>
+  <data name="CommandBarSeparator1.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CommandBarSeparator1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 0, 0</value>
+  </data>
+  <data name="CommandBarSeparator1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="CommandBarSeparator1.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CommandBarSeparator1.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
+  </data>
+  <data name="CommandBarSeparator1.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnFijarActivo.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="cbbtnFijarActivo.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbbtnFijarActivo.DisplayName" xml:space="preserve">
+    <value>Fijar Activo</value>
+  </data>
+  <data name="cbbtnFijarActivo.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnFijarActivo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnFijarActivo.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbbtnFijarActivo.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbbtnFijarActivo.Text" xml:space="preserve">
+    <value>Fijar Activo</value>
+  </data>
+  <data name="cbbtnFijarActivo.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="cbbtnFijarActivo.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeAccion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment1" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.AngleTransform1" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.FlipText1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Margin1" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Padding3" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.RightToLeft1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text15" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="resource.TextOrientation1" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
@@ -1109,635 +1940,275 @@
   <data name="resource.TextWrap1" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;txtNombreComercial.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="txtTelefono.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="chkVentaAlmayor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 22</value>
-  </data>
-  <data name="resource.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;RadLabel18.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="grpbContacto.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="txtNumeroCuenta.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="RadLabel3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="RadLabel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 28</value>
-  </data>
-  <data name="RadLabel10.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;btnQuitarImagen.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;txtEmail.Name" xml:space="preserve">
-    <value>txtEmail</value>
-  </data>
-  <data name="SplitPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 59</value>
-  </data>
-  <data name="RadLabel4.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="resource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="cbstripeAccion.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="grpbContacto.Text" xml:space="preserve">
-    <value>Contacto</value>
-  </data>
-  <data name="&gt;&gt;txtNombreComercial.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
-  </data>
-  <data name="txtNombre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>430, 24</value>
-  </data>
-  <data name="&gt;&gt;RadLabel12.Name" xml:space="preserve">
-    <value>RadLabel12</value>
-  </data>
-  <data name="btnCancelar.Text" xml:space="preserve">
-    <value>Cancelar</value>
-  </data>
-  <data name="txtSerie.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterParent</value>
-  </data>
-  <data name="RadLabel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="RadLabel11.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;gridDatos.Parent" xml:space="preserve">
-    <value>SplitPanel1</value>
-  </data>
-  <data name="cbstripeOrden.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="RadLabel17.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="SplitPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 63</value>
-  </data>
-  <data name="cbstripeOrden.FlipText" type="System.Boolean, mscorlib">
+  <data name="cbstripeAccion.RightToLeft" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="&gt;&gt;RadLabel15.Name" xml:space="preserve">
-    <value>RadLabel15</value>
-  </data>
-  <data name="chkVentaAlmayor.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="CommandBarSeparator1.DisplayName" xml:space="preserve">
-    <value>CommandBarSeparator1</value>
-  </data>
-  <data name="&gt;&gt;RadLabel5.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="RadLabel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="picLogo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="txtNumeroCuenta.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="RadLabel8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="btnAceptar.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="resource.ToolTipText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel8.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;RadLabel2.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
-  </data>
-  <data name="txtWeb.Mask" xml:space="preserve">
-    <value>(((ht|f)tp(s?):\/\/)|(www\.[^ \[\]\(\)\n\r\t]+)|(([012]?[0-9]{1,2}\.){3}[012]?[0-9]{1,2})\/)([^ \[\]\(\),;&amp;quot;'&amp;lt;&amp;gt;\n\r\t]+)([^\. \[\]\(\),;&amp;quot;'&amp;lt;&amp;gt;\n\r\t])|(([012]?[0-9]{1,2}\.){3}[012]?[0-9]{1,2})</value>
-  </data>
-  <data name="&gt;&gt;cbComandos.Name" xml:space="preserve">
-    <value>cbComandos</value>
-  </data>
-  <data name="txtNombre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="RadLabel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 144</value>
-  </data>
-  <data name="&gt;&gt;ProvinciasEspañolasBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadLabel11.Parent" xml:space="preserve">
-    <value>grpbContacto</value>
-  </data>
-  <data name="resource.Padding5" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadLabel7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 8.25pt</value>
-  </data>
-  <data name="resource.Text7" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;picLogo.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;SplitPanel1.Name" xml:space="preserve">
-    <value>SplitPanel1</value>
-  </data>
-  <data name="&gt;&gt;EmpresasBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnCancelar.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;RadLabel4.Parent" xml:space="preserve">
-    <value>grpbContacto</value>
-  </data>
-  <data name="&gt;&gt;txtNombre.Name" xml:space="preserve">
-    <value>txtNombre</value>
-  </data>
-  <data name="RadLabel7.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="RadLabel2.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="txtNumeroIdentificacion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="txtFax.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="cbbtnAgregar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="dlgImagen.Title" xml:space="preserve">
-    <value>Seleccionar Logo</value>
-  </data>
-  <data name="CommandBarRowElement1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadLabel6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="txtWeb.MaskType" type="Telerik.WinControls.UI.MaskType, Telerik.WinControls.UI">
-    <value>Regex</value>
-  </data>
-  <data name="resource.Text17" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtCodigoPostal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="RadLabel13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 57</value>
-  </data>
-  <data name="txtNombreComercial.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="resource.Padding3" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="resource.Text9" xml:space="preserve">
-    <value>_________</value>
-  </data>
-  <data name="resource.Padding1" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 17, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;txtFax.Parent" xml:space="preserve">
-    <value>grpbContacto</value>
-  </data>
-  <data name="resource.Padding4" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="txtSerie.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="txtEmail.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="txtNombreComercial.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 33</value>
-  </data>
-  <data name="&gt;&gt;cbbtnModificar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="RadLabel5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="&gt;&gt;RadLabel9.Name" xml:space="preserve">
-    <value>RadLabel9</value>
-  </data>
-  <data name="&gt;&gt;chkVentaDetalle.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadCheckBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;btnCancelar.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
-  </data>
-  <data name="txtNombre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>377, 7</value>
-  </data>
-  <data name="CommandBarSeparator1.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txtWeb.Name" xml:space="preserve">
-    <value>txtWeb</value>
-  </data>
-  <data name="&gt;&gt;cbstripeAccion.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarStripElement, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="chkVentaAlmayor.Text" xml:space="preserve">
-    <value>Mayorista</value>
-  </data>
-  <data name="&gt;&gt;txtNombreComercial.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="RadLabel10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="cbstripeOrden.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;grpbDireccion.Name" xml:space="preserve">
-    <value>grpbDireccion</value>
-  </data>
-  <data name="&gt;&gt;txtNumeroIdentificacion.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="cbbtnModificar.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="&gt;&gt;RadLabel17.Parent" xml:space="preserve">
-    <value>grpbDireccion</value>
-  </data>
-  <data name="grpbDireccion.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="RadLabel4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="RadLabel17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 22</value>
-  </data>
-  <data name="RadLabel13.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="RadLabel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="RadLabel15.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="resource.AngleTransform2" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="RadLabel11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;RadLabel11.Name" xml:space="preserve">
-    <value>RadLabel11</value>
-  </data>
-  <data name="&gt;&gt;RadSplitContainer1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="resource.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;gridDatos.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="resource.Alignment3" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="SplitPanel1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="&gt;&gt;RadLabel7.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
-  </data>
-  <data name="btnExaminarImagen.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="picLogo.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="RadLabel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="resource.Text5" xml:space="preserve">
-    <value>_____</value>
-  </data>
-  <data name="&gt;&gt;txtDireccion.Name" xml:space="preserve">
-    <value>txtDireccion</value>
-  </data>
-  <data name="&gt;&gt;txtNumeroIdentificacion.Name" xml:space="preserve">
-    <value>txtNumeroIdentificacion</value>
-  </data>
-  <data name="txtWeb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 24</value>
-  </data>
-  <data name="&gt;&gt;txtCodigoPostal.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="RadLabel14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 90</value>
-  </data>
-  <data name="&gt;&gt;RadLabel5.Name" xml:space="preserve">
-    <value>RadLabel5</value>
-  </data>
-  <data name="&gt;&gt;ddlFormato.Name" xml:space="preserve">
-    <value>ddlFormato</value>
-  </data>
-  <data name="btnQuitarImagen.DisplayStyle" type="Telerik.WinControls.DisplayStyle, Telerik.WinControls">
-    <value>Image</value>
-  </data>
-  <data name="&gt;&gt;RadLabel11.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="txtNombre.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="resource.Text8" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;RadLabel5.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="txtNumeroCuenta.Mask" xml:space="preserve">
-    <value>#### #### ## ##########</value>
-  </data>
-  <data name="&gt;&gt;RadLabel1.Name" xml:space="preserve">
-    <value>RadLabel1</value>
   </data>
   <data name="cbstripeAccion.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;cbComandos.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadCommandBar, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="RadLabel3.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="grpbDireccion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>488, 116</value>
-  </data>
-  <data name="txtDireccion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 27</value>
-  </data>
-  <data name="resource.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="gridDatos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>807, 49</value>
-  </data>
-  <data name="txtNumeroCuenta.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 165</value>
-  </data>
-  <data name="&gt;&gt;txtNombre.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;btnCancelar.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;EmpresaBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnCancelar.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="&gt;&gt;txtNumeroIdentificacion.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
-  </data>
-  <data name="RadLabel17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="txtCodigoPostal.Text" xml:space="preserve">
-    <value>_____</value>
-  </data>
-  <data name="&gt;&gt;txtTelefono.Name" xml:space="preserve">
-    <value>txtTelefono</value>
-  </data>
-  <data name="&gt;&gt;RadLabel18.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="RadLabel6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="RadLabel9.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;dlgImagen.Name" xml:space="preserve">
-    <value>dlgImagen</value>
-  </data>
-  <data name="txtNombre.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="&gt;&gt;SplitPanel2.Parent" xml:space="preserve">
-    <value>RadSplitContainer1</value>
-  </data>
-  <data name="RadLabel16.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btnAceptar.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="&gt;&gt;RadLabel17.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="RadLabel18.Text" xml:space="preserve">
-    <value>Tipo venta</value>
-  </data>
-  <data name="&gt;&gt;btnAceptar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="picLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="&gt;&gt;grpbContacto.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="gridDatos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadLabel7.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="grpbDireccion.HeaderText" xml:space="preserve">
-    <value>Dirección Postal</value>
-  </data>
-  <data name="&gt;&gt;txtNumeroCuenta.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
-  </data>
-  <data name="&gt;&gt;cbbtnFijarActivo.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;cbComandos.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="CommandBarSeparator1.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="cbstripeOrden.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="txtFax.MaskType" type="Telerik.WinControls.UI.MaskType, Telerik.WinControls.UI">
-    <value>Standard</value>
-  </data>
-  <data name="RadLabel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="RadLabel1.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RadLabel11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 54</value>
-  </data>
-  <data name="txtMovil.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 24</value>
-  </data>
-  <data name="cbstripeAccion.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;grpbContacto.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="txtCodigoPostal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>393, 55</value>
-  </data>
-  <data name="RadLabel17.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;RadLabel1.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="RadLabel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;txtWeb.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;RadLabel7.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="RadLabel10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="cbstripeOrden.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="SplitPanel2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="&gt;&gt;grpbContacto.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
-  </data>
-  <data name="&gt;&gt;RadLabel9.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;picLogo.Name" xml:space="preserve">
-    <value>picLogo</value>
-  </data>
-  <data name="grpbDireccion.Text" xml:space="preserve">
-    <value>Dirección Postal</value>
-  </data>
-  <data name="resource.ToolTipText1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RadLabel15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 22</value>
-  </data>
-  <data name="RadSplitContainer1.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+  <data name="cbstripeAccion.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
-  </data>
-  <data name="cbstripeAccion.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadLabel8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 22</value>
-  </data>
-  <data name="RadLabel7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="txtEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 24</value>
-  </data>
-  <data name="&gt;&gt;ddlLocalidad.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>817, 431</value>
-  </data>
-  <data name="RadLabel18.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="cbstripeAccion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadLabel14.Text" xml:space="preserve">
-    <value>F. Num. Alb/Fact</value>
   </data>
   <data name="cbstripeAccion.TextWrap" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;RadLabel13.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="btnQuitarImagen.ImageAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="txtNumeroIdentificacion.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="resource.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 17, 2, 2</value>
-  </data>
-  <data name="txtFax.Location" type="System.Drawing.Point, System.Drawing">
-    <value>214, 26</value>
-  </data>
-  <data name="txtTelefono.Mask" xml:space="preserve">
-    <value>#########</value>
-  </data>
-  <data name="btnExaminarImagen.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="&gt;&gt;RadLabel10.Name" xml:space="preserve">
-    <value>RadLabel10</value>
-  </data>
-  <data name="resource.FlipText" type="System.Boolean, mscorlib">
+  <data name="resource.TextWrap2" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;RadLabel2.Name" xml:space="preserve">
-    <value>RadLabel2</value>
-  </data>
-  <data name="cbstripeAccion.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+  <data name="resource.TextOrientation2" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
-  <data name="CommandBarRowElement1.AngleTransform" type="System.Single, mscorlib">
+  <data name="resource.FlipText2" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text16" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.Padding4" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Margin2" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment2" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.RightToLeft2" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.AngleTransform2" type="System.Single, mscorlib">
     <value>0</value>
+  </data>
+  <data name="resource.TextWrap3" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.TextOrientation3" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.FlipText3" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text17" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.Padding5" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Margin3" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment3" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.RightToLeft3" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.AngleTransform3" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbstripeOrden.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="cbstripeOrden.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbstripeOrden.DisplayName" xml:space="preserve">
+    <value>CommandBarStripElement1</value>
+  </data>
+  <data name="cbstripeOrden.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Alignment4" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.AngleTransform4" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.FlipText4" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Margin4" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Padding6" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.RightToLeft4" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text18" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.TextOrientation4" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.TextWrap4" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeOrden.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment5" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.AngleTransform5" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.FlipText5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Margin5" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Padding7" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.RightToLeft5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text19" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.TextOrientation5" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.TextWrap5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeOrden.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbstripeOrden.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbstripeOrden.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbstripeOrden.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="cbstripeOrden.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.TextWrap6" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.TextOrientation6" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.FlipText6" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text20" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.Padding8" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Margin6" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment6" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.RightToLeft6" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.AngleTransform6" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="resource.TextWrap7" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.TextOrientation7" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="resource.FlipText7" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.Text21" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.Padding9" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Margin7" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="resource.Alignment7" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="resource.RightToLeft7" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resource.AngleTransform7" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="CommandBarRowElement1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CommandBarRowElement1.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="CommandBarRowElement1.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cbComandos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="cbComandos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="cbComandos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>817, 48</value>
+  </data>
+  <data name="cbComandos.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="cbComandos.Text" xml:space="preserve">
+    <value>Barra Herramienta</value>
+  </data>
+  <data name="&gt;&gt;cbComandos.Name" xml:space="preserve">
+    <value>cbComandos</value>
+  </data>
+  <data name="&gt;&gt;cbComandos.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadCommandBar, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;cbComandos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbComandos.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="timValidar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>278, 56</value>
+  </metadata>
+  <metadata name="dlgImagen.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>390, 56</value>
+  </metadata>
+  <data name="dlgImagen.Filter" xml:space="preserve">
+    <value>Imagen|*.jpg;*.png;*.gif;*.tiff</value>
+  </data>
+  <data name="dlgImagen.Title" xml:space="preserve">
+    <value>Seleccionar Logo</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>72</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>817, 431</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4180,505 +4651,100 @@
         /////////w==
 </value>
   </data>
-  <data name="&gt;&gt;RadLabel6.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;chkVentaDetalle.Name" xml:space="preserve">
-    <value>chkVentaDetalle</value>
-  </data>
-  <data name="RadLabel12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="cbComandos.Text" xml:space="preserve">
-    <value>Barra Herramienta</value>
-  </data>
-  <data name="&gt;&gt;ddlProvincia.Parent" xml:space="preserve">
-    <value>grpbDireccion</value>
-  </data>
-  <data name="&gt;&gt;SplitPanel1.Parent" xml:space="preserve">
-    <value>RadSplitContainer1</value>
-  </data>
-  <data name="txtMovil.Mask" xml:space="preserve">
-    <value>#########</value>
-  </data>
-  <data name="&gt;&gt;RadLabel16.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="CommandBarSeparator1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="GridViewTextBoxColumn2.HeaderText" xml:space="preserve">
-    <value>Ident. Fiscal</value>
-  </data>
-  <data name="&gt;&gt;picLogo.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
-  </data>
-  <data name="RadLabel15.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="resource.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="resource.Margin1" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="chkVentaAlmayor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>213, 63</value>
-  </data>
-  <data name="chkVentaDetalle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="&gt;&gt;RadLabel8.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;txtSerie.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="grpbContacto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>488, 84</value>
-  </data>
-  <data name="ddlLocalidad.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="&gt;&gt;RadLabel12.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="txtEmail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="RadLabel14.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="&gt;&gt;RadSplitContainer1.Name" xml:space="preserve">
-    <value>RadSplitContainer1</value>
-  </data>
-  <data name="&gt;&gt;btnQuitarImagen.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;RadLabel14.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
-  </data>
-  <data name="&gt;&gt;RadLabel10.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="RadLabel5.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="&gt;&gt;grpbContacto.Name" xml:space="preserve">
-    <value>grpbContacto</value>
-  </data>
-  <data name="CommandBarSeparator1.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="CommandBarRowElement1.DisplayName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="grpbDireccion.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 17, 2, 2</value>
-  </data>
-  <data name="cbbtnFijarActivo.DisplayName" xml:space="preserve">
-    <value>Fijar Activo</value>
-  </data>
-  <data name="resource.TextWrap3" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="ddlFormato.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="RadLabel10.Text" xml:space="preserve">
-    <value>Fax</value>
-  </data>
-  <data name="RadLabel12.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="cbbtnModificar.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="chkVentaDetalle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 22</value>
-  </data>
-  <data name="picLogo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 196</value>
-  </data>
-  <data name="RadLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 165</value>
-  </data>
-  <data name="btnCancelar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;timValidar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ddlProvincia.Name" xml:space="preserve">
-    <value>ddlProvincia</value>
-  </data>
-  <data name="&gt;&gt;RadLabel2.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;chkVentaAlmayor.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="RadLabel11.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbbtnFijarActivo.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;ddlFormato.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
-  </data>
-  <data name="RadLabel13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="cbstripeOrden.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="RadLabel15.Text" xml:space="preserve">
-    <value>Dirección</value>
-  </data>
-  <data name="CommandBarRowElement1.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;SplitPanel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="txtSerie.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 119</value>
-  </data>
-  <data name="&gt;&gt;cbbtnFijarActivo.Name" xml:space="preserve">
-    <value>cbbtnFijarActivo</value>
-  </data>
-  <data name="cbstripeAccion.FlipText" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;txtWeb.Parent" xml:space="preserve">
-    <value>grpbContacto</value>
-  </data>
-  <data name="&gt;&gt;btnQuitarImagen.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
-  </data>
-  <data name="resource.Alignment1" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="&gt;&gt;RadLabel9.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="SplitPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="cbbtnAgregar.DisplayName" xml:space="preserve">
-    <value>Agregar</value>
-  </data>
-  <data name="RadLabel10.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="RadLabel13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="&gt;&gt;RadLabel8.Name" xml:space="preserve">
-    <value>RadLabel8</value>
-  </data>
-  <data name="&gt;&gt;EmpresaBindingSource.Name" xml:space="preserve">
-    <value>EmpresaBindingSource</value>
-  </data>
-  <data name="ddlLocalidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 84</value>
-  </data>
-  <data name="cbbtnAgregar.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="chkVentaDetalle.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="RadLabel16.Text" xml:space="preserve">
-    <value>N. Comercial</value>
-  </data>
-  <data name="&gt;&gt;ddlLocalidad.Parent" xml:space="preserve">
-    <value>grpbDireccion</value>
-  </data>
-  <data name="txtTelefono.Location" type="System.Drawing.Point, System.Drawing">
-    <value>78, 26</value>
-  </data>
-  <data name="txtNumeroIdentificacion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 24</value>
-  </data>
-  <data name="&gt;&gt;txtNumeroCuenta.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;RadLabel14.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="RadLabel8.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="RadLabel18.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;txtTelefono.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadMaskedEditBox, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="cbbtnFijarActivo.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="RadLabel14.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="txtCodigoPostal.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="ddlProvincia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 56</value>
-  </data>
-  <data name="btnExaminarImagen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 22</value>
-  </data>
-  <data name="&gt;&gt;btnAceptar.Name" xml:space="preserve">
-    <value>btnAceptar</value>
-  </data>
-  <data name="&gt;&gt;RadLabel6.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="RadLabel12.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;txtEmail.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="resource.Text16" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="cbbtnAgregar.AngleTransform" type="System.Single, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="cbstripeAccion.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="resource.Text3" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtDireccion.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
-  </data>
-  <data name="resource.KeyTip1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ddlProvincia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 24</value>
-  </data>
-  <data name="RadLabel11.Text" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="CommandBarSeparator1.TextWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cbbtnFijarActivo.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="txtCodigoPostal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 24</value>
-  </data>
-  <data name="resource.ToolTipText3" xml:space="preserve">
-    <value />
-  </data>
-  <data name="resource.ToolTipText2" xml:space="preserve">
-    <value />
-  </data>
-  <data name="picLogo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="RadLabel15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;txtNombreComercial.Name" xml:space="preserve">
-    <value>txtNombreComercial</value>
-  </data>
-  <data name="&gt;&gt;RadLabel12.Parent" xml:space="preserve">
-    <value>grpbDireccion</value>
-  </data>
-  <data name="cbComandos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;dlgImagen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ddlProvincia.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="grpbContacto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 186</value>
-  </data>
-  <data name="&gt;&gt;RadLabel1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="cbbtnFijarActivo.Text" xml:space="preserve">
-    <value>Fijar Activo</value>
-  </data>
-  <data name="&gt;&gt;txtNumeroCuenta.Name" xml:space="preserve">
-    <value>txtNumeroCuenta</value>
-  </data>
-  <data name="RadLabel12.Text" xml:space="preserve">
-    <value>Provincia</value>
-  </data>
-  <data name="txtSerie.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="cbbtnFijarActivo.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;SplitPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnQuitarImagen.Name" xml:space="preserve">
-    <value>btnQuitarImagen</value>
-  </data>
-  <data name="SplitPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtCodigoPostal.Mask" xml:space="preserve">
-    <value>#####</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Config. Empresa</value>
   </data>
-  <data name="&gt;&gt;gridDatos.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;EmpresasBindingSource.Name" xml:space="preserve">
+    <value>EmpresasBindingSource</value>
   </data>
-  <data name="btnAceptar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 281</value>
+  <data name="&gt;&gt;EmpresasBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="RadLabel6.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="&gt;&gt;EmpresaBindingSource.Name" xml:space="preserve">
+    <value>EmpresaBindingSource</value>
   </data>
-  <data name="RadLabel12.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="&gt;&gt;EmpresaBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="cbstripeOrden.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
+  <data name="&gt;&gt;MunicipiosEspañolasBindingSource.Name" xml:space="preserve">
+    <value>MunicipiosEspañolasBindingSource</value>
   </data>
-  <data name="&gt;&gt;cbbtnAgregar.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="&gt;&gt;MunicipiosEspañolasBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="grpbContacto.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt</value>
+  <data name="&gt;&gt;ProvinciasEspañolasBindingSource.Name" xml:space="preserve">
+    <value>ProvinciasEspañolasBindingSource</value>
   </data>
-  <data name="cbstripeAccion.DisplayName" xml:space="preserve">
-    <value>Strip Acción</value>
+  <data name="&gt;&gt;ProvinciasEspañolasBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;RadLabel1.Parent" xml:space="preserve">
-    <value>SplitPanel2</value>
+  <data name="&gt;&gt;bgwCarga.Name" xml:space="preserve">
+    <value>bgwCarga</value>
+  </data>
+  <data name="&gt;&gt;bgwCarga.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CommandBarRowElement1.Name" xml:space="preserve">
+    <value>CommandBarRowElement1</value>
   </data>
   <data name="&gt;&gt;CommandBarRowElement1.Type" xml:space="preserve">
     <value>Telerik.WinControls.UI.CommandBarRowElement, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="cbstripeAccion.RightToLeft" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;cbstripeAccion.Name" xml:space="preserve">
+    <value>cbstripeAccion</value>
+  </data>
+  <data name="&gt;&gt;cbstripeAccion.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarStripElement, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;cbbtnAgregar.Name" xml:space="preserve">
     <value>cbbtnAgregar</value>
   </data>
-  <data name="btnAceptar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
+  <data name="&gt;&gt;cbbtnAgregar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="gridDatos.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;cbbtnModificar.Name" xml:space="preserve">
+    <value>cbbtnModificar</value>
   </data>
-  <data name="&gt;&gt;btnAceptar.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <data name="&gt;&gt;cbbtnModificar.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="&gt;&gt;txtCodigoPostal.Name" xml:space="preserve">
-    <value>txtCodigoPostal</value>
+  <data name="&gt;&gt;CommandBarSeparator1.Name" xml:space="preserve">
+    <value>CommandBarSeparator1</value>
   </data>
-  <data name="grpbDireccion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 66</value>
+  <data name="&gt;&gt;CommandBarSeparator1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarSeparator, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <data name="RadLabel17.Text" xml:space="preserve">
-    <value>Localidad</value>
+  <data name="&gt;&gt;cbbtnFijarActivo.Name" xml:space="preserve">
+    <value>cbbtnFijarActivo</value>
   </data>
-  <data name="&gt;&gt;ddlProvincia.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;cbbtnFijarActivo.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarButton, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
-  <metadata name="RadLabel9.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="RadLabel3.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="timValidar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>278, 56</value>
-  </metadata>
-  <metadata name="RadLabel11.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="RadLabel13.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="RadLabel7.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="RadLabel4.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="RadLabel17.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>zh</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="RadLabel2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="RadLabel6.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="EmpresaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>311, 17</value>
-  </metadata>
-  <metadata name="bgwCarga.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="RadLabel5.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>72</value>
-  </metadata>
-  <metadata name="RadLabel18.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="RadLabel16.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="RadLabel15.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="dlgImagen.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>390, 56</value>
-  </metadata>
-  <metadata name="RadLabel1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="RadLabel8.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="ProvinciasEspañolasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>488, 17</value>
-  </metadata>
-  <metadata name="RadLabel14.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="EmpresasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>129, 17</value>
-  </metadata>
-  <metadata name="RadLabel10.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="RadLabel12.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="MunicipiosEspañolasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
+  <data name="&gt;&gt;cbstripeOrden.Name" xml:space="preserve">
+    <value>cbstripeOrden</value>
+  </data>
+  <data name="&gt;&gt;cbstripeOrden.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.CommandBarStripElement, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;timValidar.Name" xml:space="preserve">
+    <value>timValidar</value>
+  </data>
+  <data name="&gt;&gt;timValidar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dlgImagen.Name" xml:space="preserve">
+    <value>dlgImagen</value>
+  </data>
+  <data name="&gt;&gt;dlgImagen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmEmpresa</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2017.2.502.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
 </root>
