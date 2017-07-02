@@ -490,7 +490,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 282</value>
+    <value>18, 254</value>
   </data>
   <data name="RadLabel16.Size" type="System.Drawing.Size, System.Drawing">
     <value>167, 18</value>
@@ -502,7 +502,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 366</value>
+    <value>18, 338</value>
   </data>
   <data name="RadLabel17.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 18</value>
@@ -514,7 +514,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 226</value>
+    <value>18, 198</value>
   </data>
   <data name="RadLabel18.Size" type="System.Drawing.Size, System.Drawing">
     <value>167, 18</value>
@@ -526,7 +526,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 394</value>
+    <value>18, 366</value>
   </data>
   <data name="RadLabel19.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 18</value>
@@ -538,7 +538,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 254</value>
+    <value>18, 226</value>
   </data>
   <data name="RadLabel20.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 18</value>
@@ -574,7 +574,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 422</value>
+    <value>18, 394</value>
   </data>
   <data name="RadLabel23.Size" type="System.Drawing.Size, System.Drawing">
     <value>167, 18</value>
@@ -586,7 +586,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 450</value>
+    <value>18, 422</value>
   </data>
   <data name="RadLabel24.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 18</value>
@@ -610,7 +610,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 310</value>
+    <value>18, 282</value>
   </data>
   <data name="RadLabel26.Size" type="System.Drawing.Size, System.Drawing">
     <value>167, 18</value>
@@ -622,7 +622,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 338</value>
+    <value>18, 310</value>
   </data>
   <data name="RadLabel27.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 18</value>
@@ -634,7 +634,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 478</value>
+    <value>18, 450</value>
   </data>
   <data name="RadLabel30.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 18</value>
@@ -646,7 +646,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel41.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 170</value>
+    <value>176, 142</value>
   </data>
   <data name="RadLabel41.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -667,7 +667,7 @@
     <value>楷体, 9.75pt</value>
   </data>
   <data name="RadLabel43.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 198</value>
+    <value>18, 170</value>
   </data>
   <data name="RadLabel43.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -679,7 +679,7 @@
     <value>商品中启用库存控制</value>
   </data>
   <data name="chkControlStock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 198</value>
+    <value>197, 170</value>
   </data>
   <data name="chkControlStock.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 18</value>
@@ -688,7 +688,7 @@
     <value>          </value>
   </data>
   <data name="spinPorcVenta.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 391</value>
+    <value>197, 363</value>
   </data>
   <data name="spinPorcVenta.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 24</value>
@@ -703,13 +703,13 @@
     <value>123, 24</value>
   </data>
   <data name="chkAvisarSiCero.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 310</value>
+    <value>197, 282</value>
   </data>
   <data name="chkAvisarSiCero.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
   <data name="ddlDocumentoVenta.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 334</value>
+    <value>197, 306</value>
   </data>
   <data name="ddlDocumentoVenta.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 24</value>
@@ -727,7 +727,7 @@
     <value>17</value>
   </data>
   <data name="spinValidezAlbaran.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 447</value>
+    <value>197, 419</value>
   </data>
   <data name="spinValidezAlbaran.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 24</value>
@@ -736,7 +736,7 @@
     <value>15</value>
   </data>
   <data name="spinValidezVales.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 419</value>
+    <value>197, 391</value>
   </data>
   <data name="spinValidezVales.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 24</value>
@@ -745,7 +745,7 @@
     <value>14</value>
   </data>
   <data name="spinPorcGanancia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 363</value>
+    <value>197, 335</value>
   </data>
   <data name="spinPorcGanancia.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 24</value>
@@ -754,31 +754,31 @@
     <value>12</value>
   </data>
   <data name="chkIgualarImpuesto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 226</value>
+    <value>197, 198</value>
   </data>
   <data name="chkIgualarImpuesto.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
   <data name="chkPermitirCrearProducto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 282</value>
+    <value>197, 254</value>
   </data>
   <data name="chkPermitirCrearProducto.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
   <data name="chkRecargoIncluido.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 170</value>
+    <value>268, 142</value>
   </data>
   <data name="chkRecargoIncluido.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
   <data name="chkImpuestoIncluido.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 142</value>
+    <value>124, 142</value>
   </data>
   <data name="chkControlCaja.Location" type="System.Drawing.Point, System.Drawing">
     <value>197, 30</value>
   </data>
   <data name="chkDecimalEnCantidad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 254</value>
+    <value>197, 226</value>
   </data>
   <data name="chkDecimalEnCantidad.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -790,7 +790,7 @@
     <value>18</value>
   </data>
   <data name="chkIniciarAutentificando.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 478</value>
+    <value>197, 450</value>
   </data>
   <data name="chkIniciarAutentificando.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -826,7 +826,7 @@
     <value>10, 41</value>
   </data>
   <data name="pvpParametroGlobal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>368, 522</value>
+    <value>368, 488</value>
   </data>
   <data name="pvpParametroGlobal.Text" xml:space="preserve">
     <value>全程</value>
@@ -1054,16 +1054,16 @@
     <value>楷体, 12pt</value>
   </data>
   <data name="pvParametro.Size" type="System.Drawing.Size, System.Drawing">
-    <value>389, 574</value>
+    <value>389, 540</value>
   </data>
   <data name="pvParametro.Text" xml:space="preserve">
     <value>参数</value>
   </data>
   <data name="RadScrollablePanel1.PanelContainer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>389, 574</value>
+    <value>389, 540</value>
   </data>
   <data name="RadScrollablePanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 576</value>
+    <value>391, 542</value>
   </data>
   <data name="btnCancelar.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
@@ -1090,7 +1090,7 @@
     <value>确定</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>492, 576</value>
+    <value>492, 542</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 9.75pt</value>
