@@ -1311,7 +1311,7 @@
     <value>Lucida Sans Unicode, 9.75pt, style=Bold</value>
   </data>
   <data name="RadLabel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 289</value>
+    <value>10, 293</value>
   </data>
   <data name="RadLabel6.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 24</value>
@@ -1341,7 +1341,7 @@
     <value>Lucida Sans Unicode, 9.75pt, style=Bold</value>
   </data>
   <data name="RadLabel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 208</value>
+    <value>10, 212</value>
   </data>
   <data name="RadLabel5.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 24</value>
@@ -1428,7 +1428,7 @@
     <value>Lucida Sans Unicode, 15.75pt, style=Bold</value>
   </data>
   <data name="lblNumPieza.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 316</value>
+    <value>10, 320</value>
   </data>
   <data name="lblNumPieza.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 50</value>
@@ -1515,7 +1515,7 @@
     <value>Lucida Sans Unicode, 15.75pt, style=Bold</value>
   </data>
   <data name="lblTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 236</value>
+    <value>10, 240</value>
   </data>
   <data name="lblTotal.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 50</value>
