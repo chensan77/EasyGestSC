@@ -116,7 +116,7 @@
         <elementListCompartment Id="c32d152a-a74e-472f-b303-161821f93cc7" absoluteBounds="3.015, 7.0850000000000009, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="3cd4985f-ec23-4eb2-b5c3-40c7f21358d2" isExpanded="false" absoluteBounds="12.875, 2, 2, 0.45">
+    <classShape Id="3cd4985f-ec23-4eb2-b5c3-40c7f21358d2" absoluteBounds="12.875, 2, 2, 4.2708154296875">
       <DataClassMoniker Name="/EasyGestDataContext/VWLineasAlbaran" />
       <nestedChildShapes>
         <elementListCompartment Id="ea7ec431-0f2f-4ad4-947e-0087eea513a0" absoluteBounds="12.89, 2.4600000000000009, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
@@ -140,10 +140,10 @@
         <elementListCompartment Id="8e79a201-e846-4ff5-89a5-f07096df2f79" absoluteBounds="3.0149999999999997, 1.585, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="9dd30a8c-a7c3-4966-9abc-64295e5b01b4" isExpanded="false" absoluteBounds="12.625, 0.5, 2, 0.45">
+    <classShape Id="9dd30a8c-a7c3-4966-9abc-64295e5b01b4" isExpanded="false" absoluteBounds="12.875, 0.5, 2, 0.45">
       <DataClassMoniker Name="/EasyGestDataContext/VWAlbaranes" />
       <nestedChildShapes>
-        <elementListCompartment Id="5b40d3b0-d951-4ab6-b7a5-c2e38bd22a60" absoluteBounds="12.64, 0.96, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="5b40d3b0-d951-4ab6-b7a5-c2e38bd22a60" absoluteBounds="12.89, 0.96, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <classShape Id="b87f16d5-3158-4cd9-8ece-7bdcd441dbe1" absoluteBounds="7.5, 2.625, 2, 3.5016097005208326">
@@ -389,14 +389,14 @@
         <classShapeMoniker Id="6d49ea7d-e5cc-43ac-a08b-83cb61b3cbcc" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(8.5 : 6.12660970052083); (8.5 : 6.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(8.5 : 6.12660970052083); (8.5 : 6.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/EasyGestDataContext/Albaranes/Albaranes_LineasImpuestoAlbaran" />
       <nodes>
         <classShapeMoniker Id="b87f16d5-3158-4cd9-8ece-7bdcd441dbe1" />
         <classShapeMoniker Id="2b065132-a5d7-4fa1-8bfc-412c1548ee75" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(9.5 : 3.1); (10.375 : 3.1)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(9.5 : 3.1); (10.375 : 3.1)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/EasyGestDataContext/Albaranes/Albaranes_LineasAlbaran" />
       <nodes>
         <classShapeMoniker Id="b87f16d5-3158-4cd9-8ece-7bdcd441dbe1" />
@@ -415,7 +415,7 @@
         <elementListCompartment Id="c51aaf10-01d2-4479-a383-ea12fea6d04b" absoluteBounds="5.39, 6.4600000000000009, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(7.968748 : 6.12660970052083); (7.968748 : 6.225); (7.375 : 6.225)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(7.968748 : 6.12660970052083); (7.968748 : 6.225); (7.375 : 6.225)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/EasyGestDataContext/Albaranes/Albaranes_MediosPagosAlbaranPedido" />
       <nodes>
         <classShapeMoniker Id="b87f16d5-3158-4cd9-8ece-7bdcd441dbe1" />
